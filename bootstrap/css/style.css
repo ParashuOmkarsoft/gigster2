@@ -1,0 +1,11 @@
+header{border-top: 13px solid #e95436;}
+header img{margin: 8px 0px 16px 0px;}
+.container{max-width: 942px;width: 100%;margin: auto;padding: 0px;}
+
+section li{float: left;margin: 13px;list-style-type: none;}
+#firstsection{border-top: 5px solid #fab518;}
+footer{background: pink}
+.navbar-nav{margin-top: 30px;}
+#profilemenu{float: right;display: inline;}
+
+
