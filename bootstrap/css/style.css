@@ -32,10 +32,17 @@ src: url('../fonts/sourcesanspro-semibold-webfont.eot');
 }
 header{border-top: 13px solid #e95436;}
 header img{margin: 8px 0px 16px 0px;}
+.navbar-nav a {/* font-family: 'source_sans_prosemibold'; */
+color: black;
+font-size: 18px;}
 .container{max-width: 942px;width: 100%;margin: auto;padding: 0px;}
-
 section li{float: left;margin: 13px;list-style-type: none;}
 #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
+#firstsection img{float: right;
+margin-top: 22px;}
+#map{background: url("../images/map.png") no-repeat;color:  #db9753}
+.secondsection{border-bottom: 3px solid #fab518;}
+.lastsection{border-bottom: 1px solid #fab518;}
 footer{background: #e95436;}
 .navbar-nav{margin-top: 30px;}
 #profilemenu{float: right;display: inline;}
