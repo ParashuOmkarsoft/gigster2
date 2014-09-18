@@ -41,9 +41,12 @@ header img{margin: 8px 0px 16px 0px;}
 	color: #5e350d;
 font-size: 18px;}
 body p{color: #786c50;font-family: 'source_sans_proregular';font-size: 18px; }
-body h4{color: #45350f;font-size: 18px;font-family: 'source_sans_probold'; }
+body h4{color: #45350f;font-size: 18px; }
 .container{max-width: 942px;width: 100%;margin: auto;padding: 0px;}
 section li{float: left;margin: 13px;list-style-type: none;}
+#profilemenu a{font-family: 'source_sans_probold';  text-decoration: none !important;;
+color: #5e350d;
+font-size: 17px;}
 #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
 #firstsection h3{font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d}
 #firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
@@ -61,7 +64,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
 .thirdsection img{float: right;margin-top: 36px;}
 .lastsection{border-bottom: 1px solid #fab518;margin-top: 36px;}
 .lastsection img{float: right;}
-footer{background: #e95436;}
+footer{background: #e95436;height: 15px;margin-top: 50px;}
 .navbar-nav{margin-top: 30px;}
 #profilemenu{float: right;display: inline;}
 #doller{float: right;
