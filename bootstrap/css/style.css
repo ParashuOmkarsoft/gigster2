@@ -22,7 +22,7 @@ font-style: normal;
 @font-face {
 font-family: 'source_sans_proregular';
 src: url('../fonts/sourcesanspro-regular-webfont.eot');
-src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'), url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+src: url('../fonts/sourcesanspro-regula 'source_sans_proregular';font-size: 18px;r-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'), url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
 font-weight: normal;
 font-style: normal;
 }
@@ -37,16 +37,23 @@ header img{margin: 8px 0px 16px 0px;}
     background: -o-linear-gradient(#cac9ca, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#cac9ca, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#cac9ca, white); /* Standard syntax (must be last) */}
-.navbar-nav a {/* font-family: 'source_sans_prosemibold'; */
-color: black;
+.navbar-nav a {font-family: 'source_sans_probold'; 
+	color: #5e350d;
 font-size: 18px;}
+body p{color: #786c50;font-family: 'source_sans_proregular';font-size: 18px; }
+body h4{color: #45350f;font-size: 18px;font-family: 'source_sans_probold'; }
 .container{max-width: 942px;width: 100%;margin: auto;padding: 0px;}
 section li{float: left;margin: 13px;list-style-type: none;}
 #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
+#firstsection h3{font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d}
+#firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
 #firstsection img{float: right;
 	margin-top: 22px;}
-#map{background: url("../images/map.png") no-repeat;color:  #db9753;padding-left: 20px;}
+#title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
+#map{background: url("../images/map.png") no-repeat 0px 4px;color:  #db9753;padding-left: 20px;font-size: 18px;}
 .secondsection{border-bottom: 3px solid #fab518;margin-top: 36px;}
+.secondsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
+.thirdsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 .secondsection img{float: right;
 	margin-top: 22px;}
 .thirdsection{border-bottom: 3px solid #fab518;}
