@@ -41,7 +41,9 @@ section li{float: left;margin: 13px;list-style-type: none;}
 #firstsection img{float: right;
 margin-top: 22px;}
 #map{background: url("../images/map.png") no-repeat;color:  #db9753}
-.secondsection{border-bottom: 3px solid #fab518;}
+.secondsection{border-bottom: 3px solid #fab518;margin-top: 36px;}
+.secondsection img{float: right;
+margin-top: 22px;}
 .lastsection{border-bottom: 1px solid #fab518;}
 footer{background: #e95436;}
 .navbar-nav{margin-top: 30px;}
