@@ -46,7 +46,7 @@ header img{margin: 8px 0px 16px 0px;}
 	color: #5e350d;
 font-size: 18px;}
 body p{color: #786c50;font-family: 'source_sans_proregular';font-size: 18px; }
-body h4{color: #45350f;font-size: 18px; }
+body h4{color: #45350f;font-size: 18px;font-family: 'source_sans_probold'; }
 .container{max-width: 942px;width: 100%;margin: auto;padding: 0px;}
 section li{float: left;margin: 13px;list-style-type: none;}
 #profilemenu a{font-family: 'source_sans_probold';  text-decoration: none !important;;
@@ -58,7 +58,11 @@ font-size: 17px;}
 #firstsection img{float: right;
 	margin-top: 22px;}
 #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
-#map{background: url("../images/map.png") no-repeat 0px 4px;color:  #db9753;padding-left: 20px;font-size: 18px;}
+#map{background: url("../images/map.png") no-repeat 0px 4px;
+	color: #db9753;
+	padding-left: 20px;
+	font-size: 19px;
+	font-family: 'source_sans_probold';}
 .secondsection{border-bottom: 3px solid #fab518;margin-top: 36px;}
 .secondsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 .thirdsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
@@ -71,10 +75,19 @@ font-size: 17px;}
 .lastsection img{float: right;}
 footer{background: #e95436;height: 15px;margin-top: 50px;}
 .navbar-nav{margin-top: 30px;}
+#footerimages{padding: 36px 0px 0px 75px;}
 #profilemenu{float: right;display: inline;}
 #doller{float: right;
-margin: 36px -50px 15px 49px;
-color: black;
-font-size: 18px;}
+	margin: 36px -58px 15px 49px;
+	color: #473610;
+	font-size: 24px;
+	font-family: 'source_sans_prosemibold'}
+#date{color: #473610;font-family: 'source_sans_proregular';font-size: 20px; }
+#para{color: #786c50;
+	font-family: 'source_sans_proregular';
+	font-size: 20px;}
+.footernav{color: #786c50;
+	font-size: 24px;
+	font-family: 'source_sans_prolight';}	
 
 
