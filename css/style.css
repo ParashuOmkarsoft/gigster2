@@ -73,8 +73,21 @@ font-size: 17px;}
 .thirdsection img{float: right;margin-top: 36px;}
 .lastsection{border-bottom: 1px solid #fab518;margin-top: 36px;}
 .lastsection img{float: right;}
-footer{background: #e95436;height: 15px;margin-top: 50px;}
+footer{border-top: 15px solid #e95436;margin-top: 50px;}
 .navbar-nav{margin-top: 30px;}
+.footernav{
+	list-style-type: none;
+	margin-left: 70px;
+	margin-top: 30px;
+	padding-left: 0;
+	}
+footer ul li { display: inline;padding: 15px;}
+.footernav a {
+	font-family: 'source_sans_prolight';
+	font-size: 24px;
+	color: #786c50; 
+	text-decoration: none !important;
+}
 #footerimages{padding: 36px 0px 0px 115px;}
 #profilemenu{float: right;display: inline;}
 #doller{float: right;
@@ -86,8 +99,28 @@ footer{background: #e95436;height: 15px;margin-top: 50px;}
 #para{color: #786c50;
 	font-family: 'source_sans_proregular';
 	font-size: 20px;}
-.footernav{color: #786c50;
-	font-size: 24px;
-	font-family: 'source_sans_prolight';}	
+/*css for login page*/
+#login{color: #5e350d;
+	font-family: 'source_sans_prolight';
+	font-size: 48px;
+	border-bottom: 5px solid #fab518;
+	width: 600px;
+	padding-bottom: 5px;}
+.socialacc{font-family: 'source_sans_probold';font-size: 20px;color: #5e350d;line-height: 11px;}
+.input-group input{width: 260px;}
+#loginform{max-width: 260px;width: 100%;}
+.loginform .form-control {
+width: 260px;
+height: 38px;
+font-size: 14px;
+color: #3f8092;
+border: 1px solid #fab518;
+border-radius: 0px;
+}
+.loginform{margin-top: 35px;}
+.loginform .control-label {
+	font-family: 'source_sans_probold';font-size: 20px;color: #5e350d;text-align: left;width: 113px;
+}
+
 
 
