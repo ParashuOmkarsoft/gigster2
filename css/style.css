@@ -257,3 +257,40 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	border-bottom: 5px solid #fab518;
 	margin-top: 130px;
 }
+
+
+
+
+
+/** My Gigs **/
+
+#person{
+	color: #db9753;
+	
+	font-size: 19px;
+	font-family: 'source_sans_probold';
+
+}
+#p1 {
+	margin-left: 0px;
+	}
+
+#p2 {
+	margin-left: 10px;
+}
+#bird{
+	float: right;
+}
+#bird1{
+	float: right;
+}
+
+
+#gigmenu a{
+
+	font-family: 'source_sans_prolight';
+    text-decoration: none !important;;
+	color: #5e350d;
+	font-size: 16px;}
+
+#gigmenu{float: right;display: inline;}
