@@ -227,6 +227,17 @@ footer ul li { display: inline;padding: 15px;}
 	outline: none;:;
 	margin: 22px;
 	margin: 33px 57px;
+
+border:1px solid #f7f25f;
+ background-color: #faf68f; background-image: -webkit-gradient(linear, left top, left bottom, from(#fecc59), to(#f3ed53));
+ background-image: -webkit-linear-gradient(top, #fecc59, #f3ed53);
+ background-image: -moz-linear-gradient(top, #fecc59, #f3ed53);
+ background-image: -ms-linear-gradient(top, #fecc59, #f3ed53);
+ background-image: -o-linear-gradient(top, #fecc59, #f3ed53);
+ background-image: linear-gradient(to bottom, #fecc59, #f3ed53);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#faf68f, endColorstr=#f3ed53);
+
+
+	
 }
 .lastpagination{float: right;}
 .lastpagination li{margin: 4px;}
