@@ -234,3 +234,12 @@ font-size: 30px;
 font-family: 'source_sans_prosemibold';
 margin-top: 39px;
 }
+.postgigform{
+margin: 0 auto;
+border: 5px solid #e2ac10;
+padding: 0px 30px 0px 50px;
+border-radius: 10px;
+max-width: 728px;
+height: 100%;
+margin-top: 35px;
+}
