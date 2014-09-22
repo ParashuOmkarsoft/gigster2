@@ -61,15 +61,56 @@ body h4{
 	margin: auto;padding: 0px;}
 section li{float: left;margin: 13px;list-style-type: none;}
 #profilemenu a{
-	font-family: 'source_sans_probold';
+	font-family: 'source_sans_prolight';
     text-decoration: none !important;;
 	color: #5e350d;
-	font-size: 17px;}
+	font-size: 17px;
+	
+	     }
+#profilemenu a{
+	font-family: 'source_sans_prolight';
+    text-decoration: none !important;;
+	color: #5e350d;
+	font-size: 24px;
+}
+
+#ass
+	{
+ 	font-family: 'source_sans_prosemibold';
+    text-decoration: none !important;;
+	color: #5e350d;
+	font-size: 24px;
+	margin-top: 4px;
+
+	 }
+#pro
+	{
+ 	font-family: 'source_sans_prolight';
+    text-decoration: none !important;;
+	color: #5e350d;
+	font-size: 24px;
+	margin-top: 4px;
+	border-left: solid #5e350d;
+	border-width: 2px;
+	height: 27px;
+    padding-left: 15px;
+    margin-left: -12px;
+    padding-top: 0px;
+
+
+	 }
+
+
+
 #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
 #firstsection h3{font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d}
 #firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
-#firstsection img{float: right;
-	margin-top: 22px;}
+#firstsection img{float: right;margin-top: 22px;}
+#mike1{float: left;}
+#mike{float: right;}
+
+
+
 #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
 #map{background: url("../images/map.png") no-repeat 0px 4px;
 	color: #db9753;
@@ -102,13 +143,13 @@ footer ul li { display: inline;padding: 15px;}
 	text-decoration: none !important;
 }
 #footerimages{padding: 36px 0px 0px 115px;}
-#profilemenu{float: right;display: inline;}
+#profilemenu{float: right;display: inline; margin-right: -12px;}
 #doller{float: right;
-	margin: 36px -58px 15px 49px;
+	margin: 36px -96px 15px 49px;
 	color: #473610;
 	font-size: 24px;
 	font-family: 'source_sans_prosemibold'}
-#date{color: #473610;font-family: 'source_sans_proregular';font-size: 20px; }
+.date{color: #473610;font-family: 'source_sans_proregular';font-size: 20px; }
 #para{color: #786c50;
 	font-family: 'source_sans_proregular';
 	font-size: 20px;}
@@ -286,7 +327,7 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 }
 
 
-#gigmenu a{
+#gigmenu {
 
 	font-family: 'source_sans_prolight';
     text-decoration: none !important;;
@@ -302,12 +343,40 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 
 /** pop up **/
 
-#modal-dialog{
-	height: 450;
-	width:750;
+
+
+
+
+
+/** My Assignment Css **/
+
+.lady{
+
+	font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d;
+	
 }
-#modal-header{
-	height: 450;
-	width:750;
-	border:solid grey;
+.cs{
+	font-family: 'source_sans_proregular'; font-size: 30px;color: #5e350d;
+
+}
+
+.sept{
+	font-family: 'source_sans_proregular'; font-size: 20px;color: #5e350d;
+
+}
+.r{
+	height: 50px;
+	width: 200px;
+	border-color: red;
+}
+
+.lefti{
+	
+}
+.p2{
+	
+	margin-top: 10px;
+}
+.a1{
+	border-bottom: solid grey;
 }
