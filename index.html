@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gigster profile</title>
+    <title>My Gigs</title>
 
     <!-- Bootstrap -->   
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
@@ -23,15 +23,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="images/logo.png">
+            <a href="index.html"><img src="images/logo.png"></a>
           </div>
           <div class="col-md-8">
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="login.html">POST GIG</a></li>
-                      <li><a href="#">LIST GIGS</a></li>
-                      <li><a href="#">GIGSTERS</a></li>
-                      <li><a href="#">DASHBOARD</a></li>                      
+                      <li  data-toggle="modal" data-target=".bs-example-modal-lg"><a href="#">POST GIG</a></li>
+                      <li ><a href="giglist.html">LIST GIGS</a></li>
+                      <li><a href="gigsters.html">GIGSTERS</a></li>
+                      <li data-toggle="modal" data-target=".bs-example-modal-lg"><a href="#">LOGIN</a></li>
+                                            
                  </ul>
               </div>
           </div>
@@ -39,40 +40,147 @@
         </div>
       </div>
     </header>
+    
+
     <div id="grad"></div>
     <section class="container">
       <ul id="profilemenu">
-        <li><a href="#">MY GIG</a></li>
+        <li><a href="mygigs-bidding.html">MY GIG</a></li>
         <li><a href="#">MY ASSIGNMENTS</a></li>
-        <li><a href="#">PROFILE</a></li>                              
+        <li><a href="profile.html">PROFILE</a></li>                              
       </ul>
-    
     </section>
-    <section id="firstsection" class="container">
-      <div class="row">
-          <div class="col-md-6">
-            <h3>Mike Fisher</h3>
-            <h4>UX IA Graphic Artist</h4>
-            <h2 id="map">Yishun, Singapore</h2>
-          </div>
-          <div class="col-md-6">
-            <img src="images/person1.jpg">
-          </div>          
-      </div>
-      <div class="row">
-            <div class="col-md-6"><h3 id="title">Overview</h3></div>
-            <div class="col-md-6"><img src="images/pencil.png"></div>
-      </div>     
-    </section>
-    
 
-    <footer>
-    </footer>
- 
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+   
+     <section class="postgigform container">                       
+         <h2 id="login">Post a Gig </h2>    
+            <h2 class="socialacc">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>                          
+            <div class="row">
+          <form class="form-horizontal postgigforminner " role="form">
+            <div class="form-group">
+              <label for="creategig" class="col-sm-2 control-label">Title</label>
+              <div class="col-sm-10"> 
+                <input type="text" class="form-control" id="creategig" placeholder="Looking for a marriage photographer">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description" class="col-sm-2 control-label">Description</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="description" placeholder="Describe your gig" row="5" column="10"></textarea>  
+              </div>
+            </div>
+            <h2 class="socialacc"> Would you like the pay per hour or fixed prize per Gig?</h2>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Hourly
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Fixed Price
+                </label>                
+              </div>
+            </div>
+            <h2 class="socialacc">How much per hour would you like to pay?</h2>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+            <h2 class="socialacc"> Would you like to invite any Gigster’s for your project ?</h2>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">No
+                </label>                   
+              </div>            
+              </div>
+               <button type="submit" class="btn btn-warning">Post Gig</button>
+            </div> 
+
+            <div class="form-group submit">
+              <div class="col-sm-offset-2 col-sm-10">
+                
+            </div>
+          </form>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+ <img src="images/womenlap.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
