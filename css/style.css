@@ -361,13 +361,27 @@ margin-top: 35px;
 }
 .progress{
 	width: 560px;
-	height: 20px;}
+	height: 30px;}
 .progress-bar{
 	background-color: #e2ac10;
 }
 
 span.c{margin-left: 350px;
 }
+.mike{
+margin-top: -30px;
+margin-left: 40px;
+
+}
+.tyco{
+	float: right;
+	margin-top: 8px;
+}
+
+.myassg{font-family: 'source_sans_prolight'; font-size: 48px;color: #5e350d;
+
+}
+
 /************Invite model*****************/
 .invitegig{
 	margin: 0 auto;
