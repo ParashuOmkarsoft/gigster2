@@ -261,26 +261,18 @@ footer ul li { display: inline;padding: 15px;}
 	outline: none;:;
 	margin: 22px;
 	margin: 33px 57px;
-
-
  }
  .lastpagination{float: right;}
  .lastpagination li{margin: 4px;}
  .lastpagination .active>a,.active>a:hover {background-color: #e2ac10; border:1px solid #e2ac10;}
  .lastpagination .pagination>li>a,.lastpagination .pagination>li>span {
-
-
-
-border:1px solid #f7f25f;
+ border:1px solid #f7f25f;
  background-color: #faf68f; background-image: -webkit-gradient(linear, left top, left bottom, from(#fecc59), to(#f3ed53));
  background-image: -webkit-linear-gradient(top, #fecc59, #f3ed53);
  background-image: -moz-linear-gradient(top, #fecc59, #f3ed53);
  background-image: -ms-linear-gradient(top, #fecc59, #f3ed53);
  background-image: -o-linear-gradient(top, #fecc59, #f3ed53);
- background-image: linear-gradient(to bottom, #fecc59, #f3ed53);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#faf68f, endColorstr=#f3ed53);
-
-
-	
+ background-image: linear-gradient(to bottom, #fecc59, #f3ed53);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#faf68f, endColorstr=#f3ed53);	
 }
 .lastpagination{float: right;}
 .lastpagination li{margin: 4px;}
@@ -342,10 +334,6 @@ margin-top: 35px;
 
 
 /************Invite model****color: *************/
-
-
-
-
 #gigmenu {
 
 	font-family: 'source_sans_prolight';
@@ -353,19 +341,10 @@ margin-top: 35px;
 	color: #5e350d;
 	font-size: 16px;float: right;display: inline;}
 
-
-
-
-
-
 /** pop up **/
 
 <i class="fa fa-twitter"></i>
 <i class="fa fa-linkedin"></i>
-
-
-
-
 /** My Assignment Css **/
 
 .lady{
@@ -380,7 +359,6 @@ margin-top: 35px;
 
 .sept{
 	font-family: 'source_sans_proregular'; font-size: 20px;color: #5e350d;
-
 }
 .r{
 	height: 50px;
@@ -398,8 +376,6 @@ margin-top: 35px;
 .a1{
 	border-bottom: solid grey;}
 /************Invite model*****************/
-
-
 .invitegig{
 	margin: 0 auto;
 	border: 5px solid #e2ac10;
@@ -422,8 +398,6 @@ margin-top: 35px;
 	width: 220px;
 	border-radius: 10px;
 	margin-bottom: 50px;}
-
-
 /** gigsters.....**/
 .art-title{ font-family: 'source_sans_probold'; font-size: 26px;color: #5e350d; ;margin-left: -60px;}
 .art-title span.star{float:right;}
@@ -453,18 +427,12 @@ margin-top: 35px;
 .bot-links a{display: inline-block; padding: 5px; background: #ccc; font-size: 12px; margin-bottom: 5px; color: #9c9c9c; text-decoration:none;}
 span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 .artst-pic:hover img.play-icon, .artst-pic:hover span a{display: block; } 
-
-
-
 #our{
 
 	font-family: 'source_sans_prolight'; font-size: 48px;color: #5e350d;
 	margin-bottom: 50px;
 	border-bottom: 5px solid #fab518;
-
 }
-
-
 #rect{
 	width: 735px;
 	height: 453px;
@@ -473,17 +441,12 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 		border-width: 5px;
 		padding: 50px;
 		font-family: 'source_sans_prolight'; font-size: 48px;color: #5e350d;
-
-
-}
+	}
 #bord{
 	border-bottom:solid #e2ac10;
-
 	border-width: 5px;
 }
 #create{
 	font-family: 'source_sans_probold'; font-size: 20px;color: #5e350d;
 	margin-top: 45px;
-
-
 }
