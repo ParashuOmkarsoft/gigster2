@@ -59,7 +59,6 @@
 	max-width: 942px;
 	width: 100%;
 	margin: auto;padding: 0px;}
-<<<<<<< HEAD
  section li{float: left;margin: 13px;list-style-type: none;}
  #profilemenu a{
 	font-family: 'source_sans_probold';
@@ -72,8 +71,8 @@
  #firstsection img{float: right;
 	margin-top: 22px;}
  #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
- #map{background: url("../images/map.png") no-repeat 0px 4px;
-=======
+ #map{background: url("../images/map.png") no-repeat 0px 4px;}
+
 section li{float: left;margin: 13px;list-style-type: none;}
 #profilemenu a{
 	font-family: 'source_sans_prolight';
@@ -128,7 +127,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
 
 #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
 #map{background: url("../images/map.png") no-repeat 0px 4px;
->>>>>>> c8eb245d4b84cd60c469a01af707b34213d18034
+
 	color: #db9753;
 	padding-left: 20px;
 	font-size: 19px;
@@ -157,7 +156,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
 	font-size: 24px;
 	color: #786c50; 
 	text-decoration: none !important;
-<<<<<<< HEAD
+
  }
  #footerimages{padding: 36px 0px 0px 115px;}
  #profilemenu{float: right;display: inline;}
@@ -167,8 +166,8 @@ section li{float: left;margin: 13px;list-style-type: none;}
 	font-size: 24px;
 	font-family: 'source_sans_prosemibold'}
  #date{color: #473610;font-family: 'source_sans_proregular';font-size: 20px; }
- #para{color: #786c50;
-=======
+ #para{color: #786c50;}
+
 }
 #footerimages{padding: 36px 0px 0px 115px;}
 #profilemenu{float: right;display: inline; margin-right: -12px;}
@@ -178,8 +177,8 @@ section li{float: left;margin: 13px;list-style-type: none;}
 	font-size: 24px;
 	font-family: 'source_sans_prosemibold'}
 .date{color: #473610;font-family: 'source_sans_proregular';font-size: 20px; }
-#para{color: #786c50;
->>>>>>> c8eb245d4b84cd60c469a01af707b34213d18034
+#para{color: #786c50;}
+
 	font-family: 'source_sans_proregular';
 	font-size: 20px;}
  /***********css for login page***************/
@@ -256,13 +255,13 @@ section li{float: left;margin: 13px;list-style-type: none;}
 	outline: none;:;
 	margin: 22px;
 	margin: 33px 57px;
-<<<<<<< HEAD
+
  }
  .lastpagination{float: right;}
  .lastpagination li{margin: 4px;}
  .lastpagination .active>a,.active>a:hover {background-color: #e2ac10; border:1px solid #e2ac10;}
  .lastpagination .pagination>li>a,.lastpagination .pagination>li>span {
-=======
+
 
 border:1px solid #f7f25f;
  background-color: #faf68f; background-image: -webkit-gradient(linear, left top, left bottom, from(#fecc59), to(#f3ed53));
@@ -279,7 +278,7 @@ border:1px solid #f7f25f;
 .lastpagination li{margin: 4px;}
 .lastpagination .active>a,.active>a:hover {background-color: #e2ac10; border:1px solid #e2ac10;}
 .lastpagination .pagination>li>a,.lastpagination .pagination>li>span {
->>>>>>> c8eb245d4b84cd60c469a01af707b34213d18034
+
 	color: #5e350d;
 	font-size:24px ;
 	font-family: 'source_sans_prolight';
@@ -362,9 +361,9 @@ color: #fff;
 background-color: #f0ad4e;
 border-color: #eea236;}
 
-<<<<<<< HEAD
+
 /************Invite model****color: *************/
-=======
+
 
 
 #gigmenu {
@@ -416,9 +415,9 @@ border-color: #eea236;}
 	margin-top: 10px;
 }
 .a1{
-	border-bottom: solid grey;
+	border-bottom: solid grey;}
 /************Invite model*****************/
->>>>>>> c8eb245d4b84cd60c469a01af707b34213d18034
+
 .invitegig{
 	margin: 0 auto;
 	border: 5px solid #e2ac10;
