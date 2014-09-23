@@ -243,3 +243,28 @@ max-width: 728px;
 height: 100%;
 margin-top: 35px;
 }
+
+/************Invite model*****************/
+.invitegig{
+	margin: 0 auto;
+	border: 5px solid #e2ac10;
+	padding: 0px 30px 0px 50px;
+	border-radius: 10px;
+	max-width: 728px;
+	height: 100%;
+	margin-top: 35px;}
+  .invitegig .radio label, .checkbox label{
+    color: #e4b17e;
+	font-size: 22px;
+	font-family: 'source_sans_proregular';
+	padding-top: 12px;
+}
+.invitegig .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox]{position: none;}
+.gignext .btn-warning{
+	color: #5e350d;
+	font-size: 22px;
+	font-family: 'source_sans_probold';
+	width: 220px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
