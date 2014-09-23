@@ -450,3 +450,34 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	font-family: 'source_sans_probold'; font-size: 20px;color: #5e350d;
 	margin-top: 45px;
 }
+
+
+/*********mygig-bidding   ********/
+
+#giglog{
+	color: #5e350d;
+	font-family: 'source_sans_prolight';
+	font-size: 48px;
+	border-bottom: 5px solid #fab518;
+	padding-bottom: 5px;}
+.mygig h2{
+	font-size: 36px;
+	font-family: 'source_sans_probold';
+	color: #5e350d;
+}
+.mygig .selectbid{
+	font-size: 30px;
+	font-family: 'source_sans_proregular';
+	color: #5e350d;
+}
+.mygig {padding-bottom: 15px;}
+.rightsidegig{
+	padding-left: 35px;
+	margin-top: 35px;}
+.rightsidegig .firstbid{padding-left: 50px;}
+.rightsidegig h4,h5 {font-size: 24px;font-family: 'source_sans_proregular';color: #5e350d;}
+.clearline{
+	clear: both;
+	margin: 0px 15px;
+	border-bottom: 2px solid #fab518;
+	padding-top: 10px;}
