@@ -343,8 +343,7 @@ margin-top: 35px;
 
 /** pop up **/
 
-<i class="fa fa-twitter"></i>
-<i class="fa fa-linkedin"></i>
+
 /** My Assignment Css **/
 
 .lady{
@@ -360,21 +359,15 @@ margin-top: 35px;
 .sept{
 	font-family: 'source_sans_proregular'; font-size: 20px;color: #5e350d;
 }
-.r{
-	height: 50px;
-	width: 200px;
-	border-color: red;
+.progress{
+	width: 560px;
+	height: 20px;}
+.progress-bar{
+	background-color: #e2ac10;
 }
 
-.lefti{
-	
+span.c{margin-left: 350px;
 }
-.p2{
-	
-	margin-top: 10px;
-}
-.a1{
-	border-bottom: solid grey;}
 /************Invite model*****************/
 .invitegig{
 	margin: 0 auto;
@@ -483,3 +476,5 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	padding-top: 10px;}
 
 	/**************Assignment css***********/
+
+
