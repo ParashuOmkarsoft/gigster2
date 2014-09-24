@@ -490,7 +490,7 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	padding-top: 10px;}
 
 	/**************Assignment css***********/
-<<<<<<< HEAD
+
 #datefirst{
 		font-size: 20px;
 		font-family: 'source_sans_proregular';
@@ -545,7 +545,8 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
   .secondinner{
   	margin-top: 25px;
   }
-=======
 
 
->>>>>>> 1ba78fffa74672002c3a711b15f973d67e397ffe
+/************ Gig details*************/
+
+#gigdetail {border-bottom: 3px solid #fab518;}
