@@ -60,6 +60,10 @@ body h4{
 	width: 100%;
 	margin: auto;padding: 0px;}
 
+#imgback{
+	width: 100%;
+}	
+
  section li{float: left;margin: 13px;list-style-type: none;}
  #profilemenu a{
 	font-family: 'source_sans_probold';
@@ -343,8 +347,7 @@ margin-top: 35px;
 
 /** pop up **/
 
-<i class="fa fa-twitter"></i>
-<i class="fa fa-linkedin"></i>
+
 /** My Assignment Css **/
 
 .lady{
@@ -360,21 +363,29 @@ margin-top: 35px;
 .sept{
 	font-family: 'source_sans_proregular'; font-size: 20px;color: #5e350d;
 }
-.r{
-	height: 50px;
-	width: 200px;
-	border-color: red;
+.progress{
+	width: 560px;
+	height: 30px;}
+.progress-bar{
+	background-color: #e2ac10;
 }
 
-.lefti{
-	
+span.c{margin-left: 350px;
 }
-.p2{
-	
-	margin-top: 10px;
+.mike{
+margin-top: -30px;
+margin-left: 40px;
+
 }
-.a1{
-	border-bottom: solid grey;}
+.tyco{
+	float: right;
+	margin-top: 8px;
+}
+
+.myassg{font-family: 'source_sans_prolight'; font-size: 48px;color: #5e350d;
+
+}
+
 /************Invite model*****************/
 .invitegig{
 	margin: 0 auto;
@@ -483,6 +494,7 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	padding-top: 10px;}
 
 	/**************Assignment css***********/
+<<<<<<< HEAD
 #datefirst{
 		font-size: 20px;
 		font-family: 'source_sans_proregular';
@@ -537,3 +549,7 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
   .secondinner{
   	margin-top: 25px;
   }
+=======
+
+
+>>>>>>> 1ba78fffa74672002c3a711b15f973d67e397ffe
