@@ -483,3 +483,57 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	padding-top: 10px;}
 
 	/**************Assignment css***********/
+#datefirst{
+		font-size: 20px;
+		font-family: 'source_sans_proregular';
+		color: #473610;
+		margin-left: -16px
+	}
+#datesecond{
+	font-size: 20px;
+	font-family: 'source_sans_proregular';
+	color: #473610;
+	margin-left: 71px;}
+#assigndoller{
+	color: #473610;
+	font-size: 24px;
+	font-family: 'source_sans_prosemibold';
+	margin-top: 35px;
+}
+.threeword{
+	font-size: 24px;
+	color: #45350f;
+	font-family: 'source_sans_prosemibold';
+	padding: 0px 42px 0px 0px;
+}
+#bond{
+	font-size: 20px;
+	font-family: 'source_sans_probold';
+	color: #473610;
+	margin-left: 15px;
+}
+.james{
+	font-size: 20px;
+	font-family: 'source_sans_proregular';
+	color: #473610;
+    margin: 16px 0px 0px 15px;
+	line-height: 20px;
+}
+.clearfirst{
+	clear: both;
+	margin: 0px 15px;
+	border-bottom: 1px solid #fab518;
+	padding-top: 10px;
+	}
+.h3inner{
+	float: right;
+    font-size: 18px;
+    font-family: 'source_sans_prosemibold';
+    color: #473610;
+    }
+ .firstdinner{
+ 	margin-top: 15px;
+ }
+  .secondinner{
+  	margin-top: 25px;
+  }
