@@ -195,6 +195,8 @@ footer ul li { display: inline;padding: 15px;}
 	border-bottom: 5px solid #fab518;
 	padding-bottom: 5px;
 	margin: 35px auto;
+	width: 623px;
+	margin-left: -1px;
 }
 .socialacc{
 	font-family: 'source_sans_probold';
