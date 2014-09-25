@@ -176,15 +176,27 @@ footer ul li { display: inline;padding: 15px;}
   border-bottom: 5px solid #fab518;
   padding-bottom: 10px;
   margin: 1px auto;
+  margin-left: 50px;
+margin-right: 50px;
 }
-.loginxyz{border: 5px solid #fab518; border-radius: 5px;padding: 35px;height: 450px;width: 735px;margin-left: 20px;
+.loginxyz{border: 5px solid #fab518;
+border-radius: 5px;
+padding: 36px;
+height: 453px;
+width: 900px;
+margin-left: 0px;
 
 }
 .socialacc{
   font-family: 'source_sans_probold';
   font-size: 20px;
   color: #5e350d;
-  line-height: 11px;}
+  line-height: 11px;
+margin-left: 50px;
+}
+.create1{
+	margin-top: 40px;
+}
 .input-group input{width: 260px;}
 #loginform{max-width: 260px;width: 100%;}
 .loginform .form-control {
@@ -239,7 +251,7 @@ footer ul li { display: inline;padding: 15px;}
 }
 #logjpg{
 	margin-top: 10px;
-	margin-left: -29px;
+	margin-left: 25px;
 }
 /*****************css for Giglist********************/
 #giglisth2{color: #5e350d;font-family: 'source_sans_probold';font-size: 30px;}
