@@ -174,7 +174,7 @@ footer ul li { display: inline;padding: 15px;}
   font-family: 'source_sans_prolight';
   font-size: 48px;
   border-bottom: 5px solid #fab518;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   margin: 1px auto;
 }
 .loginxyz{border: 5px solid #fab518; border-radius: 5px;padding: 35px;height: 450px;width: 735px;margin-left: 20px;
@@ -239,7 +239,7 @@ footer ul li { display: inline;padding: 15px;}
 }
 #logjpg{
 	margin-top: 10px;
-	margin-left: 80px;
+	margin-left: -29px;
 }
 /*****************css for Giglist********************/
 #giglisth2{color: #5e350d;font-family: 'source_sans_probold';font-size: 30px;}
