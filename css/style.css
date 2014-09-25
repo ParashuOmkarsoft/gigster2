@@ -218,17 +218,20 @@ footer ul li { display: inline;padding: 15px;}
   background: #ecbc39;
   outline: none;
 }
+.lg .btn-warning{
+	color: #5e350d; 
+  font-size: 20px;font-family: 'source_sans_probold';
+  width: 120px;
+  border-radius: 10px;
+  background: #ecbc39;
+  outline: none;
+}
 
 #fblogin{
   margin-left: 20px;
   padding-left: 30PX;
   border-left: solid 2px #fab518;
 }
-
-.username{
-
-}
-
 
 /*****************css for Giglist********************/
 #giglisth2{color: #5e350d;font-family: 'source_sans_probold';font-size: 30px;}
@@ -542,6 +545,7 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	font-family: 'source_sans_prosemibold';
 	margin-top: 35px;
 }
+.start{margin-top: 56px;}
 .threeword{
 	font-size: 24px;
 	color: #45350f;
@@ -554,11 +558,13 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	color: #473610;
 	margin-left: 15px;
 }
+{margin-top: 56px;}
 .mikename{
 	float: right;
 	font-size: 30px;
 	font-family: 'source_sans_prosemibold';
 	color: #5e350d; }
+.myassign {padding-bottom: 15px;margin-left: 0px;}
 .james{
 	font-size: 20px;
 	font-family: 'source_sans_proregular';
