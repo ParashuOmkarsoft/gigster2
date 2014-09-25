@@ -109,7 +109,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
     padding-top: 0px;
 	 }
 #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
-#firstsection h3{font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d}
+#firstsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 #firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
 #firstsection img{float: right;margin-top: 22px;}
 #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
@@ -126,7 +126,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
 .thirdsection{border-bottom: 3px solid #fab518;}
 .thirdsection h4{margin-top:20px;}
 .thirdsection img{float: right;margin-top: 36px;}
-.lastsection{border-bottom: 1px solid #fab518;margin-top: 6px;}
+.lastsection{border-bottom: 1px solid #fab518;margin-top: 7px;}
 .lastsection img{float: right;margin-top: 7px;}
 footer{border-top: 15px solid #e95436;margin-top: 50px;}
 .navbar-nav{margin-top: 30px;}
@@ -171,52 +171,64 @@ footer ul li { display: inline;padding: 15px;}
 	font-size: 20px;}
 /***********css for login page***************/
 #login{color: #5e350d;
-	font-family: 'source_sans_prolight';
-	font-size: 48px;
-	border-bottom: 5px solid #fab518;
-	padding-bottom: 5px;
-	margin: 35px auto;
-	width: 623px;
-	margin-left: -1px;
+  font-family: 'source_sans_prolight';
+  font-size: 48px;
+  border-bottom: 5px solid #fab518;
+  padding-bottom: 5px;
+  margin: 35px auto;
+}
+.loginxyz{border: 5px solid #fab518; border-radius: 5px;padding: 35px;height: 450px;width: 735px;margin-left: 20px;
+
 }
 .socialacc{
-	font-family: 'source_sans_probold';
-	font-size: 20px;
-	color: #5e350d;
-	line-height: 11px;}
+  font-family: 'source_sans_probold';
+  font-size: 20px;
+  color: #5e350d;
+  line-height: 11px;}
 .input-group input{width: 260px;}
 #loginform{max-width: 260px;width: 100%;}
 .loginform .form-control {
-	width: 260px;
-	height: 38px;
-	font-size: 14px;
-	color: #3f8092;
-	border: 1px solid #fab518;
-	border-radius: 0px;
+  width: 260px;
+  height: 38px;
+  font-size: 14px;
+  color: #3f8092;
+  border: 1px solid #fab518;
+  border-radius: 0px;
 }
 .loginform1 .form-horizontal{margin-left: 15px;}
 .loginform1{margin-top: 25px;}
 .loginform{margin: 0 auto;
-	border: 5px solid #e2ac10;
-	padding: 0px 30px 0px 50px;
-	border-radius: 10px;
-	max-width: 728px;
-	height: 445px;
-	margin-top: 35px;}
+  border: 5px solid #e2ac10;
+  padding: 0px 30px 0px 50px;
+  border-radius: 10px;fab518
+  max-width: 728px;
+  height: 445px;
+  margin-top: 35px;}
 .loginform .control-label {
-	font-family: 'source_sans_probold';
-	font-size: 20px;
-	color: #5e350d;
-	text-align: left;
+  font-family: 'source_sans_probold';
+  font-size: 20px;
+  color: #5e350d;
+  text-align: left;
 }
 .loginform .btn-warning {
-	color: #5e350d; 
-	font-size: 20px;font-family: 'source_sans_probold';
-	width: 120px;
-	border-radius: 10px;
-	background: #ecbc39;
-	outline: none;
+  color: #5e350d; 
+  font-size: 20px;font-family: 'source_sans_probold';
+  width: 120px;
+  border-radius: 10px;
+  background: #ecbc39;
+  outline: none;
 }
+
+#fblogin{
+  margin-left: 20px;
+  padding-left: 30PX;
+  border-left: solid 2px #fab518;
+}
+
+.username{
+
+}
+
 
 /*****************css for Giglist********************/
 #giglisth2{color: #5e350d;font-family: 'source_sans_probold';font-size: 30px;}
@@ -235,7 +247,7 @@ footer ul li { display: inline;padding: 15px;}
 .firstrow{border-bottom: 1px solid #fab518; padding-bottom: 20px;}
 #gigpara{padding-top: 40px;}
 .giginnerimg img{float: right;padding-top: 40px;}
-.giginnerimg .btn-warning{
+.btn-warning{
 	color: #5e350d;
 	font-size: 20px;
 	font-family: 'source_sans_probold';
@@ -245,22 +257,16 @@ footer ul li { display: inline;padding: 15px;}
 	outline: none;:;
 	margin: 22px;
 	margin: 33px 57px;
- }
- .lastpagination{float: right;}
- .lastpagination li{margin: 4px;}
- .lastpagination .active>a,.active>a:hover {background-color: #e2ac10; border:1px solid #e2ac10;}
- .lastpagination .pagination>li>a,.lastpagination .pagination>li>span {
- border:1px solid #f7f25f;
- background-color: #faf68f; background-image: -webkit-gradient(linear, left top, left bottom, from(#fecc59), to(#f3ed53));
- background-image: -webkit-linear-gradient(top, #fecc59, #f3ed53);
- background-image: -moz-linear-gradient(top, #fecc59, #f3ed53);
- background-image: -ms-linear-gradient(top, #fecc59, #f3ed53);
- background-image: -o-linear-gradient(top, #fecc59, #f3ed53);
- background-image: linear-gradient(to bottom, #fecc59, #f3ed53);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#faf68f, endColorstr=#f3ed53);	
+
+border:1px solid #f7f25f;
+ 
+
+	
 }
 .lastpagination{float: right;}
 .lastpagination li{margin: 4px;}
-.lastpagination .active>a,.active>a:hover {background-color: #e2ac10; border:1px solid #e2ac10;}
+.lastpagination .active>a,.active>a:hover {background-color: #EC6B39;
+border-color: ##EC6B39;}
 .lastpagination .pagination>li>a,.lastpagination .pagination>li>span {
 	color: #5e350d;
 	font-size:24px ;
@@ -285,6 +291,13 @@ footer ul li { display: inline;padding: 15px;}
 .giglast img{float: left;}
 .giginnerimg h4{float: right;}
 #artist{font-size: 15px;font-family: 'source_sans_prolight';color: #786c50;}
+.giglast{
+	margin-top: -50px;
+}
+.lastpagination{
+	margin-top: -40px;
+}
+
 
 /*****************css for Giglist********************/
 .ourgigstertop{margin-top: 50px;}
@@ -313,6 +326,14 @@ max-width: 728px;
 height: 100%;
 margin-top: 35px;
 }
+<<<<<<< HEAD
+
+
+
+
+
+=======
+>>>>>>> origin/master
 /************Invite model****color: *************/
 #gigmenu {
 
@@ -320,6 +341,11 @@ margin-top: 35px;
     text-decoration: none !important;;
 	color: #5e350d;
 	font-size: 16px;float: right;display: inline;}
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/master
 /** pop up **/
 
 
@@ -399,6 +425,16 @@ margin-left: 40px;
 
 
 /************Invite model*****************/
+#invite {
+color: #5e350d;
+font-family: 'source_sans_prolight';
+font-size: 48px;
+border-bottom: 5px solid #fab518;
+width: 627px;
+padding-bottom: 5px;
+margin: 35px auto;
+margin-left: -1px;
+}
 .invitegig{
 	margin: 0 auto;
 	border: 5px solid #e2ac10;
@@ -475,12 +511,12 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	border-bottom: 5px solid #fab518;
 	padding-bottom: 5px;}
 .mygig h2{
-	font-size: 36px;
+	font-size: 30px;
 	font-family: 'source_sans_probold';
 	color: #5e350d;
 }
 .mygig .selectbid{
-	font-size: 30px;
+	font-size: 24px;
 	font-family: 'source_sans_proregular';
 	color: #5e350d;
 }
