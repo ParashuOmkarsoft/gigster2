@@ -561,6 +561,11 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	font-family: 'source_sans_prosemibold';
 	padding: 0px 42px 0px 0px;
 }
+.progressbar{
+	width: 560px;
+	height: 30px;
+	margin-top: 55px;
+}
 #bond{
 	font-size: 20px;
 	font-family: 'source_sans_probold';
