@@ -269,11 +269,11 @@ footer ul li { display: inline;padding: 15px;}
 	margin: 22px;
 	margin: 33px 57px;
 
-border:1px solid #f7f25f;
- 
-
-	
+border:1px solid #f7f25f;	
 }
+
+.gigimg{ margin-top: 20px;}
+
 .lastpagination{float: right;}
 .lastpagination li{margin: 4px;}
 .lastpagination .active>a,.active>a:hover {background-color: #EC6B39;
