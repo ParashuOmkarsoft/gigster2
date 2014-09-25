@@ -118,16 +118,16 @@ section li{float: left;margin: 13px;list-style-type: none;}
 	padding-left: 20px;
 	font-size: 19px;
 	font-family: 'source_sans_probold';}
-.secondsection{border-bottom: 3px solid #fab518;margin-top: 36px;}
+.secondsection{border-bottom: 3px solid #fab518;margin-top: 15px;}
 .secondsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 .thirdsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 .secondsection img{float: right;
 	margin-top: 22px;}
 .thirdsection{border-bottom: 3px solid #fab518;}
-.thirdsection h4{margin-top:36px;}
+.thirdsection h4{margin-top:20px;}
 .thirdsection img{float: right;margin-top: 36px;}
-.lastsection{border-bottom: 1px solid #fab518;margin-top: 36px;}
-.lastsection img{float: right;}
+.lastsection{border-bottom: 1px solid #fab518;margin-top: 6px;}
+.lastsection img{float: right;margin-top: 7px;}
 footer{border-top: 15px solid #e95436;margin-top: 50px;}
 .navbar-nav{margin-top: 30px;}
 .footernav{
@@ -176,6 +176,8 @@ footer ul li { display: inline;padding: 15px;}
 	border-bottom: 5px solid #fab518;
 	padding-bottom: 5px;
 	margin: 35px auto;
+	width: 623px;
+	margin-left: -1px;
 }
 .socialacc{
 	font-family: 'source_sans_probold';
@@ -239,7 +241,7 @@ footer ul li { display: inline;padding: 15px;}
 	font-family: 'source_sans_probold';
 	width: 220px;
 	border-radius: 10px;
-	background: #ecbc39;
+	background: #EC6B39;
 	outline: none;:;
 	margin: 22px;
 	margin: 33px 57px;
