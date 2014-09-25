@@ -170,6 +170,20 @@ footer ul li { display: inline;padding: 15px;}
 	font-family: 'source_sans_proregular';
 	font-size: 20px;}
 /***********css for login page***************/
+
+.modal-lg{
+	max-width: 772px;
+	max-height: 600px;
+	margin-left: 255px;
+	margin-right: 200px;
+	margin-bottom: 100px;
+	margin-top: 150px;
+	
+ border: 5px solid #fab518;
+ border-radius: 5px;
+	
+}
+
 #login{color: #5e350d;
   font-family: 'source_sans_prolight';
   font-size: 48px;
@@ -179,12 +193,12 @@ footer ul li { display: inline;padding: 15px;}
   margin-left: 50px;
 margin-right: 50px;
 }
-.loginxyz{border: 5px solid #fab518;
+.loginxyz{
 border-radius: 5px;
 padding: 36px;
 height: 453px;
-width: 900px;
-margin-left: 0px;
+width: 800px;
+margin-left: -16px;
 
 }
 .socialacc{
