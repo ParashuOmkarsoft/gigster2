@@ -246,7 +246,7 @@ footer ul li { display: inline;padding: 15px;}
 	}
 .firstrow{border-bottom: 1px solid #fab518; padding-bottom: 20px;}
 #gigpara{padding-top: 40px;}
-.giginnerimg img{float: right;padding-top: 40px;}
+.giginnerimg img{float: right;}
 .btn-warning{
 	color: #5e350d;
 	font-size: 20px;
@@ -326,14 +326,8 @@ max-width: 728px;
 height: 100%;
 margin-top: 35px;
 }
-<<<<<<< HEAD
 
 
-
-
-
-=======
->>>>>>> origin/master
 /************Invite model****color: *************/
 #gigmenu {
 
@@ -341,11 +335,8 @@ margin-top: 35px;
     text-decoration: none !important;;
 	color: #5e350d;
 	font-size: 16px;float: right;display: inline;}
-<<<<<<< HEAD
 
 
-=======
->>>>>>> origin/master
 /** pop up **/
 
 
@@ -563,6 +554,11 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 	color: #473610;
 	margin-left: 15px;
 }
+.mikename{
+	float: right;
+	font-size: 30px;
+	font-family: 'source_sans_prosemibold';
+	color: #5e350d; }
 .james{
 	font-size: 20px;
 	font-family: 'source_sans_proregular';
