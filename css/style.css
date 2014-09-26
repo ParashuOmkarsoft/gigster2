@@ -678,7 +678,7 @@ margin-left: -15px;
 	font-size: 18px;
 	font-family: 'source_sans_proregular';
 	color: #473610;
-	margin-top: 16px;
+	margin-top: 5px;
 	}
 .clearsecond{
 	clear: both;
@@ -691,6 +691,7 @@ margin-left: -15px;
 	font-size: 20px;
 	font-family: 'source_sans_proregular';
 	color: #473610;
+	margin-left: 15px;
 }
 {padding-left: 51px;}
 #gigger {
@@ -701,5 +702,5 @@ border-bottom: 5px solid #fab518;
 padding-bottom: 10px;
 margin: 1px auto;
 }
-.person1 {margin-top: -43px;}
-.person1 img{margin: 63px 0px 0px -15px;}
+.person1 {margin-top: 19px;}
+.person1 img{margin-left: -15px;}
