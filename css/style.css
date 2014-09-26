@@ -628,3 +628,8 @@ span.play-icon{position: absolute; left: 31%; top: 32%; display: none;}
 }	
 /*.giginner {margin-top: -35px;}*/
 .mailsymbol{margin-top: -22px;text-align: right;;}
+#alldate{
+	font-size: 20px;
+	font-family: 'source_sans_proregular';
+	color: #473610;
+}
