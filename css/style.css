@@ -257,7 +257,8 @@ footer ul li { display: inline;padding: 15px;}
 	}
 .firstrow{border-bottom: 1px solid #fab518; padding-bottom: 20px;}
 #gigpara{padding-top: 40px;}
-.giginnerimg img{float: right;}
+.giginnerimg img{float: right; }
+#front{padding-left: 51px;}
 .gigimg .btn-warning{
 	color: #fff;
 	font-size: 20px;
@@ -649,7 +650,7 @@ margin-left: -15px;
 
 #gigdetail {border-bottom: 3px solid #fab518;}
 .service{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'source_sans_proregular';
 	color: #473610;
 	margin-top: 16px;
@@ -666,3 +667,4 @@ margin-left: -15px;
 	font-family: 'source_sans_proregular';
 	color: #473610;
 }
+{padding-left: 51px;}
