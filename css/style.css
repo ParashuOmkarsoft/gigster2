@@ -171,14 +171,14 @@ footer ul li { display: inline;padding: 15px;}
 	font-size: 20px;}
 /***********css for login page***************/
 
-.modal-lg{
+/*.modal-lg{
 	max-width: 772px;
 	max-height: 600px;
 	margin-left: 255px;
 	margin-right: 200px;
 	margin-bottom: 100px;
 	margin-top: 150px;	
-}
+}*/
 .modelb{border: 5px solid #fab518;
  border-radius: 5px;
 	}
