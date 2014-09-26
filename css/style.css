@@ -450,7 +450,7 @@ margin-left: 40px;
 	color: #5e350d;
 	line-height: 11px;}
 .postgigforminner {margin-left: 15px;}
-.postgigforminner input[type=text]{width: 70%;border-radius: 0px;border: 1px solid #fab518;}
+.postgigforminner input[type=text]{width: 70%;border-radius: 0px;border: 1px solid #fab518;margin-left: 28px;}
 #description{width: 70%;border-radius: 0px;border: 1px solid #fab518;}
 .postgigforminner ::-webkit-input-placeholder {
 	font-family: 'source_sans_prosemibold';
@@ -459,7 +459,8 @@ margin-left: 40px;
 	opacity:1;
 }
 .postgigforminner .form-group{
-	margin-top: 15px;}
+	margin-top: 15px;
+	margin-left: 10px;}
 .postgigforminner .radio-inline{
 	color: #e2ae7a;
 	font-size: 18px;
@@ -472,8 +473,12 @@ margin-left: 40px;
 	border-radius: 10px;
 	background: #EC6B39;
 	outline: none;
-	margin: 8px 0px;}
-
+	margin: 8px 0px 0px 47px;}
+#creategig{ margin-left: 55px;}
+#description{margin-left:149px;margin-top: -17px;}
+.labelb{margin-left: -16px;}
+.dis{margin-left: 24px;}
+.radiob{margin-left: 1px;}
 
 /************Invite model*****************/
 #invite {
