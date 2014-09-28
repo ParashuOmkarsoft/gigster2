@@ -730,3 +730,35 @@ margin: 1px auto;
 }
 .person1 {margin-top: 19px;}
 .person1 img{margin-left: -15px;}
+
+
+/****Bidon Model***/
+#bidon{color: #5e350d;
+  font-family: 'source_sans_prolight';
+  font-size: 48px;
+  border-bottom: 5px solid #fab518;
+  padding-bottom: 10px;
+  margin: 1px auto;
+  margin-left: 50px;
+margin-right: 50px;
+}
+
+.ladyfashion{
+  font-family: 'source_sans_probold';
+  font-size: 24px;
+  color: #5e350d;
+  line-height: 11px;
+margin-left: 50px;
+}
+.bidgigxyz{
+	border-radius: 5px;
+padding: 36px;
+height: 453px;
+width: 800px;
+margin-left: -16px;
+
+}
+#bidimg{
+	float: right;
+
+}
