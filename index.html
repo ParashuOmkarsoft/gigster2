@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
      <link href="css/style.css" rel="stylesheet">  
+      <link href="styles/glDatePicker.default.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,11 +99,10 @@
               </div>
             </div>
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
-            <div class="form-group">
-              <div class="col-sm-10">
-                <input style="width:30%" type="text" class="form-control"  placeholder="">
-              </div>
-            </div>
+            <input type="text" id="mydate" gldp-id="mydate" style="width:30%" />
+   					 <div gldp-el="mydate"
+         					style="width:400px; height:300px; position:absolute; top:70px; left:100px;">
+   					 </div>
 
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
@@ -116,12 +116,15 @@
               </div>            
               </div>
                <button type="submit" class="btn btn-warning">Post Gig</button>
-            </div> 
+            </div>
+
 
             <div class="form-group submit">
               <div class="col-sm-offset-2 col-sm-10">
+
                 
             </div>
+
           </form>
       
     </section>
@@ -173,5 +176,13 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="glDatePicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function()
+        {
+            $('input').glDatePicker();
+        });
+    </script>
   </body>
 </html>
