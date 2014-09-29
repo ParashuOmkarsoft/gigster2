@@ -456,7 +456,7 @@ margin-left: 40px;
 	color: #5e350d;
 	line-height: 11px;}
 /*.postgigforminner {margin-left: 15px;}*/
-.postgigforminner input[type=text]{width: 70%;border-radius: 0px;border: 1px solid #fab518;}
+.postgigforminner input[type=text]{width: 70%;border-radius: 0px;border: 1px solid #fab518;padding: 6px;}
 #gigdescription{width: 70%;border-radius: 0px;border: 1px solid #fab518;}
 .postgigforminner ::-webkit-input-placeholder {
 	font-family: 'source_sans_prosemibold';
