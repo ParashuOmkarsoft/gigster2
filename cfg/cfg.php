@@ -19,13 +19,13 @@ if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 	$__dbpass = "deep";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST']."/gigster/";
+	$serverpath = "http://".$_SERVER['HTTP_HOST']."/gigster2/";
 	define( 'SERVERPATH', $serverpath );
-	$innerpath = "http://".$_SERVER['HTTP_HOST']."/gigster/inner/";
+	$innerpath = "http://".$_SERVER['HTTP_HOST']."/gigster2/inner/";
 	define( 'INNERPATH', $innerpath );
 	$adminpath = $serverpath."cadmin/";
 	define( 'ADMINPATH', $adminpath );
-	$upload_path=$_SERVER['DOCUMENT_ROOT']."/gigster/uploads/";
+	$upload_path=$_SERVER['DOCUMENT_ROOT']."/gigster2/uploads/";
 	setcookie("serverpath",$serverpath);
 	$sitename="Gigster";
 	$currency="SGD";
@@ -72,6 +72,28 @@ elseif ('gigster.fountaintechies.com' == $sitedef)
 	$currency="SGD";
 	$fbAppId="846990408668822";
 	$fbAppSecret="caefe0e5bf76054cc7f1edef85cc2674";	}
+	
+elseif ('gigster2.fountaintechies.com' == $sitedef)
+{
+	 $__dbhost = "localhost";
+	 $__dbname = "gigster";
+	 $__dbuser = "gigster";
+	$__dbpass = "4mAm8CYF4SA2Vh6h";
+	define( 'HTTP_ROOT', '/' );
+	define( 'DEBUG', false );
+	 $serverpath = "http://".$_SERVER['HTTP_HOST']."/";
+	define( 'SERVERPATH', $serverpath );
+	 $innerpath = "http://".$_SERVER['HTTP_HOST']."/";
+	define( 'INNERPATH', $innerpath );
+	$adminpath = $serverpath."xadmin/";
+	define( 'ADMINPATH', $adminpath );
+	 $upload_path=$_SERVER['DOCUMENT_ROOT']."/uploads/";
+	setcookie("serverpath",$serverpath);
+	$sitename="Gigster";
+	$currency="SGD";
+	$fbAppId="846990408668822";
+	$fbAppSecret="caefe0e5bf76054cc7f1edef85cc2674";
+}	
 
 db_connect();
 
