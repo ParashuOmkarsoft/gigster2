@@ -781,3 +781,66 @@ margin-left: -16px;
 	outline: none;
 	margin-top: 12px;
 }
+
+
+
+/*************NEW LOGIN********************************************************/
+
+.newlog{
+	font-family: 'source_sans_probold';
+  font-size: 20px;
+  color: #5e350d;
+
+}
+
+.passinpute{
+margin-left: 35px;
+width: 262px;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #febe07;
+border-radius: 0px;}
+
+.loginbtn{color: #fff;
+	font-size: 22px;
+	font-family: 'source_sans_probold';
+	width: 122px;
+	height: 42px;
+	border-radius: 10px;
+	background: #EC6B39;
+	outline: none;
+	margin-left: 12px;
+
+}
+.cform{
+	max-width: 726px;
+	border: 5px solid #febe07;
+	border-radius: 3px;
+	padding: 33px;
+}
+.hform{
+	margin-top: 60px;
+	margin-left: -16px;
+}
+.fbimg{
+float: right;
+margin-top: 30px;
+border-left:1px solid #febe07;
+padding: 27px 48px;
+
+
+}
+
+.logsign{padding-left: 39px;}
+.modal-social-icons{padding:1 10%;}
+.facebook, .twitter, .google, .linkedin {width:100%;height:40px; padding-top:2%; margin-top:2%;}
+.modal-icons{margin-left: -10px; margin-right: 20px;}
+.google, .google:hover{background-color:#dd4b39;border:2px solid #dd4b39;color:#fff;}
+.twitter, .twitter:hover{ background-color: #00aced; border:2px solid #00aced;color: #fff;}
+/*.facebook, .facebook:hover{background-color: #3b5999; border:2px solid #3b5999;color:#fff;}
+*/.linkedin, .linkedin:hover{background-color: #007bb6; border: 2px solid #007bb6; color:#fff;}
