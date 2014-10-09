@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /gigster/
+
+RewriteRule ^(cfg)($|/) - [L]
+RewriteRule ^(css)($|/) - [L]
+RewriteRule ^(font-awesome)($|/) - [L]
+RewriteRule ^(fonts)($|/) - [L]
+RewriteRule ^(img)($|/) - [L]
+RewriteRule ^(js)($|/) - [L]
+RewriteRule ^(sdk)($|/) - [L]
+RewriteRule ^(lib)($|/) - [L]
+
+
+#Site Settings
+
+
+RewriteRule ^checkout logout.php
+RewriteRule ^myaccount my-account.php
+
+
+</IfModule>

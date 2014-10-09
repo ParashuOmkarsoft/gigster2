@@ -778,7 +778,7 @@ margin-left: -16px;
 /*******Signup page css*************/
 
 .signup .form-control{
-	width: 100%;
+	width: 50%;
 	border: 1px solid #fab518;
 }
 .signup  .btn-warning{
@@ -791,7 +791,6 @@ margin-left: -16px;
 	outline: none;
 	margin-top: 12px;
 }
-.model{overflow-y: hidden;}
 
 /*.signup .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
 position: relative;
@@ -800,14 +799,6 @@ position: relative;
 
 .remember .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox]{position: relative;
 margin: 4px;};
-.logsign a{
-	color: #fff;
-    text-decoration: none;
-}
-
-.loginbtn a:hover, a:focus{
-	color: #fff;
-    text-decoration: none;}
 
 
 
