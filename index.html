@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
      <link href="css/style.css" rel="stylesheet">  
-      <link href="styles/glDatePicker.default.css" rel="stylesheet" type="text/css">
+     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -100,10 +100,7 @@
             </div>
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
             <input type="text" id="mydate" gldp-id="mydate" style="width:30%" />
-   					 <div gldp-el="mydate"
-         					style="width:400px; height:300px; position:absolute; top:70px; left:100px;">
-   					 </div>
-
+   					
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
               <div class="col-sm-10 ">
@@ -136,39 +133,45 @@
 <!-- start login popup -->
     <div id="loginmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">          
-    <div class="container modelb">
-      <div class="row loginxyz">
-      <h2 id="login">Login </h2>    
-            <h2 class="socialacc create1">Create an account using any of your social profiles.</h2>
-            <h2 class="socialacc">Sign Up for a free account Now.</h2>
+        <div class="modal-content cform">          
+    <div class="container">
+       <div class="col-md-12">
 
-          <div class="col-md-12">
-           <div id="logjpg"><img src="images/page1.jpg"></div>
-          </div>
-          </div> 
+         <h2 id="login1">Login </h2>    
+            <h2 class="source">Create an account using any of your social profiles.</h2>  
+            <h2 class="source">Sign Up for a new free account Now. </h2>
+       <div class="col-md-8"><form class="form-horizontal hform" role="form">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label newlog">Username</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control passinpute" id="inputEmail3" placeholder="">
+    </div>
   </div>
-</div>
-</div>
-</div>
-<!-- close login popup -->
-    <footer>
-      <div>
-          <div class="col-md-8">              
-                    <ul class="footernav">
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Help</a></li>
-                          <li><a href="#">Contact</a></li>
-                          <li><a href="#">Terms</a></li>
-                          <li><a href="#">Privacy</a></li>                      
-                     </ul>             
-          </div>        
-              <div class="col-md-4">  
-                 <div id="footerimages">
-                  <img src="images/facebook.png">  <img src="images/twitter.png">
-                 </div>        
-              </div>          
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control passinpute" id="inputPassword3" placeholder="">
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10 logsign">
+      <button type="submit" class="btn btn-warning loginbtn">Login</button>
+      <button type="submit" class="btn btn-warning loginbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div><div class="col-md-4 fbimg"> <div class="modal-social-icons">
+                            <a href='https://www.facebook.com/'><img src="images/facebook1.png" style="padding-bottom:10px;"> </a>
+                            <a href='#'><img src="images/twitter1.png" style="padding-bottom:10px;"> </a>
+                            <a href='#'><img src="images/link.png" style="padding-bottom:10px;"> </a>
+                            <a href='#'><img src="images/google.png" style="padding-bottom:10px;"> </a>
+                        </div> </div>
+         
        </div>
+
+
     </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -176,13 +179,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="glDatePicker.min.js"></script>
-
-    <script type="text/javascript">
-        $(window).load(function()
-        {
-            $('input').glDatePicker();
-        });
-    </script>
+   
   </body>
 </html>
