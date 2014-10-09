@@ -762,3 +762,22 @@ margin-left: -16px;
 	float: right;
 
 }
+
+
+
+/*******Signup page css*************/
+
+.signup .form-control{
+	width: 50%;
+	border: 1px solid #fab518;
+}
+.signup  .btn-warning{
+	color: #fff;
+	font-size: 22px;
+	font-family: 'source_sans_prosemibold';
+	width: 180px;
+	border-radius: 10px;
+	background: #EC6B39;
+	outline: none;
+	margin-top: 12px;
+}
