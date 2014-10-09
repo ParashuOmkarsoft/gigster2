@@ -27,14 +27,29 @@
             <a href="index.html"><img src="images/logo.png"></a>
           </div>
           <div class="col-md-8">
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+          <nav class="navbar navbar-default hmenu" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right ">
                       <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
                       <li><a href="giglist.html">LIST GIGS</a></li>
                       <li><a href="gigsters.html">GIGSTERS</a></li>
                       <li><a data-toggle="modal" href="#loginmodel" >LOGIN</a></li>                                            
                  </ul>
-              </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
           </div>
           <div class="clearfix"></div> 
         </div>
@@ -99,8 +114,8 @@
               </div>
             </div>
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
-            <input type="text" id="mydate" gldp-id="mydate" style="width:30%" />
-   					
+            <input type="text" id="mydate" gldp-id="mydate" style="width:30%"  />
+            
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
               <div class="col-sm-10 ">
@@ -158,7 +173,7 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10 logsign">
       <button type="submit" class="btn btn-warning loginbtn">Login</button>
-      <button type="submit" class="btn btn-warning loginbtn"><a style="color: #fff;" data-toggle="modal" href="#signupmodel">Sign Up</a></button>
+      <button type="submit" class="btn btn-warning loginbtn">Sign Up</button>
     </div>
   </div>
 </form>
@@ -170,55 +185,6 @@
                         </div> </div>
          
        </div>
-
-
-<!-- signup popup -->
-<div id="signupmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content cform">          
-    <div class="container signup">
-       <div class="col-md-12">
-
-         <h2 id="login1">Sign up</h2>  
-            
-       <div class="col-md-8">
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
-                  <label for="inputUsername" class="col-sm-2 control-label">Username</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputUsername" placeholder="User name">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="Password" class="col-sm-2 control-label">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="Password" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="confirmpassword" class="col-sm-2 control-label">Confirm password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm password">
-                  </div>
-                </div>
-               
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-warning">Sign up</button>
-                  </div>
-                </div>
-            </form>
-
-</div>                      
-         
-       </div>
-
 
 
     </footer>

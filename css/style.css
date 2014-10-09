@@ -37,6 +37,7 @@
 }
 header{border-top: 13px solid #e95436;}
 header img{margin: 8px 0px 16px 0px;}
+.hmenu{border-color: #fff;background-color: #fff}
 #grad{
     height: 25px;
     background: -webkit-linear-gradient(#cac9ca, white); /* For Safari 5.1 to 6.0 */
@@ -47,6 +48,15 @@ header img{margin: 8px 0px 16px 0px;}
 	font-family: 'source_sans_probold'; 
 	color: #5e350d;
 	font-size: 18px;}
+.navbar-default .navbar-nav>li>a {
+font-family: 'source_sans_probold'; 
+	color: #5e350d;
+	font-size: 18px;
+	}
+	
+.navbar-nav.navbar-right:last-child {
+margin-right: -42px;
+}
 body p{
 	color: #786c50;
 	font-family: 'source_sans_proregular';
