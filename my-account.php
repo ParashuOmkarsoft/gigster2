@@ -109,22 +109,6 @@ include('cfg/more-functions.php');
 	  }
 	   ?></p>
       <div class="row">
-        <div class="col-md-6"><h5 id="title">Experience</h5></div>
-        <div class="col-md-6"><img src="images/add.png"></div>
-      </div>
-    </section>
-    <section class="container thirdsection">
-      <div class="row">
-        <div class="col-md-6"><h4>Red Comet Online Course Provider</h4></div>
-        <div class="col-md-6"><img src="images/editdelete.png"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-10"><p>TrueTravelReviews.com is an online review website featuring reviews of restaurants, 
-          hotels, and attractions based on our actual experiences while traveling. 
-          TrueTravelReviews.com also features two self-published travel guides that are 
-          available on Amazon.</p></div>        
-      </div>      
-      <div class="row">
         <div class="col-md-6"><h5 id="title">Gigs Completed</h5></div>        
       </div>  
     </section>
