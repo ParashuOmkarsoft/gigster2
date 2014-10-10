@@ -16,13 +16,13 @@ include('cfg/more-functions.php');
   <body>
         <?php include('top-menu.php'); ?>
     <div id="grad"></div>
-    <section class="container">
+    <!--<section class="container">
       <ul id="profilemenu">
         <li><a href="#">MY GIG</a></li>
         <li><a href="#">MY ASSIGNMENTS</a></li>
         <li><a href="#"><h5 id="ass">PROFILE</h5></a></li>                              
       </ul> 
-    </section>
+    </section>-->
      <section class="container">
       <ul id="profilemenu">
         <li><a href="#">My Profile</a></li>       

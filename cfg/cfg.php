@@ -77,8 +77,8 @@ elseif ('gigster2.fountaintechies.com' == $sitedef)
 {
 	 $__dbhost = "localhost";
 	 $__dbname = "gigster";
-	 $__dbuser = "gigster";
-	$__dbpass = "4mAm8CYF4SA2Vh6h";
+	 $__dbuser = "root";
+	$__dbpass = "10gXWOqeaf";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
 	 $serverpath = "http://".$_SERVER['HTTP_HOST']."/";

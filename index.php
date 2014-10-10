@@ -16,7 +16,7 @@ include('cfg/more-functions.php');
   <body>
     <?php include('top-menu.php'); ?>
         <div id="grad"></div>
-    <?php include('lower-menu.php'); ?>
+    <?php //include('lower-menu.php'); ?>
 
 
     <div id="imgback">
