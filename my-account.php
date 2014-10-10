@@ -16,13 +16,7 @@ include('cfg/more-functions.php');
   <body>
         <?php include('top-menu.php'); ?>
     <div id="grad"></div>
-    <!--<section class="container">
-      <ul id="profilemenu">
-        <li><a href="#">MY GIG</a></li>
-        <li><a href="#">MY ASSIGNMENTS</a></li>
-        <li><a href="#"><h5 id="ass">PROFILE</h5></a></li>                              
-      </ul> 
-    </section>-->
+ 
      <section class="container">
       <ul id="profilemenu">
         <li><a href="#">My Profile</a></li>       
@@ -70,7 +64,14 @@ include('cfg/more-functions.php');
             </h2>
           </div>
           <div class="col-md-6">
-            <img src="images/person1.jpg">
+          <?php if($uInfo['profileimage'])
+		  {
+			  $pfimage=$uInfo['profileimage'];
+			  ?>
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=100&height=100">
+            <?php
+		  }
+			?>
           </div>          
       </div>
          
@@ -112,6 +113,7 @@ include('cfg/more-functions.php');
         <div class="col-md-6"><h5 id="title">Gigs Completed</h5></div>        
       </div>  
     </section>
+
     <section class="container lastsection">
       <div class="row">
         <div class="col-md-6"><h4>High Length, High Quality Article</h4><span class="date">Sept 10,2013-Sept 15,2013</span>
