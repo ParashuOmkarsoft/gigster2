@@ -109,31 +109,48 @@ include('cfg/more-functions.php');
 		  echo "N/A";
 	  }
 	   ?></p>
-      <div class="row">
-        <div class="col-md-6"><h5 id="title">Gigs Completed</h5></div>        
-      </div>  
+       
+      
     </section>
+<?php 
+	   $assignedgigs=get_user_assigned_projects($uInfo['userId']);
 
+	   ?>
     <section class="container lastsection">
       <div class="row">
-        <div class="col-md-6"><h4>High Length, High Quality Article</h4><span class="date">Sept 10,2013-Sept 15,2013</span>
-          <h4>Feedback :</h4>
-        </div>
-        <div class="col-md-6"><img src="images/star.png"><h4 id="doller">&#36 420.00</h4></div>        
-      </div>  
-       <p id="para">A professional service, highest quality, delivered on time, exactly as specified 
-        with fantastic customer service. 10/10. I would recommend this service without doubt.</p>
-    </section>
+        <div class="col-md-6"><h5 id="title">Gigs</h5></div>        
+      </div>
+       </section>
+      <?php if($assignedgigs)
+	  {
+		for($i=0;$i<$assignedgigs['count'];$i++)
+		{
+			$assignedgig=$assignedgigs['rows'][$i];
+			$assignedgigdetails=get_gig_details($assignedgig['projectId']);
+		  ?>
+      
     <section class="container lastsection ">
       <div class="row">
-        <div class="col-md-6"><h4>High Length, High Quality Article</h4><span class="date">Sept 10,2013-Sept 15,2013</span>
-          <h4>Feedback :</h4>
+        <div class="col-md-6"><h4><?php echo $assignedgigdetails['prjTitle'];?></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
+          <h4>Description :</h4>
         </div>
-        <div class="col-md-6"><img src="images/star.png"><h4 id="doller"> &#36 420.00</h4></div>        
+       <!-- <div class="col-md-6"><img src="images/star.png"><h4 id="doller"> &#36 420.00</h4></div>-->        
       </div>  
-       <p id="para">A professional service, highest quality, delivered on time, exactly as specified 
-        with fantastic customer service. 10/10. I would recommend this service without doubt.</p>
-    </section>
+       <p id="para"><?php echo stripslashes($assignedgigdetails['prjdesc']); ?></p>
+        </section>
+        <?php
+		}
+	  }
+	  else
+	  {
+		 ?>
+          <section class="container lastsection ">
+		  <p id="para">Sorry, No Gigs assigned to you.</p>
+          </section>	
+		 <?php 
+	  }
+		?>
+    
     <footer>
       <div>
           <div class="col-md-8">              
