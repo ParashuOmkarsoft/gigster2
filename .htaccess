@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /gigster2/
 
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
@@ -17,6 +17,6 @@ RewriteRule ^(lib)($|/) - [L]
 
 RewriteRule ^checkout logout.php
 RewriteRule ^myaccount my-account.php
-
+RewriteRule ^updateInfo update-info.php
 
 </IfModule>

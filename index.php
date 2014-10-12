@@ -36,11 +36,8 @@ include('cfg/more-functions.php');
 
     </footer>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo $serverpath;?>js/jquery.min.js"></script>
-    <script src="<?php echo $serverpath;?>js/bootstrap.min.js"></script>
-   <iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
+<?php
+include('footer.php'); 
+?>
   </body>
 </html>

@@ -79,9 +79,9 @@ include('cfg/more-functions.php');
     <section class="container secondsection">
      <div class="row">
             <div class="col-md-6"><h5 id="title">About Us</h5></div>
-            <div class="col-md-6"><img src="images/pencil.png"></div>
+            <div class="col-md-6"><a href='#' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
-      <p><?php
+      <p id="aboutuspara"><?php
 	  if($uInfo['aboutus'])
 	  {
 	   echo stripslashes($uInfo['aboutus']); 
@@ -92,6 +92,15 @@ include('cfg/more-functions.php');
 		  echo "N/A";
 	  }
 	   ?></p>
+       <form action="<?php echo $serverpath;?>updateInfo" method="post" id="frmaboutus" class="mhidden">
+       <input type="hidden" id="userId" name="userId" value="<?php echo $uInfo['userId'];?>" />
+       <div class="form-group">
+       <textarea name="aboutus" id="aboutus" class="form-control"><?php echo $uInfo['aboutus'];?></textarea>
+       </div>
+       <div class="form-group">
+       <button type="submit" class="btn btn-primary">Update</button>
+       </div>
+       </form>
        </section>
         <section class="container secondsection">
        <div class="row">
@@ -134,9 +143,8 @@ include('cfg/more-functions.php');
         <div class="col-md-6"><h4><?php echo $assignedgigdetails['prjTitle'];?></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
           <h4>Description :</h4>
         </div>
-       <!-- <div class="col-md-6"><img src="images/star.png"><h4 id="doller"> &#36 420.00</h4></div>-->        
       </div>  
-       <p id="para"><?php echo stripslashes($assignedgigdetails['prjdesc']); ?></p>
+       <p id="para"><?php echo stripslashes($assignedgigdetails['prjdescs']); ?></p>
         </section>
         <?php
 		}
@@ -164,12 +172,11 @@ include('cfg/more-functions.php');
           </div>        
               <div class="col-md-4">  
                  <div id="footerimages">
-                  <img src="images/facebook.png">  <img src="images/twitter.png">
+                  <img src="<?php echo $serverpath;?>images/facebook.png">  <img src="<?php echo $serverpath;?>images/twitter.png">
                  </div>        
               </div>          
        </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<?php include('footer.php'); ?>
   </body>
 </html>
