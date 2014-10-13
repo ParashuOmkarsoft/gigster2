@@ -22,8 +22,8 @@ include('cfg/more-functions.php');
 
 <section class="container">
       <h2 id="logingigster1">Open Gigs</h2>
-      <?php  $opengigs=get_all_projects($uId,'1');
-	  
+      <?php  $opengigs=@db_query("select * from btr_projects  where bidto>now() order by postedon DESC");
+	   print_r($opengigs);
 	  if($opengigs['count']>0)
 	  {
 		  if($opengigs['count']>10)
@@ -34,7 +34,7 @@ include('cfg/more-functions.php');
 		  {
 			  $mcount=$opengigs['count'];
 		  }
-		  print_r($opengigs);
+		 
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];
