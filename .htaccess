@@ -20,4 +20,5 @@ RewriteRule ^myaccount my-account.php
 RewriteRule ^updateInfo update-info.php
 RewriteRule ^gigsters gigster-list.php
 RewriteRule ^gigsterInfo/([^/]*)/([^/]*)$ user-account.php?pId=$2 [L]
+RewriteRule ^gigs gigslist.php
 </IfModule>

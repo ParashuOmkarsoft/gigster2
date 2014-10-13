@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <!-- Bootstrap -->   
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+     <link href="css/style.css" rel="stylesheet">  
+      <link href="styles/glDatePicker.default.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="index.html"><img src="images/logo.png"></a>
+          </div>
+          <div class="col-md-8">
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                      <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
+                      <li><a href="giglist.html">LIST GIGS</a></li>
+                      <li><a href="gigsters.html">GIGSTERS</a></li>
+                      <li><a data-toggle="modal" href="#loginmodel" >LOGIN</a></li>                                            
+                 </ul>
+              </div>
+          </div>
+          <div class="clearfix"></div> 
+        </div>
+      </div>
+    </header>
+        <div id="grad"></div>
+    <section class="container">
+      <ul id="profilemenu">
+        <li><a href="mygigs-Bidding.html">MY GIG</a></li>
+        <li><a href="myassignment.html">MY ASSIGNMENTS</a></li>
+        <li><a href="profile.html">PROFILE</a></li>                              
+      </ul>
+
+    </section>
+
+<section class="container">
+      <h2 id="logingigster1">Open Gigs</h2>
+      <div class="row firstrow">
+         <div class="col-md-8">
+            <h2 id="giglisth2">Looking for a marriage photographer</h2>
+            <h2 id="map">Yishun, Singapore</h2>
+              <div class="col-md-4"><span id="bid">6 Bids</span></div>
+              <div class="col-md-8"><span class="bid">Posted : 2 hours ago<span></div>
+              <p id="gigpara">Hy there I am looking for a special photo editing app for I-Phone. My friend already
+                  has this but he kept it as secret. I have some pics for you as exampel..... 
+                  Best regards Erika</p>
+          </div>
+         <div class="col-md-4 giginnerimg gigimg">
+              <div class="col-md-6">
+                   <img src="images/star.png">
+                   <h4>6 Reviews</h4>
+                   <h4>10 Jobs</h4>
+              </div>
+              <div class="col-md-6">
+                   <img src="images/person1.jpg">
+              </div>
+            <a data-toggle="modal" href="#bidmodel" ><button type="button" class="btn btn-warning">Bid</button></a>  
+
+
+
+            <!-- start bid model -->
+              <div id="bidmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">          
+    <div class="container modelb">
+      <div class="row loginxyz">
+          
+            
+
+          <div class="col-md-12">
+           <div id="logjpg"><img src="images/bidongig.png"></div>
+          </div>
+          </div> 
+  </div>
+</div>
+</div>
+</div>
+                <!-- ssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+          </div>
+
+
+          </div> 
+         </div>
+        </div>
+      </div>
+    </div>
+
+            
+
+
+         </div>
+      </div>
+
+<!-- close bidmodel -->
+      <div class="row firstrow">
+         <div class="col-md-8">
+            <h2 id="giglisth2">Looking for a marriage photographer</h2>
+            <h2 id="map">Yishun, Singapore</h2>
+              <div class="col-md-4"><span id="bid">6 Bids</span></div>
+              <div class="col-md-8"><span class="bid">Posted : 2 hours ago<span></div>
+              <p id="gigpara">Hy there I am looking for a special photo editing app for I-Phone. My friend already
+                  has this but he kept it as secret. I have some pics for you as exampel..... 
+                  Best regards Erika</p>
+          </div>
+         <div class="col-md-4 giginnerimg gigimg">
+              <div class="col-md-6">
+                   <img src="images/star.png">
+                   <h4>6 Reviews</h4>
+                   <h4>10 Jobs</h4>
+              </div>
+              <div class="col-md-6">
+                   <img src="images/person1.jpg">
+              </div>
+       <a data-toggle="modal" href="#bidmodel" ><button type="button" class="btn btn-warning">Bid</button></a>
+
+
+         </div>
+      </div>
+
+      <div class="row firstrow">
+         <div class="col-md-8">
+            <h2 id="giglisth2">Looking for a marriage photographer</h2>
+            <h2 id="map">Yishun, Singapore</h2>
+              <div class="col-md-4"><span id="bid">6 Bids</span></div>
+              <div class="col-md-8"><span class="bid">Posted : 2 hours ago<span></div>
+              <p id="gigpara">Hy there I am looking for a special photo editing app for I-Phone. My friend already
+                  has this but he kept it as secret. I have some pics for you as exampel..... 
+                  Best regards Erika</p>
+          </div>
+         <div class="col-md-4 giginnerimg gigimg">
+              <div class="col-md-6">
+                   <img src="images/star.png">
+                   <h4>6 Reviews</h4>
+                   <h4>10 Jobs</h4>
+              </div>
+              <div class="col-md-6">
+                   <img src="images/person1.jpg">
+              </div>
+            <a data-toggle="modal" href="#bidmodel" ><button type="button" class="btn btn-warning">Bid</button></a>        
+         </div>
+      </div>
+
+      <div class="row firstrow">
+         <div class="col-md-8">
+            <h2 id="giglisth2">Looking for a marriage photographer</h2>
+            <h2 id="map">Yishun, Singapore</h2>
+              <div class="col-md-4"><span id="bid">6 Bids</span></div>
+              <div class="col-md-8"><span class="bid">Posted : 2 hours ago<span></div>
+              <p id="gigpara">Hy there I am looking for a special photo editing app for I-Phone. My friend already
+                  has this but he kept it as secret. I have some pics for you as exampel..... 
+                  Best regards Erika</p>
+          </div>
+         <div class="col-md-4 giginnerimg gigimg">
+              <div class="col-md-6">
+                   <img src="images/star.png">
+                   <h4>6 Reviews</h4>
+                   <h4>10 Jobs</h4>
+              </div>
+              <div class="col-md-6">
+                   <img src="images/person1.jpg">
+              </div>
+            <a data-toggle="modal" href="#bidmodel" ><button type="button" class="btn btn-warning">Bid</button></a>      
+         </div>
+      </div>
+      <div class="lastpagination">
+          <ul class="pagination">
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul> 
+      </div>
+    </section>
+    <section class="container giglast">
+      <h2 id="login">Our Gigsters</h2>
+      <div class="row">
+         <div class="col-md-4">   
+           <img src="images/person1.jpg">
+           <div>
+              <span>Mike Fisher</span>
+              <span id="map">Yishun, Singapore</span>
+              <span id="artist">ux, photographer, design artist</span>
+           </div>           
+         </div>
+         <div class="col-md-4"> 
+          <img src="images/person1.jpg">
+           <div>
+              <span>Mike Fisher</span>
+              <span id="map">Yishun, Singapore</span>
+              <span id="artist">ux, photographer, design artist</span>
+           </div> 
+         </div>
+         <div class="col-md-4">
+            <img src="images/person1.jpg">
+           <div>
+              <span>Mike Fisher</span>
+              <span id="map">Yishun, Singapore</span>
+              <span id="artist">ux, photographer, design artist</span>
+           </div> 
+         </div>
+      </div>
+
+    </section>
+
+
+<!-- start postgig popup -->
+    <!-- Modal code -->
+
+   <!--  <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+ -->
+  <div id="postgigmodel" class="modal fade  bs-example-modal-lg modelw " tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <section class="postgigform ">                       
+         <h2 id="login1">Post a Gig </h2>    
+            <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>                          
+            
+          <form class="form-horizontal postgigforminner " role="form">
+            <div class="form-group">
+              <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
+              <div class="col-sm-10"> 
+                <input type="text" class="form-control" id="creategig" placeholder="Looking for a marriage photographer" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="gigdescription" placeholder="Describe your gig" row="5" column="10"></textarea>  
+              </div>
+            </div>
+            <h2 class="loginlead"> Would you like the job to be hourly or fixed ?</h2>
+            <div class="form-group">
+              <div class=" col-sm-10 ">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions"  value="option1"> Hourly
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions"  value="option2">Fixed Price
+                </label>                
+              </div>
+            </div>
+            <h2 class="loginlead">Whats the best hourly pricing you intend to pay ?</h2>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input style="width:30%" type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+            <h2 class="loginlead">Enter expiry date of your Gig</h2>
+            <input type="text" id="mydate" gldp-id="mydate" style="width:30%" />
+             <div gldp-el="mydate"
+                  style="width:400px; height:300px; position:absolute; top:70px; left:100px;">
+             </div>
+
+            <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
+            <div class="form-group">
+              <div class="col-sm-10 ">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions"  value="option1"> Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions"  value="option2">No
+                </label>                   
+              </div>            
+              </div>
+               <button type="submit" class="btn btn-warning">Post Gig</button>
+            </div> 
+
+            <div class="form-group submit">
+              <div class="col-sm-offset-2 col-sm-10">
+                
+            </div>
+          </form>
+      
+    </section>
+      </div>
+    </div>
+  </div>
+
+<!-- close postgig popup -->
+<!-- start login popup -->
+    <div id="loginmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">          
+    <div class="container modelb">
+      <div class="row loginxyz">
+      <h2 id="login">Login </h2>    
+            <h2 class="socialacc create1">Create an account using any of your social profiles.</h2>
+            <h2 class="socialacc">Sign Up for a free account Now.</h2>
+
+          <div class="col-md-12">
+           <div id="logjpg"><img src="images/page1.jpg"></div>
+          </div>
+          </div> 
+  </div>
+</div>
+</div>
+</div>
+<!-- close login popup -->
+    <footer>
+      <div>
+          <div class="col-md-8">              
+                    <ul class="footernav">
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Help</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>                      
+                     </ul>             
+          </div>        
+              <div class="col-md-4">  
+                 <div id="footerimages">
+                  <img src="images/facebook.png">  <img src="images/twitter.png">
+                 </div>        
+              </div>          
+       </div>
+    </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="glDatePicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function()
+        {
+            $('input').glDatePicker();
+        });
+    </script>
+  </body>
+</html>

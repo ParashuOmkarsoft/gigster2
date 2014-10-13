@@ -104,10 +104,10 @@ include('cfg/more-functions.php');
                              
                              
                              </span>
-                             <?php if($gigsterInfo['city'] || $gigsterInfo['country'])
+                             <?php if($gigsterInfo['city'])
 							 {
 								 ?>
-                                <span class="artst-sub"><img src="images/map.png">  <?php echo $gigsterInfo['city'];?><span class="byname"> <?php echo get_country_name($gigsterInfo['country']);?></span> <span class="daysago"></span></span> 
+                                <span class="artst-sub"><img src="images/map.png">  <?php echo $gigsterInfo['city'];?></span>
 							<?php
 							 }
 							?>
