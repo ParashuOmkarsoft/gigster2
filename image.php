@@ -89,6 +89,8 @@ if ($image{0} != '/' || strpos(dirname($image), ':') || preg_match('/(\.\.|<|>)/
 
 // If the image doesn't exist, or we haven't been told what it is, there's nothing
 // that we can do
+$image=urldecode($image);
+
 if (!$image)
 {
 	header('HTTP/1.1 400 Bad Request');

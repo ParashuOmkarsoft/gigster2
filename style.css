@@ -4,3 +4,8 @@
 	display:none;
 }
 
+.mtextarea{
+	font-size:18px;
+	font-weight:normal !important;
+	height:250px;
+}
