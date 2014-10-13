@@ -18,5 +18,6 @@ RewriteRule ^(lib)($|/) - [L]
 RewriteRule ^checkout logout.php
 RewriteRule ^myaccount my-account.php
 RewriteRule ^updateInfo update-info.php
-
+RewriteRule ^gigsters gigster-list.php
+RewriteRule ^gigsterInfo/([^/]*)/([^/]*)$ user-account.php?pId=$2 [L]
 </IfModule>

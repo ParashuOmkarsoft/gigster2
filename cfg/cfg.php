@@ -714,7 +714,7 @@ if($sql['count']>0)
 }
 function get_all_gigsters()
 {
-	$query="select * from btr_users order by username";
+	$query="select * from btr_users order by userId DESC";
 	$sql=@db_query($query);
 	if($sql['count']>0)
 	{

@@ -23,18 +23,7 @@ include('cfg/more-functions.php');
       <img src="<?php echo $serverpath;?>images/womenlap.jpg">
     </div>
 
-<?php if(isset($_SESSION['uId']))
-{
-	include('post-a-gig-modal.php'); 
-}
-?>
-  </div>
 
-<!-- close postgig popup -->
-<!-- start login popup -->
-    <?php include('login-modal.php'); ?>
-
-    </footer>
 
 <?php
 include('footer.php'); 

@@ -9,12 +9,12 @@
                 <ul class="nav navbar-nav navbar-right">
                       <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
                       <li><a href="#">LIST GIGS</a></li>
-                      <li><a href="#">GIGSTERS</a></li>
+                      <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
                       <?php if(isset($_SESSION['uId']))
 					  {
 						  ?>
-						  <li><a href="<?php $serverpath;?>myaccount" >My Account</a></li>                                          
-   						  <li><a  href="<?php $serverpath;?>checkout" target="targetframe" >Logout</a></li>                                          
+						  <li><a href="<?php echo $serverpath;?>myaccount" >My Account</a></li>                                          
+   						  <li><a  href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></li>                                          
 						  <?php
 						   $uInfo=get_user_Info($_SESSION['uId']);
 					  }
