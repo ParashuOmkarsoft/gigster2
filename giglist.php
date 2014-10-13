@@ -23,7 +23,7 @@ include('cfg/more-functions.php');
 <section class="container">
       <h2 id="logingigster1">Open Gigs</h2>
       <?php
-echo	  $gigsquery="select * from btr_projects  where bidto>'".date('Y-m-d')."' order by postedon DESC";
+echo	  $gigsquery="select * from btr_projects  order by postedon DESC";
 	    $opengigs=@db_query($gigsquery);
 	   print_r($opengigs);
 	  if($opengigs['count']>0)
