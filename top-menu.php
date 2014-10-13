@@ -8,7 +8,7 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                       <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
-                      <li><a href="<?php echo $serverpath;?>gigs">LIST GIGS</a></li>
+                      <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
                       <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
                       <?php if(isset($_SESSION['uId']))
 					  {
