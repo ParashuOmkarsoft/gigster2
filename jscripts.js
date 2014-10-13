@@ -5,7 +5,6 @@ function visible_invisible(visible,invisible)
 }
 function change_image(mid,mpath)
 {
-	alert(mpath);
-	alert(unescape(mpath))
+
 	document.getElementById(mid).src=unescape(mpath);
 }
