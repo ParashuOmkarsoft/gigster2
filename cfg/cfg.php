@@ -318,7 +318,7 @@ function valid_pass($pwd) {
 function get_all_projects($uId,$isall){
 	if($isall=='1')
 	{
-	$query="select * from btr_projects  order by postedon DESC";
+	$query="select * from btr_projects  where bidto>now() order by postedon DESC";
 	}
 	else
 	{

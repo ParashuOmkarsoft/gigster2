@@ -25,7 +25,7 @@ include('cfg/more-functions.php');
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-
+</div>
     <div id="our">Our Gigster</div>
 	<?php
 	$gigsters=get_all_gigsters();
