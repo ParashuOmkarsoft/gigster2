@@ -34,6 +34,7 @@ include('cfg/more-functions.php');
 		  {
 			  $mcount=$opengigs['count'];
 		  }
+		  print_r($opengigs);
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];

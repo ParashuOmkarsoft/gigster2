@@ -325,7 +325,7 @@ function get_all_projects($uId,$isall){
 		
 	$query="select * from btr_projects where userId=".$uId."  order by postedon DESC";
 	}
-	echo $query;
+	//echo $query;
 	$sql=@db_query($query);
 	if($sql['count']>0)
 	{
