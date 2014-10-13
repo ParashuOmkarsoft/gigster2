@@ -23,9 +23,9 @@ include('cfg/more-functions.php');
 <section class="container">
       <h2 id="logingigster1">Open Gigs</h2>
       <?php
-echo	  $gigsquery="select * from btr_projects  order by postedon DESC";
+  $gigsquery="select * from btr_projects  order by postedon DESC";
 	    $opengigs=@db_query($gigsquery);
-	   print_r($opengigs);
+
 	  if($opengigs['count']>0)
 	  {
 		  if($opengigs['count']>10)
