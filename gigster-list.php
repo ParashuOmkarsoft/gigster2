@@ -53,7 +53,8 @@ include('cfg/more-functions.php');
 			}
 			$nametodisplay="";
 			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
-			if(!$nametodisplay)
+			$nametodisplay1=str_replace(" ","",$nametodisplay);
+			if(!$nametodisplay1)
 			{
 				$nametodisplay=$gigsterInfo['username'];
 			}
