@@ -84,7 +84,7 @@ include('cfg/more-functions.php');
                 	<td>
                     <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>">
                    <div class="artst-pic pull-left">
-				<?php  echo $gigsterInfo['userId']; ?>
+				<?php // echo $gigsterInfo['userId']; ?>
 					 
                           <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
                        
