@@ -51,13 +51,15 @@ include('cfg/more-functions.php');
 			{
 				$profilepic="images/admin.png";
 			}
-			
-		
 			$nametodisplay="";
 			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
 			if(!$nametodisplay)
 			{
 				$nametodisplay=$gigsterInfo['username'];
+			}
+			if(!$nametodisplay)
+			{
+				$nametodisplay="N/A";
 			}
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
@@ -74,7 +76,9 @@ include('cfg/more-functions.php');
 			if($gigsterInfo['country'])
 			{
 			 $mloc.=get_country_name($gigsterInfo['country']);
-			}	?>
+			}	
+			
+			?>
 				
                 	<td>
                     <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>">
