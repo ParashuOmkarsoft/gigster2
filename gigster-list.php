@@ -41,18 +41,18 @@ include('cfg/more-functions.php');
 			$gigster=$gigsters['rows'][$i];
 			$profilepic="";
 			$gigsterInfo=get_user_Info(encrypt_str($gigster['userId']));
-			$profilepic=$gigsterInfo['profileimage'];
-			echo $profilepic;
+			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+			
 			if(file_exists($profilepic))
 			{
-				$profilepic="uploads/profileimage/".$profilepic;
+				$profilepic=$profilepic;
 			}
 			else
 			{
 				$profilepic="images/admin.png";
 			}
 			
-			
+		
 			$nametodisplay="";
 			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
 			if(!$nametodisplay)
