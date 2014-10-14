@@ -42,15 +42,17 @@ include('cfg/more-functions.php');
 			$profilepic="";
 			$gigsterInfo=get_user_Info(encrypt_str($gigster['userId']));
 			$profilepic=$gigsterInfo['profileimage'];
+			echo $profilepic;
 			if(file_exists($profilepic))
 			{
-					$profilepic="uploads/profileimage/".$profilepic;
-				
+				$profilepic="uploads/profileimage/".$profilepic;
 			}
 			else
 			{
-			$profilepic="images/admin.png";
+				$profilepic="images/admin.png";
 			}
+			
+			
 			$nametodisplay="";
 			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
 			if(!$nametodisplay)
@@ -116,6 +118,12 @@ include('cfg/more-functions.php');
 								?>
                                 <span class="artst-ux"><?php echo strip_string($gigsterInfo['tagline'],50);?></span> 
 							<?php
+							}
+							else
+							{
+								?>
+								<span class="artst-ux">N/A</span> 
+                                <?php
 							}
 							?>
 
