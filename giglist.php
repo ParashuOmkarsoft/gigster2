@@ -57,7 +57,7 @@ include('cfg/more-functions.php');
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
               <div class="col-md-4"><span id="bid">&nbsp;</span></div>
               <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-              <p id="gigpara"><?php echo $opengig['prjdesc'];?></p>
+              <p id="gigpara"><?php echo strip_string($opengig['prjdesc'],500);?></p>
           </div>
          <div class="col-md-4 giginnerimg gigimg">
               <div class="col-md-6">
@@ -82,18 +82,14 @@ include('cfg/more-functions.php');
                    <img src="images/person1.jpg">
               </div>
             <a data-toggle="modal" href="#" ><button type="button" class="btn btn-warning">Bid</button></a>  
-<!-- start bid model -->
               <div id="bidmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">          
     <div class="container modelb">
       <div class="row loginxyz">
-          
-            
-
-          <div class="col-md-12">
-           <div id="logjpg"><img src="images/bidongig.png"></div>
-          </div>
+       			<div class="col-md-12">
+          			 <div id="logjpg"><img src="images/bidongig.png"></div>
+         		</div>
           </div> 
   </div>
 </div>
