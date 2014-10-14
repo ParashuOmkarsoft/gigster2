@@ -13,8 +13,8 @@
                       <?php if(isset($_SESSION['uId']))
 					  {
 						  ?>
-						  <li><a href="<?php echo $serverpath;?>myaccount" >My Account</a></li>                                          
-   						  <li><a  href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></li>                                          
+						  <li><a href="<?php echo $serverpath;?>myaccount" >MY ACCOUNT</a></li>                                          
+   						  <li><a  href="<?php echo $serverpath;?>checkout" target="targetframe" >LOGOUT</a></li>                                          
 						  <?php
 						   $uInfo=get_user_Info($_SESSION['uId']);
 					  }

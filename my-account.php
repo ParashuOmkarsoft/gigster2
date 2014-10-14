@@ -165,13 +165,13 @@ include('cfg/more-functions.php');
     </section>
     <section class="container secondsection">
      <div class="row">
-            <div class="col-md-6"><h5 id="title">About Us</h5></div>
+            <div class="col-md-6"><h5 id="title">About</h5></div>
             <div class="col-md-6"><a href='#' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
       <p id="aboutuspara"><?php
 	  if($uInfo['aboutus'])
 	  {
-	   echo stripslashes($uInfo['aboutus']); 
+	   echo nl2br(stripslashes($uInfo['aboutus'])); 
 	   
 	  }
 	  else
@@ -197,7 +197,7 @@ include('cfg/more-functions.php');
       <p id="overviewpara"><?php
 	  if($uInfo['overview'])
 	  {
-	   echo stripslashes($uInfo['overview']); 
+	   echo nl2br(stripslashes($uInfo['overview'])); 
 	   
 	  }
 	  else
@@ -258,24 +258,7 @@ include('cfg/more-functions.php');
 	  }
 		?>
     
-    <footer>
-      <div>
-          <div class="col-md-8">              
-                    <ul class="footernav">
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Help</a></li>
-                          <li><a href="#">Contact</a></li>
-                          <li><a href="#">Terms</a></li>
-                          <li><a href="#">Privacy</a></li>                      
-                     </ul>              
-          </div>        
-              <div class="col-md-4">  
-                 <div id="footerimages">
-                  <img src="<?php echo $serverpath;?>images/facebook.png">  <img src="<?php echo $serverpath;?>images/twitter.png">
-                 </div>        
-              </div>          
-       </div>
-    </footer>
+   
 <?php include('footer.php'); ?>
   </body>
 </html>
