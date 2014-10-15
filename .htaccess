@@ -16,6 +16,7 @@ RewriteRule ^(lib)($|/) - [L]
 
 
 RewriteRule ^checkout logout.php
+RewriteRule ^loginwithtwitter twitter-login.php
 RewriteRule ^myaccount my-account.php
 RewriteRule ^updateInfo update-info.php
 RewriteRule ^gigDetails/([^/]*)/([^/]*)$ detailed-gig.php?gigId=$2 [L]
