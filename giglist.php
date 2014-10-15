@@ -24,7 +24,7 @@ include('cfg/more-functions.php');
       <h2 id="logingigster1">Open Gigs</h2>
       <?php
 	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_projects where bidto>now() order by postedon DESC");
+		$gigscountquery=@db_query("select * from btr_projects order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
 		$adjacents = 1;
