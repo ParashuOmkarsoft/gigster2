@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /gigster2/
 
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
@@ -18,7 +18,9 @@ RewriteRule ^(lib)($|/) - [L]
 RewriteRule ^checkout logout.php
 RewriteRule ^myaccount my-account.php
 RewriteRule ^updateInfo update-info.php
+RewriteRule ^gigDetails/([^/]*)/([^/]*)$ detailed-gig.php?gigId=$2 [L]
 RewriteRule ^gigsters gigster-list.php
 RewriteRule ^gigsterInfo/([^/]*)/([^/]*)$ user-account.php?pId=$2 [L]
+RewriteRule ^allgigs/([^/]*)$ giglist.php?page=$1 [L]
 RewriteRule ^allgigs giglist.php
 </IfModule>

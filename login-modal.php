@@ -33,7 +33,7 @@
 <div class="col-md-4 fbimg"> 
 <div class="modal-social-icons">
 
-                            <a href='#' onClick="FBLogin()"><img src="images/facebook1.png" style="padding-bottom:10px;"> </a>
+                            <a href="javascript:voide('0');" onClick="FBLogin();"><img src="images/facebook1.png" style="padding-bottom:10px;"> </a>
                             <a href='#'><img src="images/twitter1.png" style="padding-bottom:10px;"> </a>
                             <a href='#'><img src="images/link.png" style="padding-bottom:10px;"> </a>
                             <a href='#'><img src="images/google.png" style="padding-bottom:10px;"> </a>

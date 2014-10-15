@@ -10,7 +10,7 @@ $twitterlink="#";
 $fblink="#";
 $instagramlink="#";
 $pintlink="#";
-
+$rec_limit = 5;
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
