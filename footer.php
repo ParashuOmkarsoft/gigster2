@@ -7,7 +7,8 @@
 
 <!-- close postgig popup -->
 <!-- start login popup -->
-<?php include('login-modal.php'); ?>
+<?php if(!isset($_SESSION['uId'])){include('login-modal.php'); } ?>
+<?php if(!isset($_SESSION['uId'])){include('signup-model.php'); } ?>
 <footer>
   <div>
     <div class="col-md-8">
@@ -24,6 +25,7 @@
     </div>
   </div>
 </footer>
+  <script src="<?php echo $serverpath;?>glDatePicker.min.js"></script>
  <script src="<?php echo $serverpath;?>js/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="<?php echo $serverpath;?>js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
 <iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>

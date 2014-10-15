@@ -1,10 +1,10 @@
-<div id="loginmodel" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+<div id="signupmodal" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content cform">          
     <div class="container">
        <div class="col-md-12">
 
-         <h2 id="login1">Login </h2>    
+         <h2 id="login1">Sign Up </h2>    
             <h2 class="source">Create an account using any of your social profiles.</h2>  
             <h2 class="source">Sign Up for a new free account Now. </h2>
 
@@ -26,7 +26,7 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10 logsign">
       <button type="submit" class="btn btn-warning loginbtn">Login</button>
-   
+      <a href="#signupmodal"  data-dismiss="modal" class="btn btn-warning loginbtn">Sign Up</a>
     </div>
   </div>
 </form>

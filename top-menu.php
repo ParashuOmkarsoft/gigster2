@@ -7,7 +7,13 @@
           <div class="col-md-8">
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                <?php if(isset($_SESSION['uId']))
+				{
+					?>
                       <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
+                      <?php
+				}
+					  ?>
                       <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
                       <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
                       <?php if(isset($_SESSION['uId']))
@@ -21,7 +27,8 @@
 					  else
 					  {
 						  ?>
-                      <li><a data-toggle="modal" href="#loginmodel" >LOGIN</a></li>                                            
+                      <li><a data-toggle="modal" href="#loginmodel" >LOGIN</a></li>   
+                       <li><a data-toggle="modal" href="#signupmodal" >REGISTER</a></li>                                           
                       <?php
 					 
 					  }
