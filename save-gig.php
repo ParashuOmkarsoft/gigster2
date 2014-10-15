@@ -14,7 +14,7 @@ $gigtitle=filter_text($prjTitle);
 $description=filter_text($prjdesc);
 $price=$proposedprice;
 $bidto=$enddate;
-$keyword='';
+$keywords=filter_text($_POST['keywords']);
 
 if($prjTitle && $proposedprice)
 {
@@ -27,12 +27,24 @@ if($prjTitle && $proposedprice)
     <?php
 	if($insertSql)
 	{
-		//add_keywords($keywords)
+		add_keywords($keywords);
+		if($inviteusers=="n")
+		{
 		?>
 		<script type="text/javascript">
 			window.parent.location="<?=$serverpath;?>allgigs";
 		</script>
 		<?php
+		}
+		else
+		{
+			?>
+			<script type="text/javascript">
+			window.parent.document.getElementById("inviteform").style.display="block";
+			window.parent.document.getElementById("postgigform").style.display="none";			
+            </script>
+           <?php
+		}
 	}
 	else{
 		print_r($GLOBALS['debug_sql']);
