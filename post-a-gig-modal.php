@@ -3,7 +3,8 @@
       <div class="modal-content">
       
         <section class="postgigform ">                       
-         <h2 id="login1">Post a Gig </h2>    
+         <h2 id="login1">Post a Gig 1</h2>    
+         
             <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>                          
             
           <form class="form-horizontal postgigforminner " role="form">
