@@ -55,7 +55,7 @@
                          
           <script type="text/javascript">$("#keywords").select2({tags:[<?=$tags;?>]});</script>
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
-            <div class="form-group">
+            <?php /*?><div class="form-group">
               <div class="col-sm-10 ">
                 <label class="radio-inline">
                   <input type="radio" name="inviteusers[]" id="inviteusers"  value="y"> Yes
@@ -64,7 +64,7 @@
                   <input type="radio" name="inviteusers[]" id="inviteusers"  value="n"> No
                 </label>                   
               </div>            
-              </div>
+              </div><?php */?>
                <div class="form-group submit">
          			<button type="submit" class="btn btn-warning">Post Gig</button>
                </div>
