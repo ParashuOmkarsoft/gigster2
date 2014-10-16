@@ -48,12 +48,7 @@
                 
               </div>
             </div>
-   					<script type="text/javascript">
-					  
-                $( "#datepic" ).datepicker({
-                  inline: true
-                });
-					</script>
+   					
                     <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
@@ -127,3 +122,13 @@
       </div>
       </div>
 </div>
+<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript">
+            
+                $( "#datepic" ).datepicker({
+                  inline: true
+                });
+          </script>
