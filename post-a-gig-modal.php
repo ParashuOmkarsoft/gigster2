@@ -41,13 +41,20 @@
               </div>
             </div>
            
-            <h2 class="loginlead">Enter expiry date of your Gig</h2>
-           <div class="form-group">
+           <h2 class="loginlead">Enter expiry date of your Gig</h2>
+            <div class="form-group">
               <div class="col-sm-10">
                 <input type="text" id="xyz"style="width:47%" />
                 
               </div>
             </div>
+            
+            <script type="text/javascript">
+            
+              $( "#xyz" ).datepicker({
+                inline: true
+              });
+          </script>
                     <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
