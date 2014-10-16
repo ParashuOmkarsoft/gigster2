@@ -122,8 +122,8 @@
       </div>
       </div>
 </div>
-<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+
   <script src="external/jquery/jquery.js"></script>
 <script src="jquery-ui.js"></script>
 <script type="text/javascript">
