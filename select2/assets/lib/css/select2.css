@@ -27,6 +27,10 @@ Version: @@ver@@ Timestamp: @@timestamp@@
           box-sizing: border-box; /* css3 */
 }
 
+.select2-container{width: 47%;
+border: solid;
+border: 1px solid #fab518;}
+
 .select2-container .select2-choice {
     display: block;
     height: 26px;
