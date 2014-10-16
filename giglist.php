@@ -105,17 +105,17 @@ include('cfg/more-functions.php');
                                   <div class="col-md-12">
                                   <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
                                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
-											 <h2 id="login1">Bid On Gig </h2>    
+											 <h2 id="login1">Bid On Gig </h2>
                                             <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>  
-                                              <div class="col-md-8">
+                                              <div class="col-md-12">
                                               <div class="form-group">
-                                              <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
-                                               <div class="col-sm-8">
-                                                 <textarea class="form-control tinpute" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
+                                              <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>   <br/><br/> 
+                                               <div class="col-sm-12">
+                                                 <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
                                                </div>
                                             </div>
                                             <div class="form-group">
-                                              <label class="col-md-4 control-label tfont">Price</label>
+                                              <label class="col-md-4 control-label tfont">Price</label><Br/><br/>
                                               <div class="col-md-8">
                                                 <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
                                               </div>
