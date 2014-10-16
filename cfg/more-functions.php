@@ -13,8 +13,8 @@ function toInternalId($publicId)
 function pr($pr)
 {
 	echo '<pre>';
-	print_r($pr);die();
-	echo '</pre>';
+	print_r($pr);
+	echo '</pre>';die();
 }
 
 function get_country_name($country)

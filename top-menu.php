@@ -34,7 +34,6 @@
 					  {
 						  ?>
                       <li><a data-toggle="modal" href="#loginmodel" >LOGIN</a></li>   
-                       <li><a data-toggle="modal" href="#signupmodal" >REGISTER</a></li>                                           
                       <?php
 					 
 					  }

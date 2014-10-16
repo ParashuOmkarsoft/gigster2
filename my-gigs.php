@@ -25,83 +25,84 @@ include('cfg/more-functions.php');
       </section>
       <section class="container">
       <h2 id="giglog">My Gigs</h2>
+      <?php $mygigs=get_user_gigs($uInfo['userId']);
+	if($mygigs['count']>0)
+	{
+		for($i=0;$i<$mygigs['count'];$i++)
+		{
+			$mygig=$mygigs['rows'][$i];
+			$projectbids=get_project_bids($mygig['prjId']);
+			$bidcount=$projectbids['count'];
+			if(!$bidcount)
+			{
+				$bidcount="0";
+			}
+			
+	  ?>
         <div class="row mygig">
            <div class="col-md-10">
-             <h2>Lady Fashion Model Shoot</h2>
+             <h2>
+             <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($mygig['prjTitle']);?>/<?php echo $mygig['prjId'];?>"><?php echo $mygig['prjTitle'];?></a></h2>
              <h3 class="selectbid">Select Bidder</h3>
-             <img src="images/mike1.jpg">
-             <img src="images/mike2.jpg">
+             <?php 
+				if($projectbids['count']>0)
+				{
+					for($h=0;$h<$projectbids['count'];$h++)
+					{
+						$biduser=get_user_Info(encrypt_str($projectbids['rows'][$h]['bidfrom']));
+						
+						$biduserprofilepic="uploads/profileimage/".$biduser['profileimage'];
+							if(file_exists($biduserprofilepic))
+							{
+								$biduserprofilepic=$biduserprofilepic;
+							}
+							else
+							{
+								$biduserprofilepic="images/admin.png";
+							}
+							$biddernametodisplay="";
+							 $biddernametodisplay=$biduser['fname'].' '.$biduser['lname'];
+							 $biddernametodisplay1=str_replace(" ","",$biddernametodisplay);
+							  if(!$biddernametodisplay1)
+							  {
+								  $biddernametodisplay=$biduser['username'];
+							  }
+							?>
+							 <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($biddernametodisplay);?>/<?php echo $biduser['userId'];?>" title="<?php echo $biddernametodisplay;?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $biduserprofilepic;?>&width=80&height=80&cropratio=1:1"></a>
+							<?php
+					}
+				}
+				else
+				{
+					?>
+					<p class="mandatory">Sorry, No Bids Submited yet.</p>
+					<?php
+				}
+			 ?>
            </div>
-           <div class="col-md-2 rightsidegig">
-            <h4 class="firstbid">4 Bids</h4>
-            <h5>S &#36; 2100.00</h5>
+           <div class="col-md-2 rightsidegig" align="right">
+            <h4 class="firstbid"><?php echo $bidcount;?> Bids</h4>
+            <h5>S &#36; <?php echo $mygig['proposedbudget'];?></h5>
            </div>
            <div class="clearline"></div>
         </div>
-        <div class="row mygig">
+     <?php
+		}
+	}
+	else{
+		?>
+		<div class="row mygig">
            <div class="col-md-10">
-             <h2>New Desings for Home </h2>
-             <h3 class="selectbid">Select Bidder</h3>
-             <img src="images/mike1.jpg">
-             <img src="images/mike2.jpg">
+             <h2 class="mandatory">Sorry, No Gigs posted by you yet.</h2>
            </div>
-           <div class="col-md-2 rightsidegig">
-            <h4 class="firstbid">3 Bids</h4>
-            <h5>S &#36; 2100.00</h5>
-           </div>
+           
            <div class="clearline"></div>
         </div>
-        <div class="row mygig">
-           <div class="col-md-10">
-             <h2>Home Decor </h2>
-             <h3 class="selectbid">Select Bidder</h3>
-             <img src="images/mike1.jpg">
-             <img src="images/mike2.jpg">
-           </div>
-           <div class="col-md-2 rightsidegig">
-            <h4 class="firstbid">4 Bids</h4>
-            <h5>S &#36; 2100.00</h5>
-           </div>
-           <div class="clearline"></div>
-        </div>
-        <div class="row mygig">
-           <div class="col-md-10">
-             <h2>Marriage Photography</h2>
-             <h3 class="selectbid">Select Bidder</h3>
-             <img src="images/mike1.jpg">
-             <img src="images/mike2.jpg">
-           </div>
-           <div class="col-md-2 rightsidegig">
-            <h4 class="firstbid">4 Bids</h4>
-            <h5>S &#36; 2100.00</h5>
-           </div>
-           <div class="clearline"></div>
-        </div>
-    </section>
-    <footer>
-          <div>
-              <div class="col-md-8">              
-                        <ul class="footernav">
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Help</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="#">Privacy</a></li>                      
-                         </ul>              
-              </div>        
-                  <div class="col-md-4">  
-                     <div id="footerimages">
-                      <img src="images/facebook.png">  <img src="images/twitter.png">
-                     </div>        
-                  </div>          
-          </div>
-    </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+		<?php
+	}
+	 ?>   
+     </section>
+    <?php include('footer.php'); ?>
   </body>
 </html>
 
