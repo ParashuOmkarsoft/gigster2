@@ -2,7 +2,7 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
 <!-- Latest compiled and minified CSS -->
 <script src="<?php echo $serverpath;?>js/jquery.js"></script>
-<script src="<?php echo $serverpath;?>jquery.ui.js"></script>
+<script src="<?php echo $serverpath;?>jquery-ui.js"></script>
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -11,7 +11,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="<?php echo $serverpath;?>js/bootstrap.min.js"></script>
 <link href="<?php echo $serverpath;?>css/style.css" rel="stylesheet">
-<link href="<?php echo $serverpath;?>jquery.ui.css" rel="stylesheet">
+<link href="<?php echo $serverpath;?>jquery-ui.css" rel="stylesheet">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
