@@ -44,13 +44,13 @@
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
             <div class="form-group">
               <div class="col-sm-10">
-                <input type="text" id="xyz"style="width:47%" />
+                <input type="text" id="datepic"style="width:47%" />
                 
               </div>
             </div>
    					<script type="text/javascript">
 					  
-                $( "#xyz" ).datepicker({
+                $( "#datepic" ).datepicker({
                   inline: true
                 });
 					</script>
@@ -127,8 +127,3 @@
       </div>
       </div>
 </div>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="external/jquery/jquery.js"></script>
-<script src="jquery-ui.js"></script>
