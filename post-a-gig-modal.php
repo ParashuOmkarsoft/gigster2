@@ -70,6 +70,7 @@
                </div>
                </form>
          </section>
+         &nbsp;
          <section class="postgigform mhidden" id="inviteform">                       
          <h2 id="login1">Invite Users</h2>    
           <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>                          
