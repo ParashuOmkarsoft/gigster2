@@ -29,7 +29,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 
 .select2-container{width: 47%;
 border: solid;
-border: 1px solid #fab518;}
+border: 1px solid #fab518;outline: none;}
 
 .select2-container .select2-choice {
     display: block;
