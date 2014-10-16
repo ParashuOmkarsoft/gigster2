@@ -394,14 +394,14 @@ margin-top: 39px;
 }
 .postgigform{
 border: 5px solid #e2ac10;
-padding: 15px 30px 15px 50px;
+padding: 15px 50px 15px 50px;
 border-radius: 10px;
 height: 100%;
 /*max-width: 728px;
 margin-top: 35px;
 margin: 0 auto;*/
 }
-.modal-content{border-radius: 15px;}
+.modal-content{border-radius: 15px;max-height: 707px;}
 
 
 /************Invite model****color: *************/
@@ -467,6 +467,7 @@ margin-left: 40px;
 	line-height: 11px;}
 /*.postgigforminner {margin-left: 15px;}*/
 .postgigforminner input[type=text]{width: 70%;border-radius: 0px;border: 1px solid #fab518;padding: 6px;}
+.postgigforminner textarea.form-control{width: 70%;border-radius: 0px;border: 1px solid #fab518;padding: 6px}
 #gigdescription{width: 70%;border-radius: 0px;border: 1px solid #fab518;}
 .postgigforminner ::-webkit-input-placeholder {
 	font-family: 'source_sans_prosemibold';
@@ -501,7 +502,8 @@ margin: 1px auto;}
 	border-radius: 10px;
 	background: #EC6B39;
 	outline: none;
-	margin-top: 12px}
+	margin-top: 12px;
+	margin-left: 12px;}
 .postgigforminner {padding-top: 15px;}
 /*.secondinput{width: 30%;}*/
 

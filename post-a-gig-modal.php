@@ -56,6 +56,16 @@
                          
           <script type="text/javascript">$("#keywords").select2({tags:[<?=$tags;?>]});</script>
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
+            <div class="form-group">
+              <div class="col-sm-10 ">
+                <label class="radio-inline">
+                  <input type="radio" name="inviteusers[]" id="inviteusers"  value="y"> Yes
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inviteusers[]" id="inviteusers"  value="n"> No
+                </label>                   
+              </div>            
+            </div>
                <div class="form-group submit">
          			<button type="submit" class="btn btn-warning">Post Gig</button>
                </div>
@@ -96,14 +106,7 @@
                 <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="">
               </div>
             </div>
-            <h2 class="loginlead">Enter expiry date of your Gig</h2>
-            <input type="text" id="enddate" gldp-id="mydate" name="enddate" style="width:30%"  required/>
-   					<script type="text/javascript">
-					  $(window).load(function()
-				        {
-				            $('#enddate').glDatePicker();
-				        });
-					</script>
+           
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
               <div class="col-sm-10 ">
@@ -114,13 +117,13 @@
                   <input type="radio" name="inviteusers[]" id="inviteusers"  value="n"> No
                 </label>                   
               </div>            
-              </div>
+            </div>
                <div class="form-group submit">
-         			<button type="submit" class="btn btn-warning">Post Gig</button>
+         			  <button type="submit" class="btn btn-warning">Post Gig</button>
                </div>
                </form>
          </section>
       </div>
-      </div>
+    </div>
 </div>
 
