@@ -23,6 +23,7 @@ if($prjTitle && $proposedprice)
 	$insertSql=@db_query($insertQuery,3);
 	if($insertSql)
 	{
+		add_keywords($keywords);
 		?>
 		<script type="text/javascript">
 			window.parent.location="<?=$serverpath;?>allgigs";
