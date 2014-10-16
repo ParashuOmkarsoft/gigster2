@@ -9,6 +9,7 @@
 <!-- start login popup -->
 <?php if(!isset($_SESSION['uId'])){include('login-modal.php'); } ?>
 <?php if(!isset($_SESSION['uId'])){include('signup-model.php'); } ?>
+<?php if(isset($_SESSION['uId'])){include('bid-modal.php'); } ?>
 <footer>
   <div>
     <div class="col-md-8">

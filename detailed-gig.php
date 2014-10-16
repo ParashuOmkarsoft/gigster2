@@ -183,8 +183,10 @@ else
               </div>
 
               <div class="row">
-                <div class="col-md-10"><p class="service">
-                   <?php echo strip_string(nl2br(stripslashes($bidderInfo['overview'])),300);?></p>
+                <div class="col-md-10">
+                <p class="service">
+                   <?php echo strip_string(nl2br(stripslashes($bidderInfo['overview'])),300);?>
+                   </p>
                 </div>
                 <div class="col-md-02"></div>
               </div>
@@ -195,6 +197,23 @@ else
 
   <?php
 			}
+		}
+		else
+		{
+			?>
+             <section >
+            <div class="row firstdinner container">
+                <div class="col-md-10 mandatory">
+                
+               	 Sorry no bids submited yet.
+                </p>
+                </div>
+                <div class="col-md-02"></div>
+              </div>
+               <div class="clearsecond"></div>
+               </section>
+               
+			<?php
 		}
    include('footer.php'); ?>
   </body>
