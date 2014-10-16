@@ -13,6 +13,12 @@
                       <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
                       <?php
 				}
+				else
+				{
+					?>
+                      <li><a data-toggle="modal" href="#loginmodel">POST GIG</a></li>
+                      <?php
+				}
 					  ?>
                       <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
                       <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
