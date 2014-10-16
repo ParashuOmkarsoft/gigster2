@@ -42,13 +42,12 @@
             </div>
            
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
-            <input type="text" id="enddate" gldp-id="mydate" name="enddate" style="width:30%"  required/>
-   					<script type="text/javascript">
-					  $(window).load(function()
-				        {
-				            $('#enddate').glDatePicker();
-				        });
-					</script>
+           <div class="form-group">
+              <div class="col-sm-10">
+                <input type="text" id="xyz"style="width:47%" />
+                
+              </div>
+            </div>
                     <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
@@ -98,10 +97,10 @@
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
             <input type="text" id="enddate" gldp-id="mydate" name="enddate" style="width:30%"  required/>
    					<script type="text/javascript">
-					  $(window).load(function()
-				        {
-				            $('#enddate').glDatePicker();
-				        });
+					  
+              $( "#xyz" ).datepicker({
+                inline: true
+              });
 					</script>
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
