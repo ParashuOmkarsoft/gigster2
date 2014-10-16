@@ -19,32 +19,16 @@ $keywords=filter_text($_POST['keywords']);
 if($prjTitle && $proposedprice)
 {
 	$insertQuery="insert into btr_projects(userId,prjTitle,prjdesc,postedon,proposedbudget,bidfrom,bidto,keywords,jobtype)";
-	$insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype')";	
+	 $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype')";	
 	$insertSql=@db_query($insertQuery,3);
-
-	?>
-
-    <?php
 	if($insertSql)
 	{
-		add_keywords($keywords);
-		if($inviteusers=="n")
-		{
 		?>
 		<script type="text/javascript">
 			window.parent.location="<?=$serverpath;?>allgigs";
 		</script>
 		<?php
-		}
-		else
-		{
-			?>
-			<script type="text/javascript">
-			window.parent.document.getElementById("inviteform").style.display="block";
-			window.parent.document.getElementById("postgigform").style.display="none";			
-            </script>
-           <?php
-		}
+		
 	}
 	else{
 		print_r($GLOBALS['debug_sql']);
