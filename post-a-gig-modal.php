@@ -37,7 +37,7 @@
             <h2 class="loginlead" id="mlabel">Skills</h2>
             <div class="form-group">
               <div class="col-sm-10">
-                <input  required type="hidden" name="keywords" id="keywords"  class="form-control" style="padding:0px 0px 0px 0px !important"   />
+                <input  required type="hidden" name="keywords" id="keywords"  class=""    />
               </div>
             </div>
            
