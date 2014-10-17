@@ -45,7 +45,7 @@
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
             <div class="form-group">
               <div class="col-sm-10">
-                <input type="text" id="datepic"style="width:47%" />
+                <input type="text" id="datepic"style="width:47%" name="enddate" />
                 
               </div>
             </div>
