@@ -34,7 +34,7 @@ include('cfg/more-functions.php');
 
 
 
-
+      <?php
 
 
         $uId=$uInfo['userId'];
