@@ -30,10 +30,10 @@ include('cfg/more-functions.php');
         </ul> 
       </section>
 <section class="container">
-      <h2 id="logingigster1">Open Gigs</h2>
+      <h2 id="logingigster1">My Gigs</h2>
       <?php
 	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_projects order by postedon DESC");
+		$gigscountquery=@db_query("select * from btr_projects where userId='3' order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
 		$adjacents = 1;
