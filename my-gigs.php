@@ -31,10 +31,11 @@ include('cfg/more-functions.php');
       </section>
 <section class="container">
       <h2 id="logingigster1">My Gigs</h2>
-      echo "Userinfo".$uId=$userInfo['userId'];
+
 
 
       <?php
+       echo "Userinfo".$uId=$userInfo['userId'];
 	  	// Count Query
 		$gigscountquery=@db_query("select * from btr_projects where userId='3' order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
