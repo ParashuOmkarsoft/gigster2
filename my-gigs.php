@@ -32,6 +32,7 @@ include('cfg/more-functions.php');
       <section class="container">
       <h2 id="giglog">My Gigs</h2>
 
+<?php
 /* -- This is amol c -- */
 
 
@@ -58,7 +59,7 @@ include('cfg/more-functions.php');
 
 
 
-
+?>
 
      </section>
     <?php include('footer.php'); ?>
