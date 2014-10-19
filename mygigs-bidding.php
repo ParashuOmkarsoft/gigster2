@@ -24,9 +24,9 @@ include('cfg/more-functions.php');
                </section>
   <section class="container">
         <ul id="profilemenu">
-          <li><a href="mygigs-inprogress"><h5 id="ass"> In progress </h5> </a></li>
-          <li><a href="mygigs-bidding"> Bidding  </a></li>
-          <li><a href="mygigs-completed">Completed</a></li>
+          <li><a href="mygigsinprogress"><h5 id="ass"> In progress </h5> </a></li>
+          <li><a href="mygigsbidding"> Bidding  </a></li>
+          <li><a href="mygigscompleted">Completed</a></li>
         </ul> 
       </section>
 <section class="container">
