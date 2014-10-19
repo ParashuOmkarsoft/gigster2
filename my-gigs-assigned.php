@@ -18,15 +18,15 @@ include('cfg/more-functions.php');
     <div id="grad"></div>
        <section class="container">
                <ul id="profilemenu">
-                 <li><a href="mygigs-inprogress">My Gigs  </a></li>
+                 <li><a href="mygigs">My Gigs  </a></li>
                  <li><a href="mygigs-bidding"><h5 id="ass">My Assigments</h5></a></li>
                </ul>
        </section>
        <section class="container">
         <ul id="profilemenu">
-          <li><a href="mygigs-inprogress">In progress  </a></li>
-          <li><a href="mygigs-bidding"><h5 id="ass">  Bidding  </h5></a></li>
-          <li><a href="mygigs-completed">Completed</a></li>
+          <li><a href="assignments-inprogress">In progress  </a></li>
+          <li><a href="assignments-bidding"><h5 id="ass">  Bidding  </h5></a></li>
+          <li><a href="assignments-completed">Completed</a></li>
         </ul> 
       </section>
       <section class="container">
