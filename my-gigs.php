@@ -49,7 +49,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-	 $gigsquery="select * from btr_projects  where userId='3'  order by postedon DESC LIMIT $start,$limit";
+	 echo $gigsquery="select * from btr_projects  where userId='$uId'  order by postedon DESC LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
