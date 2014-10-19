@@ -24,9 +24,9 @@ include('cfg/more-functions.php');
                </section>
   <section class="container">
         <ul id="profilemenu">
-          <li><a href="mygigs-inprogress"><h5 id="ass"> In progress </h5> </a></li>
+          <li><a href="mygigs-inprogress"> In progress </a></li>
           <li><a href="mygigs-bidding"> Bidding  </a></li>
-          <li><a href="mygigs-completed">Completed</a></li>
+          <li><a href="mygigs-completed"><h5 id="ass">Completed </h5></a></li>
         </ul> 
       </section>
 <section class="container">
@@ -39,7 +39,7 @@ include('cfg/more-functions.php');
 
         $uId=$uInfo['userId'];
 	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_projects where userId=$uId and status='5' order by postedon DESC");
+		$gigscountquery=@db_query("select * from btr_projects where userId='$uId' and status='5' order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
 		$adjacents = 1;
@@ -49,7 +49,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-	 echo $gigsquery="select * from btr_projects  where userId=$uId  and status='5'  order by postedon DESC LIMIT $start,$limit";
+	 echo $gigsquery="select * from btr_projects  where userId='$uId'  and status='5'  order by postedon DESC LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
