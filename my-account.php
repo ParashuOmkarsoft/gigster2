@@ -19,7 +19,8 @@ include('cfg/more-functions.php');
  
      <section class="container">
       <ul id="profilemenu">
-        <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>       
+        <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
+        <li><a href="<?php echo $serverpath;?>assignments">My Assignments</a></li>
         <li><a href="#"><h5 id="pro">Change Password</h5></a></li>                              
       </ul> 
     </section>
