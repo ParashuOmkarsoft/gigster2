@@ -24,14 +24,14 @@ include('cfg/more-functions.php');
                </section>
        <section class="container">
         <ul id="profilemenu">
-          <li><a href="mygigs-inprogress">In progress  </a></li>
-          <li><a href="mygigs-bidding"><h5 id="ass">  Bidding  </h5></a></li>
+          <li><a href="mygigs-inprogress"><h5 id="ass"> In progress </h5> </a></li>
+          <li><a href="mygigs-bidding"> Bidding  </a></li>
           <li><a href="mygigs-completed">Completed</a></li>
         </ul> 
       </section>
       <section class="container">
       <h2 id="giglog">My Gigs</h2>
-       <h2 id="giglog">TEST</h2>
+
       <?php $mygigs=get_user_gigs($uInfo['userId']);
 	if($mygigs['count']>0)
 	{
