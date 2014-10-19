@@ -25,6 +25,7 @@ include('cfg/more-functions.php');
       </section>
       <section class="container">
       <h2 id="giglog">My Gigs</h2>
+       <h2 id="giglog">TEST</h2>
       <?php $mygigs=get_user_gigs($uInfo['userId']);
 	if($mygigs['count']>0)
 	{
