@@ -15,7 +15,13 @@ include('cfg/more-functions.php');
   </head>
   <body>
     <?php include('top-menu.php'); ?>
-    <div id="grad"></div>  
+    <div id="grad"></div>
+       <section class="container">
+               <ul id="profilemenu">
+                 <li><a href="mygigs-inprogress">My Gigs  </a></li>
+                 <li><a href="mygigs-bidding"><h5 id="ass">My Assigments</h5></a></li>
+               </ul>
+       </section>
        <section class="container">
         <ul id="profilemenu">
           <li><a href="mygigs-inprogress">In progress  </a></li>
@@ -24,8 +30,8 @@ include('cfg/more-functions.php');
         </ul> 
       </section>
       <section class="container">
-      <h2 id="giglog">My Gigs</h2>
-       <h2 id="giglog">TEST</h2>
+      <h2 id="giglog">Assignments</h2>
+     
       <?php $mygigs=get_user_gigs($uInfo['userId']);
 	if($mygigs['count']>0)
 	{
