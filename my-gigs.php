@@ -15,7 +15,13 @@ include('cfg/more-functions.php');
   </head>
   <body>
     <?php include('top-menu.php'); ?>
-    <div id="grad"></div>  
+    <div id="grad"></div>
+          <section class="container">
+                       <ul id="profilemenu">
+                         <li><a href="mygigs-inprogress"><h5 id="ass">My Gigs</h5>  </a></li>
+                         <li><a href="mygigs-bidding">My Assigments</a></li>
+                       </ul>
+               </section>
        <section class="container">
         <ul id="profilemenu">
           <li><a href="mygigs-inprogress">In progress  </a></li>
