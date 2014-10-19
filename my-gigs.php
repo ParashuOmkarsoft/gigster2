@@ -35,7 +35,9 @@ include('cfg/more-functions.php');
 
 
       <?php
-       echo "Userinfo".$uId=$userInfo['userId'];
+
+
+       echo "Userinfo".$uId=$uInfo['userId'];
 	  	// Count Query
 		$gigscountquery=@db_query("select * from btr_projects where userId='3' order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
