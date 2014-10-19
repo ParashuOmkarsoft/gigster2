@@ -28,4 +28,5 @@ RewriteRule ^allgigs giglist.php
 RewriteRule ^saveGig save-gig.php
 RewriteRule ^submitproposal submit-proposal.php
 RewriteRule ^mygigs my-gigs.php
+RewriteRule ^assignments my-gigs-assigned.php
 </IfModule>
