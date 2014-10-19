@@ -18,9 +18,9 @@ include('cfg/more-functions.php');
     <div id="grad"></div>  
        <section class="container">
         <ul id="profilemenu">
-          <li><a href="mygigs-inprogress.html">In progress  </a></li>
-          <li><a href="mygigs-bidding.html"><h5 id="ass">  Bidding  </h5></a></li>
-          <li><a href="mygigs-completed.html">Completed</a></li>                              
+          <li><a href="mygigs-inprogress">In progress  </a></li>
+          <li><a href="mygigs-bidding"><h5 id="ass">  Bidding  </h5></a></li>
+          <li><a href="mygigs-completed">Completed</a></li>
         </ul> 
       </section>
       <section class="container">
