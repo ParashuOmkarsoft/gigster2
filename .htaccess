@@ -32,4 +32,5 @@ RewriteRule ^assignments my-gigs-assigned.php
 RewriteRule ^mygigs-inprogress my-gigs.php
 RewriteRule ^mygigs-bidding mygigs-bidding.php
 RewriteRule ^mygigs-completed mygigs-completed.php
+RewriteRule ^mygigs-completeda mygigs-completed.php
 </IfModule>
