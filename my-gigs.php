@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
        <section class="container">
         <ul id="profilemenu">
           <li><a href="mygigs-inprogress.html">In progress  </a></li>
-          <li><a href="#"><h5 id="ass">  Bidding  </h5></a></li>
+          <li><a href="mygigs-bidding.html"><h5 id="ass">  Bidding  </h5></a></li>
           <li><a href="mygigs-completed.html">Completed</a></li>                              
         </ul> 
       </section>
@@ -60,7 +60,7 @@ include('cfg/more-functions.php');
 							{
 								$biduserprofilepic="images/admin.png";
 							}
-							$biddernametodisplay="";
+							 $biddernametodisplay="";
 							 $biddernametodisplay=$biduser['fname'].' '.$biduser['lname'];
 							 $biddernametodisplay1=str_replace(" ","",$biddernametodisplay);
 							  if(!$biddernametodisplay1)
