@@ -114,48 +114,8 @@ include('cfg/more-functions.php');
               <div class="col-md-6">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
               </div>
-            <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" ><button type="button" class="btn btn-warning">Bid</button></a>
-              <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-                            <div class="modal-content cform">
-                              <div class="container">
-
-                                  <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
-                                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
-											 <h2 id="login1">Bid On Gig </h2>
-                                            <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
-                                              <div class="col-md-12">
-                                              <div class="form-group">
-                                              <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>   <br/><br/>
-                                               <div class="col-sm-12">
-                                                 <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
-                                               </div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-md-4 control-label tfont">Price</label><Br/><br/>
-                                              <div class="col-md-8">
-                                                <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
-                                              </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                              <div class="col-sm-offset-3 col-sm-10 logsign">
-                                                <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
-                                              </div>
-                                            </div>
-
-                                            </div>
-
-                                 </form>
-                                            </div>
-
-
-
-                               </div>
-                             </div>
-                           </div>
-		</div>
+            
+              
 <!-- end bid model -->
           </div>
 	 </div>

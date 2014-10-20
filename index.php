@@ -19,9 +19,6 @@ include('cfg/more-functions.php');
     <div id="imgback">
       <img src="<?php echo $serverpath;?>images/womenlap.jpg">
     </div>
-
-
-
 <?php
 include('footer.php'); 
 ?>

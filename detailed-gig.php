@@ -200,12 +200,28 @@ else
     </div>
     <div class="col-md-2 mailsymbol">
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
-      <!--<div>
+      <!--  <div>
                    <img src="<?=$serverpath;?>images/mail.jpg">
-                 </div>
-                 <div>
-                   <img src="<?=$serverpath;?>images/symbol.png">
-                 </div>--> 
+                 </div>-->
+      <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
+				 {
+					if(is_project_awarded($gigdetails['prjId']))
+{
+	if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
+	{
+	?>
+	<img src="<?php echo $serverpath;?>images/symbol.png" />
+	<?php
+	}
+}
+else{?>
+      <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
+        <button type="button" class="btn btn-warning">Award</button>
+        </a> </div>
+      <?php
+}
+				 }
+				 ?>
     </div>
     <div class="row">
       <div class="col-md-10">
@@ -216,13 +232,81 @@ else
     <div class="clearsecond"></div>
   </div>
 </section>
+<?php if(is_project_awarded($gigdetails['prjId']))
+{
+}
+else
+{
+	?>
+<div id="awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content cform">
+      <div class="container">
+        <div class="col-md-12">
+          <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendterms" role="form" method="post" >
+            <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
+            <input type="hidden" id="awardedto" name="awardedto" value="<?php echo $projectbids['rows'][$i]['bidfrom'];?>" />
+            <h2 id="login1">Award Gig</h2>
+            <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="inputText" class="col-sm-4 control-label newlog">Award To</label>
+                <br/>
+                <br/>
+                <div class="col-sm-12"> <?php echo $biddernametodisplay ;?> </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-4 control-label tfont">Terms (If Any)</label>
+                <Br/>
+                <br/>
+                <div class="col-md-12">
+                  <textarea name="terms" id="terms" class="form-control mtextarea" ></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-4 control-label tfont">Start Date</label>
+                <Br/>
+                <br/>
+                <div class="col-md-8">
+                  <?php  echo(strftime("%B %d %Y ",mktime(0,0,0,date('m'),date('d'),date('Y')))."<br>");?>
+                </div>
+              </div>
+                <div class="form-group">
+                <label class="col-md-4 control-label tfont">End Date</label>
+                <Br/>
+                <br/>
+                <div class="col-md-8">
+                  <input type="text" name="enddate" id="enddate" class="form-control mdate"  required="required" value="<?=date('y-m-d');?>"   />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-8 control-label tfont">Final Amount (<?php echo $currency ; ?>)</label>
+                <Br/>
+                <br/>
+                <div class="col-md-8">
+                  <input type="text" name="amount" id="amount" class="form-control small"  style="width:300px;"required="required" value="<?=$projectbids['rows'][$i]['bidprice'];?>" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-10 logsign">
+                  <button type="submit" class="btn btn-warning loginbtn">Award</button>
+                </div>
+              </div>
+           </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php
+}
 			}
 		}
 		else
 		{
 			?>
-<section >
+<section>
   <div class="row firstdinner container">
     <div class="col-md-10 mandatory"> Sorry no bids submited yet.
       </p>

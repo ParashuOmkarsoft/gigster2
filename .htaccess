@@ -32,5 +32,5 @@ RewriteRule ^assignments my-gigs-assigned.php
 RewriteRule ^inprogress my-gigs.php
 RewriteRule ^bidding gigs-bidding.php
 RewriteRule ^completed gigs-completed.php
-
+RewriteRule ^sendterms terms-sending.php
 </IfModule>

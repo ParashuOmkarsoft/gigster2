@@ -96,6 +96,9 @@ include('cfg/more-functions.php');
               <div class="col-md-6">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
               </div>
+              <?php if(($_SESSION['uId']!=encrypt_str($opengig['userId'])) || (is_project_awarded($opengig['projectId'])))
+			  {
+				  ?>
             <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" ><button type="button" class="btn btn-warning">Bid</button></a>  
               <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -138,6 +141,9 @@ include('cfg/more-functions.php');
                              </div>
                            </div>
 		</div>
+        	<?php
+			  }
+			?>
 <!-- end bid model -->
           </div>
 	 </div> 

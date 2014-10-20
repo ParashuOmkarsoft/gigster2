@@ -34,4 +34,8 @@
     $( "#datepic" ).datepicker({
       inline: true
     });
+	$( ".mdate" ).datepicker({
+      inline: true,
+	  dateFormat: 'y-m-d'
+    });
 </script>
