@@ -23,7 +23,14 @@ include('cfg/more-functions.php');
                        </ul>
                </section>
   <section class="container">
-          <?php include('profile-menu.php'); ?>
+       <ul id="profilemenu">
+  <li><a href="<?php echo $serverpath;?>inprogress">
+    In progress
+    </a></li>
+  <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
+  <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
+</ul>
+
       </section>
 <section class="container">
       <h2 id="logingigster1">My Gigs - Completed</h2>
@@ -45,7 +52,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-	 echo $gigsquery="select * from btr_projects  where userId='$uId'  and status='5'  order by postedon DESC LIMIT $start,$limit";
+		 $gigsquery="select * from btr_projects  where userId='$uId'  and status='5'  order by postedon DESC LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
@@ -247,6 +254,15 @@ include('cfg/more-functions.php');
       </div>
 	<?php
 
+	  }else
+	  {
+		   ?>
+		  <div class="row ">
+         <div class="col-md-8">
+         	<p>Sorry , No Gigs are completed right now.</p>
+         </div>
+         </div>
+		  <?php
 	  }
 	 ?>
 
