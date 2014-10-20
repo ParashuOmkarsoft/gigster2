@@ -29,8 +29,8 @@ RewriteRule ^saveGig save-gig.php
 RewriteRule ^submitproposal submit-proposal.php
 RewriteRule ^mygigs my-gigs.php
 RewriteRule ^assignments my-gigs-assigned.php
-RewriteRule ^mygigsinprogress my-gigs.php
-RewriteRule ^mygigsbidding mygigs-bidding.php
-RewriteRule ^mygigscompleted mygigs-completed.php
+RewriteRule ^inprogress my-gigs.php
+RewriteRule ^bidding mygigs-bidding.php
+RewriteRule ^completed mygigs-completed.php
 
 </IfModule>
