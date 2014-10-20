@@ -23,11 +23,7 @@ include('cfg/more-functions.php');
                        </ul>
                </section>
   <section class="container">
-        <ul id="profilemenu">
-          <li><a href="mygigsinprogress"> In progress </a></li>
-          <li><a href="mygigsbidding"> Bidding  </a></li>
-          <li><a href="mygigscompleted"><h5 id="ass">Completed </h5></a></li>
-        </ul> 
+          <?php include('profile-menu.php'); ?>
       </section>
 <section class="container">
       <h2 id="logingigster1">My Gigs - Completed</h2>
