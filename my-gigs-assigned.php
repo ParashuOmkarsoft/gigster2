@@ -26,7 +26,7 @@ include('cfg/more-functions.php');
        <?php include('profile-menu.php'); ?>
       </section>
       <section class="container">
-      <h2 id="giglog">Assignments</h2>
+      <h2 id="giglog">My Assignments</h2>
 
       <?php $mygigs=get_user_gigs($uInfo['userId']);
 	if($mygigs['count']>0)
