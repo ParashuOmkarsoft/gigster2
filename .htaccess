@@ -23,6 +23,7 @@ RewriteRule ^updateInfo update-info.php
 RewriteRule ^gigDetails/([^/]*)/([^/]*)$ detailed-gig.php?gigId=$2 [L]
 RewriteRule ^gigsters gigster-list.php
 RewriteRule ^gigsterInfo/([^/]*)/([^/]*)$ user-account.php?pId=$2 [L]
+RewriteRule ^acceptGig/([^/]*)/([^/]*)$ accept-gig.php?gigId=$1&userId=$2 [L]
 RewriteRule ^allgigs/([^/]*)$ giglist.php?page=$1 [L]
 RewriteRule ^allgigs giglist.php
 RewriteRule ^saveGig save-gig.php
@@ -33,4 +34,6 @@ RewriteRule ^inprogress my-gigs.php
 RewriteRule ^bidding gigs-bidding.php
 RewriteRule ^completed gigs-completed.php
 RewriteRule ^sendterms terms-sending.php
+RewriteRule ^finalterms final-terms.php
+RewriteRule ^rejectterms reject-terms.php
 </IfModule>
