@@ -16,98 +16,221 @@ include('cfg/more-functions.php');
   <body>
     <?php include('top-menu.php'); ?>
     <div id="grad"></div>
-       <section class="container">
-               <ul id="profilemenu">
-                 <li><a href="mygigs">My Gigs  </a></li>
-                 <li><a href="mygigs-bidding"><h5 id="ass">My Assigments</h5></a></li>
-               </ul>
-       </section>
-       <section class="container">
-       <?php include('profile-menu.php'); ?>
-      </section>
-      <section class="container">
-      <h2 id="giglog">My Assignments</h2>
+          <section class="container">
+                       <ul id="profilemenu">
+                         <li><a href="mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
+                         <li><a href="assignments">My Assigments</a></li>
+                       </ul>
+               </section>
+  <section class="container">
+       <ul id="profilemenu">
+  <li><a href="<?php echo $serverpath;?>inprogress">
+   <strong> In progress</strong> 
+    </a></li>
+  <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
+  <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
+</ul>
 
-      <?php $mygigs=get_user_gigs($uInfo['userId']);
-	if($mygigs['count']>0)
-	{
-		for($i=0;$i<$mygigs['count'];$i++)
-		{
-			$mygig=$mygigs['rows'][$i];
-			$projectbids=get_project_bids($mygig['prjId']);
-			$bidcount=$projectbids['count'];
-			if(!$bidcount)
+      </section>
+<section class="container">
+      <h2 id="logingigster1">My Gigs</h2>
+
+
+
+      <?php
+
+
+        $uId=$uInfo['userId'];
+	  	// Count Query
+		$gigscountquery=@db_query("select * from btr_projects where userId=$uId and status='2' order by postedon DESC");
+		$total_pages=$gigscountquery['count'];
+		$page = $_GET['page'];
+		$adjacents = 1;
+		$limit = 5;
+		if($page)
+		$start = ($page - 1) * $limit; 			//first item to display on this page
+		else
+		$start = 0;
+
+		$gigsquery="select * from btr_projects  where userId=$uId  and  status='2' order by postedon DESC LIMIT $start,$limit";
+	    $opengigs=@db_query($gigsquery);
+
+	  if($opengigs['count']>0)
+	  {
+		   $mcount=$opengigs['count'];
+
+
+		  for($i=0;$i<$mcount;$i++)
+		  {
+			  $opengig=$opengigs['rows'][$i];
+			  $gigsterInfo="";
+			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
+			  $nametodisplay="";
+			  $nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
+			  if(!$nametodisplay)
+			  {
+				  $nametodisplay=$gigsterInfo['username'];
+			  }
+			  $gigsterrating=0;
+			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
+			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+
+			if(file_exists($profilepic))
 			{
-				$bidcount="0";
+				$profilepic=$profilepic;
 			}
-			
-	  ?>
-        <div class="row mygig">
-           <div class="col-md-10">
-             <h2>
-             <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($mygig['prjTitle']);?>/<?php echo $mygig['prjId'];?>"><?php echo $mygig['prjTitle'];?></a></h2>
-             <h3 class="selectbid">Select Bidder</h3>
-             <?php 
-				if($projectbids['count']>0)
-				{
-					for($h=0;$h<$projectbids['count'];$h++)
-					{
-						$biduser=get_user_Info(encrypt_str($projectbids['rows'][$h]['bidfrom']));
-						
-						$biduserprofilepic="uploads/profileimage/".$biduser['profileimage'];
-							if(file_exists($biduserprofilepic))
-							{
-								$biduserprofilepic=$biduserprofilepic;
-							}
-							else
-							{
-								$biduserprofilepic="images/admin.png";
-							}
-							 $biddernametodisplay="";
-							 $biddernametodisplay=$biduser['fname'].' '.$biduser['lname'];
-							 $biddernametodisplay1=str_replace(" ","",$biddernametodisplay);
-							  if(!$biddernametodisplay1)
+			else
+			{
+				$profilepic="images/admin.png";
+			}
+	   ?>
+      <div class="row ">
+         <div class="col-md-8">
+            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+            <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
+              <div class="col-md-4"><span id="bid">&nbsp;</span></div>
+              <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+              <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
+          </div>
+         <div class="col-md-4 giginnerimg gigimg">
+              <div class="col-md-6">
+                   <?php
+                              for($t=0;$t<$gigsterrating;$t++)
 							  {
-								  $biddernametodisplay=$biduser['username'];
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_3.png" />
+								  <?php
 							  }
-							?>
-							 <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($biddernametodisplay);?>/<?php echo $biduser['userId'];?>" title="<?php echo $biddernametodisplay;?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $biduserprofilepic;?>&width=80&height=80&cropratio=1:1"></a>
-							<?php
-					}
-				}
-				else
-				{
-					?>
-					<p class="mandatory">Sorry, No Bids Submited yet.</p>
-					<?php
-				}
-			 ?>
-           </div>
-           <div class="col-md-2 rightsidegig" align="right">
-            <h4 class="firstbid"><?php echo $bidcount;?> Bids</h4>
-            <h5>S &#36; <?php echo $mygig['proposedbudget'];?></h5>
-           </div>
-           <div class="clearline"></div>
-        </div>
+							   for($t=$gigsterrating;$t<5;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_4.png" />
+								  <?php
+							  }
+							  ?>
+                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
+                   <h4>&nbsp;</h4>
+              </div>
+              <div class="col-md-6">
+                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+              </div>
+            
+              
+<!-- end bid model -->
+          </div>
+	 </div>
      <?php
+		  }
+		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
+		$prev = $page - 1;							//previous page is page - 1
+		$next = $page + 1;							//next page is page + 1
+		$lastpage = ceil($total_pages/$limit);		//lastpage is = total pages / items per page, rounded up.
+		$lpm1 = $lastpage - 1;
+		$targetpage=$serverpath."allgigs";						//last page minus 1
+		$pagination = "";
+		if($lastpage > 1)
+		{
+		$pagination .= "<div class=\"lastpagination\"><ul class=\"pagination\">";
+		//previous button
+		if ($page > 1)
+			$pagination.= "<li><a href=\"$targetpage/$prev\">« Previous</a></li>";
+		else
+			$pagination.= "<li class=\"disabled\"><a href='#'> Previous</a></li>";
+
+		//pages
+		if ($lastpage < 7 + ($adjacents * 2))	//not enough pages to bother breaking it up
+		{
+			for ($counter = 1; $counter <= $lastpage; $counter++)
+			{
+				if ($counter == $page)
+					$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
+				else
+					$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
+			}
 		}
+		elseif($lastpage > 5 + ($adjacents * 2))	//enough pages to hide some
+		{
+			//close to beginning; only hide later pages
+			if($page < 1 + ($adjacents * 2))
+			{
+				for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
+					else
+						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
+				}
+				$pagination.= "...";
+				$pagination.= "<li><a href=\"$targetpage/$lpm1\">$lpm1</a></li>";
+				$pagination.= "<li><a href=\"$targetpage/$lastpage\">$lastpage</a></li>";
+			}
+			//in middle; hide some front and some back
+			elseif($lastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
+			{
+				$pagination.= "<li><a href=\"$targetpage/1\">1</a></li>";
+				$pagination.= "<li><a href=\"$targetpage/2\">2</a></li>";
+				$pagination.= "...";
+				for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
+					else
+						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
+				}
+				$pagination.= "...";
+				$pagination.= "<li><a href=\"$targetpage/$lpm1\">$lpm1</a></li>";
+				$pagination.= "<li><a href=\"$targetpage/$lastpage\">$lastpage</a></li>";
+			}
+			//close to end; only hide early pages
+			else
+			{
+				$pagination.= "<li><a href=\"$targetpage/1\">1</a></li>";
+				$pagination.= "<li><a href=\"$targetpage/2\">2</a></li>";
+				$pagination.= "...";
+				for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage; $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
+					else
+						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
+				}
+			}
+		}
+
+		//next button
+		if ($page < $counter - 1)
+			$pagination.= "<li><a href=\"$targetpage/$next\">Next</a></li>";
+		else
+			$pagination.= "<li class=\"disabled\"><a href='#'>Next</a></li>";
+		$pagination.= "</ul></div>";
+
+
 	}
-	else{
 		?>
-		<div class="row mygig">
-           <div class="col-md-10">
-             <h2 class="mandatory">Sorry, No Gigs posted by you yet.</h2>
-           </div>
-           
-           <div class="clearline"></div>
-        </div>
-		<?php
-	}
-	 ?>   
-     </section>
+	<div class="lastpagination">
+          <ul class="pagination">
+            <?php echo $pagination;?>
+          </ul>
+      </div>
+	<?php
+
+	  }
+	  else
+	  {
+		  ?>
+		  <div class="row ">
+         <div class="col-md-8">
+         	<p>Sorry , No Gigs are in progress right now.</p>
+         </div>
+         </div>
+		  <?php
+	  }
+	 ?>
+
+
+
+
+    </section>
     <?php include('footer.php'); ?>
   </body>
 </html>
-
-
-
