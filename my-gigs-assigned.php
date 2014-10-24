@@ -42,7 +42,7 @@ include('cfg/more-functions.php');
 
         $uId=$uInfo['userId'];
 	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_projects where userId=$uId and status='2' order by postedon DESC");
+		$gigscountquery=@db_query("select * from btr_assignment where awardedto=$uId");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
 		$adjacents = 1;
@@ -52,7 +52,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-		$gigsquery="select * from btr_projects  where userId=$uId  and  status='2' order by postedon DESC LIMIT $start,$limit";
+		$gigsquery="select * from btr_assignment where awardedto=$uId DESC LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
