@@ -52,7 +52,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-		echo $gigsquery="select * from btr_assignment where awardedto=$uId DESC LIMIT $start,$limit";
+		echo $gigsquery="select * from btr_assignment where awardedto=$uId LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
