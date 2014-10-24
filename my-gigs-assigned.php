@@ -36,197 +36,76 @@ include('cfg/more-functions.php');
       <h2 id="logingigster1">My Gigs</h2>
 
 
+		<?php
+include('cfg/cfg.php');
+$mUid=$_SESSION['uId'];
+$muInfo=get_user_Info($mUid);
+$mUid=filter_text($muInfo['userId']);
+$checkQuery="select * from btr_assignment where awardedto=$mUid";
+$checkSql=@db_query($checkQuery);
+if($checkSql['count']>0)
+{
+?>
 
-      <?php
-
-
-        $uId=$uInfo['userId'];
-	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_assignment where awardedto=$uId");
-		$total_pages=$gigscountquery['count'];
-		$page = $_GET['page'];
-		$adjacents = 1;
-		$limit = 5;
-		if($page)
-		$start = ($page - 1) * $limit; 			//first item to display on this page
-		else
-		$start = 0;
-
-		echo $gigsquery="select * from btr_assignment where awardedto=$uId LIMIT $start,$limit";
-	    $opengigs=@db_query($gigsquery);
-
-	  if($opengigs['count']>0)
-	  {
-		   $mcount=$opengigs['count'];
-
-
-		  for($i=0;$i<$mcount;$i++)
-		  {
-			  $opengig=$opengigs['rows'][$i];
-			  $gigsterInfo="";
-			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
-			  $nametodisplay="";
-			  $nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
-			  if(!$nametodisplay)
-			  {
-				  $nametodisplay=$gigsterInfo['username'];
-			  }
-			  $gigsterrating=0;
-			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
-			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-
-			if(file_exists($profilepic))
-			{
-				$profilepic=$profilepic;
-			}
-			else
-			{
-				$profilepic="images/admin.png";
-			}
-	   ?>
-      <div class="row ">
-         <div class="col-md-8">
-            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-            <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-              <div class="col-md-4"><span id="bid">&nbsp;</span></div>
-              <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-              <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
-          </div>
-         <div class="col-md-4 giginnerimg gigimg">
-              <div class="col-md-6">
-                   <?php
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
-							  }
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_4.png" />
-								  <?php
-							  }
-							  ?>
-                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
-                   <h4>&nbsp;</h4>
-              </div>
-              <div class="col-md-6">
-                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-              </div>
-            
-              
-<!-- end bid model -->
-          </div>
-	 </div>
-     <?php
-		  }
-		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
-		$prev = $page - 1;							//previous page is page - 1
-		$next = $page + 1;							//next page is page + 1
-		$lastpage = ceil($total_pages/$limit);		//lastpage is = total pages / items per page, rounded up.
-		$lpm1 = $lastpage - 1;
-		$targetpage=$serverpath."allgigs";						//last page minus 1
-		$pagination = "";
-		if($lastpage > 1)
-		{
-		$pagination .= "<div class=\"lastpagination\"><ul class=\"pagination\">";
-		//previous button
-		if ($page > 1)
-			$pagination.= "<li><a href=\"$targetpage/$prev\">« Previous</a></li>";
-		else
-			$pagination.= "<li class=\"disabled\"><a href='#'> Previous</a></li>";
-
-		//pages
-		if ($lastpage < 7 + ($adjacents * 2))	//not enough pages to bother breaking it up
-		{
-			for ($counter = 1; $counter <= $lastpage; $counter++)
-			{
-				if ($counter == $page)
-					$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
-				else
-					$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
-			}
-		}
-		elseif($lastpage > 5 + ($adjacents * 2))	//enough pages to hide some
-		{
-			//close to beginning; only hide later pages
-			if($page < 1 + ($adjacents * 2))
-			{
-				for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
-				{
-					if ($counter == $page)
-						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
-					else
-						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
-				}
-				$pagination.= "...";
-				$pagination.= "<li><a href=\"$targetpage/$lpm1\">$lpm1</a></li>";
-				$pagination.= "<li><a href=\"$targetpage/$lastpage\">$lastpage</a></li>";
-			}
-			//in middle; hide some front and some back
-			elseif($lastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
-			{
-				$pagination.= "<li><a href=\"$targetpage/1\">1</a></li>";
-				$pagination.= "<li><a href=\"$targetpage/2\">2</a></li>";
-				$pagination.= "...";
-				for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
-				{
-					if ($counter == $page)
-						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
-					else
-						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
-				}
-				$pagination.= "...";
-				$pagination.= "<li><a href=\"$targetpage/$lpm1\">$lpm1</a></li>";
-				$pagination.= "<li><a href=\"$targetpage/$lastpage\">$lastpage</a></li>";
-			}
-			//close to end; only hide early pages
-			else
-			{
-				$pagination.= "<li><a href=\"$targetpage/1\">1</a></li>";
-				$pagination.= "<li><a href=\"$targetpage/2\">2</a></li>";
-				$pagination.= "...";
-				for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage; $counter++)
-				{
-					if ($counter == $page)
-						$pagination.= "<li class=\"active\"><a href='#'>$counter</a></li>";
-					else
-						$pagination.= "<li><a href=\"$targetpage/$counter\">$counter</a></li>";
-				}
-			}
-		}
-
-		//next button
-		if ($page < $counter - 1)
-			$pagination.= "<li><a href=\"$targetpage/$next\">Next</a></li>";
-		else
-			$pagination.= "<li class=\"disabled\"><a href='#'>Next</a></li>";
-		$pagination.= "</ul></div>";
-
-
+<table class="table table-hover">
+  <tr>
+    <th>#</th>
+    <th>Title</th>
+    <th>Owner</th>
+    <th>Price (<i class="fa fa-dollar"></i> )</th>
+    <th>Due Date</th>
+    <th>Status</th>
+  </tr>
+  <?php
+     $sno=1;
+     for($i=0;$i<$checkSql['count'];$i++)
+       {
+		  $muInfo=get_user_Info(encrypt_str($checkSql['rows'][$i]['projectowner']));
+		  $prjDetails=get_gig_details($checkSql['rows'][$i]['projectId']);
+		  $mId=encrypt_str($checkSql['rows']['0']['id']);
+		  $awardedto=$checkSql['rows']['0']['awardedto'];
+  ?>
+  <tr>
+    <td><?php echo $sno++;?></td>
+    <td><a href="<?php echo $serverpath;?>viewmyGig/<?php echo mera_url_encode($prjDetails['prjTitle']);?>/<?php echo $checkSql['rows'][$i]['id'];?>" data-slidepanel="panel" onclick="view_proposals(<?php echo $serverpath;?>,'<?php echo $gigs['rows'][$i]['prjId'];?>');"> <?php echo ($prjDetails['prjTitle']); ?> </a></td>
+    <td></a><?php echo $muInfo['username']; ?></td>
+    <td><?php echo ($checkSql['rows'][$i]['amount']); ?></td>
+    <td><?php echo convert_date($checkSql['rows'][$i]['completiondate']); ?></td>
+    <td><?php echo get_p_status($prjDetails['prjId']); ?>
+    <?php if(get_p_status1($checkSql['rows'][$i]['projectId'])==1)
+	{?>
+    <a href="<?=$serverpath;?>acceptGig/<?=$mId;?>/<?=encrypt_str($awardedto);?>">&nbsp;Terms and conditions</a>
+    <?php
 	}
+	$havereview=get_project_review($checkSql['rows'][$i]['projectId']);
+	if($havereview)
+	{
 		?>
-	<div class="lastpagination">
-          <ul class="pagination">
-            <?php echo $pagination;?>
-          </ul>
-      </div>
-	<?php
-
-	  }
-	  else
-	  {
-		  ?>
-		  <div class="row ">
-         <div class="col-md-8">
-         	<p>Sorry , No Gigs are in progress right now.</p>
-         </div>
-         </div>
-		  <?php
-	  }
-	 ?>
-
+		&nbsp;
+        <a href="#">
+		<?php
+		for($i=0;$i<$havereview['rating'];$i++)
+		{
+		?>
+		<i class="fa fa-star" style="color:#F90;"></i>
+		<?php
+		}
+		?>
+		</a>
+		<?php
+	}
+	?>
+    </td>
+    
+  </tr>
+  <?php
+	}
+  ?>
+</table>
+<?php
+	}
+?>
+      
 
 
 
