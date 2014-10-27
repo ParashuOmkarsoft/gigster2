@@ -9,7 +9,7 @@ include('cfg/more-functions.php');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $sitename;?>- My Gigs</title>
+    <title><?php echo $sitename;?>- My Assignments</title>
 	<?php include('script-header.php'); ?>
     <?php include('fb-login.php'); ?>
   </head>
@@ -18,26 +18,16 @@ include('cfg/more-functions.php');
     <div id="grad"></div>
           <section class="container">
                        <ul id="profilemenu">
-                         <li><a href="mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
-                         <li><a href="assignments">My Assigments</a></li>
+                         <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
+                         <li><a href="<?php echo $serverpath;?>assignments"><h5 id="ass">My Assigments</h5>  </a></li>
                        </ul>
                </section>
-  <section class="container">
-       <ul id="profilemenu">
-  <li><a href="<?php echo $serverpath;?>inprogress">
-   <strong> In progress</strong> 
-    </a></li>
-  <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
-  <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
-</ul>
-
-      </section>
+  
 <section class="container">
-      <h2 id="logingigster1">My Gigs</h2>
+      <h2 id="logingigster1">My Assignments</h2>
+<?php
 
 
-		<?php
-include('cfg/cfg.php');
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
@@ -103,13 +93,17 @@ if($checkSql['count']>0)
   ?>
 </table>
 <?php
+	}else
+	{
+		?>
+        <div class="clearfix"></div>
+        <br/>
+		<p class="mandatory">Sorry, No Gigs assigned to you yet.</p>
+                 <br/>
+                <div class="clearfix"></div>
+		<?php
 	}
-?>
-      
-
-
-
-    </section>
+?>  </section>
     <?php include('footer.php'); ?>
   </body>
 </html>

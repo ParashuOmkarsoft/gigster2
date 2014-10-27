@@ -783,7 +783,7 @@ function is_invited($from,$to)
 }
 function get_user_gigs($userId)
 {
-	$query="select * from btr_projects where status='0' and bidto>now() and userId=$userId";
+	 $query="select * from btr_projects where status='2'  and userId=$userId";
 	$sql=@db_query($query);
 	if($sql['count']>0)
 	{
