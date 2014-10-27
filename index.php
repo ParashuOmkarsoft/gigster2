@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
     <?php include('top-menu.php'); ?>
         <div id="grad"></div>
     <div id="imgback">
-      <img src="<?php echo $serverpath;?>images/womenlap.jpg">
+      <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 <?php
 include('footer.php'); 
