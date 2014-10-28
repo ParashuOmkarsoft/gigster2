@@ -88,7 +88,7 @@ else
                             <div class="modal-content cform">
                               <div class="container">
                                 <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
+                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
                                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
                                     <h2 id="login1">Bid On Gig </h2>
                                     <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
