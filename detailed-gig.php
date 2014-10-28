@@ -75,8 +75,7 @@ else
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
 				{
-					if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
-					{
+					
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 ?>
@@ -123,7 +122,7 @@ else
                         </div>
 <?php
 						}
-					}
+					
 				}
 			}
 ?>
