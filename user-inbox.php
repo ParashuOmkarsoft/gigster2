@@ -83,7 +83,7 @@ include('cfg/more-functions.php');
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
               </div>
              
-            <a href="#msgmodal<?php echo $opengig['msgId'];?>" data-toggle="modal" ><button type="button" class="btn btn-warning">Bid</button></a>  
+            <a href="#msgmodal<?php echo $opengig['msgId'];?>" data-toggle="modal" ><button type="button" class="btn btn-warning">Reply</button></a>  
               
 					 
 					
