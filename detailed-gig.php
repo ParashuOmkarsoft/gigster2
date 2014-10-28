@@ -183,9 +183,11 @@ else
       </div>
       <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span> </div>
     </div>
+    <?php if ($_SESSION['uId']) { ?>
     <div class="col-md-2 mailsymbol">
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
       <div>
+      <?php } ?>
        	<?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
 				 {
 			?>
