@@ -15,7 +15,6 @@ RewriteRule ^(lib)($|/) - [L]
 
 #Site Settings
 
-
 RewriteRule ^checkout logout.php
 RewriteRule ^loginwithtwitter twitter-login.php
 RewriteRule ^myaccount my-account.php
@@ -36,4 +35,5 @@ RewriteRule ^completed gigs-completed.php
 RewriteRule ^sendterms terms-sending.php
 RewriteRule ^finalterms final-terms.php
 RewriteRule ^rejectterms reject-terms.php
+RewriteRule ^sendmessage send-message.php
 </IfModule>

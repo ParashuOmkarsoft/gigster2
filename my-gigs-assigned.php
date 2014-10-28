@@ -57,7 +57,7 @@ if($checkSql['count']>0)
   ?>
   <tr>
     <td><?php echo $sno++;?></td>
-    <td><a href="<?php echo $serverpath;?>viewmyGig/<?php echo mera_url_encode($prjDetails['prjTitle']);?>/<?php echo $checkSql['rows'][$i]['id'];?>" data-slidepanel="panel" onclick="view_proposals(<?php echo $serverpath;?>,'<?php echo $gigs['rows'][$i]['prjId'];?>');"> <?php echo ($prjDetails['prjTitle']); ?> </a></td>
+    <td><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($prjDetails['prjTitle']);?>/<?php echo $checkSql['rows'][$i]['id'];?>" data-slidepanel="panel" onclick="view_proposals(<?php echo $serverpath;?>,'<?php echo $gigs['rows'][$i]['prjId'];?>');"> <?php echo ($prjDetails['prjTitle']); ?> </a></td>
     <td></a><?php echo $muInfo['username']; ?></td>
     <td><?php echo ($checkSql['rows'][$i]['amount']); ?></td>
     <td><?php echo convert_date($checkSql['rows'][$i]['completiondate']); ?></td>
