@@ -177,7 +177,7 @@ else
         <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
         <?php
 							  }
-				?>
+		?>
         
         <!--<img style="margin: 0px 0px 5px 10px;" src="images/star.png"><span id="bond">Earnings :    &#36; 2000.00</span>--> 
       </div>
@@ -185,9 +185,9 @@ else
     </div>
    
     <div class="col-md-2 mailsymbol">
-     <?php if ($_SESSION['uId']) { ?>
+     <?php  //if(isset()) { ?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
-       <?php } ?>
+     <?php //} ?>
       <div>
      
        	<?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
