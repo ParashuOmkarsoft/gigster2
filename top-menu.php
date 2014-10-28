@@ -25,12 +25,23 @@
 
                       <?php if(isset($_SESSION['uId']))
 					  {
+						  $uInfo=get_user_Info($_SESSION['uId']);
 						  ?>
 						  <li><a href="<?php echo $serverpath;?>myaccount" >MY ACCOUNT</a></li>                                          
    						  <li><a  href="<?php echo $serverpath;?>checkout" target="targetframe" >LOGOUT</a></li>
-                <li><a  href="#" >INBOX(0)</a></li>                                          
+                          <?php $unread=get_user_messages($uInfo['userId']);
+						  if($unread)
+						  {
+						  ?>
+              			  <li><a  href="<?php echo $serverpath;?>inbox" >INBOX(<?php echo $unread['count'];?>)</a></li>                                          
 						  <?php
-						   $uInfo=get_user_Info($_SESSION['uId']);
+						  }
+						   else
+						   {
+							    ?>
+              			  <li><a  href="#" >INBOX(0)</a></li>                                          
+						  <?php
+						   }
 					  }
 					  else
 					  {
