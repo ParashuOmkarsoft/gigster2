@@ -77,16 +77,17 @@ include('cfg/more-functions.php');
          <div class="col-md-4 giginnerimg gigimg">
               <div class="col-md-6">
                    <?php
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
-							  }
+                              
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
 								  <img src="<?php echo $serverpath;?>images/star_4.png" />
+								  <?php
+							  }
+							  for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_3.png" />
 								  <?php
 							  }
 							  ?>

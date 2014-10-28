@@ -4,13 +4,11 @@ include('cfg/functions.php');
 include('cfg/more-functions.php'); 
 
 $gigId=$_GET['gigId'];
-
 $gigdetails=get_gig_details($gigId);
 
 if($gigdetails)
 {
 	$gigsterInfo=get_user_Info(encrypt_str($gigdetails['userId']));
-	
 }
 else
 {
@@ -61,16 +59,16 @@ else
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
       <div class="col-md-6 start">
         <?php
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <?php
-							  }
-							   for($t=$gigsterrating;$t<5;$t++)
+                             for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" />
+        <?php
+							  }
+							   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
         <?php
 							  }
 			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
@@ -83,55 +81,53 @@ else
 						if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 						?>
-						<a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" ><button type="button" class="btn btn-lg btn-warning">Bid</button></a>  
-              <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-                            <div class="modal-content cform">          
-                              <div class="container">
-							
-                                  <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
-                                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
-											 <h2 id="login1">Bid On Gig </h2>
-                                            <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>  
-                                              <div class="col-md-12">
-                                              <div class="form-group">
-                                              <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>   <br/><br/> 
-                                               <div class="col-sm-12">
-                                                 <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
-                                               </div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-md-4 control-label tfont">Price</label><Br/><br/>
-                                              <div class="col-md-8">
-                                                <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
-                                              </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                              <div class="col-sm-offset-3 col-sm-10 logsign">
-                                                <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
-                                              </div>
-                                            </div>
-                                          
-                                            </div>
-                                                      
-                                 </form>
-                                            </div>
-
-                                   
-                                
-                               </div>
-                             </div>
-                           </div>
-		</div>
-						<?php
+        <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
+        <button type="button" class="btn btn-lg btn-warning">Bid</button>
+        </a>
+        <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content cform">
+              <div class="container">
+                <div class="col-md-12">
+                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
+                    <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
+                    <h2 id="login1">Bid On Gig </h2>
+                    <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
+                        <br/>
+                        <br/>
+                        <div class="col-sm-12">
+                          <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-md-4 control-label tfont">Price</label>
+                        <Br/>
+                        <br/>
+                        <div class="col-md-8">
+                          <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10 logsign">
+                          <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php
 						}
 					}
 				}
 			}
 							  ?>
-        
       </div>
       <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
     </div>
@@ -174,7 +170,7 @@ else
       </div>
     </div>
   </div>
-<div class="row">
+  <div class="row">
     <div class="col-md-12">
       <h5 id="title">Overview</h5>
     </div>
@@ -239,53 +235,45 @@ else
       </div>
       <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span> </div>
     </div>
-   
     <div class="col-md-2 mailsymbol">
-     <?php  //if(isset()) { ?>
+      <?php  //if(isset()) { ?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
-     <?php //} ?>
+      <?php //} ?>
       <div>
-     
-       	<?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
+        <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
 				 {
 			?>
-         <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
-         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content cform">
-      <div class="container">
-        <div class="col-md-12">
-          <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
-            <input type="hidden" id="fromId" name="fromId" value="<?php echo $_SESSION['uId'];?>" />
-            <input type="hidden" id="toId" name="toId" value="<?php echo $gigdetails['userId'];?>" />
-             <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
-            <h2 id="login1">Messages</h2>
-            <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
-            <div class="col-md-12">
-           
-              
-              <div class="form-group">
-                <label class="col-md-4 control-label tfont">Message</label>
-                <Br/>
-                <br/>
+        <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+        <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content cform">
+              <div class="container">
                 <div class="col-md-12">
-                  <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
+                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
+                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $_SESSION['uId'];?>" />
+                    <input type="hidden" id="toId" name="toId" value="<?php echo $gigdetails['userId'];?>" />
+                    <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
+                    <h2 id="login1">Messages</h2>
+                    <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="col-md-4 control-label tfont">Message</label>
+                        <Br/>
+                        <br/>
+                        <div class="col-md-12">
+                          <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10 logsign">
+                          <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-10 logsign">
-                  <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
-                </div>
-              </div>
-              
-              
-              
-           
-           </div>
-          </form>
-        </div>
-        <div class="col-md-12" style="height:250px; overflow:scroll;">
-          <?php
+                <div class="col-md-12" style="height:250px; overflow:scroll;">
+                  <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
 			$other=get_oponent($pId,$muId);
@@ -320,31 +308,25 @@ box-shadow: 0px 0px 2px #000000;'";
 			}
 			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
-
-<div class="item" <?php echo $cl;?>>
- <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/>
- <br/>
-  <p class="message">
-  <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp;
-  <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
-  <?php echo get_user_name($msgfrom);?> </a><br/>
-  <?php echo stripslashes(stripslashes($messages['rows'][$t]['msgcontent']));?><br/>
-  </p>
-</div>
-<br/>
-<?php
+                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
+                    <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
+                      <?php echo get_user_name($msgfrom);?> </a><br/>
+                      <?php echo stripslashes(stripslashes($messages['rows'][$t]['msgcontent']));?><br/>
+                    </p>
+                  </div>
+                  <br/>
+                  <?php
 		}
 		  ?>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-         
-         <?php
+        <?php
 		}
 		 ?>
-       </div>
+      </div>
       <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
 				 {
 					if(is_project_awarded($gigdetails['prjId']))
@@ -352,9 +334,8 @@ box-shadow: 0px 0px 2px #000000;'";
 	if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-	<img src="<?php echo $serverpath;?>images/symbol.png" />
-    
-	<?php
+      <img src="<?php echo $serverpath;?>images/symbol.png" />
+      <?php
 	}
 }
 else{?>
@@ -392,7 +373,6 @@ else
             <h2 id="login1">Award Gig</h2>
             <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
             <div class="col-md-12">
-           
               <div class="form-group">
                 <label for="inputText" class="col-sm-4 control-label newlog">Award To</label>
                 <br/>
@@ -436,8 +416,7 @@ else
                   <button type="submit" class="btn btn-warning loginbtn">Award</button>
                 </div>
               </div>
-           
-           </div>
+            </div>
           </form>
         </div>
       </div>
