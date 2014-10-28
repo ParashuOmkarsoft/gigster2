@@ -71,9 +71,9 @@ else
         <img src="<?php echo $serverpath;?>images/star_1.png" />
 <?php
 							  }
-			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
+		/*	if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
-				/*if(!is_project_awarded($gigdetails['prjId']))
+				if(!is_project_awarded($gigdetails['prjId']))
 				{
 					if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
 					{
@@ -124,8 +124,8 @@ else
 <?php
 						/*}
 					}
-				}*/
-			}
+				}
+			}*/
 ?>
       </div>
       <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
