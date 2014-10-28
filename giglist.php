@@ -244,6 +244,14 @@ include('cfg/more-functions.php');
 	<?php
 
 	  }
+	  else
+	  {
+		  ?>
+          <br/>
+		  <p class="mandatory col-md-12">Sorry, No Open gigs right now. </p>
+          <br/>          
+		  <?php
+	  }
 	 ?>
           
         

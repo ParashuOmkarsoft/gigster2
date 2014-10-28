@@ -235,12 +235,12 @@ else
       <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span> </div>
     </div>
     <div class="col-md-2 mailsymbol">
-      <?php  //if(isset()) { ?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
-      <?php //} ?>
       <div>
-        <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
+        <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) || is_message_thread_initiated($gigdetails['prjId'],$bidderInfo['userId']))
 				 {
+					 
+					
 			?>
         <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -249,8 +249,23 @@ else
               <div class="container">
                 <div class="col-md-12">
                   <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
-                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $_SESSION['uId'];?>" />
+                  <?php if($_SESSION['uId']==encrypt_str($gigdetails['userId']))
+				  {
+					  ?>
+                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $uInfo['userId'];?>" />
+                    <input type="hidden" id="toId" name="toId" value="<?php echo $bidderInfo['userId'];?>" />
+                    <?php
+				  }
+				  else
+				  {
+					  ?>
+					  
+                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $bidderInfo['userId'];?>" />
                     <input type="hidden" id="toId" name="toId" value="<?php echo $gigdetails['userId'];?>" />
+                    <?php
+					
+				  }
+					?>
                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
                     <h2 id="login1">Messages</h2>
                     <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
@@ -357,9 +372,11 @@ else{?>
 </section>
 <?php if(is_project_awarded($gigdetails['prjId']))
 {
+	
 }
 else
 {
+	
 	?>
 <div id="awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -424,10 +441,11 @@ else
 </div>
 <?php
 }
-			}
-		}
-		else
-		{
+}
+}
+else
+{
+
 			?>
 <section>
   <div class="row firstdinner container">

@@ -8,6 +8,8 @@ $jobtype=filter_text($_POST['jobtype'][0]);
 $proposedprice=filter_text($_POST['proposedprice']);
 $inviteusers=filter_text($_POST['inviteusers'][0]);
 $enddate=filter_text($_POST['enddate']);
+
+$enddate=convert_db_date($enddate);
 $userInfo=get_user_Info($_SESSION['uId']);
 $uId=$userInfo['userId'];
 $gigtitle=filter_text($prjTitle);

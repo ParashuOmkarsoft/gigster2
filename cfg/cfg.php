@@ -806,4 +806,23 @@ function is_project_bided_by_user($prjId,$userId)
 							return 0;
 						}
 }
+function convert_db_date($date)
+{
+	$date=explode("/",$date);
+	$date=$date[2]."-".$date[0]."-".$date[1];
+	return $date;
+}
+function is_message_thread_initiated($projectId,$bidderid)
+{
+	 $query="select * from btr_messages where (msgfrom=$bidderid or msgto=$bidderid) and projectId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return 1;
+	}
+	else
+	{
+		return "0";
+	}
+}
 ?>

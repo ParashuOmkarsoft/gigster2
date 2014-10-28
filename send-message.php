@@ -4,13 +4,11 @@ include('cfg/cfg.php');
 
 $projectId=filter_text($_POST['projectId']);
 $msgfrom=filter_text($_POST['fromId']);
-$msgfrominfo=get_user_Info($msgfrom);
-$msgfrom=$msgfrominfo['userId'];
 $msgto=filter_text($_POST['toId']);
 $message=filter_text($_POST['message']);
 $attachedfile=$_FILES['attachedfile'];
 $messageQuery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId)";
-echo $messageQuery.="values($msgfrom,$msgto,'$message',".gmmktime().",$projectId)";
+$messageQuery.="values($msgfrom,$msgto,'$message',".gmmktime().",$projectId)";
 $messageSql=@db_query($messageQuery,3);
 
 if($attachedfile['size']>0)

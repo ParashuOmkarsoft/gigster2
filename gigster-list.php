@@ -156,6 +156,12 @@ include('cfg/more-functions.php');
 		</table>
 		<?php
 	}
+	else
+	{
+		?>
+		  <p class="mandatory">Sorry, No Gigsters regsitered yet.</p>
+		<?php
+	}
 	?>
                 
 <script type="text/javascript">
