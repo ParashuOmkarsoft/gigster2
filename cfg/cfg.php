@@ -793,4 +793,17 @@ function get_user_gigs($userId)
 	{
 	}
 }
+function is_project_bided_by_user($prjId,$userId)
+{
+	$checkQuery="select * from btr_bids where projectId=$prjId and bidfrom=$userId";
+						$checkSql=@db_query($checkQuery);
+						if($checkSql['count']>0)
+						{
+							return 1;
+						}
+						else
+						{
+							return 0;
+						}
+}
 ?>
