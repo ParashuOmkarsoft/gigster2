@@ -71,14 +71,14 @@ else
         <img src="<?php echo $serverpath;?>images/star_1.png" />
 <?php
 							  }
-		/*	if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
+			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
 				{
 					if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
 					{
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
-						{*/
+						{
 ?>
                         <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
                         <button type="button" class="btn btn-lg btn-warning">Bid</button>
@@ -122,10 +122,10 @@ else
                           </div>
                         </div>
 <?php
-						/*}
+						}
 					}
 				}
-			}*/
+			}
 ?>
       </div>
       <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
