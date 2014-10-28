@@ -39,7 +39,7 @@
 						   else
 						   {
 							    ?>
-              			  <li><a  href="#" >INBOX(0)</a></li>                                          
+              			  <li><a  href="<?php echo $serverpath;?>inbox" >INBOX(0)</a></li>                                          
 						  <?php
 						   }
 					  }
