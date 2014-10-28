@@ -576,7 +576,7 @@ function get_project_owner($prjId)
 
 function is_project_awarded($projectId)
 {
-	 echo $checkQuery="select * from btr_assignment where projectId=$projectId";
+	  $checkQuery="select * from btr_assignment where projectId=$projectId";
 	$checkSql=@db_query($checkQuery);
 	if($checkSql['count']>0)
 	{
