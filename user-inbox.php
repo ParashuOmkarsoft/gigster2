@@ -84,12 +84,7 @@ include('cfg/more-functions.php');
               </div>
              
             <a href="#msgmodal<?php echo $opengig['msgId'];?>" data-toggle="modal" ><button type="button" class="btn btn-warning">Reply</button></a>  
-              
-					 
-					
-			
-      
-        <div id="msgmodal<?php echo $opengig['msgId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+         <div id="msgmodal<?php echo $opengig['msgId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content cform">
               <div class="container">

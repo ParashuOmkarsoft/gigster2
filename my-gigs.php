@@ -18,8 +18,8 @@ include('cfg/more-functions.php');
     <div id="grad"></div>
           <section class="container">
                        <ul id="profilemenu">
-                         <li><a href="mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
-                         <li><h5 id="pro"><a href="assignments">My Assigments</a></h5></li>
+                         <li><a href="<?php echo $serverpath;?>mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
+                         <li><h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assigments</a></h5></li>
                        </ul>
                </section>
   <section class="container">

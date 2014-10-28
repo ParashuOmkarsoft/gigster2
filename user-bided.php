@@ -9,7 +9,7 @@ include('cfg/more-functions.php');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $sitename;?>- My Assignments</title>
+    <title><?php echo $sitename;?>- My Bids</title>
 	<?php include('script-header.php'); ?>
     <?php include('fb-login.php'); ?>
   </head>
@@ -26,27 +26,28 @@ include('cfg/more-functions.php');
 <section class="container">
 <ul id="profilemenu">
   <li><a href="<?php echo $serverpath;?>assignments">
-   <strong> In progress</strong> 
+   In progress
     </a></li>
-  <li><a href="<?php echo $serverpath;?>bided"> My Bids </a></li>
+  <li><a href="<?php echo $serverpath;?>bided"> <strong>My Bids</strong> </a></li>
   <li><a href="<?php echo $serverpath;?>tocompleted">My Completed</a></li>
 </ul>
-      <h2 id="logingigster1">My Assignments</h2>
+      <h2 id="logingigster1">My Bids</h2>
 <?php
 
 
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-$checkQuery="select * from btr_assignment where awardedto=$mUid";
+ $checkQuery="select * from btr_bids where  bidfrom=".$uInfo['userId']." order by bidon DESC ";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
 	 $sno=1;
      for($i=0;$i<$checkSql['count'];$i++)
        {
-		   $muInfo=get_user_Info(encrypt_str($checkSql['rows'][$i]['projectowner']));
+
 		  $prjDetails=get_gig_details($checkSql['rows'][$i]['projectId']);
+		    $muInfo=get_user_Info(encrypt_str($prjDetails['userId']));
 		  $mId=encrypt_str($checkSql['rows']['0']['id']);
 		  $awardedto=$checkSql['rows']['0']['awardedto'];
 			$nametodisplay="";
@@ -79,7 +80,7 @@ if($checkSql['count']>0)
       </div>          
       </div>
      <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-10" style="visibility:hidden;">
             <h4>Completion Status</h4><div class="row">
           <div class="col-md-12">
          <h4>sept 10,2014 <span class="c">sept 15,2014</span></h4>

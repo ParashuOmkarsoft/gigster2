@@ -37,4 +37,6 @@ RewriteRule ^finalterms final-terms.php
 RewriteRule ^rejectterms reject-terms.php
 RewriteRule ^sendmessage send-message.php
 RewriteRule ^inbox user-inbox.php
+RewriteRule ^bided user-bided.php
+RewriteRule ^tocompleted user-completed.php
 </IfModule>
