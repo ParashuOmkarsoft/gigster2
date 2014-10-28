@@ -35,6 +35,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   }
 	   else{
 		  print_r($user_info);
+		  die();
 		   $insertQuery=@db_query("insert into btr_users(joinedon,twittid)values(".gmmktime().",'$uid')",3);
 		   if($insertQuery)
 		   {
