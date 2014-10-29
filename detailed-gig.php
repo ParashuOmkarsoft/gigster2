@@ -208,11 +208,11 @@ else
 				$biddernametodisplay=$bidderInfo['username'];
 			}
 				$biderrating=get_user_rating($bidderInfo['userId']);
-				//pr($projectbids);
+				
 		?>
 <section >
   <div class="row firstdinner container">
-   <?php $uInfo=get_user_Info($_SESSION['uId']); //pr($uInfo); ?>
+  
     <div class="col-md-10 person1">
       <div style="float:left"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1"> </div>
       <div> <span id="bond"><?php echo $biddernametodisplay ;?></span> </div>
@@ -237,7 +237,7 @@ else
       <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span> </div>
     </div>
     <div class="col-md-2 mailsymbol">
-   
+    <?php $uInfo=get_user_Info($_SESSION['uId']);  ?>
     <?php if($uInfo['userId']==$projectbids['rows'][$i]['bidfrom']) { 
 	?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
