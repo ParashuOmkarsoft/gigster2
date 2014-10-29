@@ -47,7 +47,7 @@ if(!isset($_SESSION['uId']))
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-$checkQuery="select * from btr_assignment where awardedto=$mUid";
+echo $checkQuery="select * from btr_assignment where awardedto=$mUid";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
