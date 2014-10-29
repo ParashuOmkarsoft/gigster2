@@ -47,10 +47,11 @@ if(!isset($_SESSION['uId']))
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-echo $checkQuery="select * from btr_assignment where awardedto=$mUid";
+ $checkQuery="select * from btr_assignment where awardedto=$mUid";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
+	print_r($checkSql);
 	 $sno=1;
      for($i=0;$i<$checkSql['count'];$i++)
        {
