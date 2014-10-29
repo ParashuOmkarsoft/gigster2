@@ -18,7 +18,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   $twitter_otoken=$_SESSION['oauth_token'];
 	   $twitter_otoken_secret=$_SESSION['oauth_token_secret'];
 	   $email='';
-	   
+	  
         $uid = $user_info->id;
         $username = $user_info->name;
 		
@@ -34,8 +34,8 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 			<?php
 	   }
 	   else{
-		  print_r($user_info);
-		  die();
+		 
+		 
 		   $insertQuery=@db_query("insert into btr_users(joinedon,twittid)values(".gmmktime().",'$uid')",3);
 		   if($insertQuery)
 		   {
