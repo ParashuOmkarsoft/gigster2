@@ -52,8 +52,8 @@ class TwitterOAuth
     public function __construct(array $config)
     {
         $required = array(
-            'consumer_key' => '',
-            'consumer_secret' => '',
+            'consumer_key' => 'WeQnhZNcMySLeHpfMzg',
+            'consumer_secret' => 't5OHqcMHoDNGnwk3sHx7UhDkCCFAsdbiVOuPckZFY',
         );
 
         if (count(array_intersect_key($required, $config)) !== count($required)) {
