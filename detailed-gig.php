@@ -238,7 +238,7 @@ else
     </div>
     <div class="col-md-2 mailsymbol">
     <?php $uInfo=get_user_Info($_SESSION['uId']);  ?>
-    <?php pr($uInfo['userId']); if($uInfo['userId']==$projectbids['rows'][$i]['bidfrom']) { 
+    <?php if($uInfo['userId']==$projectbids['rows'][$i]['bidfrom']) { 
 	?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
       <?php } ?>
