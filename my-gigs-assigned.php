@@ -57,7 +57,7 @@ if($checkSql['count']>0)
        {
 		   $muInfo=get_user_Info(encrypt_str($checkSql['rows'][$i]['projectowner']));
 		  $prjDetails=get_gig_details($checkSql['rows'][$i]['projectId']);
-		  $mId=encrypt_str($checkSql['rows']['0']['id']);
+		  $mId=encrypt_str($checkSql['rows'][$i]['id']);
 		  $awardedto=$checkSql['rows']['0']['awardedto'];
 			$nametodisplay="";
 			  $nametodisplay=$muInfo['fname'].' '.$muInfo['lname'];
