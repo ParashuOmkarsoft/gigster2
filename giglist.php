@@ -57,7 +57,7 @@ include('cfg/more-functions.php');
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			
-			if(file_exists($profilepic))
+			if(!empty($gigsterInfo['profileimage']))
 			{
 				$profilepic=$profilepic;
 			}
