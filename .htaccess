@@ -39,4 +39,6 @@ RewriteRule ^sendmessage send-message.php
 RewriteRule ^inbox user-inbox.php
 RewriteRule ^bided user-bided.php
 RewriteRule ^tocompleted user-completed.php
+RewriteRule ^sendreport report-sending.php
+RewriteRule ^approvereport/([^/]*)$ report-approval.php?reportId=$1 [L]
 </IfModule>

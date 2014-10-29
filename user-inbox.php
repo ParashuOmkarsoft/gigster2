@@ -71,7 +71,7 @@ include('cfg/more-functions.php');
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
               <div class="col-md-8"><span id="bid">&nbsp;</span></div>
               <div class="col-md-4"><span class="bid">Posted :<?php echo get_time($opengig['msgon']); ?></span></div>
-              <p id="gigpara"><?php echo stripslashes(strip_string($opengig['msgcontent'],325));?></p>
+              <p id="gigpara"><?php echo stripslashes((html_entity_decode($opengig['msgcontent'])));?></p>
           </div>
          <div class="col-md-4 giginnerimg gigimg">
               <div class="col-md-6">
@@ -82,7 +82,26 @@ include('cfg/more-functions.php');
               <div class="col-md-6">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
               </div>
-             
+             <?php if($opengig['msgtype']=="r")
+			 {
+				 $reportdetails=get_report_details($opengig['reportid']);
+
+				 if($reportdetails['isapproved']=="1")
+				 {
+					 ?>
+					 <button type="button" class="btn btn-warning" style=" background-color:#753200;">Approved </button>
+					 <?php
+				 }
+				 else
+				 {
+				 ?>
+				    <a href="<?php echo $serverpath;?>approvereport/<?php echo $opengig['reportid'];?>" target="targetframe"><button type="button" class="btn btn-warning">Approve </button></a>
+				 <?php
+				 }
+			 }
+			 else
+			 {
+				 ?>
             <a href="#msgmodal<?php echo $opengig['msgId'];?>" data-toggle="modal" ><button type="button" class="btn btn-warning">Reply</button></a>  
          <div id="msgmodal<?php echo $opengig['msgId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -170,7 +189,7 @@ box-shadow: 0px 0px 2px #000000;'";
           </div>
         </div>
         <?php
-		
+			 }
         
 			
 			?>

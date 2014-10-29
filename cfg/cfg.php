@@ -825,4 +825,26 @@ function is_message_thread_initiated($projectId,$bidderid)
 		return "0";
 	}
 }
+function get_status_details($projectId,$userId)
+{
+	$checkQuery="select max(completion) as mcompleted from btr_reports where projectId=$projectId and reportfrom=$userId and isapproved='1'";
+	$checkSql=@db_query($checkQuery);
+	if($checkSql['count']>0)
+	{
+		return $checkSql['rows']['0']['mcompleted'];
+	}
+	else
+	{
+		return "0";
+	}
+}
+function get_report_details($reportId)
+{
+	$query="select * from btr_reports where rpId=$reportId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0'];
+	}
+}
 ?>
