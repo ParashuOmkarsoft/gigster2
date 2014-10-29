@@ -241,7 +241,11 @@ else
     <?php if($uInfo['userId']==$projectbids['rows'][$i]['bidfrom']) { 
 	?>
       <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
-      <?php } ?>
+      <?php }
+	  		 else if($_SESSION['uId'] == encrypt_str($gigdetails['userId']))
+			  { ?>
+		<h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
+	  <?php 	} ?>
       <div>
         <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) || is_message_thread_initiated($gigdetails['prjId'],$bidderInfo['userId']))
 				 {
