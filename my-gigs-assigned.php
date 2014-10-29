@@ -85,58 +85,7 @@ if($checkSql['count']>0)
             <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3> 
             <br/>
             <p>
-           <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" style="background-color:#f46700;">Send Status Report</button></a>
-           <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-                            <div class="modal-content cform">          
-                              <div class="container">
-							
-                                  <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendreport" role="form" method="post" target="targetframe" >
-                                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
-                                  <input type="hidden" id="reportfrom" name="reportfrom" value="<?php echo $mUid;?>" />
-                                  <input type="hidden" id="reportto" name="reportto" value="<?php echo $prjDetails['userId'];?>" />                                  
-											 <h2 id="login1">Status Report </h2>
-                                            <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>  
-                                              <div class="col-md-12">
-                                              <div class="form-group">
-                                              <label for="inputText" class="col-sm-4 control-label newlog">Message</label>   <br/><br/> 
-                                               <div class="col-sm-12">
-                                                 <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="message" id="message"></textarea>
-                                               </div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-md-4 control-label tfont">Completed (%)</label><Br/><br/>
-                                              <div class="col-md-8">
-                                                <select class="form-control" id="completed" name="completed" >
-                                                	<?php for($i=00;$i<101;$i=$i+10)
-													{
-														?>
-														<option value="<?php echo $i;?>"><?php echo $i;?></option>
-														<?php
-													}
-													?>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                              <div class="col-sm-offset-3 col-sm-10 logsign">
-                                                <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
-                                              </div>
-                                            </div>
-                                          
-                                            </div>
-                                                      
-                                 </form>
-                                            </div>
-
-                                   
-                                
-                               </div>
-                             </div>
-                           </div>
-		</div>
+           
             </p>
       </div>
       <div class="col-md-4">
