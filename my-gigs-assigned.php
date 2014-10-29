@@ -84,7 +84,7 @@ if($checkSql['count']>0)
           <div class="col-md-8">
             <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3> 
             <br/>
-            <?php if($prjDetails['status']=="3")
+            <?php if($prjDetails['status']!="3")
 			{
 				?>
             <p>
