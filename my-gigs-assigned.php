@@ -84,8 +84,11 @@ if($checkSql['count']>0)
           <div class="col-md-8">
             <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3> 
             <br/>
+            <?php if($prjDetails['status']=="3")
+			{
+				?>
             <p>
-           <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" style="background-color:#f46700;">Send Status Report</button></a>
+           <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a>
            <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">          
@@ -138,6 +141,9 @@ if($checkSql['count']>0)
                            </div>
 		</div>
             </p>
+            <?php
+			}
+			?>
       </div>
       <div class="col-md-4">
 				 <!--<img src="images/mail.jpg">-->
@@ -155,7 +161,7 @@ if($checkSql['count']>0)
 		  ?>
          <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
          <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;background-color:#f46700 !important;">
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
                 <span class="sr-only"></span>
          		 </div>
          </div>
