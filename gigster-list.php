@@ -66,13 +66,12 @@ include('cfg/more-functions.php');
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			
 			$mloc="";
-		if($gigsterInfo['city'])
+			if($gigsterInfo['city'])
 			{
 			 $mloc=$gigsterInfo['city'].",";
 			}
 			else
 			{
-				
 			}
 			if($gigsterInfo['country'])
 			{
@@ -81,19 +80,18 @@ include('cfg/more-functions.php');
 			
 			?>
 				
-                	<td>
-                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>">
+                <td>
+                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>">
                    <div class="artst-pic pull-left">
-				<?php // echo $gigsterInfo['userId']; ?>
-					 
-                          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-                       
-                      </div>
-                        <div class="artst-prfle pull-right">
+					
+					   <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+                   </div>
+                   <div class="artst-prfle pull-right">
                           <div class="art-title">
                               <?php 
 							  echo strip_string($nametodisplay,13);
-							  ?><span class="star">
+							  ?>
+                              <span class="star">
                               <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
@@ -108,7 +106,7 @@ include('cfg/more-functions.php');
 								  <?php
 							  }
 							  ?>
-                             
+                             <?php //pr($gigsterrating); ?>
                              
                              </span>
                              <?php if($gigsterInfo['city'])

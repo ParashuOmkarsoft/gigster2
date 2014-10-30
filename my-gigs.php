@@ -5,41 +5,37 @@ include('cfg/more-functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $sitename;?>- My Gigs</title>
-	<?php include('script-header.php'); ?>
-    <?php include('fb-login.php'); ?>
-  </head>
-  <body>
-    <?php include('top-menu.php'); ?>
-    <div id="grad"></div>
-          <section class="container">
-                       <ul id="profilemenu">
-                         <li><a href="<?php echo $serverpath;?>mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
-                         <li><h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assigments</a></h5></li>
-                       </ul>
-               </section>
-  <section class="container">
-       <ul id="profilemenu">
-  <li><a href="<?php echo $serverpath;?>inprogress">
-   <strong> In progress</strong> 
-    </a></li>
-  <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
-  <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
-</ul>
-
-      </section>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php echo $sitename;?>- My Gigs</title>
+<?php include('script-header.php'); ?>
+<?php include('fb-login.php'); ?>
+</head>
+<body>
+<?php include('top-menu.php'); ?>
+<div id="grad"></div>
 <section class="container">
-      <h2 id="logingigster1">My Gigs</h2>
-
-
-
-      <?php
-
-
+  <ul id="profilemenu">
+    <li><a href="<?php echo $serverpath;?>mygigs">
+      <h5 id="ass">My Gigs</h5>
+      </a></li>
+    <li>
+      <h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assigments</a></h5>
+    </li>
+  </ul>
+</section>
+<section class="container">
+  <ul id="profilemenu">
+    <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong> </a></li>
+    <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
+    <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
+  </ul>
+</section>
+<section class="container">
+  <h2 id="logingigster1">My Gigs</h2>
+  <?php
         $uId=$uInfo['userId'];
 	  	// Count Query
 		$gigscountquery=@db_query("select * from btr_projects where userId=$uId and status='2' order by postedon DESC");
@@ -51,15 +47,13 @@ include('cfg/more-functions.php');
 		$start = ($page - 1) * $limit; 			//first item to display on this page
 		else
 		$start = 0;
-
 		$gigsquery="select * from btr_projects  where userId=$uId  and  status='2' order by postedon DESC LIMIT $start,$limit";
+		
 	    $opengigs=@db_query($gigsquery);
-
+		//pr($gigscountquery);
 	  if($opengigs['count']>0)
 	  {
 		   $mcount=$opengigs['count'];
-
-
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];
@@ -84,42 +78,38 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 	   ?>
-      <div class="row ">
-         <div class="col-md-8">
-            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-            <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-              <div class="col-md-4"><span id="bid">&nbsp;</span></div>
-              <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-              <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
-          </div>
-         <div class="col-md-4 giginnerimg gigimg">
-              <div class="col-md-6">
-                   <?php
+  <div class="row ">
+    <div class="col-md-8">
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
+      <div class="col-md-4"><span id="bid">&nbsp;</span></div>
+      <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+      <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
+    </div>
+    <div class="col-md-4 giginnerimg gigimg">
+      <div class="col-md-6">
+        <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
+        <img src="<?php echo $serverpath;?>images/star_3.png" />
+        <?php
 							  }
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_4.png" />
-								  <?php
+        <img src="<?php echo $serverpath;?>images/star_4.png" />
+        <?php
 							  }
 							  ?>
-                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
-                   <h4>&nbsp;</h4>
-              </div>
-              <div class="col-md-6">
-                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-              </div>
-            
-              
-<!-- end bid model -->
-          </div>
-	 </div>
-     <?php
+        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
+        <h4>&nbsp;</h4>
+      </div>
+      <div class="col-md-6"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
+      <!-- end bid model --> 
+    </div>
+  </div>
+  <?php
 		  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
 		$prev = $page - 1;							//previous page is page - 1
@@ -196,44 +186,33 @@ include('cfg/more-functions.php');
 				}
 			}
 		}
-
 		//next button
 		if ($page < $counter - 1)
 			$pagination.= "<li><a href=\"$targetpage/$next\">Next</a></li>";
 		else
 			$pagination.= "<li class=\"disabled\"><a href='#'>Next</a></li>";
 		$pagination.= "</ul></div>";
-
-
 	}
 		?>
-	<div class="lastpagination">
-          <ul class="pagination">
-            <?php echo $pagination;?>
-          </ul>
-      </div>
-	<?php
-
+  <div class="lastpagination">
+    <ul class="pagination">
+      <?php echo $pagination;?>
+    </ul>
+  </div>
+  <?php
 	  }
 	  else
 	  {
-		  ?>
-		  <div class="row ">
-         <div class="col-md-8">
-         	<p>Sorry , No Gigs are in progress right now.</p>
-         </div>
-         </div>
-		  <?php
+  ?>
+  <div class="row ">
+    <div class="col-md-8">
+      <p>Sorry , No Gigs are in progress right now.</p>
+    </div>
+  </div>
+  <?php
 	  }
 	 ?>
-
-
-
-
-    </section>
-    <?php include('footer.php'); ?>
-  </body>
+</section>
+<?php include('footer.php'); ?>
+</body>
 </html>
-
-
-
