@@ -89,7 +89,7 @@ if($checkSql['count']>0)
 				?>
             <p>
            <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a>
-           <a href="<?php echo $serverpath;?>acceptGig/<?php echo encrypt_str($mId);?>/<?php echo encrypt_str($$checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a>
+           <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a>
            <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">          
