@@ -214,7 +214,7 @@ box-shadow: 0px 0px 2px #000000;'";
                                             
                                             <div class="form-group">
                                               <div class="col-sm-offset-3 col-sm-10 logsign">
-                                                <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
+                                                <button type="submit" class="btn btn-warning loginbtn">Send Report</button>
                                               </div>
                                             </div>
                                           
