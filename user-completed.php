@@ -73,7 +73,7 @@ if($checkSql['count']>0)
 <section id="firstsection" class="container">
       <div class="row">
           <div class="col-md-8">
-            <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
+            <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
       </div>
       <div class="col-md-4">
 				<!-- <img src="images/mail.jpg">-->

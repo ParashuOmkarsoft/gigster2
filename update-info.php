@@ -100,10 +100,10 @@ if($frmaction=="updateinfo")
 					$updateQuery="update btr_users set profileimage='$imagename' where userId=$user";
 					$updateSql=@db_query($updateQuery);
 					$mpath=$serverpath."image.php?image=/uploads/profileimage/".$imagepath."&width=150&height=113&cropratio=4:3";
-					$mpath=urlencode($mpath);
+					$mpath=mera_url_noslash($mpath);
 					?>
                     <script type="text/javascript">
-					window.parent.change_image("imguser","<?=urlencode($imagepath);?>");
+					window.parent.change_image("imguser","<?=mera_url_noslash($imagepath);?>");
 					</script>
 					<?php
 				}
@@ -122,7 +122,7 @@ if($frmaction=="updateinfo")
 	window.parent.document.getElementById("headername").innerHTML="<?php echo $data['fname'].' '. $data['lname'];?>";
 	window.parent.document.getElementById("headertitle").innerHTML="<?php echo $data['tagline'];?>";
 	window.parent.document.getElementById("map").innerHTML="<?php echo $mloc;?>";
-	window.parent.change_image("imguser","<?=urlencode($mpath);?>");
+	window.parent.change_image("imguser","<?=mera_url_noslash($mpath);?>");
 	window.parent.visible_invisible('paraprofile','frmprofile');
 	
 	</script>

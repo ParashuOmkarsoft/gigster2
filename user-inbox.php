@@ -67,7 +67,7 @@ include('cfg/more-functions.php');
 	   ?>
       <div class="row ">
          <div class="col-md-8">
-            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
               <div class="col-md-8"><span id="bid">&nbsp;</span></div>
               <div class="col-md-4"><span class="bid">Posted :<?php echo get_time($opengig['msgon']); ?></span></div>
@@ -76,11 +76,11 @@ include('cfg/more-functions.php');
          <div class="col-md-4 giginnerimg gigimg">
               <div class="col-md-6">
                  
-                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
+                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
                    <h4>&nbsp;</h4>
               </div>
               <div class="col-md-6">
-                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
               </div>
              <?php if($opengig['msgtype']=="r")
 			 {
