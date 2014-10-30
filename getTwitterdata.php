@@ -18,15 +18,18 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   $twitter_otoken=$_SESSION['oauth_token'];
 	   $twitter_otoken_secret=$_SESSION['oauth_token_secret'];
 	   $email='';
+	 
 	  
         $uid = $user_info->id;
         $username = $user_info->name;
 		$fbImage = $user_info->profile_image_url;
 		
-       $checkQuery="select * from btr_users where twitid=$uid";
+      $checkQuery="select * from btr_users where twittid='".$uid."'";
+	
 	   $checkSql=@db_query($checkQuery);
-	   if($checksql['count']>0)
-	   {
+	    
+	if($checkSql['count'] > 0 )
+	   {    
 		      if($fbImage)
 		  {
 			  $ext=get_extension($fbImage);
@@ -51,12 +54,11 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 			</script>
 			<?php
 	   }
-	   else{
+	   else{		
 		 
-		 
-		   $insertQuery=@db_query("insert into btr_users(joinedon,twittid)values(".gmmktime().",'$uid')",3);
+		   $insertQuery=@db_query("insert into btr_users(joinedon,twittid)values(".gmmktime().",'".$uid."')",3);
 		   if($insertQuery)
-		   {
+		   { 
 			   $updateQuery=@db_query("update btr_users set authkey='".encrypt_str($insertQuery)."' where userId=$insertQuery");
 			   if($fbImage)
 		  {
