@@ -78,16 +78,18 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 	   ?>
-  <div class="row ">
+  <div class="row myrow">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid">&nbsp;</span></div>
       <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-      <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
+      
     </div>
-    <div class="col-md-4 giginnerimg gigimg">
-      <div class="col-md-6">
+    <div class="col-md-12">
+    <div class="col-md-10"><p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
+     <div class="col-md-2 giginnerimg gigimg">
+     <?php /*?> <div class="col-md-6">
         <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
@@ -102,12 +104,17 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
-        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
-        <h4>&nbsp;</h4>
+        
+      </div><?php */?>
+      <div class="col-md-12">
+       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+       <div class="tyco"><h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4></div>
+       <h4>&nbsp;</h4>
       </div>
-      <div class="col-md-6"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
       <!-- end bid model --> 
     </div>
+    </div>
+   
   </div>
   <?php
 		  }
