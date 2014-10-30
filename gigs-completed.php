@@ -84,15 +84,17 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 	   ?>
-      <div class="row ">
+      <div class="row myrow">
          <div class="col-md-8">
             <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
               <div class="col-md-4"><span id="bid">&nbsp;</span></div>
               <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-              <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
+              
           </div>
-         <div class="col-md-4 giginnerimg gigimg">
+          <div class="col-md-12">
+    <div class="col-md-9"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p> </div>
+         <div class="col-md-3 giginnerimg gigimg">
               <div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
@@ -117,6 +119,7 @@ include('cfg/more-functions.php');
             
               
 <!-- end bid model -->
+          </div>
           </div>
 	 </div>
      <?php
