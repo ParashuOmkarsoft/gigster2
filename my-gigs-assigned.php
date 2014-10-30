@@ -193,7 +193,7 @@ if($checkSql['count']>0)
 											  else
 											  {
 												  ?>
-												  <p class="mandatory">Sorry , No Reports submited yet.&nbsp;</p>
+												  <p class="mandatory">Sorry , No Reports submited yet.&nbsp;&nbsp;</p>
 												  <?php
 											  }
 												?>
