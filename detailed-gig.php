@@ -250,6 +250,12 @@ else
         <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) || is_message_thread_initiated($gigdetails['prjId'],$bidderInfo['userId']))
 				 {
 			?>
+      <div>
+                   <img src="images/mail.jpg">
+                 </div>
+                 <div>
+                   <img src="images/symbol.png">
+                 </div> 
         <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
