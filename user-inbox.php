@@ -64,10 +64,11 @@ include('cfg/more-functions.php');
 			{
 				$profilepic="images/admin.png";
 			}
+			$mgigdetails=get_gig_details($opengig['projectId']);
 	   ?>
       <div class="row ">
          <div class="col-md-8">
-            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($mgigdetails['prjTitle']);?>/<?php echo $mgigdetails['prjId'];?>"><?php echo $mgigdetails['prjTitle'];?></a></h2>
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
               <div class="col-md-8"><span id="bid">&nbsp;</span></div>
               <div class="col-md-4"><span class="bid">Posted :<?php echo get_time($opengig['msgon']); ?></span></div>
