@@ -26,6 +26,7 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10 logsign">
       <button type="submit" class="btn btn-warning loginbtn">Login</button>
+      <button type="submit" class="btn btn-warning loginbtn">Signup</button>
    
     </div>
   </div>
