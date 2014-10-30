@@ -93,9 +93,9 @@ include('cfg/more-functions.php');
              
           </div>
           <div class="col-md-12">
-    <div class="col-md-9"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
-         <div class="col-md-3 giginnerimg gigimg">
-              <div class="col-md-6">
+    <div class="col-md-10"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
+         <div class="col-md-2 giginnerimg gigimg">
+             <?php /*?> <div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
@@ -110,11 +110,12 @@ include('cfg/more-functions.php');
 								  <?php
 							  }
 							  ?>
-                   <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
-                   <h4>&nbsp;</h4>
-              </div>
-              <div class="col-md-6">
+                   
+              </div><?php */?>
+              <div class="col-md-12">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+                   <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>
+                   <h4>&nbsp;</h4>
               </div>
             
               
