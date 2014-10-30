@@ -167,7 +167,24 @@ if($checkSql['count']>0)
                                               </div>
                                               <div class="col-sm-8">                                              
                                               <label class="col-sm-4 control-label newlog">Description</label><br/><br/>
-                                              <?php echo nl2br(stripslashes($status_reports['rows'][$i]['description'])); ?>
+                                              <?php echo nl2br(stripslashes($status_reports['rows'][$s]['description'])); ?>
+                                             </div>
+                                             <div class="col-sm-8">                                              
+                                              <label class="col-sm-4 control-label newlog">Completion Status</label><br/><br/>
+                                              <?php echo nl2br(stripslashes($status_reports['rows'][$s]['completion'])); ?>%
+                                             </div>
+                                              <div class="col-sm-8">                                              
+                                              <label class="col-sm-4 control-label newlog">Status</label><br/><br/>
+                                              <?php 
+											  if($status_reports['rows'][$s]['isapproved'])
+											  {
+												  echo "Yes";
+											  }
+											  else
+											  {
+												  echo "Rejected by Gig Admin";
+											  }
+											   ?>
                                              </div>
                                             </div>
                                             	<?php
