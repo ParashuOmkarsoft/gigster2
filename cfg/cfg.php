@@ -846,5 +846,16 @@ function get_report_details($reportId)
 	{
 		return $sql['rows']['0'];
 	}
+
+}
+
+function get_status_reports($projectId)
+{
+	$query="select * from btr_reports where projectId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql;
+	}
 }
 ?>

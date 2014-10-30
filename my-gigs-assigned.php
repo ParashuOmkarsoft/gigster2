@@ -90,6 +90,9 @@ if($checkSql['count']>0)
             <p>
            <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a>
            <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a>
+           <a href="#previousmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
+            <button type="button" class="btn btn-primary">View Previous Reports</button>
+            </a>
            <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">          
@@ -142,6 +145,54 @@ if($checkSql['count']>0)
                            </div>
 		</div>
             </p>
+            <p><div id="previousmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+                            <div class="modal-content cform">          
+                              <div class="container">
+							
+                                  <div class="col-md-12">
+                                                                    
+											 <h2 id="login1">Status Reports </h2>
+                                            <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>  
+                                              <div class="col-md-12">
+                                              <?php $status_reports=get_status_reports($prjDetails['prjId']);
+											  if($status_reports['count']>0)
+											  {
+												  for($s=0;$s<$status_reports['count'];$s++)
+												  {
+											   ?>
+                                              <div class="form-group">
+                                              <div class="col-sm-8">
+                                              <label class="col-sm-4 control-label newlog">Sent On </label><br/><br/><?php echo get_time($status_reports['rows'][$s]['rpdate']);?>
+                                              </div>
+                                              <div class="col-sm-8">                                              
+                                              <label class="col-sm-4 control-label newlog">Description</label><br/><br/>
+                                              <?php echo nl2br(stripslashes($status_reports['rows'][$i]['description'])); ?>
+                                             </div>
+                                            </div>
+                                            	<?php
+												  }
+											  }
+											  else
+											  {
+												  ?>
+												  <p class="mandatory">Sorry , No Reports submited yet.</p>
+												  <?php
+											  }
+												?>
+                                            
+                                            
+                                            </div>
+                                                      
+                               
+                                            </div>
+
+                                   
+                                
+                               </div>
+                             </div>
+                           </div>
+		</div></p>
             <?php
 			}
 			?>
@@ -163,9 +214,12 @@ if($checkSql['count']>0)
          <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
          <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
+               
                 <span class="sr-only"></span>
          		 </div>
+                 
          </div>
+         
      </div>
 </div>
     </div>
