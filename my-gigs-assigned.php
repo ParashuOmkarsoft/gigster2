@@ -47,7 +47,7 @@ if(!isset($_SESSION['uId']))
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
- $checkQuery="select * from btr_assignment where awardedto=$mUid";
+$checkQuery="select * from btr_assignment where awardedto=$mUid ORDER BY id DESC" ;
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
@@ -82,7 +82,7 @@ if($checkSql['count']>0)
 <section id="firstsection" class="container">
       <div class="row">
           <div class="col-md-8">
-            <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3> 
+            <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3> 
             <br/>
             <?php if($prjDetails['status']!="3")
 			{

@@ -27,5 +27,11 @@ function get_country_name($country)
 	}
 }
 
+function mera_url_noslash($noslashtitle)
+{	$noslashtitle = str_replace(' ', '', $noslashtitle);
+	$noslashtitle = str_replace('/', '-', $noslashtitle);
+	$noslashurl = urlencode($noslashtitle);
+	return $noslashurl;
+}
 
 ?>

@@ -1,5 +1,6 @@
 <?php
 include('cfg/cfg.php');
+include('cfg/more-functions.php'); 
 
 $proposal=filter_text($_POST['proposal']);
 $price=filter_text($_POST['pprice']);
@@ -82,7 +83,7 @@ $gigdetails=get_gig_details($projectId);
 	?>
    	
 	<script type="text/javascript">
-	window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";
+	window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";
 	</script>
 	
 	<?php	

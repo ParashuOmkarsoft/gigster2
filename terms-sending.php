@@ -1,5 +1,6 @@
 <?php
 include('cfg/cfg.php');
+include('cfg/more-functions.php'); 
 
 $projectId=filter_text($_POST['projectId']);
 $ownerId=filter_text($_SESSION['uId']);
@@ -55,7 +56,7 @@ else
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 		?>
 		<script type="text/javascript">
-		window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";	
+		window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";	
 		</script>
 		<?php
 		die();
