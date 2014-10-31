@@ -38,7 +38,7 @@ include('cfg/more-functions.php');
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
- $checkQuery="select * from btr_bids where  bidfrom=".$uInfo['userId']." order by bidon DESC ";
+ $checkQuery="select * from btr_bids where  bidfrom=".$uInfo['userId']." and status='0' order by bidon DESC ";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {

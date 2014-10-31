@@ -77,35 +77,72 @@ include('cfg/more-functions.php');
 			{
 				$profilepic="images/admin.png";
 			}
+			$selectedbidder="select * from btr_assignment where projectId=".$opengig['prjId'];
+			$selectedbidder=@db_query($selectedbidder);
+			$awardedto=$selectedbidder['rows']['0']['awardedto'];
+
 	   ?>
   <div class="row myrow">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a></span></div>
+      <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Mark As Complete</button></a></span></div>
+      <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+                            <div class="modal-content cform">          
+                              <div class="container">
+							
+                                  <div class="col-md-12">
+                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" target="targetframe" >
+                                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
+								  <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />                                            
+											 <h2 id="login1">Mark gig as complete</h2>
+                                            <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>  
+                                              <div class="col-md-12">
+                                              <div class="form-group">
+                                              <label for="inputText" class="col-sm-6 control-label newlog">Feedback for gigster</label>   <br/><br/> 
+                                               <div class="col-sm-12">
+                                                 <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                                               </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label class="col-md-4 control-label tfont">Rating</label><Br/><br/>
+                                              <div class="col-md-8">
+                                                <select class="form-control" id="rating" name="rating" >
+                                                	<?php for($r=1;$r<=5;$r++)
+													{
+														?>
+														<option value="<?php echo $r;?>"><?php echo $r;?></option>
+														<?php
+													}
+													?>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                              <div class="col-sm-offset-3 col-sm-10 logsign">
+                                                <button type="submit" class="btn btn-warning loginbtn">Mark as Complete</button>
+                                              </div>
+                                            </div>
+                                          
+                                            </div>
+                                                      
+                                 </form>
+                                            </div>
+
+                                   
+                                
+                               </div>
+                             </div>
+                           </div>
+		</div>
       <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
       
     </div>
     <div class="col-md-12">
-    <div class="col-md-10"><p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
+    <div class="col-md-10"><p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p></div>
      <div class="col-md-2 giginnerimg gigimg">
-     <?php /*?> <div class="col-md-6">
-        <?php
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php
-							  }
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php
-							  }
-							  ?>
-        
-      </div><?php */?>
       <div class="col-md-12">
        <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
        <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>

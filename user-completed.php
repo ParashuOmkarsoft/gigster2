@@ -80,16 +80,35 @@ if($checkSql['count']>0)
       </div>          
       </div>
      <div class="row">
-          <div class="col-md-10" style="visibility:hidden;">
-            <h4>Completion Status</h4><div class="row">
+          <div class="col-md-10">
+            <h4>FeedBack Recieved</h4><div class="row">
+            <?php $userReview=get_project_review($prjDetails['prjId']);
+						
+			?>
           <div class="col-md-12">
-         <h4>sept 10,2014 <span class="c">sept 15,2014</span></h4>
-         <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                <span class="sr-only">0% Complete</span>
-         		 </div>
-         </div>
-     </div>
+		 	<?php if($userReview['feedback'])
+			{
+				echo $userReview['feedback'];
+			}
+			?>
+			<Br/>
+			<?php
+			$prjRating=$userReview['rating'];
+		    for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		     <?php
+			}
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+			<?php
+			}
+			?>
+          </div>
+          
 </div>
     </div>
         <div class="col-md-2">

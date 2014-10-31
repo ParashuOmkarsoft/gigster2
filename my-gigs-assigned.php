@@ -48,6 +48,7 @@ $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
  $checkQuery="select * from btr_assignment where awardedto=$mUid order by id DESC";
+
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
@@ -57,6 +58,8 @@ if($checkSql['count']>0)
        {
 		   $muInfo=get_user_Info(encrypt_str($checkSql['rows'][$i]['projectowner']));
 		  $prjDetails=get_gig_details($checkSql['rows'][$i]['projectId']);
+		  if($prjDetails['status']<3)
+		{
 		  $mId=encrypt_str($checkSql['rows'][$i]['id']);
 		  $awardedto=$checkSql['rows']['0']['awardedto'];
 			$nametodisplay="";
@@ -335,7 +338,8 @@ box-shadow: 0px 0px 2px #000000;'";
 
 </section>
 
-<?php	
+<?php
+	   }
 	   }
 }else
 	{
