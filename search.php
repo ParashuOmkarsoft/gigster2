@@ -16,19 +16,19 @@ include('cfg/more-functions.php');
   <body>
     <?php include('top-menu.php'); ?>
         <div id="grad"></div>
-    
+    <?php 	$term = $_REQUEST['gigstername']; ?>
 
  <div class="container searchbox">
         <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search.php" method="post">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" name="gigstername">
+            <input type="text" class="form-control" placeholder="Search" name="gigstername" value="<?php echo $term; ?>">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
     <div id="our">Our Gigster</div>
     <?php
-	$term = $_REQUEST['gigstername']; 
+
 	  $sqlq = "SELECT btr_users.userId as btuserID,btr_users.usermail,btr_users.username,btr_users.profileimage,btr_userprofile.* FROM btr_users, btr_userprofile WHERE 
 	btr_users.userId = 	btr_userprofile.userId and (((btr_users.username LIKE '%$term%' or btr_users.usermail LIKE '%$term%') or (btr_userprofile.fname LIKE '%$term%' or btr_userprofile.lname LIKE '%$term%')) or btr_userprofile.skills LIKE '%$term%')";
 	 $gigsters = @db_query($sqlq);
