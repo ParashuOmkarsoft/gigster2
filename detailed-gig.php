@@ -334,7 +334,8 @@ box-shadow: 0px 0px 2px #000000;'";
                   <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
                     <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
                       <?php echo get_user_name($msgfrom);?> </a><br/>
-                      <?php echo stripslashes(stripslashes($messages['rows'][$t]['msgcontent']));?><br/>
+                      <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent']))); ?><br/>
+                      
                     </p>
                   </div>
                   <br/>
