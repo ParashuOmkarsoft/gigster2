@@ -735,7 +735,9 @@ function get_user_rating($userId)
 			$t=$t+$sql['rows'][$i]['rating'];
 		}
 		$myval=$t/$sql['count'];
-		$myval=round($myval);
+
+		 $myval=round($myval);
+		
 		return $myval;
 	}
 	else

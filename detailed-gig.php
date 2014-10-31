@@ -47,6 +47,7 @@ else
 			}
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
+			
 	?>
 <section id="gigdetail" class="container">
   <h2 id="gigger">Gig Details</h2>
@@ -59,13 +60,15 @@ else
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
       <div class="col-md-6 start">
         <?php
-                             for($t=$gigsterrating;$t<5;$t++) 
+		
+                             for($t=$gigsterrating;$t<=5;$t++) 
 							  {
+								  
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" />
         <?php
 							  }
-							   for($t=0;$t<$gigsterrating;$t++)
+							   for($t=0;$t<=$gigsterrating;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
@@ -218,13 +221,13 @@ else
       <div> <span id="bond"><?php echo $biddernametodisplay ;?></span> </div>
       <div> <span id="bond">Rating :</span>
         <?php
-				 for($t=0;$t<$gigsterrating;$t++)
+				 for($t=0;$t<$biderrating;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
         <?php
 							  }
-							   for($t=$gigsterrating;$t<5;$t++)
+							   for($t=$biderrating;$t<5;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
