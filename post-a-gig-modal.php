@@ -35,12 +35,12 @@
                 <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="">
               </div>
             </div>
-            <h2 class="loginlead" >Skills</h2>
+            <!--<h2 class="loginlead" >Skills</h2>
             <div class="form-group">
               <div class="col-sm-10">
                 <input  required type="hidden" name="keywords" id="keywords"  class=""    />
               </div>
-            </div>
+            </div>-->
            
             <h2 class="loginlead">Enter expiry date of your Gig</h2>
             <div class="form-group">
