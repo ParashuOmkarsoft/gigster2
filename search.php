@@ -16,18 +16,27 @@ include('cfg/more-functions.php');
   <body>
     <?php include('top-menu.php'); ?>
         <div id="grad"></div>
-    
+    <?php 	$term = $_REQUEST['gigstername']; ?>
 
  <div class="container searchbox">
         <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search.php" method="post">
-          <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigstername"></div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" name="gigstername" value="<?php echo $term; ?>">
+          </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
     <div id="our">Our Gigster</div>
-	<?php
-	$gigsters=get_all_gigsters();
-	if($gigsters['count']>0)
+    <?php
+
+	  $sqlq = "SELECT btr_users.userId as btuserID,btr_users.usermail,btr_users.username,btr_users.profileimage,btr_userprofile.* FROM btr_users, btr_userprofile WHERE 
+	btr_users.userId = 	btr_userprofile.userId and (((btr_users.username LIKE '%$term%' or btr_users.usermail LIKE '%$term%') or (btr_userprofile.fname LIKE '%$term%' or btr_userprofile.lname LIKE '%$term%')) or btr_userprofile.skills LIKE '%$term%')";
+	 $gigsters = @db_query($sqlq);
+	
+	
+	
+
+	if($gigsters['count'] > 0)
 	{
 		?>
 		<table class="table table-striped table-bordered "  id="gigstertable" width="100%" cellpadding="2" cellspacing="2">
@@ -41,7 +50,7 @@ include('cfg/more-functions.php');
 			$gigsterInfo=get_user_Info(encrypt_str($gigster['userId']));
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			
-			if(file_exists($profilepic))
+			if(!empty($gigsterInfo['profileimage']))
 			{
 				$profilepic=$profilepic;
 			}
@@ -104,8 +113,7 @@ include('cfg/more-functions.php');
 								  <?php
 							  }
 							  ?>
-                             <?php //pr($gigsterrating); ?>
-                             
+                                                          
                              </span>
                              <?php if($gigsterInfo['city'])
 							 {
