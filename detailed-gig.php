@@ -61,14 +61,14 @@ else
       <div class="col-md-6 start">
         <?php
 		
-                             for($t=$gigsterrating;$t<=5;$t++) 
+                             for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" />
         <?php
 							  }
-							   for($t=0;$t<=$gigsterrating;$t++)
+							   for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />

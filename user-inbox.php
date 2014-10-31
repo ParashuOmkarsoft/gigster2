@@ -87,18 +87,7 @@ include('cfg/more-functions.php');
 			 {
 				 $reportdetails=get_report_details($opengig['reportid']);
 
-				 if($reportdetails['isapproved']=="1")
-				 {
-					 ?>
-					 <button type="button" class="btn btn-warning" style=" background-color:#753200;">Approved </button>
-					 <?php
-				 }
-				 else
-				 {
-				 ?>
-				    <a href="<?php echo $serverpath;?>approvereport/<?php echo $opengig['reportid'];?>" target="targetframe"><button type="button" class="btn btn-warning">Approve </button></a>
-				 <?php
-				 }
+				 
 			 }
 			 else
 			 {

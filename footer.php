@@ -32,10 +32,12 @@
 <iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
 <script>
     $( "#datepic" ).datepicker({
-      inline: true
+      inline: true,
+	  selectableDateRange: [{ from: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>),to: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>) }]
     });
 	$( ".mdate" ).datepicker({
       inline: true,
-	  dateFormat: 'y-m-d'
+	  dateFormat: 'y-m-d',
+ selectableDateRange: [{ from: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>),to: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>) }]
     });
 </script>
