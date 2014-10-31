@@ -295,7 +295,7 @@ else
                     </div>
                   </form>
                 </div>
-                <div class="col-md-12" style="height:250px; overflow:scroll;">
+                <div class="col-md-12" style="height:250px; overflow:scroll;padding-top: 2px;">
                   <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -346,10 +346,11 @@ box-shadow: 0px 0px 2px #000000;'";
             </div>
           </div>
         </div>
+         </div>
         <?php
 		}
 		 ?>
-      </div>
+     
       <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
 				 {
 					if(is_project_awarded($gigdetails['prjId']))
@@ -365,19 +366,21 @@ else{?>
       <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
         <button type="button" class="btn btn-warning">Award</button>
         </a> </div>
-      <?php
-}
+      <?php }
 				 }
 				 ?>
     </div>
-    <div class="row">
+    </div>
+    
+     <div class="row">
       <div class="col-md-10">
         <p class="service"> <?php echo strip_string(nl2br(stripslashes($bidderInfo['overview'])),300);?> </p>
       </div>
       <div class="col-md-02"></div>
     </div>
     <div class="clearsecond"></div>
-  </div>
+   
+  
 </section>
 <?php if(is_project_awarded($gigdetails['prjId']))
 {
