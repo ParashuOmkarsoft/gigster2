@@ -125,7 +125,7 @@ include('cfg/more-functions.php');
       <p id="overviewpara"><?php
 	  if($uInfo['overview'])
 	  {
-	   echo stripslashes($uInfo['overview']); 
+	   echo stripslashes(nl2br($uInfo['overview'])) ; 
 	   
 	  }
 	  else
