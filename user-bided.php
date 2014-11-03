@@ -80,7 +80,7 @@ if($checkSql['count']>0)
     </div>
     <div class="row">
       <div class="col-md-10"> 
-        <!--<h4>Completion Status</h4>
+        <!---<h4>Completion Status</h4>
             <div class="row">
               <div class="col-md-12">
                 <h4>sept 10,2014 <span class="c">sept 15,2014</span></h4>
