@@ -9,7 +9,7 @@
             <div class="form-group">
               <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
               <div class="col-sm-10"> 
-                <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Looking for a marriage photographer" >
+                <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" >
               </div>
             </div>
             <div class="form-group">
