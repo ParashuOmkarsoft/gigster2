@@ -37,9 +37,8 @@ include('cfg/more-functions.php');
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-$checkQuery="select * from btr_bids where  bidfrom=".$uInfo['userId']." order by bidon DESC ";
+$checkQuery="select b.* from btr_bids as b,btr_projects as p where  b.bidfrom=".$uInfo['userId']." and b.projectId=p.prjId and p.status in (0,1) order by b.bidon DESC ";
 $checkSql=@db_query($checkQuery);
-pr($checkSql);
 if($checkSql['count']>0)
 {
 	 $sno=1;
@@ -106,7 +105,7 @@ if($checkSql['count']>0)
 		?>
   <div class="clearfix"></div>
   <br/>
-  <p class="mandatory">Sorry, No Gigs assigned to you yet..</p>
+  <p class="mandatory">Sorry, No Gigs assigned to you yet.</p>
   <br/>
   <div class="clearfix"></div>
   <?php

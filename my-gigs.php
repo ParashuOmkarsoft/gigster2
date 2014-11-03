@@ -50,7 +50,7 @@ include('cfg/more-functions.php');
 		$gigsquery="select * from btr_projects  where userId=$uId  and  status='2' order by postedon DESC LIMIT $start,$limit";
 		
 	    $opengigs=@db_query($gigsquery);
-		//pr($gigscountquery);
+		//pr($opengigs);
 	  if($opengigs['count']>0)
 	  {
 		   $mcount=$opengigs['count'];
@@ -80,78 +80,182 @@ include('cfg/more-functions.php');
 			$selectedbidder="select * from btr_assignment where projectId=".$opengig['prjId'];
 			$selectedbidder=@db_query($selectedbidder);
 			$awardedto=$selectedbidder['rows']['0']['awardedto'];
+			//pr($awardedto)
 
 	   ?>
+  <?php //pr($gigsterInfo); ?>
   <div class="row myrow">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Mark As Complete</button></a></span></div>
+      <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
+        <button type="button" class="btn btn-primary" >Mark As Complete</button>
+        </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-                            <div class="modal-content cform">          
-                              <div class="container">
-							
-                                  <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" target="targetframe" >
-                                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
-								  <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />                                            
-											 <h2 id="login1">Mark gig as complete</h2>
-                                            <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>  
-                                              <div class="col-md-12">
-                                              <div class="form-group">
-                                              <label for="inputText" class="col-sm-6 control-label newlog">Feedback for gigster</label>   <br/><br/> 
-                                               <div class="col-sm-12">
-                                                 <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
-                                               </div>
-                                            </div>
-                                            <div class="form-group">
-                                              <label class="col-md-4 control-label tfont">Rating</label><Br/><br/>
-                                              <div class="col-md-8">
-                                                <select class="form-control" id="rating" name="rating" >
-                                                	<?php for($r=1;$r<=5;$r++)
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content cform">
+            <div class="container">
+              <div class="col-md-12">
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" target="targetframe" >
+                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
+                  <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
+                  <h2 id="login1">Mark gig as complete</h2>
+                  <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="inputText" class="col-sm-6 control-label newlog">Feedback for gigster</label>
+                      <br/>
+                      <br/>
+                      <div class="col-sm-12">
+                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label tfont">Rating</label>
+                      <Br/>
+                      <br/>
+                      <div class="col-md-8">
+                        <select class="form-control" id="rating" name="rating" >
+                          <?php for($r=1;$r<=5;$r++)
 													{
 														?>
-														<option value="<?php echo $r;?>"><?php echo $r;?></option>
-														<?php
+                          <option value="<?php echo $r;?>"><?php echo $r;?></option>
+                          <?php
 													}
 													?>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            
-                                            <div class="form-group">
-                                              <div class="col-sm-offset-3 col-sm-10 logsign">
-                                                <button type="submit" class="btn btn-warning loginbtn">Mark as Complete</button>
-                                              </div>
-                                            </div>
-                                          
-                                            </div>
-                                                      
-                                 </form>
-                                            </div>
-
-                                   
-                                
-                               </div>
-                             </div>
-                           </div>
-		</div>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-3 col-sm-10 logsign">
+                        <button type="submit" class="btn btn-warning loginbtn">Mark as Complete</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <?php $mygiginprogress = ""; ?>
+      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+      <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content cform">
+            <div class="container">
+              <div class="col-md-12">
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" role="form" method="post" >
+                  <input type="hidden" id="fromId" name="fromId" value="<?php echo $gigsterInfo['userId'];?>" />
+                  <input type="hidden" id="toId" name="toId" value="<?php echo $awardedto;?>" />
+                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
+                  <h2 id="login1">Messages</h2>
+                  <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="col-md-4 control-label tfont">Message</label>
+                      <Br/>
+                      <br/>
+                      <div class="col-md-12">
+                        <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-3 col-sm-10 logsign">
+                        <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-12" style="height:250px; overflow:scroll;padding-top: 2px;">
+                <?php
+			$muInfo=get_user_Info($_SESSION['uId']);
+			$muId=$muInfo['userId'];
+			$other=get_oponent($pId,$muId);
+		 	$projectMessages="select * from btr_messages where projectId=".$opengig['prjId']." and (msgfrom=$muId or msgto=$muId) order by msgId DESC";
+			$projectMessages=@db_query($projectMessages);
+			$messages=$projectMessages;
+			for($t=0;$t<$messages['count'];$t++)
+			{
+			$msgfrom=$messages['rows'][$t]['msgfrom'];
+			$fromInfo=get_user_Info(filter_text(encrypt_str($msgfrom)));
+			$fromuserimg=$fromInfo['profileimage'];
+			$buserimage="";
+			if(!$fromuserimg)
+			{
+				$buserimage=filter_text('img/avatar5.png');
+			}
+			else
+			{
+				$buserimage="uploads/profileimage/".$fromuserimg;
+			}
+			if($t%2==0)
+			{
+				$cl="style='background-color:#f8f8f8;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
+-webkit-box-shadow: 0px 0px 2px #000000;
+box-shadow: 0px 0px 2px #000000;'";
+			}
+			else
+			{
+				$cl="style='background-color:white;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
+-webkit-box-shadow: 0px 0px 2px #000000;
+box-shadow: 0px 0px 2px #000000;'";
+			}
+			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
+			?>
+                <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
+                  <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
+                    <?php echo get_user_name($msgfrom);?> </a><br/>
+                    <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent']))); ?><br/>
+                  </p>
+                </div>
+                <br/>
+                <?php
+		}
+		  ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-      
+      <div class="col-md-12">
+            <h4>Completion Status</h4><div class="row">
+          <div class="col-md-12">
+          <?php $projectstatus=get_status_details($opengig['prjId'],$awardedto);
+		  if(!$projectstatus)
+		  {
+			  $projectstatus="0";
+		  }
+		  ?>
+         <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb"><?php echo convert_date($opengig['bidto']);?></span></h4>
+         <div class="progress">
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
+               
+                <span class="sr-only"></span>
+         		 </div>
+                 
+         </div>
+         
+     </div>
+</div>
+    </div>
     </div>
     <div class="col-md-12">
-    <div class="col-md-10"><p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p></div>
-     <div class="col-md-2 giginnerimg gigimg">
       <div class="col-md-12">
-       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-       <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>
-       <h4>&nbsp;</h4>
+        <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       </div>
-      <!-- end bid model --> 
+     <?php /*?> <div class="col-md-2 giginnerimg gigimg">
+        <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+          <div class="tyco">
+            <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
+          </div>
+          <h4>&nbsp;</h4>
+        </div>
+        <!-- end bid model --> 
+      </div><?php */?>
     </div>
-    </div>
-   
   </div>
   <?php
 		  }

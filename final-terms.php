@@ -23,7 +23,7 @@ if($getSql['count']>0)
 								$mail=send_my_mail($ownerinfo['usermail'],$mailmatter,$mailsubject);
 								?>
 		<script type="text/javascript">
-		window.parent.location="<?php echo $serverpath;?>mygigs";			
+		window.parent.location="<?php echo $_SERVER['HTTP_REFERER'];?>";			
 		</script>
 		<?php
 		die();

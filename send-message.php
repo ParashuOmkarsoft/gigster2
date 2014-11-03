@@ -1,16 +1,16 @@
 <br/><br/><br/><br/>
 <?php
 include('cfg/cfg.php');
-
+print_r($_POST);
 $projectId=filter_text($_POST['projectId']);
 $msgfrom=filter_text($_POST['fromId']);
 $msgto=filter_text($_POST['toId']);
 $message=filter_text($_POST['message']);
 $attachedfile=$_FILES['attachedfile'];
 $messageQuery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId)";
-$messageQuery.="values($msgfrom,$msgto,'$message',".gmmktime().",$projectId)";
+echo $messageQuery.="values($msgfrom,$msgto,'$message',".gmmktime().",$projectId)";
 $messageSql=@db_query($messageQuery,3);
-
+print_r($GLOBALS['debug_sql']);
 if($attachedfile['size']>0)
 {
 	$ext=get_extension($attachedfile['name']);
