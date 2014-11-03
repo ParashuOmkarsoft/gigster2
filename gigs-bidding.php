@@ -63,6 +63,7 @@ include('cfg/more-functions.php');
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];
+			 // pr($opengig); 
 			  $gigsterInfo="";
 			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
 			  $nametodisplay="";
@@ -89,13 +90,13 @@ include('cfg/more-functions.php');
             <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
              <?php /*?> <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a></span></div><?php */?>
-              <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+              <div class="col-md-8"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
              
           </div>
           <div class="col-md-12">
-    <div class="col-md-10"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
-         <div class="col-md-2 giginnerimg gigimg">
-             <?php /*?> <div class="col-md-6">
+    <div class="col-md-12"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p></div>
+        <?php /*?>  <div class="col-md-2 giginnerimg gigimg">
+             <div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
@@ -111,16 +112,17 @@ include('cfg/more-functions.php');
 							  }
 							  ?>
                    
-              </div><?php */?>
+              </div>
               <div class="col-md-12">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-                   <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>
+                   <div class="tyco"><h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"
+				  ><?php echo strip_string($nametodisplay,6);?></a></h4></div>
                    <h4>&nbsp;</h4>
-              </div>
+              </div> 
             
               
 <!-- end bid model -->
-          </div>
+          </div><?php */ ?>
           </div>
 	 </div>
      <?php
