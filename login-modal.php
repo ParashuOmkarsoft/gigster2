@@ -37,7 +37,7 @@
 
                             <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
                             <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
-                            <a href='#'><img src="<?php echo $serverpath;?>images/link.png" style="padding-bottom:10px;"> </a>
+                            <a href='<?php echo $serverpath;?>loginwithtlinkedin'><img src="<?php echo $serverpath;?>images/link.png" style="padding-bottom:10px;"> </a>
                             <a href='#'><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"> </a>
 </div>
                         </div>
