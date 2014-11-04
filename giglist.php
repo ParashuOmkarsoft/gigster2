@@ -150,9 +150,9 @@ include('cfg/more-functions.php');
                                 </div>
                                 <div class="form-group">
                                 <?php if($opengig['jobtype']=="f") { ?>
-                                  <label class="col-md-4 control-label tfont">Price on Fixed basis</label>
+                                  <label class="col-md-6 control-label tfont">Price on Fixed basis</label>
 								  <?php } else { ?>
-                                  <label class="col-md-4 control-label tfont">Price on Hourly basis</label>
+                                  <label class="col-md-6 control-label tfont">Price on Hourly basis</label>
                                   <?php } ?>
                                   <Br/>
                                   <br/>
