@@ -80,7 +80,32 @@ if($checkSql['count']>0)
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10"> 
+      <div class="col-md-10">
+        <h4>Completion Status</h4>
+        <div class="row">
+          <div class="col-md-12">
+            <?php $projectstatus=get_status_details($prjDetails['prjId'],$mUid);
+		  if(!$projectstatus)
+		  {
+			  $projectstatus="0";
+		  }
+		  ?>
+            <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
+        <div class="tyco">
+          <h4><?php echo $nametodisplay; ?></h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10" style="margin-bottom: 15px;"> 
         <!---<h4>Completion Status</h4>
             <div class="row">
               <div class="col-md-12">
@@ -91,12 +116,7 @@ if($checkSql['count']>0)
               </div>
             </div>--> 
         <?php echo $prjDetails['prjdesc']; ?> </div>
-      <div class="col-md-2">
-        <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
-        <div class="tyco">
-          <h4><?php echo $nametodisplay; ?></h4>
-        </div>
-      </div>
+     
     </div>
   </section>
   <?php	
