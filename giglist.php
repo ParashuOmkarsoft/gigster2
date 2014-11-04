@@ -92,9 +92,7 @@ include('cfg/more-functions.php');
         <h4>&nbsp;</h4>
       </div>
       <div class="col-md-6"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
-      <?php /*if(($_SESSION['uId']!=encrypt_str($opengig['userId'])) || (is_project_awarded($opengig['projectId'])))*/
-	  		/*echo "<pre>";
-	  		print_r($opengig['prjId']);*/
+      <?php 
 			
 	  		if(($_SESSION['uId']!=encrypt_str($opengig['userId'])))
 			  {
@@ -129,6 +127,7 @@ include('cfg/more-functions.php');
 						<?php
 					}
 				  ?>
+                  
                   <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                   
                     <div class="modal-dialog modal-lg">
@@ -150,7 +149,11 @@ include('cfg/more-functions.php');
                                   </div>
                                 </div>
                                 <div class="form-group">
-                                  <label class="col-md-4 control-label tfont">Price</label>
+                                <?php if($opengig['jobtype']=="f") { ?>
+                                  <label class="col-md-4 control-label tfont">Price on Fixed basis</label>
+								  <?php } else { ?>
+                                  <label class="col-md-4 control-label tfont">Price on Hourly basis</label>
+                                  <?php } ?>
                                   <Br/>
                                   <br/>
                                   <div class="col-md-8">

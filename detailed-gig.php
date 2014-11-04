@@ -242,19 +242,14 @@ else
     <div class="col-md-2 mailsymbol">
  <?php 
 	$uInfo=get_user_Info($_SESSION['uId']);
-	$gigIdForPrice=$gigdetails['prjId'];
-	$priceinhquery="SELECT * FROM `btr_projects` WHERE prjId=$gigIdForPrice and `jobtype`='h'";
-	$priceinh=@db_query($priceinhquery);
-	
-	$fixedpricquery="SELECT * FROM `btr_projects` WHERE prjId=$gigIdForPrice and `jobtype`='f' ";
-	$fixedprice=@db_query($fixedpricquery);
+
 	
 	if($uInfo['userId']==$projectbids['rows'][$i]['bidfrom']) { 
-	if($priceinh){
+	if($gigdetails['jobtype']=="h"){
 	?>
     <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?> / hr</h4>
     <?php }
-	else if($fixedprice){
+	else {
 		?>
     <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
     <?php }
@@ -263,11 +258,11 @@ else
 	
 			 else if($_SESSION['uId'] == encrypt_str($gigdetails['userId']))
 		  { 
-		  if($priceinh){
+		  if($gigdetails['jobtype']=="h"){
 	?>
     <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?> / hr</h4>
     <?php } 
-	else if($fixedprice){
+	else{
 		?>
     <h4 id="assigndoller"><?php echo $projectbids['rows'][$i]['bidprice']." ".$currency;?></h4>
     <?php }
