@@ -322,15 +322,11 @@ else
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#f8f8f8;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='background-color:#f8f8f8;border: 1px solid #fd8900;padding:5px;'";
 			}
 			else
 			{
-				$cl="style='background-color:white;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='background-color:#f8f8f8;border: 1px solid #fd8900;padding:5px;text-align: left;'";
 			}
 			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
