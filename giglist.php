@@ -104,7 +104,7 @@ include('cfg/more-functions.php');
 					{
 				  ?>
                   <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" >
-                  <button type="button" class="btn btn-warning">Bid</button>
+                  <button type="button" class="btn btn-bid">Bid</button>
                   </a>
                   <?php
 					}
@@ -112,7 +112,7 @@ include('cfg/more-functions.php');
 					{
 										  ?>
                   <a href="#" onClick="javascript:alert('You have already bided on this gig');">
-                  <button type="button" class="btn btn-warning">Bided Already</button>
+                  <button type="button" class="btn btn-bid">Bided Already</button>
                   </a>
                   <?php
 					}
@@ -121,7 +121,7 @@ include('cfg/more-functions.php');
 					{
 						?>
                   <a data-toggle="modal" href="#loginmodel" >
-                  <button type="button" class="btn btn-warning">Bid</button>
+                  <button type="button" class="btn btn-bid">Bid</button>
                   </a>
 						
 						<?php
