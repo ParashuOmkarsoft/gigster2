@@ -306,6 +306,17 @@ margin-left: 50px;
 
 border:1px solid #f7f25f;	
 }
+.btn-bid{
+	color: #fff;
+font-size: 20px;
+font-family: 'source_sans_probold';
+width: 175px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 33px;
+border: 1px solid #f7f25f;
+}
 #logingigster1 {
 color: #5e350d;
 font-family: 'source_sans_prolight';

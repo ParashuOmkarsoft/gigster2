@@ -28,7 +28,7 @@ include('cfg/more-functions.php');
 		
 	?>
     <section id="firstsection" class="container">
-      <div class="row"style="max-width: 951px;padding-bottom: 15px;">
+      <div class="row"style="max-width: 958px;padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname'].' '.$uInfo['lname'];
