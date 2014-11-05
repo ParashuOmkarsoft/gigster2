@@ -312,13 +312,13 @@ else
                       </div>
                       <div class="form-group">
                         <div class="col-sm-12">
-                          <button type="submit" class="btn btn-warning pull-left">Send Message</button>
+                          <button type="submit" class="btn gig-send-btn pull-left">Send Message</button>
                         </div>
                       </div>
                     </div>
                   </form>
                 </div>
-                <div class="col-md-12" style="height: 250px;overflow: scroll;background: #FFF06E;padding-top: 15px;border-radius: 8px;">
+                <div class="col-md-12" style="height: 250px;overflow: auto;background: #FFFFF;padding-top: 15px;border-radius: 8px;">
                   <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -342,11 +342,11 @@ else
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color: #FFFFFF;padding: 12px;max-width: 412px;text-align: left;border-radius: 8px;'";
+				$cl="style='background-color: #F8F8F8;padding: 12px;max-width: 412px;text-align: left;border-radius: 8px;'";
 			}
 			else
 			{
-				$cl="style='background-color: #FFFFFF;padding: 12px;width: 412px;text-align: right;border-radius: 8px;float: right;'";
+				$cl="style='background-color: #FFFDB7;padding: 12px;width: 412px;text-align: right;border-radius: 8px;float: right;'";
 			}
 			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>

@@ -63,7 +63,7 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 	   ?>
-  <div class="row ">
+  <div class="row gig-detail-row">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>

@@ -307,6 +307,14 @@ margin-left: 50px;
 border:1px solid #f7f25f;	
 }
 .gig-detail-row{border-bottom: 2px solid #fd8900;margin-bottom: 15px;}
+.gig-send-btn{color: #FFFFFF;
+font-size: 18px;
+font-family: 'source_sans_prosemibold';
+/* width: 180px; */
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;}
 .btn-bid{
 	color: #fff;
 font-size: 20px;
