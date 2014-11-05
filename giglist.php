@@ -88,9 +88,10 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
+	</div>
         <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
-      </div>
+      
       <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
       <?php 
 			
