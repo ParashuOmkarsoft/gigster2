@@ -76,7 +76,9 @@ include('cfg/more-functions.php');
       <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg">
-      <div class="col-md-12">
+
+      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
+            <div class="col-md-12">
         <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
@@ -96,7 +98,6 @@ include('cfg/more-functions.php');
         <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
       
-      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
       <?php 
 			
 	  		if(($_SESSION['uId']!=encrypt_str($opengig['userId'])))

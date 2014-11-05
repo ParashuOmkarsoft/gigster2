@@ -299,7 +299,7 @@ else
 				  }
 					?>
                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
-                    <h2 id="login1">Messages</h2>
+                    <h2 id="msg-model">Messages</h2>
                     <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
                     <div class="col-md-12">
                       <div class="form-group">
