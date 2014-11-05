@@ -385,6 +385,13 @@ border-color: #EC6B39;
 
 
 /*****************css for Giglist********************/
+.msgmodel{color: #5e350d;
+font-family: 'source_sans_prolight';
+font-size: 48px;
+text-align: left;
+border-bottom: 5px solid #fab518;
+padding-bottom: 10px;
+margin: 1px auto;}
 .ourgigstertop{margin-top: 50px;}
 .invitebtn .btn-warning {
 	color: #fff;
@@ -902,3 +909,11 @@ padding: 27px 48px;
 */.linkedin, .linkedin:hover{background-color: #007bb6; border: 2px solid #007bb6; color:#fff;}
 .tyco h4 a {color:#45350f; text-decoration:none;}
 .sb{margin-left: 310px;}
+
+
+/*///////message *********/
+
+.send-title{font-family: 'source_sans_proregular';
+font-size: 21px;
+color: #000000; }
+.msg-date{font-size: 18px;}

@@ -177,6 +177,43 @@ box-shadow: 0px 0px 2px #000000;'";
               </div>
             </div>
           </div>
+          <div class="col-md-12">
+          <td>
+                   <a href="http://gigster2.fountaintechies.com/gigsterInfo/N-A/59">
+                   <div class="artst-pic pull-left">
+					
+					   <img src="http://gigster2.fountaintechies.com/image.php?image=/uploads/profileimage/59.jpg&amp;width=75&amp;height=75&amp;cropratio=1:1">
+                   </div>
+                   <div class="artst-prfle pull-right">
+                          <div class="art-title">
+                              N/A                              <span class="star">
+                              								  <img src="http://gigster2.fountaintechies.com/images/star_2.png">
+								  								  <img src="http://gigster2.fountaintechies.com/images/star_2.png">
+								  								  <img src="http://gigster2.fountaintechies.com/images/star_2.png">
+								  								  <img src="http://gigster2.fountaintechies.com/images/star_2.png">
+								  								  <img src="http://gigster2.fountaintechies.com/images/star_2.png">
+								                                                            
+                             </span>
+                                                         								<span class="artst-ux">N/A</span> 
+                                
+                               
+                            </div>
+                           
+                        </div>
+                        </a>
+                    </td>
+                    </div>
+         <a href="#" class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                           
+                          
+                                <img src="images/star_1.png" style=""><img src="images/person2.jpg"></span><span class="art-title" style="min-width: 120px;margin-left: 15px;
+                                display: inline-block;">Mark Otto</span> <span class="send-title">Nice work on the lastest version</span>
+                            <!-- <span class="text-muted" style="font-size: 11px;">- More content here</span>  --><span class="msg-date pull-right">Nov 4,2014</span> <span class="pull-right">           
+
         </div>
         <?php
 			 }
