@@ -16,12 +16,16 @@ include('cfg/more-functions.php');
 <body>
 <?php include('top-menu.php'); ?>
 <div id="grad"></div>
-</section>
+
 <section class="container">
+  <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search-gig.php" method="post">
+          <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigsearch"></div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
   <h2 id="logingigster1">Open Gigs</h2>
   <?php
 	  	// Count Query
-		$gigscountquery=@db_query("select * from btr_projects order by postedon DESC");
+		$gigscountquery=@db_query("select * from btr_projects where status ='0' and bidto > now() order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
 		$adjacents = 1;
@@ -31,7 +35,7 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 		
-		  $gigsquery="select * from btr_projects  order by postedon DESC LIMIT $start,$limit";
+		$gigsquery="select * from btr_projects where status ='0' and bidto > now() order by postedon DESC LIMIT $start,$limit";
 	    $opengigs=@db_query($gigsquery);
 
 	  if($opengigs['count']>0)
