@@ -311,8 +311,8 @@ else
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="col-sm-12 logsign">
-                          <button type="submit" class="btn btn-warning">Send Message</button>
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-warning pull-left">Send Message</button>
                         </div>
                       </div>
                     </div>
