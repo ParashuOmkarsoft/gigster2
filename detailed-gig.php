@@ -346,7 +346,7 @@ else
 			}
 			else
 			{
-				$cl="style='background-color: #FFFFFF;padding: 12px;max-width: 412px;text-align: right;border-radius: 8px;'";
+				$cl="style='background-color: #FFFFFF;padding: 12px;width: 412px;text-align: right;border-radius: 8px;float: right;'";
 			}
 			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
