@@ -176,7 +176,7 @@ include('cfg/more-functions.php');
 				else
 	  			{
 	  ?>
-		   		<a href="#" ><button type="button" class="btn btn-warning" style="background-color:#006;" onClick="javascript:alert('This Gig is already awarded');">Awarded</button></a>
+		   		<a href="#" ><button type="button" class="btn btn-bid pull-right" style="background-color:#006;" onClick="javascript:alert('This Gig is already awarded');">Awarded</button></a>
 		  <?php }
 		  	  }	?>
       <!-- end bid model --> 
