@@ -106,7 +106,7 @@ if($checkSql['count']>0)
                     </div>
                   </form>
                 </div>
-                <div class="col-md-12" style="height:250px; overflow:scroll;">
+                <div class="col-md-12" style="height:250px; overflow:scroll; ">
                   <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -130,7 +130,7 @@ if($checkSql['count']>0)
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#f8f8f8;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
+				$cl="style='background-color:#f8f8f8; margin-top: 3px;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
 -webkit-box-shadow: 0px 0px 2px #000000;
 box-shadow: 0px 0px 2px #000000;'";
 			}
