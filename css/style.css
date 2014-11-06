@@ -291,7 +291,7 @@ margin-left: 50px;
     font-size: 18px;}
 .firstrow{border-bottom: 1px solid #fab518; padding-bottom: 20px;}
 #gigpara{padding-top: 20px;}
-.giginnerimg img{float: right; }
+.giginnerimg img{float: right; margin-left: 3px; margin-bottom: 3px;}
 #front{padding-left: 51px;}
 .gigimg .btn-warning{
 	color: #fff;
