@@ -125,6 +125,9 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
+		<div class="col-md-6" style="
+    width: 299px;
+">					  
                   <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" >
                   <button type="button" class="btn btn-bid pull-right">Bid</button>
                   </a>
