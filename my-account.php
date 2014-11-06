@@ -33,7 +33,8 @@ include('cfg/more-functions.php');
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname'].' '.$uInfo['lname'];
-		  if($nametodisplay)
+		  $nametodisplay1=str_replace(" ","",$nametodisplay);
+		  if($nametodisplay1)
 		  {
 		  }
 		  else

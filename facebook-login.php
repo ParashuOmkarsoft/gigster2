@@ -1,10 +1,11 @@
 <?php
 include('cfg/cfg.php');
 include('cfg/more-functions.php');
-	   $userId=$_GET['userId'];
-	   $fname=$_GET['fname'];
-	   $lname=$_GET['lname'];
-   	   $email=$_GET['email'];
+	  $userId=$_GET['userId'];
+	  $fname=$_GET['fname'];
+	  $lname=$_GET['lname'];
+      $email=$_GET['email'];
+      $uname=filter_text(get_username($email));
 	  
 	  $fbImage=get_fb_url("http://graph.facebook.com/".$userId."/picture?type=large");
       $checkquery="select * from btr_users where fbId='$userId' or usermail='$email'";
@@ -13,7 +14,7 @@ include('cfg/more-functions.php');
 	  {
 		if($checksql['rows']['0']['fbId'] != $userId)
 		  {
-			  $updQuery="update btr_users set fbId='$userId' where userId=".$checksql['rows']['0']['userId'];
+			  $updQuery="update btr_users set fbId='$userId',uname='$uname' where userId=".$checksql['rows']['0']['userId'];
 			  $updSql=@db_query($updQuery);
 		  }
 		if($fbImage)
@@ -49,6 +50,7 @@ include('cfg/more-functions.php');
 	  	  {
 			  $insert_query="insert into btr_users(usermail,fbId,usertype,joinedon,username)";
 			  $insert_query.="values('$email','$userId','u',".gmmktime().",'".get_username($email)."')";
+			 
 			  $insert_sql=@db_query($insert_query,3);
 			  if($insert_sql)
 			  {

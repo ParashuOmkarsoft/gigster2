@@ -14,7 +14,7 @@ $rec_limit = 5;
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
-	$__dbname = "dbgigster";
+	$__dbname = "gigster";
 	$__dbuser = "root";
 	$__dbpass = "deep";
 	define( 'HTTP_ROOT', '/' );
