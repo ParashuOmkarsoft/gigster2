@@ -25,8 +25,3 @@ include('footer.php');
 ?>
   </body>
 </html>
-<script>
-    $( "#datepic" ).datepicker({
-      inline: true
-    });
-</script>

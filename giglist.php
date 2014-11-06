@@ -18,7 +18,7 @@ include('cfg/more-functions.php');
 <div id="grad"></div>
 
 <section class="container">
-  <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search-gig.php" method="post">
+  <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>searchgig" method="post">
           <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigsearch"></div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>

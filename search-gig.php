@@ -18,13 +18,13 @@ include('cfg/more-functions.php');
 <div id="grad"></div>
 <?php $term = $_REQUEST['gigsearch']; ?>
 <section class="container">
-  <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search-gig.php" method="post">
+  <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>searchgig" method="post">
     <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigname" value="<?php echo $term; ?>"></div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
   <h2 id="logingigster1">Open Gigs</h2>
   <?php
-		$sqlquery = "SELECT * FROM btr_projects WHERE prjTitle LIKE '%$term%' or prjdesc LIKE '%$term%'" ;
+		$sqlquery = "SELECT * FROM btr_projects WHERE prjTitle LIKE '%$term%' or prjdesc LIKE '%$term%' order by postedon DESC" ;
 		$opengigs = @db_query($sqlquery);
 	
 	    if($opengigs['count']>0)
