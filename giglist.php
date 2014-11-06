@@ -205,7 +205,7 @@ include('cfg/more-functions.php');
       <!-- end bid model --> 
     </div>
   </div>
-  
+</div>  
   <?php
 		  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
