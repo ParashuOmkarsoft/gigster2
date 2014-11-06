@@ -10,6 +10,7 @@
 <?php if(!isset($_SESSION['uId'])){include('login-modal.php'); } ?>
 <?php if(!isset($_SESSION['uId'])){include('signup-model.php'); } ?>
 <?php if(isset($_SESSION['uId'])){include('bid-modal.php'); } ?>
+
 <footer>
   <div>
     <div class="col-md-8">
@@ -26,18 +27,9 @@
     </div>
   </div>
 </footer>
-  <script src="<?php echo $serverpath;?>glDatePicker.min.js"></script>
- <script src="<?php echo $serverpath;?>js/datatables/jquery.dataTables.js" type="text/javascript"></script>
-        <script src="<?php echo $serverpath;?>js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
-<iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
-<script>
-    $( "#datepic" ).datepicker({
-      inline: true,
-	  selectableDateRange: [{ from: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>),to: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>) }]
-    });
-	$( ".mdate" ).datepicker({
-      inline: true,
-	  dateFormat: 'y-m-d',
- selectableDateRange: [{ from: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>),to: new Date(<?php echo date('Y');?>,<?php echo date('m');?>, <?php echo date('d');?>) }]
-    });
+<script type="text/javascript">
+$(".mdatepicker").datepicker();
 </script>
+<script src="<?php echo $serverpath;?>js/datatables/jquery.dataTables.js" type="text/javascript"></script> 
+<script src="<?php echo $serverpath;?>js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+<iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
