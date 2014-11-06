@@ -63,7 +63,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+      hello...
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
@@ -105,7 +105,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
@@ -126,7 +126,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+     hello
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
@@ -147,7 +147,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+      Lorem Ipsum is simply dummy 
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
@@ -168,8 +168,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
-      </h5>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
       <h5>
