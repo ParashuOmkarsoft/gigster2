@@ -57,17 +57,22 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info" style="
+    font-size: 20px;
+">
        mike fisher
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5  style="
+    font-size: 20px;
+">
       hello...
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="
+    font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
@@ -78,17 +83,17 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info "style="font-size: 20px;">
        mike fisher
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5 style="font-size: 20px;">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
@@ -99,17 +104,17 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info"style="font-size: 20px;">
        mike fisher
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5 style="font-size: 20px;">
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
@@ -120,7 +125,7 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info" style="font-size: 20px;">
        mike fisher
       </h5>
     </div>
@@ -130,7 +135,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
@@ -141,7 +146,7 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info" style="font-size: 20px;">
        mike fisher
       </h5>
     </div>
@@ -151,7 +156,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
@@ -162,12 +167,12 @@ include('cfg/more-functions.php');
       <img src="images/person2.jpg" style="width: 50px;">
     </div>
     <div class="col-md-2" style="">
-      <h5 class="text-left text-info">
+      <h5 class="text-left text-info" style="font-size: 20px;">
        mike fisher
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5 style="font-size: 20px;">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
