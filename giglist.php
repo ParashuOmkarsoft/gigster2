@@ -125,6 +125,7 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
+		<div class="col-md-12">						  
             <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" >
                   <button type="button" class="btn btn-bid pull-right">Bid</button>
                   </a>
@@ -204,6 +205,7 @@ include('cfg/more-functions.php');
       <!-- end bid model --> 
     </div>
   </div>
+  
   <?php
 		  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
