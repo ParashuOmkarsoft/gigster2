@@ -22,6 +22,9 @@
 					  ?>
                       <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
                       <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
+                       <li><a data-toggle="modal" href="#invitemodel">INVITE</a></li>
+
+
 
                       <?php if(isset($_SESSION['uId']))
 					  {
