@@ -77,21 +77,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-4 giginnerimg gigimg">
       <div class="col-md-12">
-        <?php
-                              
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php
-							  }
-							  for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php
-							  }
-							  ?>
+       
 	</div>
         <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
@@ -157,7 +143,7 @@ include('cfg/more-functions.php');
                       <div class="modal-content cform">
                         <div class="container">
                           <div class="col-md-12">
-                            <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post"  target="targetframe">
+                            <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post"  >
                               <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                               <input type="hidden" name="bidfrom" id="bidfrom" value="<?php echo $uInfo['userId']; ?>" />
                               <h2 id="login1">Bid On Gig </h2>
