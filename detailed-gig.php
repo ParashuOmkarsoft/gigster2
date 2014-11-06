@@ -83,6 +83,7 @@ else
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 ?>
+</div>
                         <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
                         <button type="button" class="btn btn-lg btn-warning">Bid</button>
                         </a>
