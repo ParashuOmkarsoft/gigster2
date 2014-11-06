@@ -72,11 +72,12 @@ if($checkSql['count']>0)
 <?php //print_r($prjDetails); ?>
   <section id="firstsection" class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3>
       </div>
+      <div class="col-md-12"> 
       <div class="col-md-8"> 
-       <span class="budget"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
+       <span class="budget" style="padding-top: 20px;"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
        </a> <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
        <div id="msgmodal<?php echo $prjDetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -159,32 +160,15 @@ box-shadow: 0px 0px 2px #000000;'";
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10">
-        <h4>Completion Status</h4>
-        <div class="row">
-          <div class="col-md-12">
-            <?php $projectstatus=get_status_details($prjDetails['prjId'],$mUid);
-		  if(!$projectstatus)
-		  {
-			  $projectstatus="0";
-		  }
-		  ?>
-            <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2">
+    <div class="col-md-4">
         <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
+        <div style="clear:both"></div>
         <div class="tyco">
           <h4><?php echo $nametodisplay; ?></h4>
         </div>
       </div>
     </div>
+    </div>   
     <div class="row">
       <div class="col-md-10" style="margin-bottom: 15px;"> 
         <!---<h4>Completion Status</h4>
