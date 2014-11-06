@@ -58,7 +58,7 @@ else
     </div>
     <div id="front" class="col-md-4 giginnerimg">
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
-      <div class="col-md-6 start" style="width: 276px;">
+      <div class="col-md-6" style="width: 276px;">
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -72,8 +72,18 @@ else
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
-
-        <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
+<?php
+							  }
+			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
+			{
+				if(!is_project_awarded($gigdetails['prjId']))
+				{
+					if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
+					{
+						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
+						{
+?>
+                        <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
                         <button type="button" class="btn btn-lg btn-warning">Bid</button>
                         </a>
                         <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -114,18 +124,6 @@ else
                             </div>
                           </div>
                         </div>
-<?php
-							  }
-			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
-			{
-				if(!is_project_awarded($gigdetails['prjId']))
-				{
-					if(!is_project_bided_by_user($gigdetails['prjId'],$uInfo['userId']))
-					{
-						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
-						{
-?>
-                        
 <?php
 						}
 					}
