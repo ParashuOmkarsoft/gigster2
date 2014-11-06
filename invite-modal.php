@@ -3,8 +3,8 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <section class="postgigform" id="postgigform">                       
-         <h2 id="login1">Post a Gig </h2>    
-          <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>                          
+         <h2 id="login1">Invite Gig</h2>    
+          <h2 class="source">Invite Gigsters to bid on your gig.</h2>                          
           <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post"  >
             <div class="form-group">
               <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
