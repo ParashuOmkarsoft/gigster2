@@ -43,8 +43,9 @@ if($checkSql['count']>0)
 								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 								$headers .= "From: Bettr <$from>" . "\r\n";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
-				$mailmatter=htmlentities($mailmatter);
-				$mailmatter=addslashes($mailmatter);
+				
+				$mailmatter=strip_tags($mailmatter);
+				$mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values($uId,$giguser,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','d')";
 				$msgsql=@db_query($msgquery);
@@ -79,8 +80,9 @@ else
 								$from="notifications@gigster.com";
 								$mailsubject="A new proposal is submited on your gig.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
-								$mailmatter=htmlentities($mailmatter);
-												$mailmatter=addslashes($mailmatter);
+								
+$mailmatter=strip_tags($mailmatter);
+$mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values($uId,$giguser,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','d')";
 				$msgsql=@db_query($msgquery);
