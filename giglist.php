@@ -83,7 +83,10 @@ include('cfg/more-functions.php');
         <h4>&nbsp;</h4>
       
       <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
-      	<div class="col-md-12">
+      <div class="col-md-12" style="
+    margin-left: 20px;
+    margin-top: 15px;
+">
         <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
