@@ -124,7 +124,7 @@ include('cfg/more-functions.php');
 						$bidderpic="images/admin.png";
 					}
 		?>
-        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1">
+        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=40&height=40&cropratio=1:1">
         <?php } ?>
         </div>
       </div>
