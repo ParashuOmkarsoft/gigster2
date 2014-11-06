@@ -86,7 +86,7 @@ else
                <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
                 <div class="col-md-6" style="width: 276px;">
                         <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
-                        <button type="button" class="btn btn-bid pull-right">Bid</button>
+                        <button type="button" class="btn btn-newbid pull-right">Bid</button>
                         </a>
                         <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
