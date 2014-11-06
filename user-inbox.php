@@ -78,7 +78,7 @@ if($sql['count']>0)
       
 	  <tr <?php echo $st;?>>
       	<td><?php echo $sno;?></td>
-		<td><a data-toggle="modal" href="#invitemodal">><?php echo $prjDetails['prjTitle'];?></a> </td>                
+		<td><a href="<?php echo $serverpath;?>messagethread/<?php echo $sql['rows'][$i]['msgId'];?>"><?php echo $prjDetails['prjTitle'];?></a> </td>                
 		<td><?php echo $nametodisplay;?></td> 
         <td><?php echo strip_string($sql['rows'][$i]['msgcontent'],50);?></td>
         <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>                                               
