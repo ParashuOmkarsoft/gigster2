@@ -83,9 +83,9 @@ else
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 ?>
-
+                <div class="col-md-6" style="width: 276px;">
                         <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
-                        <button type="button" class="btn btn-lg btn-warning">Bid</button>
+                        <button type="button" class="btn btn-bid pull-right">Bid</button>
                         </a>
                         <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
@@ -274,7 +274,8 @@ else
         <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) || is_message_thread_initiated($gigdetails['prjId'],$bidderInfo['userId']))
 				 {
 			?>
-      <div style="margin-top: 20px;">
+     <div class="col-md-6" style="width: 276px;">
+
         <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
