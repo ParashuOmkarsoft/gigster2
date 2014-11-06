@@ -51,7 +51,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-    <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+    <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
@@ -77,7 +77,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-       <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+       <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
@@ -98,7 +98,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-     <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+     <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
@@ -119,7 +119,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-     <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+     <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
@@ -140,7 +140,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-     <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+     <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
@@ -161,7 +161,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
   </div>
-     <div class="row clearfix" style="background: #F9F9F9;padding: 10px;border-bottom: 1px solid #FFD09A;">
+     <div class="row clearfix" style="background: #F9FFB5;padding: 10px;border-bottom: 1px solid #FFD09A;">
  
     <div class="col-md-2" style="width: 125px;">
       <img src="images/person2.jpg" style="width: 50px;">
