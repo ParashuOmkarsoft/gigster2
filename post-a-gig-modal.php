@@ -32,7 +32,7 @@
             <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
             <div class="form-group">
               <div class="col-sm-10">
-                <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="">
+                <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
               </div>
             </div>
             <h2 class="loginlead" >Skills</h2>
