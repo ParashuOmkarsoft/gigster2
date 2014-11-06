@@ -89,7 +89,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5 style="font-size: 20px;">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+      hello..
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
@@ -110,7 +110,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-5">
       <h5 style="font-size: 20px;">
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    good morning
       </h5>
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">

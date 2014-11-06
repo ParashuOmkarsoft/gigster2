@@ -83,6 +83,7 @@ else
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 ?>
+               <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
                 <div class="col-md-6" style="width: 276px;">
                         <a data-toggle="modal" href="#bidmodel<?php echo $gigdetails['prjId'];?>" >
                         <button type="button" class="btn btn-bid pull-right">Bid</button>
@@ -132,7 +133,7 @@ else
 			}
 ?>
       </div>
-      <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
+     
     </div>
   </div>
   <div id="bidmodel<?php echo $gigdetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">

@@ -96,7 +96,25 @@ include('cfg/more-functions.php');
         <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
       
-      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
+      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
+      	<div class="col-md-12">
+        <?php
+                              
+							   for($t=$gigsterrating;$t<5;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_4.png" />
+        <?php
+							  }
+							  for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_3.png" />
+        <?php
+							  }
+							  ?>
+	</div>
+      </div>
       <?php 
 			
 	  		if(($_SESSION['uId']!=encrypt_str($opengig['userId'])))
