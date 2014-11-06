@@ -30,6 +30,9 @@
 <script type="text/javascript">
 $(".mdatepicker").datepicker({ format: 'mm/dd/yyyy',
     startDate: '-3d'});
+	$(".mdate").datepicker({ format: 'mm/dd/yyyy',
+    startDate: '-3d'});
+
 </script>
 <script src="<?php echo $serverpath;?>js/datatables/jquery.dataTables.js" type="text/javascript"></script> 
 <script src="<?php echo $serverpath;?>js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
