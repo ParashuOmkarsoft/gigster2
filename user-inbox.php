@@ -130,7 +130,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5 style="font-size: 20px;">
      hello
       </h5>
     </div>
@@ -151,7 +151,7 @@ include('cfg/more-functions.php');
       </h5>
     </div>
     <div class="col-md-5">
-      <h5>
+      <h5 style="font-size: 20px;">
       Lorem Ipsum is simply dummy 
       </h5>
     </div>
@@ -176,7 +176,7 @@ include('cfg/more-functions.php');
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </div>
     <div class="col-md-1 pull-right" style="width: 175px;">
-      <h5>
+      <h5 style="font-size: 20px;">
        Nov 14,2014
       </h5>
     </div>
