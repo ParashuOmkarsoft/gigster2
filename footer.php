@@ -2,6 +2,7 @@
 {
 	include('post-a-gig-modal.php'); 
 }
+include('invite-modal.php'); 
 ?>
 </div>
 
