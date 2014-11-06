@@ -90,9 +90,8 @@ if($checkSql['count']>0)
         <?php if($prjDetails['status']!="3")
 			{
 				?>
-        <p> <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
-          <button type="button" class="btn btn-primary" >Send Status Report</button>
-          </a>
+        <p> 
+          
           <?php /*?> <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a><?php */?>
           <a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
           <button type="button" class="btn btn-primary" >Terms</button>
@@ -332,9 +331,9 @@ $puname=$puuinfo['username'];
 		  }
 		  ?>
             <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div>
-            </div>
+            <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal" title="Send Status Report"> <div class="progress">
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div>
+            </div></a>
           </div>
         </div>
       </div>
