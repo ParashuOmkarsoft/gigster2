@@ -78,7 +78,7 @@ if($sql['count']>0)
       
 	  <tr <?php echo $st;?>>
       	<td><?php echo $sno;?></td>
-		<td><a href="<?php echo $serverpath;?>messagethread/<?php echo $sql['rows'][$i]['msgId'];?>"><?php echo $prjDetails['prjTitle'];?></a> </td>                
+		<td><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo $prjDetails['prjTitle'];?></a> </td>                
 		<td><?php echo $nametodisplay;?></td> 
         <td><?php echo strip_string($sql['rows'][$i]['msgcontent'],50);?></td>
         <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>                                               
@@ -93,39 +93,15 @@ if($sql['count']>0)
   </thead>
   </table>
 <?php  }
+else
+{
+	?>
+	<p class="mandatory">Sorry , No messages for you.</p>
+	<?php
+}
 ?>
      </section>
-    <!--<section class="container giglast">
-      <h2 id="login">Our Gigsters</h2>
-      <div class="row">
-         <div class="col-md-4">   
-           <img src="images/person1.jpg">
-           <div>
-              <span>Mike Fisher</span>
-              <span id="map">Yishun, Singapore</span>
-              <span id="artist">ux, photographer, design artist</span>
-           </div>           
-         </div>
-         <div class="col-md-4"> 
-          <img src="images/person1.jpg">
-           <div>
-              <span>Mike Fisher</span>
-              <span id="map">Yishun, Singapore</span>
-              <span id="artist">ux, photographer, design artist</span>
-           </div> 
-         </div>
-         <div class="col-md-4">
-            <img src="images/person1.jpg">
-           <div>
-              <span>Mike Fisher</span>
-              <span id="map">Yishun, Singapore</span>
-              <span id="artist">ux, photographer, design artist</span>
-           </div> 
-         </div>
-      </div>
-
-    </section>-->
-
+<?php include('message-modal.php'); ?>
 <?php include('footer.php'); ?>
   </body>
 </html>

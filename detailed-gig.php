@@ -93,7 +93,7 @@ else
                             <div class="modal-content cform">
                               <div class="container">
                                 <div class="col-md-12">
-                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
+                                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
                                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
                                     <h2 id="login1">Bid On Gig </h2>
                                     <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
@@ -141,7 +141,7 @@ else
       <div class="modal-content cform">
         <div class="container">
           <div class="col-md-12">
-            <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" target="targetframe">
+            <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
               <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
               <h2 id="login1">Bid On Gig </h2>
               <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
@@ -352,7 +352,7 @@ margin-top: 20px;">
 			{
 				$cl="style='background-color: #FEFF9D;padding: 12px;width: 412px;text-align: right;border-radius: 8px;float: right;'";
 			}
-			$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
+			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
                   <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
                     <p class="message"> <a href="#" class="name"><small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>

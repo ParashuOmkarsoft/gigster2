@@ -84,7 +84,7 @@ else
 $mailmatter=strip_tags($mailmatter);
 $mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery.="values($uId,$giguser,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','d')";
+				 $msgquery.="values($uId,$giguser,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','d')";
 				$msgsql=@db_query($msgquery);
 									
 	}

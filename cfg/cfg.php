@@ -392,7 +392,13 @@ function check_user_bid($gigid,$userid)
 function get_user_name($uId)
 {
 $uInfo=get_user_Info(encrypt_str($uId));
-return $uInfo['fname']." ".$uInfo['lname'];
+$nametodisplay=$uInfo['fname']." ".$uInfo['lname'];
+$nametodisplay1=str_replace(" ","",$nametodisplay);
+if(!$nametodisplay1)
+{
+	$nametodisplay=$uInfo['username'];
+}
+return $nametodisplay;
 }
 
 function get_bid_info($gigid,$userid)
@@ -858,6 +864,15 @@ function get_status_reports($projectId)
 	if($sql['count']>0)
 	{
 		return $sql;
+	}
+}
+function get_message_details($msgId)
+{
+	$query="select * from btr_messages where msgId=$msgId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0'];
 	}
 }
 ?>
