@@ -108,25 +108,7 @@ include('cfg/more-functions.php');
 						if(!is_project_bided_by_user($opengig['prjId'],$uInfo['userId']))
 					{
 				  ?>
-
-				  <div class="col-md-12">
-        <?php
-                              
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php
-							  }
-							  for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php
-							  }
-							  ?>
-		<div class="col-md-12">						  
-            <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" >
+                  <a data-toggle="modal" href="#bidmodel<?php echo $opengig['prjId'];?>" >
                   <button type="button" class="btn btn-bid pull-right">Bid</button>
                   </a>
                   <?php
@@ -144,7 +126,7 @@ include('cfg/more-functions.php');
 					{
 						?>
                   <a data-toggle="modal" href="#loginmodel" >
-                  <button type="button" class="btn btn-bid pull-right" style="margin-top: 15px;">Bid</button>
+                  <button type="button" class="btn btn-bid pull-right">Bid</button>
                   </a>
 						
 						<?php
@@ -205,7 +187,6 @@ include('cfg/more-functions.php');
       <!-- end bid model --> 
     </div>
   </div>
-</div>  
   <?php
 		  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
