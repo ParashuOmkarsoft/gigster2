@@ -21,7 +21,7 @@ include('cfg/more-functions.php');
       <ul id="profilemenu">
         <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assignments</a></h5></li>
-        <li><h5 id="pro"><a href="#">Change Password</a></h5></li>
+        <li><h5 id="pro"><a href="javascript:void(0);">Change Password</a></h5></li>
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></h5></li>                            
       </ul> 
     </section>
@@ -162,14 +162,14 @@ include('cfg/more-functions.php');
             </div>
           </form>  
           
-          <a href='#' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>     
+          <a href='javascript:void(0);' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>     
       </div>
          
     </section>
     <section class="container secondsection">
      <div class="row">
             <div class="col-md-6"><h5 id="title">About</h5></div>
-            <div class="col-md-6"><a href='#' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
+            <div class="col-md-6"><a href='javascript:void(0);' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
       <p id="aboutuspara"><?php
 	  if($uInfo['aboutus'])
@@ -195,7 +195,7 @@ include('cfg/more-functions.php');
         <section class="container secondsection">
        <div class="row">
             <div class="col-md-6"><h5 id="title">Overview</h5></div>
-            <div class="col-md-6"><a href="#" onClick="visible_invisible('frmoverview','overviewpara');"><img src="images/pencil.png"></a></div>
+            <div class="col-md-6"><a href="javascript:void(0);" onClick="visible_invisible('frmoverview','overviewpara');"><img src="images/pencil.png"></a></div>
       </div> 
       <p id="overviewpara"><?php
 	  if($uInfo['overview'])
