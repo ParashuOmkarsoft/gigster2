@@ -35,13 +35,15 @@ if($sql['count']>0)
 <table class="table table-striped" id="mydatatable">
 <thead>
   <tr>
-    <th>#</th>
-    <th>Gig Title</th>
-    <th>From</th>
-    <th>Message</th>
-    <th>Sent On</th>
+    <th><h5>#</h5></th>
+    <th><h5>Gig Title</h5></th>
+    <th><h5>From</h5></th>
+    <th><h5>Message</h5></th>
+    <th><h5>Sent On</h5></th>
 
   </tr>
+  </thead>
+  <tbody>
   <?php
   $sno=1;
 	$mprojects="";
@@ -90,7 +92,7 @@ if($sql['count']>0)
 	}
   }
   ?>
-  </thead>
+  </body>
   </table>
 <?php  }
 else
