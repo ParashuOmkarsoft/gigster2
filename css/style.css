@@ -472,7 +472,7 @@ margin: 0 auto;*/
 	font-family: 'source_sans_proregular'; font-size: 20px;color: #5e350d;
 }
 .progress{
-	width: 560px;
+	width: 100%;
 	height: 30px;}
 .progress-bar{
 	background-color: #e2ac10;
@@ -928,3 +928,4 @@ color: #000000; }
 .msg-date{font-size: 18px;}
 .msg-textarea{
 border: 1px solid #FFCE7C;}
+.tbg{background: #FBEAAD;}
