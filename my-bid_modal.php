@@ -38,7 +38,7 @@ $opengig=get_gig_details($projectId);
         </div>
         <div class="form-group">
           <div class="col-sm-12 ">
-            <button type="submit" class="btn btn-warning ">Bid Now</button>
+            <button type="submit" class="btn bid-now-btn">Bid Now</button>
           </div>
         </div>
       </div>
