@@ -10,7 +10,7 @@ $from=$msgdetails['msgfrom'];
 $to=$msgdetails['msgto'];
 
 $projectDetails=get_gig_details($project);
-$messagethread="select * from btr_messages where projectId=$project and msgtype<>'r' and ((msgfrom=$from and msgto=$to) or (msgfrom=$to and msgto=$from)) order by msgId DESC";
+$messagethread="select * from btr_messages where projectId=$project  and ((msgfrom=$from and msgto=$to) or (msgfrom=$to and msgto=$from)) order by msgId DESC";
 $messagethread=@db_query($messagethread);
 $uInfo=get_user_Info($_SESSION['uId']);
 if($uInfo['userId']==$from)

@@ -8,7 +8,7 @@ $biderid=filter_text($_GET['biderid']);
 $projectId=filter_text($_GET['projectId']);
 
 $projectDetails=get_gig_details($project);
- $messagethread="select * from btr_messages where projectId=$projectId and ((msgfrom=$ownerId and msgto=$biderid) or (msgfrom=$biderid and msgto=$ownerId)) order by msgId DESC";
+ $messagethread="select * from btr_messages where projectId=$projectId and ((msgfrom=$ownerId and msgto=$biderid) or (msgfrom=$biderid and msgto=$ownerId)) and msgtype<>'r' order by msgId DESC";
 $messagethread=@db_query($messagethread);
 $uInfo=get_user_Info($_SESSION['uId']);
 if($uInfo['userId']==$ownerId)
@@ -26,9 +26,9 @@ else
 <h2 id="login1"><?php echo $projectDetails['prjTitle'];?></h2>    
 <div class="col-sm-12" >
 	<form  action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
-  					 <input type="text" id="fromId" name="fromId" value="<?php echo $msgfrom;?>" />
-                     <input type="text" id="toId" name="toId" value="<?php echo $msgto;?>" />
-                     <input type="text" id="projectId" name="projectId" value="<?php echo $projectId;?>" />
+  					 <input type="hidden" id="fromId" name="fromId" value="<?php echo $msgfrom;?>" />
+                     <input type="hidden" id="toId" name="toId" value="<?php echo $msgto;?>" />
+                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $projectId;?>" />
     	<div class="form-group">
         	<label>Message</label>
             <textarea name="message" id="message" class="form-control"></textarea>
