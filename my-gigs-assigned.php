@@ -120,7 +120,7 @@ if($checkSql['count']>0)
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-10 logsign">
+                        <div class="col-sm-12">
                           <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
                         </div>
                       </div>
@@ -332,7 +332,7 @@ $puname=$puuinfo['username'];
 		  ?>
             <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
             <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal" title="Send Status Report"> <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div> 
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span>60%</div> 
             </div></a>
           </div>
         </div>
