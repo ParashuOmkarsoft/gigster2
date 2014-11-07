@@ -39,7 +39,7 @@ if(!isset($_SESSION['uId']))
     <li><a href="<?php echo $serverpath;?>bided"> My Bids </a></li>
     <li><a href="<?php echo $serverpath;?>tocompleted">My Completed</a></li>
   </ul>
-  <h2 id="logingigster1">My Assignments</h2>
+  <h2 id="my-assignment-box">My Assignments</h2>
   <?php
 
 
@@ -332,7 +332,7 @@ $puname=$puuinfo['username'];
 		  ?>
             <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
             <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal" title="Send Status Report"> <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div>
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span> </div> 
             </div></a>
           </div>
         </div>
