@@ -27,13 +27,11 @@ include('cfg/more-functions.php');
   </ul>
 </section>
 <section class="container">
-  <ul id="profilemenu">
+	<ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong> </a></li>
     <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
     <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
   </ul>
-</section>
-<section class="container">
   <h2 id="logingigster1">My Gigs</h2>
   <?php
         $uId=$uInfo['userId'];
@@ -84,7 +82,7 @@ include('cfg/more-functions.php');
 
 	   ?>
   <?php //pr($gigsterInfo); ?>
-  <div class="row myrow">
+  <div class="row mygigrow">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
