@@ -150,44 +150,7 @@ else
      
     </div>
   </div>
-  <div id="bidmodel<?php echo $gigdetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content cform">
-        <div class="container">
-          <div class="col-md-12">
-            <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
-              <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
-              <h2 id="login1">Bid On Gig </h2>
-              <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
-                  <br/>
-                  <br/>
-                  <div class="col-sm-12">
-                    <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal"></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-4 control-label tfont">Price</label>
-                  <Br/>
-                  <br/>
-                  <div class="col-md-8">
-                    <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-12">
-                    <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <div class="row">
     <div class="col-md-12">
       <h5 id="title">Overview</h5>
@@ -286,116 +249,35 @@ else
    ?>
 
       <div>
-        <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) || is_message_thread_initiated($gigdetails['prjId'],$bidderInfo['userId']))
+        <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) )
 				 {
 			?>
      <div class="col-md-6" style="width: 140px;
 margin-top: 20px;">
-			<?php if((message_thread_started($gigdetails['prjId'],$_SESSION['uId'])) || is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
+			<?php if(is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
 			{
 				?>
-        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a><br/><br/>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         
-        <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content cform">
-              <div class="container">
-                <div class="col-md-12">
-                  <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
-                  <?php if($_SESSION['uId']==encrypt_str($gigdetails['userId']))
-				  {
-					  ?>
-                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $uInfo['userId'];?>" />
-                    <input type="hidden" id="toId" name="toId" value="<?php echo $bidderInfo['userId'];?>" />
-                    <?php
-				  }
-				  else
-				  {
-					  ?>
-					  
-                    <input type="hidden" id="fromId" name="fromId" value="<?php echo $bidderInfo['userId'];?>" />
-                    <input type="hidden" id="toId" name="toId" value="<?php echo $gigdetails['userId'];?>" />
-                    <?php
-					
-				  }
-					?>
-                    <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
-                    <h2 id="msg-model">Messages</h2>
-                    <h2 class="source"><?php echo $gigdetails['prjTitle'];?></h2>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="col-md-4 control-label tfont">Message</label>
-                        <Br/>
-                        <br/>
-                        <div class="col-md-12">
-                          <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-12">
-                          <button type="submit" class="btn gig-send-btn pull-left">Send Message</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-md-12" style="height: 250px;overflow: auto;background: #FFFFF;padding-top: 15px;border-radius: 8px;">
-                  <?php
-			$muInfo=get_user_Info($_SESSION['uId']);
-			$muId=$muInfo['userId'];
-			$other=get_oponent($pId,$muId);
-		 	$projectMessages="select * from btr_messages where projectId=".$gigdetails['prjId']." and (msgfrom=$other or msgto=$muId) order by msgId DESC";
-			$projectMessages=@db_query($projectMessages);
-			$messages=$projectMessages;
-			for($t=0;$t<$messages['count'];$t++)
-			{
-			$msgfrom=$messages['rows'][$t]['msgfrom'];
-			$fromInfo=get_user_Info(filter_text(encrypt_str($msgfrom)));
-			$fromuserimg=$fromInfo['profileimage'];
-			$buserimage="";
-			if(!$fromuserimg)
-			{
-				$buserimage=filter_text('img/avatar5.png');
-			}
-			else
-			{
-				$buserimage="uploads/profileimage/".$fromuserimg;
-			}
-			if($t%2==0)
-			{
-				$cl="style='background-color: #F8F8F8;padding: 12px;max-width: 412px;text-align: left;border-radius: 8px;'";
-			}
-			else
-			{
-				$cl="style='background-color: #FEFF9D;padding: 12px;width: 412px;text-align: right;border-radius: 8px;float: right;'";
-			}
-			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
-			?>
-                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
-                    <p class="message"> <a href="#" class="name"><small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
-                      <?php echo get_user_name($msgfrom);?> </a><br/>
-                      <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent']))); ?><br/>
-                      
-                    </p>
-                  </div>
-                  <br/>
-                  <?php
-		}
-		  ?>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <?php
 			}
 		?>
          </div>
         <?php
 		}
-		 ?>
-     
-      <?php if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
+		else
+		{
+			$m=message_thread_started($gigdetails['prjId'],encrypt_str($bidderInfo['userId']));
+			if($m==$uInfo['userId'])
+			{
+		 	?>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+        	<?php
+			}
+		 
+		}
+	   if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
 				 {
 					if(is_project_awarded($gigdetails['prjId']))
 {

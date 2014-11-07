@@ -877,17 +877,19 @@ function get_message_details($msgId)
 }
 function message_thread_started($projectId,$uId)
 {
+	
 $projectInfo=get_gig_details($projectId);
 $uInfo=get_user_Info($uId);
 
 if($projectInfo['prjId'])
 {
-	$checkQuery="select * from btr_messages where projectId=$projectId and msgfrom=".$projectInfo['userId']." and msgto=".$uInfo['userId'];
+	 $checkQuery="select * from btr_messages where projectId=$projectId and msgfrom=".$projectInfo['userId']." and msgto=".$uInfo['userId'];
 	$checkSql=@db_query($checkQuery);
 
 		if($checkSql['count']>0)
 		{
-			return 1;
+			
+			return $uInfo['userId'];
 		}
 		else{
 			return 0;
