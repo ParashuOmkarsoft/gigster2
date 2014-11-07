@@ -29,7 +29,7 @@ if(!isset($_SESSION['uId']))
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
     <li><a href="<?php echo $serverpath;?>assignments">
-      <h5 id="ass">My Assigments</h5>
+      <h5 id="bold-assign">My Assigments</h5>
       </a></li>
   </ul>
 </section>
