@@ -73,7 +73,7 @@ include('cfg/more-functions.php');
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid">&nbsp;</span></div>
       <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-      <p id="gigpara"><?php echo stripslashes(strip_string(nl2br($opengig['prjdesc']),325));?></p>
+      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),325));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg">
       <div class="col-md-12">
