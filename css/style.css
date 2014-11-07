@@ -946,7 +946,8 @@ margin-top: 12px;
 }
 .table-head{font-size: 18px;
 font-family: 'source_sans_proregular';
-color: #5e350d;}
+color: #5e350d;margin-top: 5px;
+margin-bottom: 5px;}
 .mygigrow{color: #5e350d;
 font-family: 'source_sans_prolight';
 font-size: 48px;
