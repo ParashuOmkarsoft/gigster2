@@ -22,7 +22,7 @@ include('cfg/more-functions.php');
         <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assignments</a></h5></li>
         <li><h5 id="pro"><a href="#">Change Password</a></h5></li>
-        <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >LOGOUT</a></h5></li>                            
+        <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></h5></li>                            
       </ul> 
     </section>
     <?php
