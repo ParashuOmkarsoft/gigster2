@@ -926,3 +926,5 @@ padding: 27px 48px;
 font-size: 21px;
 color: #000000; }
 .msg-date{font-size: 18px;}
+.msg-textarea{height: 150px;
+border: 1px solid #FFCE7C;}
