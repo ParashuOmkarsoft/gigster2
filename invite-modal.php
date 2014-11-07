@@ -1,4 +1,4 @@
-
+<h6>This is the content for Layout H6 Tag</h6>
 <div id="invitemodal" class="modal fade  bs-example-modal-lg modelw " tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">

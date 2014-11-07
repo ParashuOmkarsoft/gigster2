@@ -76,3 +76,23 @@ function view_message_modal_inner(serverpath,ownerid,biderid,projectId)
   xmlhttp2.open("GET",m_url,true);
   xmlhttp2.send();
 }
+
+function bid_modal(serverpath,projectId,userId)
+{
+	
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp3=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp3=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp3.onreadystatechange=function() {
+    if (xmlhttp3.readyState==4 && xmlhttp3.status==200) {
+      document.getElementById("bid-modal").innerHTML=xmlhttp3.responseText;
+    }
+  }
+  m_url=serverpath+"my-bid_modal.php?projectId="+projectId+"&biderid="+userId
+
+  xmlhttp3.open("GET",m_url,true);
+  xmlhttp3.send();
+}
