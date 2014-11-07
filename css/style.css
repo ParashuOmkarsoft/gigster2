@@ -974,3 +974,20 @@ border-radius: 10px;
 background: #EC6B39;
 outline: none;
 margin-top: 12px;margin-left: 15px;}
+
+.bold-assign{font-family: 'source_sans_prosemibold';
+text-decoration: none !important;
+color: #5e350d;
+font-size: 24px;
+/* font-family: 'source_sans_prolight'; */
+text-decoration: none !important;
+color: #5e350d;
+font-size: 24px;
+margin-top: 4px;
+border-left: solid #5e350d;
+border-width: 2px;
+height: 27px;
+padding-left: 15px;
+margin-left: -12px;
+padding-top: 0px;
+margin-top: 4px;}
