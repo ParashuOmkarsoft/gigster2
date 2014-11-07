@@ -37,8 +37,8 @@ $opengig=get_gig_details($projectId);
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-offset-3 col-sm-10 logsign">
-            <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
+          <div class="col-sm-12 ">
+            <button type="submit" class="btn btn-warning ">Bid Now</button>
           </div>
         </div>
       </div>
