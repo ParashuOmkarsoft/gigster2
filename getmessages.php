@@ -73,11 +73,7 @@ else
 			}
 	?>
       <div class="col-md-12" <?php echo $cl;?> >
-        <?php
-			
-		 	
-			
-			?>
+        <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?>You Replied : <?php  }?> 
         <br/>
         <div class="form-group" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
@@ -86,7 +82,7 @@ else
 		  
 		  <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?> </a>
           <br/>
-           <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?>You Replied : <?php  }?> <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?><br/>
+           <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?><br/>
           </p>
         </div>
         <br/>
