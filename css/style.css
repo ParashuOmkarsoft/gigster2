@@ -944,3 +944,6 @@ background: #EC6B39;
 outline: none;
 margin-top: 12px;
 }
+.table-head{font-size: 18px;
+font-family: 'source_sans_proregular';
+color: #5e350d;}
