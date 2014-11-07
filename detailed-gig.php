@@ -116,7 +116,7 @@ else
                                       </div>
                                       <div class="form-group">
                                         <div class="col-sm-12">
-                                          <button type="submit" class="btn btn-warning loginbtn">Bid Now</button>
+                                          <button type="submit" class="btn btn-warning">Bid Now</button>
                                         </div>
                                       </div>
                                     </div>
