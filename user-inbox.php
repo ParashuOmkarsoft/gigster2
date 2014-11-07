@@ -34,7 +34,7 @@ if($sql['count']>0)
 ?>
 <table class="table table-striped" id="mydatatable">
 <thead>
-  <tr style="background: rgb(255, 217, 141);font-weight:bold">
+  <tr style="background: rgb(255, 217, 141);">
     <th><h5 class="table-head">#</h5></th>
     <th><h5 class="table-head">Gig Title</h5></th>
     <th><h5 class="table-head">From</h5></th>
@@ -70,11 +70,11 @@ if($sql['count']>0)
 	$st="";
 	if($sql['rows'][$i]['isread'])
 	{
-		$st="background: rgb(255, 251, 215);";
+		$st="style='background: rgb(255, 244, 219);'";
 	}
 	else
 	{
-		$st="background: rgb(255, 251, 215);";
+		$st="style='background: rgb(255, 244, 219);'";
 	}
 	  ?>
       
