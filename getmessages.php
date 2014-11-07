@@ -73,7 +73,7 @@ else
 			}
 	?>
       <div class="col-md-12" <?php echo $cl;?> >
-        <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?>You Replied : <?php  }?> 
+        <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?><strong>You Replied :</strong> <?php  }?> 
         <br/>
         <div class="form-group" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
