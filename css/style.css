@@ -475,7 +475,7 @@ margin: 0 auto;*/
 	width: 83%;
 	height: 30px;}
 .progress-bar{
-	background-image: linear-gradient(to bottom,#FFDB00 0,#FFBD00 100%);
+	background-image: linear-gradient(to bottom,#FFDB00 0,#FFBD00 100%);position: relative;
 }
 
 span.c{margin-left: 350px;
@@ -975,7 +975,7 @@ background: #EC6B39;
 outline: none;
 margin-top: 12px;margin-left: 15px;}
 
-.bold-assign{font-family: 'source_sans_prosemibold';
+#bold-assign{font-family: 'source_sans_prosemibold';
 text-decoration: none !important;
 color: #5e350d;
 font-size: 24px;
@@ -991,3 +991,4 @@ padding-left: 15px;
 margin-left: -12px;
 padding-top: 0px;
 margin-top: 4px;}
+.sr-only{position: absolute;z-index: 9;right: 0;}
