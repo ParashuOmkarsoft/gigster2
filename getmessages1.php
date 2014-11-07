@@ -62,11 +62,11 @@ else
 			}
 			if($i%2==0)
 			{
-				$cl="style='text-align:right;background-color:#FC6;margin-top:10px;vertical-align:top;'";
+				$cl="style='text-align:right;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 			else
 			{
-				$cl="style='background-color:#ebebeb;margin-top:10px;vertical-align:top;'";
+				$cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 	?>
 	<div class="col-md-12" <?php echo $cl;?> >
