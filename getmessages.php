@@ -33,7 +33,7 @@ else
                      <input type="hidden" id="projectId" name="projectId" value="<?php echo $project;?>" />
     	<div class="form-group">
         	<label><h5>Message</h5></label>
-            <textarea name="message" id="message" class="form-control msg-textarea"></textarea>
+            <textarea rows="5" name="message" id="message" class="form-control msg-textarea"></textarea>
         </div>
         <div class="form-group">
           	<button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
