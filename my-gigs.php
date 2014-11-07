@@ -231,7 +231,7 @@ box-shadow: 0px 0px 2px #000000;'";
          <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
                
-                <span class="sr-only"></span>
+                <span class="sr-only"><?php echo $projectstatus; ?>%</span>
          		 </div>
                  
          </div>
