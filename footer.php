@@ -11,7 +11,7 @@
 <?php if(!isset($_SESSION['uId'])){include('login-modal.php'); } ?>
 <?php if(!isset($_SESSION['uId'])){include('signup-model.php'); } ?>
 <?php if(isset($_SESSION['uId'])){include('bid-modal.php'); } ?>
-<?php if(isset($_SESSION['uId'])){include('invite-model.php'); } ?>
+
 
 
 <footer>
