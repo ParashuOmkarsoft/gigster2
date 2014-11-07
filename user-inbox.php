@@ -101,7 +101,7 @@ else
 }
 ?>
      </section>
-<?php include('message-modal.php'); ?>
+<?php  ?>
 <?php include('footer.php'); ?>
   </body>
 </html>

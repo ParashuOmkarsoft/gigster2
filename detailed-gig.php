@@ -277,8 +277,11 @@ else
 			?>
      <div class="col-md-6" style="width: 140px;
 margin-top: 20px;">
-
-        <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+			<?php if((message_thread_started($gigdetails['prjId'],$_SESSION['uId'])) || is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
+			{
+				?>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a><br/><br/>
+        
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content cform">
@@ -327,7 +330,7 @@ margin-top: 20px;">
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
 			$other=get_oponent($pId,$muId);
-		 	$projectMessages="select * from btr_messages where projectId=".$gigdetails['prjId']." and (msgfrom=$muId or msgto=$muId) order by msgId DESC";
+		 	$projectMessages="select * from btr_messages where projectId=".$gigdetails['prjId']." and (msgfrom=$other or msgto=$muId) order by msgId DESC";
 			$projectMessages=@db_query($projectMessages);
 			$messages=$projectMessages;
 			for($t=0;$t<$messages['count'];$t++)
@@ -370,6 +373,9 @@ margin-top: 20px;">
             </div>
           </div>
         </div>
+        <?php
+			}
+		?>
          </div>
         <?php
 		}

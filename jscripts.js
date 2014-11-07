@@ -58,3 +58,21 @@ function view_message_modal(serverpath,id)
   xmlhttp.open("GET",m_url,true);
   xmlhttp.send();
 }
+function view_message_modal_inner(serverpath,ownerid,biderid,projectId)
+{
+	
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp2=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp2=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp2.onreadystatechange=function() {
+    if (xmlhttp2.readyState==4 && xmlhttp2.status==200) {
+      document.getElementById("message-modal").innerHTML=xmlhttp2.responseText;
+    }
+  }
+  m_url=serverpath+"getmessages1.php?ownerId="+ownerid+"&biderid="+biderid+"&projectId="+projectId
+  xmlhttp2.open("GET",m_url,true);
+  xmlhttp2.send();
+}

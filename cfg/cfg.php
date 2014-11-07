@@ -875,4 +875,37 @@ function get_message_details($msgId)
 		return $sql['rows']['0'];
 	}
 }
+function message_thread_started($projectId,$uId)
+{
+$projectInfo=get_gig_details($projectId);
+$uInfo=get_user_Info($uId);
+
+if($projectInfo['prjId'])
+{
+	$checkQuery="select * from btr_messages where projectId=$projectId and msgfrom=".$projectInfo['userId']." and msgto=".$uInfo['userId'];
+	$checkSql=@db_query($checkQuery);
+
+		if($checkSql['count']>0)
+		{
+			return 1;
+		}
+		else{
+			return 0;
+		}
+
+}
+}
+function is_user_admin($projectId,$userId)
+{
+$userInfo=get_user_Info($userId);
+$projectInfo=get_gig_details($projectId);
+if($projectInfo['userId']==$userInfo['userId'])
+{
+	return 1;
+}
+else{
+	return 0;
+}
+
+}
 ?>

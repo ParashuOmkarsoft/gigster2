@@ -29,6 +29,7 @@ include('invite-modal.php');
     </div>
   </div>
 </footer>
+<?php include('message-modal.php');?>
 <script type="text/javascript">
 $(".mdatepicker").datepicker({ format: 'mm/dd/yyyy',
     startDate: '-3d'});
