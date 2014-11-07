@@ -339,7 +339,7 @@ border: 1px solid #f7f25f;
 color: #5e350d;
 font-family: 'source_sans_prolight';
 font-size: 48px;
-border-bottom: 5px solid #fab518;
+/*border-bottom: 5px solid #fab518;*/
 padding-bottom: 10px;
 margin: 1px auto;
 /* margin-left: 50px; */
@@ -947,3 +947,11 @@ margin-top: 12px;
 .table-head{font-size: 18px;
 font-family: 'source_sans_proregular';
 color: #5e350d;}
+.mygigrow{color: #5e350d;
+font-family: 'source_sans_prolight';
+font-size: 48px;
+/* border-bottom: 5px solid #fab518; */
+padding-bottom: 10px;
+margin: 1px auto;
+/* margin-left: 50px; */
+/* margin-right: 50px; */}
