@@ -33,7 +33,7 @@ if($sql['count']>0)
 
 ?>
 <table class="table table-striped" id="mydatatable">
-<thead>
+<thead tbg>
   <tr>
     <th><h5>#</h5></th>
     <th><h5>Gig Title</h5></th>

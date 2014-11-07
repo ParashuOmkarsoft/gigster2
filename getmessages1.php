@@ -30,11 +30,11 @@ else
                      <input type="hidden" id="toId" name="toId" value="<?php echo $msgto;?>" />
                      <input type="hidden" id="projectId" name="projectId" value="<?php echo $projectId;?>" />
     	<div class="form-group">
-        	<label>Message</label>
-            <textarea name="message" id="message" class="form-control"></textarea>
+        	<label><h5>Message</h5></label>
+            <textarea rows="5" name="message" id="message" class="form-control msg-textarea"></textarea>
         </div>
         <div class="form-group">
-          	<button type="submit" class="btn gig-send-btn pull-left">Send Message</button>
+          	<button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
          </div>
          <div class="clearfix"></div>
          <Br/>
