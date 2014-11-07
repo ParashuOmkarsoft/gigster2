@@ -94,9 +94,9 @@ if($checkSql['count']>0)
           
           <?php /*?> <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a><?php */?>
           <a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
-          <button type="button" class="btn btn-primary" >Terms</button>
+          <button type="button" class="btn terms-btn" >Terms</button>
           </a> <a href="<?php echo $serverpath;?>markascomplete/<?php echo $prjDetails['prjId'];?>">
-          <button type="button" class="btn btn-primary">Mark As Complete</button>
+          <button type="button" class="btn markascomplete-btn">Mark As Complete</button>
           </a> <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -332,7 +332,7 @@ $puname=$puuinfo['username'];
 		  ?>
             <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
             <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal" title="Send Status Report"> <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span>60%</div> 
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"></span></div> 
             </div></a>
           </div>
         </div>
