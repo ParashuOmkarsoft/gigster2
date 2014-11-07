@@ -991,4 +991,12 @@ padding-left: 15px;
 margin-left: -12px;
 padding-top: 0px;
 margin-top: 4px;}
-.sr-only{position: absolute;z-index: 9;right: 0;}
+.sr-only{position: absolute;z-index: 9;right: 0;position: absolute;
+width: 27px;
+/* height: 12px; */
+/* padding: 7px; */
+margin: 7px;
+font-weight: bold;
+font-size: 16px;
+color: rgba(74, 74, 74, 1);
+}
