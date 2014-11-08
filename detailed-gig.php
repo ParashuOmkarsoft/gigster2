@@ -58,8 +58,20 @@ else
     </div>
     <div id="front" class="col-md-4 giginnerimg">
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
+      <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1">
+      <?php if($gigdetails['userId']!=$uInfo['userId'])
+	  {
+		  $h=is_message_thread_initiated($gigdetails['prjId'],$uInfo['userId']);
+		  if($h==$uInfo['userId'])
+		  {
+			?>
+			<a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $uInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+			<?php  
+		  }
+	  }
+	  ?>
       <div class="col-md-6" style="width: 276px;">
-        <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
+        <div class="col-md-6"> 
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -76,7 +88,7 @@ else
         
 <?php
 							  }
-							  
+
 			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
