@@ -68,7 +68,7 @@
         </form>
       </section>
       &nbsp;
-      <section class="postgigform mhidden" id="inviteform">
+      <section class="postgigform mhidden" id="inviteform" style="min-height:400px;overflow:auto;">
         
       </section>
     </div>

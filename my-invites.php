@@ -28,7 +28,7 @@ if($ngigdetails)
 	}
 }
 ?>
-<div class="col-sm-10" style="height:400px;overflow:auto;">
+
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 <p><?php echo $msg;?></p>
@@ -61,11 +61,13 @@ if($ngigdetails)
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			?>
 			<div class="col-sm-5">
-				<img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1">
-                
-                <input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" />
+				<div><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1">
+				</div>
+                <div><input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" /></div>
+                <div>
                 <h4><?php echo $gigsternametodisplay; ?></h4>
                 <h4><?php echo $gigsterInfo['skills']; ?></h4>
+                </div>
                  <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
@@ -94,4 +96,3 @@ if($ngigdetails)
     <button type="submit" class="btn btn-primary" data-dismiss="modal">Leave It</button>    
     </form>
     <div class="clearfix"></div>
-</div>
