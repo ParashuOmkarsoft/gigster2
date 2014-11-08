@@ -10,7 +10,7 @@
                 <?php if(isset($_SESSION['uId']))
 				{
 					?>
-                      <li><a data-toggle="modal" href="#postgigmodel">POST GIG</a></li>
+                      <li><a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()">POST GIG</a></li>
                       <?php
 				}
 				else

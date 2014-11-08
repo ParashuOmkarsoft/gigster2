@@ -133,3 +133,9 @@ function validate_selected()
 		return false;
 	}
 }
+function reset_post_gig()
+{
+document.getElementById("postgigmodel").style.display="block";	
+document.getElementById("postform").reset();
+document.getElementById("inviteform").style.display="none";	
+}
