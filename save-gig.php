@@ -18,19 +18,40 @@ $price=$proposedprice;
 $bidto=$enddate;
 $keywords=filter_text($_POST['keywords']);
 
+if(!$inviteusers)
+{
+	$inviteusers='0';
+}else{
+	$inviteusers='1';
+}
+
 if($prjTitle && $proposedprice)
 {
-	$insertQuery="insert into btr_projects(userId,prjTitle,prjdesc,postedon,proposedbudget,bidfrom,bidto,keywords,jobtype)";
-	 $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype')";	
+	$insertQuery="insert into btr_projects(userId,prjTitle,prjdesc,postedon,proposedbudget,bidfrom,bidto,keywords,jobtype,invited)";
+	 $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype','$inviteusers')";	
 	$insertSql=@db_query($insertQuery,3);
 	if($insertSql)
 	{
 		add_keywords($keywords);
+		if(!$inviteusers)
+		{
 		?>
 		<script type="text/javascript">
 			window.parent.location="<?=$serverpath;?>allgigs";
 		</script>
 		<?php
+		}
+		else
+		{
+			?>
+			<script type="text/javascript">
+			window.parent.document.getElementById("postgigform").style.display="none";
+			window.parent.document.getElementById("postform").reset();
+			window.parent.document.getElementById("inviteform").style.display="block";
+			window.parent.invite_gigsters("<?php echo $serverpath;?>","<?php echo $insertSql; ?>");
+			</script>
+			<?php
+		}
 		
 	}
 	else{

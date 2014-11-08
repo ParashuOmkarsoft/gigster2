@@ -96,3 +96,20 @@ function bid_modal(serverpath,projectId,userId)
   xmlhttp3.open("GET",m_url,true);
   xmlhttp3.send();
 }
+function invite_gigsters(serverpath,projectId)
+{
+	if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp4=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp4=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp4.onreadystatechange=function() {
+    if (xmlhttp4.readyState==4 && xmlhttp4.status==200) {
+      document.getElementById("inviteform").innerHTML=xmlhttp4.responseText;
+    }
+  }
+  m_url=serverpath+"my-invites.php?projectId="+projectId;
+  xmlhttp4.open("GET",m_url,true);
+  xmlhttp4.send();
+}

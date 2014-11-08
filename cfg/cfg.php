@@ -773,6 +773,19 @@ function get_user_project_rating($projectId,$userId)
 		return "0";
 	}
 }
+function get_project_feedback($projectId)
+{
+	$query="Select * from btr_reviews where projectId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0'];
+	}
+	else
+	{
+		return "0";
+	}
+}
 function strip_slashes($str)
 {
 	
@@ -909,5 +922,22 @@ else{
 	return 0;
 }
 
+}
+function get_gigsters_on_skill($skills)
+{
+	$skillsarray=explode(",",$skills);
+	$g=0;
+	for($i=0;$i<sizeof($skillsarray);$i++)
+	{
+		$skill=$skillsarray[$i];
+		$gigsterQuery="select u.userId from btr_users as u,btr_userprofile as p where u.userId=p.userId and p.skills like '%$skill%'";
+		$gigsterSql=@db_query($gigsterQuery);
+		if($gigsterSql['count']>0)
+		{
+			$gigsterId[$g]=$gigsterSql['rows']['0']['userId'];
+			$g++;
+		}
+	}
+	return $gigsterId;
 }
 ?>

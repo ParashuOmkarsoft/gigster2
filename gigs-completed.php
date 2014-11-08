@@ -88,12 +88,21 @@ include('cfg/more-functions.php');
          <div class="col-md-8">
             <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
             <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-              <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a></span></div>
+              <div class="col-md-4"><span id="bid"></span></div>
               <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
               
           </div>
           <div class="col-md-12">
-    <div class="col-md-10"> <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p> </div>
+    <div class="col-md-10"> <p id="gigpara">
+	<?php 
+	$feedback=get_project_feedback($opengig['prjId']);
+	if($feedback){
+	?><strong>Feedback</strong> <br/><?php	
+	echo $feedback['feedback'];
+	}
+	?>
+    
+    </p> </div>
          <div class="col-md-2 giginnerimg gigimg">
               <?php /*?><div class="col-md-6">
                    <?php
