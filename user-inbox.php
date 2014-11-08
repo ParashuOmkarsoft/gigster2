@@ -75,9 +75,9 @@ if($sql['count']>0)
 		
 		if($jj)
 		{
-			$st="style='background-color:#fed7d7;'";
+			$st="style='background: rgb(255, 0, 0);'";
 		}
-		elseif($sql['rows'][$i]['isread'] && !$jj)
+		elseif($sql['rows'][$i]['isread'])
 		{
 			$st="style='background: rgb(255, 244, 219);'";
 		}
