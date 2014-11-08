@@ -17,7 +17,7 @@ if($ngigdetails)
 		$users=implode(",",$users);
 		$gigstersQuery="select userId from btr_users where userId in ($users) order by joinedon DESC";
 		$gigsters=@db_query($gigstersQuery);	
-		$msg="";
+		$msg="Here is the list of gigsters matching your gig's skill set.";
 	}
 	else
 	{
@@ -31,13 +31,14 @@ if($ngigdetails)
 <div class="col-sm-10" style="height:400px;overflow:auto;">
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
+<p><?php echo $msg;?></p>
 	<?php 
 	if($gigsters['count']>0)
 	{
 		for($i=0;$i<$gigsters['count'];$i++)
 		{
 			$gigsterInfo=get_user_Info(encrypt_str($gigsters['rows'][$i]['userId']));
-			if($gigsterInfo['userId']==$loggedinuser)
+			if($gigsterInfo['userId']!=$loggedinuser)
 			{
 			$gigsterpic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			

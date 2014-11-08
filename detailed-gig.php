@@ -61,7 +61,8 @@ else
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1">
       <?php if($gigdetails['userId']!=$uInfo['userId'])
 	  {
-		  $h=is_message_thread_initiated($gigdetails['prjId'],$uInfo['userId']);
+		  $h=message_thread_started($gigdetails['prjId'],$uInfo['userId']);
+				
 		  if($h==$uInfo['userId'])
 		  {
 			?>

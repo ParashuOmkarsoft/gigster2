@@ -33,7 +33,8 @@ include('cfg/more-functions.php');
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname']." ".$uInfo['lname'];
-		  if($nametodisplay)
+		  $nametodisplay1=str_replace(" ","",$nametodisplay);
+		  if($nametodisplay1)
 		  {
 		  }
 		  else
@@ -69,19 +70,19 @@ include('cfg/more-functions.php');
           <div class="col-md-6"> 
           <?php if($uInfo['profileimage'])
 		  {
-			  $pfimage=$uInfo['profileimage'];
-			  if(file_exists($pfimage))
-			  {
+			 $pfimage=$uInfo['profileimage'];
+			
+			if(!empty($uInfo['profileimage']))
+			{
+				$pfimage=$pfimage;
+			}
+			else
+			{
+				$pfimage="images/admin.png";
+			}
 			  ?>
             <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser">
             <?php
-			  }
-			  else
-			  {
-				  ?>
-				  <img src="<?php echo $serverpath;?>image.php?image=/images/admin.png&width=150&height=113" id="imguser">
-				  <?php
-			  }
 		  }
 		   else
 			  {
