@@ -54,6 +54,7 @@ if($sql['count']>0)
 	  $mstr=$sql['rows'][$i]['projectId']."-".$sql['rows'][$i]['msgfrom'];
 	if(in_array($mstr,$mprojects))
 	{
+
 	}
 	else
 	{
@@ -64,25 +65,42 @@ if($sql['count']>0)
 	  	$mprojects[$mcount]=$mstr;
 		$fromdetails=get_user_Info(encrypt_str($sql['rows'][$i]['msgfrom']));
 		$nametodisplay=$fromdetails['fname']." ".$fromdetails['lname'];
-	$nametodisplay1=str_replace(" ","",$nametodisplay);
-	if(!$nametodisplay1)
-	{
-		$nametodisplay=$fromdetails['username'];
-	}
-	$st="";
-	if($sql['rows'][$i]['isread'])
-	{
-		$st="style='background: rgb(255, 244, 219);'";
-	}
-	else
-	{
-		$st="style='background: rgb(255, 244, 219);'";
-	}
+		$nametodisplay1=str_replace(" ","",$nametodisplay);
+		if(!$nametodisplay1)
+		{
+			$nametodisplay=$fromdetails['username'];
+		}
+		$st="";
+		$jj=user_replied($prjDetails['prjId'],$uInfo['userId'],$sql['rows'][$i]['msgId']);
+		
+		if($jj)
+		{
+			$st="style='background-color:#fed7d7;'";
+		}
+		elseif($sql['rows'][$i]['isread'] && !$jj)
+		{
+			$st="style='background: rgb(255, 244, 219);'";
+		}
+		else
+		{
+			$st="style='background: rgb(255, 244, 219);'";
+		}
+	
 	  ?>
       
-	  <tr <?php echo $st;?>>
-      	<td><?php echo $sno;?></td>
-		<td><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo $prjDetails['prjTitle'];?></a> </td>                
+	  <tr <?php echo $st;?> >
+      	<td ><?php echo $sno;?></td>
+		<td valign="top"><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo $prjDetails['prjTitle'];?></a>
+        <?php if($jj)
+		{
+			?>
+            <span align="right">
+			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer;"></i>
+            </span>
+            <?php 
+		}
+		?>
+        </td>                
 		<td><?php echo $nametodisplay;?></td> 
         <td><?php echo strip_string($sql['rows'][$i]['msgcontent'],50);?></td>
         <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>                                               

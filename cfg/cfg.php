@@ -940,4 +940,17 @@ function get_gigsters_on_skill($skills)
 	}
 	return $gigsterId;
 }
+function user_replied($projectId,$user,$msgId)
+{
+	 $query="select * from btr_messages where msgId>$msgId and msgfrom=$user and projectId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
 ?>

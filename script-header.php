@@ -4,7 +4,7 @@
 <script src="<?php echo $serverpath;?>js/jquery.js"></script>
 <script src="<?php echo $serverpath;?>jquery-ui.js"></script>
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/bootstrap.min.css">
-
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/bootstrap-theme.min.css">
 
