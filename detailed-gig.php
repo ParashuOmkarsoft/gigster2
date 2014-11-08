@@ -72,11 +72,10 @@ else
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="http://gigster2.fountaintechies.com/images/mail.jpg" style="
-    margin-top: 10px;
-">
+        
 <?php
 							  }
+							  
 			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
