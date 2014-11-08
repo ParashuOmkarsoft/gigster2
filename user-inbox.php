@@ -48,9 +48,11 @@ if($sql['count']>0)
   $sno=1;
 	$mprojects="";
 	$mcount=0;
+	$mstr="";
   for($i=0;$i<$sql['count'];$i++)
   {
-	if(in_array($sql['rows'][$i]['projectId'],$mprojects))
+	  $mstr=$sql['rows'][$i]['projectId']."-".$sql['rows'][$i]['msgfrom'];
+	if(in_array($mstr,$mprojects))
 	{
 	}
 	else
@@ -59,7 +61,7 @@ if($sql['count']>0)
 	    $prjDetails=get_gig_details($sql['rows'][$i]['projectId']);
 		if($prjDetails['prjId'])
 		{	  
-	  	$mprojects[$mcount]=$sql['rows'][$i]['projectId'];
+	  	$mprojects[$mcount]=$mstr;
 		$fromdetails=get_user_Info(encrypt_str($sql['rows'][$i]['msgfrom']));
 		$nametodisplay=$fromdetails['fname']." ".$fromdetails['lname'];
 	$nametodisplay1=str_replace(" ","",$nametodisplay);
