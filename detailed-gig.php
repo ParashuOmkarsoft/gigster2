@@ -59,6 +59,7 @@ else
     <div id="front" class="col-md-4 giginnerimg">
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
       <div class="col-md-6" style="width: 276px;">
+        <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -85,7 +86,7 @@ else
 						if(!is_project_awarded_to_user($gigdetails['prjId'],$uInfo['userId']))
 						{
 ?>
-               <div class="col-md-6"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1"> </div>
+             
                 <div class="col-md-6" style="width: 276px;">
                        <?php if(isset($_SESSION['uId']))
 					   {
