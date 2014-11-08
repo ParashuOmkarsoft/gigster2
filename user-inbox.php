@@ -40,7 +40,7 @@ if($sql['count']>0)
     <th><h5 class="table-head">From</h5></th>
     <th><h5 class="table-head">Message</h5></th>
     <th><h5 class="table-head">Sent On</h5></th>
-
+	 <th><h5 class="table-head">&nbsp;</h5></th>
   </tr>
   </thead>
   <tbody class="table-head">
@@ -91,7 +91,12 @@ if($sql['count']>0)
 	  <tr <?php echo $st;?> >
       	<td ><?php echo $sno;?></td>
 		<td valign="top"><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo $prjDetails['prjTitle'];?></a>
-        <?php if($jj)
+       
+        </td>                
+		<td><?php echo $nametodisplay;?></td> 
+        <td><?php echo strip_string($sql['rows'][$i]['msgcontent'],50);?></td>
+        <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>     
+        <td> <?php if($jj)
 		{
 			?>
             <span align="right">
@@ -99,11 +104,7 @@ if($sql['count']>0)
             </span>
             <?php 
 		}
-		?>
-        </td>                
-		<td><?php echo $nametodisplay;?></td> 
-        <td><?php echo strip_string($sql['rows'][$i]['msgcontent'],50);?></td>
-        <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>                                               
+		?></td>                                          
       </tr>
 	  <?php
 	
