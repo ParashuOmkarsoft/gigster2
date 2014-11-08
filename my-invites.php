@@ -29,7 +29,7 @@ if($ngigdetails)
 }
 ?>
 <div class="col-sm-10" style="height:400px;overflow:auto;">
-<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit=" return validate_selected();">
+<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
 <input type="text" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 	<?php 
 	if($gigsters['count']>0)
@@ -37,7 +37,7 @@ if($ngigdetails)
 		for($i=0;$i<$gigsters['count'];$i++)
 		{
 			$gigsterInfo=get_user_Info(encrypt_str($gigsters['rows'][$i]['userId']));
-			if($gigsterInfo['userId']==$loggedinuser[)
+			if($gigsterInfo['userId']==$loggedinuser)
 			{
 			$gigsterpic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			
