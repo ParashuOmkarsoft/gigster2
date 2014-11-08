@@ -33,7 +33,7 @@ if($prjTitle && $proposedprice)
 	if($insertSql)
 	{
 		add_keywords($keywords);
-		if(!$inviteusers)
+		if($inviteusers != "1")
 		{
 		?>
 		<script type="text/javascript">

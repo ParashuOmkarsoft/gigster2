@@ -55,10 +55,10 @@
           <div class="form-group">
             <div class="col-sm-10 ">
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"  value="y">
+                <input type="radio" name="inviteusers[]" id="inviteusers"  value="1">
                 Yes </label>
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"  value="n">
+                <input type="radio" name="inviteusers[]" id="inviteusers"  value="0">
                 No </label>
             </div>
           </div>

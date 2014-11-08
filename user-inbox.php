@@ -73,11 +73,8 @@ if($sql['count']>0)
 		$st="";
 		$jj=user_replied($prjDetails['prjId'],$uInfo['userId'],$sql['rows'][$i]['msgId']);
 		
-		if($jj)
-		{
-			$st="style='background: rgb(255, 0, 0);'";
-		}
-		elseif($sql['rows'][$i]['isread'])
+		
+		if($sql['rows'][$i]['isread'])
 		{
 			$st="style='background: rgb(255, 244, 219);'";
 		}
