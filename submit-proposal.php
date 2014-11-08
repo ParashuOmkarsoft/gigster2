@@ -41,7 +41,7 @@ if($checkSql['count']>0)
 								$mailsubject="A  proposal is updated on your gig.";
 								$headers  = 'MIME-Version: 1.0' . "\r\n";
 								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-								$headers .= "From: Bettr <$from>" . "\r\n";
+								$headers .= "From: $sitename <$from>" . "\r\n";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				
 				$mailmatter=strip_tags($mailmatter);

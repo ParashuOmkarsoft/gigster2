@@ -113,3 +113,23 @@ function invite_gigsters(serverpath,projectId)
   xmlhttp4.open("GET",m_url,true);
   xmlhttp4.send();
 }
+function validate_selected()
+{
+	var mycheckboxes=document.getElementsByName("invited[]");
+	var g=1;
+	for(i=0;i<mycheckboxes.length;i++)
+	{
+		if(mycheckboxes.item(i).checked==true)
+		{
+			g++;	
+		}
+	}
+	if(g>1)
+	{
+	}
+	else
+	{
+		alert("Error, At least one gigster must be selected for invitation process.");
+		return false;
+	}
+}
