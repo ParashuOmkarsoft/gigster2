@@ -72,7 +72,8 @@ include('cfg/more-functions.php');
 		  {
 			  $pfimage=$uInfo['profileimage'];
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser" style="
+    margin-right: -14px;>
             <?php
 		  }
 			?>
