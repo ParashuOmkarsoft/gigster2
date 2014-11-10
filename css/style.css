@@ -1056,7 +1056,7 @@ font-size: 21px;
 color: #2d2c2a;}
 .fname3{font-family: 'source_sans_proregular';
 font-size: 36px;
-color: #2d2c2a;margin-bottom: 80px;}
+color: #fff;margin-bottom: 80px;}
 .fname4{font-family: 'source_sans_proregular';
 font-size: 24px;
 color: #0F0F0F;}
@@ -1087,10 +1087,10 @@ margin: auto;
 margin: 20px;
 padding: 0px;}
 
-.more-btn{color: #5e350d;
+.more-btn{color: #FFFFFF;
 font-size: 22px;
 font-family: 'source_sans_prosemibold';
-width: 187px;
+width: 268px;
 border-radius: 10px;
 /* margin-left: 10px; */
 margin-right: 10px;
