@@ -315,7 +315,8 @@ background: #EC6B39;
 outline: none;
 margin-top: 15px;
 border: 1px solid #f7f25f;}
-.gig-detail-row{border-bottom: 2px solid #fd8900;margin-bottom: 15px;}
+.gig-detail-row{border-bottom: 2px solid #fd8900;margin-bottom: 15px;margin-right: 0px;
+margin-left: 0px;}
 .gig-send-btn{color: #FFFFFF;
 font-size: 18px;
 font-family: 'source_sans_prosemibold';
@@ -942,7 +943,7 @@ margin: 1px auto;}
 .bid-now-btn{color: #5e350d;
 font-size: 22px;
 font-family: 'source_sans_prosemibold';
-width: 180px;
+width: 133px;
 border-radius: 10px;
 background: #EC6B39;
 outline: none;

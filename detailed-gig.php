@@ -71,8 +71,8 @@ else
 		  }
 	  }
 	  ?>
-      <div class="col-md-6" style="width: 276px;">
-        <div class="col-md-6"> 
+     <!--  <div class="col-md-6" style="width: 276px;"> -->
+        <div class="col-md-6" style="width: 273px; margin-top: 10px;"> 
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -168,7 +168,8 @@ else
   </div>
   
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" style="
+    padding-left: 28px;">
       <h5 id="title">Overview</h5>
     </div>
   </div>
