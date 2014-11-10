@@ -15,7 +15,7 @@
           <div class="form-group">
             <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
             <div class="col-sm-10">
-              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"></textarea>
+              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>
           <h2 class="loginlead" >Would you like the job to be hourly or fixed ?</h2>

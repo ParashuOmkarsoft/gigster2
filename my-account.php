@@ -68,12 +68,14 @@ include('cfg/more-functions.php');
             
             </h2>
           </div>
-          <div class="col-md-6"> 
+          <div class="col-md-6" style="
+    margin-top: 6px;"> 
           <?php if($uInfo['profileimage'])
 		  {
 			  $pfimage=$uInfo['profileimage'];
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=4:3" id="imguser" style="
+    margin-right: -14px;">
             <?php
 		  }
 			?>
@@ -136,7 +138,7 @@ include('cfg/more-functions.php');
             </div>
             <div class="col-md-6" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">
-  <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+  <div class="fileinput-new thumbnail" style="width: 200px;">
   <?php if(!$pfimage)
   {
 	  ?>

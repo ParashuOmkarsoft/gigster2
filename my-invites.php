@@ -91,8 +91,8 @@ if($ngigdetails)
 		}
 	}
 	?>
-    <div class="clearfix"></div>
-    <button type="submit" class="btn btn-primary">Invite Gigsters</button>
-    <button type="submit" class="btn btn-primary" data-dismiss="modal">Leave It</button>    
+   <!--  <div class="clearfix"></div> -->
+    <button type="submit" class="btn btn-primary" style="margin-top=20px";>Invite Gigsters</button>
+    <button type="submit" class="btn btn-primary" data-dismiss="modal" style="margin-top=20px";>Leave It</button>    
     </form>
     <div class="clearfix"></div>
