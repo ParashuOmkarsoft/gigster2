@@ -255,7 +255,7 @@ include('cfg/more-functions.php');
       </div>  
        <p id="para">
 	   
-	   <?php echo stripslashes($assignedgigdetails['prjdescs']); ?>
+	   <?php echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
        </section>
