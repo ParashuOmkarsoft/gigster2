@@ -86,9 +86,9 @@ wild life pictures with us.</p>
 <div class="container box-container" style="
     background: #fab518;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
-margin: 0;
+margin: 0 auto;
 max-width: 1349px;
-padding-bottom: 192px;"><h2 class="fname3">Why Use Gigster</h2></div>
+"><h2 class="fname3">Why Use Gigster</h2></div>
 
   <div class="box3">
          <div class="box-1">
