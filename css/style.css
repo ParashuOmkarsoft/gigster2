@@ -1104,3 +1104,14 @@ margin-right: 10px;
 background: #EC6B39;
 outline: none;
 margin-top: 12px;}
+
+.invite-btn{color: #5e350d;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 167px;
+border-radius: 10px;
+/* margin-left: 10px; */
+margin-right: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;}
