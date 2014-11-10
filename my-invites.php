@@ -27,6 +27,7 @@ if($ngigdetails)
 		
 	}
 }
+
 ?>
 
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">

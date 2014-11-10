@@ -934,8 +934,11 @@ function get_gigsters_on_skill($skills)
 		$gigsterSql=@db_query($gigsterQuery);
 		if($gigsterSql['count']>0)
 		{
-			$gigsterId[$g]=$gigsterSql['rows']['0']['userId'];
+			for($t=0;$t<$gigsterSql['count'];$t++)
+			{
+			$gigsterId[$g]=$gigsterSql['rows'][$t]['userId'];
 			$g++;
+			}
 		}
 	}
 	return $gigsterId;
