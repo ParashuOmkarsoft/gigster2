@@ -335,6 +335,10 @@ outline: none;
 margin-top: 12px;
 border: 1px solid #f7f25f;
 }
+.a {
+color: #5e350d;
+text-decoration: none;
+}
 #logingigster1 {
 color: #5e350d;
 font-family: 'source_sans_prolight';
