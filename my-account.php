@@ -91,7 +91,7 @@ include('cfg/more-functions.php');
            <div class="col-md-6">
           	<div class="form-group">
             	<label class="col-md-4 name-inpute">First Name</label>
-              <div class="col-sm-10">
+              <div class="col-sm-8">
                 	<input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />
               </div>    
             </div>
