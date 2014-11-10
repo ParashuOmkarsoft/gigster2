@@ -95,8 +95,9 @@ include('cfg/more-functions.php');
 				  <?php
 			  }
 			?>
-			    <div>
-            <?php
+			    </div>
+			    <div> 
+			               <?php
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($uInfo['userId']);
 			 for($t=$gigsterrating;$t<5;$t++)
