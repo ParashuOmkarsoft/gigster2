@@ -61,11 +61,11 @@ if($ngigdetails)
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			?>
 			<div class="col-sm-5">
-				<div><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1">
+				<div><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
 				</div>
                 <div><input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" /></div>
                 <div>
-                <h4><?php echo $gigsternametodisplay; ?></h4>
+                <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
                 <h4><?php echo $gigsterInfo['skills']; ?></h4>
                 </div>
                  <?php

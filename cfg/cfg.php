@@ -953,4 +953,18 @@ function user_replied($projectId,$user,$msgId)
 		return 0;
 	}
 }
+function get_profile_link($serverpath,$userId)
+{
+	$gigsterInfo=get_user_Info(encrypt_str($userId));
+			$nametodisplay="";
+			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
+			$nametodisplay1=str_replace(" ","",$nametodisplay);
+			if(!$nametodisplay1)
+			{
+				$nametodisplay=$gigsterInfo['username'];
+			}
+	$userlink=$serverpath."gigsterInfo/".mera_url_encode($nametodisplay)."/".$gigsterInfo['userId'];
+	return $userlink;
+
+}
 ?>
