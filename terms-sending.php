@@ -31,12 +31,12 @@ if($checkSql['count']>0)
 }
 else
 {
-	$insertQuery="insert into btr_assignment(projectId,awardedto,assignedon,startdate,completiondate,projectowner,terms,amount)";
-	$insertQuery.="values($projectId,$awardedto,".gmmktime().",'$startfrom','$to',$ownerId,'$terms',$amount)";	
+	$insertQuery="insert into btr_assignment(projectId,awardedto,assignedon,startdate,completiondate,projectowner,terms,amount,termsaccepted)";
+	$insertQuery.="values($projectId,$awardedto,".gmmktime().",'$startfrom','$to',$ownerId,'$terms',$amount,'1')";	
 	$insertQuery=@db_query($insertQuery,3);
 	if($insertQuery)
 	{
-		$updateQuery=@db_query("update btr_projects set status='1' where prjId=$projectId");
+		$updateQuery=@db_query("update btr_projects set status='2' where prjId=$projectId");
 		$userInfo=get_user_Info(encrypt_str($awardedto));
 		$gigdetails=get_gig_details($projectId);
 		$gigname=$gigdetails['prjTitle'];
