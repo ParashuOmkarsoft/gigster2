@@ -167,8 +167,8 @@ include('cfg/more-functions.php');
             </div>
             <div class="col-md-12">
             <div class="form-group">
-  	<button class="btn btn-primary" type="submit">Update</button>
-    <button class="btn btn-primary" type="button" onClick="visible_invisible('paraprofile','frmprofile');">Cancel</button>
+  	<button class="btn update-btn" type="submit">Update</button>
+    <button class="btn update-btn" type="button" onClick="visible_invisible('paraprofile','frmprofile');">Cancel</button>
   </div>
             </div>
           </form>  
@@ -199,7 +199,7 @@ include('cfg/more-functions.php');
        <textarea name="aboutus" id="aboutus" class="form-control mtextarea" style="height:300px;font-size:17px;font-weight:normal !important;"><?php echo $uInfo['aboutus'];?></textarea>
        </div>
        <div class="form-group">
-       <button type="submit" class="btn btn-primary">Update</button>
+       <button type="submit" class="btn update-btn">Update</button>
        </div>
        </form>
        </section>
@@ -226,7 +226,7 @@ include('cfg/more-functions.php');
        <textarea name="moverview" id="moverview" class="form-control mtextarea" style="height:300px;font-size:17px;font-weight:normal !important;"><?php echo stripslashes($uInfo['overview']);?></textarea>
        </div>
        <div class="form-group">
-       <button type="submit" class="btn btn-primary">Update</button>
+       <button type="submit" class="btn update-btn">Update</button>
        </div>
        </form>
     </section>
