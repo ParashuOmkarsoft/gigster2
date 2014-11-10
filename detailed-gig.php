@@ -59,18 +59,7 @@ else
     <div id="front" class="col-md-4 giginnerimg">
       <h2 class="mikename"><?php echo $nametodisplay;?></h2>
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1">
-      <?php if($gigdetails['userId']!=$uInfo['userId'])
-	  {
-		  $h=message_thread_started($gigdetails['prjId'],$uInfo['userId']);
-				
-		  if($h==$uInfo['userId'])
-		  {
-			?>
-			<a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $uInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
-			<?php  
-		  }
-	  }
-	  ?>
+    
      <!--  <div class="col-md-6" style="width: 276px;"> -->
         <div class="col-md-6" style="width: 273px; margin-top: 10px;"> 
         <?php
