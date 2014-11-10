@@ -90,8 +90,10 @@ include('cfg/more-functions.php');
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
-            	<label class="name-inpute">First Name</label>
+            	<label class="col-md-4 name-inpute">First Name</label>
+              <div class="col-sm-10">
                 	<input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />
+              </div>    
             </div>
           	<div class="form-group">
             	<label class="name-inpute">Last Name</label>
