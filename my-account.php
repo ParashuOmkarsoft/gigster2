@@ -91,25 +91,25 @@ include('cfg/more-functions.php');
            <div class="col-md-6">
           	<div class="form-group">
             	<label class="col-md-4 name-inpute">First Name</label>
-              <div class="col-sm-8">
+              <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />
               </div>    
             </div>
           	<div class="form-group">
             <label class="col-md-4 name-inpute">Last Name</label>
-            <div class="col-sm-8">
+            <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="text" name="lname" id="lname" class="form-control profile-text" value="<?php echo $uInfo['lname'];?>" />
             </div>
             </div>
             <div class="form-group">
             	   <label class="col-md-4 name-inpute">Tagline</label>
-                 <div class="col-sm-8">
+                 <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
                   </div>
             </div>
              <div class="form-group">
             	   <label class="col-md-4 name-inpute">Skills</label>
-                 <div class="col-sm-8">
+                 <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                   </div>
                      <?php $tags=get_tags();
@@ -119,7 +119,7 @@ include('cfg/more-functions.php');
             </div>
 			<div class="form-group">
             <label class="col-md-4 name-inpute">City</label>
-            <div class="col-sm-8">
+            <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="text" name="city" id="city" class="form-control profile-text" value="<?php echo $uInfo['city'];?>" />
             </div>
             </div>
@@ -176,7 +176,7 @@ include('cfg/more-functions.php');
 
             </div>
             <div class="col-md-12">
-            <div class="form-group">
+            <div class="form-group"  style="padding-left: 164px;">
   	<button class="btn update-btn" type="submit">Update</button>
     <button class="btn update-btn" type="button" onClick="visible_invisible('paraprofile','frmprofile');">Cancel</button>
   </div>
