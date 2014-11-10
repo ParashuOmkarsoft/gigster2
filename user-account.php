@@ -46,6 +46,7 @@ include('cfg/more-functions.php');
 		
 			?></h3>
             <h4 id="headertitle"><?php echo $uInfo['tagline']; ?></h4>
+               <h4 id="headertitle"><?php echo $uInfo['skills']; ?></h4>
             <h2 id="map"><?php
 			if($uInfo['city'])
 			{
