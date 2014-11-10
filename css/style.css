@@ -41,6 +41,9 @@ a {
 color: #5e350d;
 text-decoration: none;
 }
+a:hover {
+    color: #ffb33d;
+}
 .hmenu{border-color: #fff;background-color: #fff}
 #grad{
     height: 25px;
