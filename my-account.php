@@ -96,27 +96,35 @@ include('cfg/more-functions.php');
               </div>    
             </div>
           	<div class="form-group">
-            	<label class="name-inpute">Last Name</label>
+            <label class="col-md-4 name-inpute">Last Name</label>
+            <div class="col-sm-8">
                 	<input type="text" name="lname" id="lname" class="form-control profile-text" value="<?php echo $uInfo['lname'];?>" />
             </div>
+            </div>
             <div class="form-group">
-            	<label class="name-inpute">Tagline</label>
+            	   <label class="col-md-4 name-inpute">Tagline</label>
+                 <div class="col-sm-8">
                 	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
+                  </div>
             </div>
              <div class="form-group">
-            	<label class="name-inpute">Skills</label>
+            	   <label class="col-md-4 name-inpute">Skills</label>
+                 <div class="col-sm-8">
                 	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
+                  </div>
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
           <script type="text/javascript">$("#skills").select2({tags:[<?=$tags;?>]});</script>
             </div>
 			<div class="form-group">
-            	<label>City</label>
+            <label class="col-md-4 name-inpute">City</label>
+            <div class="col-sm-8">
                 	<input type="text" name="city" id="city" class="form-control profile-text" value="<?php echo $uInfo['city'];?>" />
             </div>
+            </div>
             <div class="form-group">
-            	<label class="name-inpute">Country</label>
+            	   <label class="col-md-4 name-inpute">Country</label>
                 <?php 
 				$country=get_countries();
 			
