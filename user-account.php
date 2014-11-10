@@ -67,24 +67,7 @@ include('cfg/more-functions.php');
 			?>
             
             </h2>
-            <h2>
-            <?php
-			$gigsterrating=0;
-			$gigsterrating=get_user_rating($uInfo['userId']);
-			 for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php
-							  }
-							  for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php
-							  }
-							  ?>
-            </h2>
+        
           </div>
           <div class="col-md-6"> 
           <?php if($uInfo['profileimage'])
@@ -112,6 +95,24 @@ include('cfg/more-functions.php');
 				  <?php
 			  }
 			?>
+			    <div>
+            <?php
+			$gigsterrating=0;
+			$gigsterrating=get_user_rating($uInfo['userId']);
+			 for($t=$gigsterrating;$t<5;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_4.png" />
+        <?php
+							  }
+							  for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_3.png" />
+        <?php
+							  }
+							  ?>
+            </div>
 
 
           </div> 

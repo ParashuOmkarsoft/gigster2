@@ -1031,3 +1031,13 @@ margin-right: 10px;
 background: #EC6B39;
 outline: none;
 margin-top: 12px;}
+
+.name-inpute{font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+line-height: 11px;}
+
+.profile-text{width: 70%;
+border-radius: 0px;
+border: 1px solid #fab518;
+padding: 6px;}
