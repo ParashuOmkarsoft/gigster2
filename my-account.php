@@ -130,7 +130,8 @@ include('cfg/more-functions.php');
 			
 				if($country['count']>0)
 				{
-				?>
+				?>        
+        <div class="col-md-8">
                 	<select name="country" id="country" class="form-control profile-text" style="width:250px;">
                  		<?php
 						for($i=0;$i<$country['count'];$i++)
@@ -141,6 +142,7 @@ include('cfg/more-functions.php');
 						}
 						?>   	
                     </select>
+              </div>      
                     <?php
 				}
 					?>

@@ -37,6 +37,10 @@
 }
 header{border-top: 13px solid #e95436;}
 header img{margin: 8px 0px 16px 0px;}
+a {
+color: #5e350d;
+text-decoration: none;
+}
 .hmenu{border-color: #fff;background-color: #fff}
 #grad{
     height: 25px;
