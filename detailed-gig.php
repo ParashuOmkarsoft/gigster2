@@ -169,7 +169,7 @@ else
   
   <div class="row">
     <div class="col-md-12" style="
-    padding-left: 28px;">
+    padding-left: 15px;">
       <h5 id="title">Overview</h5>
     </div>
   </div>

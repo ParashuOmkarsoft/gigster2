@@ -1006,3 +1006,12 @@ font-size: 16px;
 color: rgba(74, 74, 74, 1);
 clip: auto;
 }
+.send-report{color: #5e350d;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 145px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;
+margin-left: 0px;}
