@@ -54,7 +54,7 @@ else
   <div class="row giginner">
     <div class="col-md-8">
       <h2 id="giglisth2"><?php echo $gigdetails['prjTitle']; ?></h2>
-      <h2 id="giglisth2"><?php echo $gigdetails['proposedbudget']; ?>&nbsp;<?php echo $currency; ?></h2>
+      <h2 style="font-size:20px;"><strong>Proposed budget - </strong><?php echo $gigdetails['proposedbudget']; ?>&nbsp;<?php echo $currency; ?></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
     </div>
     <div id="front" class="col-md-4 giginnerimg">
