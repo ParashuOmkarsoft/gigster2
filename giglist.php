@@ -70,10 +70,11 @@ include('cfg/more-functions.php');
 	   ?>
   <div class="row gig-detail-row">
     <div class="col-md-8">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a><span class="bid" style="
+    padding-top: 11px;">Posted :<?php echo get_time($opengig['postedon']); ?></span></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid">&nbsp;</span></div>
-      <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+      <div class="col-md-8"></div>
       <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),325));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg">
