@@ -287,8 +287,15 @@ $puname=$puuinfo['username'];
                         <Br/>
                         <br/>
                         <div class="col-md-8">
+							<?php //$jj=00;
+							$jj=get_status_details($prjDetails['prjId'],$mUid);
+							if(!$jj)
+							{
+								$jj=0;
+							}
+							?>
                           <select class="form-control" id="completed" name="completed" >
-                            <?php for($j=00;$j<101;$j=$j+10)
+                            <?php for($j=$jj;$j<101;$j=$j+10)
 													{
 														?>
                             <option value="<?php echo $j;?>"><?php echo $j;?></option>
