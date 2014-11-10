@@ -735,6 +735,7 @@ margin-left: -15px;
 }
 {margin-top: 56px;}
 .mikename{
+	width: 266px;
 	float: right;
 	font-size: 30px;
 	font-family: 'source_sans_prosemibold';
@@ -1015,3 +1016,18 @@ background: #EC6B39;
 outline: none;
 margin-top: 12px;
 margin-left: 0px;}
+#titleoverview{color: #45350f;
+font-size: 30px;
+font-family: 'source_sans_prosemibold';
+padding-left: 15px;}
+
+.update-btn{color: #5e350d;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 121px;
+border-radius: 10px;
+/* margin-left: 10px; */
+margin-right: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;}
