@@ -178,7 +178,7 @@ include('cfg/more-functions.php');
       
     <section class="container lastsection ">
       <div class="row">
-        <div class="col-md-6"><h4><?php echo $assignedgigdetails['prjTitle'];?></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
+        <div class="col-md-6"><h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
           <h4>Testimonial :</h4>
         </div>
       </div>  

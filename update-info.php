@@ -109,7 +109,7 @@ if($frmaction=="updateinfo")
 					$mpath=mera_url_noslash($mpath);
 					?>
                     <script type="text/javascript">
-					window.parent.change_image("imguser","<?=mera_url_noslash($imagepath);?>");
+					//window.parent.change_image("imguser","<?=mera_url_noslash($imagepath);?>");
 					</script>
 					<?php
 				}
