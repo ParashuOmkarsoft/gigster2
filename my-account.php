@@ -132,7 +132,7 @@ include('cfg/more-functions.php');
 				{
 				?>        
         <div class="col-md-8">
-                	<select name="country" id="country" class="form-control profile-text" style="width:250px;">
+                	<select name="country" id="country" class="form-control profile-text" style="width:268px;">
                  		<?php
 						for($i=0;$i<$country['count'];$i++)
 						{
