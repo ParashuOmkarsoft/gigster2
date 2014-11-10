@@ -110,7 +110,7 @@ if($checkSql['count']>0)
                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
                     <h2 id="login1">Messages</h2>
                     <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
-                    <div class="col-md-12" style="margin-left: -15px;">
+                   <div class="col-md-12" style="margin-left: -15px;">
                       <div class="form-group">
                         <label class="col-md-4 control-label tfont">Message</label>
                         <Br/>
@@ -273,7 +273,7 @@ $puname=$puuinfo['username'];
                     <input type="hidden" id="reportto" name="reportto" value="<?php echo $prjDetails['userId'];?>" />
                     <h2 id="login1">Status Report </h2>
                     <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="margin-left: -15px;">
                       <div class="form-group">
                         <label for="inputText" class="col-sm-4 control-label newlog">Message</label>
                         <br/>
