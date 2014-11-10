@@ -84,7 +84,10 @@ wild life pictures with us.</p>
 </div>
 
 <div class="container box-container" style="
-    background: #fab518;">
+    background: #fab518;
+margin: 0 auto;
+max-width: 1349px;
+padding-bottom: 150px;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
