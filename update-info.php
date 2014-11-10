@@ -109,7 +109,7 @@ if($frmaction=="updateinfo")
 					$mpath=mera_url_noslash($mpath);
 					?>
                     <script type="text/javascript">
-					//window.parent.change_image("imguser","<?=mera_url_noslash($imagepath);?>");
+					window.parent.view_profile_pic("<?=$serverpath;?>","<?=$user;?>");
 					</script>
 					<?php
 				}
@@ -125,13 +125,14 @@ if($frmaction=="updateinfo")
 	}
 	?>
 	<script type="text/javascript">
+
 	window.parent.document.getElementById("headername").innerHTML="<?php echo $data['fname'].' '. $data['lname'];?>";
 	window.parent.document.getElementById("headertitle").innerHTML="<?php echo $data['tagline'];?>";
 	window.parent.document.getElementById("headerskills").innerHTML="<?php echo $data['skills'];?>";	
 	window.parent.document.getElementById("map").innerHTML="<?php echo $mloc;?>";
-	//window.parent.change_image("imguser","<?=mera_url_noslash($mpath);?>");
+	window.parent.view_profile_pic("<?=$serverpath;?>","<?=$user;?>");
 	window.parent.visible_invisible('paraprofile','frmprofile');
-	
+
 	</script>
 	<?php
 	

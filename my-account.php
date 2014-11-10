@@ -69,7 +69,7 @@ include('cfg/more-functions.php');
             </h2>
           </div>
           <div class="col-md-6" style="
-    margin-top: 6px;"> 
+    margin-top: 6px;" id="myprofileimage"> 
           <?php if($uInfo['profileimage'])
 		  {
 			  $pfimage=$uInfo['profileimage'];

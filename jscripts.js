@@ -3,11 +3,7 @@ function visible_invisible(visible,invisible)
 	document.getElementById(visible).style.display="block";
 	document.getElementById(invisible).style.display="none";	
 }
-function change_image(mid,mpath)
-{
 
-	document.getElementById(mid).src=unescape(mpath);
-}
 function change_caption(mtype)
 {
 
@@ -138,4 +134,23 @@ function reset_post_gig()
 document.getElementById("postgigmodel").style.display="block";	
 document.getElementById("postform").reset();
 document.getElementById("inviteform").style.display="none";	
+}
+
+function view_profile_pic(serverpath,userId)
+{
+	if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp5=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp5=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp5.onreadystatechange=function() {
+    if (xmlhttp5.readyState==4 && xmlhttp5.status==200) {
+      document.getElementById("myprofileimage").innerHTML=xmlhttp5.responseText;
+    }
+  }
+  m_url=serverpath+"my-profile-pic.php?userId="+userId;
+
+  xmlhttp5.open("GET",m_url,true);
+  xmlhttp5.send();
 }
