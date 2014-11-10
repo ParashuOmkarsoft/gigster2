@@ -90,11 +90,11 @@ include('cfg/more-functions.php');
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
-            	<label for="creategig" class="col-sm-2 control-label labelb">First Name</label>
-                	<input type="text" required="" class="form-control" id="prjTitle" name="prjTitle" value="<?php echo $uInfo['fname'];?>" />
+            	<label>First Name</label>
+                	<input type="text" name="fname" id="fname" class="form-control" value="<?php echo $uInfo['fname'];?>" />
             </div>
           	<div class="form-group">
-            	<label for="creategig" class="col-sm-2 control-label labelb">First Name</label>
+            	<label>Last Name</label>
                 	<input type="text" name="lname" id="lname" class="form-control" value="<?php echo $uInfo['lname'];?>" />
             </div>
             <div class="form-group">
