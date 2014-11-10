@@ -29,7 +29,8 @@ include('cfg/more-functions.php');
 	}
 	?>
     <section id="firstsection" class="container">
-      <div class="row">
+      <div class="row" style="
+    padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname']." ".$uInfo['lname'];
@@ -112,7 +113,7 @@ include('cfg/more-functions.php');
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_3.png" style="
-    margin-right: 14px;
+   
     margin-top: 0;"/>
         <?php
 							  }
