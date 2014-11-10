@@ -68,6 +68,7 @@ if($ngigdetails)
                 <div>
                 <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
                 <h4><?php echo $gigsterInfo['skills']; ?></h4>
+                <h2 id="map"><?php echo $gigsterInfo['city']; ?></h2>
                 </div>
                  <?php
                               
