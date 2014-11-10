@@ -66,6 +66,23 @@ include('cfg/more-functions.php');
 			?>
             
             </h2>
+            <?php
+			$gigsterrating=0;
+			$gigsterrating=get_user_rating($uInfo['userId']);
+			 for($t=$gigsterrating;$t<5;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_4.png" />
+        <?php
+							  }
+							  for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_3.png" />
+        <?php
+							  }
+							  ?>
+            
           </div>
           <div class="col-md-6"> 
           <?php if($uInfo['profileimage'])
@@ -80,6 +97,7 @@ include('cfg/more-functions.php');
 			{
 				$pfimage="images/admin.png";
 			}
+			
 			  ?>
             <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser" style="
     padding-bottom: 15px;">
@@ -103,7 +121,7 @@ include('cfg/more-functions.php');
     </section>
     <section class="container secondsection">
      <div class="row">
-            <div class="col-md-6"><h5 id="title">About Us</h5></div>
+            <div class="col-md-6"><h5 id="title">About</h5></div>
             <div class="col-md-6"></div>
       </div> 
       <p id="aboutuspara"><?php
@@ -163,7 +181,7 @@ include('cfg/more-functions.php');
       </div>  
        <p id="para">
 	   
-	   <?php echo stripslashes($assignedgigdetails['prjdescs']); ?>
+	   <?php echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
        </section>
