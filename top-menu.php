@@ -22,7 +22,7 @@
 					  ?>
                       <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
                       <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>
-                    <li><a data-toggle="modal" href="#invitemodal">INVITE</a></li>
+                   <!--  <li><a data-toggle="modal" href="#invitemodal">INVITE</a></li> -->
 
 
 
