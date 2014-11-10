@@ -70,7 +70,8 @@ include('cfg/more-functions.php');
 	   ?>
   <div class="row gig-detail-row">
     <div class="col-md-8">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a><span class="bid" style="
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>" style="
+    color: #45350f;><?php echo $opengig['prjTitle'];?></a><span class="bid" style="
     padding-top: 11px;">Posted :<?php echo get_time($opengig['postedon']); ?></span></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
    
