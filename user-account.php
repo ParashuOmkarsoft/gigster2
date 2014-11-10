@@ -81,7 +81,8 @@ include('cfg/more-functions.php');
 				$pfimage="images/admin.png";
 			}
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser" style="
+    padding-bottom: 15px;">
             <?php
 		  }
 		   else
@@ -157,7 +158,7 @@ include('cfg/more-functions.php');
     <section class="container lastsection ">
       <div class="row">
         <div class="col-md-6"><h4><?php echo $assignedgigdetails['prjTitle'];?></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
-          <h4>Description :</h4>
+          <h4>Testimonial :</h4>
         </div>
       </div>  
        <p id="para">
