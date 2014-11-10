@@ -90,20 +90,20 @@ include('cfg/more-functions.php');
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
-            	<label>First Name</label>
-                	<input type="text" name="fname" id="fname" class="form-control" value="<?php echo $uInfo['fname'];?>" />
+            	<label class="name-inpute">First Name</label>
+                	<input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />
             </div>
           	<div class="form-group">
-            	<label>Last Name</label>
-                	<input type="text" name="lname" id="lname" class="form-control" value="<?php echo $uInfo['lname'];?>" />
+            	<label class="name-inpute">Last Name</label>
+                	<input type="text" name="lname" id="lname" class="form-control profile-text" value="<?php echo $uInfo['lname'];?>" />
             </div>
             <div class="form-group">
-            	<label>Tagline</label>
-                	<input type="text" name="tagline" id="tagline" class="form-control" value="<?php echo $uInfo['tagline'];?>" />
+            	<label class="name-inpute">Tagline</label>
+                	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
             </div>
              <div class="form-group">
-            	<label>Skills</label>
-                	<input type="hidden" name="skills" id="skills" class="form-control" value="<?php echo $uInfo['skills'];?>" />
+            	<label class="name-inpute">Skills</label>
+                	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
@@ -111,17 +111,17 @@ include('cfg/more-functions.php');
             </div>
 			<div class="form-group">
             	<label>City</label>
-                	<input type="text" name="city" id="city" class="form-control" value="<?php echo $uInfo['city'];?>" />
+                	<input type="text" name="city" id="city" class="form-control profile-text" value="<?php echo $uInfo['city'];?>" />
             </div>
             <div class="form-group">
-            	<label>Country</label>
+            	<label class="name-inpute">Country</label>
                 <?php 
 				$country=get_countries();
 			
 				if($country['count']>0)
 				{
 				?>
-                	<select name="country" id="country" class="form-control" style="width:250px;">
+                	<select name="country" id="country" class="form-control profile-text" style="width:250px;">
                  		<?php
 						for($i=0;$i<$country['count'];$i++)
 						{
