@@ -60,7 +60,7 @@ else
 			{
 				$buserimage="uploads/profileimage/".$fromuserimg;
 			}
-			if($i%2==0)
+			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
 				$cl="style='text-align:right;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
