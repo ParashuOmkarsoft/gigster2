@@ -46,6 +46,7 @@ include('cfg/more-functions.php');
 		
 			?></h3>
             <h4 id="headertitle"><?php echo $uInfo['tagline']; ?></h4>
+			<h4 id="headerskills"><?php echo $uInfo['skills']; ?></h4>            
             <h2 id="map"><?php
 			if($uInfo['city'])
 			{
@@ -83,7 +84,7 @@ include('cfg/more-functions.php');
           </div>  
           <Br/>
          
-          <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" target="targetframe"  enctype="multipart/form-data" class="mhidden">
+          <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" enctype="multipart/form-data" class="mhidden" target="targetframe">
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
@@ -97,6 +98,14 @@ include('cfg/more-functions.php');
             <div class="form-group">
             	<label>Tagline</label>
                 	<input type="text" name="tagline" id="tagline" class="form-control" value="<?php echo $uInfo['tagline'];?>" />
+            </div>
+             <div class="form-group">
+            	<label>Skills</label>
+                	<input type="hidden" name="skills" id="skills" class="form-control" value="<?php echo $uInfo['skills'];?>" />
+                     <?php $tags=get_tags();
+						$tags=implode(",",$tags);
+						?>
+          <script type="text/javascript">$("#skills").select2({tags:[<?=$tags;?>]});</script>
             </div>
 			<div class="form-group">
             	<label>City</label>

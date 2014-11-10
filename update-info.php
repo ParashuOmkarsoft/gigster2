@@ -7,7 +7,7 @@ $userInfo=get_user_Info($userId);
 $user=$userInfo['userId'];
 $aboutus=filter_text($_POST['aboutus']);
 $overview=filter_text($_POST['moverview']);
-
+$skills=filter_text($_POST['skills']);
 $frmaction=filter_text($_POST['frmaction']);
 if($aboutus)
 {
@@ -75,6 +75,12 @@ if($frmaction=="updateinfo")
 		$updateQuery="update btr_userprofile set country=$country where userId=$user";
 		$updateSql=@db_query($updateQuery);
 	}
+	if($skills)
+	{
+		$updateQuery="update btr_userprofile set skills='$skills' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		
+	}
 	$data=get_user_Info($_SESSION['uId']);
 	$mloc="";
 		if($data['city'])
@@ -121,8 +127,9 @@ if($frmaction=="updateinfo")
 	<script type="text/javascript">
 	window.parent.document.getElementById("headername").innerHTML="<?php echo $data['fname'].' '. $data['lname'];?>";
 	window.parent.document.getElementById("headertitle").innerHTML="<?php echo $data['tagline'];?>";
+	window.parent.document.getElementById("headerskills").innerHTML="<?php echo $data['skills'];?>";	
 	window.parent.document.getElementById("map").innerHTML="<?php echo $mloc;?>";
-	window.parent.change_image("imguser","<?=mera_url_noslash($mpath);?>");
+	//window.parent.change_image("imguser","<?=mera_url_noslash($mpath);?>");
 	window.parent.visible_invisible('paraprofile','frmprofile');
 	
 	</script>
