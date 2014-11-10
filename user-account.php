@@ -66,6 +66,7 @@ include('cfg/more-functions.php');
 			?>
             
             </h2>
+            <h2>
             <?php
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($uInfo['userId']);
@@ -82,7 +83,7 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
-            
+            </h2>
           </div>
           <div class="col-md-6"> 
           <?php if($uInfo['profileimage'])
