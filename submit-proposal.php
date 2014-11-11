@@ -67,7 +67,7 @@ else
 	{
 		$mailto=filter_text($giguserinfo['usermail']);
 	$mailmatter="<p>Hello User </p>
-											  <p>your bid has been selected for gig ".$gigdetails['prjTitle'].".</p>
+											  <p>You have recieved a new proposal on your gig ".$gigdetails['prjTitle'].".</p>
 											  <p>Details are following</p>
 											  <p>Username- ".$userInfo['username']."</p>
 											  <p>Amount $price</p>
