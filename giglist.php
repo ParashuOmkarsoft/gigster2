@@ -126,7 +126,7 @@ include('cfg/more-functions.php');
 					{
 										  ?>
                   <a href="#" onClick="javascript:alert('You have already bided on this gig');">
-                  <button type="button" class="btn btn-bid pull-right">Bided Already</button>
+                  <button type="button" class="btn btn-primary pull-right">Bid Sent</button>
                   </a>
                   <?php
 					}
