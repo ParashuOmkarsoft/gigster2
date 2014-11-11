@@ -31,9 +31,9 @@ foreach($homelatest['rows'] as $hmltst3 )
 {
 $string = $hmltst3['prjdesc'];
 //pr($string);
-if (strlen($string) > 200) {
+if (strlen($string) > 150) {
     // truncate string
-    $stringCut = substr($string, 0, 200);
+    $stringCut = substr($string, 0, 150);
     }else{ $stringCut = $string;}
 	?>
   <div class="box1">
