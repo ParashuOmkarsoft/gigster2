@@ -70,7 +70,7 @@ else
 			}
 			else
 			{
-				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;float:right;'";
+				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 483px;;float:right;'";
         $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;float:right;'";
 			}
 	?>
