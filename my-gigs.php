@@ -222,6 +222,7 @@ box-shadow: 0px 0px 2px #000000;'";
             <h4>Completion Status</h4><div class="row">
           <div class="col-md-12">
           <?php $projectstatus=get_status_details($opengig['prjId'],$awardedto);
+		  pr($projectstatus);
 		  if(!$projectstatus)
 		  {
 			  $projectstatus="0";
