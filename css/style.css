@@ -1092,7 +1092,7 @@ width: 100%;
 /* padding: 25px; */
 margin: auto;
 margin: 20px;
-padding: 0px;margin-top: 90px;margin-left: 0px;
+padding: 0px;/*margin-top: 90px;*/margin-left: 0px;
 }
 
 .more-btn{color: #FFFFFF;
