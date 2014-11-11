@@ -53,7 +53,7 @@ wild life pictures with us.</p>
 
 
 
-<div class="container box-container">
+<div class="container box-container" style="max-width: 1225px;">
   <div class="step-box">
          <div class="box-1">
           <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;"></span>
