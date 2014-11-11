@@ -48,7 +48,7 @@ wild life pictures with us.</p>
          </div>   
   </div>
 </div>
-  <div style="text-align: center; margin-top: 50px; margin-bottom: 120px;"><button class="btn more-btn" type="submit">MORE GIGS</button></div>
+  <div style="text-align: center; margin-top: 50px; margin-bottom: 60px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr></div>
 
 
 
@@ -85,7 +85,7 @@ wild life pictures with us.</p>
     background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
-padding-bottom: 150px;">
+padding-bottom: 70px;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
