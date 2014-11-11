@@ -89,7 +89,7 @@ padding-bottom: 65px;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
-"><h2 class="fname3">Why Use Gigster</h2></div>
+"><h2 class="fname3">Why Use Gigster</h2><hr></div>
 
   <div class="box3">
          <div class="box-1">

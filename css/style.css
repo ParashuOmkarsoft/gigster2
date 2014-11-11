@@ -1125,3 +1125,7 @@ padding-left: 11px;
 margin-left: 20px;
 border-radius: 8px;
 float: right;}
+
+.hr{max-width: 200px;
+/* color: #fd8900; */
+border-top: 1px solid #fd8900;}
