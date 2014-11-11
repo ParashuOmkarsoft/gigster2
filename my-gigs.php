@@ -82,12 +82,19 @@ include('cfg/more-functions.php');
 
 	   ?>
   <?php //pr($gigsterInfo); ?>
+  <?php $projectstatus=get_status_details($opengig['prjId'],$awardedto);
+		  
+		  if(!$projectstatus)
+		  {
+			  $projectstatus="0";
+		  }
+		  ?>
   <div class="row mygigrow">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
-        <button type="button" class="btn btn-primary" >Send feedback</button>
+      <?php if($projectstatus == '100') { ?>  <button type="button" class="btn btn-primary" >Send feedback</button> <?php } ?>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -221,13 +228,7 @@ box-shadow: 0px 0px 2px #000000;'";
       <div class="col-md-12">
             <h4>Completion Status</h4><div class="row">
           <div class="col-md-12">
-          <?php $projectstatus=get_status_details($opengig['prjId'],$awardedto);
-		  
-		  if(!$projectstatus)
-		  {
-			  $projectstatus="0";
-		  }
-		  ?>
+          
          <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb"><?php echo convert_date($opengig['bidto']);?></span></h4>
          <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
