@@ -120,11 +120,13 @@ include('cfg/more-functions.php');
                       <Br/>
                       <br/>
                       <div class="col-md-8">
-                        <select class="form-control" id="rating" name="rating" >
+                      
+                        <!--<select class="form-control" id="rating" name="rating" >-->
                           <?php for($r=1;$r<=5;$r++)
 													{
 														?>
-                          <option value="<?php echo $r;?>"><?php echo $r;?></option>
+                          <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>
+                          <input type="radio" name=myradio value="<?php echo $r;?>"><?php echo $r;?>
                           <?php
 													}
 													?>
