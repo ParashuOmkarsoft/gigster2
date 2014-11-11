@@ -1129,3 +1129,4 @@ float: right;}
 .hr{max-width: 200px;
 /* color: #fd8900; */
 border-top: 1px solid #fd8900;}
+.form-control input{ margin-left: 8px; margin-right: 5px;}
