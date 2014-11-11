@@ -52,7 +52,7 @@ if (strlen($string) > 140) {
 
 
 
-<div class="container box-container">
+<div class="container" style="max-width: 1178px;margin-top: 45px;">
   
       <div class="box-1">
         <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
