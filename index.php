@@ -16,8 +16,8 @@ include('cfg/more-functions.php');
   </head>
   <body>
     <?php include('top-menu.php'); ?>
-        <div id="grad"></div>
-    <div id="imgback">
+        
+    <div id="imgback" style="margin-top: 88px;">
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 
@@ -48,36 +48,34 @@ wild life pictures with us.</p>
          </div>   
   </div>
 </div>
-  <div style="text-align: center; margin-top: 50px; margin-bottom: 120px;"><button class="btn more-btn" type="submit">MORE GIGS</button></div>
+  <div style="text-align: center; margin-top: 50px;"><button class="btn more-btn" type="submit">MORE GIGS</button></div>
+
 
 
 
 <div class="container box-container">
-<div style="
-    float: right;
-"><img src="images/lap.png"></div> 
-  <div class="box2">
-         <div class="box-2">
-          <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
-          <h2 class="fname2">1. Get Anything Done</h2>
+  <div class="step-box">
+         <div class="box-1">
+          <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;"></span>
+          <h2 class="fname2">3. All done!</h2>
           <p>We are looking for a photographerwho can work on aweekend to take wild life pictures with us..</p>
          </div>   
   </div>
 
-  <div class="box2">
-         <div class="box-2">
-          <span class="convenience-icon"><img src="images/step2.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;" ></span>
-          <h2 class="fname2">2. Choose the Gigster</h2>
+  <div class="step-box">
+         <div class="box-1">
+          <span class=""><img src="images/step2.png" alt=""  style="padding: 20px;float: left;"></span>
+          <h2 class="fname2">2. Choose the Gigster </h2>
           <p>We are looking for a photographer
 who can work on aweekend to take 
 wild life pictures with us.</p>
          </div>   
   </div>
 
-  <div class="box2">
-         <div class="box-2">
-          <span class="convenience-icon"><img src="images/step3.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;" ></span>
-          <h2 class="fname2">3. All done! </h2>
+  <div class="step-box">
+         <div class="box-1">
+          <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;"></span>
+          <h2 class="fname2">1. Get Anything Done </h2>
           <p>We are looking for a photographerwho can work on aweekend to take wild life pictures with us..</p>
          </div>   
   </div>
@@ -129,8 +127,8 @@ Done by your local Gigsters.  </h2>
          <div class="box-1">
           
           <h2 class="fname4">
-4. There are no service fees! 
-Pay directly to the Gigster.</h2>
+5. You decide how much you
+ want to pay.</h2>
          
          </div>   
   </div>

@@ -1092,7 +1092,8 @@ width: 100%;
 /* padding: 25px; */
 margin: auto;
 margin: 20px;
-padding: 0px;margin-top: 90px;}
+padding: 0px;margin-top: 90px;margin-left: 0px;
+}
 
 .more-btn{color: #FFFFFF;
 font-size: 22px;
@@ -1115,3 +1116,12 @@ margin-right: 10px;
 background: #EC6B39;
 outline: none;
 margin-top: 12px;}
+
+.step-box{max-width: 420px;
+height: 180px;
+background: #fff;
+/* padding: 2px; */
+padding-left: 11px;
+margin-left: 20px;
+border-radius: 8px;
+float: right;}
