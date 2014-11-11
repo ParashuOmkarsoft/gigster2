@@ -44,7 +44,29 @@
           <h2 class="loginlead">Enter expiry date of your Gig</h2>
           <div class="form-group">
             <div class="col-sm-10">
+           
               <input type="text" id="datepic"style="width:47%" name="enddate" class="mdatepicker"/>
+               <script type="text/javascript">
+				  $(document).ready(function(){
+					var nowTemp = new Date();
+					var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+					var checkin = $('.mdatepicker').datepicker({
+							 format: 'yy-mm-dd',
+							   onRender: function(date) {
+							  return date.valueOf() < now.valueOf() ? 'disabled' : '';
+							   }
+							 }).on('changeDate', function(ev) {
+							   if (ev.date.valueOf() > checkout.date.valueOf()) {
+							  var newDate = new Date(ev.date)
+							  newDate.setDate(newDate.getDate() + 1);
+							  checkout.setValue(newDate);
+							   }
+							   checkin.hide();     
+							 }).data('datepicker');
+				   
+							  });
+			   </script>
+
             </div>
           </div>
           <?php $tags=get_tags();
