@@ -274,8 +274,8 @@ margin-top: 20px;">
 		}
 		else
 		{
-			$m=message_thread_started($gigdetails['prjId'],encrypt_str($bidderInfo['userId']));
-			if($m==$uInfo['userId'])
+			//$m=message_thread_started($gigdetails['prjId'],encrypt_str($bidderInfo['userId']));
+			if($bidderInfo['userId']==$uInfo['userId'])
 			{
 		 	?>
         <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
