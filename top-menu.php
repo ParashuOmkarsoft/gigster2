@@ -1,5 +1,5 @@
  
-<header class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+<header class="navbar navbar-default navbar-fixed-top" role="navigation" style="border-top: 15px solid #e95436;">  
       <div class="container">
         <div class="row">
           <div class="col-md-3">
