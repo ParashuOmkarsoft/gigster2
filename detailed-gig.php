@@ -158,8 +158,7 @@ else
   </div>
   
   <div class="row">
-    <div class="col-md-12" style="
-    padding-left: 15px;">
+    <div class="col-md-12">
       <h5 id="titleoverview">Overview</h5>
     </div>
   </div>
