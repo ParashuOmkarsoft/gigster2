@@ -65,14 +65,16 @@ else
 			}
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
-				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 250px;'";
+				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 270px;'";
+        $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 250px;'";
 			}
 			else
 			{
-				$cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 250px;float:right;'";
+				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 270px;float:right;'";
+        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 250px;float:right;'";
 			}
 	?>
-      <div class="col-md-12" <?php echo $cl;?> >
+      <div class="col-md-12" <?php echo $dl;?> >
         <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?><strong>You Replied :</strong> <?php  }?> 
         <br/>
         <div class="form-group" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
