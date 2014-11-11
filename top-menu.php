@@ -1,14 +1,12 @@
- 
-<header class="navbar navbar-default navbar-fixed-top" role="navigation" style="border-top: 15px solid #e95436;">  
+<header>      
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo.png"></a>
           </div>
           <div class="col-md-9">
-              <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right ">
-
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                 <?php if(isset($_SESSION['uId']))
 				{
 					?>
@@ -62,5 +60,4 @@
           <div class="clearfix"></div> 
         </div>
       </div>
-               <div id="grad"></div>
     </header>
