@@ -87,7 +87,7 @@ include('cfg/more-functions.php');
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
-        <button type="button" class="btn btn-primary" >Mark As Complete</button>
+        <button type="button" class="btn btn-primary" >Send feedback</button>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
