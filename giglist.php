@@ -125,7 +125,8 @@ include('cfg/more-functions.php');
 					else
 					{
 										  ?>
-                  <a href="#" onClick="javascript:alert('You have already bided on this gig');">
+                  <!--<a href="#" onClick="javascript:alert('You have already bided on this gig');">-->
+                  <a data-toggle="modal" href="#bidsent<?=$opengig['prjId'];?>" >
                   <button type="button" class="btn btn-primary pull-right">Bid Sent</button>
                   </a>
                   <?php
@@ -133,15 +134,60 @@ include('cfg/more-functions.php');
 					}
 					else
 					{
-						?>
-                  <a data-toggle="modal" href="#loginmodel" >
-                  <button type="button" class="btn btn-bid pull-right">Bid</button>
-                  </a>
-						
-						<?php
+					?>
+                      <a data-toggle="modal" href="#loginmodel" >
+                      <button type="button" class="btn btn-bid pull-right">Bid</button>
+                      </a>
+					<?php
 					}
+					if($_SESSION['uId'])
+					{
+						$userInfo=get_user_Info($_SESSION['uId']);
+						$uId=$userInfo['userId'];
+					}
+					$gigprjId = $opengig['prjId'];
+					$checkQuery="select * from btr_bids where projectId=$gigprjId and bidfrom=$uId";
+					$checkSql=@db_query($checkQuery);
+
 				  ?>
                   
+                  <div id="bidsent<?=$opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content cform">
+                              <div class="container">
+                                <div class="col-md-12">
+									<h2 id="login1">Bid Sent</h2>
+                                    <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
+                                                                        
+                                    <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
+                                        <br/>
+                                        <br/>
+                                        <div class="col-sm-12">
+                                        
+										  <p ><?php echo $checkSql['rows']['0']['bidcontent']; ?></p>
+                                         
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="col-md-4 control-label tfont">Price</label>
+                                        <Br/>
+                                        <br/>
+                                        <div class="col-md-8">
+                                          <p><?php echo $checkSql['rows']['0']['bidprice']; ?></p>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                   <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                   
                     <div class="modal-dialog modal-lg">
