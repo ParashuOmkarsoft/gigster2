@@ -65,11 +65,11 @@ else
 			}
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
-				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;border-right: 2px solid #fd8900;'";
+				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 			else
 			{
-				$cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;border-left: 2px solid #fd8900;'";
+				$cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 	?>
       <div class="col-md-12" <?php echo $cl;?> >
