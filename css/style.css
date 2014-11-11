@@ -1075,8 +1075,18 @@ font-size: 24px;
 color: #fff;}
 
 
-.box-1{
+.box1{
+height: 180px;
+background: #efefee;
+/* padding: 2px; */
+padding-left: 11px;
+margin-left: 20px;
+border-radius: 8px;
+float: left;
 width: 370px;
+float: left;}
+
+.box-1{width: 370px;
 float: left;}
 
 .box2{max-width: 420px;/*background: #efefee;*/
