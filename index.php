@@ -56,7 +56,7 @@ wild life pictures with us.</p>
 <div class="container box-container" style="max-width: 1225px;">
   <div class="step-box">
          <div class="box-1">
-          <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;"></span>
+          <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
           <h2 class="fname2">3. All done!</h2>
           <p>Tell us what you need help 
 with and post a Gig.
@@ -66,7 +66,7 @@ with and post a Gig.
 
   <div class="step-box">
          <div class="box-1">
-          <span class=""><img src="images/step2.png" alt=""  style="padding: 20px;float: left;"></span>
+          <span class=""><img src="images/step2.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
           <h2 class="fname2">2. Choose the Gigster </h2>
           <p>We'll find the right local 
 Gigsters and you just select 
@@ -76,7 +76,7 @@ one.</p>
 
   <div class="step-box">
          <div class="box-1">
-          <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;"></span>
+          <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
           <h2 class="fname2">1. Get Anything Done </h2>
           <p>Tell us what you need help 
 with and post a Gig.
