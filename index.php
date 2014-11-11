@@ -38,7 +38,7 @@ if (strlen($string) > 140) {
 	?>
   <div class="box1">
          <div class="box-1">
-          <span class=""><img src="<?php echo $serverpath; ?>image.php?image=<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
+          <span class=""><img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
           <h2 class="fname"><?php echo $hmltst3['prjTitle']; ?></h2>
           <p><?php echo $stringCut; ?></p>
          </div>   
