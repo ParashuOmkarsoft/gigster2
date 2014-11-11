@@ -1130,3 +1130,4 @@ float: right;}
 /* color: #fd8900; */
 border-top: 1px solid #fd8900;}
 .form-control input{ margin-left: 8px; margin-right: 5px;}
+.form-radio{border: medium none;box-shadow: none;}
