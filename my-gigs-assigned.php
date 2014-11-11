@@ -24,8 +24,8 @@ if(!isset($_SESSION['uId']))
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-<div id="grad"></div>
-<section class="container">
+
+<section class="container" style="margin-top: 45px;">
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
     <li><a href="<?php echo $serverpath;?>assignments">
