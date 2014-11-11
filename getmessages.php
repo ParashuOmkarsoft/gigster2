@@ -46,7 +46,7 @@ else
     <?php if($messagethread['count']>0)
 	{
 		?>
-    <div class="col-sm-12" style="height:400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px;width: 450px;border-right: 2px solid #fd8900;'">
+    <div class="col-sm-12" style="height:400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px;">
       <?php
 	for($i=0;$i<$messagethread['count'];$i++)
 	{
