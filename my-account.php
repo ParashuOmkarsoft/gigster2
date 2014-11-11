@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
   </head>
   <body>
         <?php include('top-menu.php'); ?>
-   
+    <div id="grad"></div>
  
      <section class="container">
       <ul id="profilemenu">
@@ -25,7 +25,9 @@ include('cfg/more-functions.php');
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></h5></li>                            
       </ul> 
     </section>
-    
+    <?php
+		
+	?>
     <section id="firstsection" class="container">
       <div class="row"style="max-width: 958px;padding-bottom: 15px;">
       <div id="paraprofile">

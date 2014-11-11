@@ -16,8 +16,8 @@ include('cfg/more-functions.php');
   </head>
   <body>
     <?php include('top-menu.php'); ?>
-        
-    <div id="imgback" style="margin-top: 88px;">
+        <div id="grad"></div>
+    <div id="imgback">
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 
@@ -48,7 +48,7 @@ wild life pictures with us.</p>
          </div>   
   </div>
 </div>
-  <div style="text-align: center; margin-top: 50px;"><button class="btn more-btn" type="submit">MORE GIGS</button></div>
+  <div style="text-align: center; margin-top: 50px; margin-bottom: 120px;"><button class="btn more-btn" type="submit">MORE GIGS</button></div>
 
 
 
@@ -85,11 +85,11 @@ wild life pictures with us.</p>
     background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
-padding-bottom: 65px;">
+padding-bottom: 150px;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
-"><h2 class="fname3">Why Use Gigster</h2><hr></div>
+"><h2 class="fname3">Why Use Gigster</h2></div>
 
   <div class="box3">
          <div class="box-1">

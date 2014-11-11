@@ -16,8 +16,7 @@ include('cfg/more-functions.php');
 <body>
 <?php include('top-menu.php'); ?>
 
-<section class="container" style="
-    margin-top: 37px;">
+<section class="container">
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>mygigs">
       <h5 id="ass">My Gigs</h5>
