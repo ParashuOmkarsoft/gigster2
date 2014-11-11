@@ -85,7 +85,7 @@ wild life pictures with us.</p>
     background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
-padding-bottom: 150px;">
+padding-bottom: 65px;">
 <div style="text-align: center; margin-top: 50px;background: #fab518;
 margin: 0 auto;
 max-width: 1349px;
