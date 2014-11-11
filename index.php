@@ -58,7 +58,9 @@ wild life pictures with us.</p>
          <div class="box-1">
           <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;"></span>
           <h2 class="fname2">3. All done!</h2>
-          <p>We are looking for a photographerwho can work on aweekend to take wild life pictures with us..</p>
+          <p>Tell us what you need help 
+with and post a Gig.
+</p>
          </div>   
   </div>
 
@@ -66,9 +68,9 @@ wild life pictures with us.</p>
          <div class="box-1">
           <span class=""><img src="images/step2.png" alt=""  style="padding: 20px;float: left;"></span>
           <h2 class="fname2">2. Choose the Gigster </h2>
-          <p>We are looking for a photographer
-who can work on aweekend to take 
-wild life pictures with us.</p>
+          <p>We'll find the right local 
+Gigsters and you just select 
+one.</p>
          </div>   
   </div>
 
@@ -76,7 +78,9 @@ wild life pictures with us.</p>
          <div class="box-1">
           <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;"></span>
           <h2 class="fname2">1. Get Anything Done </h2>
-          <p>We are looking for a photographerwho can work on aweekend to take wild life pictures with us..</p>
+          <p>Tell us what you need help 
+with and post a Gig.
+</p>
          </div>   
   </div>
 </div>
