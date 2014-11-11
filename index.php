@@ -64,7 +64,6 @@ if (strlen($string) > 140) {
         <h2 class="fname2">2. Choose the Gigster </h2>
         <p>We'll find the right local Gigsters and you just select one.</p>
         </div>   
-      </div>
       <div class="box-1">
         <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
         <h2 class="fname2">3. All done!</h2>
