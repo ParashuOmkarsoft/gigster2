@@ -48,7 +48,7 @@ wild life pictures with us.</p>
          </div>   
   </div>
 </div>
-  <div style="text-align: center; margin-top: 50px; margin-bottom: 60px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr></div>
+  <div style="text-align: center; margin-top: 50px; margin-bottom: 60px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr class="hr"></div>
 
 
 
