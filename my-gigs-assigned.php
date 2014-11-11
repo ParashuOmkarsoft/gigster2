@@ -96,7 +96,7 @@ if($checkSql['count']>0)
           <a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
           <button type="button" class="btn terms-btn" >Terms</button>
           </a> <a href="<?php echo $serverpath;?>markascomplete/<?php echo $prjDetails['prjId'];?>">
-          <button type="button" class="btn markascomplete-btn">Mark As Complete</button>
+          <button type="button" class="btn markascomplete-btn">Send feedback</button>
           </a> <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
