@@ -25,14 +25,22 @@ include('cfg/more-functions.php');
  	<?php $homelatest = latest_gigs();
 	if(!empty($homelatest)){
 	//pr($homelatest);
+
+
 foreach($homelatest['rows'] as $hmltst3 )
 {
+$string = $hmltst3['prjdesc'];
+//pr($string);
+if (strlen($string) > 20) {
+    // truncate string
+    $stringCut = substr($string, 0, 20);
+    }else{ $stringCut = $string;}
 	?>
   <div class="box1">
          <div class="box-1">
           <span class=""><img src="images/person1.jpg" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
           <h2 class="fname"><?php echo $hmltst3['prjTitle']; ?></h2>
-          <p><?php echo $hmltst3['prjdesc']; ?></p>
+          <p><?php echo $stringCut; ?></p>
          </div>   
   </div>
   
