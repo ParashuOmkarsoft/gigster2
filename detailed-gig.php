@@ -157,7 +157,7 @@ else
     </div>
   </div>
   
-  <div class="row">
+  <div class="row" style="margin: 0 auto;">
     <div class="col-md-12">
       <h5 id="title">Overview</h5>
     </div>
