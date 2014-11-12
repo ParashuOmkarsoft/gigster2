@@ -11,6 +11,7 @@ $fblink="#";
 $instagramlink="#";
 $pintlink="#";
 $rec_limit = 5;
+$adminId=18;
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
