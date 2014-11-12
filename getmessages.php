@@ -80,7 +80,7 @@ $projectDetails=get_gig_details($project);
       <div class="col-md-12" <?php echo $dl;?> >
         
         <br/>
-        <div class="form-group" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
+        <div class="form-group" <?php echo $cl;?>> <strong>From: </strong><br/><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
           <a href="#" class="name"><small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
           <p>
