@@ -158,8 +158,8 @@ include('cfg/more-functions.php');
                                 <div class="col-md-12">
 									<h2 id="login1">Your bidding details</h2>
                                     <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
-                                    <label for="inputText" class="col-sm-4 control-label newlog">Title :</label>                                    
-                                    <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                                                                      
+                                    <h2 class="source"> Title : <?php echo $opengig['prjTitle'];?></h2>
                                     <div class="col-md-12" style="padding: 0px;">
                                       <div class="form-group">
                                         <label for="inputText" class="col-sm-4 control-label newlog">Bid Details :</label>
