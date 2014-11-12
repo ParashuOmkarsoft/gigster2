@@ -110,7 +110,7 @@ include('cfg/more-functions.php');
              <div class="form-group">
             	   <label class="col-md-4 name-inpute">Skills</label>
                  <div class="col-sm-8" style="margin-bottom: 12px;">
-                	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
+                	<input type="hidden" style="padding: 0px;" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                   </div>
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
@@ -149,9 +149,9 @@ include('cfg/more-functions.php');
             </div>
             
             <div class="form-group">
-				<input type="checkbox" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
-				<label>Recieve Notifications</label>
+				<input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
+            <div class="col-sm-8" style="margin-bottom: 12px; margin-top: 35px;">
+				<label class="name-inpute">Recieve Notifications</label>
             </div>
             </div>
             
