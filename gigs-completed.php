@@ -86,9 +86,8 @@ include('cfg/more-functions.php');
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
-			pr($checkSql);
-			$gigsterrating=0;
-			$gigsterrating=get_user_rating($gigsterInfo['userId']);
+			
+			
 			
 			for($ad=0;$ad<$checkSql['count'];$ad++)
 			{
@@ -110,8 +109,10 @@ include('cfg/more-functions.php');
               <?php //echo strip_string($nametodisplay,6);?>
               </a></h4>
               ?>
-            <div class="col-md-6">
-              <?Php    
+            <div class="col-md-12">
+              <?Php   
+			  				$gigsterrating=0;
+							$gigsterrating=get_user_rating($profilepicId); 
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
