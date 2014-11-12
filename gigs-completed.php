@@ -111,7 +111,10 @@ include('cfg/more-functions.php');
              
 		
           </div>
-          <div class="col-md-12">
+          
+          <h4>&nbsp;</h4>
+        </div>
+        <div class="col-md-12">
               <?Php   
 			  				$gigsterrating=0;
 							$gigsterrating=get_user_rating($profilepicId); 
@@ -130,8 +133,6 @@ include('cfg/more-functions.php');
 							  ?>
                    
              </div>
-          <h4>&nbsp;</h4>
-        </div>
         <?php } ?>
       </div>
     </div>
