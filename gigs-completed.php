@@ -73,19 +73,7 @@ include('cfg/more-functions.php');
 			  $gigsterrating=0;
 			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
 			  
-			  $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
-			  $checkSql=@db_query($checkQuery);
-			 // pr($checkSql);
-			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-
-			if(file_exists($profilepic))
-			{
-				$profilepic=$profilepic;
-			}
-			else
-			{
-				$profilepic="images/admin.png";
-			}
+			 
 	   ?>
       <div class="row myrow">
          <div class="col-md-8">
@@ -123,13 +111,31 @@ include('cfg/more-functions.php');
 							  }
 							  ?>
                    
-              </div><?php */?>
+              </div><?php */
+			  
+			   $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
+			  $checkSql=@db_query($checkQuery);
+			 // pr($checkSql);
+			 foreach($checkSql as $awrdgigstrpic)
+			 {
+				pr($checkSql);
+			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+
+			if(file_exists($profilepic))
+			{
+				$profilepic=$profilepic;
+			}
+			else
+			{
+				$profilepic="images/admin.png";
+			}
+			  ?>
               <div class="col-md-12">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
                    <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>
                    <h4>&nbsp;</h4>
               </div>
-            
+            <?php } ?>
               
 <!-- end bid model -->
           </div>
