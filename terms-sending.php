@@ -47,6 +47,8 @@ else
 	{
 		$usernametodisplay=$userInfo['username'];
 	}
+	if($userInfo['notify']=='1')
+	{
 		$mailmatter="<p>Congratulation</p>
 				<p>Your proposal on gig <strong>$gigname</strong> is selected.
 				<p>To View Details and accept the terms , please click on following link</p>
@@ -73,7 +75,9 @@ else
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
-				
+	}
+	if($ownerInfo['notify']=='1')
+	{
 				$mailto=filter_text($ownerInfo['usermail']);
 								$mailsubject1="Congratulation, your gig is awawrded.";
 								$mail1=send_my_mail($ownerInfo['usermail'],$mailmatter1,$mailsubject1);	
@@ -84,6 +88,7 @@ else
 				$msgquery1.="values($awardedto,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','d')";
 				$msgsql=@db_query($msgquery1);
 				// Sending mail to gig owner ends
+	}
 		?>
 		<script type="text/javascript">
 		window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";	
