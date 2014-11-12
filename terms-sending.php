@@ -81,8 +81,8 @@ else
 								$mailmatter1=nl2br($mailmatter1);
 								$mailmatter1=htmlentities($mailmatter1);
 								$msgquery1="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery.="values($awardedto,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','d')";
-				$msgsql=@db_query($msgquery);
+				$msgquery1.="values($awardedto,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','d')";
+				$msgsql=@db_query($msgquery1);
 				// Sending mail to gig owner ends
 		?>
 		<script type="text/javascript">
