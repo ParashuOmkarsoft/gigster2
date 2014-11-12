@@ -63,8 +63,7 @@ include('cfg/more-functions.php');
 			  {
 				  $nametodisplay=$gigsterInfo['username'];
 			  }
-			  $gigsterrating=0;
-			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
+			  
 	   ?>
   <div class="row myrow">
     <div class="col-md-8">
@@ -84,25 +83,13 @@ include('cfg/more-functions.php');
         </p>
       </div>
       <div class="col-md-2 giginnerimg gigimg">
-        <?php /*?><div class="col-md-6">
-                   <?php
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
-							  }
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_4.png" />
-								  <?php
-							  }
-							  ?>
-                   
-              </div><?php */
-			 $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
+        <?php 
+			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
+			pr($checkSql);
+			$gigsterrating=0;
+			$gigsterrating=get_user_rating($gigsterInfo['userId']);
+			
 			for($ad=0;$ad<$checkSql['count'];$ad++)
 			{
 			$profilepicId = $checkSql['rows'][$ad]['awardedto'];
@@ -122,6 +109,25 @@ include('cfg/more-functions.php');
             <h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>>
               <?php //echo strip_string($nametodisplay,6);?>
               </a></h4>
+              ?>
+            <div class="col-md-6">
+              <?Php    
+                              for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_3.png" />
+								  <?php
+							  }
+							   for($t=$gigsterrating;$t<5;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_4.png" />
+								  <?php
+							  }
+							  ?>
+                   
+             </div>
+		
           </div>
           <h4>&nbsp;</h4>
         </div>
