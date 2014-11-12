@@ -108,8 +108,10 @@ include('cfg/more-functions.php');
             <h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>>
               <?php //echo strip_string($nametodisplay,6);?>
               </a></h4>
-              ?>
-            <div class="col-md-12">
+             
+		
+          </div>
+          <div class="col-md-12">
               <?Php   
 			  				$gigsterrating=0;
 							$gigsterrating=get_user_rating($profilepicId); 
@@ -128,8 +130,6 @@ include('cfg/more-functions.php');
 							  ?>
                    
              </div>
-		
-          </div>
           <h4>&nbsp;</h4>
         </div>
         <?php } ?>
