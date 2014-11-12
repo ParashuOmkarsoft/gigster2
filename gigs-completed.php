@@ -75,7 +75,7 @@ include('cfg/more-functions.php');
 			  
 			  $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
 			  $checkSql=@db_query($checkQuery);
-			  pr($checkSql);
+			 // pr($checkSql);
 			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
 			if(file_exists($profilepic))
