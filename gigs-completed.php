@@ -116,10 +116,13 @@ include('cfg/more-functions.php');
 			   $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
 			  $checkSql=@db_query($checkQuery);
 			 // pr($checkSql);
-			 foreach($checkSql as $awrdgigstrpic)
+			 for($i=0;$i<$checkSql['count'];$i++)
 			 {
-				pr($checkSql);
-			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+				 $profilepicId = $checkSql['rows'][$i]['awardedto'];
+		    	$muInfo=get_user_Info($profilepicId);
+				pr($muInfo);
+				//$profilepicId = $checkSql['rows'][0]['awardedto'];
+			//  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
 			if(file_exists($profilepic))
 			{
