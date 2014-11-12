@@ -52,14 +52,13 @@ include('cfg/more-functions.php');
 		else
 		$start = 0;
 
-		 $gigsquery="select * from btr_projects  where userId='$uId'  and status='3'  order by postedon DESC LIMIT $start,$limit";
-	    $opengigs=@db_query($gigsquery);
-
+		$gigsquery="select * from btr_projects  where userId='$uId'  and status='3'  order by postedon DESC LIMIT $start,$limit";
+	   
+		$opengigs=@db_query($gigsquery);
+		  pr($opengigs);
 	  if($opengigs['count']>0)
 	  {
 		   $mcount=$opengigs['count'];
-
-
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];
