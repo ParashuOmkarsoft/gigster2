@@ -9,8 +9,7 @@ $project=$msgdetails['projectId'];
 $from=$msgdetails['msgfrom'];
 $to=$msgdetails['msgto'];
 
-$projectDetails=get_gig_details($project);
-$messagethread="select * from btr_messages where projectId=$project  and ((msgfrom=$from and msgto=$to) or (msgfrom=$to and msgto=$from)) order by msgId DESC";
+ $messagethread="select * from btr_messages where projectId=$project  and ((msgfrom=$from and msgto=$to) or (msgfrom=$to and msgto=$from))  order by msgId DESC";
 $messagethread=@db_query($messagethread);
 $uInfo=get_user_Info($_SESSION['uId']);
 if($uInfo['userId']==$from)
@@ -23,6 +22,7 @@ else
 	$msgfrom=$to;
 	$msgto=$from;
 }
+$projectDetails=get_gig_details($project);
 ?>
 <section class="postgigform " id="inviteform">
   <h2 id="login1"><?php echo $projectDetails['prjTitle'];?></h2>
@@ -53,7 +53,10 @@ else
 	
 		$fromInfo=get_user_Info(encrypt_str($messagethread['rows'][$i]['msgfrom']));
 		$toInfo=get_user_Info(encrypt_str($messagethread['rows'][$i]['msgto']));
-		$fromuserimg=$fromInfo['profileimage'];
+		
+			
+		
+			$fromuserimg=$fromInfo['profileimage'];
 			$buserimage="";
 			if(!$fromuserimg)
 			{
@@ -75,7 +78,7 @@ else
 			}
 	?>
       <div class="col-md-12" <?php echo $dl;?> >
-        <?php if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgfrom'])){ ?><strong>You Replied :</strong> <?php  }?> 
+        
         <br/>
         <div class="form-group" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
@@ -93,7 +96,8 @@ else
 		  ?>
       </div>
       <?php
-	}
+		}
+		
 	}
 	?>
     </div>

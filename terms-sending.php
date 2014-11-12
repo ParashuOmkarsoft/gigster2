@@ -47,8 +47,6 @@ else
 	{
 		$usernametodisplay=$userInfo['username'];
 	}
-	if($userInfo['notify']=='1')
-	{
 		$mailmatter="<p>Congratulation</p>
 				<p>Your proposal on gig <strong>$gigname</strong> is selected.
 				<p>To View Details and accept the terms , please click on following link</p>
@@ -56,39 +54,45 @@ else
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
+	if($userInfo['notify']=='1')
+	{
+	
 				
 						
 								$mailto=filter_text($usermail);
 								$mailsubject="Congratulation, your proposal is chosen";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
-								$mailmatter=strip_tags($mailmatter);
+							
+	}
+		$mailmatter=strip_tags($mailmatter);
 								$mailmatter=nl2br($mailmatter);
 								$mailmatter=htmlentities($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery.="values($ownerId,$awardedto,'$mailmatter',".gmmktime().",".$projectId.",'0','d')";
+				$msgquery.="values($ownerId,$awardedto,'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
 				
 				// Sending mail to gig owner
 				
-				$mailmatter1="<p>Congratulation</p>
-				<p>You have selected proposal of ".$usernametodisplay." on gig <strong>$gigname</strong>.
+				
+	$mailmatter1="<p>You have selected proposal of ".$usernametodisplay." on gig <strong>$gigname</strong>.
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
-	}
 	if($ownerInfo['notify']=='1')
 	{
+		
 				$mailto=filter_text($ownerInfo['usermail']);
 								$mailsubject1="Congratulation, your gig is awawrded.";
 								$mail1=send_my_mail($ownerInfo['usermail'],$mailmatter1,$mailsubject1);	
 								$mailmatter1=strip_tags($mailmatter1);
 								$mailmatter1=nl2br($mailmatter1);
 								$mailmatter1=htmlentities($mailmatter1);
+	}
 								$msgquery1="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery1.="values($awardedto,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','d')";
+				$msgquery1.="values($awardedto,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery1);
 				// Sending mail to gig owner ends
-	}
+	
 		?>
 		<script type="text/javascript">
 		window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";	

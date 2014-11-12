@@ -5,7 +5,7 @@
       <section class="postgigform" id="postgigform">
         <h2 id="login1">Post a Gig </h2>
         <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>
-        <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
+        <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" >
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
             <div class="col-sm-10">
