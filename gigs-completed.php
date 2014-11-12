@@ -101,7 +101,7 @@ include('cfg/more-functions.php');
 							  ?>
                    
               </div><?php */
-			echo $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
+			echo $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3'";
 			$checkSql=@db_query($checkQuery);
 			for($ad=0;$ad<$checkSql['count'];$ad++)
 			{
