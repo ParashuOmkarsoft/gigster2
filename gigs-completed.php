@@ -5,43 +5,36 @@ include('cfg/more-functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $sitename;?>- My Gigs</title>
-	<?php include('script-header.php'); ?>
-    <?php include('fb-login.php'); ?>
-  </head>
-  <body>
-    <?php include('top-menu.php'); ?>
-    <div id="grad"></div>
-          <section class="container">
-                       <ul id="profilemenu">
-                         <li><a href="mygigs"><h5 id="ass">My Gigs</h5>  </a></li>
-                         <li><a href="assignments">My Assigments</a></li>
-                       </ul>
-               </section>
-  <section class="container">
-       <ul id="profilemenu">
-  <li><a href="<?php echo $serverpath;?>inprogress">
-    In progress
-    </a></li>
-  <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
-  <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
-</ul>
-
-      </section>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php echo $sitename;?>- My Gigs</title>
+<?php include('script-header.php'); ?>
+<?php include('fb-login.php'); ?>
+</head>
+<body>
+<?php include('top-menu.php'); ?>
+<div id="grad"></div>
 <section class="container">
-      <h2 id="logingigster1">My Gigs - Completed</h2>
-
-
-
-      <?php
-
-
+  <ul id="profilemenu">
+    <li><a href="mygigs">
+      <h5 id="ass">My Gigs</h5>
+      </a></li>
+    <li><a href="assignments">My Assigments</a></li>
+  </ul>
+</section>
+<section class="container">
+  <ul id="profilemenu">
+    <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>
+    <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
+    <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
+  </ul>
+</section>
+<section class="container">
+  <h2 id="logingigster1">My Gigs - Completed</h2>
+  <?php
         $uId=$uInfo['userId'];
-	  	// Count Query
 		$gigscountquery=@db_query("select * from btr_projects where userId='$uId' and status='3' order by postedon DESC");
 		$total_pages=$gigscountquery['count'];
 		$page = $_GET['page'];
@@ -55,12 +48,11 @@ include('cfg/more-functions.php');
 		$gigsquery="select * from btr_projects  where userId='$uId'  and status='3'  order by postedon DESC LIMIT $start,$limit";
 	   
 		$opengigs=@db_query($gigsquery);
-		 // pr($opengigs);
-	  if($opengigs['count']>0)
-	  {
+	    if($opengigs['count']>0)
+	    {
 		   $mcount=$opengigs['count'];
-		  for($i=0;$i<$mcount;$i++)
-		  {
+		   for($i=0;$i<$mcount;$i++)
+		   {
 			  $opengig=$opengigs['rows'][$i];
 			  $gigsterInfo="";
 			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
@@ -72,30 +64,26 @@ include('cfg/more-functions.php');
 			  }
 			  $gigsterrating=0;
 			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
-			  
-			 
 	   ?>
-      <div class="row myrow">
-         <div class="col-md-8">
-            <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-            <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-              <div class="col-md-4"><span id="bid"></span></div>
-              <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-              
-          </div>
-          <div class="col-md-12">
-    <div class="col-md-10"> <p id="gigpara">
-	<?php 
-	$feedback=get_project_feedback($opengig['prjId']);
-	if($feedback){
-	?><strong>Feedback</strong> <br/><?php	
-	echo $feedback['feedback'];
-	}
-	?>
-    
-    </p> </div>
-         <div class="col-md-2 giginnerimg gigimg">
-              <?php /*?><div class="col-md-6">
+  <div class="row myrow">
+    <div class="col-md-8">
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
+      <div class="col-md-4"><span id="bid"></span></div>
+      <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-10">
+        <p id="gigpara">
+         <?php $feedback=get_project_feedback($opengig['prjId']);
+				if($feedback) { ?>
+          						<strong>Feedback</strong> <br/>
+         <?php echo $feedback['feedback']; 
+		 						} ?>
+        </p>
+      </div>
+      <div class="col-md-2 giginnerimg gigimg">
+        <?php /*?><div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
 							  {
@@ -112,16 +100,13 @@ include('cfg/more-functions.php');
 							  ?>
                    
               </div><?php */
-			  
-			   $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
-			  $checkSql=@db_query($checkQuery);
-
-				 $profilepicId = $checkSql['rows'][0]['awardedto'];
-		    	$gigsterInfo=get_user_Info(encrypt_str($profilepicId));
-				
-				
-			 $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-
+			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
+			$checkSql=@db_query($checkQuery);
+			for($ad=0;$ad<$checkSql['count'];$ad++)
+			{
+			$profilepicId = $checkSql['rows'][$ad]['awardedto'];
+		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
+			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			if(file_exists($profilepic))
 			{
 				$profilepic=$profilepic;
@@ -131,19 +116,20 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 			  ?>
-              <div class="col-md-12">
-                   <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-                   <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php //echo strip_string($nametodisplay,6);?></a></h4></div>
-                   <h4>&nbsp;</h4>
-              </div>
-
-              
-<!-- end bid model -->
+        <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
+          <div class="tyco">
+            <h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>>
+              <?php //echo strip_string($nametodisplay,6);?>
+              </a></h4>
           </div>
-          </div>
-	 </div>
-     <?php
-		  }
+          <h4>&nbsp;</h4>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+  <?php
+	  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
 		$prev = $page - 1;							//previous page is page - 1
 		$next = $page + 1;							//next page is page + 1
@@ -219,43 +205,27 @@ include('cfg/more-functions.php');
 				}
 			}
 		}
-
 		//next button
 		if ($page < $counter - 1)
 			$pagination.= "<li><a href=\"$targetpage/$next\">Next</a></li>";
 		else
 			$pagination.= "<li class=\"disabled\"><a href='#'>Next</a></li>";
 		$pagination.= "</ul></div>";
-
-
 	}
-		?>
-	<div class="lastpagination">
-          <ul class="pagination">
-            <?php echo $pagination;?>
-          </ul>
-      </div>
-	<?php
-
-	  }else
-	  {
-		   ?>
-		  <div class="row ">
-         <div class="col-md-8">
-         	<p>Sorry , No Gigs are completed right now.</p>
-         </div>
-         </div>
-		  <?php
-	  }
-	 ?>
-
-
-
-
-    </section>
-    <?php include('footer.php'); ?>
-  </body>
+?>
+  <div class="lastpagination">
+    <ul class="pagination">
+      <?php echo $pagination;?>
+    </ul>
+  </div>
+  <?php } else  {   ?>
+  <div class="row ">
+    <div class="col-md-8">
+      <p>Sorry , No Gigs are completed right now.</p>
+    </div>
+  </div>
+  <?php  } ?>
+</section>
+<?php include('footer.php'); ?>
+</body>
 </html>
-
-
-
