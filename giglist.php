@@ -156,13 +156,13 @@ include('cfg/more-functions.php');
                             <div class="modal-content cform">
                               <div class="container">
                                 <div class="col-md-12">
-									<h2 id="login1">Your Bidding Details</h2>
+									<h2 id="login1">Your bidding details</h2>
                                     <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
-                                                                        
-                                    <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                                                                      
+                                    <h2 class="source"  style="padding-bottom: 20px;"> Title : <?php echo $opengig['prjTitle'];?></h2>
                                     <div class="col-md-12" style="padding: 0px;">
                                       <div class="form-group">
-                                        <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
+                                        <label for="inputText" class="col-sm-4 control-label newlog">Bid Details :</label>
                                         <br/>
                                         <br/>
                                         <div class="col-sm-12">
@@ -172,7 +172,7 @@ include('cfg/more-functions.php');
                                         </div>
                                       </div>
                                       <div class="form-group">
-                                        <label class="col-md-4 control-label tfont">Your Bid Prize</label>
+                                        <label class="col-md-4 control-label tfont">Your bid amount : </label>
                                         <Br/>
                                         <br/>
                                         <div class="col-md-8">
