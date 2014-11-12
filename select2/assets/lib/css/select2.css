@@ -8,6 +8,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     zoom: 1;
     *display: inline;
     vertical-align: top;
+
 }
 
 .select2-container,
@@ -27,9 +28,10 @@ Version: @@ver@@ Timestamp: @@timestamp@@
           box-sizing: border-box; /* css3 */
 }
 
-.select2-container{width: 47%;
+.select2-container{/*width: 47%;*/
 border: solid;
-border: 1px solid #fab518;outline: none;}
+border: 1px solid #fab518;outline: none;
+padding: 0px;}
 
 .select2-container .select2-choice {
     display: block;
