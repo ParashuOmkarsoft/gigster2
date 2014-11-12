@@ -120,7 +120,7 @@ include('cfg/more-functions.php');
 			 {
 				 $profilepicId = $checkSql['rows'][$i]['awardedto'];
 		    	$muInfo=get_user_Info($profilepicId);
-				pr($muInfo);
+				pr($profilepicId);
 				//$profilepicId = $checkSql['rows'][0]['awardedto'];
 			//  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
