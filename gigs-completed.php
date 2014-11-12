@@ -71,8 +71,12 @@ include('cfg/more-functions.php');
 				  $nametodisplay=$gigsterInfo['username'];
 			  }
 			  $gigsterrating=0;
-			$gigsterrating=get_user_rating($gigsterInfo['userId']);
-			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+			  $gigsterrating=get_user_rating($gigsterInfo['userId']);
+			  
+			  $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where a.projectId=p.prjId and p.status='3'";
+			  $checkSql=@db_query($checkQuery);
+			  pr($checkSql);
+			  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
 			if(file_exists($profilepic))
 			{
