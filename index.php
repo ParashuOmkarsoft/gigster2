@@ -30,6 +30,14 @@ foreach($homelatest['rows'] as $hmltst3 )
 	
 $gigstrimg = $hmltst3['userId'];
 $gigsterimage = get_user_image($gigstrimg);	
+if(file_exists($gigsterimage))
+	  {
+		  $gigsterimage=$gigsterimage;
+	  }
+	  else
+	  {
+		  $gigsterimage="images/admin.png";
+	  }
 
 $string = $hmltst3['prjdesc'];
 if (strlen($string) > 140) {
