@@ -54,6 +54,12 @@ else
 								$mailto=filter_text($usermail);
 								$mailsubject="Congratulation, your proposal is chosen";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+								$mailmatter=strip_tags($mailmatter);
+								$mailmatter=nl2br($mailmatter);
+								$mailmatter=htmlentities($mailmatter);
+								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery.="values($ownerId,$awardedto,'$mailmatter',".gmmktime().",".$projectId.",'0','d')";
+				$msgsql=@db_query($msgquery);
 		?>
 		<script type="text/javascript">
 		window.parent.location="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($gigdetails['prjTitle']);?>/<?php echo $gigdetails['prjId'];?>";	
