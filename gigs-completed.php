@@ -119,8 +119,8 @@ include('cfg/more-functions.php');
 			 for($i=0;$i<$checkSql['count'];$i++)
 			 {
 				 $profilepicId = $checkSql['rows'][$i]['awardedto'];
-		    	$muInfo=get_user_Info($profilepicId);
-				pr($profilepicId);
+		    	$muInfo=get_user_Info(encrypt_str($profilepicId));
+				pr($muInfo);
 				//$profilepicId = $checkSql['rows'][0]['awardedto'];
 			//  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
