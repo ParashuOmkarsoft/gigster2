@@ -120,7 +120,7 @@ include('cfg/more-functions.php');
 			 {
 				 $profilepicId = $checkSql['rows'][$i]['awardedto'];
 		    	$gigsterInfo=get_user_Info(encrypt_str($profilepicId));
-				pr($gigsterInfo);
+				
 				
 			 $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
@@ -135,7 +135,7 @@ include('cfg/more-functions.php');
 			  ?>
               <div class="col-md-12">
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
-                   <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php echo strip_string($nametodisplay,6);?></a></h4></div>
+                   <div class="tyco"><h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>><?php //echo strip_string($nametodisplay,6);?></a></h4></div>
                    <h4>&nbsp;</h4>
               </div>
             <?php } ?>
