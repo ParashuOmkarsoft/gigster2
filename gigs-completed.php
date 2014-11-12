@@ -118,16 +118,17 @@ include('cfg/more-functions.php');
               <?Php   
 			  				$gigsterrating=0;
 							$gigsterrating=get_user_rating($profilepicId); 
-                              for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
-							  }
+                             
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
 								  <img src="<?php echo $serverpath;?>images/star_4.png" />
+								  <?php
+							  }
+							   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_3.png" />
 								  <?php
 							  }
 							  ?>
