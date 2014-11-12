@@ -9,6 +9,11 @@ $aboutus=filter_text($_POST['aboutus']);
 $overview=filter_text($_POST['moverview']);
 $skills=filter_text($_POST['skills']);
 $frmaction=filter_text($_POST['frmaction']);
+$notify=filter_text($_POST['notify']);
+if(!$notify)
+{
+	$notify="0";
+}
 if($aboutus)
 {
 	$updateQuery="update btr_userprofile set aboutus='$aboutus' where userId=$user";
@@ -78,6 +83,12 @@ if($frmaction=="updateinfo")
 	if($skills)
 	{
 		$updateQuery="update btr_userprofile set skills='$skills' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		
+	}
+	if($notify)
+	{
+		$updateQuery="update btr_users set notify='$notify' where userId=$user";
 		$updateSql=@db_query($updateQuery);
 		
 	}

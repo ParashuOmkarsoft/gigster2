@@ -147,6 +147,14 @@ include('cfg/more-functions.php');
 				}
 					?>
             </div>
+            
+            <div class="form-group">
+				<input type="checkbox" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
+            <div class="col-sm-8" style="margin-bottom: 12px;">
+				<label>Recieve Notifications</label>
+            </div>
+            </div>
+            
             </div>
             <div class="col-md-6" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">
