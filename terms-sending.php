@@ -84,14 +84,48 @@ else
 				$mailto=filter_text($ownerInfo['usermail']);
 								$mailsubject1="Congratulation, your gig is awawrded.";
 								$mail1=send_my_mail($ownerInfo['usermail'],$mailmatter1,$mailsubject1);	
+								
+	}
 								$mailmatter1=strip_tags($mailmatter1);
 								$mailmatter1=nl2br($mailmatter1);
 								$mailmatter1=htmlentities($mailmatter1);
-	}
 								$msgquery1="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery1.="values(18,$ownerId,'$mailmatter1',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery1);
 				// Sending mail to gig owner ends
+	
+		$projectbids=get_project_bids($projectId);
+		if($projectbids['count']>0)
+		{
+			for($p=0;$p<$projectbids['count'];$p++)
+			{
+				$bidderInfo=get_user_Info(encrypt_str($projectbids['rows'][$p]['bidfrom']));
+				$biderId=$bidderInfo['userId'];
+				$biddernametodisplay=$bidderInfo['fname'].' '. $bidderInfo['lname'];
+				$biddernametodisplay1=str_replace($biddernametodisplay);
+				if(!$biddernametodisplay1)
+				{
+					$biddernametodisplay=$bidderInfo['username'];
+				}
+				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
+				<p>Unfortunately your proposal on <strong>$gigname</strong> is not selected.
+				<p>Better luck next time.</p>
+				<p>&nbsp;</p>
+				<p>Regards</p>
+				<p>$sitename</p>";
+				if($bidderInfo['notify']=="1")
+				{
+						$mailto2=filter_text($bidderInfo['usermail']);
+						$mailsubject2="Notification, gig $gigname is awawrded to someone else.";
+						$mail2=send_my_mail(mailto2,$mailmatter2,$mailsubject2);	
+				}
+				$mailmatter2=strip_tags($mailmatter2);
+								$mailmatter2=nl2br($mailmatter2);
+								$mailmatter2=htmlentities($mailmatter2);
+								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery1.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
+			}
+		}
 	
 		?>
 		<script type="text/javascript">
