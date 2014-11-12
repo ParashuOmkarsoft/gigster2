@@ -18,15 +18,16 @@
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>
-          <h2 class="loginlead" >Would you like the job to be hourly or fixed ?</h2>
+          <h2 class="loginlead" >How much would you like to pay for the Gig? / How much per hours would you like....</h2>
           <div class="form-group">
             <div class=" col-sm-10 ">
+               <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('h')">
-                Hourly </label>
+                Per Gig </label>
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype" value="f" checked="checked" onChange="change_caption('f')">
-                Fixed Price </label>
+                Per Hour</label>
             </div>
           </div>
           <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
@@ -73,15 +74,15 @@
 						$tags=implode(",",$tags);
 						?>
           <script type="text/javascript">$("#keywords").select2({tags:[<?=$tags;?>]});</script>
-          <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
+          <h2 class="loginlead">Would you like to invite your favourite Gigsters to bid?</h2>
           <div class="form-group">
             <div class="col-sm-10 ">
               <label class="radio-inline">
                 <input type="radio" name="inviteusers[]" id="inviteusers"  value="1">
-                Yes </label>
+                No, please select Gigsters for me</label>
               <label class="radio-inline">
                 <input type="radio" name="inviteusers[]" id="inviteusers"  value="0">
-                No </label>
+                Yes, I will select which Gigsters to bid </label>
             </div>
           </div>
           <div class="form-group submit">
