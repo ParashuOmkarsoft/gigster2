@@ -28,10 +28,10 @@
             <div class=" col-sm-8">               
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('h')">
-                Per Gig </label>
+              Per Hour </label>
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype" value="f" checked="checked" onChange="change_caption('f')">
-                Per Hour</label>
+                 Per Gig </label>
             </div>    
             </div>
           </div>

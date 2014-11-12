@@ -28,7 +28,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
           box-sizing: border-box; /* css3 */
 }
 
-.select2-container{/*width: 47%;*/
+.select2-container{width: 47%;
 border: solid;
 border: 1px solid #fab518;outline: none;
 padding: 0px;}
