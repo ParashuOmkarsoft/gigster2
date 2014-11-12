@@ -115,14 +115,14 @@ include('cfg/more-functions.php');
 			  
 			   $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
 			  $checkSql=@db_query($checkQuery);
-			 // pr($checkSql);
+
 			 for($i=0;$i<$checkSql['count'];$i++)
 			 {
 				 $profilepicId = $checkSql['rows'][$i]['awardedto'];
-		    	$muInfo=get_user_Info(encrypt_str($profilepicId));
-				pr($muInfo);
-				//$profilepicId = $checkSql['rows'][0]['awardedto'];
-			//  $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
+		    	$gigsterInfo=get_user_Info(encrypt_str($profilepicId));
+				
+				
+			 $profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 
 			if(file_exists($profilepic))
 			{
