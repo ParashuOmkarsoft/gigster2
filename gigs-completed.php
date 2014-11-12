@@ -48,7 +48,7 @@ include('cfg/more-functions.php');
 		$gigsquery="select * from btr_projects  where userId='$uId'  and status='3'  order by postedon DESC LIMIT $start,$limit";
 	    
 		$opengigs=@db_query($gigsquery);
-		pr($opengigs);
+		//pr($opengigs);
 	    if($opengigs['count']>0)
 	    {
 		   $mcount=$opengigs['count'];
@@ -101,7 +101,7 @@ include('cfg/more-functions.php');
 							  ?>
                    
               </div><?php */
-			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
+			echo $checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId=p.prjId and p.status='3'";
 			$checkSql=@db_query($checkQuery);
 			for($ad=0;$ad<$checkSql['count'];$ad++)
 			{
