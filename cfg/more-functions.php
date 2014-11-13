@@ -1,5 +1,4 @@
 <?php
-
 function toPublicId($id)
 {
 	return base64_encode($id * 14981488888 + 8259204988888);
@@ -33,5 +32,15 @@ function mera_url_noslash($noslashtitle)
 	$noslashurl = urlencode($noslashtitle);
 	return $noslashurl;
 }
-
+function project_awarded_to($projectId)
+{
+	$query="select * from btr_assignment where projectId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0'];
+	}
+	
+	
+}
 ?>
