@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /gigster2/
+RewriteBase /
 
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
@@ -43,4 +43,5 @@ RewriteRule ^sendreport report-sending.php
 RewriteRule ^finalrating rate-user.php
 RewriteRule ^searchgig search-gig.php
 RewriteRule ^approvereport/([^/]*)$ report-approval.php?reportId=$1 [L]
+RewriteRule ^delthread/([^/]*)$ remove-thread.php?delId=$1
 </IfModule>

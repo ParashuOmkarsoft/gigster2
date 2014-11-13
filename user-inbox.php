@@ -101,7 +101,18 @@ if($sql['count']>0)
             </span>
             <?php 
 		}
-		?></td>                                          
+		else
+		{
+			?>
+			<span align="right" style="visibility:hidden;">
+			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer;"></i>
+            </span>
+			<?php
+			
+		}
+		?>
+       <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-ban" title="Remove Complete Thread" style="cursor:pointer;color:red;"></i></a>
+        </td>                                          
       </tr>
 	  <?php
 	
