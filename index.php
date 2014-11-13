@@ -80,67 +80,32 @@ if (strlen($string) > 140) {
   </div>
 </div>
 
-<div class="container box-container" style="
-    background: #fab518;
-margin: 0 auto;
-max-width: 1349px;
-padding-bottom: 70px;">
-<div style="text-align: center; margin-top: 50px;background: #fab518;
-margin: 0 auto;
-max-width: 1349px;
-"><h2 class="fname3">Why Use Gigster</h2></div>
-
-  <div class="box3">
-         <div class="box-1">
-          
-          <h2 class="fname4">3. Available online and on 
-mobile, making it easy to 
-choose and communicate 
-with your Gigster </h2>
-          
-         </div>   
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h3 class="text-center">
+       Why Use Gigster
+      </h3>
+    </div>
   </div>
-
-  <div class="box3">
-         <div class="box-1">
-          
-          <h2 class="fname4">2. No need to spend hours on
-searching, We will find the right
-Gigster for you.</h2>
-         
-         </div>   
+  <div class="row clearfix">
+    <div class="col-md-4 column">
+      <h2 class="fname2">
+        1. Get help for anything. Done by your local Gigsters.
+      </h2>
+    </div>
+    <div class="col-md-4 column">
+      <h2 class="fname2">
+        2. No need to spend hours on searching, We will find the right Gigster for you.
+      </h2>
+    </div>
+    <div class="col-md-4 column">
+      <h3>
+       3. Available online and on mobile, making it easy to choose and communicate with your Gigster
+      </h2>
+    </div>
   </div>
-
-
-
-  <div class="box3">
-         <div class="box-1">
-          
-          <h2 class="fname4">1. Get help for anything. 
-Done by your local Gigsters.  </h2>
-          
-         </div>   
-  </div>
-
-  <div class="box3">
-         <div class="box-1">
-          
-          <h2 class="fname4">
-5. You decide how much you
- want to pay.</h2>
-         
-         </div>   
-  </div>
-
-  <div class="box3">
-         <div class="box-1">
-          
-          <h2 class="fname4">
-4. There are no service fees! 
-Pay directly to the Gigster.</h2>
-         
-         </div>   
-  </div>
+</div>
 
 
 <?php
