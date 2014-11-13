@@ -122,10 +122,13 @@ else
 				$mailmatter2=strip_tags($mailmatter2);
 								$mailmatter2=nl2br($mailmatter2);
 								$mailmatter2=htmlentities($mailmatter2);
+				if($biderId != $awardedto)
+				{
 								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				echo $msgquery3.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
-				echo "<br/>";
+				$msgquery3.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
+				
 				$msgquery3=@db_query($msgquery3);
+				}
 			}
 		}
 	

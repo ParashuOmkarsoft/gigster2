@@ -881,7 +881,7 @@ function is_message_thread_initiated($projectId,$bidderid)
 }
 function get_status_details($projectId,$userId)
 {
-	$checkQuery="select max(completion) as mcompleted from btr_reports where projectId=$projectId and reportfrom=$userId ";
+	 $checkQuery="select max(completion) as mcompleted from btr_reports where projectId=$projectId and reportfrom=$userId ";
 	$checkSql=@db_query($checkQuery);
 	if($checkSql['count']>0)
 	{
