@@ -345,9 +345,10 @@ function filter_description($str,$length)
 }
 function mera_url_encode($str)
 {
-	$str=urlencode($str);
+	
 	$str=str_replace("+","-",$str);
 	$str=str_replace("/","|",$str);
+	$str=urlencode($str);
 	return $str;
 }
 function mera_url_decode($str)
