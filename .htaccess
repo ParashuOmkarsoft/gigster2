@@ -12,7 +12,7 @@ RewriteRule ^(sdk)($|/) - [L]
 RewriteRule ^(lib)($|/) - [L]
 
 
-#Site Settings
+##Site Settings
 
 RewriteRule ^checkout logout.php
 RewriteRule ^loginwithtwitter twitter-login.php
