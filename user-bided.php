@@ -37,7 +37,7 @@ include('cfg/more-functions.php');
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-$checkQuery="select b.* from btr_bids as b,btr_projects as p where  b.bidfrom=".$uInfo['userId']." and b.projectId=p.prjId and p.status='0' order by b.bidon DESC ";
+$checkQuery="select b.* from btr_bids as b,btr_projects as p where  b.bidfrom=".$uInfo['userId']." and b.projectId=p.prjId  order by b.bidon DESC ";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
@@ -180,7 +180,19 @@ box-shadow: 0px 0px 2px #000000;'";
                 </div>
               </div>
             </div>--> 
-        <?php echo $prjDetails['prjdesc']; ?> </div>
+        <?php echo $prjDetails['prjdesc']; ?>
+        <?php
+		if(is_project_awarded($prjDetails['prjId']))
+		{
+			?>
+            <span style="float:left;">
+			<img src="<?php echo $serverpath;?>images/symbol.png" />
+            </span>
+			<?php
+		}
+		?>
+        
+        </div>
      
     </div>
   </section>
