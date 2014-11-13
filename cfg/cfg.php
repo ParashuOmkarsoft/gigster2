@@ -347,12 +347,14 @@ function mera_url_encode($str)
 {
 	$str=urlencode($str);
 	$str=str_replace("+","-",$str);
+	$str=str_replace("/","|",$str);
 	return $str;
 }
 function mera_url_decode($str)
 {
 	$str=urldecode($str);
 	$str=str_replace("-","+",$str);	
+	$str=str_replace("|","/",$str);	
 	return $str;
 }
 function get_gig_details($gigId)
