@@ -83,7 +83,7 @@ body h4{
     text-decoration: none !important;;
 	color: #5e350d;
 	font-size: 17px;}
- #firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
+ #firstsection{/*border-top: 5px solid #fab518;*/border-bottom: 3px solid #fab518;}
  #firstsection h3{font-family: 'source_sans_probold'; font-size: 36px;color: #5e350d}
  #firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
  #firstsection img{float: right;
@@ -125,7 +125,7 @@ section li{float: left;margin: 13px;list-style-type: none;}
     margin-left: -12px;
     padding-top: 0px;
 	 }
-#firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}
+/*#firstsection{border-top: 5px solid #fab518;border-bottom: 3px solid #fab518;}*/
 #firstsection h3{font-family: 'source_sans_probold'; font-size: 30px;color: #5e350d}
 #firstsection h4{font-family: 'source_sans_probold'; font-size: 18px;color: #45350f}
 #firstsection img{float: right;margin-top: 22px;}
@@ -936,7 +936,7 @@ padding: 27px 48px;
 /*.facebook, .facebook:hover{background-color: #3b5999; border:2px solid #3b5999;color:#fff;}
 */.linkedin, .linkedin:hover{background-color: #007bb6; border: 2px solid #007bb6; color:#fff;}
 .tyco h4 a {color:#45350f; text-decoration:none;}
-.sb{margin-left: 310px;}
+/*.sb{margin-left: 310px;}*/
 
 
 /*///////message *********/

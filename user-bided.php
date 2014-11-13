@@ -75,7 +75,7 @@ if($checkSql['count']>0)
       <div class="col-md-12">
         <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3>
       </div>
-      <div class="col-md-12"> 
+      <div class="col-md-12" style="padding:0px;"> 
       <div class="col-md-8"> 
        <span class="budget" style="padding-top: 20px;"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
        </a> <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
