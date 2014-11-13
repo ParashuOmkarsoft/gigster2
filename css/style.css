@@ -1187,3 +1187,8 @@ background: #EC6B39;
 outline: none;
 margin-top: 12px;
 margin-left: 12px;}
+
+.myrow-bidding{border-bottom: 3px solid #fab518;
+/* border-top: 5px solid #fab518; */
+margin-left: 0;
+margin-right: 0;}
