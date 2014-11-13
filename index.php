@@ -61,17 +61,17 @@ if (strlen($string) > 140) {
       <div class="newbox">
         <span class=""><img src="images/person1.jpg" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2">text gig </h2>
-        <p>Tell us what you need help with and post a Gig.</h2>
+        <p style="width: 383px;">Tell us what you need help with and post a Gig.</h2>
       </div>
       <div class="newbox">
         <span class=""><img src="images/person2.jpg" class="imgbox img-circle" alt=""></span>
         <h2 class="fname2">text gig  </h2>
-        <p>We'll find the right local Gigsters and you just select one.</p>
+        <p style="width: 383px;">We'll find the right local Gigsters and you just select one.</p>
         </div>   
       <div class="newbox">
         <span class=""><img src="images/person3.jpg" class="imgbox img-circle" alt=""></span>
         <h2 class="fname2">text gig </h2>
-        <p>Tell us what you need help with and post a Gig.</p>
+        <p style="width: 383px;">Tell us what you need help with and post a Gig.</p>
       </div>   
   </div>
 </div>
