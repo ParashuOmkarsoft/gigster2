@@ -1167,3 +1167,23 @@ outline: none;
 margin-top: 12px;}
 
 #s2id_skills{width: 100%;}
+
+.markascomplete-btn1{color: #fff;
+font-size: 20px;
+font-family: 'source_sans_probold';
+width: 192px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;
+margin-left: 10px;}
+
+.mark-btn{color: #FFFFFF;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 196px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;
+margin-left: 12px;}

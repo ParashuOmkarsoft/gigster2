@@ -95,13 +95,13 @@ include('cfg/more-functions.php');
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
-      <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn" >Send feedback</button> <?php } ?>
+      <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn1" >Send feedback</button> <?php } ?>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content cform">
             <div class="container">
-              <div class="col-md-12">
+              <div class="col-md-12" style="padding: 0px;">
                 <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" target="targetframe" >
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
@@ -109,18 +109,16 @@ include('cfg/more-functions.php');
                   <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog">Feedback for gigster</label>
-                      <br/>
-                      <br/>
+                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;">Feedback for gigster</label>
+                     
                       <div class="col-sm-12">
                         <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-md-4 control-label tfont">Rating</label>
-                      <Br/>
-                      <br/>
-                      <div class="col-md-8">
+                      <label class="col-md-12 control-label tfont" style="margin-bottom: 20px;">Rating</label>
+                      
+                      <div class="col-md-8" style="padding: 0px;">
                       
                         <div class="form-control form-radio" id="rating" name="rating" >
                           <?php for($r=1;$r<=5;$r++)
@@ -135,8 +133,8 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="col-sm-offset-3 col-sm-10 logsign">
-                        <button type="submit" class="btn btn-warning loginbtn">Mark as Complete</button>
+                      <div class="col-sm-12 logsign"style="padding: 0px;">
+                        <button type="submit" class="btn mark-btn">Mark as Complete</button>
                       </div>
                     </div>
                   </div>
@@ -147,7 +145,7 @@ include('cfg/more-functions.php');
         </div>
       </div>
       <?php $mygiginprogress = ""; ?>
-      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-left: 10px;"></a>
+      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;margin-left: 15px;"></a>
       <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content cform">
