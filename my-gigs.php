@@ -94,7 +94,7 @@ include('cfg/more-functions.php');
     <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
+      <div class="col-md-4" style="padding: 0px;"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
       <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn1" >Send feedback</button> <?php } ?>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -226,11 +226,11 @@ box-shadow: 0px 0px 2px #000000;'";
         </div>
       </div>
       <div class="col-md-8"style="padding: 0px;"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-      <div class="col-md-12">
+      <div class="col-md-12" style="padding: 0px;">
             <h4>Completion Status</h4><div class="row">
           <div class="col-md-12" style="padding-right: 0px;">
           
-         <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb"><?php echo convert_date($opengig['bidto']);?></span></h4>
+         <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb pull-right"><?php echo convert_date($opengig['bidto']);?></span></h4>
          <div class="progress"  style="width: 100%;">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
                
@@ -243,7 +243,7 @@ box-shadow: 0px 0px 2px #000000;'";
 </div>
     </div>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12" style="padding: 0px;">
       <div class="col-md-12" style="padding: 0px;">
         <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       </div>
