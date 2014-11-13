@@ -69,7 +69,10 @@ if($checkSql['count']>0)
 				$profilepic="images/admin.png";
 			}
 ?>
-<?php //print_r($prjDetails); ?>
+<?php //print_r($prjDetails); 
+if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
+{
+?>
   <section id="firstsection" class="container">
     <div class="row">
       <div class="col-md-12">
@@ -171,22 +174,18 @@ box-shadow: 0px 0px 2px #000000;'";
     </div>   
     <div class="row">
       <div class="col-md-10" style="margin-bottom: 15px;"> 
-        <!---<h4>Completion Status</h4>
-            <div class="row">
-              <div class="col-md-12">
-                <h4>sept 10,2014 <span class="c">sept 15,2014</span></h4>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"> <span class="sr-only">0% Complete</span> </div>
-                </div>
-              </div>
-            </div>--> 
+      
         <?php echo $prjDetails['prjdesc']; ?>
+
         <?php
 		if(is_project_awarded($prjDetails['prjId']))
 		{
 			?>
-            <span style="float:left;">
-			<img src="<?php echo $serverpath;?>images/symbol.png" />
+                    <br/>
+                    <div class="clearfix"></div>
+            <span style="float:right;" class="col-sm-6">
+			<img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;"/>
+       
             </span>
 			<?php
 		}
@@ -197,13 +196,25 @@ box-shadow: 0px 0px 2px #000000;'";
     </div>
   </section>
   <?php	
+}
+else{
+	?>
+  <div class="clearfix"></div>
+  <br/>
+  <p class="mandatory">Sorry, No Bids submited by you yet.</p>
+  <br/>
+  <div class="clearfix"></div>
+  <?php
+	
+	
+	}
 	   }
 }else
 	{
 		?>
   <div class="clearfix"></div>
   <br/>
-  <p class="mandatory">Sorry, No Gigs assigned to you yet.</p>
+  <p class="mandatory">Sorry, No Bids submited by you yet.</p>
   <br/>
   <div class="clearfix"></div>
   <?php
