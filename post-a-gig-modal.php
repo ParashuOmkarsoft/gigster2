@@ -1,4 +1,3 @@
-
 <div id="postgigmodel" class="modal fade  bs-example-modal-lg modelw " tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -18,21 +17,15 @@
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>
-          <h2 class="loginlead" >How much would you like to pay for the Gig? / How much per hours would you like....</h2>
+          <h2 class="loginlead" >Your pay as</h2>
           <div class="form-group">
-            <div class=" col-sm-10 ">
-
-            <div class=" col-sm-4" style="padding:0px;">
-               <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
-            </div>
-            <div class=" col-sm-8">               
+            <div class=" col-sm-8">
               <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('h')">
-              Per Gig </label>
+                <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('f')" checked="checked">
+                Per Gig </label>
               <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype" value="f" checked="checked" onChange="change_caption('f')">
-                 Per Hour </label>
-            </div>    
+                <input type="radio" name="jobtype[]" id="jobtype" value="f"  onChange="change_caption('h')">
+                Per Hour </label>
             </div>
           </div>
           <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
@@ -50,9 +43,8 @@
           <h2 class="loginlead">Enter expiry date of your Gig</h2>
           <div class="form-group">
             <div class="col-sm-10">
-           
               <input type="text" id="datepic"style="width:47%" name="enddate" class="mdatepicker"/>
-               <script type="text/javascript">
+              <script type="text/javascript">
           $(document).ready(function(){
           var nowTemp = new Date();
           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
@@ -71,8 +63,7 @@
                }).data('datepicker');
            
                 });
-         </script>
-
+         </script> 
             </div>
           </div>
           <?php $tags=get_tags();
@@ -96,9 +87,7 @@
         </form>
       </section>
       &nbsp;
-      <section class="postgigform mhidden" id="inviteform" style="min-height:400px;overflow:auto;">
-        
-      </section>
+      <section class="postgigform mhidden" id="inviteform" style="min-height:400px;overflow:auto;"> </section>
     </div>
   </div>
 </div>
