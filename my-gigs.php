@@ -91,11 +91,11 @@ include('cfg/more-functions.php');
 		  }
 		  ?>
   <div class="row mygigrow">
-    <div class="col-md-8" style="padding: 0px;">
+    <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
-      <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn" >Send feedback</button> <?php } ?>
+      <?php if($projectstatus == '100') { ?>  <button type="button" class="btn btn-primary" >Send feedback</button> <?php } ?>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -147,7 +147,7 @@ include('cfg/more-functions.php');
         </div>
       </div>
       <?php $mygiginprogress = ""; ?>
-      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-left: 10px;"></a>
+      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
       <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content cform">
@@ -233,7 +233,7 @@ box-shadow: 0px 0px 2px #000000;'";
           <div class="col-md-12">
           
          <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb"><?php echo convert_date($opengig['bidto']);?></span></h4>
-         <div class="progress"  style="width: 94%;">
+         <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
                
                 <span class="sr-only"><?php echo $projectstatus; ?>%</span>
@@ -246,7 +246,7 @@ box-shadow: 0px 0px 2px #000000;'";
     </div>
     </div>
     <div class="col-md-12">
-      <div class="col-md-12" style="padding: 0px;">
+      <div class="col-md-12">
         <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       </div>
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
