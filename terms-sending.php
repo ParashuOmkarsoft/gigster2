@@ -123,7 +123,8 @@ else
 								$mailmatter2=nl2br($mailmatter2);
 								$mailmatter2=htmlentities($mailmatter2);
 								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery1.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
+				echo $msgquery3.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
+				echo "<br/>";
 				$msgquery3=@db_query($msgquery3);
 			}
 		}
