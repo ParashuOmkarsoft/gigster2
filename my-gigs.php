@@ -107,7 +107,7 @@ include('cfg/more-functions.php');
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Mark gig as complete</h2>
                   <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
-                  <div class="col-md-12">
+                  <div class="col-md-12" style="padding: 0px;">
                     <div class="form-group">
                       <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;">Feedback for gigster</label>
                      
@@ -225,13 +225,13 @@ box-shadow: 0px 0px 2px #000000;'";
           </div>
         </div>
       </div>
-      <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
+      <div class="col-md-8"style="padding: 0px;"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
       <div class="col-md-12">
             <h4>Completion Status</h4><div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" style="padding-right: 0px;">
           
          <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb"><?php echo convert_date($opengig['bidto']);?></span></h4>
-         <div class="progress"  style="width: 94%;">
+         <div class="progress"  style="width: 100%;">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
                
                 <span class="sr-only"><?php echo $projectstatus; ?>%</span>
