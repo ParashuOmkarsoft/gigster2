@@ -28,7 +28,7 @@ if(!$inviteusers)
 if($prjTitle && $proposedprice)
 {
 	$insertQuery="insert into btr_projects(userId,prjTitle,prjdesc,postedon,proposedbudget,bidfrom,bidto,keywords,jobtype,invited)";
-	 $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype','$inviteusers')";	
+	echo  $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype','$inviteusers')";	
 	$insertSql=@db_query($insertQuery,3);
 	if($insertSql)
 	{

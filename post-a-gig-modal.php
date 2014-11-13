@@ -4,11 +4,11 @@
       <section class="postgigform" id="postgigform">
         <h2 id="login1">Post a Gig </h2>
         <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>
-        <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" >
+        <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
             <div class="col-sm-10">
-              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" >
+              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" maxlength="45" >
             </div>
           </div>
           <div class="form-group">
@@ -49,7 +49,7 @@
           var nowTemp = new Date();
           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
           var checkin = $('.mdatepicker').datepicker({
-               format: 'yy-mm-dd',
+               format: 'mm/dd/yyyy',
                  onRender: function(date) {
                 return date.valueOf() < now.valueOf() ? 'disabled' : '';
                  }
