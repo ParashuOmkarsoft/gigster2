@@ -21,11 +21,25 @@ include('cfg/more-functions.php');
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 
-<div class="container box-container">
  	<?php $homelatest = latest_gigs();
-	if(!empty($homelatest)){
+	/*if(!empty($homelatest)){
 
-foreach($homelatest['rows'] as $hmltst3 )
+
+	?>
+  <div class="box1">
+         <div class="box-1">
+          <span class=""><img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
+          <h2 class="fname"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><?php echo $hmltst3['prjTitle']; ?></a></h2>
+          <p><?php echo $stringCut; ?></p>
+         </div>   
+  </div>
+  
+  <?php }}*/ ?>
+
+
+<div class="container" style="max-width: 1243px;margin-top: 45px;">
+  <?php
+  foreach($homelatest['rows'] as $hmltst3 )
 {
 	
 $gigstrimg = $hmltst3['userId'];
@@ -45,38 +59,21 @@ if (strlen($string) > 140) {
     $stringCut = substr($string, 0, 140);
     }else{ $stringCut = $string;}
 	?>
-  <div class="box1">
-         <div class="box-1">
-          <span class=""><img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
-          <h2 class="fname"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><?php echo $hmltst3['prjTitle']; ?></a></h2>
-          <p><?php echo $stringCut; ?></p>
-         </div>   
-  </div>
-  
-  <?php }} ?>
-</div>
-
-<div class="container" style="max-width: 1243px;margin-top: 45px;">
-  
       <div class="newbox">
-        <span class=""><img src="images/person1.jpg" class="imgbox img-circle" alt="" ></span>
-        <h2 class="fname2">text gig </h2>
-        <p style="width: 383px;">Tell us what you need help with and post a Gig.</h2>
+        <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">
+        
+        <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
+        <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
+        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
       </div>
-      <div class="newbox">
-        <span class=""><img src="images/person2.jpg" class="imgbox img-circle" alt=""></span>
-        <h2 class="fname2">text gig  </h2>
-        <p style="width: 383px;">We'll find the right local Gigsters and you just select one.</p>
-        </div>   
-      <div class="newbox">
-        <span class=""><img src="images/person3.jpg" class="imgbox img-circle" alt=""></span>
-        <h2 class="fname2">text gig </h2>
-        <p style="width: 383px;">Tell us what you need help with and post a Gig.</p>
-      </div>   
+      <?php
+}
+
+	  ?>
   </div>
 </div>
 
-<div style="text-align: center; margin-top: 50px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr class="hr"></div>
+<div style="text-align: center; margin-top: 50px;"><a href="<?=$serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE GIGS</button></a><hr class="hr"></div>
 <div class="container" style="max-width: 1178px;margin-top: 45px;">
   
       <div class="box-1">
