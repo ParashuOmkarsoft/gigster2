@@ -124,6 +124,7 @@ else
 								$mailmatter2=htmlentities($mailmatter2);
 								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery1.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
+				$msgquery3=@db_query($msgquery3);
 			}
 		}
 	
