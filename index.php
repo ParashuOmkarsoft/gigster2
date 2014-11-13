@@ -55,11 +55,28 @@ if (strlen($string) > 140) {
   
   <?php }} ?>
 </div>
-  <div style="text-align: center; margin-top: 50px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr class="hr"></div>
 
+<div class="container" style="max-width: 1243px;margin-top: 45px;">
+  
+      <div class="newbox">
+        <span class=""><img src="images/person1.jpg" class="imgbox img-circle" alt="" ></span>
+        <h2 class="fname2">text gig </h2>
+        <p>Tell us what you need help with and post a Gig.</h2>
+      </div>
+      <div class="newbox">
+        <span class=""><img src="images/person2.jpg" class="imgbox img-circle" alt=""></span>
+        <h2 class="fname2">text gig  </h2>
+        <p>We'll find the right local Gigsters and you just select one.</p>
+        </div>   
+      <div class="newbox">
+        <span class=""><img src="images/person3.jpg" class="imgbox img-circle" alt=""></span>
+        <h2 class="fname2">text gig </h2>
+        <p>Tell us what you need help with and post a Gig.</p>
+      </div>   
+  </div>
+</div>
 
-
-
+<div style="text-align: center; margin-top: 50px;"><button class="btn more-btn" type="submit">MORE GIGS</button><hr class="hr"></div>
 <div class="container" style="max-width: 1178px;margin-top: 45px;">
   
       <div class="box-1">
@@ -79,34 +96,45 @@ if (strlen($string) > 140) {
       </div>   
   </div>
 </div>
-
+<div class="row rowbg">
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-12 column">
-      <h3 class="text-center">
+      <h2 class="name2 text-center">
        Why Use Gigster
       </h3>
     </div>
   </div>
   <div class="row clearfix">
     <div class="col-md-4 column">
-      <h2 class="fname2">
+      <h2 class="name1 ">
         1. Get help for anything. Done by your local Gigsters.
       </h2>
     </div>
     <div class="col-md-4 column">
-      <h2 class="fname2">
+      <h2 class="name1 ">
         2. No need to spend hours on searching, We will find the right Gigster for you.
       </h2>
     </div>
     <div class="col-md-4 column">
-      <h3>
+      <h2 class="name1 ">
        3. Available online and on mobile, making it easy to choose and communicate with your Gigster
+      </h2>
+    </div>
+  <div class=""></div>  
+    <div class="col-md-6 column">
+      <h2 class="name1 ">
+        4. No need to spend hours on searching, We will find the right Gigster for you.
+      </h2>
+    </div>
+    <div class="col-md-6 column">
+      <h2 class="name1 ">
+       5. Available online and on mobile, making it easy to choose and communicate with your Gigster
       </h2>
     </div>
   </div>
 </div>
-
+</div>
 
 <?php
 include('footer.php'); 
