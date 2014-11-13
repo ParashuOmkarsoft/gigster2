@@ -80,17 +80,17 @@ include('cfg/more-functions.php');
 			 $projectbids=get_project_bids($gigId);
 	   ?>
   <div class="row myrow-bidding">
-    <div class="col-md-8">
+    <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <?php /*?> <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a></span></div><?php */?>
-      <div class="col-md-8"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
+      <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
     </div>
-    <div class="col-md-12">
-      <div class="col-md-8">
+    <div class="col-md-12" style="padding: 0px;">
+      <div class="col-md-8" style="padding: 0px;">
         <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
       </div>
-      <div class="col-md-4 giginnerimg gigimg">
+      <div class="col-md-4 giginnerimg gigimg" style="padding: 0px;">
         <?php /*?>   <div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
@@ -108,7 +108,7 @@ include('cfg/more-functions.php');
 							  ?>
                    
               </div><?php */ ?>
-        <div class="col-md-12">
+        <div class="col-md-12" style="padding: 0px;">
           <?php 
                   for($a=0;$a<$projectbids['count'];$a++)
 					{
