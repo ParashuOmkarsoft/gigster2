@@ -18,10 +18,14 @@ if($getSql['count']>0)
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
+				if($ownerinfo['notify']=="1")
+				{
 								$mailto=filter_text($usermail);
 								$mailsubject="Congratulation,Terms are accepted on $gigname.";
+								
 								$mail=send_my_mail($ownerinfo['usermail'],$mailmatter,$mailsubject);
-								?>
+				}
+					?>
 		<script type="text/javascript">
 		window.parent.location="<?php echo $_SERVER['HTTP_REFERER'];?>";			
 		</script>

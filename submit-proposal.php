@@ -42,7 +42,10 @@ if($checkSql['count']>0)
 								$headers  = 'MIME-Version: 1.0' . "\r\n";
 								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 								$headers .= "From: $sitename <$from>" . "\r\n";
+								if($giguserinfo['notify']=="1")
+								{
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+								}
 				
 				$mailmatter=strip_tags($mailmatter);
 				$mailmatter=nl2br($mailmatter);
@@ -79,7 +82,10 @@ else
 								$mailto=filter_text($giguserinfo['usermail']);
 								$from="notifications@gigster.com";
 								$mailsubject="A new proposal is submited on your gig.";
+								if($giguserinfo['notify']=="1")
+								{
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+								}
 								
 $mailmatter=strip_tags($mailmatter);
 $mailmatter=nl2br($mailmatter);

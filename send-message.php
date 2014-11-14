@@ -34,10 +34,12 @@ if($messageSql)
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
-						
+						if($toInfo['notify']=="1")
+						{
 								$mailto=filter_text($toInfo['usermail']);
 								$mailsubject="You have a message on $sitename";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+						}
 ?>
 <script type="text/javascript">
 window.parent.location="<?php echo $_SERVER['HTTP_REFERER'];?>";

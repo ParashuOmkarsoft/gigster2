@@ -117,7 +117,7 @@ else
 				{
 						$mailto2=filter_text($bidderInfo['usermail']);
 						$mailsubject2="Notification, gig $gigname is awawrded to someone else.";
-						$mail2=send_my_mail(mailto2,$mailmatter2,$mailsubject2);	
+						$mail2=send_my_mail($mailto2,$mailmatter2,$mailsubject2);	
 				}
 				$mailmatter2=strip_tags($mailmatter2);
 								$mailmatter2=nl2br($mailmatter2);
