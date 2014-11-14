@@ -30,6 +30,64 @@ if($ngigdetails)
 
 ?>
 
+
+<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+			<div class="col-md-6 column">
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<img src="images/person1.jpg">
+						</div>
+						<div class="col-md-9 column">
+							
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							<h4>
+								saurabh undre
+							</h4>
+							<h4>
+								php
+							</h4>
+							<h2 id="map">
+								singapore
+							</h2>
+							<input type="checkbox" name="invited[]" id="invited" value="1">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 column">
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<img src="images/person1.jpg">
+						</div>
+						<div class="col-md-9 column">
+							
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							<h4>
+								saurabh undre
+							</h4>
+							<h4>
+								php
+							</h4>
+							<h2 id="map">
+								singapore
+							</h2>
+							<input type="checkbox" name="invited[]" id="invited" value="1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 <p><?php echo $msg;?></p>
