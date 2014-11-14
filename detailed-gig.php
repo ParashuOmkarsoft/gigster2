@@ -287,12 +287,7 @@ margin-top: 20px;">
 				 {
 					if(is_project_awarded($gigdetails['prjId']))
 {
-	if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
-	{
-	?>
-      <img src="<?php echo $serverpath;?>images/symbol.png" />
-      <?php
-	}
+	
 }
 else{?>
       <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
@@ -300,7 +295,14 @@ else{?>
         </a> </div>
       <?php }
 				 }
-				 ?>
+		
+                 if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
+	{
+	?>
+      <img src="<?php echo $serverpath;?>images/symbol.png" />
+      <?php
+	}
+	?>
     </div>
     </div>
     

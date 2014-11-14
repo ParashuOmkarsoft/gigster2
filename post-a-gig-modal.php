@@ -74,10 +74,10 @@
           <div class="form-group">
             <div class="col-sm-12 ">
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"  value="1">
+                <input type="radio" name="inviteusers[]" id="inviteusers"  value="0"  checked>
                 No, please select Gigsters for me</label>
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"  value="0">
+                <input type="radio" name="inviteusers[]" id="inviteusers"  value="1">
                 Yes, I will select which Gigsters to bid </label>
             </div>
           </div>
