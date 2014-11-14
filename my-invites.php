@@ -29,8 +29,8 @@ if($ngigdetails)
 }
 
 ?>
+
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
-	
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 <p><?php echo $msg;?></p>
 	<?php 
@@ -61,11 +61,16 @@ if($ngigdetails)
 			   $gigsterrating=0;
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			?>
-			
+	
 			<div class="col-sm-6">
 				<div><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
 				</div>
-				<?php
+                <div>
+                <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
+                <h4><?php echo $gigsterInfo['skills']; ?></h4>
+                <h2 id="map"><?php echo $gigsterInfo['city']; ?></h2>
+                </div>
+                 <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
@@ -82,12 +87,6 @@ if($ngigdetails)
 							  ?>
                                <div class="clearfix"></div>
             </div>
-                <div>
-                <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
-                <h4><?php echo $gigsterInfo['skills']; ?></h4>
-                <h2 id="map"><?php echo $gigsterInfo['city']; ?></h2>
-                </div>
-                 
             <div class="clearfix"></div>
 			<?php
 		}
