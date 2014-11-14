@@ -35,7 +35,10 @@ if($ngigdetails)
 		<div class="col-md-12 column">
 			<div class="row clearfix">
 			<div class="col-md-6 column">
-				<img src="images/person1.jpg">
+					
+							<img src="images/person1.jpg">
+						
+						
 							<div>
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
@@ -46,12 +49,13 @@ if($ngigdetails)
 							<h4>
 								saurabh undre
 							</h4>
-							<h4>
-								php
-							</h4>
 							<h2 id="map">
 								singapore
 							</h2>
+							<h4>
+								php,html5,css
+							</h4>
+							
 							<input type="checkbox" name="invited[]" id="invited" value="1">
 						</div>
 					</div>
