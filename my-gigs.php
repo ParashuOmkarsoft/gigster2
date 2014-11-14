@@ -124,7 +124,7 @@ include('cfg/more-functions.php');
                         <div class="form-control form-radio" >
                       	
                          
-                          <input type="checkbox" ><img src="images/grey-star.png">
+                  <img src="images/grey-star.png">
                          
                         </div>
                       </div>
