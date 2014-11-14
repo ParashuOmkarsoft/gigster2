@@ -311,7 +311,8 @@ else{?>
      <div class="row">
       <div class="col-md-10">
         <p class="service"> <?php
-		if($uInfo['userId']==$gigdetails['prjId'])
+
+		if($uInfo['userId']==$gigdetails['userId'])
 		{
 			echo $bidcontent;
 		}
