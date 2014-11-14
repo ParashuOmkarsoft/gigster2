@@ -98,7 +98,7 @@ include('cfg/more-functions.php');
       <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn1" >Send feedback</button> <?php } ?>
         </a></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg"style="max-width: 500px;">
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
