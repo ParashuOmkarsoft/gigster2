@@ -127,7 +127,7 @@ include('cfg/more-functions.php');
                           <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>
                           <input type="checkbox" name="myradio" value="<?php echo $r;?>" />
                           <?php //echo $r;?>
-                          <span class="star<?php echo $r; ?>"></span>
+                          <span class="star<?php echo $r; ?>"><?php echo'sss';?></span>
                           <br/>
                           <?php
 						}
