@@ -29,8 +29,8 @@ if($ngigdetails)
 }
 
 ?>
-
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
+	
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 <p><?php echo $msg;?></p>
 	<?php 
@@ -61,16 +61,11 @@ if($ngigdetails)
 			   $gigsterrating=0;
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			?>
-			<div class="col-sm-5">
+			
+			<div class="col-sm-6">
 				<div><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
 				</div>
-                <div><input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" /></div>
-                <div>
-                <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
-                <h4><?php echo $gigsterInfo['skills']; ?></h4>
-                <h2 id="map"><?php echo $gigsterInfo['city']; ?></h2>
-                </div>
-                 <?php
+				<?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
@@ -87,12 +82,20 @@ if($ngigdetails)
 							  ?>
                                <div class="clearfix"></div>
             </div>
+                <div>
+                <h4><a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a></h4>
+                <h4><?php echo $gigsterInfo['skills']; ?></h4>
+                <h2 id="map"><?php echo $gigsterInfo['city']; ?></h2>
+                </div>
+                 
             <div class="clearfix"></div>
 			<?php
 		}
 		}
 	}
 	?>
+	<div><input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" /></div>
+</div>
    <!--  <div class="clearfix"></div> -->
     <button type="submit" class="btn invite-btn" style="margin-top=20px";>Invite Gigsters</button>
     <button type="submit" class="btn update-btn" data-dismiss="modal" style="margin-top=20px";>Leave It</button>    
