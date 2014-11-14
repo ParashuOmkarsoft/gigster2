@@ -86,6 +86,58 @@ if($ngigdetails)
 						</div>
 					</div>
 				</div>
+				<div class="col-md-6 column">
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<img src="images/person1.jpg">
+						</div>
+						<div class="col-md-9 column">
+							
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							<h4>
+								saurabh undre
+							</h4>
+							<h2 id="map"  style="margin: 0 auto;">
+								singapore
+							</h2>
+							<h4>
+								php,html5
+							</h4>
+							
+							<input type="checkbox" name="invited[]" id="invited" value="1">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 column">
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<img src="images/person1.jpg">
+						</div>
+						<div class="col-md-9 column">
+							
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							<h4>
+								saurabh undre
+							</h4>
+							<h2 id="map"  style="margin: 0 auto;">
+								singapore
+							</h2>
+							<h4>
+								php,html5
+							</h4>
+							
+							<input type="checkbox" name="invited[]" id="invited" value="1">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
