@@ -92,6 +92,11 @@ if($frmaction=="updateinfo")
 		$updateSql=@db_query($updateQuery);
 		
 	}
+	else
+	{
+		$updateQuery="update btr_users set notify='0' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+	}
 	$data=get_user_Info($_SESSION['uId']);
 	$mloc="";
 		if($data['city'])
