@@ -117,9 +117,9 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-md-12 control-label tfont" style="margin-bottom: 20px;">Rating</label>
+                      <label class="col-md-3 control-label tfont" style="margin-bottom: 20px;">Rating</label>
                       
-                      <div class="col-md-8" style="padding: 0px;">
+                      <div class="col-md-9" style="padding: 0px;">
                       
                         <div class="form-control form-radio" >
                       	
@@ -130,7 +130,7 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="col-sm-12 logsign"style="padding: 0px;margin-top: 64px;">
+                      <div class="col-sm-12 logsign"style="padding: 0px;">
                         <button type="submit" class="btn mark-btn">Mark as Complete</button>
                       </div>
                     </div>
