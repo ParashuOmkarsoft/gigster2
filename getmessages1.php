@@ -43,7 +43,7 @@ else
     <?php if($messagethread['count']>0)
 	{
 		?>
-		<div class="col-sm-12" style="height: 400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px;">
+		 <div class="col-sm-12" style="height:400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px;">
 		<?php
 	for($i=0;$i<$messagethread['count'];$i++)
 	{
@@ -62,11 +62,13 @@ else
 			}
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
-				$cl="style='text-align:right;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
+				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
+        $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;'";
 			}
 			else
 			{
-				$cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;'";
+				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 483px;;float:right;'";
+        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;float:right;'";
 			}
 	?>
 	<div class="col-md-12" <?php echo $cl;?> >
