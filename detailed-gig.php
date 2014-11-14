@@ -179,6 +179,8 @@ else
 			{
 				$bidderInfo=get_user_Info(encrypt_str($projectbids['rows'][$i]['bidfrom']));
 				$bidderpic="uploads/profileimage/".$bidderInfo['profileimage'];
+				$bidcontent=html_entity_decode($projectbids['rows'][$i]['bidcontent']);
+				$bidcontent=nl2br($bidcontent);
 			if(file_exists($bidderpic))
 			{
 				$bidderpic=$bidderpic;
@@ -308,7 +310,18 @@ else{?>
     
      <div class="row">
       <div class="col-md-10">
-        <p class="service"> <?php echo strip_string(nl2br(stripslashes($bidderInfo['overview'])),300);?> </p>
+        <p class="service"> <?php
+		if($uInfo['userId']==$gigdetails['prjId'])
+		{
+			echo $bidcontent;
+		}
+		else
+		{
+		 echo strip_string(nl2br(stripslashes($bidderInfo['overview'])),300);
+		 
+		}
+		 ?> </p>
+         
       </div>
       <div class="col-md-02"></div>
     </div>
