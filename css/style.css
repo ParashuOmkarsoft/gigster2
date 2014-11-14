@@ -1055,7 +1055,7 @@ line-height: 11px;}
 .profile-text{width: 100%;
 border-radius: 0px;
 border: 1px solid #fab518;
-padding: 6px;}
+padding: 6px;height: auto;}
 
 
 
@@ -1217,3 +1217,30 @@ height: 100px;}
 
 .rowbg{background: url(../images/namebg.jpg);
 padding-bottom: 50px;margin: 0 auto;}
+
+
+#rating .star1{
+	width: 50px;
+    height: 50px;
+    background: url(images/sprite.png) 0 0;
+}
+#rating .star2{
+	width: 50px;
+    height: 50px;
+    background: url(images/sprite.png) 0 0;
+}
+#rating .star3{
+	width: 50px;
+    height: 50px;
+    background: url(images/sprite.png) 0 0;
+}
+#rating .star4{
+	width: 50px;
+    height: 50px;
+    background: url(images/sprite.png) 0 0;
+}
+#rating .star5{
+	width: 50px;
+    height: 50px;
+    background: url(images/sprite.png) 0 0;
+}

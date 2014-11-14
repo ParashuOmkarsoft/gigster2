@@ -121,14 +121,17 @@ include('cfg/more-functions.php');
                       <div class="col-md-8" style="padding: 0px;">
                       
                         <div class="form-control form-radio" id="rating" name="rating" >
-                          <?php for($r=1;$r<=5;$r++)
-													{
-														?>
+                      	<?php for($r=1;$r<=5;$r++)
+						{
+						?>
                           <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>
-                          <input type="radio" name=myradio value="<?php echo $r;?>"><?php echo $r;?>
+                          <input type="checkbox" name="myradio" value="<?php echo $r;?>" />
+                          <?php //echo $r;?>
+                          <span class="star<?php echo $r; ?>"></span>
+                          <br/>
                           <?php
-													}
-													?>
+						}
+						?>
                         </div>
                       </div>
                     </div>
