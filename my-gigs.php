@@ -119,7 +119,7 @@ include('cfg/more-functions.php');
                     <div class="form-group">
                       <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;">Rating</label>
                       
-                      <div class="col-md-10" style="padding: 0px; margin-top:-3px">
+                      <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
                         <div class="form-control form-radio" >
                       	
