@@ -122,17 +122,10 @@ include('cfg/more-functions.php');
                       <div class="col-md-8" style="padding: 0px;">
                       
                         <div class="form-control form-radio" >
-                      	<!--<?php for($r=1;$r<=5;$r++)
-						{
-						?>
-                          <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>-->
+                      	
+                         
                           <input type="checkbox" ><img src="images/grey-star.png">
-                          <!--<?php //echo $r;?>
-                          <span class="star<?php $r; ?>"></span>
-                          <br/>
-                          <?php
-						}
-						?>-->
+                         
                         </div>
                       </div>
                     </div>
