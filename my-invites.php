@@ -35,17 +35,14 @@ if($ngigdetails)
 		<div class="col-md-12 column">
 			<div class="row clearfix">
 			<div class="col-md-6 column">
-					<div class="row clearfix">
-						<div class="col-md-3 column">
-							<img src="images/person1.jpg">
-						</div>
-						<div class="col-md-9 column">
-							
+				<img src="images/person1.jpg">
+							<div>
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							</div>	
 							<h4>
 								saurabh undre
 							</h4>
@@ -60,17 +57,14 @@ if($ngigdetails)
 					</div>
 				</div>
 				<div class="col-md-6 column">
-					<div class="row clearfix">
-						<div class="col-md-3 column">
-							<img src="images/person1.jpg">
-						</div>
-						<div class="col-md-9 column">
-							
+				<img src="images/person1.jpg">
+							<div>
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
 								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
+							</div>	
 							<h4>
 								saurabh undre
 							</h4>
