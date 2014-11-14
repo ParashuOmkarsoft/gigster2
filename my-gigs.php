@@ -128,7 +128,7 @@ include('cfg/more-functions.php');
                           <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>-->
                           <input type="checkbox" ><img src="images/grey-star.png">
                           <!--<?php //echo $r;?>
-                          <span class="star<?php echo $r; ?>"></span>
+                          <span class="star<?php $r; ?>"></span>
                           <br/>
                           <?php
 						}
