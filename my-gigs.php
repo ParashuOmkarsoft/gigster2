@@ -94,7 +94,7 @@ include('cfg/more-functions.php');
     <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;margin-left: 15px;"></a>
+      <div class="col-md-4" style="padding: 0px;">
       <span id="bid"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
       <?php if($projectstatus == '100') { ?>  <button type="button" class="btn markascomplete-btn1" >Send feedback</button> <?php } ?>
         </a></span></div>
@@ -146,7 +146,7 @@ include('cfg/more-functions.php');
         </div>
       </div>
       <?php $mygiginprogress = ""; ?>
-     
+      <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
       <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content cform">
