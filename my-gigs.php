@@ -127,7 +127,7 @@ include('cfg/more-functions.php');
                           <?php /*?><option value="<?php echo $r;?>"><?php echo $r;?></option><?php */?>
                           <input type="checkbox" name="myradio" value="<?php echo $r;?>" />
                           <?php //echo $r;?>
-                          <span class="star<?php echo $r; ?>"><?php echo'sss';?></span>
+                          <span class="star<?php echo $r; ?>"></span>
                           <br/>
                           <?php
 						}
@@ -136,7 +136,7 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="col-sm-12 logsign"style="padding: 0px;">
+                      <div class="col-sm-12 logsign"style="padding: 0px;margin-top: 64px;">
                         <button type="submit" class="btn mark-btn">Mark as Complete</button>
                       </div>
                     </div>
@@ -151,7 +151,7 @@ include('cfg/more-functions.php');
       <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;margin-left: 15px;"></a>
       <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content cform">
+          <div class="modal-content dform">
             <div class="container">
               <div class="col-md-12">
                 <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" role="form" method="post" >
