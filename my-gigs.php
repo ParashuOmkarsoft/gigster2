@@ -121,7 +121,7 @@ include('cfg/more-functions.php');
                       
                       <div class="col-md-8" style="padding: 0px;">
                       
-                        <div class="form-control form-radio" id="rating" name="rating" >
+                        <div class="form-control form-radio" <!-- id="rating" name="rating" --> >
                       	<!--<?php for($r=1;$r<=5;$r++)
 						{
 						?>
