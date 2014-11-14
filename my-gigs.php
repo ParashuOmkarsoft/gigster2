@@ -151,7 +151,7 @@ include('cfg/more-functions.php');
       <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;margin-left: 15px;"></a>
       <div id="msgmodal<?php echo $awardedto;?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content dform">
+          <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12">
                 <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendmessage" role="form" method="post" >
