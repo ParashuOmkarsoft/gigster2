@@ -69,33 +69,7 @@ if($ngigdetails)
 					
 					
 			?>
-			<div class="col-md-6 column">
-					<div class="row clearfix">
-						<div class="col-md-3 column">
-							<img src="images/person1.jpg">
-						</div>
-						<div class="col-md-9 column">
-							
-								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
-								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
-								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
-								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
-								<img src="http://gigster2.fountaintechies.com/images/star_4.png">
-							<h4>
-								saurabh undre
-							</h4>
-							<h2 id="map"  style="margin: 0 auto;">
-								singapore
-							</h2>
-							<h4>
-								php,html5
-							</h4>
-							
-							<input type="checkbox" name="invited[]" id="invited" value="1">
-						</div>
-					</div>
-				</div>
-			<div class="col-md-6 column">
+			<div class="col-md-12 column" style="boder-bottom:1px solid #fd8900;">
 					<div class="row clearfix">
 						<div class="col-md-3 column">
 							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
