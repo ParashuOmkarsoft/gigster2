@@ -126,14 +126,11 @@ if($checkSql['count']>0)
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
                         <div class="form-control form-radio" >
-                  		<?php for($rt=1;$rt<=5;$rt++)
-						{
-							?>
-							<input type="radio" name="rating[]" id="rating" value="<?php echo $rt;?>" /> <?php echo $rt;?>
-							<?php
-						}
-						?>
-                        </div>
+ <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+						
+                         <script type="text/javascript">
+						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
+						 </script>                        </div>
                       </div>
                     </div>
                     <div class="form-group">

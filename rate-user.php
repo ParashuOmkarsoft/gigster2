@@ -5,7 +5,7 @@ include('cfg/more-functions.php');
 $gigster=filter_text($_POST['gigster']);//
 $experience=filter_text($_POST['experience']);//
 $experience=htmlentities($experience);
-$rating=filter_text($_POST['rating'][0]);//
+$rating=filter_text($_POST['rating']);//
 if(!$rating)
 {
 	$rating=0;
