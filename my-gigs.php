@@ -249,7 +249,7 @@ box-shadow: 0px 0px 2px #000000;'";
  </div>
 <div class="col-md-4"> 
 
-      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; */padding-top: 158px;/* padding-left: 0px; */margin-left: 0px;"><img src="images/mike2.jpg">
+      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; */padding-top: 253px;/* padding-left: 0px; */margin-left: 0px;"><img src="images/mike2.jpg">
       		<h4>Myke Tyco</h4>
       		<img src="images/star_1.png" style="float: left;">
       		<img src="images/star_1.png" style="float: left;">
@@ -259,8 +259,6 @@ box-shadow: 0px 0px 2px #000000;'";
      	 </div>               
  </div>
 
-
-    <div class="col-md-12" style="padding: 0px;">
       
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
         <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
