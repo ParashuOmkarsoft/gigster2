@@ -786,7 +786,7 @@ function get_user_rating($userId)
 }
 function get_user_assigned_projects($userId)
 {
-$query="select * from btr_assignment where awardedto=$userId";	
+$query="select * from btr_assignment where awardedto=$userId order by id DESC";	
 $sql=@db_query($query);
 if($sql['count']>0)
 {

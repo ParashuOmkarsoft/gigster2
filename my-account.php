@@ -261,13 +261,24 @@ include('cfg/more-functions.php');
        </section>
       <?php if($assignedgigs)
 	  {
-		for($i=0;$i<$assignedgigs['count'];$i++)
+		  if($assignedgigs['count']<=4)
+		  {
+			  $cnt=$assignedgigs['count'];
+		  }
+		  else
+		  {
+			  $cnt=4;
+		  }
+?>
+    <section class="container lastsection ">
+<?php
+		for($i=0;$i<$cnt;$i++)
 		{
 			$assignedgig=$assignedgigs['rows'][$i];
 			$assignedgigdetails=get_gig_details($assignedgig['projectId']);
 		  ?>
-      
-    <section class="container lastsection ">
+      <section class="container lastsection ">
+
       <div class="row">
         <div class="col-md-6"><h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
           <h4>Description :</h4>
@@ -278,9 +289,26 @@ include('cfg/more-functions.php');
 	   <?php echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
-       </section>
+ </section>
         <?php
 		}
+		?>
+		       
+		<?php
+		if($assignedgigs['count']>4)
+		{
+		?>
+        <div class="clearfix"></div>
+		<span style="float:right;">
+        <a href="<?=$serverpath;?>assignments" style="font-size:16px;font-weight:bold;">View All</a>
+        </span>
+        <div class="clearfix"></div>
+		<?php			
+		}
+		?>
+		</section>
+		<?php
+
 	  }
 	  else
 	  {
