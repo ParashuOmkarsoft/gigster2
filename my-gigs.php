@@ -143,7 +143,7 @@ include('cfg/more-functions.php');
               </div>
             </div>
           </div>
-        </div>
+        </div>     
       </div>
       <?php $mygiginprogress = ""; ?>
      
@@ -243,6 +243,19 @@ box-shadow: 0px 0px 2px #000000;'";
      </div>
 </div>
     </div>
+    
+<div class="col-md-4"> 
+
+      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; */padding-top: 158px;/* padding-left: 0px; */margin-left: 0px;"><img src="images/mike2.jpg">
+      		<h4>Myke Tyco</h4>
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+     	 </div>               
+ </div>
+
     </div>
     <div class="col-md-12" style="padding: 0px;">
       <div class="col-md-12" style="padding: 0px;">
