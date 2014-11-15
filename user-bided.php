@@ -169,8 +169,9 @@ box-shadow: 0px 0px 2px #000000;'";
         <div class="tyco"style="width: 169px;">
           <h4><?php echo $nametodisplay; ?></h4>
         </div>
-
+        <div>
         <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;"/> Awarded to saurabh
+        </div>
       </div>
     </div>
     </div>   
