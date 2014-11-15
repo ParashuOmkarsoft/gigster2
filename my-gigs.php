@@ -243,7 +243,7 @@ box-shadow: 0px 0px 2px #000000;'";
      </div>
 </div>
     </div>
-    
+ </div>
 <div class="col-md-4"> 
 
       	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; */padding-top: 158px;/* padding-left: 0px; */margin-left: 0px;"><img src="images/mike2.jpg">
@@ -256,7 +256,7 @@ box-shadow: 0px 0px 2px #000000;'";
      	 </div>               
  </div>
 
-    </div>
+ 
     <div class="col-md-12" style="padding: 0px;">
       <div class="col-md-12" style="padding: 0px;">
         <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
