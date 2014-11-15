@@ -1254,3 +1254,6 @@ border: 5px solid #febe07;
 border-radius: 3px;
 padding: 33px;}
 
+.row-bottom{
+    border-bottom: 2px solid #fd8900;
+}

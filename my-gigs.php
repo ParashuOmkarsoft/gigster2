@@ -139,6 +139,12 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-2">
+        <div class="mike"> <img src="http://gigster2.fountaintechies.com/image.php?image=/uploads/profileimage/5.jpg&amp;width=75&amp;height=75&amp;cropratio=1:1"></div>
+        <div class="tyco">
+          <h4>Shital Pisolkar</h4>
+        </div>
+      </div>
                 </form>
               </div>
             </div>
