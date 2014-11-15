@@ -59,7 +59,7 @@ else
     </div>
     <div id="front" class="col-md-4 giginnerimg">
       
-     
+      <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1">
     
      <!--  <div class="col-md-6" style="width: 276px;"> -->
         <div class="col-md-6" style="width: 273px;"> 
