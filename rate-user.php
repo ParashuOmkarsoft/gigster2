@@ -1,31 +1,82 @@
 <?php
-include('cfg/cfg.php');
+include('cfg/cfg.php'); 
+include('cfg/functions.php');
+include('cfg/more-functions.php'); 
 $gigster=filter_text($_POST['gigster']);//
 $experience=filter_text($_POST['experience']);//
-$rating=filter_text($_POST['rating']);//
+$experience=htmlentities($experience);
+$rating=filter_text($_POST['rating'][0]);//
+if(!$rating)
+{
+	$rating=0;
+}
 $projectId=filter_text($_POST['projectId']);//
-$uInfo=get_user_Info($_SESSION['uId']);//
+$currentuserInfo=get_user_Info($_SESSION['uId']);//
 $uId=$uInfo['userId'];
-$checkquery="select * from btr_reviews where rateto=$gigster and ratefrom=$uId and projectId=$projectId";
-$checkSql=@db_query($checkquery);
-if($checkSql['count']>0)
+$gigdetails=get_gig_details($projectId);
+$gigname=$gigdetails['prjTitle'];
+$awardedto=project_awarded_to($projectId);
+$awarded=$awardedto['awardedto'];
+$awardedtoInfo=get_user_Info(encrypt_str($awarded));
+if($uId==$gigdetails['userId'])
 {
 	
+$updateQuery=@db_query("update btr_projects set status='3' where prjId=$prjId");
+
+		$mailmatter="<p>Congratulation</p>
+				<p>Gig <strong>$gigname</strong> is marked as complete.
+				<p>&nbsp;</p>
+				<p>Regards</p>
+				<p>$sitename</p>";
+
+if($awardedtoInfo['notify']=='1')
+{
+
+	$mailto=filter_text($awardedtoInfo['userId']);
+								$mailsubject="Congratulation, you have recieved a final feedback on gig $gigname.";
+								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+}	
+			$mailmatter=strip_tags($mailmatter);
+								$mailmatter=nl2br($mailmatter);
+								$mailmatter=htmlentities($mailmatter);
+								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery.="values(18,$awardedto,'$mailmatter',".gmmktime().",".$prjId.",'0','t')";
+				$msgsql=@db_query($msgquery);
+				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
+				$insertQuery.="values($uId,$awardedto,$projectId,'$experience','$rating',".gmmktime().")";
+				$insertSql=@db_query($insertQuery,3);
+				
 }
 else
 {
-	$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
-	$insertQuery.="values($uId,$gigster,$projectId,'$experience','$rating',".gmmktime().")";
-	$insertSql=@db_query($insertQuery,3);
-	if($insertSql)
-	{
-		$updateQuery="update btr_projects set status='3' where prjId=$projectId";
-		$updateSql=@db_query($updateQuery);
-	?>
-	<script type="text/javascript">
-	window.parent.location="<?php echo $_SERVER['HTTP_REFERER']; ?>";
-	</script>
-	<?php
-	}
+
+
+	
+	$mailmatter="<p>Hi </p>
+				<p>Gig <strong>$gigname</strong> is requested to be marked as complete.
+				<p>&nbsp;</p>
+				<p>Regards</p>
+				<p>$sitename</p>";
+		
+				if($ownerInfo['notify']=="1")
+				{
+					$mailto=filter_text($awardedtoInfo['userId']);
+								$mailsubject="You have recieved a feedback and completetion request on your gig $gigname.";
+								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+				}
+				
+				$mailmatter=strip_tags($mailmatter);
+								$mailmatter=nl2br($mailmatter);
+								$mailmatter=htmlentities($mailmatter);
+								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
+				$msgsql=@db_query($msgquery);
+				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
+				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
+				$insertSql=@db_query($insertQuery,3);
 }
+
 ?>
+<script type="text/ecmascript">
+window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+</script>

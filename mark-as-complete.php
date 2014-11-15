@@ -7,7 +7,7 @@ $prjId=filter_text($prjId);
 $uInfo=get_user_Info($_SESSION['uId']);
 $projectInfo=get_gig_details($prjId);
 $gigname=$projectInfo['prjTitle'];
-$ownerInfo=get_uesr_Info(encrypt_str($projectInfo['userId']));
+$ownerInfo=get_user_Info(encrypt_str($projectInfo['userId']));
 if($projectInfo['userId']==$uInfo['userId'])
 {
 $updateQuery=@db_query("update btr_projects set status='3' where prjId=$prjId");
@@ -41,6 +41,7 @@ else{
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
+		echo $mailmatter;
 				if($ownerInfo['notify']=="1")
 				{
 					$mailto=filter_text($awardedtoInfo['userId']);
@@ -54,6 +55,11 @@ else{
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values(".$uInfo['userId'].",".$projectInfo['userId'].",'$mailmatter',".gmmktime().",".$prjId.",'0','t')";
 				$msgsql=@db_query($msgquery);
+				?>
+				<script type="text/javascript">
+				window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+				</script>
+				<?php
 				
 				
 	
