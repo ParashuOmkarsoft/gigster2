@@ -170,7 +170,7 @@ box-shadow: 0px 0px 2px #000000;'";
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4>
         </div>
         <div style="float: left;width: 200px; margin-left: 126px;">
-        <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;"/>Awarded to saurabh
+        <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;margin-right: 23px;"/>Awarded to saurabh
         </div>
       </div>
     </div>
@@ -186,8 +186,8 @@ box-shadow: 0px 0px 2px #000000;'";
 			?>
                     <br/>
                     <div class="clearfix"></div>
-            <span style="float:right;" class="col-sm-6">
-			<img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;"/>
+          
+			
        
             </span>
 			<?php
