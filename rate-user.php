@@ -12,19 +12,23 @@ if(!$rating)
 }
 $projectId=filter_text($_POST['projectId']);//
 $currentuserInfo=get_user_Info($_SESSION['uId']);//
-$uId=$uInfo['userId'];
+$uId=$currentuserInfo['userId'];
 $gigdetails=get_gig_details($projectId);
 $gigname=$gigdetails['prjTitle'];
 $awardedto=project_awarded_to($projectId);
 $awarded=$awardedto['awardedto'];
 $awardedtoInfo=get_user_Info(encrypt_str($awarded));
+
+
 if($uId==$gigdetails['userId'])
 {
 	
-$updateQuery=@db_query("update btr_projects set status='3' where prjId=$prjId");
+$updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
 
 		$mailmatter="<p>Congratulation</p>
 				<p>Gig <strong>$gigname</strong> is marked as complete.
+				<p>Feedback : $experience</p>
+				<p>Rating : $rating</p>				
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
@@ -43,7 +47,7 @@ if($awardedtoInfo['notify']=='1')
 				$msgquery.="values(18,$awardedto,'$mailmatter',".gmmktime().",".$prjId.",'0','t')";
 				$msgsql=@db_query($msgquery);
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
-				$insertQuery.="values($uId,$awardedto,$projectId,'$experience','$rating',".gmmktime().")";
+				$insertQuery.="values($uId,$awarded,$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
 				
 }
@@ -53,7 +57,9 @@ else
 
 	
 	$mailmatter="<p>Hi </p>
-				<p>Gig <strong>$gigname</strong> is requested to be marked as complete.
+				<p>Gig <strong>$gigname</strong> is requested to be marked as complete.</p>
+				<p>Feedback : $experience</p>
+				<p>Rating : $rating</p>				
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";

@@ -103,7 +103,7 @@ include('cfg/more-functions.php');
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
-                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" target="targetframe" >
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" >
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Mark gig as complete</h2>
