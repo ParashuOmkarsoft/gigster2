@@ -17,8 +17,8 @@
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>
-          <label for="creategig" class="col-sm-2 control-label labelb">Your pay as</h2>
-          <div class="form-group">
+                   <div class="form-group">
+           <label for="gigdescription" class="col-sm-2 control-label dis ">Your pay as</label>
             <div class=" col-sm-8">
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('f')" checked="checked">
