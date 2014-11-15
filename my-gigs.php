@@ -241,8 +241,11 @@ box-shadow: 0px 0px 2px #000000;'";
          </div>
          
      </div>
-</div>
+	</div>
     </div>
+    <div class="col-md-8" style="padding: 0px;">
+        <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
+      </div>
  </div>
 <div class="col-md-4"> 
 
@@ -258,9 +261,7 @@ box-shadow: 0px 0px 2px #000000;'";
 
 
     <div class="col-md-12" style="padding: 0px;">
-      <div class="col-md-12" style="padding: 0px;">
-        <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
-      </div>
+      
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
         <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
           <div class="tyco">
