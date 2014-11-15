@@ -8,7 +8,7 @@
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
             <div class="col-sm-10">
-              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" maxlength="45" >
+              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" maxlength="45" style="width: 70%;">
             </div>
           </div>
           <div class="form-group">
@@ -18,8 +18,8 @@
             </div>
           </div>
                    <div class="form-group">
-           <label for="gigdescription" class="col-sm-3 control-label" style="padding-top: 12px;">Your pay as</label>
-            <div class=" col-sm-8">
+           <label for="gigdescription" class="col-sm-3 control-label" style="padding-top: 12px; width:133px;">Your pay as</label>
+            <div class="col-sm-8" style="padding:0px";>
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('f')" checked="checked">
                 Per Gig </label>
