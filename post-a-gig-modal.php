@@ -17,7 +17,7 @@
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>
-          <h2 class="loginlead" >Your pay as</h2>
+          <label for="creategig" class="col-sm-2 control-label labelb">Your pay as</h2>
           <div class="form-group">
             <div class=" col-sm-8">
               <label class="radio-inline">
