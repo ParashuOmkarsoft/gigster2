@@ -73,11 +73,11 @@ if($ngigdetails)
 					<div class="row clearfix">
 						
 							
+							
+							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a><br>
 							<h4>
 								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
 							</h4>
-							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
-				
 						
 							 <?php
                               
@@ -114,6 +114,7 @@ if($ngigdetails)
 		</div>
 	</div>
 </form>
+<button type="button" class="btn invite-btn">Invite</button>
 
 
 	
