@@ -69,9 +69,13 @@ if($ngigdetails)
 					
 					
 			?>
-			<div class="col-md-12 column" style="boder-bottom:1px solid #fd8900;">
+			<div class="col-md-12 column">
 					<div class="row clearfix">
 						
+							
+							<h4>
+								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
+							</h4>
 							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
 				
 						
@@ -90,9 +94,6 @@ if($ngigdetails)
         <?php
 							  }
 							  ?>
-							<h4>
-								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
-							</h4>
 							<h2 id="map"  style="margin: 0 auto;">
 								<?php echo $gigsterInfo['city']; ?>
 							</h2>
