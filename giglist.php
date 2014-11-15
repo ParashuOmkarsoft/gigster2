@@ -76,7 +76,7 @@ include('cfg/more-functions.php');
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
    
       <div class="col-md-8"></div>
-      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),325));?></p>
+      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),100));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg">
       <div class="col-md-12">
