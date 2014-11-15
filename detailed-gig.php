@@ -63,7 +63,7 @@ else
     
      <!--  <div class="col-md-6" style="width: 276px;"> -->
         <div class="col-md-6" style="width: 273px; margin-top: 10px;"> 
-        <h2 class="mikename1"><?php echo $nametodisplay;?></h2>
+        <h2 class="mikename1"><?php echo $nametodisplay;?></h2><br><br><br>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
