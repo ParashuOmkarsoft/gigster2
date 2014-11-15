@@ -79,15 +79,13 @@ include('cfg/more-functions.php');
       <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),90));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg">
-      <div class="col-md-12">
-       
-	</div>
-        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
-        <h4>&nbsp;</h4>
-      
+
       <div class="col-md-12">
       
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
+       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
+        <h4>&nbsp;</h4>
+      
       <div class="col-md-12" style="margin-left: 20px; margin-top: 15px;">
         <?php
                               
