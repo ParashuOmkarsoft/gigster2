@@ -18,7 +18,7 @@
             </div>
           </div>
                    <div class="form-group">
-           <label for="gigdescription" class="col-sm-2 control-label dis ">Your pay as</label>
+           <label for="gigdescription" class="col-sm-3 control-label" style="padding-top: 12px;">Your pay as</label>
             <div class=" col-sm-8">
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('f')" checked="checked">
