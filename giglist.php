@@ -80,13 +80,14 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-4 giginnerimg gigimg">
 
-      <div class="col-md-12">
+      <div class="col-md-12" style="padding-top:15px;">
       
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
+      </div> 
        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
       
-      <div class="col-md-12" style="margin-left: 20px; margin-top: 15px;">
+      <div class="col-md-12" >
         <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
