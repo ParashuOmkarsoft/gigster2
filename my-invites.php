@@ -30,7 +30,7 @@ if($ngigdetails)
 
 ?>
 
-<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();">
+<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();" style="max-height: 500px;overflow: scroll;">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 <div class="row clearfix">
 		<div class="col-md-12 column">
@@ -71,10 +71,10 @@ if($ngigdetails)
 			?>
 			<div class="col-md-12 column" style="boder-bottom:1px solid #fd8900;">
 					<div class="row clearfix">
-						<div class="col-md-3 column">
+						
 							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a>
-						</div>
-						<div class="col-md-9 column">
+				
+						
 							 <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
