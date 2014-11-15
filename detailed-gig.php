@@ -58,11 +58,12 @@ else
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
     </div>
     <div id="front" class="col-md-4 giginnerimg">
-      <h2 class="mikename1"><?php echo $nametodisplay;?></h2>
+      
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1">
     
      <!--  <div class="col-md-6" style="width: 276px;"> -->
         <div class="col-md-6" style="width: 273px; margin-top: 10px;"> 
+        <h2 class="mikename1"><?php echo $nametodisplay;?></h2>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
