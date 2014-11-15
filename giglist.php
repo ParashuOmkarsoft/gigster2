@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
       <div class="col-md-8"></div>
       <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),90));?></p>
     </div>
-    <div class="col-md-4 giginnerimg gigimg">
+    <div class="col-md-4 giginnerimg gigimg" style="margin-bottom: 0;">
 
       <div class="col-md-12" style="padding-top:15px;">
       
@@ -103,7 +103,7 @@ include('cfg/more-functions.php');
         <?php
 							  }
 							  ?>
-	</div>
+	
       </div>
       <?php 
 			
