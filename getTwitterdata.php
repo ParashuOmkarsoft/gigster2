@@ -23,7 +23,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
         $uid = $user_info->id;
         $username = $user_info->name;
 		$fbImage = $user_info->profile_image_url;
-		
+		$fbImage=str_replace("_normal","",$fbImage);
       $checkQuery="select * from btr_users where twittid='".$uid."'";
 	
 	   $checkSql=@db_query($checkQuery);
@@ -32,6 +32,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   {    
 		      if($fbImage)
 		  {
+			 
 			  $ext=get_extension($fbImage);
 			  $ext=explode("?",$ext);
 			  $ext=$ext[0];
