@@ -373,7 +373,7 @@ $puname=$puuinfo['username'];
 			}
 			?>
       </div>
-      <div class="col-md-4"style="margin-top: -30px;">
+      <div class="col-md-4"style="margin-top:30px;">
         <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
         <div style="clear:both"></div>
         <div class="tyco pull-right";>
@@ -389,7 +389,11 @@ $puname=$puuinfo['username'];
         
       </div>
       <div style="float: right;">
-        <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;"/>Awarded to else
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
         </div>
     </div>           
  </div>
