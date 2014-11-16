@@ -375,10 +375,10 @@ $puname=$puuinfo['username'];
       </div>
       <div class="col-md-4"> 
         <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-        <div class="tyco">
+         </div>
+      <div class="tyco pull-right">
           <h4><?php echo $nametodisplay; ?></h4>
         </div>
-      </div>
     </div>
     <div class="row">
       <div class="col-md-10">
