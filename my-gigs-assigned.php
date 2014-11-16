@@ -379,11 +379,13 @@ $puname=$puuinfo['username'];
       <div class="tyco pull-right" style="margin-right:15px; margin-top:0px;">
           <h4><?php echo $nametodisplay; ?></h4>
         </div>
+        <div>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
         <img src="<?php echo $serverpath;?>images/star_1.png" />
         <img src="<?php echo $serverpath;?>images/star_1.png" />
         <img src="<?php echo $serverpath;?>images/star_1.png" />
         <img src="<?php echo $serverpath;?>images/star_1.png" />
+        </div>
     </div>
     <div class="row">
       <div class="col-md-10">
