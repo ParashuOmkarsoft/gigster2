@@ -376,7 +376,7 @@ $puname=$puuinfo['username'];
       <div class="col-md-4"style="margin-top:30px;">
         <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
         <div style="clear:both"></div>
-        <div class="tyco pull-right";>
+        <div class="pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
           <!-- <div>
           <img src="<?php echo $serverpath;?>images/star_1.png" />
@@ -390,10 +390,10 @@ $puname=$puuinfo['username'];
       </div>
       <div style="float: right;">
         <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
         </div>
     </div>           
  </div>
