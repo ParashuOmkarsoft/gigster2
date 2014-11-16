@@ -376,9 +376,14 @@ $puname=$puuinfo['username'];
       <div class="col-md-4"> 
         <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
          </div>
-      <div class="tyco pull-right">
+      <div class="tyco pull-right" style="margin-right:15px; margin-top:0px;">
           <h4><?php echo $nametodisplay; ?></h4>
         </div>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
     </div>
     <div class="row">
       <div class="col-md-10">
