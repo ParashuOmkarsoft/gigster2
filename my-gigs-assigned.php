@@ -373,18 +373,25 @@ $puname=$puuinfo['username'];
 			}
 			?>
       </div>
-      <div class="col-md-4"> 
-
-        <div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
-         <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-          <h4><?php echo $nametodisplay; ?>Mike</h4>
-          <img src="images/star_1.png" style="float: left;">
-          <img src="images/star_1.png" style="float: left;">
-          <img src="images/star_1.png" style="float: left;">
-          <img src="images/star_1.png" style="float: left;">
-          <img src="images/star_1.png" style="float: left;">
-       </div> 
-      </div>              
+      <div class="col-md-4"style="margin-top: -30px;">
+        <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
+        <div style="clear:both"></div>
+        <div class="tyco pull-right";>
+          <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
+          <!-- <div>
+          <img src="<?php echo $serverpath;?>images/star_1.png" />
+          <img src="<?php echo $serverpath;?>images/star_1.png" />
+          <img src="<?php echo $serverpath;?>images/star_1.png" />
+          <img src="<?php echo $serverpath;?>images/star_1.png" />
+          <img src="<?php echo $serverpath;?>images/star_1.png" />
+          </div> -->
+        </div>
+        
+      </div>
+      <div style="float: right;">
+        <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;"/>Awarded to else
+        </div>
+    </div>           
  </div>
     </div>
     <div class="row">
