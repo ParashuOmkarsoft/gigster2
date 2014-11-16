@@ -374,19 +374,16 @@ $puname=$puuinfo['username'];
 			?>
       </div>
       <div class="col-md-4"> 
-        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-         </div>
-      <div class="tyco pull-right" style="margin-right:15px; margin-top:0px;">
+        <div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">      
           <h4><?php echo $nametodisplay; ?></h4>
-        </div>
-        <div>
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        </div>
-    </div>
+          <img src="images/star_1.png" style="float: left;">
+          <img src="images/star_1.png" style="float: left;">
+          <img src="images/star_1.png" style="float: left;">
+          <img src="images/star_1.png" style="float: left;">
+          <img src="images/star_1.png" style="float: left;">
+       </div>               
+      </div>
     <div class="row">
       <div class="col-md-10">
         <h4>Completion Status</h4>
