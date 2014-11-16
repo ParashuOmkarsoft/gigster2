@@ -166,7 +166,7 @@ box-shadow: 0px 0px 2px #000000;'";
     <div class="col-md-4"style="margin-top: -30px;">
         <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
         <div style="clear:both"></div>
-        <div class="tyco"style="width: 169px;">
+        <div class="tyco pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
           <!-- <div>
           <img src="<?php echo $serverpath;?>images/star_1.png" />
@@ -176,7 +176,7 @@ box-shadow: 0px 0px 2px #000000;'";
           <img src="<?php echo $serverpath;?>images/star_1.png" />
           </div> -->
         </div>
-        <div style="float: left;width: 200px; margin-left: 126px;">
+        <div style="float: right;">
         <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;margin-right: 23px;"/>Awarded to else
         </div>
       </div>
