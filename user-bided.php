@@ -176,10 +176,11 @@ box-shadow: 0px 0px 2px #000000;'";
           <img src="<?php echo $serverpath;?>images/star_1.png" />
           </div> -->
         </div>
-        <div style="float: right;">
+        
+      </div>
+      <div style="float: right;">
         <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;margin-right: 23px;"/>Awarded to else
         </div>
-      </div>
     </div>
     </div>   
     <div class="row">
