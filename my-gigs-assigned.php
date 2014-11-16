@@ -389,11 +389,11 @@ $puname=$puuinfo['username'];
         
       </div>
       <div style="float: right;">
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
         </div>
     </div>           
  </div>
