@@ -240,14 +240,26 @@ box-shadow: 0px 0px 2px #000000;'";
  </div>
 <div class="col-md-4"> 
 
-      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+      	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-      		<h4><?php echo $nametodisplay; ?>Mike</h4>
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
+      		<h4><?php echo $nametodisplay; ?></h4>
+      		<?php
+			   for($t=$gigsterrating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" />
+        <?php
+							  }
+							   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        
+<?php
+							  }
+
+			?>
      	 </div>               
  </div>
 
