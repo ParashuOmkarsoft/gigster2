@@ -136,12 +136,12 @@ if($checkSql['count']>0)
       </div>          
       </div>
      <div class="row">
-         
-          	<?php if(get_project_feedback_1($prjDetails['prjId'],$uInfo['userId']))
+         <h3>Feedback</h3>
+          	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
 			{
 				?>
-            <h4>FeedBack Recieved</h4><div class="row">
-            <?php $userReview=get_project_review($prjDetails['prjId']);
+            <h4>Gig owner</h4><div class="row">
+            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
 						
 			?>
              <div class="col-md-10">
@@ -171,11 +171,12 @@ if($checkSql['count']>0)
           </div>
           <?php 
 			}
-			if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
+			 $mawardedto=project_awarded_to($prjDetails['prjId']);
+			if(get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']))
 			{
 					?>
-            <h4>FeedBack Given</h4><div class="row">
-            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
+            <h4>Gigster</h4><div class="row">
+            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
               <div class="col-md-10">

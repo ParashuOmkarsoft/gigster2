@@ -75,14 +75,15 @@ include('cfg/more-functions.php');
     <div class="col-md-12">
       <div class="col-md-10">
         <p id="gigpara">
+        <h3>Feedback</h3>
          <?php 
 		 $mawardedto=project_awarded_to($opengig['prjId']);
 		 $userReview="";
-		 $userReview=get_project_feedback_1($opengig['prjId'],$uInfo['userId']);
+		 $userReview=get_project_feedback_1($opengig['prjId'],$opengig['userId']);
 		 if($userReview)
 		 {
 		 ?>
-		 <h4>FeedBack Recieved</h4><div class="row">
+		 <h4>Gig owner</h4><div class="row">
             <?php 
 						
 			?>
@@ -118,7 +119,7 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 <h4>FeedBack Recieved</h4><div class="row">
+		 <h4>Gigster</h4><div class="row">
             <?php 
 						
 			?>
