@@ -135,20 +135,18 @@ if($checkSql['count']>0)
           	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
 			{
 				?>
-            <div class="row">
+            <h4>Gig owner</h4><div class="row">
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
 						
 			?>
              <div class="col-md-10">
           <div class="col-md-12">
-		 	<h4>Gig owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
 			}
 			?>
 			<Br/>
-			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
 		    for($t=$prjRating;$t<5;$t++) 
@@ -164,7 +162,6 @@ if($checkSql['count']>0)
 			<?php
 			}
 			?>
-			 </div>	
           </div>
           </div>
           <?php 
@@ -173,20 +170,18 @@ if($checkSql['count']>0)
 			if(get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']))
 			{
 					?>
-            <div class="row">
+            <h4>Gigster</h4><div class="row">
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
               <div class="col-md-10">
           <div class="col-md-12">
-		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
 			}
 			?>
 			<Br/>
-			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
 		    for($t=$prjRating;$t<5;$t++) 
@@ -202,9 +197,8 @@ if($checkSql['count']>0)
 			<?php
 			}
 			?>
-			</div>
           </div>
-          </div>
+            </div>
           <?php 
 			}
 		  ?>
