@@ -135,12 +135,13 @@ if($checkSql['count']>0)
           	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
 			{
 				?>
-            <h4>Gig owner</h4><div class="row">
+            <div class="row">
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
 						
 			?>
              <div class="col-md-10">
           <div class="col-md-12">
+		 	<h4>Gig owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -170,12 +171,13 @@ if($checkSql['count']>0)
 			if(get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']))
 			{
 					?>
-            <h4>Gigster</h4><div class="row">
+            <div class="row">
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
               <div class="col-md-10">
           <div class="col-md-12">
+		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
