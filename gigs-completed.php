@@ -71,7 +71,7 @@ include('cfg/more-functions.php');
       <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
         <div class="col-md-8" style="padding: 0;">
         <!-- <p id="gigpara"> -->
-        <h3>Feedback</h3>
+        <h3 class="comp-h4">Feedback</h3>
          <?php 
 		 $mawardedto=project_awarded_to($opengig['prjId']);
 		 $userReview="";
