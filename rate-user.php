@@ -44,7 +44,7 @@ if($awardedtoInfo['notify']=='1')
 								$mailmatter=nl2br($mailmatter);
 								$mailmatter=htmlentities($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery.="values(18,$awardedto,'$mailmatter',".gmmktime().",".$prjId.",'0','t')";
+				$msgquery.="values(18,$awarded,'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,$awarded,$projectId,'$experience','$rating',".gmmktime().")";
@@ -101,14 +101,19 @@ else
 				}
 				
 				$mailmatter=strip_tags($mailmatter);
-								$mailmatter=nl2br($mailmatter);
-								$mailmatter=htmlentities($mailmatter);
-								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$mailmatter=nl2br($mailmatter);
+				$mailmatter=htmlentities($mailmatter);
+				
+				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
+				
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
+				
+				
+				
 	
 	}
 }
