@@ -84,7 +84,7 @@ include('cfg/more-functions.php');
 						
 			?>
              <div class="col-md-10">
-          <div class="col-md-12">
+          <div class="col-md-12" style="padding: 0px;">
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
