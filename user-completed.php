@@ -54,7 +54,7 @@ if($checkSql['count']>0)
 			  }
 			  $gigsterrating=0;
 			
-			$profilepic="uploads/profileimage/".$muInfo['profileimage'];
+			 $profilepic="uploads/profileimage/".$muInfo['profileimage'];
 			
 			if(file_exists($profilepic))
 			{
@@ -64,12 +64,52 @@ if($checkSql['count']>0)
 			{
 				$profilepic="images/admin.png";
 			}
+			$gigsterrating=get_user_rating($muInfo['userId']);		
+			
 ?>
 <section id="firstsection" class="container">
       <div class="row">
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
+            <div>
+            <?php echo nl2br(html_entity_decode($prjDetails['prjdesc']));?>
+            </div>
       	  </div>
+          <div  style="float:right;margin-right:20px;">
+          <table border="0" cellpadding="0" cellspacing="0" ><tr>
+          <td style="text-align:center !important;">
+          <img src="<?php echo $serverpath;?>image.php?image=/<?=$profilepic;?>&width=75&height=75" style="margin-top:20px !important;" />
+          </td>
+          </tr>
+          <tr>
+          <td style="text-align:center !important;">
+         <strong> <?php echo $nametodisplay;?></strong>
+          </td>
+          </tr>
+          <tr>
+          <td style="text-align:center !important;">
+            <?php 
+			for($t=$gigsterrating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png"  style="margin:0px !important;"/>
+        <?php
+							  }
+							   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
+        
+<?php
+							  }
+
+         ?>
+		  </td>
+          </tr>
+          </table>
+          </div>
+          
          <div class="col-md-4" style="padding: 0;">          
 
 				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
@@ -143,7 +183,7 @@ if($checkSql['count']>0)
              <div class="col-md-10">
           <div class="col-md-12">
           	 <h3>Feedback</h3>
-		 	<h4>Gig owner</h4>
+		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -181,7 +221,7 @@ if($checkSql['count']>0)
 			?>
           
           <div class="col-md-10" style="margin-left: 30px;margin-bottom: 20px;">
-		 	<h4>Gigster</h4>
+		 	<h4>Gig Owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
