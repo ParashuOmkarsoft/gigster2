@@ -40,9 +40,7 @@
 						  ?>
 						  <li><a href="<?php echo $serverpath;?>mygigs" >MY GIGS</a></li>                                          
    						  <li><a href="<?php echo $serverpath;?>assignments" >MY ASSIGNMENT</a></li>
-                          <li><a href="<?php echo $serverpath;?>myaccount" >
-                          <img src="<?php echo $serverpath;?>image.php?image=/<?=$uProfilepic;?>&width=25&height=25&cropratio=1:1" />
-                          </a></li>  
+                           
                           <?php $unread=get_user_messages($uInfo['userId']);
 						  if($unread)
 						  {
@@ -56,6 +54,11 @@
               			  <li><a  href="<?php echo $serverpath;?>inbox" >INBOX(0)</a></li>                                          
 						  <?php
 						   }
+						   ?>
+						    <li><a href="<?php echo $serverpath;?>myaccount" style="margin-top:-15px;">
+                          <img src="<?php echo $serverpath;?>image.php?image=/<?=$uProfilepic;?>&width=40&height=40&cropratio=1:1" style="border-radius:10px;"/>
+                          </a></li>
+						   <?php
 					  }
 					  else
 					  {

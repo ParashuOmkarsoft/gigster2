@@ -25,14 +25,7 @@ if(!isset($_SESSION['uId']))
 <body>
 <?php include('top-menu.php'); ?>
 <div id="grad"></div>
-<section class="container">
-  <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
-    <li><a href="<?php echo $serverpath;?>assignments">
-      <h5 id="bold-assign">My Assigments</h5>
-      </a></li>
-  </ul>
-</section>
+
 <section class="container">
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>assignments"> <strong> In progress</strong> </a></li>

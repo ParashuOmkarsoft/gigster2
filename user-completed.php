@@ -16,12 +16,7 @@ include('cfg/more-functions.php');
   <body>
     <?php include('top-menu.php'); ?>
     <div id="grad"></div>
-          <section class="container">
-                       <ul id="profilemenu">
-                         <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
-                         <li><a href="<?php echo $serverpath;?>assignments"><h5 id="ass">My Assigments</h5>  </a></li>
-                       </ul>
-               </section>
+         
   
 <section class="container">
 <ul id="profilemenu">
