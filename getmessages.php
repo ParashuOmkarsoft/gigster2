@@ -66,7 +66,7 @@ $projectDetails=get_gig_details($project);
 			{
 				$buserimage="uploads/profileimage/".$fromuserimg;
 			}
-			echo $buserimage;
+		
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
 				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
