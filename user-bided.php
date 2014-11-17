@@ -320,6 +320,7 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
   <div class="clearfix"></div>
   <?php
 	}
+}
 ?>
 </section>
 <?php include('footer.php'); ?>
