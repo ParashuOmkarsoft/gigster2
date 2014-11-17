@@ -19,9 +19,8 @@ include('cfg/more-functions.php');
  
      <section class="container">
       <ul id="profilemenu">
-        <li><a href="<?php echo $serverpath;?>mygigs">My Gigs</a></li>
-        <li><h5 id="pro"><a href="<?php echo $serverpath;?>assignments">My Assignments</a></h5></li>
-        <li><h5 id="pro"><a href="javascript:void(0);">Change Password</a></h5></li>
+
+        <li><h5 <a href="javascript:void(0);">Change Password</a></h5></li>
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></h5></li>                            
       </ul> 
     </section>
