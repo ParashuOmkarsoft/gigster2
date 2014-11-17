@@ -274,6 +274,7 @@ include('cfg/more-functions.php');
 	}
 ?>
 
+</div>
  <div class="col-md-2 giginnerimg gigimg">
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
