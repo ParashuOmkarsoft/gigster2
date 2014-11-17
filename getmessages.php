@@ -82,16 +82,34 @@ $projectDetails=get_gig_details($project);
         
         <br/>
         <div class="form-group" <?php echo $cl;?>> <strong>From: </strong><br/>
-      
+      <?php if($messagethread['rows'][$i]['msgfrom']!=18)
+	  {
+		  ?>
         <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
 
           <a href="<?php echo get_profile_link($serverpath,$messagethread['rows'][$i]['msgfrom']);?>" class="name">
           
           <small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+           <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?>
+          </a>
+          <?php
+	  }
+	  else
+	  {
+		    ?>
+       
+          <p class="message"> 
+
+          <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?><Br/>
+          
+          <small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+          <?php
+	   }
+		  ?>
           <p>
 		  
-		  <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?> </a>
+		 
           <br/>
            <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?><br/>
           </p>
