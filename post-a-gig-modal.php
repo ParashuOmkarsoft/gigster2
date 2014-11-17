@@ -21,10 +21,10 @@
            <label for="gigdescription" class="col-sm-3 control-label" style="padding-top: 12px; width:133px;">Your pay as</label>
             <div class="col-sm-8" style="padding:0px";>
               <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype"  value="h"  onChange="change_caption('f')" checked="checked">
+                <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
                 Per Gig </label>
               <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype" value="f"  onChange="change_caption('h')">
+                <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
                 Per Hour </label>
             </div>
           </div>

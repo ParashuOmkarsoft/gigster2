@@ -6,6 +6,7 @@ include('cfg/more-functions.php');
 $projectId=filter_text($_GET['projectId']);
 $biderid=filter_text($_GET['biderid']);
 $opengig=get_gig_details($projectId);
+
 ?>
 
 <div class="container">
