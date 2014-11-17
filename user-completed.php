@@ -131,7 +131,7 @@ if($checkSql['count']>0)
       </div>          
       </div>
      <div class="row">
-         <h3>Feedback</h3>
+        
           	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
 			{
 				?>
@@ -141,6 +141,7 @@ if($checkSql['count']>0)
 			?>
              <div class="col-md-10">
           <div class="col-md-12">
+          	 <h3>Feedback</h3>
 		 	<h4>Gig owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
@@ -154,13 +155,13 @@ if($checkSql['count']>0)
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
 		   for($t=0;$t<$prjRating;$t++)
 			{
 			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
 			<?php
 			}
 			?>
@@ -192,13 +193,13 @@ if($checkSql['count']>0)
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
 		   for($t=0;$t<$prjRating;$t++)
 			{
 			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
 			<?php
 			}
 			?>
