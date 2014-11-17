@@ -272,7 +272,7 @@ include('cfg/more-functions.php');
 			$pagination.= "<li class=\"disabled\"><a href='#'>Next</a></li>";
 		$pagination.= "</ul></div>";
 	}
-?>+
+?>
 
  <div class="col-md-2 giginnerimg gigimg">
         <?php 
@@ -295,7 +295,6 @@ include('cfg/more-functions.php');
 				$profilepic="images/admin.png";
 			}
 			  ?>
-
   <div class="lastpagination">
     <ul class="pagination">
       <?php echo $pagination;?>
