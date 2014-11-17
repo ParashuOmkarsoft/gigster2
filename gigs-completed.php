@@ -297,7 +297,7 @@ include('cfg/more-functions.php');
 		$pagination.= "</ul></div>";
 	}
 ?>
-<div class="col-md-2 giginnerimg gigimg">
+<!-- <div class="col-md-2 giginnerimg gigimg">
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
@@ -350,7 +350,7 @@ include('cfg/more-functions.php');
                    
              </div>
         <?php } ?>
-  </div>
+  </div> -->
 <div class="lastpagination">
     <ul class="pagination">
       <?php echo $pagination;?>
