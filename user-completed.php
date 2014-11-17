@@ -205,27 +205,13 @@ if($checkSql['count']>0)
 			}
 		  ?>
 
-  			</div>
-      
-      </div>
+  
+        <div class="col-md-2">
+           <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div><div class="tyco"><h4><?php echo $nametodisplay; ?></h4>
+        </div>
+       </div>          
     </div>
-      <div class="col-md-4"><span id="bid"></span></div>
-     <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
-    </div>
-    <div class="col-md-4" style="padding: 0;"> 
 
-      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-      		<h4><?php echo $nametodisplay; ?>Mike</h4>
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-     	 </div>               
- </div>
-</div>
-    
 
 
 </section>
