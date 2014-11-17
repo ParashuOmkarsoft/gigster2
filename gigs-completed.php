@@ -66,16 +66,13 @@ include('cfg/more-functions.php');
 			  
 	   ?>
   <div class="row myrow"  style="border-top: none;">
+  <div class="col-md-12">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-      <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4"><span id="bid"></span></div>
-      <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div>
-    </div>
-    <div class="col-md-12">
-      <div class="col-md-10">
-        <p id="gigpara">
-        <h3>Feedback</h3>
+      <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
+        <div class="col-md-8" style="padding: 0;">
+        <!-- <p id="gigpara"> -->
+        <h3 class="comp-h4">Feedback</h3>
          <?php 
 		 $mawardedto=project_awarded_to($opengig['prjId']);
 		 $userReview="";
@@ -88,7 +85,7 @@ include('cfg/more-functions.php');
 						
 			?>
              <div class="col-md-10">
-          <div class="col-md-12">
+          <div class="col-md-12" style="padding: 0px;">
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -119,12 +116,13 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 <h4>Gigster</h4><div class="row">
+		 <div class="row">
             <?php 
 						
 			?>
-             <div class="col-md-10">
+          <div class="col-md-10">
           <div class="col-md-12">
+          <h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -155,7 +153,23 @@ include('cfg/more-functions.php');
       
       </div>
     </div>
-  </div>
+      <div class="col-md-4"><span id="bid"></span></div>
+     <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
+    </div>
+    <div class="col-md-4"> 
+
+      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+      		<h4><?php echo $nametodisplay; ?>Mike</h4>
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+     	 </div>               
+ </div>
+    <div class="col-md-12">
+    
   <?php
 	  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
@@ -241,8 +255,7 @@ include('cfg/more-functions.php');
 		$pagination.= "</ul></div>";
 	}
 ?>
-
-<div class="col-md-2 giginnerimg gigimg">
+<!-- <div class="col-md-2 giginnerimg gigimg">
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
@@ -295,11 +308,9 @@ include('cfg/more-functions.php');
                    
              </div>
         <?php } ?>
-  </div>
-  </p>
-  </div>
-        
-  <div class="lastpagination">
+  </div> -->
+ </div><!-- end of col-12 --> 
+<div class="lastpagination">
     <ul class="pagination">
       <?php echo $pagination;?>
     </ul>

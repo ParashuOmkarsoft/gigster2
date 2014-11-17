@@ -20,7 +20,7 @@
       <ul class="footernav">
         <li><a href="#">About</a></li>
         <!-- <li><a href="#">Help</a></li> -->
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
