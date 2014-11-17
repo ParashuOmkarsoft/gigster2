@@ -89,7 +89,7 @@ if($sql['count']>0)
       
 	  <tr <?php echo $st;?> >
       	<td ><?php echo $sno;?></td>
-		<td valign="top"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a>
+		<td valign="top"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo strip_string($prjDetails['prjTitle'],29);?></a>
        
         </td>                
 		<td><?php echo $nametodisplay;?></td> 
