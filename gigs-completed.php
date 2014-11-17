@@ -68,9 +68,9 @@ include('cfg/more-functions.php');
   <div class="row myrow"  style="border-top: none;">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-      <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-        <div class="col-md-8">
-        <p id="gigpara">
+      <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
+        <div class="col-md-8" style="padding: 0;">
+        <!-- <p id="gigpara"> -->
         <h3>Feedback</h3>
          <?php 
 		 $mawardedto=project_awarded_to($opengig['prjId']);
@@ -253,7 +253,7 @@ include('cfg/more-functions.php');
 		$pagination.= "</ul></div>";
 	}
 ?>
-<div class="col-md-2 giginnerimg gigimg">
+<!-- <div class="col-md-2 giginnerimg gigimg">
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
@@ -306,7 +306,7 @@ include('cfg/more-functions.php');
                    
              </div>
         <?php } ?>
-  </div>
+  </div> -->
 <div class="lastpagination">
     <ul class="pagination">
       <?php echo $pagination;?>
