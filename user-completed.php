@@ -70,7 +70,8 @@ if($checkSql['count']>0)
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
       	  </div>
-          <div class="col-md-4">saurabh
+         <div class="col-md-4" style="padding: 0;">          
+
 				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
