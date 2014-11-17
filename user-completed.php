@@ -69,8 +69,8 @@ if($checkSql['count']>0)
       <div class="row">
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
-      </div>
-      <div class="col-md-4">
+      	  </div>
+          <div class="col-md-4">saurabh
 				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
@@ -131,7 +131,7 @@ if($checkSql['count']>0)
       </div>          
       </div>
      <div class="row">
-         <h3>Feedback</h3>
+        
           	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
 			{
 				?>
@@ -141,6 +141,7 @@ if($checkSql['count']>0)
 			?>
              <div class="col-md-10">
           <div class="col-md-12">
+          	 <h3>Feedback</h3>
 		 	<h4>Gig owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
@@ -154,13 +155,13 @@ if($checkSql['count']>0)
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
 		   for($t=0;$t<$prjRating;$t++)
 			{
 			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
 			<?php
 			}
 			?>
@@ -177,8 +178,8 @@ if($checkSql['count']>0)
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
-              <div class="col-md-10">
-          <div class="col-md-12">
+          
+          <div class="col-md-10" style="margin-left: 30px;margin-bottom: 20px;">
 		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
@@ -192,13 +193,13 @@ if($checkSql['count']>0)
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
 		   for($t=0;$t<$prjRating;$t++)
 			{
 			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
 			<?php
 			}
 			?>
