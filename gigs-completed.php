@@ -119,11 +119,11 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 <h4>Gigster</h4><div class="row">
+		 <div class="row">
             <?php 
 						
 			?>
-             <div class="col-md-10">
+          <div class="col-md-10">
           <div class="col-md-12">
 		 	<?php if($userReview['feedback'])
 			{
@@ -241,7 +241,6 @@ include('cfg/more-functions.php');
 		$pagination.= "</ul></div>";
 	}
 ?>
-
 <div class="col-md-2 giginnerimg gigimg">
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
