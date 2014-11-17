@@ -15,7 +15,7 @@ $opengig=get_gig_details($projectId);
       <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
       <input type="hidden" name="bidfrom" id="bidfrom" value="<?php echo $biderid; ?>" />
       <h2 id="login1" style="padding-left: 11px;">Bid On Gig </h2>
-      <h2 class="source" style="padding-left: 15px;"><?php echo $opengig['prjTitle'];?></h2>
+      <h2 class="source" style="padding-left: 15px;font-size:22px; "><?php echo my_ucwords($opengig['prjTitle']);?></h2>
       <div class="col-md-12">
         <div class="form-group">
           <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>

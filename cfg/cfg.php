@@ -1033,4 +1033,20 @@ function is_in_array($string,$marray)
 {
 	return in_array($string,$marray);
 }
+function my_ucwords($string){
+$str=str_split($string,1);
+$mstr="";
+for($i=0;$i<sizeof($str);$i++)
+{
+	if($i==0)
+	{
+		$mstr.=ucwords($str[$i]);
+	}
+	else
+	{
+	$mstr.=$str[$i];
+	}
+}
+return $mstr;
+}
 ?>
