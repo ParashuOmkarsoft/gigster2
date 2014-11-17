@@ -70,7 +70,19 @@ if($checkSql['count']>0)
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
       	  </div>
-          <div class="col-md-4">saurabh
+          <div class="col-md-4">
+          <div class="col-md-4" style="padding: 0;"> 
+
+      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+      		<h4><?php echo $nametodisplay; ?>Mike</h4>
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+     	 </div>               
+ </div>
 				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
