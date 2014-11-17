@@ -377,8 +377,28 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="enddate" id="enddate" class="form-control mdate"  required="required" value="<?=date('y-m-d');?>"   />
+                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('y-m-d');?>"   />
                 </div>
+                 <script type="text/javascript">
+          $(document).ready(function(){
+          var nowTemp = new Date();
+          var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+          var checkin = $('.mdatepicker').datepicker({
+               format: 'mm/dd/yyyy',
+                 onRender: function(date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                 }
+               }).on('changeDate', function(ev) {
+                 if (ev.date.valueOf() > checkout.date.valueOf()) {
+                var newDate = new Date(ev.date)
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.setValue(newDate);
+                 }
+                 checkin.hide();     
+               }).data('datepicker');
+           
+                });
+         </script> 
               </div>
               <div class="form-group">
                 <label class="col-md-8 control-label tfont">Final Amount (<?php echo $currency ; ?>)</label>

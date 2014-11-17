@@ -10,6 +10,7 @@ $awardedto=filter_text($_POST['awardedto']);
 $terms=filter_text($_POST['terms']);
 $startdate=date('y-m-d');
 $enddate=filter_text($_POST['enddate']);
+$enddate=convert_db_date($enddate);
 $ownerInfo=get_user_Info(encrypt_str($ownerId));
 $startfrom=$startdate;
 $to=$enddate;

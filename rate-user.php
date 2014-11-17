@@ -12,6 +12,7 @@ if(!$rating)
 }
 $projectId=filter_text($_POST['projectId']);//
 $currentuserInfo=get_user_Info($_SESSION['uId']);//
+$uInfo=$currentuserInfo;
 $uId=$currentuserInfo['userId'];
 $gigdetails=get_gig_details($projectId);
 $gigname=$gigdetails['prjTitle'];
@@ -64,7 +65,7 @@ else
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
-		
+
 				if($ownerInfo['notify']=="1")
 				{
 					$mailto=filter_text($awardedtoInfo['userId']);
@@ -84,9 +85,9 @@ else
 	}
 	else
 	{
-		
+				
 	$mailmatter="<p>Hi </p>
-				<p>You have recieved final feedback for $gigname/p>
+				<p>You have recieved final feedback for $gigname /p>
 				<p>Feedback : $experience</p>
 				<p>Rating : $rating</p>				
 				<p>&nbsp;</p>
@@ -105,7 +106,7 @@ else
 				$mailmatter=htmlentities($mailmatter);
 				
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
+				 $msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
 				
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
