@@ -168,7 +168,7 @@ include('cfg/more-functions.php');
       		<img src="images/star_1.png" style="float: left;">
      	 </div>               
  </div>
-    <div class="col-md-12">
+    
     
   <?php
 	  }
