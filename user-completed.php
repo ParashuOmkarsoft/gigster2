@@ -178,8 +178,8 @@ if($checkSql['count']>0)
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
-              <div class="col-md-10">
-          <div class="col-md-12">
+          
+          <div class="col-md-10" style="margin-left: 15px;margin-bottom: 20px;">
 		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
