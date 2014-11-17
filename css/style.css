@@ -1261,3 +1261,49 @@ padding: 33px;}
 .comp-h4{color: #45350f;
 font-size: 22px;
 font-family: 'source_sans_probold';}
+
+.userloginform{border: 5px solid #e2ac10;
+padding: 35px 30px 15px 82px;
+border-radius: 10px;
+height: 100%;}
+
+.userp {
+font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+line-height: 11px;
+padding-bottom: 20px;
+}
+.fileup {
+margin-left: 171px;
+padding-bottom: 16px;
+}
+.newlog {
+font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+}
+.uploadbtn {
+color: #fff;
+font-size: 22px;
+font-family: 'source_sans_probold';
+width: 122px;
+height: 42px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-left: 159px;
+}
+.passinpute {
+margin-left: 35px;
+width: 262px;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #febe07;
+border-radius: 0px;
+}
