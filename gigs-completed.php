@@ -66,7 +66,7 @@ include('cfg/more-functions.php');
 			  
 	   ?>
   <div class="row myrow"  style="border-top: none;">
-  <div class="col-md-12">
+  <div class="col-md-12" style="border-bottom: 3px solid #fd8900;">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
