@@ -69,8 +69,8 @@ if($checkSql['count']>0)
       <div class="row">
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
-      </div>
-      <div class="col-md-4">
+      	  </div>
+          <div class="col-md-4">saurabh
 				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
@@ -179,7 +179,7 @@ if($checkSql['count']>0)
 						
 			?>
           
-          <div class="col-md-10" style="margin-left: 15px;margin-bottom: 20px;">
+          <div class="col-md-10" style="margin-left: 30px;margin-bottom: 20px;">
 		 	<h4>Gigster</h4>
 		 	<?php if($userReview['feedback'])
 			{
