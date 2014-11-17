@@ -1265,7 +1265,8 @@ font-family: 'source_sans_probold';}
 .userloginform{border: 5px solid #e2ac10;
 padding: 35px 30px 15px 82px;
 border-radius: 10px;
-height: 100%;}
+height: 100%;
+margin-bottom: 25px;}
 
 .userp {
 font-family: 'source_sans_probold';
@@ -1292,8 +1293,7 @@ height: 42px;
 border-radius: 10px;
 background: #EC6B39;
 outline: none;
-margin-left: 159px;
-}
+margin-left: 128px;}
 .passinpute {
 margin-left: 35px;
 width: 262px;
