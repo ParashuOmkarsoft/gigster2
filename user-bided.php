@@ -201,17 +201,6 @@ box-shadow: 0px 0px 2px #000000;'";
   </section>
   <?php	
 }
-else{
-	?>
-  <div class="clearfix"></div>
-  <br/>
-  <p class="mandatory">Sorry, No Bids submited by you yet.</p>
-  <br/>
-  <div class="clearfix"></div>
-  <?php
-	
-	
-	}
 	   }
 }else
 	{
