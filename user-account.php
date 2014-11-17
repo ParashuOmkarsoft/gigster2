@@ -176,6 +176,7 @@ include('cfg/more-functions.php');
        </section>
       <?php if($assignedgigs)
 	  {
+
 		for($i=0;$i<$assignedgigs['count'];$i++)
 		{
 			$assignedgig=$assignedgigs['rows'][$i];
@@ -184,15 +185,60 @@ include('cfg/more-functions.php');
       
     <section class="container lastsection ">
       <div class="row">
-        <div class="col-md-6"><h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span>
-          <h4>Testimonial :</h4>
+        <div class="col-md-6"><h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><?php /*?><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span><?php */?>
+			<?php if(get_project_feedback_1($assignedgigdetails['prjId'],$uInfo['userId']))
+			{
+				$m_feedback="";
+				$m_feedback=get_project_feedback_1($assignedgigdetails['prjId'],$uInfo['userId']);
+				$m_rating=0;
+				$m_rating=$m_feedback['rating'];
+				 ?>
+        
+        </div>
+      </div>  
+         <h4>Testimonial :</h4>
+       <p id="para">
+
+	   <?php
+	    echo stripslashes($m_feedback['feedback']); ?>
+       </p>
+       <span style="float:left;">
+       <?php
+	     for($t=$m_rating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" />
+        <?php
+							  }
+							   for($t=0;$t<$m_rating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        
+<?php
+							  }
+?>
+</span>
+<?php				  
+			}
+			else
+			{
+				?>
+				
+				  <h4>Testimonial :</h4>
         </div>
       </div>  
        <p id="para">
+	   N/A
+	   <?php
 	   
-	   <?php echo stripslashes($assignedgigdetails['prjdesc']); ?>
+	    //echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
+       <?php
+			}
+	   ?>
        </section>
         <?php
 		}
