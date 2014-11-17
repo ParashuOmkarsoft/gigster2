@@ -67,7 +67,7 @@ include('cfg/more-functions.php');
 	   ?>
   <div class="row myrow"  style="border-top: none;">
   <div class="col-md-12" style="border-bottom: 3px solid #fd8900; padding-bottom: 15px;">
-    <div class="col-md-8">
+    <div class="col-md-8" style="padding: 0;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
         <div class="col-md-8" style="padding: 0;">
@@ -156,7 +156,7 @@ include('cfg/more-functions.php');
       <div class="col-md-4"><span id="bid"></span></div>
      <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
     </div>
-    <div class="col-md-4"> 
+    <div class="col-md-4" style="padding: 0;"> 
 
       	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
