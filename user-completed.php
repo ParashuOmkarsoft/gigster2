@@ -71,48 +71,8 @@ if($checkSql['count']>0)
       <div class="row">
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
-            <div>
-            <?php echo nl2br(html_entity_decode($prjDetails['prjdesc']));?>
-            </div>
-      	  </div>
-          <div  style="float:right;margin-right:20px;">
-          <table border="0" cellpadding="0" cellspacing="0" ><tr>
-          <td style="text-align:center !important;">
-          <img src="<?php echo $serverpath;?>image.php?image=/<?=$profilepic;?>&width=75&height=75" style="margin-top:20px !important;" />
-          </td>
-          </tr>
-          <tr>
-          <td style="text-align:center !important;">
-         <strong> <?php echo $nametodisplay;?></strong>
-          </td>
-          </tr>
-          <tr>
-          <td style="text-align:center !important;">
-            <?php 
-			for($t=$gigsterrating;$t<5;$t++) 
-							  {
-								  
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png"  style="margin:0px !important;"/>
-        <?php
-							  }
-							   for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
-        
-<?php
-							  }
-
-         ?>
-		  </td>
-          </tr>
-          </table>
-          </div>
-          
-         <div class="col-md-4" style="padding: 0;">          
-
-				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
+            <div>          
+			<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
 			  if(!is_feedback_given($prjDetails['prjId'],$uInfo['userId']))
@@ -164,63 +124,67 @@ if($checkSql['count']>0)
           </div>
         </div>     
       </div>
-        
+        <br/><br/>
          <?php 
 			  }
 		 }
 		  ?>
-      </div>          
-      </div>
-     <div class="row">
+      		</div>
+            <div>
+            <?php echo nl2br(html_entity_decode($prjDetails['prjdesc']));?>
+            </div>
+      	  </div>
+          <div  style="float:right;margin-right:20px;">
+          <table border="0" cellpadding="0" cellspacing="0" ><tr>
+          <td style="text-align:center !important;">
+          <img src="<?php echo $serverpath;?>image.php?image=/<?=$profilepic;?>&width=75&height=75" style="margin-top:20px !important;" />
+          </td>
+          </tr>
+          <tr>
+          <td style="text-align:center !important;">
+         <strong> <?php echo $nametodisplay;?></strong>
+          </td>
+          </tr>
+          <tr>
+          <td style="text-align:center !important;">
+            <?php 
+			for($t=$gigsterrating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png"  style="margin:0px !important;"/>
+        <?php
+							  }
+							   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
         
-          	<?php if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
-			{
-				?>
-            <div class="row">
-            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
-						
-			?>
-             <div class="col-md-10">
-          <div class="col-md-12">
-          	 <h3>Feedback</h3>
-		 	<h4>Gigster</h4>
-		 	<?php if($userReview['feedback'])
-			{
-				echo $userReview['feedback'];
-			}
-			?>
-			<Br/>
-			<div class="pull-left">
-			<?php
-			$prjRating=$userReview['rating'];
-		    for($t=$prjRating;$t<5;$t++) 
-			{
-			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
-		     <?php
-			}
-		   for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
-			<?php
-			}
-			?>
-			 </div>	
+<?php
+							  }
+
+         ?>
+		  </td>
+          </tr>
+          </table>
           </div>
-          </div>
-          <?php 
-			}
+          
+                   
+      </div>
+     <div class="row" style="margin-bottom:10px;margin-left:1px;">
+        <h3>Feedback</h3>
+         <div class="row">
+          	<?php 
 			 $mawardedto=project_awarded_to($prjDetails['prjId']);
 			if(get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']))
 			{
 					?>
-            <div class="row">
+           
             <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$mawardedto['awardedto']);
 						
 			?>
           
-          <div class="col-md-10" style="margin-left: 30px;margin-bottom: 20px;">
+          <div class="col-md-10" style="margin-bottom: 20px;">
 		 	<h4>Gig Owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
@@ -246,22 +210,58 @@ if($checkSql['count']>0)
 			?>
 			</div>
           </div>
-          </div>
+          
+          <?php 
+			}
+			if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
+			{
+				?>
+            
+            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
+						
+			?>
+
+
+          <div class="col-md-10" >
+          	 
+		 	<h4>Gigster</h4>
+		 	<?php if($userReview['feedback'])
+			{
+				echo $userReview['feedback'];
+			}
+			?>
+			<Br/>
+			<div class="pull-left">
+			<?php
+			$prjRating=$userReview['rating'];
+		    for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
+		     <?php
+			}
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
+			<?php
+			}
+			?>
+			 </div>	
+     
           <?php 
 			}
 		  ?>
 
   
-        <!-- <div class="col-md-2">
-           <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div><div class="tyco"><h4><?php echo $nametodisplay; ?></h4>
-        </div> -->
+       
        </div>          
     </div>
 
 
-
+		</div>
 </section>
-
+<br/>
 <?php	
 	   }
 }else
