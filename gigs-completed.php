@@ -69,23 +69,7 @@ include('cfg/more-functions.php');
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4"><span id="bid"></span></div>
-     <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
-    </div>
-    <div class="col-md-4"> 
-
-      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-      		<h4><?php echo $nametodisplay; ?>Mike</h4>
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-     	 </div>               
- </div>
-    <div class="col-md-12">
-      <div class="col-md-10">
+        <div class="col-md-8">
         <p id="gigpara">
         <h3>Feedback</h3>
          <?php 
@@ -167,7 +151,23 @@ include('cfg/more-functions.php');
       
       </div>
     </div>
-  </div>
+      <div class="col-md-4"><span id="bid"></span></div>
+     <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
+    </div>
+    <div class="col-md-4"> 
+
+      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+      		<h4><?php echo $nametodisplay; ?>Mike</h4>
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+      		<img src="images/star_1.png" style="float: left;">
+     	 </div>               
+ </div>
+    <div class="col-md-12">
+    
   <?php
 	  }
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
