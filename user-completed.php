@@ -148,6 +148,7 @@ if($checkSql['count']>0)
 			}
 			?>
 			<Br/>
+			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
 		    for($t=$prjRating;$t<5;$t++) 
@@ -163,6 +164,7 @@ if($checkSql['count']>0)
 			<?php
 			}
 			?>
+			 </div>	
           </div>
           </div>
           <?php 
