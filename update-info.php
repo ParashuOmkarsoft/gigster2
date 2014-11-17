@@ -10,6 +10,9 @@ $overview=filter_text($_POST['moverview']);
 $skills=filter_text($_POST['skills']);
 $frmaction=filter_text($_POST['frmaction']);
 $notify=filter_text($_POST['notify']);
+$username=filter_text($_POST['username']);
+$usermail=filter_text($_POST['usermail']);
+$contactno=filter_text($_POST['contactno']);
 if(!$notify)
 {
 	$notify="0";
@@ -85,6 +88,68 @@ if($frmaction=="updateinfo")
 		$updateQuery="update btr_userprofile set skills='$skills' where userId=$user";
 		$updateSql=@db_query($updateQuery);
 		
+	}
+	if($contactno)
+	{
+		$checkQuery="select * from btr_userprofile where contactno='$contactno' and userId<>$user";
+		$checkSql=@db_query($checkQuery);
+		if($checkSql['count']>0)
+		{
+			
+			?>
+			<script type="text/javascript">
+			alert("Error, Contact number is already registered.");
+			</script>
+			<?php
+			die();
+		}
+		else
+		{
+		$updateQuery="update btr_userprofile set contactno='$contactno' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		}
+		
+	}
+	if($username)
+	{
+		$checkQuery="select * from btr_users where username='$username' and userId<>$user";
+		$checkSql=@db_query($checkQuery);
+		if($checkSql['count']>0)
+		{
+			
+			?>
+			<script type="text/javascript">
+			alert("Error, Username is already registered.");
+			</script>
+			<?php
+			die();
+		}
+		else
+		{
+		$updateQuery="update btr_users set username='$username' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		}
+		
+	}
+	if($usermail)
+	{
+		$checkQuery="select * from btr_users where usermail='$usermail' and userId<>$user";
+		$checkSql=@db_query($checkQuery);
+		if($checkSql['count']>0)
+		{
+			
+			?>
+			<script type="text/javascript">
+			alert("Error, Email address is already registered.");
+			</script>
+			<?php
+			die();
+		}
+		else
+		{
+		$updateQuery="update btr_users set usermail='$usermail' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		}
 	}
 	if($notify)
 	{

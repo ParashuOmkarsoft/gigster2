@@ -101,6 +101,26 @@ include('cfg/more-functions.php');
             </div>
             </div>
             <div class="form-group">
+            <label class="col-md-4 name-inpute">Username</label>
+            <div class="col-sm-8" style="margin-bottom: 12px;">
+                	<input type="text" name="username" id="username" class="form-control profile-text" value="<?php echo $uInfo['username'];?>" />
+            </div>
+            </div>
+            <div class="form-group">
+            <label class="col-md-4 name-inpute">Email</label>
+            <div class="col-sm-8" style="margin-bottom: 12px;">
+                	<input type="text" name="usermail" id="usermail" class="form-control profile-text" value="<?php echo $uInfo['usermail'];?>" />
+            </div>
+            </div>
+            
+            <div class="form-group">
+            <label class="col-md-4 name-inpute">Phone</label>
+            <div class="col-sm-8" style="margin-bottom: 12px;">
+                	<input type="text" name="contactno" id="contactno" class="form-control profile-text" value="<?php echo $uInfo['contactno'];?>" />
+            </div>
+            </div>
+            
+            <div class="form-group">
             	   <label class="col-md-4 name-inpute">Tagline</label>
                  <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
