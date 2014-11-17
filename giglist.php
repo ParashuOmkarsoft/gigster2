@@ -71,14 +71,14 @@ include('cfg/more-functions.php');
   <div class="row gig-detail-row">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>" style="
-    color: #45350f;"><?php echo strip_string($opengig['prjTitle'],20);?></a>
+    color: #45350f;"><?php echo strip_string($opengig['prjTitle'],29);?></a>
     <span class="bid" >Proposed Budget :<?php echo $opengig['proposedbudget']." ". $currency; ?></span><Br/>
     <span class="bid" style="
     padding-top: 11px;">Posted :<?php echo get_time($opengig['postedon']); ?></span></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
    
       <div class="col-md-8"></div>
-      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),90));?></p>
+      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),250));?></p>
     </div>
     <div class="col-md-4 giginnerimg gigimg" style="margin-bottom: 0;">
 
