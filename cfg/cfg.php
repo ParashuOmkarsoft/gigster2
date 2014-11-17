@@ -991,6 +991,8 @@ function user_replied($projectId,$user,$msgId)
 }
 function get_profile_link($serverpath,$userId)
 {
+	if($userId != 18)
+	{
 	$gigsterInfo=get_user_Info(encrypt_str($userId));
 			$nametodisplay="";
 			$nametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];
@@ -1000,6 +1002,11 @@ function get_profile_link($serverpath,$userId)
 				$nametodisplay=$gigsterInfo['username'];
 			}
 	$userlink=$serverpath."gigsterInfo/".mera_url_encode($nametodisplay)."/".$gigsterInfo['userId'];
+	}
+	else
+	{
+		$userlink="#";
+	}
 	return $userlink;
 
 }

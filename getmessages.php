@@ -60,12 +60,13 @@ $projectDetails=get_gig_details($project);
 			$buserimage="";
 			if(!$fromuserimg)
 			{
-				$buserimage=filter_text('img/avatar5.png');
+				$buserimage=filter_text('images/admin.png');
 			}
 			else
 			{
 				$buserimage="uploads/profileimage/".$fromuserimg;
 			}
+			echo $buserimage;
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
 				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
@@ -80,9 +81,14 @@ $projectDetails=get_gig_details($project);
       <div class="col-md-12" <?php echo $dl;?> >
         
         <br/>
-        <div class="form-group" <?php echo $cl;?>> <strong>From: </strong><br/><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
+        <div class="form-group" <?php echo $cl;?>> <strong>From: </strong><br/>
+      
+        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online" /> <br/>
           <p class="message"> 
-          <a href="#" class="name"><small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+
+          <a href="<?php echo get_profile_link($serverpath,$messagethread['rows'][$i]['msgfrom']);?>" class="name">
+          
+          <small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %X %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
           <p>
 		  
 		  <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?> </a>
