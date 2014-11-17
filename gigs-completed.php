@@ -65,7 +65,7 @@ include('cfg/more-functions.php');
 			  }
 			  
 	   ?>
-  <div class="row myrow"  style="border-top: none;">
+  <div class="row myrow"  style="border-top: none; border-bottom:none;">
   <div class="col-md-12" style="border-bottom: 3px solid #fd8900; padding-bottom: 15px;">
     <div class="col-md-8" style="padding: 0;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
