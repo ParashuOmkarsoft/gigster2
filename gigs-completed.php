@@ -79,12 +79,13 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 <h4>Gig owner</h4><div class="row">
+		 <div class="row">
             <?php 
 						
 			?>
-             <div class="col-md-10">
+          
           <div class="col-md-12">
+          <h4>Gig owner</h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
