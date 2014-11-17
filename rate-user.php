@@ -55,7 +55,8 @@ else
 {
 
 
-	
+	if(!is_feedback_given($projectId,$awarded))
+	{
 	$mailmatter="<p>Hi </p>
 				<p>Gig <strong>$gigname</strong> is requested to be marked as complete.</p>
 				<p>Feedback : $experience</p>
@@ -80,6 +81,36 @@ else
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
+	}
+	else
+	{
+		
+	$mailmatter="<p>Hi </p>
+				<p>You have recieved final feedback for $gigname/p>
+				<p>Feedback : $experience</p>
+				<p>Rating : $rating</p>				
+				<p>&nbsp;</p>
+				<p>Regards</p>
+				<p>$sitename</p>";
+		
+				if($ownerInfo['notify']=="1")
+				{
+					$mailto=filter_text($awardedtoInfo['userId']);
+								$mailsubject="You have recieved a feedback on your gig $gigname.";
+								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+				}
+				
+				$mailmatter=strip_tags($mailmatter);
+								$mailmatter=nl2br($mailmatter);
+								$mailmatter=htmlentities($mailmatter);
+								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
+				$msgsql=@db_query($msgquery);
+				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
+				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
+				$insertSql=@db_query($insertQuery,3);
+	
+	}
 }
 
 ?>

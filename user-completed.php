@@ -76,15 +76,75 @@ if($checkSql['count']>0)
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 
       </div>
       <div class="col-md-4">
-				<!-- <img src="images/mail.jpg">-->
+				<?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
+				
+			  if($projectstatus == '100') { 
+			  if(!is_feedback_given($prjDetails['prjId'],$uInfo['userId']))
+			  {
+			  ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
+        <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
+        </a>
+        
+        <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"style="max-width: 500px;">
+          <div class="modal-content cform">
+            <div class="container">
+              <div class="col-md-12" style="padding: 0px;">
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post">
+                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
+
+                  <h2 id="login1">Mark gig as complete</h2>
+                  <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
+                  <div class="col-md-12" style="padding: 0px;">
+                    <div class="form-group">
+                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;">Feedback for gigster</label>
+                     
+                      <div class="col-sm-12">
+                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;">Rating</label>
+                      
+                      <div class="col-md-10" style="padding: 0px; margin-top:-7px">
+                      
+                        <div class="form-control form-radio" >
+ <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+						
+                         <script type="text/javascript">
+						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
+						 </script>                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12 logsign"style="padding: 0px;">
+                        <button type="submit" class="btn mark-btn">Mark as Complete</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+        
+         <?php 
+			  }
+		 }
+		  ?>
       </div>          
       </div>
      <div class="row">
-          <div class="col-md-10">
+         
+          	<?php if(get_project_feedback_1($prjDetails['prjId'],$uInfo['userId']))
+			{
+				?>
             <h4>FeedBack Recieved</h4><div class="row">
             <?php $userReview=get_project_review($prjDetails['prjId']);
 						
 			?>
+             <div class="col-md-10">
           <div class="col-md-12">
 		 	<?php if($userReview['feedback'])
 			{
@@ -108,9 +168,46 @@ if($checkSql['count']>0)
 			}
 			?>
           </div>
-          
-</div>
-    </div>
+          </div>
+          <?php 
+			}
+			if(get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']))
+			{
+					?>
+            <h4>FeedBack Given</h4><div class="row">
+            <?php $userReview=get_project_feedback_1($prjDetails['prjId'],$prjDetails['userId']);
+						
+			?>
+              <div class="col-md-10">
+          <div class="col-md-12">
+		 	<?php if($userReview['feedback'])
+			{
+				echo $userReview['feedback'];
+			}
+			?>
+			<Br/>
+			<?php
+			$prjRating=$userReview['rating'];
+		    for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		     <?php
+			}
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+			<?php
+			}
+			?>
+          </div>
+            </div>
+          <?php 
+			}
+		  ?>
+
+  
         <div class="col-md-2">
            <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div><div class="tyco"><h4><?php echo $nametodisplay; ?></h4>
         </div>

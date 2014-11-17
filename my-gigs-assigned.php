@@ -98,7 +98,10 @@ if($checkSql['count']>0)
           </a>
               <?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
-			  if($projectstatus == '100') { ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
+			  if($projectstatus == '100') { 
+			  if(!is_feedback_given($prjDetails['prjId'],$uInfo['userId']))
+			  {
+			  ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
         <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
         </a>
         
@@ -146,7 +149,9 @@ if($checkSql['count']>0)
         </div>     
       </div>
         
-         <?php }
+         <?php 
+			  }
+		 }
 		  ?>
           <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
         

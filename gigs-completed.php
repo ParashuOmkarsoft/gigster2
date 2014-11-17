@@ -75,12 +75,81 @@ include('cfg/more-functions.php');
     <div class="col-md-12">
       <div class="col-md-10">
         <p id="gigpara">
-         <?php $feedback=get_project_feedback($opengig['prjId']);
-				if($feedback) { ?>
-          						<strong>Feedback</strong> <br/>
-         <?php echo $feedback['feedback']; 
-		 						} ?>
-        </p>
+         <?php 
+		 $mawardedto=project_awarded_to($opengig['prjId']);
+		 $userReview="";
+		 $userReview=get_project_feedback_1($opengig['prjId'],$uInfo['userId']);
+		 if($userReview)
+		 {
+		 ?>
+		 <h4>FeedBack Recieved</h4><div class="row">
+            <?php 
+						
+			?>
+             <div class="col-md-10">
+          <div class="col-md-12">
+		 	<?php if($userReview['feedback'])
+			{
+				echo $userReview['feedback'];
+			}
+			?>
+			<Br/>
+			<?php
+			$prjRating=$userReview['rating'];
+		    for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		     <?php
+			}
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+			<?php
+			}
+			?>
+          </div>
+          </div>
+		<?php 
+		 }
+		  $userReview="";
+		 $userReview=get_project_feedback_1($opengig['prjId'],$mawardedto['awardedto']);
+		 if($userReview)
+		 {
+		 ?>
+		 <h4>FeedBack Recieved</h4><div class="row">
+            <?php 
+						
+			?>
+             <div class="col-md-10">
+          <div class="col-md-12">
+		 	<?php if($userReview['feedback'])
+			{
+				echo $userReview['feedback'];
+			}
+			?>
+			<Br/>
+			<?php
+			$prjRating=$userReview['rating'];
+		    for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		     <?php
+			}
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+			<?php
+			}
+			?>
+          </div>
+          </div>
+		<?php 
+		 }
+		?>
       </div>
       <div class="col-md-2 giginnerimg gigimg">
         <?php 

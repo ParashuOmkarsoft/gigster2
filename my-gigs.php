@@ -95,9 +95,9 @@ include('cfg/more-functions.php');
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-4" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
-      <span id="bid"><?php if($projectstatus == '100') { ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
+      <span id="bid"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
         <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
-        </a> <?php } ?></span></div>
+        </a> <?php } } ?></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg"style="max-width: 500px;">
           <div class="modal-content cform">

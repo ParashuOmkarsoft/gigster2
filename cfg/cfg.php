@@ -1003,5 +1003,23 @@ function get_profile_link($serverpath,$userId)
 	return $userlink;
 
 }
-
+function is_feedback_given($projectId,$userId)
+{
+	$query="select * from btr_reviews where ratefrom=$userId and projectId=$projectId" ;
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0']['id'];
+	}
+	
+}
+function get_project_feedback_1($projectId,$userId)
+{
+	$query="select * from btr_reviews where rateto=$userId and projectId=$projectId" ;
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0'];
+	}
+}
 ?>
