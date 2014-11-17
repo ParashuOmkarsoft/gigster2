@@ -1022,4 +1022,8 @@ function get_project_feedback_1($projectId,$userId)
 		return $sql['rows']['0'];
 	}
 }
+function is_in_array($string,$marray)
+{
+	return in_array($string,$marray);
+}
 ?>

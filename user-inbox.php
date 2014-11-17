@@ -52,9 +52,10 @@ if($sql['count']>0)
   for($i=0;$i<$sql['count'];$i++)
   {
 	  $mstr=$sql['rows'][$i]['projectId']."-".$sql['rows'][$i]['msgfrom'];
-	if(in_array($mstr,$mprojects))
+	
+	if(is_in_array($mstr,$mprojects))
 	{
-
+	
 	}
 	else
 	{
@@ -63,6 +64,7 @@ if($sql['count']>0)
 		if($prjDetails['prjId'])
 		{	  
 	  	$mprojects[$mcount]=$mstr;
+		
 		$fromdetails=get_user_Info(encrypt_str($sql['rows'][$i]['msgfrom']));
 		$nametodisplay=$fromdetails['fname']." ".$fromdetails['lname'];
 		$nametodisplay1=str_replace(" ","",$nametodisplay);
@@ -117,11 +119,14 @@ if($sql['count']>0)
 	  <?php
 	
 	  $sno++;
+	  $mcount++;
 		}
 	}
   }
+
   ?>
-  </body>
+
+
   </table>
 <?php  }
 else
