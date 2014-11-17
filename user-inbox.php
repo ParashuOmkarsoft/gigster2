@@ -95,25 +95,27 @@ if($sql['count']>0)
 		<td><?php echo $nametodisplay;?></td> 
         <td><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo strip_string(html_entity_decode($sql['rows'][$i]['msgcontent']),50);?></a></td>
         <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>     
-        <td> <?php if($jj)
+        <td style="width:60px;"> <?php if($jj)
 		{
 			?>
             <span align="right">
 			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer;"></i>
+             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Remove Complete Thread" style="cursor:pointer;"></i></a>
             </span>
             <?php 
 		}
 		else
 		{
 			?>
-			<span align="right" style="visibility:hidden;">
-			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer;"></i>
+			<span align="right" >
+			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer; visibility:hidden;"></i>
+             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Remove Complete Thread" style="cursor:pointer;"></i></a>
             </span>
 			<?php
 			
 		}
 		?>
-       <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-ban" title="Remove Complete Thread" style="cursor:pointer;color:red;"></i></a>
+      
         </td>                                          
       </tr>
 	  <?php
