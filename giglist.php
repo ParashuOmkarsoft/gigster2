@@ -72,8 +72,7 @@ include('cfg/more-functions.php');
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>" style="
     color: #45350f;"><?php echo strip_string($opengig['prjTitle'],20);?></a>
-    <span class="bid" style="
-    padding-top: 11px;">Proposed Budget :<?php echo get_time($opengig['proposedbudget']); ?></span>
+    <span class="bid" >Proposed Budget :<?php echo $opengig['proposedbudget']." ". $currency; ?></span><Br/>
     <span class="bid" style="
     padding-top: 11px;">Posted :<?php echo get_time($opengig['postedon']); ?></span></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
