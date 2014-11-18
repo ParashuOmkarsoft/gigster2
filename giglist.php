@@ -95,13 +95,13 @@ include('cfg/more-functions.php');
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
+        <img src="<?php echo $serverpath;?>images/star_4.png" style="margin-left:0px !important;" />
         <?php
 							  }
 							  for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
+        <img src="<?php echo $serverpath;?>images/star_3.png" style="margin-left:0px !important;"/>
         <?php
 							  }
 							  ?>

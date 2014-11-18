@@ -97,24 +97,20 @@ include('cfg/more-functions.php');
 			  }
 			?>
 			    </div>
-			    <div> 
+			    <div style="margin-right:9px;"> 
 			               <?php
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($uInfo['userId']);
 			 for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png" style="
-    margin-right: 14px;
-    margin-top: 0;" />
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0;" />
         <?php
 							  }
 							  for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="
-   
-    margin-top: 0;"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0;"/>
         <?php
 							  }
 							  ?>
@@ -233,7 +229,7 @@ include('cfg/more-functions.php');
 	   N/A
 	   <?php
 	   
-	     ?>
+	    //echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
        <?php
