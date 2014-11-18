@@ -74,6 +74,6 @@
           <div class="clearfix"></div> 
         </div>
       </div>
-<div id="grad"></div>      
+     
       
     </header>
