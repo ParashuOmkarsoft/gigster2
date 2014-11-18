@@ -171,9 +171,18 @@ box-shadow: 0px 0px 2px #000000;'";
         </div>
         
       </div>
+      <?php
+	  $tt=project_awarded_to($prjDetails['prjId']);
+	  if( ($tt) && ($tt != $uInfo['userId']))
+	  {
+	  ?>
       <div style="float: right;">
         <img src="<?php echo $serverpath;?>images/symbol.png" title="Awarded to some on else" style="cursor:pointer;margin-top: 0;"/>Awarded to else
-        </div>
+       
+       </div>
+       <?php
+	  }
+	   ?>
     </div>
     </div>   
     <div class="row">

@@ -243,23 +243,25 @@ box-shadow: 0px 0px 2px #000000;'";
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
       		<h4><?php echo $nametodisplay; ?></h4>
+            <div >
       		<?php
 			   for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png" />
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;" />
         <?php
 							  }
 							   for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin:0px !important;"/>
         
 <?php
 							  }
 
 			?>
+            </div>
      	 </div>               
  </div>
 

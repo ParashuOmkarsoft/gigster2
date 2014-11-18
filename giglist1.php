@@ -71,10 +71,11 @@ include('cfg/more-functions.php');
   <div class="row gig-detail-row">
     <div class="col-md-8">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>" style="
-    color: #45350f;"><?php echo strip_string($opengig['prjTitle'],29);?></a></h2>	
+    color: #45350f;"><?php echo strip_string($opengig['prjTitle'],29);?></a>
     <div>
-    <span  class="myquote">Proposed Budget :<?php echo $opengig['proposedbudget']." ". $currency; ?></span><Br/>
-    <span  class="myquote">Posted :<?php echo get_time($opengig['postedon']); ?></span>
+    <span class="bid" >Proposed Budget :<?php echo $opengig['proposedbudget']." ". $currency; ?></span><Br/>
+    <span class="bid" style="
+    padding-top: 11px;">Posted :<?php echo get_time($opengig['postedon']); ?></span></h2>
     </div>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
    
@@ -87,7 +88,7 @@ include('cfg/more-functions.php');
       
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
       </div> 
-       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo ($nametodisplay);?></a></h4>
+       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,6);?></a></h4>
         <h4>&nbsp;</h4>
       
       <div class="col-md-12" >

@@ -132,7 +132,7 @@ include('cfg/more-functions.php');
 		$next = $page + 1;							//next page is page + 1
 		$lastpage = ceil($total_pages/$limit);		//lastpage is = total pages / items per page, rounded up.
 		$lpm1 = $lastpage - 1;
-		$targetpage=$serverpath."allgigs";						//last page minus 1
+		$targetpage=$serverpath."bidding";						//last page minus 1
 		$pagination = "";
 		if($lastpage > 1)
 		{
