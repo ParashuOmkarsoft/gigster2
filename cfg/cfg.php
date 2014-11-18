@@ -978,8 +978,23 @@ function get_gigsters_on_skill($skills)
 }
 function user_replied($projectId,$user,$msgId)
 {
-	 $query="select * from btr_messages where msgId>$msgId and msgfrom=$user and projectId=$projectId";
+	
+	$query1="select * from btr_messages where msgId=$msgId";
+	$sql1=@db_query($query1);
+	if($sql1['count']>0)
+	{
+		if($sql1['rows']['0']['msgfrom']==$user)
+		{
+			$oponent=$sql1['rows']['0']['msgto'];
+		}
+		else
+		{
+			$oponent=$sql1['rows']['0']['msgfrom'];
+		}
+	}
+	 $query="select * from btr_messages where msgId>$msgId and msgfrom=$user and msgto=$oponent and projectId=$projectId";
 	$sql=@db_query($query);
+	
 	if($sql['count']>0)
 	{
 		return 1;
