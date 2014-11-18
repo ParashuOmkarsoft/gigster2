@@ -84,7 +84,7 @@ include('cfg/more-functions.php');
 		  }
 		  ?>
   <div class="row mygigrow" style="border-bottom: 5px solid #fab518;">
-    <div class="col-md-" style="padding: 0px;">
+    <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
