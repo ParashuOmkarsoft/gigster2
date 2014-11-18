@@ -102,9 +102,9 @@ include('cfg/more-functions.php');
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Rate and Comment</h2>
-                  <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
-                  <div class="col-md-12" style="padding: 0px;">
-                    <div class="form-group">
+                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
+                  <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
+                    <div class="form-group" style="margin-bottom:0px;">
                       <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;">Rating</label>
                       
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
