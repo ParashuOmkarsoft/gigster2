@@ -85,7 +85,8 @@ include('cfg/more-functions.php');
 		  ?>
   <div class="row mygigrow" style="border-bottom: 5px solid #fab518;">
     <div class="col-md-8" style="padding: 0px;">
-      <h2 id="giglisth2"style="margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <h2 id="giglisth2"style="
+      margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-12" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
@@ -244,7 +245,7 @@ box-shadow: 0px 0px 2px #000000;'";
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
       		<h4><?php echo $nametodisplay; ?></h4>
-            <div >
+            <div>
       		<?php
 			   for($t=$gigsterrating;$t<5;$t++) 
 							  {
