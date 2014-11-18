@@ -69,7 +69,7 @@ if($ngigdetails)
 					
 					
 			?>
-			<div class="col-md-6 column" style="border-bottom:2px solid #fd8900;">
+			<div class="col-md-6 column">
 			
 						
 							
@@ -97,7 +97,7 @@ if($ngigdetails)
 							<h2 id="map"  style="margin: 0 auto;">
 								<?php echo $gigsterInfo['city']; ?>
 							</h2>
-							<h4>
+							<h4 style="word-wrap: break-word;">
 								<?php echo $gigsterInfo['skills']; ?>
 							</h4>
 							
