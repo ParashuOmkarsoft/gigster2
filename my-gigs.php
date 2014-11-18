@@ -242,7 +242,7 @@ box-shadow: 0px 0px 2px #000000;'";
 <div class="col-md-4"> 
 
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:righ">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
       		<h4><?php echo $nametodisplay; ?></h4>
             <div >
       		<?php
