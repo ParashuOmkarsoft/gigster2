@@ -242,18 +242,45 @@ box-shadow: 0px 0px 2px #000000;'";
 <div class="col-md-4"> 
 
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
+<<<<<<< HEAD
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
       		<h4><?php echo $nametodisplay; ?></h4>
+=======
+		<?php 
+		$awardedtoInfo="";
+		$awardedtoInfo=get_user_Info(encrypt_str($awardedto));
+		$awardednametodisplay="";
+			  $awardednametodisplay1=$awardedtoInfo['fname'].' '.$awardedtoInfo['lname'];
+			  if(!$awardednametodisplay1)
+			  {
+				  $awardednametodisplay=$awardedtoInfo['username'];
+			  }
+			  $awardedgigsterrating=0;
+			  $awardedgigsterrating=get_user_rating($awardedtoInfo['userId']);
+			  $awardedprofilepic="uploads/profileimage/".$awardedtoInfo['profileimage'];
+
+			if(file_exists($awardedprofilepic))
+			{
+				$awardedprofilepic=$awardedprofilepic;
+			}
+			else
+			{
+				$awardedprofilepic="images/admin.png";
+			}
+		?>
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1">
+      		<h4><?php echo $awardednametodisplay1; ?></h4>
+>>>>>>> origin/master
             <div >
       		<?php
-			   for($t=$gigsterrating;$t<5;$t++) 
+			   for($t=$awardedgigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;" />
         <?php
 							  }
-							   for($t=0;$t<$gigsterrating;$t++)
+							   for($t=0;$t<$awardedgigsterrating;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" style="margin:0px !important;"/>

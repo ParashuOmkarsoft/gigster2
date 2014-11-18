@@ -30,7 +30,7 @@ if($ngigdetails)
 
 ?>
 
-<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();" style="max-height: 500px;overflow: auto;">
+<form action="<?php echo $serverpath;?>saveinvites.php" method="post"  onSubmit="return validate_selected();" target="targetframe" style="max-height: 500px;overflow: auto;">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 
 		<div class="col-md-12 column" style="border-bottom:2px solid #fd8900;">
@@ -82,19 +82,19 @@ if($ngigdetails)
 							
 						
 							 <?php
-                              
+                               for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+								        <img src="<?php echo $serverpath;?>images/star_3.png" />
+						          <?php
+							  }
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php
+        								<img src="<?php echo $serverpath;?>images/star_4.png" />
+        						  <?php
 							  }
-							  for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php
-							  }
+							 
 							  ?>
 							<h2 id="map"  style="margin: 0 auto;">
 								<?php echo $gigsterInfo['city']; ?>
@@ -115,8 +115,11 @@ if($ngigdetails)
 			?>
 		</div>
 	</div>
+    <div class="form-group">
+    <button type="SUBMIT" class="btn invite-btn">Invite</button>
+    </div>
 </form>
-<button type="button" class="btn invite-btn">Invite</button>
+
 
 
 	
