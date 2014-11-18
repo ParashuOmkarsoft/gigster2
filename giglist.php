@@ -42,7 +42,9 @@ include('cfg/more-functions.php');
 	  {
 		   $mcount=$opengigs['count'];
 		  
-		 
+		?>
+		<div style="margin-bottom:10px;">
+		<?php
 		  for($i=0;$i<$mcount;$i++)
 		  {
 			  $opengig=$opengigs['rows'][$i];
@@ -69,25 +71,22 @@ include('cfg/more-functions.php');
 			}
 	   ?>
   <div class="row gig-detail-row">
-    <div class="col-md-8">
+    <div class="col-md-10">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>" style="
     color: #45350f;"><?php echo strip_string($opengig['prjTitle'],29);?></a></h2>	
     <div>
-    <span  class="myquote">Proposed Budget :<?php echo $opengig['proposedbudget']." ". $currency; ?></span><Br/>
     <span  class="myquote">Posted :<?php echo get_time($opengig['postedon']); ?></span>
     </div>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-   
-      <div class="col-md-8"></div>
-      <p id="gigpara"><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),250));?></p>
+   	  <p id="gigpara" style="padding-top:0px !important;" cl><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),250));?></p>
     </div>
-    <div class="col-md-4 giginnerimg gigimg" style="margin-bottom: 0;">
+    <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">
 
       <div class="col-md-12" style="padding-top:15px;">
       
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> 
       </div> 
-       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo ($nametodisplay);?></a></h4>
+       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,10);?></a></h4>
         <h4>&nbsp;</h4>
       
       <div class="col-md-12" >
@@ -128,8 +127,8 @@ include('cfg/more-functions.php');
 					{
 										  ?>
                   <!--<a href="#" onClick="javascript:alert('You have already bided on this gig');">-->
-                  <a data-toggle="modal" href="#bidsent<?=$opengig['prjId'];?>" >
-                  <button type="button" class="btn bid-send pull-right">Bid Sent</button>
+                  <a data-toggle="modal" href="#bidsent<?=$opengig['prjId'];?>"  >
+                  <button type="button" class="btn bid-send pull-right" style="margin-bottom:10px;">Bid Sent</button>
                   </a>
                   <?php
 					}
@@ -210,6 +209,9 @@ include('cfg/more-functions.php');
   </div>
   <?php
 		  }
+		  ?>
+		  </div>
+		  <?php
 		if ($page == 0) $page = 1;					//if no page var is given, default to 1.
 		$prev = $page - 1;							//previous page is page - 1
 		$next = $page + 1;							//next page is page + 1
