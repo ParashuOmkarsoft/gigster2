@@ -33,7 +33,7 @@ if($ngigdetails)
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();" style="max-height: 500px;overflow: auto;">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 
-		<div class="col-md-12 column">
+		<div class="col-md-12 column" style="border-bottom:2px solid #fd8900;">
         <p ><?php echo $msg;?></p></div>
         <?php
 		if($gigsters['count']>0)
@@ -69,7 +69,7 @@ if($ngigdetails)
 					
 					
 			?>
-			<div class="col-md-6 column">
+			<div class="col-md-6 column" style="margin-top:10px;">
 			
 						
 							
