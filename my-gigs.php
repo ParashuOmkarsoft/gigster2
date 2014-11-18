@@ -241,26 +241,48 @@ box-shadow: 0px 0px 2px #000000;'";
       </div>
  </div>
 <div class="col-md-4"> 
+		<?php 
 
+		$winningbidder=project_awarded_to($opengig['prjId']);
+		$winnerInfo=get_user_Info(encrypt_str($winningbidder['awardedto']));
+
+		$winnerprofilepic=$winnerInfo['profileimage'];
+		if(!$winnerprofilepic)
+		{
+			$winnerprofilepic="images/admin.png";
+		}
+		else
+		{
+			$winnerprofilepic="uploads/profileimage/".$winnerprofilepic;
+		}
+		$winnernametodisplay=$winnerInfo['fname']." ".$winnerInfo['lname'];
+		$winnernametodisplay1=str_replace(" ","",$winnernametodisplay);
+		if(!$winnernametodisplay1)
+		{
+			$winnernametodisplay=$winnerInfo['username'];
+		}
+		$winnerrating=get_user_rating($winnerInfo['userId']);
+		?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
-      		<h4><?php echo $nametodisplay; ?></h4>
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
+      		<h4><?php echo $winnernametodisplay; ?></h4>
             <div id="star-1">
       		<?php
-			   for($t=$gigsterrating;$t<5;$t++) 
-							  {
-								  
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;float:left;" />
-        <?php
-							  }
-							   for($t=0;$t<$gigsterrating;$t++)
+			for($t=0;$t<$winnerrating;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" style="margin:0px !important;float:left;" />
         
 <?php
 							  }
+			   for($t=$winnerrating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;float:left;" />
+        <?php
+							  }
+							   
 
 			?>
             </div>
