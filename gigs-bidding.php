@@ -20,15 +20,13 @@ include('cfg/more-functions.php');
 
 </section>
 <section class="container">
-  <ul id="profilemenu">
+ <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>
     <li>
       <h5 id="ass"> <a href="<?php echo $serverpath;?>bidding"> <strong>Bidding</strong> </a></h5>
     </li>
     <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
   </ul>
-</section>
-<section class="container">
   <h2 id="logingigster1">My Gigs - Bidding</h2>
   <?php
         $uId=$uInfo['userId'];
