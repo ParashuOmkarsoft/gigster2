@@ -69,7 +69,7 @@ if($ngigdetails)
 					
 					
 			?>
-			<div class="col-md-6 column" style="margin-top:10px;">
+			<div class="col-md-6 column" style="margin-top:10px;border-bottom:1px solid;min-height:137px;" >
 			
 						
 							
@@ -78,6 +78,7 @@ if($ngigdetails)
 							<h4 style="word-wrap: break-word;">
 								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
 							</h4>
+							<input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>">
 						
 							 <?php
                               
@@ -101,7 +102,7 @@ if($ngigdetails)
 								<?php echo $gigsterInfo['skills']; ?>
 							</h4>
 							
-							<input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>">
+							
 						</div>
 					</div>
 
