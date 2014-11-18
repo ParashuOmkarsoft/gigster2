@@ -251,13 +251,13 @@ box-shadow: 0px 0px 2px #000000;'";
 							  {
 								  
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;" style="float:left"/>
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin:0px !important;float:left;" />
         <?php
 							  }
 							   for($t=0;$t<$gigsterrating;$t++)
 							  {
 								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin:0px !important;"style="float:left"/>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin:0px !important;float:left;" />
         
 <?php
 							  }
