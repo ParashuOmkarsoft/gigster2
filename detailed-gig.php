@@ -360,7 +360,7 @@ else
                 <label class="col-md-4 control-label tfont">Terms (If Any)</label>
                 <Br/>
                 <br/>
-                <div class="col-md-12">
+                <div class="col-md-8">
                   <textarea name="terms" id="terms" class="form-control mtextarea" ></textarea>
                 </div>
               </div>
@@ -405,7 +405,7 @@ else
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-10 logsign">
+                <div class="col-sm-12 logsign">
                   <button type="submit" class="btn btn-warning loginbtn">Award</button>
                 </div>
               </div>

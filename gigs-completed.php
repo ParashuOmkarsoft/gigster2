@@ -16,15 +16,12 @@ include('cfg/more-functions.php');
 <body>
 <?php include('top-menu.php'); ?>
 <div id="grad"></div>
-
 <section class="container">
-  <ul id="profilemenu">
+ <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>
     <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
     <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
   </ul>
-</section>
-<section class="container">
   <h2 id="logingigster1">My Gigs - Completed</h2>
   <?php
         $uId=$uInfo['userId'];
