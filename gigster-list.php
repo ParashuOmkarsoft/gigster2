@@ -87,7 +87,7 @@ include('cfg/more-functions.php');
                    <div class="artst-prfle pull-right">
                           <div class="art-title">
                               <?php 
-							  echo strip_string($nametodisplay,13);
+							  echo strip_string($nametodisplay,15);
 							  ?>
                               <span class="star">
                               <?php
