@@ -84,10 +84,11 @@ include('cfg/more-functions.php');
 		  }
 		  ?>
   <div class="row mygigrow" style="border-bottom: 5px solid #fab518;">
-    <div class="col-md-8" style="padding: 0px;">
+    <div class="col-md-" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-4" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
+      <div class="col-md-12" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
       <span id="bid"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
         <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
         </a> <?php } } ?></span></div>
@@ -235,13 +236,13 @@ box-shadow: 0px 0px 2px #000000;'";
 	</div>
     </div>
     <div class="col-md-8" style="padding: 0px;">
-        <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
+       
       </div>
  </div>
 <div class="col-md-4"> 
 
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
       		<h4><?php echo $nametodisplay; ?></h4>
             <div >
       		<?php

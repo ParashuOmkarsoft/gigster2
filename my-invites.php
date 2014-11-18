@@ -100,7 +100,7 @@ if($ngigdetails)
 								<?php echo $gigsterInfo['city']; ?>
 							</h2>
 							<h4 style="word-wrap: break-word;">
-								<?php echo $gigsterInfo['skills']; ?>
+								Skills :<?php echo $gigsterInfo['skills']; ?>
 							</h4>
 							
 							

@@ -1,4 +1,4 @@
-<header class="navbar-fixed-top" style="border-top: 13px solid #e95436;">      
+<header class="navbar-fixed-top" style="border-top: 13px solid #e95436;">
       <div class="container">
         <div class="row">
           <div class="col-md-2">
@@ -74,4 +74,6 @@
           <div class="clearfix"></div> 
         </div>
       </div>
+<div id="grad"></div>      
+      
     </header>
