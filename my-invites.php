@@ -30,7 +30,7 @@ if($ngigdetails)
 
 ?>
 
-<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();" style="max-height: 500px;overflow: scroll;">
+<form action="<?php echo $serverpath;?>saveinvites.php" method="post" target="targetframe" onSubmit="return validate_selected();" style="max-height: 500px;overflow: auto;">
 <input type="hidden" name="projectId" id="projectId" value="<?php echo $projectId;?>" />
 
 		<div class="col-md-12 column">
@@ -75,7 +75,7 @@ if($ngigdetails)
 							
 							
 							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a><br>
-							<h4>
+							<h4 style="word-wrap: break-word;">
 								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
 							</h4>
 						
