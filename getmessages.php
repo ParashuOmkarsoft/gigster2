@@ -25,8 +25,7 @@ else
 $projectDetails=get_gig_details($project);
 ?>
 <section class="postgigform " id="inviteform">
-  <h2 id="login1"><?php echo $projectDetails['prjTitle'];?></h2>
-  <div class="col-sm-12" >
+<h2 id="login1"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($projectDetails['prjTitle']);?>/<?php echo $project;?>"><?php echo strip_string($projectDetails['prjTitle'],29);?></a></h2>      <div class="col-sm-12" >
     <form  action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
       <input type="hidden" id="fromId" name="fromId" value="<?php echo $msgfrom;?>" />
       <input type="hidden" id="toId" name="toId" value="<?php echo $msgto;?>" />
