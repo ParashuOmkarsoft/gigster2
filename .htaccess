@@ -42,6 +42,8 @@ RewriteRule ^bided user-bided.php
 RewriteRule ^tocompleted user-completed.php
 RewriteRule ^sendreport report-sending.php
 RewriteRule ^finalrating rate-user.php
+RewriteRule ^aboutus about-us.php
+RewriteRule ^contactus contact-us.php
 RewriteRule ^searchgig search-gig.php
 RewriteRule ^approvereport/([^/]*)$ report-approval.php?reportId=$1 [L]
 RewriteRule ^delthread/([^/]*)$ remove-thread.php?delId=$1

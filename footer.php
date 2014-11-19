@@ -18,9 +18,9 @@
   <div>
     <div class="col-md-8">
       <ul class="footernav">
-        <li><a href="About-us.html">About</a></li>
+        <li><a href="<?=$serverpath;?>aboutus">About</a></li>
         <!-- <li><a href="#">Help</a></li> -->
-        <li><a href="contact-us.html">Contact</a></li>
+        <li><a href="<?=$serverpath;?>contactus">Contact</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
