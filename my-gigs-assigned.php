@@ -108,7 +108,7 @@ if($checkSql['count']>0)
 
                   <h2 id="login1">Rate and Comment</h2>
                   <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
-                   <div class="form-group">
+                   <div class="form-group"style="margin-bottom:25px;">
                       <label class="col-md-2 control-label tfont" style="margin-top: 14px;">Rating</label>
                       
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
