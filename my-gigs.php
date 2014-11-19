@@ -102,7 +102,7 @@ include('cfg/more-functions.php');
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Rate and Comment</h2>
-                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
+                  <h2 class="source"style="font-size:28px;"><?php echo strip_string($opengig['prjTitle'],29);?></h2>
                   <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
                     <div class="form-group" style="margin-bottom:10px;">
                       <label class="col-md-2 control-label tfont" style="margin-top:14px;">Rating</label>
@@ -316,7 +316,7 @@ box-shadow: 0px 0px 2px #000000;'";
 		$next = $page + 1;							//next page is page + 1
 		$lastpage = ceil($total_pages/$limit);		//lastpage is = total pages / items per page, rounded up.
 		$lpm1 = $lastpage - 1;
-		$targetpage=$serverpath."allgigs";						//last page minus 1
+		$targetpage=$serverpath."mygigs";						//last page minus 1
 		$pagination = "";
 		if($lastpage > 1)
 		{
