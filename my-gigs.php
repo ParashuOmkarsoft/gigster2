@@ -89,7 +89,7 @@ include('cfg/more-functions.php');
       margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
       <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <div class="col-md-12" style="padding: 0px;"> <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
+      <div class="col-md-12" style="padding: 0px;">
       <span id="bid"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
         <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
         </a> <?php } } ?></span></div>
@@ -204,7 +204,7 @@ box-shadow: 0px 0px 2px #000000;'";
 -webkit-box-shadow: 0px 0px 2px #000000;
 box-shadow: 0px 0px 2px #000000;'";
 			}
-			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
+		
 			?>
                 <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
                   <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
@@ -288,8 +288,10 @@ box-shadow: 0px 0px 2px #000000;'";
 
 			?>
             </div>
-     	 </div>               
+     	 </div>  
+                   
  </div>
+   
 
       
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
@@ -301,7 +303,11 @@ box-shadow: 0px 0px 2px #000000;'";
         </div>
         <!-- end bid model --> 
       </div><?php */?>
+      <div style="float:right;">
+          <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="padding-top: 20px;"></a>
+         </div> 
     </div>
+    
   </div>
   <?php
 		  }
