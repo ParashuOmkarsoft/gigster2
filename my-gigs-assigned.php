@@ -86,10 +86,10 @@ if($checkSql['count']>0)
 				?>
         <p> 
           
-          <?php /*?> <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a><?php */?>
-          <a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
+         
+          <?php /*?><a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
           <button type="button" class="btn terms-btn" >Terms</button>
-          </a>
+          </a><?php */?>
               <?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
@@ -100,7 +100,7 @@ if($checkSql['count']>0)
         </a>
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-        <div class="modal-dialog modal-lg"style="max-width: 500px;">
+        <div class="modal-dialog modal-lg" style="max-width: 500px;border-radius:30px;">
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
