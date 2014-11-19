@@ -127,13 +127,13 @@ if($checkSql['count']>0)
                       <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;"></label>
                      
                       <div class="col-sm-12">
-                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                        <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
                       </div>
                     </div>
                    
                     <div class="form-group">
                       <div class="col-sm-12 logsign"style="padding: 0px;">
-                        <button type="submit" class="btn mark-btn">Mark as Complete</button>
+                        <button type="submit" class="btn mark-btn">Send</button>
                       </div>
                     </div>
                   </div>
