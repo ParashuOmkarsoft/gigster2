@@ -124,9 +124,7 @@ if($checkSql['count']>0)
 
                   <div class="col-md-12" style="padding: 0px;">
                     <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;"></label>
-                     
-                      <div class="col-sm-12">
+                        <div class="col-sm-12">
                         <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
                       </div>
                     </div>
