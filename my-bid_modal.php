@@ -36,7 +36,7 @@ $opengig=get_gig_details($projectId);
           <Br/>
           <br/>
           <div class="col-md-8">
-            <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
+            <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" required />
           </div>
         </div>
         <div class="form-group">
