@@ -105,13 +105,13 @@ include('cfg/more-functions.php');
                   <h2 class="source"style="font-size:28px;"><?php echo strip_string($opengig['prjTitle'],29);?></h2>
                   <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
                     <div class="form-group" style="margin-bottom:10px;">
-                      <label class="col-md-2 control-label tfont" style="margin-top:14px;">Rating</label>
+                      <label class="col-md-2 control-label tfont" style="margin-top:14px;margin-right:10px;">Rating</label>
                       
-                      <div class="col-md-10" style="padding: 0px; margin-top:-7px">
+                      <div class="col-md-10" style="padding: 0px; margin-top:-5px">
                       
                         <div class="form-control form-radio" >
                  
-							    <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+							    <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm" required>
 						
                          <script type="text/javascript">
 						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});

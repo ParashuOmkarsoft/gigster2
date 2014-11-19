@@ -159,7 +159,7 @@ else
   </div>
   
   <div class="row" style="margin: 0 auto;">
-    <div class="col-md-12" >
+    <div class="col-md-12" style="padding-left:0px !important;" >
       <h5 id="title">Description</h5>
     </div>
   </div>
