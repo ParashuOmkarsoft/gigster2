@@ -341,7 +341,7 @@ else
 	?>
 <div id="awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content cform">
+    <div class="modal-content cform" style="border-radius:30px;">
       <div class="container">
         <div class="col-md-12">
           <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendterms" role="form" method="post" >
