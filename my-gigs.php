@@ -121,7 +121,7 @@ include('cfg/more-functions.php');
                     </div>
 
                     <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;"></label>
+                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-top: 14px;"></label>
                      
                       <div class="col-sm-12">
                         <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
@@ -268,7 +268,7 @@ box-shadow: 0px 0px 2px #000000;'";
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
       		<h4><?php echo $winnernametodisplay; ?></h4>
-            <div id="star-1">
+            <div id="star-1" style="float:right">
       		<?php
 			for($t=0;$t<$winnerrating;$t++)
 							  {

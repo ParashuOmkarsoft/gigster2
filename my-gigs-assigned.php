@@ -106,29 +106,31 @@ if($checkSql['count']>0)
                 <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post">
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
 
-                  <h2 id="login1">Mark gig as complete</h2>
-                  <h2 class="source"><?php echo $opengig['prjTitle'];?></h2>
-                  <div class="col-md-12" style="padding: 0px;">
-                    <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;">Feedback for gigster</label>
-                     
-                      <div class="col-sm-12">
-                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;">Rating</label>
+                  <h2 id="login1">Rate and Comment</h2>
+                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
+                   <div class="form-group">
+                      <label class="col-md-2 control-label tfont" style="margin-top: 14px;">Rating</label>
                       
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
                         <div class="form-control form-radio" >
  <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
-						
+            
                          <script type="text/javascript">
-						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
-						 </script>                        </div>
+               $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
+             </script>                        </div>
                       </div>
                     </div>
+
+                  <div class="col-md-12" style="padding: 0px;">
+                    <div class="form-group">
+                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-bottom: 30px;"></label>
+                     
+                      <div class="col-sm-12">
+                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                      </div>
+                    </div>
+                   
                     <div class="form-group">
                       <div class="col-sm-12 logsign"style="padding: 0px;">
                         <button type="submit" class="btn mark-btn">Mark as Complete</button>
