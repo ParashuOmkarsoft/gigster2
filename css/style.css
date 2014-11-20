@@ -1315,3 +1315,6 @@ margin: 1px auto;
 margin-left: 0px;
 margin-right: 50px;
 }
+header.smaller {
+    height: 75px;
+}
