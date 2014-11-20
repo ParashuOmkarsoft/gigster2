@@ -47,7 +47,7 @@ foreach($invites as $invite)
 								$mailmatter=strip_tags($mailmatter);
 								$mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				 $msgquery.="values($fromuser,$invite,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','r')";
+				 $msgquery.="values(18,$invite,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','r')";
 				$msgsql=@db_query($msgquery);										  
 	
 	
