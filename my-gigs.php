@@ -15,21 +15,13 @@ include('cfg/more-functions.php');
 </head>
 <body>
 <?php include('top-menu.php'); ?>
+<div id="grad"></div>
 
 
-<section class="container">
- 
-</section>
 <section class="container">
 	<ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong> </a></li>
-    <li><a href="<?php echo $serverpath;?>bidding"> Bidding  <?php if($unreadbids)
-						  {
-							  ?>
-							  <i class="fa fa-circle" style="color:green;"></i>
-							  <?php
-						  }
-						  ?></a></li>
+    <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a></li>
     <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
   </ul>
   <h2 id="logingigster1">My Gigs</h2>
@@ -251,7 +243,7 @@ box-shadow: 0px 0px 2px #000000;'";
 		$winnerrating=get_user_rating($winnerInfo['userId']);
 		?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right"><br>
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right" class="img-circle"><br>
       		<h4><?php echo $winnernametodisplay; ?></h4>
             <div id="star-1" style="float:right">
       		<?php
