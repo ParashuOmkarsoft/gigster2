@@ -1074,4 +1074,13 @@ function get_unread_bids($userId)
 	 }
 	
 }
+function get_unread_bids_project($projectId)
+{
+	 $query="select * from btr_bids where projectId=$projectId and isread='0'";
+	 $sql=@db_query($query);
+	 if($sql['count']>0)
+	 {
+		 return $sql['count'];
+	 }
+}
 ?>

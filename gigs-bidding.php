@@ -80,9 +80,19 @@ include('cfg/more-functions.php');
 	   ?>
   <div class="row myrow-bidding">
     <div class="col-md-8" style="padding: 0px;">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo strip_string($opengig['prjTitle'],29);?>
+      <?php if(get_unread_bids_project($opengig['prjId']))
+	  {
+		  ?>
+		   <i class="fa fa-circle" style="color:green;" title="New Bid"></i>
+		  <?php
+	  }
+	  ?>
+      </a>
+      
+      </h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-      <?php /*?> <div class="col-md-4"><span id="bid"><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"> <button type="button" class="btn btn-primary" >Send Status Report</button></a></span></div><?php */?>
+     
       <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
     </div>
     <div class="col-md-12" style="padding: 0px;">
