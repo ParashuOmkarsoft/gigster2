@@ -24,7 +24,7 @@ include('cfg/more-functions.php');
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
-    <div id="our">Our Gigster</div>
+    <div id="our">Our Gigsters</div>
 	<?php
 	$gigsters=get_all_gigsters();
 	if($gigsters['count']>0)

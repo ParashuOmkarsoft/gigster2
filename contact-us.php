@@ -32,22 +32,22 @@ If you have any suggestions on how we can be better, or if you have any question
 						</div>
 
 			<div class="form-group">
-   				<label for="inputEmail3" class="col-sm-2 control-label newlog">Name</label>
-    			<div class="col-sm-10">
+   				<label for="inputEmail3" class="col-sm-3 control-label newlog">Name</label>
+    			<div class="col-sm-9">
       			<input type="text" class="form-control passinpute" id="inputEmail3" placeholder="">
     			</div>
   			</div>
 
         	<div class="form-group">
-   				<label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
-    			<div class="col-sm-10">
+   				<label for="inputEmail3" class="col-sm-3 control-label newlog">Email</label>
+    			<div class="col-sm-9">
       			<input type="email" class="form-control passinpute" id="inputEmail3" placeholder="">
     			</div>
   			</div>
             
             <div class="form-group">
-   				<label for="inputEmail3" class="col-sm-2 control-label newlog">Contact no </label>
-    			<div class="col-sm-10">
+   				<label for="inputEmail3" class="col-sm-3 control-label newlog">Contact no </label>
+    			<div class="col-sm-9">
       			<input type="text" class="form-control passinpute" id="inputEmail3" placeholder="" onkeydown="return only_numbers(event);">
     			</div>
   			</div>
@@ -84,15 +84,15 @@ If you have any suggestions on how we can be better, or if you have any question
   			</div> -->
 
   			<div class="form-group">
-   				<label for="inputEmail3" class="col-sm-2 control-label newlog">Subject </label>
-    			<div class="col-sm-10">
+   				<label for="inputEmail3" class="col-sm-3 control-label newlog">Subject </label>
+    			<div class="col-sm-9">
       			<input type="text" class="form-control passinpute" id="inputEmail3" placeholder="">
     			</div>
   			</div>
 
   			<div class="form-group">
-   				<label for="inputEmail3" class="col-sm-2 control-label newlog">Description</label>
-    			<div class="col-sm-10">
+   				<label for="inputEmail3" class="col-sm-3 control-label newlog">Description</label>
+    			<div class="col-sm-9">
       			 <textarea class="form-control passinpute" placeholder="" row="8" column="10"></textarea>  
     			</div>
   			</div>

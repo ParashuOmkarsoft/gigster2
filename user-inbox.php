@@ -100,7 +100,7 @@ if($sql['count']>0)
 			?>
             <span align="right">
 			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer;"></i>
-             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Remove Complete Thread" style="cursor:pointer;"></i></a>
+             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Delete Message Thread" style="cursor:pointer;"></i></a>
             </span>
             <?php 
 		}
@@ -109,7 +109,7 @@ if($sql['count']>0)
 			?>
 			<span align="right" >
 			<i class="fa fa-mail-reply" title="You replied" style="cursor:pointer; visibility:hidden;"></i>
-             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Remove Complete Thread" style="cursor:pointer;"></i></a>
+             <a href="<?php echo $serverpath;?>delthread/<?php echo $sql['rows'][$i]['msgId'];?>" target="targetframe" > <i class="fa fa-trash" title="Delete Message Thread" style="cursor:pointer;"></i></a>
             </span>
 			<?php
 			
