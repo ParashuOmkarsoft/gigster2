@@ -27,7 +27,7 @@ include('cfg/more-functions.php');
     <?php
 		
 	?>
-    <section class="firstsection" class="container">
+    <section class="container secondsection">
       <div class="row"style="max-width: 958px;padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">
@@ -74,7 +74,7 @@ include('cfg/more-functions.php');
 			  $pfimage=$uInfo['profileimage'];
 			  ?>
             <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=4:3" id="imguser" style="
-    margin-right: -14px;">
+    margin-right: -14px;" class="img-circle">
             <?php
 		  }
 			?>
