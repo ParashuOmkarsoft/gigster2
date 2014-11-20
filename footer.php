@@ -34,6 +34,7 @@
 
 <script src="<?php echo $serverpath;?>js/datatables/jquery.dataTables.js" type="text/javascript"></script> 
 <script src="<?php echo $serverpath;?>js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo $serverpath;?>js/classie.js" type="text/javascript"></script>
 <iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
 <script>
 function init() {
