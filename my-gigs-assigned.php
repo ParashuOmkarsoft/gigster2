@@ -380,7 +380,7 @@ $puname=$puuinfo['username'];
           
         </div>
        
-      
+      </div>
      <?php $ownerrating=get_user_rating($prjDetails['userId']); 
 	 ?>
       <div style="float: right;">
@@ -405,7 +405,7 @@ $puname=$puuinfo['username'];
           <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
     </div>        
  </div>
-</div>
+    </div>
     <div class="row">
       <div class="col-md-10">
         <h4>Completion Status</h4>
