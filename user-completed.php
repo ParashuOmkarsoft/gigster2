@@ -142,7 +142,7 @@ if($checkSql['count']>0)
           </tr>
           <tr>
           <td style="text-align:center !important;">
-         <h4> <?php echo $nametodisplay;?></h4>>
+         <h4> <?php echo $nametodisplay;?></h4>
           </td>
           </tr>
           <tr>
