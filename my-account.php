@@ -187,7 +187,7 @@ include('cfg/more-functions.php');
   else
   {
 	  ?>
-	     <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=200&height=150&cropratio=4:3" id="imguser">
+	     <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=200&height=150&cropratio=1:1" id="imguser">
          <?php
   }
 	?>
