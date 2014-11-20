@@ -153,15 +153,45 @@ include('cfg/more-functions.php');
      <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
     </div>
     <div class="col-md-4" style="padding: 0;"> 
-
+		<?php $awardedarray=project_awarded_to($opengig['prjId']);
+		 $awarded=$awardedarray['awardedto'];
+		 $awardedInfo=get_user_Info(encrypt_str($awarded));
+		$awardednametodisplay="";
+			  $awardednametodisplay=$awardedInfo['fname'].' '.$awardedInfo['lname'];
+			  $awardednametodisplay1=str_replace(" ","",$awardednametodisplay);
+			  if(!$awardednametodisplay1)
+			  {
+				  $awardednametodisplay=$awardedInfo['username'];
+			  }
+			  $awardedprofilepic=$awardedInfo['profileimage'];
+			  if(!$awardedprofilepic)
+			  {
+				  $awardedprofilepic="uploads/admin.png";
+			  }
+			  else
+			  {
+				  $awardedprofilepic="uploads/profileimage/".$awardedprofilepic;
+			  }
+			  $awardedrating=get_user_rating($awarded);
+			  ?>
       	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
-      		<h4><?php echo $nametodisplay; ?></h4>
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
-      		<img src="images/star_1.png" style="float: left;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1">
+      		<h4><?php echo $awardednametodisplay; ?></h4>
+      					<?php 
+						 for($t=0;$t<$awardedrating;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_3.png" />
+								  <?php
+							  }
+						 for($t=$awardedrating;$t<5;$t++)
+							  {
+								  ?>
+								  <img src="<?php echo $serverpath;?>images/star_4.png" />
+								  <?php
+							  }
+							  
+							  ?>
      	 </div>               
  </div>
 </div>
@@ -256,13 +286,11 @@ include('cfg/more-functions.php');
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
-			
-			
-			
 			for($ad=0;$ad<$checkSql['count'];$ad++)
 			{
 			$profilepicId = $checkSql['rows'][$ad]['awardedto'];
 		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
+			
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
 			if(file_exists($profilepic))
 			{
