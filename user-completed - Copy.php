@@ -65,7 +65,7 @@ if($checkSql['count']>0)
 				$profilepic="images/admin.png";
 			}
 ?>
-<section id="firstsection" class="container">
+<section class="firstsection" class="container">
       <div class="row">
           <div class="col-md-8">
             <h3><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>"><?php echo $prjDetails['prjTitle'];?></a></h3> 

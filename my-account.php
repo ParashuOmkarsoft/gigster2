@@ -27,7 +27,7 @@ include('cfg/more-functions.php');
     <?php
 		
 	?>
-    <section id="firstsection" class="container">
+    <section class="firstsection" class="container">
       <div class="row"style="max-width: 958px;padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">

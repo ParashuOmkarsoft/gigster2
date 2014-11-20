@@ -76,7 +76,7 @@ if($checkSql['count']>0)
 			}
 ?>
   <?php  //pr($prjDetails); ?>
-  <section id="firstsection" class="container">
+  <section class="firstsection" class="container">
     <div class="row">
       <div class="col-md-8">
         <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3>
