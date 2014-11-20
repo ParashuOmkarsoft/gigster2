@@ -221,27 +221,7 @@ box-shadow: 0px 0px 2px #000000;'";
           </div>
         </div>
       </div>
-      <div class="col-md-8"style="padding: 0px;"><!-- <span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span> -->
-      <div class="col-md-12" style="padding: 0px;">
-            <h4>Completion Status</h4><div class="row">
-          <div class="col-md-12" style="padding-right: 0px;">
-          
-         <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb pull-right"><?php echo convert_date($opengig['bidto']);?></span></h4>
-         <div class="progress"  style="width: 100%;">
-             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
-               
-                <span class="sr-only"><?php echo $projectstatus; ?>%</span>
-         		 </div>
-                 
-         </div>
-         
-     </div>
-	</div>
-    </div>
-   
-   </div>
-
-<div class="col-md-4"> 
+      <div class="col-md-4"> 
 		<?php 
 
 		$winningbidder=project_awarded_to($opengig['prjId']);
@@ -289,6 +269,27 @@ box-shadow: 0px 0px 2px #000000;'";
             </div>
      	 </div>               
  </div>
+
+      <div class="col-md-8"style="padding: 0px;"><!-- <span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span> -->
+      <div class="col-md-12" style="padding: 0px;">
+            <h4>Completion Status</h4><div class="row">
+          <div class="col-md-12" style="padding-right: 0px;">
+          
+         <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb pull-right"><?php echo convert_date($opengig['bidto']);?></span></h4>
+         <div class="progress"  style="width: 100%;">
+             <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">
+               
+                <span class="sr-only"><?php echo $projectstatus; ?>%</span>
+         		 </div>
+                 
+         </div>
+         
+     </div>
+	</div>
+    </div>
+   
+   </div>
+
 
       
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
