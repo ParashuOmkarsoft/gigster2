@@ -377,28 +377,29 @@ $puname=$puuinfo['username'];
         <div style="clear:both"></div>
         <div class="pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
+          <div style="float: right;">
+         <?php
+         for($t=0;$t<$ownerrating;$t++)
+                {
+                  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+                }
+                 for($t=$ownerrating;$t<5;$t++)
+                {
+                  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+                }
+    ?>
+        </div>
           
         </div>
        
       </div>
      <?php $ownerrating=get_user_rating($prjDetails['userId']); 
 	 ?>
-      <div style="float: right;">
-         <?php
-				 for($t=0;$t<$ownerrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
-        <?php
-							  }
-							   for($t=$ownerrating;$t<5;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
-        <?php
-							  }
-		?>
-        </div>
+      
           
     </div>   
     <div style="float: right;padding-left:30px;" >
