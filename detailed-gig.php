@@ -151,6 +151,9 @@ else
 						}
 					}
 				}
+			}else
+			{
+				
 			}
 ?>
       </div>
@@ -225,7 +228,15 @@ else
         
         <!--<img style="margin: 0px 0px 5px 10px;" src="images/star.png"><span id="bond">Earnings :    &#36; 2000.00</span>--> 
       </div>
-      <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span> </div>
+      <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span>
+       <?php if($unreadbids)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;" title="New Bid"></i>
+							  <?php
+						  }
+						  ?>
+      </div>
     </div>
     <div class="col-md-2 mailsymbol">
  <?php 
@@ -419,6 +430,11 @@ else
 <?php
 }
 }
+
+	if(encrypt_str($gigdetails['userId'])==$_SESSION['uId'])
+	{
+		 $updateBids=@db_query("update btr_bids set isread='1' where projectId=".$gigdetails['prjId']);
+	}
 }
 else
 {

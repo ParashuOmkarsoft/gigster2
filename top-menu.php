@@ -37,8 +37,19 @@
 						  else{
 							  $uProfilepic="uploads/profileimage/".$uProfilepic;
 						  }
-						  ?>
-						  <li><a href="<?php echo $serverpath;?>mygigs" >MY GIGS</a></li>                                          
+							$unreadbids=get_unread_bids($uInfo['userId']);
+							
+						  ?>                                         
+
+						  <li><a href="<?php echo $serverpath;?>mygigs" >MY GIGS
+                          <?php if($unreadbids)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;" title="New Bid"></i>
+							  <?php
+						  }
+						  ?></a>
+                          </li> 
    						  <li><a href="<?php echo $serverpath;?>assignments" >MY ASSIGNMENT</a></li>
                            
                           <?php $unread=get_user_messages($uInfo['userId']);

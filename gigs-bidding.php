@@ -23,7 +23,13 @@ include('cfg/more-functions.php');
  <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>
     <li>
-      <h5 id="ass"> <a href="<?php echo $serverpath;?>bidding"> <strong>Bidding</strong> </a></h5>
+      <h5 id="ass"> <a href="<?php echo $serverpath;?>bidding"> <strong>Bidding</strong>  <?php if($unreadbids)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;"></i>
+							  <?php
+						  }
+						  ?></a></h5>
     </li>
     <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
   </ul>

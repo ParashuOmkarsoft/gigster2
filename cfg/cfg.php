@@ -1064,4 +1064,14 @@ for($i=0;$i<sizeof($str);$i++)
 }
 return $mstr;
 }
+function get_unread_bids($userId)
+{
+	 $query="select * from btr_bids where projectId in (select prjId from btr_projects where userId=$userId) and isread='0'";
+	 $sql=@db_query($query);
+	 if($sql['count']>0)
+	 {
+		 return $sql;
+	 }
+	
+}
 ?>
