@@ -155,7 +155,7 @@ include('cfg/more-functions.php');
     <div class="col-md-4" style="padding: 0;"> 
 
       	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" style="float:right;" class="img-circle">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" style="float:right;"class="img-circle">
       		<h4><?php echo $nametodisplay; ?></h4>
       		<div>
       		<img src="images/star_1.png" style="float: left;">
