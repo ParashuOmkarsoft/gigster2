@@ -107,7 +107,7 @@ include('cfg/more-functions.php');
                     <div class="form-group" style="margin-bottom:10px;">
                       <label class="col-md-2 control-label tfont">Rating</label>
                       
-                      <div class="col-md-10" style="padding: 0px; margin-top:-7px">
+                      <div class="col-md-10" style="margin-top:-7px">
                       
                        
                  
