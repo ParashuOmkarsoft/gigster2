@@ -82,7 +82,7 @@ include('cfg/more-functions.php');
                    <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>">
                    <div class="artst-pic pull-left">
 					
-					   <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1">
+					   <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle">
                    </div>
                    <div class="artst-prfle pull-right">
                           <div class="art-title">
