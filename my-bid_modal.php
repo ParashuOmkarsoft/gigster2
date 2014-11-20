@@ -10,14 +10,14 @@ $opengig=get_gig_details($projectId);
 ?>
 
 <div class="container">
-  <div class="col-md-8">
+  <div class="col-md-12">
     <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post">
       <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
       <input type="hidden" name="bidfrom" id="bidfrom" value="<?php echo $biderid; ?>" />
       <h2 id="login1" style="padding-left: 11px;">Bid On Gig </h2>
       <h2 class="source" style="padding-left: 15px;font-size:22px; "><?php echo my_ucwords($opengig['prjTitle']);?></h2>
-            <h2 class="source" style="padding-left: 15px;font-size:18px; ">Proposed budget : <?php echo ($opengig['proposedbudget']);?> <?php echo $currency;?></h2>
-
+            <h2 class="source" style="padding-left: 15px;font-size:18px; ">Proposed budget : <?php echo ($opengig['proposedbudget']);?> <?php echo $currency; if($opengig['jobtype']=="h") { ?>per hour<?php } ?></h2>
+<Br/>
       <div class="col-md-12">
         <div class="form-group">
           <label for="inputText" class="col-sm-4 control-label newlog">Bid Details</label>
@@ -29,14 +29,14 @@ $opengig=get_gig_details($projectId);
         </div>
         <div class="form-group">
           <?php if($opengig['jobtype']=="f") { ?>
-          <label class="col-md-6 control-label tfont">Price on Fixed basis</label>
+          <label class="col-md-6 control-label tfont">Bid Price</label>
           <?php } else { ?>
-          <label class="col-md-6 control-label tfont">Price on Hourly basis</label>
+          <label class="col-md-6 control-label tfont">Bid Price per hour</label>
           <?php } ?>
           <Br/>
           <br/>
           <div class="col-md-8">
-            <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" />
+            <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" required />
           </div>
         </div>
         <div class="form-group">

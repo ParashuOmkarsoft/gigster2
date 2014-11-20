@@ -74,7 +74,7 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
       <div class="col-md-12" style="padding:0px;"> 
       <div class="col-md-8"> 
        <span class="budget" style="padding-top: 20px;"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
-       </a> <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+       </a> 
        <div id="msgmodal<?php echo $prjDetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content cform">
@@ -161,16 +161,30 @@ box-shadow: 0px 0px 2px #000000;'";
         <div style="clear:both"></div>
         <div class="tyco pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
-          <!-- <div>
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          </div> -->
+         <?php $ownerrating=get_user_rating($prjDetails['userId']); 
+	 ?>
+      <div style="float: right;">
+         <?php
+				 for($t=0;$t<$ownerrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+							  }
+							   for($t=$ownerrating;$t<5;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+							  }
+		?>
         </div>
-        
+        </div>
+         
       </div>
+      <div style="float: right;padding-right:10px;" >
+        <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+        </div>
       <?php
 	  $tt=project_awarded_to($prjDetails['prjId']);
 	  if( ($tt) && ($tt != $uInfo['userId']))

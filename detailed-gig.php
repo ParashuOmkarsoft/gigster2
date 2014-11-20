@@ -159,8 +159,8 @@ else
   </div>
   
   <div class="row" style="margin: 0 auto;">
-    <div class="col-md-12" >
-      <h5 id="title">Bid Description</h5>
+    <div class="col-md-12" style="padding-left:0px !important;" >
+      <h5 id="title">Description</h5>
     </div>
   </div>
 </section>
@@ -341,7 +341,7 @@ else
 	?>
 <div id="awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content cform">
+    <div class="modal-content cform" style="border-radius:30px;">
       <div class="container">
         <div class="col-md-12">
           <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>sendterms" role="form" method="post" >
@@ -377,7 +377,7 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('y-m-d');?>"   />
+                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('m/d/Y');?>"   />
                 </div>
                  <script type="text/javascript">
           $(document).ready(function(){

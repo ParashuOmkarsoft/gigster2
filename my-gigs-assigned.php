@@ -12,6 +12,7 @@ if(!isset($_SESSION['uId']))
 	die();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,10 +86,10 @@ if($checkSql['count']>0)
 				?>
         <p> 
           
-          <?php /*?> <a href="<?php echo $serverpath;?>acceptGig/<?php echo ($mId);?>/<?php echo encrypt_str($checkSql['rows'][$i]['awardedto']);?>"><button type="button" class="btn btn-primary" >Terms</button></a><?php */?>
-          <a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
+         
+          <?php /*?><a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
           <button type="button" class="btn terms-btn" >Terms</button>
-          </a>
+          </a><?php */?>
               <?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
@@ -99,7 +100,7 @@ if($checkSql['count']>0)
         </a>
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-        <div class="modal-dialog modal-lg"style="max-width: 500px;">
+        <div class="modal-dialog modal-lg" style="max-width: 500px;border-radius:30px;">
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
@@ -146,7 +147,7 @@ if($checkSql['count']>0)
 			  }
 		 }
 		  ?>
-          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+          
         
         <div id="msgmodal<?php echo $gigdetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -321,7 +322,7 @@ $puname=$puuinfo['username'];
                     <input type="hidden" id="reportfrom" name="reportfrom" value="<?php echo $mUid;?>" />
                     <input type="hidden" id="reportto" name="reportto" value="<?php echo $prjDetails['userId'];?>" />
                     <h2 id="login1">Status Report </h2>
-                    <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
+                    <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2><br/>
                     <div class="col-md-12" style="margin-left: -15px;">
                       <div class="form-group">
                         <label for="inputText" class="col-sm-4 control-label newlog">Message</label>
@@ -376,24 +377,33 @@ $puname=$puuinfo['username'];
         <div style="clear:both"></div>
         <div class="pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
-          <!-- <div>
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          <img src="<?php echo $serverpath;?>images/star_1.png" />
-          </div> -->
+          
         </div>
-        
+       
       </div>
+     <?php $ownerrating=get_user_rating($prjDetails['userId']); 
+	 ?>
       <div style="float: right;">
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;margin-right: 15px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px;"/>
+         <?php
+				 for($t=0;$t<$ownerrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+							  }
+							   for($t=$ownerrating;$t<5;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+							  }
+		?>
         </div>
-    </div>           
+          
+    </div>   
+    <div style="float: right;padding-left:30px;" >
+          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+           </div>        
  </div>
     </div>
     <div class="row">
