@@ -135,29 +135,9 @@ If you have any suggestions on how we can be better, or if you have any question
       </div>
 
     </section>
-    <footer>
-          <div>
-              <div class="col-md-8">              
-                        <ul class="footernav">
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Help</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="#">Privacy</a></li>                      
-                         </ul>              
-              </div>        
-                  <div class="col-md-4">  
-                     <div id="footerimages">
-                      <img src="images/facebook.png">  <img src="images/twitter.png">
-                     </div>        
-                  </div>          
-          </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <?php
+include('footer.php'); 
+?>
   </body>
 </html>
 
