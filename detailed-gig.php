@@ -208,7 +208,7 @@ else
   <div class="row firstdinner container">
   
     <div class="col-md-10 person1">
-      <div style="float:left"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1"> </div>
+      <div style="float:left"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1"class="img-circle"> </div>
       <div> <span id="bond"><?php echo $biddernametodisplay ;?></span> </div>
       <div> <span id="bond">Rating :</span>
         <?php
