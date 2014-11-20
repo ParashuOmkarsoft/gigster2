@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
   </head>
   <body>
      <?php include('top-menu.php'); ?><br/><br/>
-    <div id="grad"></div>
+    
     <section class="userloginform container" style="max-width: 743px;padding: 65px 30px 50px 82px;">                       
          <h2 id="userlogin">Contact us</h2>    
             <h2 class="userp" style="line-height: 26px;width: 576px;">

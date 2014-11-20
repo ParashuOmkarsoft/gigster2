@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-<div id="grad"></div>
+
 <section class="container">
  <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>

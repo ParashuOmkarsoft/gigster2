@@ -27,7 +27,7 @@ else
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-<div id="grad"></div>
+
 <?php 
 	$nametodisplay=$gigsterInfo['fname']." ".$gigsterInfo['lname'];
 	$nametodisplay1=str_replace(" ","",$nametodisplay);

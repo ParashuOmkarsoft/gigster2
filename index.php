@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
   </head>
   <body>
     <?php include('top-menu.php'); ?>
-        <div id="grad"></div>
+        
     <div id="imgback">
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>

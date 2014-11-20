@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-<div id="grad"></div>
+
 <?php $term = $_REQUEST['gigsearch']; ?>
 <section class="container">
   <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>searchgig" method="post">

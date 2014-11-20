@@ -16,7 +16,7 @@ include('cfg/more-functions.php');
   </head>
   <body>
    <?php include('top-menu.php'); ?>
-        <div id="grad"></div>
+        
      
 
     </section>

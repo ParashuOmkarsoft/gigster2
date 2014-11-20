@@ -25,7 +25,7 @@ if(!isset($_SESSION['uId']))
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-<div id="grad"></div>
+
 
 <section class="container">
   <ul id="profilemenu">
