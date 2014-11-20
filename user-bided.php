@@ -157,7 +157,7 @@ box-shadow: 0px 0px 2px #000000;'";
         </div>
       </div>
     <div class="col-md-4"style="margin-top: -30px;">
-        <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></div>
+        <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"></div>
         <div style="clear:both"></div>
         <div class="tyco pull-right";>
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
