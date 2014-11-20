@@ -1324,3 +1324,5 @@ header.smaller {
     height: 75px;
 }
 header.smaller img{width: 68%;}
+
+header.smaller .navbar-nav{ margin-top:0px;}
