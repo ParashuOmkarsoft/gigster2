@@ -73,7 +73,7 @@ include('cfg/more-functions.php');
 		  {
 			  $pfimage=$uInfo['profileimage'];
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=4:3" id="imguser" style="
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=1:1" id="imguser" style="
     margin-right: -14px;" class="img-circle">
             <?php
 		  }
