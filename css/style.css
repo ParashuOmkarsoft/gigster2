@@ -39,7 +39,12 @@ body{padding-top: 115px;}
 
 .navbar-fixed-top{ background: #fff; }
 header{border-top: 13px solid #e95436;}
-header img{margin: 8px 0px 16px 0px;}
+header img{margin: 8px 0px 16px 0px;
+-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;}
 a {
 color: #5e350d;
 text-decoration: none;
