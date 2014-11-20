@@ -5,8 +5,8 @@
        <div class="col-md-12">
 
          <h2 id="login1">Login </h2>    
-            <h2 class="source">Create an account using any of your social profiles.</h2>  
-            <h2 class="source">Sign Up for a new free account Now. </h2>
+            <h2 class="source">Create a FREE account using any of your social profiles or email.</h2>  
+           
 
        <div class="col-md-8"><form class="form-horizontal hform" >
   <div class="form-group">
