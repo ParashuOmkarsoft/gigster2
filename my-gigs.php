@@ -271,7 +271,7 @@ box-shadow: 0px 0px 2px #000000;'";
 
 			?>
             </div>
-     	  <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="float-right"></a>              
+     	  <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg" style="float:right"></a>              
      	 </div> 
  </div>
 
