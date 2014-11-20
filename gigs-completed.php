@@ -64,8 +64,7 @@ include('cfg/more-functions.php');
   <div class="row myrow"  style="border-top: none; border-bottom:none;">
   <div class="col-md-12" style="border-bottom: 3px solid #fd8900; padding-bottom: 15px;">
     <div class="col-md-8" style="padding: 0;">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-      <!-- <h2 id="map"><?php echo $gigsterInfo['city'];?></h2> -->
+      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2> 
         <div class="col-md-8" style="padding: 0;">
         <!-- <p id="gigpara"> -->
         <h3 class="comp-h4">Feedback</h3>
@@ -73,16 +72,15 @@ include('cfg/more-functions.php');
 		 $mawardedto=project_awarded_to($opengig['prjId']);
 		 $userReview="";
 		 $userReview=get_project_feedback_1($opengig['prjId'],$opengig['userId']);
+		 ?>
+		  <h4>Gig owner</h4>
+         <div class="row">
+          <div class="col-md-10">
+          <div class="col-md-12" style="padding: 0px;">
+		 <?php
 		 if($userReview)
 		 {
-		 ?>
-		 <h4>Gig owner</h4><div class="row">
-            <?php 
-						
-			?>
-             <div class="col-md-10">
-          <div class="col-md-12" style="padding: 0px;">
-		 	<?php if($userReview['feedback'])
+		  if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
 			}
@@ -103,22 +101,26 @@ include('cfg/more-functions.php');
 			<?php
 			}
 			?>
-          </div>
-          </div>
+          
 		<?php 
 		 }
+		 ?></div>
+          </div>
+		</div><div class="row">
+         <div class="col-md-10">
+          <div class="col-md-12">
+          <h4>Gigster</h4>
+		 <?php
 		  $userReview="";
 		 $userReview=get_project_feedback_1($opengig['prjId'],$mawardedto['awardedto']);
 		 if($userReview)
 		 {
 		 ?>
-		 <div class="row">
+		 
             <?php 
 						
 			?>
-          <div class="col-md-10">
-          <div class="col-md-12">
-          <h4>Gigster</h4>
+         
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -140,17 +142,19 @@ include('cfg/more-functions.php');
 			<?php
 			}
 			?>
-          </div>
-          </div>
+          
+          
+          
 		<?php 
 		 }
 		?>
-      </div>
+        </div>
+          </div></div>
       
-      </div>
+      
+      
     </div>
-      <div class="col-md-4"><span id="bid"></span></div>
-     <!--  <div class="col-md-8"><span class="bid">Posted :<?php echo get_time($opengig['postedon']); ?></span></div> -->
+      
     </div>
     <div class="col-md-4" style="padding: 0;"> 
 		<?php $awardedarray=project_awarded_to($opengig['prjId']);
@@ -174,7 +178,7 @@ include('cfg/more-functions.php');
 			  }
 			  $awardedrating=get_user_rating($awarded);
 			  ?>
-      	<div class="pull-right" style="padding-top: 20px;/* position: absolute; */float: right;/* margin-top: 132px; *//* padding-left: 0px; */margin-left: 0px;">
+      	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1" style="border-radius:50px;border:solid 5px #FC6;">
       		<h4><?php echo $awardednametodisplay; ?></h4>
       					<?php 
@@ -194,6 +198,7 @@ include('cfg/more-functions.php');
 							  ?>
      	 </div>               
  </div>
+    
 </div>
     
     
