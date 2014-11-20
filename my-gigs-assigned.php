@@ -25,7 +25,7 @@ if(!isset($_SESSION['uId']))
 </head>
 <body>
 <?php include('top-menu.php'); ?>
-
+<div id="grad"></div>
 
 <section class="container">
   <ul id="profilemenu">
@@ -76,7 +76,7 @@ if($checkSql['count']>0)
 			}
 ?>
   <?php  //pr($prjDetails); ?>
-  <section class="firstsection" class="container">
+  <section id="firstsection" class="container">
     <div class="row">
       <div class="col-md-8">
         <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3>
@@ -101,39 +101,35 @@ if($checkSql['count']>0)
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg" style="max-width: 500px;border-radius:30px;">
-           <div class="modal-content cform">
+          <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
-                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" >
-                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
-                  <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post">
+                  <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
+
                   <h2 id="login1">Rate and Comment</h2>
-                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
-                  <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
-                    <div class="form-group" style="margin-bottom:10px;">
-                      <label class="col-md-2 control-label tfont">Rating</label>
+                  <h2 class="source" style="font-size:28px;margin-bottom:20px;"><?php echo strip_string($prjDetails['prjTitle'],29);?></h2>
+                   <div class="form-group" style="margin-bottom:30px;">
+                      <label class="col-md-2 control-label tfont" style="margin-top: 14px;">Rating</label>
                       
-                      <div class="col-md-10" style="margin-top:-7px">
+                      <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
-                       
-                 
-                  <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+                        <div class="form-control form-radio" >
+ <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
             
                          <script type="text/javascript">
                $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
-             </script>
-                        </div>
+             </script>                        </div>
                       </div>
                     </div>
 
+                  <div class="col-md-12" style="padding: 0px;">
                     <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-top: 14px;"></label>
-                     
-                      <div class="col-sm-12"style="margin-bottom:0px;">
+                        <div class="col-sm-12">
                         <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
                       </div>
                     </div>
-                    
+                   
                     <div class="form-group">
                       <div class="col-sm-12 logsign"style="padding: 0px;">
                         <button type="submit" class="btn mark-btn">Send</button>
@@ -407,7 +403,7 @@ $puname=$puuinfo['username'];
     </div>   
     <div style="float: right;padding-left:30px;" >
           <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
-    </div>        
+           </div>        
  </div>
     </div>
     <div class="row">
