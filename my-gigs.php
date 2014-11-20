@@ -238,9 +238,8 @@ box-shadow: 0px 0px 2px #000000;'";
      </div>
 	</div>
     </div>
-    <div class="col-md-8" style="padding: 0px;">
-       
-      </div>
+   
+   </div>
  </div>
 <div class="col-md-4"> 
 		<?php 
