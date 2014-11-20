@@ -36,6 +36,7 @@
 	font-style: normal;
 }
 body{padding-top: 115px;}
+.img{border-radius: 50%;}
 .navbar-fixed-top{ background: #fff; }
 header{border-top: 13px solid #e95436;}
 header img{margin: 8px 0px 16px 0px;}
