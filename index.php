@@ -22,8 +22,6 @@ include('cfg/more-functions.php');
 
  	<?php $homelatest = latest_gigs();
 	/*if(!empty($homelatest)){
-
-
 	?>
   <div class="box1">
          <div class="box-1">
