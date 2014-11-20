@@ -75,8 +75,8 @@ include('cfg/more-functions.php');
 		 ?>
 		  <h4>Gig owner</h4>
          <div class="row">
-          <div class="col-md-10">
-          <div class="col-md-12" style="padding: 0px;">
+         
+          <div class="col-md-12">
 		 <?php
 		 if($userReview)
 		 {
@@ -104,11 +104,12 @@ include('cfg/more-functions.php');
           
 		<?php 
 		 }
-		 ?></div>
+		 ?>
           </div>
-		</div><div class="row">
-         <div class="col-md-10">
-          <div class="col-md-12">
+		</div>
+        <div class="row">
+         <div class="col-md-12">
+          
           <h4>Gigster</h4>
 		 <?php
 		  $userReview="";
@@ -148,7 +149,7 @@ include('cfg/more-functions.php');
 		<?php 
 		 }
 		?>
-        </div>
+      
           </div></div>
       
       
