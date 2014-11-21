@@ -125,27 +125,32 @@ if (strlen($string) > 140) {
   </div>
   <div class="row clearfix">
     <div class="col-md-4 column">
+    <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
-        <span class="glyphicon glyphicon-ok"></span> Get help for anything. Done by your local Gigsters.
+         Get help for anything. Done by your local Gigsters.
       </h2>
     </div>
     <div class="col-md-4 column">
+    <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
         2. No need to spend hours on searching, We will find the right Gigster for you.
       </h2>
     </div>
     <div class="col-md-4 column">
+    <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
        3. Available online and on mobile, making it easy to choose and communicate with your Gigster
       </h2>
     </div>
   <div class=""></div>  
     <div class="col-md-6 column">
+    <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
         4. No need to spend hours on searching, We will find the right Gigster for you.
       </h2>
     </div>
     <div class="col-md-6 column">
+    <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
        5. Available online and on mobile, making it easy to choose and communicate with your Gigster
       </h2>
