@@ -50,7 +50,16 @@
 						  }
 						  ?></a>
                           </li> 
-   						  <li><a href="<?php echo $serverpath;?>assignments" >MY ASSIGNMENT</a></li>
+                          <?php
+						  $unreadawards=get_unread_awards($uInfo['userId']);
+						  ?>
+   						  <li><a href="<?php echo $serverpath;?>assignments" >MY ASSIGNMENT  <?php if($unreadawards)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;" title="New Gig Awarded"></i>
+							  <?php
+						  }
+						  ?></a></li>
                            
                           <?php $unread=get_user_messages($uInfo['userId']);
 						  if($unread)

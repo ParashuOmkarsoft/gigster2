@@ -29,7 +29,13 @@ if(!isset($_SESSION['uId']))
 
 <section class="container">
   <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>assignments"> <strong> In progress</strong> </a></li>
+    <li><a href="<?php echo $serverpath;?>assignments"> <strong> In progress</strong> <?php if($unreadawards)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;"></i>
+							  <?php
+						  }
+						  ?></a></li>
     <li><a href="<?php echo $serverpath;?>bided"> My Bids </a></li>
     <li><a href="<?php echo $serverpath;?>tocompleted">My Completed</a></li>
   </ul>
@@ -79,7 +85,7 @@ if($checkSql['count']>0)
   <section class="firstsection" class="container">
     <div class="row">
       <div class="col-md-8">
-        <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?></a></h3>
+        <h3 style="color:#753200;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($prjDetails['prjTitle']);?>/<?php echo $prjDetails['prjId'];?>" style="color:#753200;"><?php echo $prjDetails['prjTitle'];?> <?php if(get_unread_awards_project($prjDetails['prjId'])){?> <i class="fa fa-circle" style="color:green;" title="New Gig Awarded"></i><?php }?></a></h3>
         <br/>
         <?php if($prjDetails['status']!="3")
 			{
@@ -441,6 +447,8 @@ $puname=$puuinfo['username'];
   <div class="clearfix"></div>
   <?php
 	}
+	$updQuery="update btr_assignment set isread='1' where awardedto=".$uInfo['userId'];
+	$updSql=@db_query($updQuery);
 ?>
 </section>
 <?php include('footer.php'); ?>

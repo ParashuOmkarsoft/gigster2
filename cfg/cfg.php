@@ -1083,4 +1083,23 @@ function get_unread_bids_project($projectId)
 		 return $sql['count'];
 	 }
 }
+function get_unread_awards($userId)
+{
+	 $query="select * from btr_assignment where awardedto=$userId and isread='0'";
+	 $sql=@db_query($query);
+	 if($sql['count']>0)
+	 {
+		 return $sql;
+	 }
+	
+}
+function get_unread_awards_project($projectId)
+{
+	 $query="select * from btr_assignment where projectId=$projectId and isread='0'";
+	 $sql=@db_query($query);
+	 if($sql['count']>0)
+	 {
+		 return $sql['count'];
+	 }
+}
 ?>
