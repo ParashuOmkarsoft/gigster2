@@ -85,7 +85,7 @@ include('cfg/more-functions.php');
 			}
 			
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser" style="padding-bottom: 15px;">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=4:3" id="imguser" style="padding-bottom: 15px;"class="img-circle">
             <?php
 		  }
 		   else
