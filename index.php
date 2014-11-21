@@ -20,6 +20,24 @@ include('cfg/more-functions.php');
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 
+  <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2 class="name2 text-center">
+       What Is Gigster
+      </h3>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2 class="name1 ">
+       It’s a service that connects the people who need help, with the people who can help.
+       Gigster is all about enabling you to live, work and play better. 
+      </h2>
+    </div>    
+  </div>
+  </div>
+
  	<?php $homelatest = latest_gigs();
 	/*if(!empty($homelatest)){
 	?>
