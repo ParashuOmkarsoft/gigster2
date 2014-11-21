@@ -23,7 +23,7 @@ include('cfg/more-functions.php');
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search" name="gigstername" value="<?php echo $term; ?>">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+           <button type="submit" class="btn btn-default btn-lg search-submit"><span class="glyphicon glyphicon-search"></span></button>
         </form>
 
     <div id="our">Our Gigster</div>
