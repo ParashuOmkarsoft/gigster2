@@ -154,3 +154,16 @@ function view_profile_pic(serverpath,userId)
   xmlhttp5.open("GET",m_url,true);
   xmlhttp5.send();
 }
+
+function validate_biding()
+{
+
+ var bidprice=document.getElementById("pprice").value;	
+ bidprice=bidprice.replace(/\s+/g,'');
+ if(bidprice.length<=0)
+ {
+	 alert("Error, You must enter a bid amount to continue.");
+	 return false;
+ }
+
+}

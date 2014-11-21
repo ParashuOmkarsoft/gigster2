@@ -5,7 +5,7 @@ include('cfg/more-functions.php');
 $proposal=filter_text($_POST['proposal']);
 $price=filter_text($_POST['pprice']);
 $projectId=filter_text($_POST['projectId']);
-
+if($price){
 $attachedfile=$_FILES['attachedfile'];
 if($_SESSION['uId'])
 {
@@ -113,6 +113,16 @@ $gigdetails=get_gig_details($projectId);
 	{
 		print_r($GLOBALS['debug_sql']);
 	}
+}
+else
+{
+	?>
+	<script type="text/javascript">
+	alert("Error, You must enter a bid price to submit your bid.");
+	window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+	</script>
+	<?php
+}
 ?>
 </body>
 </html>

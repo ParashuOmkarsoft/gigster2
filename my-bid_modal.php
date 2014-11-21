@@ -11,7 +11,7 @@ $opengig=get_gig_details($projectId);
 
 <div class="container">
   <div class="col-md-12">
-    <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post">
+    <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" onsbumit="return validate_biding();">
       <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
       <input type="hidden" name="bidfrom" id="bidfrom" value="<?php echo $biderid; ?>" />
       <h2 id="login1" style="padding-left: 11px;">Bid On Gig </h2>
@@ -36,7 +36,7 @@ $opengig=get_gig_details($projectId);
           <Br/>
           <br/>
           <div class="col-md-8">
-            <input type="text"  required class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" required />
+            <input type="text"  required="required" class="form-control" id="pprice" name="pprice" onKeyDown="return only_numbers(event);" required />
           </div>
         </div>
         <div class="form-group">
