@@ -1085,11 +1085,13 @@ color: #fff;margin-bottom: 40px;}
 .fname4{font-family: 'source_sans_proregular';
 font-size: 24px;
 color: #fff;}
-.name1{margin-top: -43px;
+.name1{margin-top: 14px;
 font-family: 'source_sans_prosemibold';
 font-size: 21px;
 color: #FFFFFF;
-padding-left: 46px;}
+padding-left: 45px;
+background: url("../images/ok-mark.png");
+background-repeat: no-repeat;}
 .name2{margin-top: 20px;
 font-family: 'source_sans_prolight';
 font-size: 48px;
