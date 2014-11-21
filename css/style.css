@@ -1085,11 +1085,11 @@ color: #fff;margin-bottom: 40px;}
 .fname4{font-family: 'source_sans_proregular';
 font-size: 24px;
 color: #fff;}
-.name1{margin-top: -24px;
+.name1{margin-top: -43px;
 font-family: 'source_sans_prosemibold';
 font-size: 21px;
 color: #FFFFFF;
-padding-left: 35px;}
+padding-left: 46px;}
 .name2{margin-top: 20px;
 font-family: 'source_sans_prolight';
 font-size: 48px;
@@ -1362,3 +1362,12 @@ margin-right: 10px;
 background: #20b932;
 outline: none;
 margin-top: 12px;}
+
+#ok-icon .glyphicon-ok:before{
+content: "\e013";
+font-size: 35px;
+/* font-weight: lighter; */
+color: #e500cb;
+font-weight: regular;
+/* font-weight: bold; */
+}

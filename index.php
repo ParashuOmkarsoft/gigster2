@@ -117,39 +117,39 @@ if (strlen($string) > 140) {
 <div class="row rowbg">
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-12 column">
+    <div class="col-md-12">
       <h2 class="name2 text-center">
        Why Use Gigster
       </h3>
     </div>
   </div>
   <div class="row clearfix">
-    <div class="col-md-4 column">
+    <div class="col-md-4" id="ok-icon">
     <span class="glyphicon glyphicon-ok"></span>
-      <h2 class="name1 ">
+      <h2 class="name1">
          Get help for anything. Done by your local Gigsters.
       </h2>
     </div>
-    <div class="col-md-4 column">
+    <div class="col-md-4">
     <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
         2. No need to spend hours on searching, We will find the right Gigster for you.
       </h2>
     </div>
-    <div class="col-md-4 column">
+    <div class="col-md-4">
     <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
        3. Available online and on mobile, making it easy to choose and communicate with your Gigster
       </h2>
     </div>
   <div class=""></div>  
-    <div class="col-md-6 column">
+    <div class="col-md-6">
     <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
         4. No need to spend hours on searching, We will find the right Gigster for you.
       </h2>
     </div>
-    <div class="col-md-6 column">
+    <div class="col-md-6">
     <span class="glyphicon glyphicon-ok"></span>
       <h2 class="name1 ">
        5. Available online and on mobile, making it easy to choose and communicate with your Gigster
