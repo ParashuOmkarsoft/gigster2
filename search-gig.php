@@ -20,8 +20,8 @@ include('cfg/more-functions.php');
 <section class="container">
   <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>searchgig" method="post" style="padding:0px;">
     <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigname" value="<?php echo $term; ?>" style="border: 1px solid #fab518;border-radius: none;border-radius: 0px;"></div>
-    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-    
+    <button type="submit" class="btn btn-default search-submit"><span class="glyphicon glyphicon-search"></span></button>
+
   </form>
   <h2 id="logingigster1">Open Gigs</h2>
   <?php
@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
       </div>
       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
       <h4>&nbsp;</h4>
-      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a> </div>
+      <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"></a> </div>
       <?php 
 	  		if(($_SESSION['uId']!=encrypt_str($opengig['userId'])))
 			  {

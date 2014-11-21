@@ -1326,3 +1326,9 @@ header.smaller {
 header.smaller img{width: 68%;}
 
 header.smaller .navbar-nav{ margin-top:0px;}
+
+.search-submit{
+	background: none;
+border: none;
+box-shadow: none;
+}
