@@ -1226,8 +1226,11 @@ float: left;
 border: 5px solid #fe6635;
 height: 100px;}
 
-.rowbg{background: url(../images/namebg.jpg);
-padding-bottom: 50px;margin: 0 auto;}
+.rowbg{/* background: url(../images/namebg.jpg); */
+padding-bottom: 50px;
+margin: 0 auto;
+/* color: #ffcc00; */
+background-color: #ffcc00;}
 
 
 #rating .star1{

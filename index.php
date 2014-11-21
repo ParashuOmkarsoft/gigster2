@@ -117,7 +117,7 @@ if (strlen($string) > 140) {
 <div class="row rowbg">
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-12">
+    <div class="col-md-12"style="padding-bottom: 50px;">
       <h2 class="name2 text-center">
        Why Use Gigster
       </h3>
