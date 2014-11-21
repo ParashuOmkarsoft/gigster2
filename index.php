@@ -23,14 +23,14 @@ include('cfg/more-functions.php');
   <div class="container">
   <div class="row clearfix">
     <div class="col-md-12 column">
-      <h2 class="name2 text-center">
+      <h2 class="name-what-gigster text-center">
        What Is Gigster
       </h3>
     </div>
   </div>
   <div class="row clearfix">
     <div class="col-md-12 column">
-      <h2 class="name1 ">
+      <h2 class="name-what-gigster1 text-center">
        It’s a service that connects the people who need help, with the people who can help.
        Gigster is all about enabling you to live, work and play better. 
       </h2>
