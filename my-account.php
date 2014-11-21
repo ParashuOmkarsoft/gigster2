@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
  
      <section class="container">
       <ul id="profilemenu">
-		<li><h5 id="pro" style="border-left:none;"> <a href="<?php echo $serverpath;?>myaccount">My Profile</a></h5></li>
+		<li><h5 id="pro" style="border-left:none;"> <a href="<?php echo $serverpath;?>myaccount"><strong>My Profile</strong></a></h5></li>
         <li><h5 id="pro"> <a href="javascript:void(0);">Change Password</a></h5></li>
         <li><h5 id="pro"><a href="<?php echo $serverpath;?>checkout" target="targetframe" >Logout</a></h5></li>                            
       </ul> 
