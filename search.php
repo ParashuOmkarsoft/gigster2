@@ -20,10 +20,8 @@ include('cfg/more-functions.php');
 
  <div class="container searchbox">
         <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search.php" method="post">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" name="gigstername" value="<?php echo $term; ?>">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+         <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigname" value="<?php echo $term; ?>" style="border: 1px solid #fab518;border-radius: none;border-radius: 0px;"></div>
+   		 <button type="submit" class="btn btn-default btn-lg search-submit"><span class="glyphicon glyphicon-search"></span></button>
         </form>
 
     <div id="our">Our Gigster</div>
