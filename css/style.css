@@ -1336,9 +1336,9 @@ margin-right: 50px;
 header.smaller {
     height: 75px;
 }
-header.smaller img{width: 68%;}
+header.smaller img{width: 86%}
 
-header.smaller .navbar-nav{ margin-top:0px;}
+header.smaller .navbar-nav{ margin-top: 15px;}
 
 .search-submit{
 	background: none;
