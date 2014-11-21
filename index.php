@@ -90,6 +90,11 @@ if (strlen($string) > 140) {
 
 <div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE GIGS</button></a><hr class="hr"></div>
 <div class="container" style="max-width: 1178px;margin-top: 45px;">
+      <div class="col-md-12 column">
+      <h2 class="name-what-gigster text-center">
+       How It Works
+      </h2>
+      </div>
   
       <div class="box-1">
         <span class=""><img src="images/step1.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
@@ -106,7 +111,7 @@ if (strlen($string) > 140) {
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
-  <div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn signup-btn" type="submit">Free Signup!</button></a><hr class="hr"></div>  
+  <div style="text-align: center;padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn signup-btn" type="submit">Free Signup!</button></a><hr class="hr"></div>  
 
 </div>
 <div class="row rowbg">
