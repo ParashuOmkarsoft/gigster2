@@ -1336,7 +1336,7 @@ margin-right: 50px;
 header.smaller {
     height: 75px;
 }
-header.smaller img{width: 86%}
+header.smaller img{width: 100px;}
 
 header.smaller .navbar-nav{ margin-top: 15px;}
 
