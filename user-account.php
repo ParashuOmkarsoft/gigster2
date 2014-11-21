@@ -28,7 +28,7 @@ include('cfg/more-functions.php');
 		die();
 	}
 	?>
-    <section class="firstsection" class="container">
+    <section class="container secondsection">
       <div class="row" style="
     padding-bottom: 15px;">
       <div id="paraprofile">
