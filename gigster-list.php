@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
     
 
  <div class="container searchbox">
-        <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search.php" method="post">
+        <form class="navbar-form navbar-right" role="search" action="<?php echo $serverpath;?>search.php" method="post" style="padding: 0px;">
           <div class="form-group"><input type="text" class="form-control" placeholder="Search" name="gigsearch" style="border: 1px solid #fab518;border-radius: none;border-radius: 0px;"></div>
           <!-- <button type="submit" class="btn btn-default">Submit</button> -->
           <img src="images/search.png">
