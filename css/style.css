@@ -35,6 +35,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'FuturaStd-Light';
+	src: url('fonts/FuturaStd-Light.otf');
+	src: url('fonts/FuturaStd-Light.otf?#iefix') format('embedded-opentype'), url('fonts/FuturaStd-Light.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
 body{padding-top: 115px;}
 
 .navbar-fixed-top{ background: #fff; }
@@ -1334,7 +1341,7 @@ box-shadow: none;
 padding: 5px;
 }
 .name-what-gigster{margin-top: 20px;
-font-family: 'source_sans_prolight';
+font-family: 'FuturaStd-Light';
 font-size: 48px;
 color: #000000;}
 .name-what-gigster1{
@@ -1342,4 +1349,4 @@ color: #000000;}
 font-family: 'source_sans_proregular';
 font-size: 21px;
 color: #000000;
-}
+line-height: 50px;}
