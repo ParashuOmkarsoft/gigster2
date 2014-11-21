@@ -1350,3 +1350,14 @@ font-family: 'source_sans_proregular';
 font-size: 21px;
 color: #000000;
 line-height: 50px;}
+
+.signup-btn{color: #FFFFFF;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 268px;
+border-radius: 10px;
+/* margin-left: 10px; */
+margin-right: 10px;
+background: #20b932;
+outline: none;
+margin-top: 12px;}

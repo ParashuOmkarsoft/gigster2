@@ -106,7 +106,8 @@ if (strlen($string) > 140) {
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
-  <div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn more-btn" type="submit">Signup</button></a><hr class="hr"></div>  
+  <div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn signup-btn" type="submit">Free Signup!</button></a><hr class="hr"></div>  
+</div>
 </div>
 <div class="row rowbg">
 <div class="container">
