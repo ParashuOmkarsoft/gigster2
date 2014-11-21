@@ -20,7 +20,7 @@ include('cfg/more-functions.php');
       <img src="<?php echo $serverpath;?>images/grooming.png">
     </div>
 
-  <div class="container">
+  <div class="container" style="padding:40px;">
   <div class="row clearfix">
     <div class="col-md-12 column">
       <h2 class="name-what-gigster text-center">
@@ -100,13 +100,13 @@ if (strlen($string) > 140) {
         <span class=""><img src="images/step2.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
         <h2 class="fname2">Choose the Gigster </h2>
         <p>We'll find the right local Gigsters and you just select one.</p>
-        </div>   
+      </div>   
       <div class="box-1">
         <span class=""><img src="images/step3.png" alt=""  style="padding: 20px;float: left;padding-top: 0px;"></span>
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
-  </div>
+  <div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?=$serverpath;?>allgigs"><button class="btn more-btn" type="submit">Signup</button></a><hr class="hr"></div>  
 </div>
 <div class="row rowbg">
 <div class="container">
