@@ -39,8 +39,9 @@ if($ngigdetails)
 		if($gigsters['count']>0)
 			{
 		?>
-			
+			<Table class="table"><tr>
             <?php
+			$dd=0;
 			for($i=0;$i<$gigsters['count'];$i++)
 				{
 					
@@ -69,6 +70,7 @@ if($ngigdetails)
 					
 					
 			?>
+            <td>
 			<div class="col-md-6 column" style="margin-top:10px;border-bottom:1px solid #fd8900;min-height:216px;" >
 			
 						
@@ -105,16 +107,28 @@ if($ngigdetails)
 							
 							
 						</div>
-					</div>
-
-			</div>
+				</td>
             <?php
+			if($dd==2)
+			{
+				?>
+				</tr>
+                <tr>
+				<?php
+				$dd=1;
+			}
+			else
+			{
+				$dd++;
+			}
 				}
 			}
+			?>
+			</Table>
+			<?php
 			}
 			?>
-		</div>
-	</div>
+		
     <div class="form-group">
     <button type="SUBMIT" class="btn invite-btn">Invite</button>
     </div>
