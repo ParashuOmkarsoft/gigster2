@@ -39,7 +39,7 @@ if($ngigdetails)
 		if($gigsters['count']>0)
 			{
 		?>
-			<Table class="table"><tr>
+			<Table class="table"><tr style="border-bottom: 2px solid #fd8900;">
             <?php
 			$dd=0;
 			for($i=0;$i<$gigsters['count'];$i++)
@@ -75,7 +75,7 @@ if($ngigdetails)
 					
 					
 			?>
-            <td style="min-height:216px;min-width: 180px;border-bottom: 2px solid #fd8900;">
+            <td style="min-height:216px;min-width: 180px;">
 			
 			
 						
@@ -118,7 +118,7 @@ if($ngigdetails)
 			{
 				?>
 				</tr>
-                <tr>
+                <tr style="border-bottom: 2px solid #fd8900;">
 				<?php
 				$dd=0;
 			}
