@@ -21,14 +21,13 @@ include('cfg/more-functions.php');
       
 <div class="row firstdinner">
        
-<div class="col-md-12">
+<div class="col-md-12" style="padding=0px;">
 <span id="bond">Privacy</span> 
 <p class="james">USERS’ privacy are important to us. GIGSTERGO.COM’s Personal Data Protection Policy sets out GIGSTERGO.COM will comply with the provisions of the Personal Data Protection Act 2012 of Singapore (“PDPA”).<br><br>
 GIGSTERGO.COM also want USERS to understand the way in which we collect, use, disclose and/or retain your Personal Data. This Personal Data Protection Policy sets out:<br><br>
-our policies on how we manage your Personal Data;<br><br>
-the types of Personal Data we collect, use, disclose and/ or retain;<br><br>
-how we collect, use, disclose and/ or retain your Personal Data; and<br><br>
-the purpose(s) for which we collect, use, disclose and/ or retain your Personal Data.<br><br>
+our policies on how we manage your Personal Data;
+the types of Personal Data we collect, use, disclose and/ or retain;
+how we collect, use, disclose and/ or retain your Personal Data; and the purpose(s) for which we collect, use, disclose and/ or retain your Personal Data.
 USERS agree and consent to us to collect, use and disclose and/or retain your Personal Data in the manner set forth in this Personal Data Protection Policy.<br><br>
 This Personal Data Protection Policy supplements but does not supersede nor replace any other consent which you may have previously provided to us nor does it affect any right that we may have at law in connection with the collection, use, disclosure and/ or retention of your Personal Data.<br><br>
 From time to time, we may update this Personal Data Protection Policy to ensure that our Policy is consistent with developments and/or any regulatory changes. Subject to your legal rights in Singapore, the prevailing terms of the Personal Data Protection Policy shall apply.<br><br>
@@ -39,7 +38,7 @@ This Personal Data Protection Policy forms a part of the terms and conditions go
 <div class="clearfirst"></div>
 </div> 
 <div class="row firstdinner">
-<div class="col-md-12">
+<div class="col-md-12" style="margin-top:15px;padding=0px;">
 <span id="bond">1.Your Personal Data</span> 
 <p class="james">In this Personal Data Protection Policy, “Personal Data” refers to any data and/or information about you from which you can be identified by, either (a) from that data; or (b) from that data and other information to which we may have legitimate access to. Examples of such Personal Data include but are not limited to:<br><br>
 your name, NRIC, passport or other identification number, telephone number(s), mailing address, email address and any other information relating to you which you have provided in any forms you may have submitted to use, or in other forms of interaction with you;<br><br>
@@ -54,7 +53,7 @@ information about your usage of and interaction with our website and/or services
 <div class="clearfirst"></div>
 </div>   
 <div class="row firstdinner">
-<div class="col-md-12">
+<div class="col-md-12"  style="margin-top:15px;padding=0px;">
 <span id="bond">2.  Collection of your Personal Data</span> 
 <p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
 a.  when you sign up with us for GIGSTERGO.COM membership;<br><br>
@@ -74,7 +73,7 @@ i.  when you submit your Personal Data to us for any other reason.<br><br>
 <div class="clearfirst"></div>
 </div>   
 <div class="row firstdinner">      
-<div class="col-md-12">
+<div class="col-md-12" style="margin-top:15px;padding=0px;" >
 <span id="bond">3.  Purposes for the Collection, Use and Disclosure of Your Personal Data</span> 
 <p class="james">1. Generally, GIGSTERGO.COM may collect, use, disclose and/or retain your Personal Data for the following purposes:<br><br>
 a.  to manage your membership including recruitment, processing and termination of your membership;<br><br>
@@ -95,7 +94,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 </div>   
 
 <div class="row firstdinner">      
-<div class="col-md-12">
+<div class="col-md-12" style="margin-top:15px;padding=0px;">
 <span id="bond">4.  Marketing/ Optional Purposes </span> 
 <p class="james">1. From time to time, GIGSTERGO.COM may contact you via mail, electronic mail, telephone (call or SMS-Text), facsimile or social medial platforms, to inform you about our membership benefits, services and events that we think may be of interest to you.<br><br>
 2.  You can let us know at any time if you no longer wish to receive marketing materials (by informing us via our email at contact@gigstergo.com and we will remove your details from our direct marketing database.<br><br>
@@ -108,7 +107,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 <div class="clearfirst"></div>
 </div>
 <div class="row firstdinner">
-<div class="col-md-12">
+<div class="col-md-12" style="margin-top:15px;padding=0px;">
 <span id="bond">5.  Disclosure of your Personal Data </span> 
 <p class="james">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
 a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br><br>
