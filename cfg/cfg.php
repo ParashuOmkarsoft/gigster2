@@ -96,6 +96,27 @@ elseif ('gigster2.fountaintechies.com' == $sitedef)
 	$fbAppSecret="caefe0e5bf76054cc7f1edef85cc2674";
 }	
 
+elseif ("www.gigstergo.com" == $sitedef || $sitedef=="gigstergo.com")
+{
+	 $__dbhost = "localhost";
+	 $__dbname = "gigster2";
+	 $__dbuser = "gigster2";
+	$__dbpass = "3gXWOqeaf";
+	define( 'HTTP_ROOT', '/' );
+	define( 'DEBUG', false );
+	$serverpath = "http://".$_SERVER['HTTP_HOST'];
+	define( 'SERVERPATH', $serverpath );
+	$innerpath = "http://".$_SERVER['HTTP_HOST']."/";
+	define( 'INNERPATH', $innerpath );
+	$adminpath = $serverpath."xadmin/";
+	define( 'ADMINPATH', $adminpath );
+	$upload_path=$_SERVER['DOCUMENT_ROOT']."/uploads/";
+	setcookie("serverpath",$serverpath);
+	$sitename="Gigster";
+	$currency="SGD";
+	$fbAppId="846990408668822";
+	$fbAppSecret="caefe0e5bf76054cc7f1edef85cc2674";	}
+
 db_connect();
 
 // base functions to follow this line ###################################################################

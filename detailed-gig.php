@@ -388,7 +388,7 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('m/d/Y');?>"   />
+                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('d/m/Y');?>"   />
                 </div>
                  <script type="text/javascript">
           $(document).ready(function(){

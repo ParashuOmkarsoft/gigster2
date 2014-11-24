@@ -91,7 +91,7 @@ include('cfg/more-functions.php');
     <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"style="
       margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
-      <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
+      <p id="gigpara" ><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-12" style="padding: 0px;"> 
       <span id="bid" style="margin-left:0px;"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">

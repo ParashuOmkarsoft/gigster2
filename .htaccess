@@ -13,7 +13,7 @@ RewriteRule ^(lib)($|/) - [L]
 
 
 ###Site Settings
-
+#
 RewriteRule ^checkout logout.php
 RewriteRule ^loginwithtwitter twitter-login.php
 RewriteRule ^loginwithtlinkedin linkLogin.php

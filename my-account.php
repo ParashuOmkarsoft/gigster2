@@ -87,7 +87,7 @@ include('cfg/more-functions.php');
          
           <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" enctype="multipart/form-data" class="mhidden" target="targetframe">
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
-           <div class="col-md-6">
+           <div class="col-md-8">
           	<div class="form-group">
             	<label class="col-md-4 profile-inpute">First Name</label>
               <div class="col-sm-8" style="margin-bottom: 12px;">
@@ -167,7 +167,7 @@ include('cfg/more-functions.php');
 					?>
             </div>
             
-            <div class="form-group">
+            <div class="form-group" >
 				<input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
             <div class="col-sm-6" style="margin-bottom: 12px; margin-top: 35px;">
 				<label class="profile-inpute">Recieve Notifications</label>
@@ -175,7 +175,7 @@ include('cfg/more-functions.php');
             </div>
             
             </div>
-            <div class="col-md-6" align="right">
+            <div class="col-md-4" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">
   <div class="fileinput-new thumbnail" style="width: 200px;">
   <?php if(!$pfimage)
