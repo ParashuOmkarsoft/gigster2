@@ -219,7 +219,7 @@ include('cfg/more-functions.php');
     </section>
     <section class="container secondsection">
      <div class="row">
-            <div class="col-md-6"><h5 id="title">Tagline</h5></div>
+            <div class="col-md-6"><h5 id="title">About</h5></div>
             <div class="col-md-6"><a href='javascript:void(0);' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
       <p id="aboutuspara"><?php
@@ -245,7 +245,7 @@ include('cfg/more-functions.php');
        </section>
         <section class="container secondsection">
        <div class="row">
-            <div class="col-md-6"><h5 id="title">About</h5></div>
+            <div class="col-md-6"><h5 id="title">Overview</h5></div>
             <div class="col-md-6"><a href="javascript:void(0);" onClick="visible_invisible('frmoverview','overviewpara');"><img src="images/pencil.png"></a></div>
       </div> 
       <p id="overviewpara"><?php
