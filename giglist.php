@@ -79,7 +79,7 @@ include('cfg/more-functions.php');
     <span  class="myquote">Posted :<?php echo get_time($opengig['postedon']); ?></span>
     </div>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-   	  <p id="gigpara" style="padding-top:0px !important;" cl><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),250));?></p>
+   	  <p id="gigpara" style="padding-top:0px !important;width:750px;overflow:hidden;" ><?php echo stripslashes(stripslashes(nl2br(strip_string(nl2br($opengig['prjdesc']),250))));?></p>
     </div>
     <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">
 
