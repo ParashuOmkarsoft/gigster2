@@ -134,7 +134,7 @@ include('cfg/more-functions.php');
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
-          <script type="text/javascript">$("#skills").select2({tags:[<?php echo $tags;?>]});</script>
+          <script type="text/javascript">$("#skills").select2({tags:[<?php echo strtolower($tags);?>]});</script>
             </div>
 			<div class="form-group">
             <label class="col-md-4 profile-inpute">City</label>
