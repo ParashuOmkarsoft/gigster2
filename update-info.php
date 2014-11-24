@@ -190,7 +190,7 @@ if($frmaction=="updateinfo")
 					$mpath=mera_url_noslash($mpath);
 					?>
                     <script type="text/javascript">
-					window.parent.view_profile_pic("<?=$serverpath;?>","<?=$user;?>");
+					window.parent.view_profile_pic("<?php echo $serverpath;?>","<?php echo$user;?>");
 					</script>
 					<?php
 				}
@@ -211,7 +211,7 @@ if($frmaction=="updateinfo")
 	window.parent.document.getElementById("headertitle").innerHTML="<?php echo $data['tagline'];?>";
 	window.parent.document.getElementById("headerskills").innerHTML="<?php echo $data['skills'];?>";	
 	window.parent.document.getElementById("map").innerHTML="<?php echo $mloc;?>";
-	window.parent.view_profile_pic("<?=$serverpath;?>","<?=$user;?>");
+	window.parent.view_profile_pic("<?php echo $serverpath;?>","<?php echo$user;?>");
 	window.parent.visible_invisible('paraprofile','frmprofile');
 
 	</script>

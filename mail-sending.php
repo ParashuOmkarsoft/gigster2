@@ -34,5 +34,5 @@ $sendmail=send_my_mail("james@parasolwonder.com",$mailmatter,$mailsubject);
  //james@parasolwonder.com
 ?><script type="text/javascript">
 alert("Thanks for contacting Gigster.");
-window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+window.parent.location="<?php echo$_SERVER['HTTP_REFERER'];?>";
 </script>

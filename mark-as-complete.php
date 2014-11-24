@@ -57,7 +57,7 @@ else{
 				$msgsql=@db_query($msgquery);
 				?>
 				<script type="text/javascript">
-				window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+				window.parent.location="<?php echo$_SERVER['HTTP_REFERER'];?>";
 				</script>
 				<?php
 				

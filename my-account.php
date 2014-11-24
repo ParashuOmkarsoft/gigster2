@@ -134,7 +134,7 @@ include('cfg/more-functions.php');
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
-          <script type="text/javascript">$("#skills").select2({tags:[<?=$tags;?>]});</script>
+          <script type="text/javascript">$("#skills").select2({tags:[<?php echo$tags;?>]});</script>
             </div>
 			<div class="form-group">
             <label class="col-md-4 profile-inpute">City</label>
@@ -319,7 +319,7 @@ include('cfg/more-functions.php');
 		?>
         <div class="clearfix"></div>
 		<span style="float:right;">
-        <a href="<?=$serverpath;?>assignments" style="font-size:16px;font-weight:bold;">View All</a>
+        <a href="<?php echo $serverpath;?>assignments" style="font-size:16px;font-weight:bold;">View All</a>
         </span>
         <div class="clearfix"></div>
 		<?php			

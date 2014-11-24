@@ -121,5 +121,5 @@ else
 
 ?>
 <script type="text/ecmascript">
-window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+window.parent.location="<?php echo$_SERVER['HTTP_REFERER'];?>";
 </script>

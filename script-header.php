@@ -26,10 +26,10 @@
 <script type="text/javascript" src="<?php echo $serverpath;?>jscripts.js"></script>
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/jasny-bootstrap.min.css">
 <script src="<?php echo $serverpath;?>js/jasny-bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?=$serverpath;?>select2/assets/lib/css/select2.css" />
-<script type="text/javascript" src="<?=$serverpath;?>select2/assets/lib/js/select2.js"></script>
-  <link href="<?=$serverpath;?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-    <script src="<?=$serverpath;?>js/star-rating.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo $serverpath;?>select2/assets/lib/css/select2.css" />
+<script type="text/javascript" src="<?php echo $serverpath;?>select2/assets/lib/js/select2.js"></script>
+  <link href="<?php echo $serverpath;?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="<?php echo $serverpath;?>js/star-rating.js" type="text/javascript"></script>
     <style type="text/css">
 	.glyphicon-minus-sign{
 		display:none !important;

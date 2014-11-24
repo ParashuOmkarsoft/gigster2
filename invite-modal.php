@@ -54,7 +54,7 @@
 						$tags=implode(",",$tags);
 						?>
                          
-          <script type="text/javascript">$("#keywords").select2({tags:[<?=$tags;?>]});</script>
+          <script type="text/javascript">$("#keywords").select2({tags:[<?php echo$tags;?>]});</script>
             <h2 class="loginlead"> Would you like to invite any Gigster’s for your project ?</h2>
             <div class="form-group">
               <div class="col-sm-10 ">

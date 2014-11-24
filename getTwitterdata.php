@@ -51,7 +51,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 		   $_SESSION['uId']=encrypt_str($checkSql['rows']['0']['userId']);
 			?>
 			<script type="text/javascript">
-			window.location="<?=$serverpath;?>allgigs";
+			window.location="<?php echo $serverpath;?>allgigs";
 			</script>
 			<?php
 	   }
@@ -81,7 +81,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 				$_SESSION['uId']=encrypt_str($insertQuery);
 				?>
 			<script type="text/javascript">
-			window.location="<?=$serverpath;?>";
+			window.location="<?php echo $serverpath;?>";
 			</script>
 			<?php
 		   }

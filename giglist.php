@@ -128,7 +128,7 @@ include('cfg/more-functions.php');
 					{
 										  ?>
                   <!--<a href="#" onClick="javascript:alert('You have already bided on this gig');">-->
-                  <a data-toggle="modal" href="#bidsent<?=$opengig['prjId'];?>"  >
+                  <a data-toggle="modal" href="#bidsent<?php echo$opengig['prjId'];?>"  >
                   <button type="button" class="btn bid-send pull-right" style="margin-bottom:10px;">Bid Sent</button>
                   </a>
                   <?php
@@ -153,7 +153,7 @@ include('cfg/more-functions.php');
 
 				  ?>
                   
-                  <div id="bidsent<?=$opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+                  <div id="bidsent<?php echo$opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">
                               <div class="container">

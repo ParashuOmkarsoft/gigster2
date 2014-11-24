@@ -22,7 +22,7 @@ include('cfg/more-functions.php');
   
       <div class="row firstdinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/1.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/1.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What is Gigster ?</span> 
@@ -32,7 +32,7 @@ include('cfg/more-functions.php');
       </div>  
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/2.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/2.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What is a Gig?</span> 
@@ -42,7 +42,7 @@ include('cfg/more-functions.php');
       </div>
        <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/3.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/3.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Who are Gigsters?</span> 
@@ -52,7 +52,7 @@ include('cfg/more-functions.php');
       </div>
        <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/4.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/4.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Why should I post a Gig?</span> 
@@ -62,7 +62,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/5.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/5.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">I'm convinced, so how do I post a Gig?</span> 
@@ -72,7 +72,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/6.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/6.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What are the charges for posting a Gig?</span> 
@@ -82,7 +82,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/7.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/7.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Why should I join as a Gigster?</span> 
@@ -92,7 +92,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/8.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/8.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What do you mean right Gig?</span> 
@@ -102,7 +102,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/9.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/9.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">How do I communicate with the Gig owner/Gigster?</span> 
@@ -112,7 +112,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/10.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/10.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Where is Gigster available?</span> 
@@ -122,7 +122,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/11.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/11.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Why only Singapore?</span> 
@@ -132,7 +132,7 @@ include('cfg/more-functions.php');
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
-          <img src="<?=$serverpath;?>images/12.jpg" class="img-circle">
+          <img src="<?php echo $serverpath;?>images/12.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">How do I pay the Gigster/How do I get paid as a Gigster?</span> 
