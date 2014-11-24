@@ -863,7 +863,8 @@ function is_project_bided_by_user($prjId,$userId)
 function convert_db_date($date)
 {
 	$date=explode("/",$date);
-	$date=$date[2]."-".$date[0]."-".$date[1];
+
+	$date=$date[2]."-".$date[1]."-".$date[0];
 	return $date;
 }
 function is_message_thread_initiated($projectId,$bidderid)
