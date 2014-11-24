@@ -135,11 +135,11 @@ if($ngigdetails)
 			}
 			?>
 		
-   
-</form>
  <div class="form-group">
     <button type="SUBMIT" class="btn invite-btn">Invite</button>
- </div>
+ </div>   
+</form>
+
 
 
 
