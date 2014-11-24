@@ -109,13 +109,13 @@ if($ngigdetails)
 						</div>
 				</td>
             <?php
-			if($dd==2)
+			if($dd==1)
 			{
 				?>
 				</tr>
                 <tr>
 				<?php
-				$dd=1;
+				$dd=0;
 			}
 			else
 			{
