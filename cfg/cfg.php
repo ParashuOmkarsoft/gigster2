@@ -695,6 +695,7 @@ function add_keywords($keywords)
 $keywords=explode(",",$keywords);
 	foreach($keywords as $keyword)
 		{
+			$keyword=strtolower($keyword);
 			$checkQuery="select * from btr_tags where tag='$keyword'";
 			$checkSql=@db_query($checkQuery);
 			if($checkSql['count']>0)
@@ -980,12 +981,13 @@ else{
 }
 function get_gigsters_on_skill($skills)
 {
+	$skills=strtolower($skills);
 	$skillsarray=explode(",",$skills);
 	$g=0;
 	for($i=0;$i<sizeof($skillsarray);$i++)
 	{
 		$skill=$skillsarray[$i];
-		$gigsterQuery="select u.userId from btr_users as u,btr_userprofile as p where u.userId=p.userId and p.skills like '%$skill%'";
+		$gigsterQuery="select u.userId from btr_users as u,btr_userprofile as p where u.userId=p.userId and u.userId<>18 and p.skills like '%$skill%'";
 		$gigsterSql=@db_query($gigsterQuery);
 		if($gigsterSql['count']>0)
 		{
