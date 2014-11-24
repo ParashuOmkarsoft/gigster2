@@ -4,10 +4,10 @@ include('cfg/functions.php');
 include('cfg/more-functions.php');
 
 $ownerId=filter_text($_GET['ownerId']);
-$biderid=filter_text($_GET['biderid']);
+ $biderid=filter_text($_GET['biderid']);
 $projectId=filter_text($_GET['projectId']);
 
-$projectDetails=get_gig_details($project);
+$projectDetails=get_gig_details($projectId);
  $messagethread="select * from btr_messages where projectId=$projectId and ((msgfrom=$ownerId and msgto=$biderid) or (msgfrom=$biderid and msgto=$ownerId)) and msgtype<>'r' order by msgId DESC";
 $messagethread=@db_query($messagethread);
 $uInfo=get_user_Info($_SESSION['uId']);
@@ -21,9 +21,12 @@ else
 	$msgfrom=$biderid;
 	$msgto=$ownerId;
 }
+$bidQuery="select * from btr_bids where bidfrom=$biderid and projectId=$projectId";
+$bidSql=@db_query($bidQuery);
 ?>
 <section class="postgigform " id="inviteform">                       
 <h2 id="login1"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($projectDetails['prjTitle']);?>/<?php echo $projectId;?>"><?php echo strip_string($projectDetails['prjTitle'],29);?></a></h2>    
+<p id="gigpara" style="width:600px;"><strong>Bid Details :</strong> <?php echo nl2br($bidSql['rows']['0']['bidcontent']);?></p>
 <div class="col-sm-12" >
 	<form  action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
   					 <input type="hidden" id="fromId" name="fromId" value="<?php echo $msgfrom;?>" />
