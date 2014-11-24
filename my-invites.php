@@ -76,7 +76,7 @@ if($ngigdetails)
 						
 							
 							
-							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1"></a><br>
+							<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><img src="<?php echo $serverpath;?>image.php?image=/<?php echo $gigsterpic;?>&width=75&height=75&cropratio=1:1" class="img-circle"></a><br>
 							<input type="checkbox" name="invited[]" id="invited" value="<?php echo $gigsterInfo['userId'];?>" style="float: left;margin-top: 10px; margin-right: 5px;">
 							<h4 style="word-wrap: break-word;margin-top:5px;">
 								<a href="<?php echo get_profile_link($serverpath,$gigsterInfo['userId']); ?>" target="_blank"><?php echo $gigsternametodisplay; ?></a>
