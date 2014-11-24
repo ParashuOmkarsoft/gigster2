@@ -26,13 +26,27 @@ include('cfg/more-functions.php');
          <p class="james">These Terms and Conditions of Use (T&Cs) are intended to define the modalities of the provision of services as provided by the platform GIGSTERGO.COM, hereafter named "the Service", and the conditions of use of the Service by the USER.</p> 
          <p class="james">Any access and/or Use of the platform GIGSTERGO.COM presumes the unconditional acceptance and adherence to all sections of these Terms and Conditions. This consequently establishes a link of a contractual nature between GIGSTERGO.COM and the USER.</p> 
          <p class="james">In the case of the USER not wishing to accept all or any of these terms and conditions, they are requested to explicitly renounce all use of the Service.</p> 
+         <p class="james">GIGSTERGO.COM makes available to USERS, by online access, the information described below, subject to the terms described on the platform GIGSTERGO.COM</p> 
+         <p class="james">The information posted online by USERS are:</p> 
+         <p class="james">● Data of a financial, technical or commercial nature, describing the previous experience and skills of the USER.</p>
+         <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIG OWNERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms with regard to the GIG searched, the nature of the GIGSTER’s work, and the quality of their online profile.</p>
+         <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIGSTERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms for the GIGs on offer by the GIG OWNERS.</p>
+         <p class="james">The "mouse click" by the USER constitutes an electronic signature which is of the same value as a handwritten signature, and the client thereby recognizes acceptance of the general and specific T&Cs. </p>
+         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
+      
         </div>
          <div class="clearfirst"></div>
       </div>
        <div class="row secondinner">
         <div class="col-md-12">
-         <span id="bond">Who are Gigsters?</span> 
-         <p class="james">Gigsters are anyone who can provide a service. Anyone can be a Gigster. It is powered by the community, inspired by people like you. Oh, and it's free to join, so login here<link> and fill in your profile!</p> 
+         <span id="bond">GLOSSARY</span> 
+         <p class="james">● AGREEMENT: EXPRESSES THE CONTRACTUAL LINK AS WELL AS THE TERMS AND CONDITIONS AS SET OUT IN THE CURRENT DOCUMENT.</p>
+         <p class="james">● CLIENT: GIG OWNER, GIGSTER.</p> 
+         <p class="james">● GIG: A SERVICE, A PIECE OF WORK OR AN OBJECT</p> 
+         <p class="james">● GIG OWNERS: A COMPANY OR CORPORATION OR INDIVIDUAL BUSINESSPERSON, WHO THROUGH THE SERVICES OF THE GIGSTER OR VISITOR, ORDERS A SERVICE, A PIECE OF WORK OR AN OBJECT.</p> 
+         <p class="james">● GIGSTER: A CORPORATION, A COMPANY, OR AN INDIVIDUAL BUSINESSPERSON, WHOSE ROLE IS TO RESPOND TO ORDERS MADE BY THE GIG OWNER FOR A SERVICE, PIECE OF WORK OR OBJECT.</p> 
+         <p class="james">● MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p> 
+          
         </div>
          <div class="clearfirst"></div>
       </div>
