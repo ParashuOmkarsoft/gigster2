@@ -106,19 +106,23 @@ include('cfg/more-functions.php');
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Rate and Comment</h2>
-                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
+                  <h2 class="source" style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
                     <div class="form-group" style="margin-bottom:10px;">
                       <label class="col-md-2 control-label tfont">Rating</label>
+                     <div class="clearfix"></div><br/>
+                      <div class="col-md-10" >
                       
-                      <div class="col-md-10" style="margin-top:-7px">
-                      
-                       
+                       <style type="text/css">
+					   .rating-sm {
+ 						   font-size: .7em;
+								}
+					   </style>
                  
-							    <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+							    <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" >
 						
                          <script type="text/javascript">
-						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});
+						   $('#input-21d').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'sm'});
 						 </script>
                         </div>
                       </div>
