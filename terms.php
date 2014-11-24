@@ -29,10 +29,11 @@ include('cfg/more-functions.php');
          <p class="james">GIGSTERGO.COM makes available to USERS, by online access, the information described below, subject to the terms described on the platform GIGSTERGO.COM</p> 
          <p class="james">The information posted online by USERS are:</p> 
          <p class="james">● Data of a financial, technical or commercial nature, describing the previous experience and skills of the USER.</p>
+         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIG OWNERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms with regard to the GIG searched, the nature of the GIGSTER’s work, and the quality of their online profile.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIGSTERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms for the GIGs on offer by the GIG OWNERS.</p>
          <p class="james">The "mouse click" by the USER constitutes an electronic signature which is of the same value as a handwritten signature, and the client thereby recognizes acceptance of the general and specific T&Cs. </p>
-         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
+         
       
         </div>
          <div class="clearfirst"></div>
@@ -45,8 +46,20 @@ include('cfg/more-functions.php');
          <p class="james">● GIG: A SERVICE, A PIECE OF WORK OR AN OBJECT</p> 
          <p class="james">● GIG OWNERS: A COMPANY OR CORPORATION OR INDIVIDUAL BUSINESSPERSON, WHO THROUGH THE SERVICES OF THE GIGSTER OR VISITOR, ORDERS A SERVICE, A PIECE OF WORK OR AN OBJECT.</p> 
          <p class="james">● GIGSTER: A CORPORATION, A COMPANY, OR AN INDIVIDUAL BUSINESSPERSON, WHOSE ROLE IS TO RESPOND TO ORDERS MADE BY THE GIG OWNER FOR A SERVICE, PIECE OF WORK OR OBJECT.</p> 
-         <p class="james">● MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p> 
-          
+         <p class="james">● MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p>
+         <p class="james">● VISITOR: ANY CORPORATION OR COMPANY VISITING THE SITE WHO DOES NOT SHARE THE QUALITIES ATTRIBUTED TO A CLIENT.</p>
+         <p class="james">● PUBLISHER: THE PLATFORM GIGSTERGO.COM</p>
+         <p class="james">● MARKET: THE MARKET THAT IS TARGETED BY GIGSTERGO.COM IS SINGAPORE.</p>
+         <p class="james">● PLATFORM: THE PLATFORM GIGSTERGO.COM REFERS TO THE ONLINE PLATFORM WHICH ALLOWS GIG OWNERS TO POST GIGS AND, FOR GIGSTERS TO RESPOND WITH OFFER TO PROVIDE A SERVICE, A PIECE OF WORK OR AN OBJECT
+<br>● GIGSTERGO.COM: REFERS TO THE PLATFORM GIGSTERGO.COM
+<br>● USER: USER IS A GENERIC TERM REFERRING PRIMARILY TO THE THREE CATEGORIES INDICATED BELOW WHO HAVE ACCESS TO THE PLATFORM: “GIGSTER, VISITOR, AND GIG OWNER”
+<br>● DOWNLOADING RIGHTS (DR) : THE PLATFORM GIGSTERGO.COM OFFERS ITS CLIENTS THE OPPORTUNITY TO DOWNLOAD FILES ACCORDING TO THE TERMS OF THE CONTRACT.
+<br>● INFORMATION OR DATA: EVERY DOCUMENT PUBLISHED ON THE PLATFORM BY THE CLIENT.
+<br>● USERNAME: THE TERM “USERNAME” COVERS ALL INFORMATION NECESSARY TO IDENTIFY A USER ON THE PLATFORM AND TO ALLOW THEM ACCESS TO MEMBER-ONLY AREAS.
+<br>● PASSWORD: THE “PASSWORD“ IS A CONFIDENTIAL PIECE OF INFORMATION WHICH THE USER MUST KEEP SECRET; ALONG WITH THE USERNAME, IT ALLOWS THE USER TO PROVE THEIR IDENTITY.
+</p>
+       
+
         </div>
          <div class="clearfirst"></div>
       </div>
@@ -60,88 +73,6 @@ include('cfg/more-functions.php');
         </div>
          <div class="clearfirst"></div>
       </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/5.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">I'm convinced, so how do I post a Gig?</span> 
-         <p class="james">It's really easy and you can do it in two clicks here!</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/6.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">What are the charges for posting a Gig?</span> 
-         <p class="james">It's totally free! You only pay for the services provided by the Gigster</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/7.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">Why should I join as a Gigster?</span> 
-         <p class="james">we understand it is hard to get your name out there, especially online. We're here to help you find the right Gigs. You have full control of which Gigs you want to do and how much you need to get paid to do the Gig. AND we don't take a cut of your earnings like other sites do!</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/8.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">What do you mean right Gig?</span> 
-         <p class="james">Just create your profile<link> with the keywords you want to be alerted for, and when a Gig with those keywords comes along, we'll alert you via our App and email</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/9.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">How do I communicate with the Gig owner/Gigster?</span> 
-         <p class="james">use the inbuilt Message centre on the website or the app to chat and send attachments</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/10.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">Where is Gigster available?</span> 
-         <p class="james">It is currently available only in Singapore</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/11.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">Why only Singapore?</span> 
-         <p class="james">we believe in building the community that is Singapore and when the community helps itself, beautiful things happen</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-      <div class="row secondinner">
-        <div class="col-md-1">
-          <img src="<?php echo $serverpath;?>images/12.jpg" class="img-circle">
-        </div>
-        <div class="col-md-11">
-         <span id="bond">How do I pay the Gigster/How do I get paid as a Gigster?</span> 
-         <p class="james">The terms of the Gig is agreed by both the Gig Owner and the Gigster
-</p> 
-        </div>
-         <div class="clearfirst"></div>
-      </div>
-
 
     </section>
 
