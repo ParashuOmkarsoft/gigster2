@@ -39,7 +39,7 @@ include('cfg/more-functions.php');
 $mUid=$_SESSION['uId'];
 $muInfo=get_user_Info($mUid);
 $mUid=filter_text($muInfo['userId']);
-$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where  a.awardedto=".$uInfo['userId']." and a.projectId=p.prjId and p.status='3' order by a.completiondate DESC ";
+$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where  a.awardedto=".$uInfo['userId']." and a.projectId=p.prjId and p.status='3' order by p.prjId DESC ";
 $checkSql=@db_query($checkQuery);
 if($checkSql['count']>0)
 {
@@ -201,18 +201,19 @@ if($checkSql['count']>0)
 			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
+			for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
+			<?php
+			}
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
 		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
-		   for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
-			<?php
-			}
+		   
 			?>
 			</div>
           </div>
@@ -240,18 +241,19 @@ if($checkSql['count']>0)
 			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
+			for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
+			<?php
+			}
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
 		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
-		   for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
-			<?php
-			}
+		   
 			?>
 			 </div>	
      

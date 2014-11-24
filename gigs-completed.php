@@ -88,17 +88,18 @@ include('cfg/more-functions.php');
 			<Br/>
 			<?php
 			$prjRating=$userReview['rating'];
-		    for($t=$prjRating;$t<5;$t++) 
-			{
-			 ?>
-		        <img src="<?php echo $serverpath;?>images/star_2.png" />
-		     <?php
-			}
+		    
 		   for($t=0;$t<$prjRating;$t++)
 			{
 			?>
 		        <img src="<?php echo $serverpath;?>images/star_1.png" />
 			<?php
+			}
+			for($t=$prjRating;$t<5;$t++) 
+			{
+			 ?>
+		        <img src="<?php echo $serverpath;?>images/star_2.png" />
+		     <?php
 			}
 			?>
           
@@ -130,18 +131,19 @@ include('cfg/more-functions.php');
 			<Br/>
 			<?php
 			$prjRating=$userReview['rating'];
+			 for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" />
+			<?php
+			}
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
 		        <img src="<?php echo $serverpath;?>images/star_2.png" />
 		     <?php
 			}
-		   for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" />
-			<?php
-			}
+		  
 			?>
           
           
