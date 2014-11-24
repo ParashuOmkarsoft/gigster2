@@ -15,7 +15,7 @@ if($ngigdetails)
 	if($users)
 	{
 		$users=implode(",",$users);
-		$gigstersQuery="select userId from btr_users where userId in ($users) order by joinedon DESC";
+		$gigstersQuery="select userId from btr_users where userId in ($users) and userId<>$loggedinuser order by joinedon DESC";
 		$gigsters=@db_query($gigstersQuery);	
 		$msg="Here is the list of gigsters matching your gig's skill set.";
 	}
