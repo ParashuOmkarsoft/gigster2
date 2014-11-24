@@ -2,7 +2,7 @@
 include('cfg/cfg.php'); 
 include('cfg/functions.php');
 include('cfg/more-functions.php'); 
-
+print_r($_POST);
 $proposal=filter_text($_POST['proposal']);
 $price=filter_text($_POST['pprice']);
 $projectId=filter_text($_POST['projectId']);
@@ -48,8 +48,9 @@ if($checkSql['count']>0)
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 								}
 				
-				$mailmatter=strip_tags($mailmatter);
+				//$mailmatter=strip_tags($mailmatter);
 				$mailmatter=nl2br($mailmatter);
+				$mailmatter=htmlentities($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values($uId,$giguser,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','r')";
 				$msgsql=@db_query($msgquery);
