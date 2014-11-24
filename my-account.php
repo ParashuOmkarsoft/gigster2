@@ -168,9 +168,10 @@ include('cfg/more-functions.php');
             </div>
             
             <div class="form-group">
-				<input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
-            <div class="col-sm-6" style="margin-bottom: 12px; margin-top: 35px;">
-				<label class="profile-inpute">Recieve Notifications</label>
+				
+            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;">
+				    <label class="profile-inpute">Notifications</label>
+            <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
             </div>
             </div>
             
@@ -218,7 +219,7 @@ include('cfg/more-functions.php');
     </section>
     <section class="container secondsection">
      <div class="row">
-            <div class="col-md-6"><h5 id="title">About</h5></div>
+            <div class="col-md-6"><h5 id="title">Tagline</h5></div>
             <div class="col-md-6"><a href='javascript:void(0);' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
       <p id="aboutuspara"><?php
@@ -244,7 +245,7 @@ include('cfg/more-functions.php');
        </section>
         <section class="container secondsection">
        <div class="row">
-            <div class="col-md-6"><h5 id="title">Overview</h5></div>
+            <div class="col-md-6"><h5 id="title">About</h5></div>
             <div class="col-md-6"><a href="javascript:void(0);" onClick="visible_invisible('frmoverview','overviewpara');"><img src="images/pencil.png"></a></div>
       </div> 
       <p id="overviewpara"><?php
