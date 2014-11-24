@@ -265,7 +265,7 @@ Responsibility cannot be accepted in the case of irresistible force, of a third 
 EVOLUTION OF THE TERMS AND CONDITIONS<br><br>
 GIGSTERGO.COM reserves the right to modify the terms, conditions and details of these general T&Cs at any moment.<br><br>
 GIGSTERGO.COM will inform its USERS of any modification to these T&Cs, such as have been accepted by the USER, within a period of 15 calendar days, without explicit notification.
-The USER is therefore strongly advised to regularly consult the latest version of the Terms and Conditions of Use available on the platform.
+The USER is therefore strongly advised to regularly consult the latest version of the Terms and Conditions of Use available on the platform.<br><br>
 
 <strong>EVOLUTION OF THE PLATFORM</strong><br><br>
 The USER consents, as per the T&Cs, to any allow changes and developments in the aim of optimizing the platform, GIGSTERGO.COM.<br><br>
