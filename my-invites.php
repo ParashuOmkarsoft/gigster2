@@ -70,8 +70,8 @@ if($ngigdetails)
 					
 					
 			?>
-            <td>
-			<div class="col-md-6 column" style="margin-top:10px;border-bottom:1px solid #fd8900;min-height:216px;" >
+            <td style="min-height:216px;">
+			
 			
 						
 							
@@ -106,7 +106,7 @@ if($ngigdetails)
 							</h4>
 							
 							
-						</div>
+						
 				</td>
             <?php
 			if($dd==1)
