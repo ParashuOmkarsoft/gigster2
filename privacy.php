@@ -106,7 +106,45 @@ i.  to comply with applicable laws and regulations.<br><br>
 </p> 
 </div>
 <div class="clearfirst"></div>
-</div>   
+</div>
+
+<div class="col-md-12">
+<span id="bond">5.  Disclosure of your Personal Data </span> 
+<p class="james">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
+a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br><br>
+b.  external banks, financial institutions, credit card companies and their respective service providers;<br><br>
+c.  our professional advisers such as our auditors;<br><br>
+d.  relevant government regulators, statutory boards or authorities or law enforcement agencies to comply with any laws, rules, guidelines and regulations or schemes imposed by any government authority;<br><br>
+e.  third party reward, loyalty, privileges and co-branded programme providers;<br><br>
+f.  business partners that provides any membership services and benefits; and<br><br>
+g.  any other person in connection with the purposes set forth above.<br><br>
+
+<br><br><br><br>
+
+
+
+
+<strong>1.  Protection of your Personal Data</strong><br><br>
+
+1.  GIGSTERGO.COM maintain appropriate security safeguards and practices to protect your Personal Data unauthorised access, collection, use, disclosure, copying, modification disposal or similar risks, in accordance with applicable laws.<br><br>
+
+<strong>2.  Accuracy of your Personal Data<strong><br><br>
+
+1.  GIGSTERGO.COM take all reasonable measures to ensure that your Personal Data remains accurate, complete and up-to-date.<br><br>
+2.  You may also keep us informed when there are any updates to your Personal Data by contacting us directly.<br><br>
+
+<strong>3.  Withdrawal of Consent</strong><br><br>
+
+1.  If you wish to withdraw your consent to any use or disclosure of your Personal Data as set out in this Personal Data Protection Policy, you may contact us via contact@gigstergo.com<br><br>
+2.  Please note that if you withdraw your consent to any or all use or disclosure of your Personal Data, depending on the nature of your request, we may no longer be in a position to continue to provide membership benefits and services to you.<br><br>
+3.  Such a withdrawal may therefore result in the termination of any membership that you may have with us.<br><br>
+4.  Contacting Us<br><br>
+If you have any questions or complaints relating to the use or disclosure of your Personal Data, or if you wish to know more about our data protection policies and practices, please contact GIGSTERGO.COM via email at contact@gigstergo.com. Similarly, you may request access to or make corrections to your Personal Data records, but GIGSTERGO.COM has the right to charge a reasonable fee for processing your request.<br><br>
+
+</p> 
+</div>
+<div class="clearfirst"></div>
+</div>      
             
     </section>
 
