@@ -119,7 +119,7 @@ else
 	?>
 	<script type="text/javascript">
 	alert("Error, You must enter a bid price to submit your bid.");
-	window.parent.location="<?=$_SERVER['HTTP_REFERER'];?>";
+	window.parent.location="<?php echo$_SERVER['HTTP_REFERER'];?>";
 	</script>
 	<?php
 }

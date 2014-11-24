@@ -15,7 +15,7 @@ if($sql)
 	$delSql=@db_query($delQuery);
 ?>
 <script type="text/javascript">
-window.parent.location="<?=$serverpath;?>mygigs";
+window.parent.location="<?php echo $serverpath;?>mygigs";
 </script>
 <?php	
 }

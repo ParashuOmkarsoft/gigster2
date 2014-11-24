@@ -49,7 +49,7 @@
           var nowTemp = new Date();
           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
           var checkin = $('.mdatepicker').datepicker({
-               format: 'mm/dd/yyyy',
+               format: 'dd/mm/yyyy',
                  onRender: function(date) {
                 return date.valueOf() < now.valueOf() ? 'disabled' : '';
                  }
@@ -65,7 +65,7 @@
           <?php $tags=get_tags();
             $tags=implode(",",$tags);
             ?>
-          <script type="text/javascript">$("#keywords").select2({tags:[<?=$tags;?>]});</script>
+          <script type="text/javascript">$("#keywords").select2({tags:[<?php echo$tags;?>]});</script>
           <h2 class="loginlead">Would you like to invite your favourite Gigsters to bid?</h2>
           <div class="form-group">
             <div class="col-sm-12 ">

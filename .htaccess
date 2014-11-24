@@ -13,7 +13,7 @@ RewriteRule ^(lib)($|/) - [L]
 
 
 ###Site Settings
-
+#
 RewriteRule ^checkout logout.php
 RewriteRule ^loginwithtwitter twitter-login.php
 RewriteRule ^loginwithtlinkedin linkLogin.php
@@ -48,4 +48,5 @@ RewriteRule ^searchgig search-gig.php
 RewriteRule ^approvereport/([^/]*)$ report-approval.php?reportId=$1 [L]
 RewriteRule ^delthread/([^/]*)$ remove-thread.php?delId=$1
 RewriteRule ^markascomplete/([^/]*)$ mark-as-complete.php?prjId=$1
+RewriteRule ^mailcontact mail-sending.php
 </IfModule>

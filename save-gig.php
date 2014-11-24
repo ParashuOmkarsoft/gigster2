@@ -38,7 +38,7 @@ if($prjTitle && $proposedprice)
 		{
 		?>
 		<script type="text/javascript">
-			window.parent.location="<?=$serverpath;?>allgigs";
+			window.parent.location="<?php echo $serverpath;?>allgigs";
 		</script>
 		<?php
 		}

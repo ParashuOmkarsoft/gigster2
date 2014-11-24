@@ -79,7 +79,7 @@ include('cfg/more-functions.php');
     <span  class="myquote">Posted :<?php echo get_time($opengig['postedon']); ?></span>
     </div>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
-   	  <p id="gigpara" style="padding-top:0px !important;" cl><?php echo nl2br(strip_string(nl2br($opengig['prjdesc']),250));?></p>
+   	  <p id="gigpara" style="padding-top:0px !important;width:750px;overflow:hidden;" ><?php echo stripslashes(stripslashes(nl2br(strip_string(nl2br($opengig['prjdesc']),250))));?></p>
     </div>
     <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">
 
@@ -128,7 +128,7 @@ include('cfg/more-functions.php');
 					{
 										  ?>
                   <!--<a href="#" onClick="javascript:alert('You have already bided on this gig');">-->
-                  <a data-toggle="modal" href="#bidsent<?=$opengig['prjId'];?>"  >
+                  <a data-toggle="modal" href="#bidsent<?php echo$opengig['prjId'];?>"  >
                   <button type="button" class="btn bid-send pull-right" style="margin-bottom:10px;">Bid Sent</button>
                   </a>
                   <?php
@@ -153,7 +153,7 @@ include('cfg/more-functions.php');
 
 				  ?>
                   
-                  <div id="bidsent<?=$opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
+                  <div id="bidsent<?php echo$opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">
                               <div class="container">

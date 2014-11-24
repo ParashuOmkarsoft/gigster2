@@ -56,7 +56,7 @@ function getUserInfo() {
 		
     }
   }
-  var m_url="<?=$serverpath;?>facebook-login.php?userId="+escape(userId)+"&fname="+escape(fname)+"&lname="+lname+"&email="+escape(email);
+  var m_url="<?php echo $serverpath;?>facebook-login.php?userId="+escape(userId)+"&fname="+escape(fname)+"&lname="+lname+"&email="+escape(email);
 
   xmlhttp7567.open("GET",m_url,true);
   xmlhttp7567.send();

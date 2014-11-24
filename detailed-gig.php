@@ -277,7 +277,7 @@ margin-top: 20px;">
 			<?php if(is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
 			{
 				?>
-        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
         
         
         <?php
@@ -292,7 +292,7 @@ margin-top: 20px;">
 			if($bidderInfo['userId']==$uInfo['userId'])
 			{
 		 	?>
-        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
         	<?php
 			}
 		 
@@ -388,14 +388,14 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?=date('m/d/Y');?>"   />
+                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?php echodate('d/m/Y');?>"   />
                 </div>
                  <script type="text/javascript">
           $(document).ready(function(){
           var nowTemp = new Date();
           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
           var checkin = $('.mdatepicker').datepicker({
-               format: 'mm/dd/yyyy',
+               format: 'dd/mm/yyyy',
                  onRender: function(date) {
                 return date.valueOf() < now.valueOf() ? 'disabled' : '';
                  }
@@ -412,7 +412,7 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="amount" id="amount" class="form-control small"  style="width:300px;"required="required" value="<?=$projectbids['rows'][$i]['bidprice'];?>" />
+                  <input type="text" name="amount" id="amount" class="form-control small"  style="width:300px;"required="required" value="<?php echo$projectbids['rows'][$i]['bidprice'];?>" />
                 </div>
               </div>
               <div class="form-group">

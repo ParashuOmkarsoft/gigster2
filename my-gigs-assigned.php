@@ -259,12 +259,12 @@ $puname=$puuinfo['username'];
                 <h2 id="logingigster1">Accept Terms</h2>
                 <div class="row">
                   <div class="col-md-12">
-                    <form role="form" action="<?=$serverpath;?>finalterms" method="post" id="termForm" target="targetframe" >
+                    <form role="form" action="<?php echo $serverpath;?>finalterms" method="post" id="termForm" target="targetframe" >
                       <div class="form-group">
                         <label >Owner</label>
                         <BR/>
                         <i class="fa fa-user"></i>&nbsp;<?php echo $puname;?> (<?php echo $puuinfo['fname']." ".$puuinfo['lname']; ?>)
-                        <input type="hidden" name="id" id="id" value="<?=$checkSql2['rows']['0']['id'];?>" />
+                        <input type="hidden" name="id" id="id" value="<?php echo$checkSql2['rows']['0']['id'];?>" />
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">Awarded To</label>
@@ -272,7 +272,7 @@ $puname=$puuinfo['username'];
                         <i class="fa fa-user"></i>&nbsp;<?php echo $puname1;?>(<?php echo $puInfo1['fname']." ".$puInfo1['lname']; ?>) </div>
                       <div class="form-group">
                         <label for="exampleInputFile">Terms (If Any)</label>
-                        <textarea name="terms" id="terms" readonly class="form-control" rows="6" ><?=$checkSql2['rows']['0']['terms'];?>
+                        <textarea name="terms" id="terms" readonly class="form-control" rows="6" ><?php echo$checkSql2['rows']['0']['terms'];?>
 </textarea>
                       </div>
                       <div class="form-group">
@@ -296,15 +296,15 @@ $puname=$puuinfo['username'];
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       <h4 class="modal-title" id="myModalLabel">Rejection Reason</h4>
                     </div>
-                    <form action="<?=$serverpath;?>rejectterms" method="post" id="rejectForm" target="targetframe"  >
+                    <form action="<?php echo $serverpath;?>rejectterms" method="post" id="rejectForm" target="targetframe"  >
                       <div class="modal-body">
                         <div id="errormodal" class="alert alert-danger mhidden"></div>
                         <div id="successmodal" class="alert alert-success mhidden"></div>
                         <label>Description <span class="mandatory"> * </span></label>
                         <textarea name="description" id="description" class="form-control" rows="5"></textarea>
-                        <input type="hidden" name="touser" id="touser" value="<?=$puuinfo['userId'];?>" />
-                        <input type="hidden" name="fromuser" id="fromuser" value="<?=$puInfo1['userId'];?>" />
-                        <input type="hidden" name="projectId" id="projectId" value="<?=$pdetails['prjId'];?>" />
+                        <input type="hidden" name="touser" id="touser" value="<?php echo$puuinfo['userId'];?>" />
+                        <input type="hidden" name="fromuser" id="fromuser" value="<?php echo$puInfo1['userId'];?>" />
+                        <input type="hidden" name="projectId" id="projectId" value="<?php echo$pdetails['prjId'];?>" />
                       </div>
                       <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Send Back</button>
@@ -409,7 +409,7 @@ $puname=$puuinfo['username'];
           
     </div>   
     <div style="float: right;padding-left:30px;" >
-          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?=$serverpath;?>images/mail.jpg"></a>
+          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
            </div>        
  </div>
     </div>
