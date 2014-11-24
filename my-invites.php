@@ -45,7 +45,12 @@ if($ngigdetails)
 			for($i=0;$i<$gigsters['count'];$i++)
 				{
 					
-					$gigsterInfo=get_user_Info(encrypt_str($gigsters['rows'][$i]['userId']));
+					if($gigsters['rows'][$i]['userId']==18)
+					{
+					}
+					else
+					{
+						$gigsterInfo=get_user_Info(encrypt_str($gigsters['rows'][$i]['userId']));
 					if($gigsterInfo['userId']!=$loggedinuser)
 					{
 					$gigsterpic="uploads/profileimage/".$gigsterInfo['profileimage'];
@@ -121,6 +126,7 @@ if($ngigdetails)
 			{
 				$dd++;
 			}
+					}
 				}
 			}
 			?>
