@@ -38,7 +38,7 @@ This Personal Data Protection Policy forms a part of the terms and conditions go
 </div>
 <div class="clearfirst"></div>
 </div> 
-
+<div class="row firstdinner">
 <div class="col-md-12">
 <span id="bond">1.Your Personal Data</span> 
 <p class="james">In this Personal Data Protection Policy, “Personal Data” refers to any data and/or information about you from which you can be identified by, either (a) from that data; or (b) from that data and other information to which we may have legitimate access to. Examples of such Personal Data include but are not limited to:<br><br>
@@ -53,7 +53,7 @@ information about your usage of and interaction with our website and/or services
 </div>
 <div class="clearfirst"></div>
 </div>   
-
+<div class="row firstdinner">
 <div class="col-md-12">
 <span id="bond">2.  Collection of your Personal Data</span> 
 <p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
@@ -73,14 +73,14 @@ i.  when you submit your Personal Data to us for any other reason.<br><br>
 </div>
 <div class="clearfirst"></div>
 </div>   
-      
+<div class="row firstdinner">      
 <div class="col-md-12">
 <span id="bond">3.  Purposes for the Collection, Use and Disclosure of Your Personal Data</span> 
 <p class="james">1. Generally, GIGSTERGO.COM may collect, use, disclose and/or retain your Personal Data for the following purposes:<br><br>
 a.  to manage your membership including recruitment, processing and termination of your membership;<br><br>
-b.  to provide you with membership benefits and services;<br><br><br><br>
+b.  to provide you with membership benefits and services;<br><br>
 c.  to provide you with employment and employability services;<br><br>
-<br><br>d.  to assist you with your enquiries;<br><br>
+d.  to assist you with your enquiries;<br><br>
 e.  to process payment for any purchases and subscriptions;<br><br>
 f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br><br>
 g.  to conduct research, surveys and interviews;<br><br>
@@ -94,7 +94,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 <div class="clearfirst"></div>
 </div>   
 
-      
+<div class="row firstdinner">      
 <div class="col-md-12">
 <span id="bond">4.  Marketing/ Optional Purposes </span> 
 <p class="james">1. From time to time, GIGSTERGO.COM may contact you via mail, electronic mail, telephone (call or SMS-Text), facsimile or social medial platforms, to inform you about our membership benefits, services and events that we think may be of interest to you.<br><br>
@@ -107,7 +107,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 </div>
 <div class="clearfirst"></div>
 </div>
-
+<div class="row firstdinner">
 <div class="col-md-12">
 <span id="bond">5.  Disclosure of your Personal Data </span> 
 <p class="james">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
@@ -138,7 +138,7 @@ g.  any other person in connection with the purposes set forth above.<br><br>
 1.  If you wish to withdraw your consent to any use or disclosure of your Personal Data as set out in this Personal Data Protection Policy, you may contact us via contact@gigstergo.com<br><br>
 2.  Please note that if you withdraw your consent to any or all use or disclosure of your Personal Data, depending on the nature of your request, we may no longer be in a position to continue to provide membership benefits and services to you.<br><br>
 3.  Such a withdrawal may therefore result in the termination of any membership that you may have with us.<br><br>
-4.  Contacting Us<br><br>
+<strong>4.  Contacting Us</strong><br><br>
 If you have any questions or complaints relating to the use or disclosure of your Personal Data, or if you wish to know more about our data protection policies and practices, please contact GIGSTERGO.COM via email at contact@gigstergo.com. Similarly, you may request access to or make corrections to your Personal Data records, but GIGSTERGO.COM has the right to charge a reasonable fee for processing your request.<br><br>
 
 </p> 
