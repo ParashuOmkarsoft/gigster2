@@ -104,7 +104,7 @@ elseif ("www.gigstergo.com" == $sitedef || $sitedef=="gigstergo.com")
 	$__dbpass = "3gXWOqeaf";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
-	$serverpath = "http://".$_SERVER['HTTP_HOST'];
+	$serverpath = "http://".$_SERVER['HTTP_HOST']."/";
 	define( 'SERVERPATH', $serverpath );
 	$innerpath = "http://".$_SERVER['HTTP_HOST']."/";
 	define( 'INNERPATH', $innerpath );
