@@ -154,6 +154,13 @@ if($checkSql['count']>0)
           <tr>
           <td style="text-align:center !important;">
             <?php 
+			 for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
+        
+<?php
+							  }
 			for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
@@ -161,13 +168,7 @@ if($checkSql['count']>0)
         <img src="<?php echo $serverpath;?>images/star_2.png"  style="margin:0px !important;"/>
         <?php
 							  }
-							   for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
-        
-<?php
-							  }
+							  
 
          ?>
 		  </td>
