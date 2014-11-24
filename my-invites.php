@@ -11,11 +11,11 @@ $loggedinuser=$loggedinuser['userId'];
 
 if($ngigdetails)
 {
-	$users=get_gigsters_on_skill($ngigdetails['keywords']);
+	$users=get_gigsters_on_skill($ngigdetails['keywords'],$loggedinuser);
 	if($users)
 	{
 		$users=implode(",",$users);
-		$gigstersQuery="select userId from btr_users where userId in ($users) and userId<>$loggedinuser order by joinedon DESC";
+		$gigstersQuery="select userId from btr_users where userId in ($users)  order by joinedon DESC";
 		$gigsters=@db_query($gigstersQuery);	
 		$msg="Here is the list of gigsters matching your gig's skill set.";
 	}
@@ -27,7 +27,7 @@ if($ngigdetails)
 		
 	}
 }
-echo $gigstersQuery;
+
 ?>
 
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post"  onSubmit="return validate_selected();" target="targetframe" style="max-height: 500px;overflow: auto;">

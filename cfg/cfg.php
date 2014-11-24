@@ -979,7 +979,7 @@ else{
 }
 
 }
-function get_gigsters_on_skill($skills)
+function get_gigsters_on_skill($skills,$user)
 {
 	$skills=strtolower($skills);
 	$skillsarray=explode(",",$skills);
@@ -987,7 +987,7 @@ function get_gigsters_on_skill($skills)
 	for($i=0;$i<sizeof($skillsarray);$i++)
 	{
 		$skill=$skillsarray[$i];
-		$gigsterQuery="select u.userId from btr_users as u,btr_userprofile as p where u.userId=p.userId and u.userId<>18 and p.skills like '%$skill%'";
+		$gigsterQuery="select u.userId from btr_users as u,btr_userprofile as p where u.userId=p.userId and u.userId<>18 and u.userId<>$user and p.skills like '%$skill%'";
 		$gigsterSql=@db_query($gigsterQuery);
 		if($gigsterSql['count']>0)
 		{
