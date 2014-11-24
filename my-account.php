@@ -87,7 +87,7 @@ include('cfg/more-functions.php');
          
           <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" enctype="multipart/form-data" class="mhidden" target="targetframe">
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
-           <div class="col-md-8">
+           <div class="col-md-6">
           	<div class="form-group">
             	<label class="col-md-4 profile-inpute">First Name</label>
               <div class="col-sm-8" style="margin-bottom: 12px;">
@@ -134,7 +134,7 @@ include('cfg/more-functions.php');
                      <?php $tags=get_tags();
 						$tags=implode(",",$tags);
 						?>
-          <script type="text/javascript">$("#skills").select2({tags:[<?php echo$tags;?>]});</script>
+          <script type="text/javascript">$("#skills").select2({tags:[<?=$tags;?>]});</script>
             </div>
 			<div class="form-group">
             <label class="col-md-4 profile-inpute">City</label>
@@ -167,15 +167,16 @@ include('cfg/more-functions.php');
 					?>
             </div>
             
-            <div class="form-group" >
-				<input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
-            <div class="col-sm-6" style="margin-bottom: 12px; margin-top: 35px;">
-				<label class="profile-inpute">Recieve Notifications</label>
+            <div class="form-group">
+				
+            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;">
+				    <label class="profile-inpute">Notifications</label>
+            <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
             </div>
             </div>
             
             </div>
-            <div class="col-md-4" align="right">
+            <div class="col-md-6" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">
   <div class="fileinput-new thumbnail" style="width: 200px;">
   <?php if(!$pfimage)
@@ -218,7 +219,7 @@ include('cfg/more-functions.php');
     </section>
     <section class="container secondsection">
      <div class="row">
-            <div class="col-md-6"><h5 id="title">About</h5></div>
+            <div class="col-md-6"><h5 id="title">Tagline</h5></div>
             <div class="col-md-6"><a href='javascript:void(0);' onClick="visible_invisible('frmaboutus','aboutuspara');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a></div>
       </div> 
       <p id="aboutuspara"><?php
@@ -244,7 +245,7 @@ include('cfg/more-functions.php');
        </section>
         <section class="container secondsection">
        <div class="row">
-            <div class="col-md-6"><h5 id="title">Overview</h5></div>
+            <div class="col-md-6"><h5 id="title">About</h5></div>
             <div class="col-md-6"><a href="javascript:void(0);" onClick="visible_invisible('frmoverview','overviewpara');"><img src="images/pencil.png"></a></div>
       </div> 
       <p id="overviewpara"><?php
@@ -319,7 +320,7 @@ include('cfg/more-functions.php');
 		?>
         <div class="clearfix"></div>
 		<span style="float:right;">
-        <a href="<?php echo $serverpath;?>assignments" style="font-size:16px;font-weight:bold;">View All</a>
+        <a href="<?=$serverpath;?>assignments" style="font-size:16px;font-weight:bold;">View All</a>
         </span>
         <div class="clearfix"></div>
 		<?php			
