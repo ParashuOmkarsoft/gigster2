@@ -1126,4 +1126,10 @@ function get_unread_awards_project($projectId)
 		 return $sql['count'];
 	 }
 }
+function get_project_link($serverpath,$gigId)
+{
+	$gigdetails=get_gig_details($gigId);
+	$link=$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId'];
+	return $link;
+}
 ?>

@@ -28,14 +28,12 @@ foreach($invites as $invite)
 	
 	
 	$mailmatter="<p>Hello ".$invitednametodisplay." </p>
-	<p>".$fromnamedisplay." has invited you to submit proposal on his gig <Br/><b>
-	<a href='".$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId']."'>
-	".$gigdetails['prjTitle']."</a></b>.</p>
-											  <p>Please let the client know if you will accept the offer.</p>
-											  <p>Proposed Budget- ".$gigdetails['proposedbudget']."</p>
+	<p>".$fromnamedisplay." has invited you to submit a bid on the Gig <b>".$gigdetails['prjTitle']."</b>.</p>
+											  <p>Click here to see full details and submit a bid.</p>
+											  <p><b><a href='".$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId']."'>Click Here To View Gig</a></b></p>
 											  <p>&nbsp;</p>
-											  <p>Regards</p>
-											  <p>$sitename</p>";
+											  <p>Best regards,</p>
+											  <p>GigsterGo.com </p>";
 								$mailto=filter_text($invitedinfo['usermail']);
 								$from="noreply@gigster.com";
 								$mailsubject="You are invited to submit bid on ".$gigdetails['prjTitle'];
@@ -44,6 +42,10 @@ foreach($invites as $invite)
 								$headers .= "From: $sitename <$from>" . "\r\n";
 
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
+								$mailmatter="<p>Hello ".$invitednametodisplay." </p>
+	<p>".$fromnamedisplay." has invited you to submit a bid on the Gig <b>".$gigdetails['prjTitle']."</b>.</p>
+											  <p>Click here to see full details and submit a bid.</p>
+											  <p><b><a href='".$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId']."'>Click Here To View Gig</a></b></p>";
 								$mailmatter=strip_tags($mailmatter);
 								$mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";

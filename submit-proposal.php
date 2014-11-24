@@ -1,5 +1,6 @@
 <?php
-include('cfg/cfg.php');
+include('cfg/cfg.php'); 
+include('cfg/functions.php');
 include('cfg/more-functions.php'); 
 
 $proposal=filter_text($_POST['proposal']);
@@ -22,7 +23,7 @@ if($checkSql['count']>0)
 	$gigdetails=get_gig_details($projectId);
 	$giguser=$gigdetails['userId'];
 	$giguserinfo=get_user_Info(encrypt_str($giguser));
-	
+
 	$gigusername=$giguserinfo['username'];
 	if($giguser)
 	{
@@ -69,15 +70,15 @@ else
 	if($giguser)
 	{
 		$mailto=filter_text($giguserinfo['usermail']);
-	$mailmatter="<p>Hello User </p>
-											  <p>You have recieved a new proposal on your gig ".$gigdetails['prjTitle'].".</p>
-											  <p>Details are following</p>
-											  <p>Username- ".$userInfo['username']."</p>
-											  <p>Amount $price</p>
-											  <p>Content $proposal</p>
+	$mailmatter="<p>Hello ".$giguserinfo['username']." </p>
+											  <p>You have recieved a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username']." of SGD $price.</p>
+											  <p>".strip_string($proposal,100)."</p>
+											  <p>Click here to see full details </p>
+											  <p><a href='".get_project_link($serverpath,$gigdetails)."'>Click Here To See Details</a></p>
 											  <p>&nbsp;</p>
-											  <p>Regards</p>
-											  <p>$sitename</p>";
+											  <p>Best regards, </p>
+											  <p>GigsterGo.com </p>";
+
 						
 								$mailto=filter_text($giguserinfo['usermail']);
 								$from="notifications@gigster.com";
@@ -86,6 +87,15 @@ else
 								{
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 								}
+								
+								$mailmatter="<p>Hello ".$giguserinfo['username']." </p>
+											  <p>You have recieved a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username']." of SGD $price.</p>
+											  <p>".strip_string($proposal,100)."</p>
+											  <p>Click here to see full details </p>
+											  <p><a href='".get_project_link($serverpath,$gigdetails)."'>Click Here To See Details</a></p>";
+											 
+								
+								
 								
 $mailmatter=strip_tags($mailmatter);
 $mailmatter=nl2br($mailmatter);
