@@ -180,7 +180,7 @@ include('cfg/more-functions.php');
 			  $awardedrating=get_user_rating($awarded);
 			  ?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1" style="border-radius:50px;border:solid 5px #FC6;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1" style="border-radius:50px;">
       		<h4><?php echo $awardednametodisplay; ?></h4>
       					<?php 
 						 for($t=0;$t<$awardedrating;$t++)
