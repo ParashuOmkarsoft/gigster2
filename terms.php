@@ -29,10 +29,11 @@ include('cfg/more-functions.php');
          <p class="james">GIGSTERGO.COM makes available to USERS, by online access, the information described below, subject to the terms described on the platform GIGSTERGO.COM</p> 
          <p class="james">The information posted online by USERS are:</p> 
          <p class="james">● Data of a financial, technical or commercial nature, describing the previous experience and skills of the USER.</p>
+         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIG OWNERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms with regard to the GIG searched, the nature of the GIGSTER’s work, and the quality of their online profile.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIGSTERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms for the GIGs on offer by the GIG OWNERS.</p>
          <p class="james">The "mouse click" by the USER constitutes an electronic signature which is of the same value as a handwritten signature, and the client thereby recognizes acceptance of the general and specific T&Cs. </p>
-         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
+         
       
         </div>
          <div class="clearfirst"></div>
@@ -46,7 +47,7 @@ include('cfg/more-functions.php');
          <p class="james">● GIG OWNERS: A COMPANY OR CORPORATION OR INDIVIDUAL BUSINESSPERSON, WHO THROUGH THE SERVICES OF THE GIGSTER OR VISITOR, ORDERS A SERVICE, A PIECE OF WORK OR AN OBJECT.</p> 
          <p class="james">● GIGSTER: A CORPORATION, A COMPANY, OR AN INDIVIDUAL BUSINESSPERSON, WHOSE ROLE IS TO RESPOND TO ORDERS MADE BY THE GIG OWNER FOR A SERVICE, PIECE OF WORK OR OBJECT.</p> 
          <p class="james">● MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p> 
-          
+
         </div>
          <div class="clearfirst"></div>
       </div>

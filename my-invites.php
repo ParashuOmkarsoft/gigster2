@@ -70,7 +70,7 @@ if($ngigdetails)
 					
 					
 			?>
-            <td style="min-height:216px;">
+            <td style="min-height:216px;min-width: 180px;border-bottom: 2px solid #fd8900;">
 			
 			
 						
@@ -129,10 +129,11 @@ if($ngigdetails)
 			}
 			?>
 		
-    <div class="form-group">
-    <button type="SUBMIT" class="btn invite-btn">Invite</button>
-    </div>
+   
 </form>
+ <div class="form-group">
+    <button type="SUBMIT" class="btn invite-btn">Invite</button>
+ </div>
 
 
 
