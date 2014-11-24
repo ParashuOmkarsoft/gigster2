@@ -27,7 +27,7 @@ if($ngigdetails)
 		
 	}
 }
-
+echo $gigstersQuery;
 ?>
 
 <form action="<?php echo $serverpath;?>saveinvites.php" method="post"  onSubmit="return validate_selected();" target="targetframe" style="max-height: 500px;overflow: auto;">
