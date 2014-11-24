@@ -22,7 +22,7 @@
         <!-- <li><a href="#">Help</a></li> -->
         <li><a href="<?php echo $serverpath;?>contactus">Contact</a></li>
         <li><a href="<?php echo $serverpath;?>terms">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
+        <li><a href="<?php echo $serverpath;?>privacy">Privacy</a></li>
       </ul>
     </div>
     <div class="col-md-4">

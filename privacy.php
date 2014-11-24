@@ -53,8 +53,99 @@ information about your usage of and interaction with our website and/or services
 </div>
 <div class="clearfirst"></div>
 </div>   
-      
 
+<div class="col-md-12">
+<span id="bond">2.  Collection of your Personal Data</span> 
+<p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
+a.  when you sign up with us for GIGSTERGO.COM membership;<br><br>
+b.  when you access our websites or perform an online transaction;<br><br>
+c.  when you interact with any of our employees;<br><br>
+d.  when you submit an application to us for membership services and benefits;<br><br>
+e.  when you respond to our request for additional Personal Data;<br><br>
+f.  when you ask to be included in an email or other mailing list;<br><br>
+g.  when you request that we contact you;<br><br>
+h.  when you respond to our initiatives or promotions; and<br><br>
+i.  when you submit your Personal Data to us for any other reason.<br><br>
+2.  When you browse our website, you generally do so anonymously, but please see “COOKIES”.<br><br>
+
+<br><br>
+</p> 
+</div>
+<div class="clearfirst"></div>
+</div>   
+      
+<div class="col-md-12">
+<span id="bond">3.  Purposes for the Collection, Use and Disclosure of Your Personal Data</span> 
+<p class="james">1. Generally, GIGSTERGO.COM may collect, use, disclose and/or retain your Personal Data for the following purposes:<br><br>
+a.  to manage your membership including recruitment, processing and termination of your membership;<br><br>
+b.  to provide you with membership benefits and services;<br><br><br><br>
+c.  to provide you with employment and employability services;<br><br>
+<br><br>d.  to assist you with your enquiries;<br><br>
+e.  to process payment for any purchases and subscriptions;<br><br>
+f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br><br>
+g.  to conduct research, surveys and interviews;<br><br>
+h.  to keep you updated on our events; and<br><br>
+i.  to comply with applicable laws and regulations.<br><br>
+
+
+<br><br>
+</p> 
+</div>
+<div class="clearfirst"></div>
+</div>   
+
+      
+<div class="col-md-12">
+<span id="bond">4.  Marketing/ Optional Purposes </span> 
+<p class="james">1. From time to time, GIGSTERGO.COM may contact you via mail, electronic mail, telephone (call or SMS-Text), facsimile or social medial platforms, to inform you about our membership benefits, services and events that we think may be of interest to you.<br><br>
+2.  You can let us know at any time if you no longer wish to receive marketing materials (by informing us via our email at contact@gigstergo.com and we will remove your details from our direct marketing database.<br><br>
+3.  Please note that we may still send you non-marketing messages such as surveys, customer-service notices and other service related notices.<br><br>
+
+
+<br><br>
+</p> 
+</div>
+<div class="clearfirst"></div>
+</div>
+
+<div class="col-md-12">
+<span id="bond">5.  Disclosure of your Personal Data </span> 
+<p class="james">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
+a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br><br>
+b.  external banks, financial institutions, credit card companies and their respective service providers;<br><br>
+c.  our professional advisers such as our auditors;<br><br>
+d.  relevant government regulators, statutory boards or authorities or law enforcement agencies to comply with any laws, rules, guidelines and regulations or schemes imposed by any government authority;<br><br>
+e.  third party reward, loyalty, privileges and co-branded programme providers;<br><br>
+f.  business partners that provides any membership services and benefits; and<br><br>
+g.  any other person in connection with the purposes set forth above.<br><br>
+
+<br><br><br><br>
+
+
+
+
+<strong>1.  Protection of your Personal Data</strong><br><br>
+
+1.  GIGSTERGO.COM maintain appropriate security safeguards and practices to protect your Personal Data unauthorised access, collection, use, disclosure, copying, modification disposal or similar risks, in accordance with applicable laws.<br><br>
+
+<strong>2.  Accuracy of your Personal Data</strong><br><br>
+
+1.  GIGSTERGO.COM take all reasonable measures to ensure that your Personal Data remains accurate, complete and up-to-date.<br><br>
+2.  You may also keep us informed when there are any updates to your Personal Data by contacting us directly.<br><br>
+
+<strong>3.  Withdrawal of Consent</strong><br><br>
+
+1.  If you wish to withdraw your consent to any use or disclosure of your Personal Data as set out in this Personal Data Protection Policy, you may contact us via contact@gigstergo.com<br><br>
+2.  Please note that if you withdraw your consent to any or all use or disclosure of your Personal Data, depending on the nature of your request, we may no longer be in a position to continue to provide membership benefits and services to you.<br><br>
+3.  Such a withdrawal may therefore result in the termination of any membership that you may have with us.<br><br>
+4.  Contacting Us<br><br>
+If you have any questions or complaints relating to the use or disclosure of your Personal Data, or if you wish to know more about our data protection policies and practices, please contact GIGSTERGO.COM via email at contact@gigstergo.com. Similarly, you may request access to or make corrections to your Personal Data records, but GIGSTERGO.COM has the right to charge a reasonable fee for processing your request.<br><br>
+
+</p> 
+</div>
+<div class="clearfirst"></div>
+</div>      
+            
     </section>
 
     <?php
