@@ -128,7 +128,7 @@ g.  any other person in connection with the purposes set forth above.<br><br>
 
 1.  GIGSTERGO.COM maintain appropriate security safeguards and practices to protect your Personal Data unauthorised access, collection, use, disclosure, copying, modification disposal or similar risks, in accordance with applicable laws.<br><br>
 
-<strong>2.  Accuracy of your Personal Data<strong><br><br>
+<strong>2.  Accuracy of your Personal Data</strong><br><br>
 
 1.  GIGSTERGO.COM take all reasonable measures to ensure that your Personal Data remains accurate, complete and up-to-date.<br><br>
 2.  You may also keep us informed when there are any updates to your Personal Data by contacting us directly.<br><br>
