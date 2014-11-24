@@ -154,19 +154,20 @@ if($checkSql['count']>0)
           <tr>
           <td style="text-align:center !important;">
             <?php 
-			 for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
-        
-<?php
-							  }
+			 
 			for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png"  style="margin:0px !important;"/>
         <?php
+							  }
+							  for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png"  style="margin:0px !important;"/>
+        
+<?php
 							  }
 							  
 
@@ -202,19 +203,19 @@ if($checkSql['count']>0)
 			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
-			for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
-			<?php
-			}
+			
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
 		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
-		   
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;"/>
+			<?php
+			}
 			?>
 			</div>
           </div>
@@ -242,19 +243,19 @@ if($checkSql['count']>0)
 			<div class="pull-left">
 			<?php
 			$prjRating=$userReview['rating'];
-			for($t=0;$t<$prjRating;$t++)
-			{
-			?>
-		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
-			<?php
-			}
+			
 		    for($t=$prjRating;$t<5;$t++) 
 			{
 			 ?>
 		        <img src="<?php echo $serverpath;?>images/star_2.png" style="margin-top: 0px;"/>
 		     <?php
 			}
-		   
+		   for($t=0;$t<$prjRating;$t++)
+			{
+			?>
+		        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin-top: 0px;" />
+			<?php
+			}
 			?>
 			 </div>	
      
