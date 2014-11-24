@@ -7,4 +7,4 @@
 
 define('CONSUMER_KEY', 'WeQnhZNcMySLeHpfMzg');
 define('CONSUMER_SECRET', 't5OHqcMHoDNGnwk3sHx7UhDkCCFAsdbiVOuPckZFY');
-define('OAUTH_CALLBACK', 'http://www.gigstergo.com/getTwitterdata.php');
+define('OAUTH_CALLBACK', 'http://gigstergo.com/getTwitterdata.php');
