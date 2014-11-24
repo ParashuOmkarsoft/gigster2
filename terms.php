@@ -281,8 +281,7 @@ In such a situation, GIGSTERGO.COM will suspend the publication of the profile o
 GIGSTERGO.COM controls and verifies the compliancy of profiles submitted by the USER, for the purpose of and the contractual provisions of GIGSTERGO.COM.
 Any profile that does not comply with the contractual provisions of GIGSTERGO.COM may be suspended.
 The compliancy of the profiles of the USER is defined in the following non-exhaustive list:<br><br>
-● The content of profiles should be as complete as possible,<br><br>
-● The content of profiles must not contain any information allowing the GIG OWNER to identify and/or directly contact the USER,<br><br>
+<span class="bullet">●</span> The content of profiles must not contain any information allowing the GIG OWNER to identify and/or directly contact the USER,<br><br>
 ● The content of profiles must not harm the image of GIGSTERGO.COM,<br><br>
 ● The content of profiles must be compliant with law or public policy,<br><br>
 ● The content of profiles cannot include directly or indirectly, the personal details of the USER,<br><br>
