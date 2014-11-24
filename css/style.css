@@ -1051,10 +1051,11 @@ font-family: 'source_sans_prosemibold';
 width: 121px;
 border-radius: 10px;
 /* margin-left: 10px; */
-margin-right: 10px;
+margin-right: 20px;
 background: #EC6B39;
 outline: none;
-margin-top: 12px;}
+margin-top: 12px;
+text-align: center;}
 
 .name-inpute{font-family: 'source_sans_probold';
 font-size: 20px;

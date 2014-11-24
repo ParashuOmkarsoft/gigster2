@@ -195,7 +195,7 @@ include('cfg/more-functions.php');
   </div>
   <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
   <div>
-    <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="profileimage" id="profileimage" /></span>
+    <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><span class="fileinput-exists"><img src="http://gigstergo.com/images/pencil.png"></span><input type="file" name="profileimage" id="profileimage" /></span>
     <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
   </div>
   
