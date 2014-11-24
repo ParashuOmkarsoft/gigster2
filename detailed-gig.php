@@ -177,6 +177,7 @@ else
 </section>
 <?php
 		$projectbids=get_project_bids($gigId);
+
 		if($projectbids['count']>0)
 		{
 			for($i=0;$i<$projectbids['count'];$i++)
@@ -388,14 +389,14 @@ else
                 <Br/>
                 <br/>
                 <div class="col-md-8">
-                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?php echodate('d/m/Y');?>"   />
+                  <input type="text" name="enddate" id="enddate" class="form-control mdatepicker"  required="required" value="<?php echo date('d/m/Y');?>"   />
                 </div>
                  <script type="text/javascript">
           $(document).ready(function(){
           var nowTemp = new Date();
           var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
           var checkin = $('.mdatepicker').datepicker({
-               format: 'dd/mm/yyyy',
+               format: 'mm/dd/yyyy',
                  onRender: function(date) {
                 return date.valueOf() < now.valueOf() ? 'disabled' : '';
                  }
@@ -428,6 +429,7 @@ else
   </div>
 </div>
 <?php
+
 }
 }
 
