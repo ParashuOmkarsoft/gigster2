@@ -767,10 +767,12 @@ margin-left: -15px;
 .myassign {padding-bottom: 15px;margin-left: 0px;}
 .james{
 	font-size: 20px;
-	font-family: 'source_sans_proregular';
-	color: #473610;
-    margin: 16px 0px 0px 15px;
-	line-height: 20px;
+word-spacing: 10px;
+font-family: 'source_sans_proregular';
+color: #473610;
+margin: 16px 0px 0px 15px;
+line-height: 25px;
+letter-spacing: 1px;
 }
 .clearfirst{
 	clear: both;
