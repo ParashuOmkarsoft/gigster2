@@ -65,7 +65,7 @@
           <?php $tags=get_tags();
             $tags=implode(",",$tags);
             ?>
-          <script type="text/javascript">$("#keywords").select2({tags:[<?php echo$tags;?>]});</script>
+          <script type="text/javascript">$("#keywords").select2({tags:[<?php echo strtolower($tags);?>]});</script>
           <h2 class="loginlead">Would you like to invite your favourite Gigsters to bid?</h2>
           <div class="form-group">
             <div class="col-sm-12 ">
