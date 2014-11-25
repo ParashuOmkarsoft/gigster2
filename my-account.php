@@ -197,7 +197,7 @@ include('cfg/more-functions.php');
   }
 	?>
   </div>
-  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+   <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 200px; border-radius:50%;"></div>
   <div>
     <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
   
