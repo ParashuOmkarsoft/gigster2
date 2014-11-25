@@ -21,13 +21,14 @@
           <div class="form-group">
             <div class="col-sm-10">
               <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
-            </div>
-            <label class="radio-inline">
+              <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
                 Per Gig </label>
               <label class="radio-inline">
                 <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
                 Per Hour </label>
+            </div>
+            
           </div>
           <h2 class="loginlead" >Skills</h2>
           <div class="form-group">
