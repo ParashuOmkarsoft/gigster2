@@ -279,7 +279,7 @@ if($checkSql['count']>0)
 		?>
         <div class="clearfix"></div>
         <br/>
-		<p class="mandatory">Sorry, No Gigs assigned to you yet.</p>
+		<p class="mandatory">Sorry, No Gigs completed by you yet.</p>
                  <br/>
                 <div class="clearfix"></div>
 		<?php
