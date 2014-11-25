@@ -173,8 +173,8 @@ include('cfg/more-functions.php');
 				    <label class="profile-inpute">Notifications</label>
             <!-- <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>> -->
                   <div class="btn-group btn-toggle"> 
-                  <button class="btn btn-xs btn-default">ON</button>
-                  <button class="btn btn-xs btn-info active">OFF</button>
+                  <button class="btn btn-xs btn-default on-btn">ON</button>
+                  <button class="btn btn-xs btn-info active off-btn">OFF</button>
                   </div>
             </div>
             </div>
