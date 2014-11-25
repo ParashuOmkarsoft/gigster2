@@ -883,7 +883,7 @@ position: relative;
 }*/
 
 .remember .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox]{position: relative;
-margin: 4px;};
+margin: 4px; display: none;};
 
 
 
