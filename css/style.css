@@ -101,9 +101,9 @@ body h4{
  #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
  #map{background: url("../images/map.png") no-repeat 0px 4px;}
 section li{float: left;margin: 13px;list-style-type: none;}
-li:hover
+.navbar-nav>li>a:hover
 {
-    background-color:#ff0000;
+    background-color:red;
 }
 #profilemenu a{
 	font-family: 'source_sans_prolight';
