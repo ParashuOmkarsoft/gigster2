@@ -103,7 +103,8 @@ body h4{
 section li{float: left;margin: 13px;list-style-type: none;}
 .navbar-nav>li>a:hover
 {
-    background-color:red;
+border-bottom: 3px solid #FFB200;
+background: none;
 }
 #profilemenu a{
 	font-family: 'source_sans_prolight';
