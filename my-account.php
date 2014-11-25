@@ -128,7 +128,7 @@ include('cfg/more-functions.php');
             </div>
              <div class="form-group">
             	   <label class="col-md-4 profile-inpute">Skills</label>
-                 <div class="col-sm-8" style="margin-bottom: 12px;padding:20px;">
+                 <div class="col-sm-8" style="margin-bottom: 12px;">
                 	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                   </div>
                      <?php $tags=get_tags();
