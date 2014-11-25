@@ -70,10 +70,10 @@
             <div class="col-sm-12 ">
               <label class="radio-inline" style="line-height:22px;padding:0px;">
                 <input type="radio" name="inviteusers[]" id="inviteusers"   value="0"  checked >
-                No, please select Gigsters for me</label>
+                <span class="check-btn">No, please select Gigsters for me</span></label>
               <label class="radio-inline" style="line-height:22px;padding:0px;">
                 <input type="radio" name="inviteusers[]" id="inviteusers"   value="1">
-                Yes, I will select which Gigsters to bid </label>
+                <span class="check-btn">Yes, I will select which Gigsters to bid</span> </label>
             </div>
           </div>
           <div class="form-group submit">
