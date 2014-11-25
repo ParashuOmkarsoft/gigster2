@@ -72,7 +72,7 @@ font-family: 'source_sans_probold';
 	}
 	
 .navbar-nav.navbar-right:last-child {
-margin-right: -42px;
+/*margin-right: -42px;*/
 }
 body p{
 	color: #786c50;
@@ -83,7 +83,7 @@ body h4{
 	font-size: 18px;
 	font-family: 'source_sans_probold'; }
 .container{
-	max-width: 942px;
+	max-width: 1200px;
 	width: 100%;
 	margin: auto;padding: 0px;}
 #imgback img{width: 100%;}
@@ -1103,7 +1103,7 @@ background-repeat: no-repeat;}
 .name2{margin-top: 20px;
 font-family: 'source_sans_prolight';
 font-size: 48px;
-color: #20b932;}
+color: #fff;}
 
 .box1{
 height: 180px;
@@ -1385,25 +1385,3 @@ background:url("../images/ok-mark.png");
 font-family: 'source_sans_probold';
 color: #473610;}
 
-a[title]:hover:after {
-  content: attr(title);
-  padding: 4px 8px;
-  color: #333;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 20;
-  white-space: nowrap;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 0px 0px 4px #222;
-  -webkit-box-shadow: 0px 0px 4px #222;
-  box-shadow: 0px 0px 4px #222;
-  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
-  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
-}
