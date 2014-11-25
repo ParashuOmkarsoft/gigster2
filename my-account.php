@@ -178,7 +178,7 @@ include('cfg/more-functions.php');
             </div>
             <div class="col-md-6" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">
-  <div class="fileinput-new thumbnail" style="width: 200px;">
+  <div class="fileinput-new">
   <?php if(!$pfimage)
   {
 	  ?>
@@ -188,7 +188,7 @@ include('cfg/more-functions.php');
   else
   {
 	  ?>
-	     <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=200&height=150&cropratio=1:1" id="imguser">
+	     <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=200&height=150&cropratio=1:1" id="imguser" class="img-circle">
          <?php
   }
 	?>
