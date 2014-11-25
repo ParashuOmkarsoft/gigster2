@@ -30,3 +30,6 @@
 	width:750px;
 	overflow:hidden;
 }
+#gigstertable tr td{
+	width:50% !important;
+}
