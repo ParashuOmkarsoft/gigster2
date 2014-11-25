@@ -770,7 +770,7 @@ margin-left: -15px;
 word-spacing: 10px;
 font-family: 'source_sans_proregular';
 color: #473610;
-margin: 16px 0px 0px 15px;
+
 line-height: 25px;
 letter-spacing: 1px;
 }
@@ -1380,3 +1380,7 @@ margin-top: 12px;}
 background:url("../images/ok-mark.png");
 }
 .bullet{color: #fe6635;}
+
+.p-name{font-size: 20px;
+font-family: 'source_sans_probold';
+color: #473610;}
