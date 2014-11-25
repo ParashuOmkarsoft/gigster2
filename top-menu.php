@@ -1,5 +1,5 @@
 <header class="navbar-fixed-top" style="border-top: 7px solid #e95436;">
-      <div class="container">
+      <div class="container" style="max-width:1200px;">
         <div class="row">
           <div class="col-md-2">
             <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo.png" class="logo"></a>
