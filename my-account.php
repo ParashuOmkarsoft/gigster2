@@ -28,7 +28,7 @@ include('cfg/more-functions.php');
 		
 	?>
     <section class="container secondsection">
-      <div class="row"style="max-width: 958px;padding-bottom: 15px;">
+      <div class="row"style="max-width: 1007px;padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname'].' '.$uInfo['lname'];
@@ -195,8 +195,8 @@ include('cfg/more-functions.php');
   </div>
   <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
   <div>
-    <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><span class="fileinput-exists">Change</span><input type="file" name="profileimage" id="profileimage" /></span>
-    <img src="images/pencil.png">
+    <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><span class="fileinput-exists">Change</span>  <img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
+  
     <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
   </div>
   
@@ -214,7 +214,7 @@ include('cfg/more-functions.php');
             </div>
           </form>  
           
-          <a href='javascript:void(0);' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>     
+          <!-- <a href='javascript:void(0);' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>      -->
       </div>
          
     </section>
