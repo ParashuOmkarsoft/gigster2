@@ -214,7 +214,7 @@ include('cfg/more-functions.php');
             </div>
           </form>  
           
-          <!-- <a href='javascript:void(0);' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>      -->
+          <a href='javascript:void(0);' onClick="visible_invisible('frmprofile','paraprofile');" ><img src="<?php echo $serverpath;?>images/pencil.png"></a>     
       </div>
          
     </section>
