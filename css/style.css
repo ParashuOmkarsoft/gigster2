@@ -1402,5 +1402,5 @@ padding-left: 18px;}
 
 
 input[type='radio']:checked + span {
-    background-image: url(../images/check.png) 0 15px;
+    background: url(../images/check.png) 0 15px;
 }
