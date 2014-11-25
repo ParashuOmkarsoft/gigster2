@@ -1132,4 +1132,11 @@ function get_project_link($serverpath,$gigId)
 	$link=$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId'];
 	return $link;
 }
+function get_final_price($projectId,$user)
+{
+$query="select * from btr_assignment where awardedto=$user and projectId=$projectId";
+$sql=@db_query($query);
+return $sql['rows']['0']['amount'];	
+
+}
 ?>

@@ -180,7 +180,11 @@ include('cfg/more-functions.php');
       
     <section class="container lastsection ">
       <div class="row">
-        <div class="col-md-6"><h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><?php /*?><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span><?php */?>
+        <div class="col-md-6">
+        <h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><?php /*?><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span><?php */?>
+        <p id="para"> SGD <?php echo get_final_price($assignedgigdetails['prjId'],$uInfo['userId']); ?></p>
+        </div>
+      </div>  
 			<?php if(get_project_feedback_1($assignedgigdetails['prjId'],$uInfo['userId']))
 			{
 				$m_feedback="";
@@ -189,8 +193,7 @@ include('cfg/more-functions.php');
 				$m_rating=$m_feedback['rating'];
 				 ?>
         
-        </div>
-      </div>  
+        
        <?php 
       /* <p id="para">
 
@@ -219,11 +222,10 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				?>
+				/*?>
 				
 				  <h4>Testimonial :</h4>
-        </div>
-      </div>  
+      
        <p id="para">
 	   N/A
 	   <?php
@@ -231,7 +233,7 @@ include('cfg/more-functions.php');
 	    //echo stripslashes($assignedgigdetails['prjdesc']); ?>
        
        </p>
-       <?php
+       <?php*/
 			}
 	   ?>
        </section>
