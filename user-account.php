@@ -194,8 +194,8 @@ include('cfg/more-functions.php');
 				 ?>
         
         
-       <?php 
-      /* <p id="para">
+     
+       <p id="para">
 
 	   <?php
 	    echo stripslashes($m_feedback['feedback']); ?>
@@ -218,7 +218,7 @@ include('cfg/more-functions.php');
 							  }
 ?>
 </span>
-<?php*/				  
+<?php				  
 			}
 			else
 			{
