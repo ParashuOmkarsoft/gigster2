@@ -10,7 +10,7 @@ if($userInfo['profileimage'])
 {
 	 $pfimage=$userInfo['profileimage'];
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=4:3" id="imguser" style="margin-right: -14px;">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&cropratio=4:3" id="imguser" style="margin-right: -14px;"class="img-circle">
             <?php
 }
 
