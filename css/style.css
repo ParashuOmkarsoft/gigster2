@@ -1387,14 +1387,13 @@ color: #473610;}
 
 .on-btn{width: 60px;
 height: 30px;
-background: rgb(252, 194, 0);
 text-shadow: none;
 color: white;
 font-size: 14px;}
 .off-btn{width: 60px;
 height: 30px;
 text-shadow: none;
-background: rgb(93, 88, 86);}
+}
 
 
 input[type=radio].css-checkbox {
