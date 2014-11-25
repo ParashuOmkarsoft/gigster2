@@ -23,7 +23,7 @@ if($insertSql)
 	$messagecontent.="<p><strong>Regards</strong><br/>$sitename</p>";	
 	$messagecontent=htmlentities($messagecontent);
 	$messagequery="insert into btr_messages(msgfrom,msgto,msgcontent,haveattachment,msgon,projectId,isread,msgtype,reportid)";
-	$messagequery.="values($reportfrom,$reportto,'$messagecontent','0',".time().",$projectId,'0','r',$insertSql)";	
+	$messagequery.="values($reportfrom,$reportto,'$messagecontent','0',".time().",$projectId,'0','s',$insertSql)";	
 	$messagesql=@db_query($messagequery,3);
 	if($messagesql)
 	{

@@ -38,14 +38,14 @@
 							  $uProfilepic="uploads/profileimage/".$uProfilepic;
 						  }
 							$unreadbids=get_unread_bids($uInfo['userId']);
-							
+							$unreadreports=get_unread_reports($uInfo['userId']);
 						  ?>                                         
 
 						  <li><a href="<?php echo $serverpath;?>mygigs" >MY GIGS
-                          <?php if($unreadbids)
+                          <?php if($unreadbids || $unreadreports)
 						  {
 							  ?>
-							  <i class="fa fa-circle" style="color:green;" title="New Bid"></i>
+							  <i class="fa fa-circle" style="color:green;" title="New Bid / Status Report"></i>
 							  <?php
 						  }
 						  ?></a>

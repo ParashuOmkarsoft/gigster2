@@ -18,7 +18,13 @@ include('cfg/more-functions.php');
 
 <section class="container">
  <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>inprogress"> In progress </a></li>
+     <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong><?php if($unreadreports)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;" title="New Report Recieved"></i>
+							  <?php
+						  }
+						  ?></a></li>
     <li><a href="<?php echo $serverpath;?>bidding"> Bidding  <?php if($unreadbids)
 						  {
 							  ?>

@@ -20,7 +20,13 @@ include('cfg/more-functions.php');
 
 <section class="container">
 	<ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong> </a></li>
+    <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong><?php if($unreadreports)
+						  {
+							  ?>
+							  <i class="fa fa-circle" style="color:green;" title="New Report Recieved"></i>
+							  <?php
+						  }
+						  ?></a></li>
     <li><a href="<?php echo $serverpath;?>bidding"> Bidding </a><?php if($unreadbids)
 						  {
 							  ?>
@@ -90,7 +96,15 @@ include('cfg/more-functions.php');
   <div class="row mygigrow" style="border-bottom: 5px solid #fab518;">
     <div class="col-md-8" style="padding: 0px;">
       <h2 id="giglisth2"style="
-      margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2>
+      margin-top: 15px;"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?><?php 
+	  if(get_unread_project_report($opengig['prjId']))
+	  {
+		  ?>
+		  <i class="fa fa-circle" style="color:green;"></i>
+		  <?php
+	  }
+	  ?></a></h2>
+      
       <p id="gigpara" ><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-12" style="padding: 0px;"> 

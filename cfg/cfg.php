@@ -1142,4 +1142,22 @@ else
 return "0";
 
 }
+function get_unread_reports($userId)
+{
+	 $query="select * from btr_messages where projectId in (select prjId from btr_projects where userId=$userId and status='2') and msgtype='s' and isread='0'";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['count'];
+	}
+}
+function get_unread_project_report($projectId)
+{
+	 $query="select * from btr_messages where projectId=$projectId and msgtype='s' and isread='0'";
+	 $sql=@db_query($query);
+	 if($sql['count']>0)
+	 {
+		 return $sql['count'];
+	 }
+}
 ?>

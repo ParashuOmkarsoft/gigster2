@@ -85,13 +85,13 @@ include('cfg/more-functions.php');
 			}
 			
 			  ?>
-            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=150&height=113&cropratio=1:1" id="imguser" style="padding-bottom: 15px;"class="img-circle">
+            <img src="<?php echo $serverpath;?>image.php?image=/uploads/profileimage/<?php echo $pfimage;?>&width=113&height=113&cropratio=1:1" id="imguser" class="img-circle">
             <?php
 		  }
 		   else
 			  {
 				  ?>
-				  <img src="<?php echo $serverpath;?>image.php?image=/images/admin.png&width=150&height=113&cropratio=4:3"  id="imguser">
+				  <img src="<?php echo $serverpath;?>image.php?image=/images/admin.png&width=150&height=150&cropratio=1:1"  id="imguser">
 				  <?php
 			  }
 			?>
@@ -181,7 +181,7 @@ include('cfg/more-functions.php');
     <section class="container lastsection ">
       <div class="row">
         <div class="col-md-6">
-        <h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4><?php /*?><span class="date"><?php echo convert_time($assignedgig['assignedon']); ?></span><?php */?>
+        <h4><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($assignedgigdetails['prjTitle']);?>/<?php echo $assignedgigdetails['prjId'];?>"><?php echo $assignedgigdetails['prjTitle'];?></a></h4>
         <p id="para"> SGD <?php echo get_final_price($assignedgigdetails['prjId'],$uInfo['userId']); ?></p>
         </div>
       </div>  
