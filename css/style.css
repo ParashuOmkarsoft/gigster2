@@ -1385,7 +1385,7 @@ background:url("../images/ok-mark.png");
 font-family: 'source_sans_probold';
 color: #473610;}
 
-[title]:hover:after {
+a[title]:hover:after {
   content: attr(title);
   padding: 4px 8px;
   color: #333;
