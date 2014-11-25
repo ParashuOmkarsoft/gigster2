@@ -1403,7 +1403,7 @@ input[type=radio].css-checkbox {
 						}
 
 						input[type=radio].css-checkbox:checked + label.css-label {
-							background-position: 0px -12px;
+							background-position: 0px -20px;
 						}
 						label.css-label {
 				background-image:url('../images/check.png');
