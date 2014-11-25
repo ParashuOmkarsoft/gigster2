@@ -24,9 +24,9 @@
               <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
             </div>  
               <label class="radio-inline" style="line-height:22px;">
-              <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked" /><label for="radio4" class="css-label radGroup2">Per Gig</label>
-                <!-- <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
-                Per Gig </label> -->
+              <!-- <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked" /><label for="radio4" class="css-label radGroup2">Per Gig</label> -->
+                <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
+                Per Gig </label>
               <label class="radio-inline"style="line-height:22px;">
                 <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
                 Per Hour </label>
