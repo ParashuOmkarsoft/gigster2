@@ -70,7 +70,7 @@
               <label class="radio-inline" style="line-height:22px;padding:0px;">
                 <input type="radio" name="inviteusers[]" id="inviteusers"   value="0"  checked >
                 No, please select Gigsters for me</label>
-              <label class="radio-inline">
+              <label class="radio-inline" style="line-height:22px;padding:0px;">
                 <input type="radio" name="inviteusers[]" id="inviteusers"   value="1">
                 Yes, I will select which Gigsters to bid </label>
             </div>
