@@ -83,7 +83,7 @@ body h4{
 	font-size: 18px;
 	font-family: 'source_sans_probold'; }
 .container{
-	max-width: 1200px;
+	max-width: 991px;
 	width: 100%;
 	margin: auto;padding: 0px;}
 #imgback img{width: 100%;}

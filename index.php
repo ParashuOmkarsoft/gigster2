@@ -77,7 +77,7 @@ include('cfg/more-functions.php');
 </div>
 </div>
 
-<div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE GIGS</button></a><hr class="hr"></div>
+
 <div class="container" style="max-width: 1178px;margin-top: 45px;">
       <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
@@ -155,6 +155,7 @@ if (strlen($string) > 140) {
 	  ?>
   </div>
 </div>
+<div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 
 
 <?php
