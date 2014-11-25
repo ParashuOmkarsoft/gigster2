@@ -23,10 +23,10 @@
             <div class="col-sm-3" style="padding:0px;">
               <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
             </div>  
-              <label class="radio-inline" style="line-height:11px;">
+              <label class="radio-inline" style="line-height:22px;">
                 <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
                 Per Gig </label>
-              <label class="radio-inline"style="line-height:11px;">
+              <label class="radio-inline"style="line-height:22px;">
                 <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
                 Per Hour </label>
             </div>
@@ -68,10 +68,10 @@
           <div class="form-group">
             <div class="col-sm-12 ">
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"style="line-height:11px;"  value="0"  checked >
+                <input type="radio" name="inviteusers[]" id="inviteusers"style="line-height:22px;"  value="0"  checked >
                 No, please select Gigsters for me</label>
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers"style="line-height:11px;"  value="1">
+                <input type="radio" name="inviteusers[]" id="inviteusers"style="line-height:22px;"  value="1">
                 Yes, I will select which Gigsters to bid </label>
             </div>
           </div>
