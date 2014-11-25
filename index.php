@@ -100,7 +100,7 @@ include('cfg/more-functions.php');
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
-  <div style="text-align: center;padding: 16px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn signup-btn" type="submit">Free Signup!</button></a><hr class="hr"></div>  
+  <div style="text-align: center;padding: 16px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn signup-btn" type="submit">Free Signup!</button></a></div>  
 
 </div>
 
@@ -155,7 +155,7 @@ if (strlen($string) > 140) {
 	  ?>
   </div>
 </div>
-<div style="text-align: center;background: rgb(225, 225, 225);padding: 16px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
+<div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 
 
 <?php
