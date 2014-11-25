@@ -26,7 +26,7 @@
               <label class="radio-inline" style="line-height:22px;">
 
                 <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
-               <span>Per Gig </span> </label>
+               <span class="check-btn">Per Gig </span> </label>
               <label class="radio-inline"style="line-height:22px;">
                 <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
                 <span>Per Hour</span> </label>
