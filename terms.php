@@ -28,8 +28,8 @@ include('cfg/more-functions.php');
          <p class="james">In the case of the USER not wishing to accept all or any of these terms and conditions, they are requested to explicitly renounce all use of the Service.</p> 
          <p class="james">GIGSTERGO.COM makes available to USERS, by online access, the information described below, subject to the terms described on the platform GIGSTERGO.COM</p> 
          <p class="james">The information posted online by USERS are:</p> 
-         <p class="james">● Data of a financial, technical or commercial nature, describing the previous experience and skills of the USER.</p>
-         <p class="james">● Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
+         <p class="james"><span class="bullet">●</span> Data of a financial, technical or commercial nature, describing the previous experience and skills of the USER.</p>
+         <p class="james"><span class="bullet">●</span> Data of a financial, technical or commercial nature, describing the GIG required by the USER.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIG OWNERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms with regard to the GIG searched, the nature of the GIGSTER’s work, and the quality of their online profile.</p>
          <p class="james">GIGSTERGO.COM offers an ergonomic and functional service to GIGSTERS, allowing them an almost immediate selection of data, through a selective filter, as personalized by their search terms for the GIGs on offer by the GIG OWNERS.</p>
          <p class="james">The "mouse click" by the USER constitutes an electronic signature which is of the same value as a handwritten signature, and the client thereby recognizes acceptance of the general and specific T&Cs. </p>
@@ -41,22 +41,22 @@ include('cfg/more-functions.php');
        <div class="row secondinner">
         <div class="col-md-12">
          <span id="bond">GLOSSARY</span> 
-         <p class="james">● AGREEMENT: EXPRESSES THE CONTRACTUAL LINK AS WELL AS THE TERMS AND CONDITIONS AS SET OUT IN THE CURRENT DOCUMENT.</p>
-         <p class="james">● CLIENT: GIG OWNER, GIGSTER.</p> 
-         <p class="james">● GIG: A SERVICE, A PIECE OF WORK OR AN OBJECT</p> 
-         <p class="james">● GIG OWNERS: A COMPANY OR CORPORATION OR INDIVIDUAL BUSINESSPERSON, WHO THROUGH THE SERVICES OF THE GIGSTER OR VISITOR, ORDERS A SERVICE, A PIECE OF WORK OR AN OBJECT.</p> 
-         <p class="james">● GIGSTER: A CORPORATION, A COMPANY, OR AN INDIVIDUAL BUSINESSPERSON, WHOSE ROLE IS TO RESPOND TO ORDERS MADE BY THE GIG OWNER FOR A SERVICE, PIECE OF WORK OR OBJECT.</p> 
-         <p class="james">● MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p>
-         <p class="james">● VISITOR: ANY CORPORATION OR COMPANY VISITING THE SITE WHO DOES NOT SHARE THE QUALITIES ATTRIBUTED TO A CLIENT.</p>
-         <p class="james">● PUBLISHER: THE PLATFORM GIGSTERGO.COM</p>
-         <p class="james">● MARKET: THE MARKET THAT IS TARGETED BY GIGSTERGO.COM IS SINGAPORE.</p>
-         <p class="james">● PLATFORM: THE PLATFORM GIGSTERGO.COM REFERS TO THE ONLINE PLATFORM WHICH ALLOWS GIG OWNERS TO POST GIGS AND, FOR GIGSTERS TO RESPOND WITH OFFER TO PROVIDE A SERVICE, A PIECE OF WORK OR AN OBJECT
-<br><br>● GIGSTERGO.COM: REFERS TO THE PLATFORM GIGSTERGO.COM
-<br><br>● USER: USER IS A GENERIC TERM REFERRING PRIMARILY TO THE THREE CATEGORIES INDICATED BELOW WHO HAVE ACCESS TO THE PLATFORM: “GIGSTER, VISITOR, AND GIG OWNER”
-<br><br>● DOWNLOADING RIGHTS (DR) : THE PLATFORM GIGSTERGO.COM OFFERS ITS CLIENTS THE OPPORTUNITY TO DOWNLOAD FILES ACCORDING TO THE TERMS OF THE CONTRACT.
-<br><br>● INFORMATION OR DATA: EVERY DOCUMENT PUBLISHED ON THE PLATFORM BY THE CLIENT.
-<br><br>● USERNAME: THE TERM “USERNAME” COVERS ALL INFORMATION NECESSARY TO IDENTIFY A USER ON THE PLATFORM AND TO ALLOW THEM ACCESS TO MEMBER-ONLY AREAS.
-<br><br>● PASSWORD: THE “PASSWORD“ IS A CONFIDENTIAL PIECE OF INFORMATION WHICH THE USER MUST KEEP SECRET; ALONG WITH THE USERNAME, IT ALLOWS THE USER TO PROVE THEIR IDENTITY.
+         <p class="james"><span class="bullet">●</span> AGREEMENT: EXPRESSES THE CONTRACTUAL LINK AS WELL AS THE TERMS AND CONDITIONS AS SET OUT IN THE CURRENT DOCUMENT.</p>
+         <p class="james"><span class="bullet">●</span> CLIENT: GIG OWNER, GIGSTER.</p> 
+         <p class="james"><span class="bullet">●</span> GIG: A SERVICE, A PIECE OF WORK OR AN OBJECT</p> 
+         <p class="james"><span class="bullet">●</span> GIG OWNERS: A COMPANY OR CORPORATION OR INDIVIDUAL BUSINESSPERSON, WHO THROUGH THE SERVICES OF THE GIGSTER OR VISITOR, ORDERS A SERVICE, A PIECE OF WORK OR AN OBJECT.</p> 
+         <p class="james"><span class="bullet">●</span> GIGSTER: A CORPORATION, A COMPANY, OR AN INDIVIDUAL BUSINESSPERSON, WHOSE ROLE IS TO RESPOND TO ORDERS MADE BY THE GIG OWNER FOR A SERVICE, PIECE OF WORK OR OBJECT.</p> 
+         <p class="james"><span class="bullet">●</span> MEMBER: THE TERM “MEMBER” DESIGNATES A RECOGNIZED USER OF THE PLATFORM</p>
+         <p class="james"><span class="bullet">●</span> VISITOR: ANY CORPORATION OR COMPANY VISITING THE SITE WHO DOES NOT SHARE THE QUALITIES ATTRIBUTED TO A CLIENT.</p>
+         <p class="james"><span class="bullet">●</span> PUBLISHER: THE PLATFORM GIGSTERGO.COM</p>
+         <p class="james"><span class="bullet">●</span> MARKET: THE MARKET THAT IS TARGETED BY GIGSTERGO.COM IS SINGAPORE.</p>
+         <p class="james"><span class="bullet">●</span> PLATFORM: THE PLATFORM GIGSTERGO.COM REFERS TO THE ONLINE PLATFORM WHICH ALLOWS GIG OWNERS TO POST GIGS AND, FOR GIGSTERS TO RESPOND WITH OFFER TO PROVIDE A SERVICE, A PIECE OF WORK OR AN OBJECT
+<br><br><span class="bullet">●</span> GIGSTERGO.COM: REFERS TO THE PLATFORM GIGSTERGO.COM
+<br><br><span class="bullet">●</span> USER: USER IS A GENERIC TERM REFERRING PRIMARILY TO THE THREE CATEGORIES INDICATED BELOW WHO HAVE ACCESS TO THE PLATFORM: “GIGSTER, VISITOR, AND GIG OWNER”
+<br><br><span class="bullet">●</span> DOWNLOADING RIGHTS (DR) : THE PLATFORM GIGSTERGO.COM OFFERS ITS CLIENTS THE OPPORTUNITY TO DOWNLOAD FILES ACCORDING TO THE TERMS OF THE CONTRACT.
+<br><br><span class="bullet">●</span> INFORMATION OR DATA: EVERY DOCUMENT PUBLISHED ON THE PLATFORM BY THE CLIENT.
+<br><br><span class="bullet">●</span> USERNAME: THE TERM “USERNAME” COVERS ALL INFORMATION NECESSARY TO IDENTIFY A USER ON THE PLATFORM AND TO ALLOW THEM ACCESS TO MEMBER-ONLY AREAS.
+<br><br><span class="bullet">●</span> PASSWORD: THE “PASSWORD“ IS A CONFIDENTIAL PIECE OF INFORMATION WHICH THE USER MUST KEEP SECRET; ALONG WITH THE USERNAME, IT ALLOWS THE USER TO PROVE THEIR IDENTITY.
 </p>
        
 
@@ -110,9 +110,9 @@ Obligation for pre-release online
 <p class="james">The USERS are solely responsible for the authenticity and reliability of any information posted to GIGSTERGO.COM. <br><br>
 The USER will guarantee that the documents are authentic and conform to the laws of the Republic of Singapore governing this matter; if any possible incompatibility should arise, the USER will inform GIGSTERGO.COM of it within 24 hours.<br><br>
 The USER undertakes to respect the following procedure:<br><br>
-● Accept without reservation or contradiction these T&Cs and subscribe online<br><br>
-● Provide adequate information on the Profile<br><br>
-● Provide adequate information when posting a GIG<br><br>
+<span class="bullet">●</span> Accept without reservation or contradiction these T&Cs and subscribe online<br><br>
+<span class="bullet">●</span> Provide adequate information on the Profile<br><br>
+<span class="bullet">●</span> Provide adequate information when posting a GIG<br><br>
 
 A breach of any one of these obligations by the USER will suspend de facto the obligations of the GIGSTERGO.COM, who reserves the right to unilaterally terminate, by right, any business with the USER at fault.<br><br>
 All breaches of this obligation will lead to the suspension and unilateral cancellation of the commitment by right, by GIGSTERGO.COM.<br><br>
@@ -126,12 +126,12 @@ All breaches of this obligation will lead to the suspension and unilateral cance
 <span id="bond">Obligations for release online
 </span> 
 <p class="james">Any USER profile published online must adhere to the following minimum conditions:<br><br>
-● The profile must be complete: all the documents required by the PLATFORM must be present.<br><br>
-● The profile will be subject to assessment to see that it conforms to the current T&Cs and those of the PLATFORM GIGSTERGO.COM in terms of its and accuracy and regularization.<br><br>
+<span class="bullet">●</span> The profile must be complete: all the documents required by the PLATFORM must be present.<br><br>
+<span class="bullet">●</span> The profile will be subject to assessment to see that it conforms to the current T&Cs and those of the PLATFORM GIGSTERGO.COM in terms of its and accuracy and regularization.<br><br>
 
 GIGSTERGO.COM reserves the discretionary right to completely disregard any profile published online if:<br><br>
-● The profile is incomplete<br><br>
-● The profile contains documents which do not correspond to, or only partially correspond to the qualitative and quantitative control.<br><br>
+<span class="bullet">●</span> The profile is incomplete<br><br>
+<span class="bullet">●</span> The profile contains documents which do not correspond to, or only partially correspond to the qualitative and quantitative control.<br><br>
 
 In this instance, an email will be sent to the USER in order to allow them to correct their  profile.<br><br>
 If the User does not reply within 48 hours, the profile will be deemed to be non-conformant and invalid. Consequently, it will not be published online.<br><br>
@@ -145,16 +145,16 @@ If the User does not reply within 48 hours, the profile will be deemed to be non
 <div class="col-md-12">
 <span id="bond">GIG OWNER OBLIGATIONS
 </span> 
-<p class="james">●  The GIG OWNER undertakes to refrain from any interference with regard to GIGSTERGO.COM; in this respect GIGSTERGO.COM acts uniquely as a data bank without any other intermediation or engagement.<br><br>
-● The GIG OWNER agrees to use the site honestly, and notably to respect all obligations concerning the responsibility of GIGSTERGO.COM<br><br>
+<p class="james"><span class="bullet">●</span>  The GIG OWNER undertakes to refrain from any interference with regard to GIGSTERGO.COM; in this respect GIGSTERGO.COM acts uniquely as a data bank without any other intermediation or engagement.<br><br>
+<span class="bullet">●</span> The GIG OWNER agrees to use the site honestly, and notably to respect all obligations concerning the responsibility of GIGSTERGO.COM<br><br>
 In the case of any breach, GIGSTERGO.COM will not be held responsible in any way.<br><br>
 Non-compliance by the GIG OWNER to any of the provisions as described by these T&Cs, leads de facto and of right to the immediate termination of these T&Cs without prejudicing any legal action for damages and interests.<br><br>
 The GIG OWNER also expressly commits to the following:<br><br>
-● To scrupulously respect all the requirements of these T&Cs, as well as those described on the PLATFORM, GIGSTERGO.COM<br><br>
-● To not poach, or attempt to poach, directly or indirectly, one or more of the GIGSTERS that were employed as a result of being selected on the PLATFORM. This obligation will continue for a period of twelve (12) months after termination of these T&Cs for any reason whatsoever.<br><br>
-● To not use data pertaining to the GIGSTERS which are strictly for use with one or several MARKETS and with one or more of the GIGSTERS that have been chosen for these MARKETS. However, such use does not confer any other right to the GIG OWNERS, including any intellectual property rights, and is subject to the prior approval of the T&Cs by the GIG OWNER.<br><br>
-● Upon termination of the GIG OWNER’s subscription, and the right to access the GIGSTER’s information for any reason whatsoever, the GIG OWNER expressly agrees not to use any data pertaining to the GIGSTERS in any capacity whatsoever.<br><br>
-● The GIG OWNER undertakes to behave in a way conformant to the laws and regulations of any document or information that he extracts from the PLATFORM, and therefore assumes any responsibility subsequent to that usage.<br><br> 
+<span class="bullet">●</span> To scrupulously respect all the requirements of these T&Cs, as well as those described on the PLATFORM, GIGSTERGO.COM<br><br>
+<span class="bullet">●</span> To not poach, or attempt to poach, directly or indirectly, one or more of the GIGSTERS that were employed as a result of being selected on the PLATFORM. This obligation will continue for a period of twelve (12) months after termination of these T&Cs for any reason whatsoever.<br><br>
+<span class="bullet">●</span> To not use data pertaining to the GIGSTERS which are strictly for use with one or several MARKETS and with one or more of the GIGSTERS that have been chosen for these MARKETS. However, such use does not confer any other right to the GIG OWNERS, including any intellectual property rights, and is subject to the prior approval of the T&Cs by the GIG OWNER.<br><br>
+<span class="bullet">●</span> Upon termination of the GIG OWNER’s subscription, and the right to access the GIGSTER’s information for any reason whatsoever, the GIG OWNER expressly agrees not to use any data pertaining to the GIGSTERS in any capacity whatsoever.<br><br>
+<span class="bullet">●</span> The GIG OWNER undertakes to behave in a way conformant to the laws and regulations of any document or information that he extracts from the PLATFORM, and therefore assumes any responsibility subsequent to that usage.<br><br> 
 </p> 
 </div>
 <div class="clearfirst"></div>
@@ -168,30 +168,30 @@ The GIG OWNER also expressly commits to the following:<br><br>
 Access to the service by the GIG OWNER is subject to the acceptance of these T&Cs.<br><br>
 Free Services:<br><br>
 The GIG OWNER has access, free-of-charge, to:<br><br>
-● The PLATFORM, complete with profile space.<br><br>
-● Publication of GIGs<br><br>
-● Ability to search for skills, via keyword.<br><br>
+<span class="bullet">●</span> The PLATFORM, complete with profile space.<br><br>
+<span class="bullet">●</span> Publication of GIGs<br><br>
+<span class="bullet">●</span> Ability to search for skills, via keyword.<br><br>
 
 
 Failure by the GIG OWNER to fulfill any of their obligations under this section gives GIGSTERGO.COM the right to suspend or limit its services, and to unilaterally terminate by right any interaction with the GIG OWNER, without prejudicing any legal action for interests or damages.<br><br>
 
 ACCESS TO SERVICES ON THE PLATFORM FOR THE GIGSTER<br><br>
 The GIGSTER will provide information on the profile page, which will be accessible to (the) USER(S) in compliance with the following conditions:<br><br>
-● The information must without fail be compliant with the laws of Republic of Singapore.<br><br>
-● The profile page must without fail contain the minimum of information as set out in the current T&Cs.<br><br>
-● The information must without fail be compliant with any regulations pertaining to the fight against discrimination of whatever nature they may be.<br><br>
-● The information must without fail contain any information as pertaining directly to purpose of the PLATFORM<br><br>
-● The information must without fail respect in their entirety all clauses of the current T&Cs.<br><br>
+<span class="bullet">●</span> The information must without fail be compliant with the laws of Republic of Singapore.<br><br>
+<span class="bullet">●</span> The profile page must without fail contain the minimum of information as set out in the current T&Cs.<br><br>
+<span class="bullet">●</span> The information must without fail be compliant with any regulations pertaining to the fight against discrimination of whatever nature they may be.<br><br>
+<span class="bullet">●</span> The information must without fail contain any information as pertaining directly to purpose of the PLATFORM<br><br>
+<span class="bullet">●</span> The information must without fail respect in their entirety all clauses of the current T&Cs.<br><br>
 
 The PLATFORM GIGSTERGO.COM, reserves all rights to moderate, suspend, or remove any information that does not meet the above requirements or other requirements stated in these T&Cs, without prejudicing any legal action for interests or damages.<br><br>
 
 <strong>SERVICES PERTAINING TO THE GIGSTER</strong><br><br>
 The GIGSTER will benefit, without reservation, from the following conditions as set out in these T&Cs:<br><br>
-● The opportunity to look for GIGs.<br><br>
-● The opportunity to respond online to GIGs.<br><br>
-● The opportunity to subscribe via email, Twitter, Facebook.<br><br>
-● The opportunity to remain informed of all changes to the status of GIGs for which they have bidded on.<br><br>
-● The opportunity to provide status updates for the GIGs they have undertaken.<br><br>
+<span class="bullet">●</span> The opportunity to look for GIGs.<br><br>
+<span class="bullet">●</span> The opportunity to respond online to GIGs.<br><br>
+<span class="bullet">●</span> The opportunity to subscribe via email, Twitter, Facebook.<br><br>
+<span class="bullet">●</span> The opportunity to remain informed of all changes to the status of GIGs for which they have bidded on.<br><br>
+<span class="bullet">●</span> The opportunity to provide status updates for the GIGs they have undertaken.<br><br>
 
 <strong>DURATION AND END OF SERVICES TO THE GIGSTER</strong><br><br>
 In the case of failure of the GIGSTER to adhere to one of the requirements of these T&Cs, GIGSTERGO.COM may terminate this agreement immediately (without notice), prejudicing any legal action for interests or damages.<br><br>
@@ -282,12 +282,12 @@ GIGSTERGO.COM controls and verifies the compliancy of profiles submitted by the 
 Any profile that does not comply with the contractual provisions of GIGSTERGO.COM may be suspended.
 The compliancy of the profiles of the USER is defined in the following non-exhaustive list:<br><br>
 <span class="bullet">●</span> The content of profiles must not contain any information allowing the GIG OWNER to identify and/or directly contact the USER,<br><br>
-● The content of profiles must not harm the image of GIGSTERGO.COM,<br><br>
-● The content of profiles must be compliant with law or public policy,<br><br>
-● The content of profiles cannot include directly or indirectly, the personal details of the USER,<br><br>
-● The content of profiles should be expressed and disseminated in an intelligent manner,<br><br>
-● The content of profiles must not contain anything that could be discriminatory, regardless of the nature,<br><br>
-● The content of profiles should be written in a language supported by the site GIGSTERGO.COM.<br><br>
+<span class="bullet">●</span> The content of profiles must not harm the image of GIGSTERGO.COM,<br><br>
+<span class="bullet">●</span> The content of profiles must be compliant with law or public policy,<br><br>
+<span class="bullet">●</span> The content of profiles cannot include directly or indirectly, the personal details of the USER,<br><br>
+<span class="bullet">●</span> The content of profiles should be expressed and disseminated in an intelligent manner,<br><br>
+<span class="bullet">●</span> The content of profiles must not contain anything that could be discriminatory, regardless of the nature,<br><br>
+<span class="bullet">●</span> The content of profiles should be written in a language supported by the site GIGSTERGO.COM.<br><br>
 
 
 <strong>PROCEDURE</strong><br><br>
