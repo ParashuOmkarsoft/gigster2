@@ -20,7 +20,7 @@
           <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
           <div class="form-group">
           <div class="col-sm-12">
-            <div class="col-sm-4">
+            <div class="col-sm-3" style="padding:0px;">
               <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
             </div>  
               <label class="radio-inline">
