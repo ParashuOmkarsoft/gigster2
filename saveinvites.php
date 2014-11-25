@@ -48,6 +48,7 @@ foreach($invites as $invite)
 											  <p><b><a href='".$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId']."'>Click Here To View Gig</a></b></p>";
 								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=nl2br($mailmatter);
+								$mailmatter=addslashes($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				 $msgquery.="values(18,$invite,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','r')";
 				$msgsql=@db_query($msgquery);										  
