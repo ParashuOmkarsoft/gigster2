@@ -156,7 +156,7 @@ include('cfg/more-functions.php');
 						for($i=0;$i<$country['count'];$i++)
 						{
 							?>
-							<option value="<?php echo $country['rows'][$i]['id'];?>" <?php if($country['rows'][$i]['id']==$uInfo['country']){ ?> selected<?php }?>><?php echo $country['rows'][$i]['countryname'];?></option>
+							<option value="<?php echo $country['rows'][$i]['id'];?>" <?php if($country['rows'][$i]['id']==$uInfo['country']){ ?> selected<?php }else{ if($country['rows'][$i]['id']==186){ ?> selected<?php }}?>><?php echo $country['rows'][$i]['countryname'];?></option>
 							<?php
 						}
 						?>   	

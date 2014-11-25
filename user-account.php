@@ -191,7 +191,7 @@ include('cfg/more-functions.php');
         
         </div>
       </div>  
-         <h4>Testimonial :</h4>
+        
        <p id="para">
 
 	   <?php
