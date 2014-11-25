@@ -46,7 +46,7 @@ foreach($invites as $invite)
 	<p>".$fromnamedisplay." has invited you to submit a bid on the Gig <b>".$gigdetails['prjTitle']."</b>.</p>
 											  <p>Click here to see full details and submit a bid.</p>
 											  <p><b><a href='".$serverpath."gigDetails/".mera_url_encode($gigdetails['prjTitle'])."/".$gigdetails['prjId']."'>Click Here To View Gig</a></b></p>";
-								$mailmatter=strip_tags($mailmatter);
+								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=nl2br($mailmatter);
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				 $msgquery.="values(18,$invite,'$mailmatter',".gmmktime().",".$gigdetails['prjId'].",'0','r')";
