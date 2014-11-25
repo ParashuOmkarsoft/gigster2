@@ -16,23 +16,18 @@
             <div class="col-sm-10">
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
-          </div>
-                   <div class="form-group">
-           <label for="gigdescription" class="col-sm-4 control-label" style="padding-top: 12px; width:153px;">Your pay as</label>
-            <div class="col-sm-8" style="padding:0px";>
-              <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
-                Per Gig </label>
-              <label class="radio-inline">
-                <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
-                Per Hour </label>
-            </div>
-          </div>
+          </div>      
           <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
           <div class="form-group">
             <div class="col-sm-10">
               <input  required style="width:30%" type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
             </div>
+            <label class="radio-inline">
+                <input type="radio" name="jobtype[]" id="jobtype"  value="f"  onChange="change_caption('f')" checked="checked">
+                Per Gig </label>
+              <label class="radio-inline">
+                <input type="radio" name="jobtype[]" id="jobtype" value="h"  onChange="change_caption('h')">
+                Per Hour </label>
           </div>
           <h2 class="loginlead" >Skills</h2>
           <div class="form-group">
