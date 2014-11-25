@@ -1399,3 +1399,8 @@ text-shadow: none;
 
 background-repeat: no-repeat;
 padding-left: 18px;}
+
+
+input[type='checkbox']:checked + span {
+    background-image: url(../images/check.png) 0 4px;
+}
