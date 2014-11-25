@@ -1136,7 +1136,10 @@ function get_final_price($projectId,$user)
 {
 $query="select * from btr_assignment where awardedto=$user and projectId=$projectId";
 $sql=@db_query($query);
+if($sql['count'])
 return $sql['rows']['0']['amount'];	
+else
+return "0";
 
 }
 ?>
