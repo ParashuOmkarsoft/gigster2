@@ -151,7 +151,7 @@ include('cfg/more-functions.php');
 				{
 				?>        
         <div class="col-md-8">
-                	<select name="country" id="country" class="form-control profile-text" style="width:268px;">
+                	<select name="country" id="country" class="form-control profile-text">
                  		<?php
 						for($i=0;$i<$country['count'];$i++)
 						{
@@ -171,7 +171,11 @@ include('cfg/more-functions.php');
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
 				    <label class="profile-inpute">Notifications</label>
-            <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>>
+            <!-- <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>> -->
+                  <div class="btn-group btn-toggle"> 
+                  <button class="btn btn-xs btn-default">ON</button>
+                  <button class="btn btn-xs btn-info active">OFF</button>
+                  </div>
             </div>
             </div>
             
@@ -344,4 +348,32 @@ include('cfg/more-functions.php');
    
 <?php include('footer.php'); ?>
   </body>
+
+<script type="text/javascript">
+  $('.btn-toggle').click(function() {
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').size()>0) {
+      $(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').size()>0) {
+      $(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').size()>0) {
+      $(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').size()>0) {
+      $(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+  alert($(this["options"]).val());
+    return false;
+});
+</script>
+
 </html>
