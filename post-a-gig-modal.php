@@ -67,11 +67,11 @@
           <h2 class="loginlead">Would you like to invite your favourite Gigsters to bid?</h2>
           <div class="form-group">
             <div class="col-sm-12 ">
-              <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers" style="line-height:22px;padding:0px;"  value="0"  checked >
+              <label class="radio-inline" style="line-height:22px;padding:0px;">
+                <input type="radio" name="inviteusers[]" id="inviteusers"   value="0"  checked >
                 No, please select Gigsters for me</label>
               <label class="radio-inline">
-                <input type="radio" name="inviteusers[]" id="inviteusers" style="line-height:22px;padding:0px;"  value="1">
+                <input type="radio" name="inviteusers[]" id="inviteusers"   value="1">
                 Yes, I will select which Gigsters to bid </label>
             </div>
           </div>
@@ -86,4 +86,3 @@
   </div>
 </div>
 
-<div style="background:#fafafa; color:#222; padding:10px;"><h3>Light Background</h3><table><tr><td><input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label radGroup2">Option 1</label></td><td><input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/><label for="radio5" class="css-label radGroup2">Option 2</label></td><td><input type="radio" name="radiog_dark" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label radGroup2">Option 1</label></td></tr></table></div>
