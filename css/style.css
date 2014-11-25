@@ -1402,5 +1402,5 @@ padding-left: 18px;}
 
 
 input[type='checkbox']:checked + span {
-    background-image: url(../images/check.png) 0 4px;
+    background-image: url(../images/check.png) 0 15px;
 }
