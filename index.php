@@ -158,8 +158,9 @@ if (strlen($string) > 140) {
 <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 
 
+  </body>
+  
 <?php
 include('footer.php'); 
 ?>
-  </body>
 </html>
