@@ -80,7 +80,7 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
       <div class="col-md-12" style="padding:0px;"> 
       <div class="col-md-8"> 
        <span class="budget" style="padding-top: 20px;"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
-       </a> 
+       <?php echo $prjDetails['prjdesc']; ?> 
        <div id="msgmodal<?php echo $prjDetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content cform">
@@ -209,7 +209,7 @@ box-shadow: 0px 0px 2px #000000;'";
     <div class="row">
       <div class="col-md-10" style="margin-bottom: 15px;"> 
       
-        <?php echo $prjDetails['prjdesc']; ?>
+    
 
         <?php
 		if(is_project_awarded($prjDetails['prjId']))

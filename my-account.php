@@ -17,7 +17,7 @@ include('cfg/more-functions.php');
         <?php include('top-menu.php'); ?>
     
  
-     <section class="container mclass">
+     <section class="container">
       <ul id="profilemenu">
 		<li><h5 id="pro" style="border-left:none;"> <a href="<?php echo $serverpath;?>myaccount"><strong>My Profile</strong></a></h5></li>
         <li><h5 id="pro"> <a href="javascript:void(0);">Change Password</a></h5></li>
@@ -197,7 +197,7 @@ include('cfg/more-functions.php');
   }
 	?>
   </div>
-   <div class="fileinput-preview fileinput-exists" style="max-width: 200px; max-height: 200px; border-radius:50%;"></div>
+  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 200px; border-radius:50%;"></div>
   <div>
     <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
   

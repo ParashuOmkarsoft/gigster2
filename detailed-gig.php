@@ -49,7 +49,7 @@ else
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			
 	?>
-<section id="gigdetail" class="container mclass">
+<section id="gigdetail" class="container">
   <h2 id="gigger">Gig Details</h2>
   <div class="row giginner">
     <div class="col-md-8">
