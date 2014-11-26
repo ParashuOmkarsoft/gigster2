@@ -346,9 +346,9 @@ include('cfg/more-functions.php');
 		?>
     
    
-<?php include('footer.php'); ?>
-  </body>
 
+  </body>
+<?php include('footer.php'); ?>
 
 
 </html>

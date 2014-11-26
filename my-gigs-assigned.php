@@ -452,6 +452,7 @@ $puname=$puuinfo['username'];
 	$updSql=@db_query($updQuery);
 ?>
 </section>
-<?php include('footer.php'); ?>
+
 </body>
+<?php include('footer.php'); ?>
 </html>
