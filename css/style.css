@@ -1439,3 +1439,6 @@ color: black;
 border: none;
 box-shadow: none;
 padding: 0px;}
+
+.thumbnail img
+{ border-radius:50% ;}
