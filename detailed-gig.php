@@ -49,7 +49,7 @@ else
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
 			
 	?>
-<section id="gigdetail" class="container">
+<section id="gigdetail" class="container mclass">
   <h2 id="gigger">Gig Details</h2>
   <div class="row giginner">
     <div class="col-md-8">
@@ -112,7 +112,7 @@ else
                         <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">
-                              <div class="container">
+                              <div class="container mclass">
                                 <div class="col-md-12">
                                   <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
                                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
@@ -167,7 +167,7 @@ else
     </div>
   </div>
 </section>
-<section class="container secondsection">
+<section class="container secondsection mclass">
   <p><?php echo nl2br(stripslashes($gigdetails['prjdesc']));?></p>
   <div class="row">
     <div class="col-md-12">

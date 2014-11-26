@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container mclass">
       <ul id="profilemenu">
         <li><a href="mygigs-Bidding.html">GIGS I OWN</a></li>
         <li><a href="myassignment.html">GIGS I WON</a></li>

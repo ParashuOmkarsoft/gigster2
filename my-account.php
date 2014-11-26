@@ -17,7 +17,7 @@ include('cfg/more-functions.php');
         <?php include('top-menu.php'); ?>
     
  
-     <section class="container">
+     <section class="container mclass">
       <ul id="profilemenu">
 		<li><h5 id="pro" style="border-left:none;"> <a href="<?php echo $serverpath;?>myaccount"><strong>My Profile</strong></a></h5></li>
         <li><h5 id="pro"> <a href="javascript:void(0);">Change Password</a></h5></li>

@@ -20,7 +20,7 @@ include('cfg/more-functions.php');
 
     </section>
 
-<section class="container">
+<section class="container mclass">
         <div id="our">Inbox</div>
         <div></div>
 <?php 

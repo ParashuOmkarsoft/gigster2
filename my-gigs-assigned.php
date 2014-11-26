@@ -27,7 +27,7 @@ if(!isset($_SESSION['uId']))
 <?php include('top-menu.php'); ?>
 <div id="grad"></div>
 
-<section class="container">
+<section class="container mclass">
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>assignments"> <strong> In progress</strong> <?php if($unreadawards)
 						  {
@@ -256,7 +256,7 @@ $puser=$pdetails['userId'];
 $puuinfo=get_user_Info(encrypt_str($puser));
 $puname=$puuinfo['username'];
 ?>
-              <section class="container">
+              <section class="container mclass">
                 <h2 id="logingigster1">Accept Terms</h2>
                 <div class="row">
                   <div class="col-md-12">

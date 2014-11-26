@@ -44,7 +44,7 @@ $puser=$pdetails['userId'];
 $puuinfo=get_user_Info(encrypt_str($puser));
 $puname=$puuinfo['username'];
 ?>
-<section class="container">
+<section class="container mclass">
       <h2 id="logingigster1">Accept Terms</h2>
      <div class="row">
      	<div class="col-md-12">

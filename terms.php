@@ -16,7 +16,7 @@ include('cfg/more-functions.php');
   <body>
   <?php include('top-menu.php'); ?>  
     
-      <section class="container">
+      <section class="container mclass">
       <h2 id="giglog">Terms</h2>
       
   

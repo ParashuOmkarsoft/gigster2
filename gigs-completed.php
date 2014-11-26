@@ -16,7 +16,7 @@ include('cfg/more-functions.php');
 <body>
 <?php include('top-menu.php'); ?>
 
-<section class="container">
+<section class="container mclass">
  <ul id="profilemenu">
      <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong><?php if($unreadreports)
 						  {

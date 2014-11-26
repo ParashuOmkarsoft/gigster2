@@ -17,7 +17,7 @@ include('cfg/more-functions.php');
 <?php include('top-menu.php'); ?>
 
 
-<section class="container">
+<section class="container mclass">
   <ul id="profilemenu">
     <li><a href="<?php echo $serverpath;?>assignments"> In progress <?php if($unreadawards)
 						  {
