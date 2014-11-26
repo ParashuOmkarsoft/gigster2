@@ -103,7 +103,7 @@ if($checkSql['count']>0)
 			  {
 			  ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
         <!-- <button type="button" class="btn markascomplete-btn1" >Send feedback</button> -->
-        
+        <img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;">
         </a>
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -428,7 +428,6 @@ $puname=$puuinfo['username'];
             <h4><?php echo convert_date($prjDetails['bidfrom']);?> <span class="c"><?php echo convert_date($prjDetails['bidto']);?></span></h4>
             <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal" title="Send Status Report"> <div class="progress">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;"> <span class="sr-only"><?php echo $projectstatus; ?>%</span></div> 
-             <span class="feedback-icon"><img src="images/feedback.png" title="Send feedback" style="margin: 0px;"></span>
             </div></a>
           </div>
         </div>
