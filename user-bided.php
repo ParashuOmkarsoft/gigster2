@@ -208,7 +208,7 @@ box-shadow: 0px 0px 2px #000000;'";
     <div class="row">
       <div class="col-md-10" style="margin-bottom: 15px;"> 
       
-        <?php echo $prjDetails['prjdesc']; ?>
+    
 
         <?php
 		if(is_project_awarded($prjDetails['prjId']))
