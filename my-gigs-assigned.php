@@ -102,7 +102,8 @@ if($checkSql['count']>0)
 			  if(!is_feedback_given($prjDetails['prjId'],$uInfo['userId']))
 			  {
 			  ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
-        <button type="button" class="btn markascomplete-btn1" >Send feedback</button>
+        <!-- <button type="button" class="btn markascomplete-btn1" >Send feedback</button> -->
+        <img src="images/feedback.png" title="Send feedback">
         </a>
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
