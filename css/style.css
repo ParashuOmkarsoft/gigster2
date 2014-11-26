@@ -1434,3 +1434,8 @@ background: white;
 text-shadow: none;
 color: black;
 }
+
+.delete{background: none;
+border: none;
+box-shadow: none;
+padding: 0px;}

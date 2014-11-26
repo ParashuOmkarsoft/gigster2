@@ -201,7 +201,7 @@ include('cfg/more-functions.php');
   <div>
     <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
   
-    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput"><img src="images/delete.png"></a>
+    <a href="#" class="btn btn-default fileinput-exists delete" data-dismiss="fileinput"><img src="images/delete.png"></a>
   </div>
   
   
