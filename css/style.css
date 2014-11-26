@@ -1451,5 +1451,5 @@ max-width: 190px;
 /* max-height: 190px; */
 margin: 0px;
 min-height: 190px;
-crop-ratio: 1:1;
+min-width: 190px;
 }
