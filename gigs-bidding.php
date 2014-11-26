@@ -95,13 +95,14 @@ include('cfg/more-functions.php');
       </a>
       
       </h2>
+      <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
      
       <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
     </div>
     <div class="col-md-12" style="padding: 0px;">
       <div class="col-md-8" style="padding: 0px;">
-        <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
+        
       </div>
       <div class="col-md-4 giginnerimg gigimg" style="padding: 0px;">
         <?php /*?>   <div class="col-md-6">
