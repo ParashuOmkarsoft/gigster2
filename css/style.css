@@ -1445,3 +1445,11 @@ padding: 0px;}
 { border-radius:50% ;}
 .feedback-icon{position: absolute;margin-top: -11px;}
 
+.fileinput .thumbnail>img {
+/* max-height: 100%; */
+max-width: 190px;
+/* max-height: 190px; */
+margin: 0px;
+min-height: 190px;
+crop-ratio: 1:1;
+}
