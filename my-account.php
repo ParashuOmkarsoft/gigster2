@@ -186,7 +186,7 @@ include('cfg/more-functions.php');
   <?php if(!$pfimage)
   {
 	  ?>
-    <img data-src="holder.js/150x150" alt="...">
+    <div class="img-circle"><img data-src="holder.js/100x100%" alt="..."></div>
     <?php
   }
   else
