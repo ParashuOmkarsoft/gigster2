@@ -72,7 +72,7 @@ font-family: 'source_sans_probold';
 	}
 	
 .navbar-nav.navbar-right:last-child {
-/*margin-right: -42px;*/
+/*margin-right: -42px;*/margin-top: 15px;
 }
 body p{
 	color: #786c50;
