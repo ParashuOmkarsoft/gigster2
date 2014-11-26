@@ -362,6 +362,7 @@ include('cfg/more-functions.php');
   </div>
   <?php  } ?>
 </section>
-<?php include('footer.php'); ?>
+
 </body>
+<?php include('footer.php'); ?>
 </html>
