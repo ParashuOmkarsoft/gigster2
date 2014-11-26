@@ -1408,6 +1408,7 @@ background: #fd8900;}
 .off-btn{width: 60px;
 height: 30px;
 text-shadow: none;
+background: #fff;
 }
 
 .check-btn{background: url(../images/check.png) 0 4px;
