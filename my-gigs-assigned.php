@@ -103,7 +103,7 @@ if($checkSql['count']>0)
 			  {
 			  ?><a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal">
         <!-- <button type="button" class="btn markascomplete-btn1" >Send feedback</button> -->
-        <img src="images/feedback.png" title="Send feedback">
+        <img src="images/feedback.png" title="Send feedback" style="float:left">
         </a>
         
         <div id="statusmodal<?php echo $prjDetails['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
