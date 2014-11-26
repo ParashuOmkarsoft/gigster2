@@ -1410,6 +1410,7 @@ height: 30px;
 color:black;
 text-shadow: none;
 background: #fff;
+border:none;
 }
 
 .check-btn{background: url(../images/check.png) 0 4px;
