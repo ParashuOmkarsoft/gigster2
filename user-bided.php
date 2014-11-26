@@ -171,16 +171,17 @@ box-shadow: 0px 0px 2px #000000;'";
 	 ?>
       <div style="float: right;">
          <?php
-				 for($t=0;$t<$ownerrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
-        <?php
-							  }
+				
 							   for($t=$ownerrating;$t<5;$t++)
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_2.png" style="margin: 0px 0px 1px 0px;"/>
+        <?php
+							  }
+							   for($t=0;$t<$ownerrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" style="margin: 0px 0px 1px 0px;"/>
         <?php
 							  }
 		?>
