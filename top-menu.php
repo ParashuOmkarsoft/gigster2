@@ -76,7 +76,7 @@
 						   }
 						   ?>
 						    <li><a href="<?php echo $serverpath;?>myaccount" style="margin-top: -4px;padding: 0px;">
-                          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo$uProfilepic;?>&width=40&height=40&cropratio=1:1" style="border-radius:50px;" title="My Profile"/>
+                          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo$uProfilepic;?>&width=40&height=40&cropratio=1:1" style="border-radius:50px;padding: 7px;margin: 0px;" title="My Profile"/>
                           </a></li>
 						   <?php
 					  }
