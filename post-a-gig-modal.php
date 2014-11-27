@@ -42,7 +42,7 @@
           <h2 class="loginlead">Enter expiry date of your Gig</h2>
           <div class="form-group">
             <div class="col-sm-10">
-              <input type="text" id="datepic"style="width:47%" name="enddate" class="mdatepicker"/>
+              <input type="text" id="datepic"style="width:47%" name="enddate" class="mdatepicker" value="<?php echo date('d/m/Y',time() + (24*3600*7));?>"/>
               <script type="text/javascript">
           $(document).ready(function(){
           var nowTemp = new Date();
