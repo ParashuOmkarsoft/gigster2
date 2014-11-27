@@ -2,7 +2,7 @@
       <div class="container" style="max-width:1200px;">
         <div class="row">
           <div class="col-md-2">
-            <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo.png" class="logo"></a>
+            <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo-1.png" class="logo"></a>
           </div>
           <div class="col-md-10">
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
