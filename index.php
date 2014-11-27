@@ -55,22 +55,22 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-4">
       <h2 class="name1 ">
-        No need to spend hours on searching, We will find the right Gigster for you.
+        No need to spend hours on searching, we will find the right Gigster for you.
       </h2>
     </div>
     <div class="col-md-4">
       <h2 class="name1 ">
-       Available online and on mobile, making it easy to choose and communicate with your Gigster
+       As a Gigster, you are free to choose what Gig you want to do.
       </h2>
     </div>
     <div class="col-md-6">
       <h2 class="name1 ">
-      No need to spend hours on searching, We will find the right Gigster for you.
+      There are no service fees! You decide how much you want to pay and how much to get paid.
       </h2>
     </div>
     <div class="col-md-6">
       <h2 class="name1 ">
-      Available online and on mobile, making it easy to choose and communicate with your Gigster
+      Available online and on mobile, making it easy to choose and communicate with your Gigster.
       </h2>
     </div>
   </div>
@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
 </div>
 
 
-<div class="container" style="max-width: 1178px;margin-top: 45px;">
+<div class="container" style="max-width: 1178px;margin-top: 45px;margin-bottom: 45px;">
       <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
        How It Works
@@ -100,10 +100,11 @@ include('cfg/more-functions.php');
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
-  <div style="text-align: center;padding: 50px;padding-top: 0px;">
+  
   <?php if(!isset($_SESSION['uId']))
   {
 	  ?>
+  <div style="text-align: center;padding: 50px;padding-top: 0px;">  
   <a data-toggle="modal" href="#loginmodel" ><button class="btn signup-btn" type="submit">Free Signup!</button></a></div>  
 <?php
   }
@@ -126,6 +127,11 @@ include('cfg/more-functions.php');
   <?php }}*/ ?>
 </div>
 <div class="container" style="max-width: 1700px;background: rgb(225, 225, 225);margin: 0 auto;padding: 50px;">
+<div class="col-md-12 column" style="margin-bottom: 50px;">
+      <h2 class="name-what-gigster text-center">
+       Open Gigs
+      </h2>
+</div>
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
 {
