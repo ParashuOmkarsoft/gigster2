@@ -10,12 +10,17 @@ $overview=filter_text($_POST['moverview']);
 $skills=filter_text($_POST['skills']);
 $frmaction=filter_text($_POST['frmaction']);
 $notify=filter_text($_POST['notify']);
+$syncimage=filter_text($_POST['syncimage']);
 $username=filter_text($_POST['username']);
 $usermail=filter_text($_POST['usermail']);
 $contactno=filter_text($_POST['contactno']);
 if(!$notify)
 {
 	$notify="0";
+}
+if(!$syncimage)
+{
+	$syncimage="0";
 }
 if($aboutus)
 {
@@ -160,6 +165,17 @@ if($frmaction=="updateinfo")
 	else
 	{
 		$updateQuery="update btr_users set notify='0' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+	}
+	if($syncimage)
+	{
+		$updateQuery="update btr_users set syncimage='$syncimage' where userId=$user";
+		$updateSql=@db_query($updateQuery);
+		
+	}
+	else
+	{
+		$updateQuery="update btr_users set syncimage='0' where userId=$user";
 		$updateSql=@db_query($updateQuery);
 	}
 	$data=get_user_Info($_SESSION['uId']);

@@ -37,6 +37,7 @@
 <script src="<?php echo $serverpath;?>js/classie.js" type="text/javascript"></script>
 <iframe name="targetframe" id="targetframe" style="display:none;" ></iframe>
 <script>
+
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,

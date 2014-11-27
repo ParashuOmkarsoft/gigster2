@@ -29,7 +29,9 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   $checkSql=@db_query($checkQuery);
 	    
 	if($checkSql['count'] > 0 )
-	   {    
+	   { 
+	   	if($checkSql['rows']['0']['syncimage']=="1")
+		{   
 		      if($fbImage)
 		  {
 			 
@@ -48,6 +50,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 				  $upQuery=@db_query($upQuery);
 			  }
 		  }
+		}
 		   $_SESSION['uId']=encrypt_str($checkSql['rows']['0']['userId']);
 			?>
 			<script type="text/javascript">

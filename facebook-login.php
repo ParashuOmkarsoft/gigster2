@@ -17,6 +17,8 @@ include('cfg/more-functions.php');
 			  $updQuery="update btr_users set fbId='$userId',uname='$uname' where userId=".$checksql['rows']['0']['userId'];
 			  $updSql=@db_query($updQuery);
 		  }
+		  if($checksql['rows']['0']['syncimage']=="1")
+		  {
 		if($fbImage)
 		  {
 			  $ext=get_extension($fbImage);
@@ -33,6 +35,7 @@ include('cfg/more-functions.php');
 				  $upQuery="update btr_users set profileimage='$newname' where userId=".$checksql['rows']['0']['userId'];
 				  $upQuery=@db_query($upQuery);
 			  }
+		  }
 		  }
 		  if($checksql['rows']['0']['isactive']=="0")
 			  {

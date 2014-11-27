@@ -28,7 +28,7 @@ include('cfg/more-functions.php');
 		
 	?>
     <section class="container secondsection">
-      <div class="row"style="max-width: 1007px;padding-bottom: 15px;">
+      <div class="row" style="max-width: 1007px;padding-bottom: 15px;">
       <div id="paraprofile">
           <div class="col-md-6">
           <?php $nametodisplay=$uInfo['fname'].' '.$uInfo['lname'];
@@ -67,8 +67,7 @@ include('cfg/more-functions.php');
             
             </h2>
           </div>
-          <div class="col-md-6" style="
-    margin-top: 6px;" id="myprofileimage"> 
+          <div class="col-md-6" style="margin-top: 6px;" id="myprofileimage"> 
           <?php if($uInfo['profileimage'])
 		  {
 			  $pfimage=$uInfo['profileimage'];
@@ -170,15 +169,35 @@ include('cfg/more-functions.php');
             <div class="form-group">
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
-				    <label class="profile-inpute">Notifications</label>
-            <!-- <input type="checkbox" style="margin-top: 35px;" name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked<?php } ?>> -->
+           
+				    <label class="profile-inpute" style="margin-right:25px;">Notifications</label>
+             <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }  ?>> 
                   <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
-                  <button class="btn btn-xs btn-default on-btn">ON</button>
-                  <button class="btn btn-xs btn-info active off-btn">OFF</button>
+                  
                   </div>
             </div>
+			
+            </div>
+            <div class="form-group">
+				
+            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
+           
+				    <label class="profile-inpute" style="margin-right:35px;">Sync Image</label>
+                    
+             <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }  ?>> 
+             	
+                  <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
+                  
+                  </div>
             </div>
             
+            </div>
+            <script type="text/javascript">
+		      
+      
+    	
+                             
+			</script>
             </div>
             <div class="col-md-6" align="right">
             <div class="fileinput fileinput-new" data-provides="fileinput">

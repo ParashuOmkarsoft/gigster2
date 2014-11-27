@@ -30,6 +30,7 @@
 <script type="text/javascript" src="<?php echo $serverpath;?>select2/assets/lib/js/select2.js"></script>
   <link href="<?php echo $serverpath;?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
     <script src="<?php echo $serverpath;?>js/star-rating.js" type="text/javascript"></script>
+  
     <style type="text/css">
 	.glyphicon-minus-sign{
 		display:none !important;

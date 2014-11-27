@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
 <br/>
 <section class="userloginform container" style="max-width: 743px;padding: 65px 30px 50px 82px;">
   <h2 id="userlogin">Contact us</h2>
-  <h2 class="userp" style="line-height: 26px;width: 576px;"> If you have any suggestions on how we can be better, or if you have any questions, we would love to hear from you. All you need to do is email us at contact@gigstergo.com or fill in the form below and we will get back to you within 24hrs!</h2>
+  <h2 class="userp" style="line-height: 26px;width: 576px;"> If you have any suggestions on how we can be better, or if you have any questions, we would love to hear from you. All you need to do is email us at contact@gigstergo.com or fill in the details below and we will get back to you within 24hrs!</h2>
   <form class="form-horizontal usercontainer" role="form" method="post" action="<?php echo $serverpath;?>mailcontact" target="targetframe">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-3 control-label newlog">Name</label>
