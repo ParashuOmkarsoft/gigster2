@@ -124,8 +124,8 @@ include('cfg/more-functions.php');
                   <h2 class="source" style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
                     <div class="form-group" style="margin-bottom:10px;">
-                      <label class="col-md-2 control-label tfont">Rating</label>
-                     <div class="clearfix"></div><br/>
+                      <label class="col-md-2 control-label tfont" style="margin-top:14px;">Rating</label>
+                    
                       <div class="col-md-10" >
                       
                        <style type="text/css">
@@ -143,8 +143,8 @@ include('cfg/more-functions.php');
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="inputText" class="col-sm-6 control-label newlog" style="margin-top: 14px;"></label>
+                    <div class="form-group" style="margin-bottom:0px;">
+                      <label for="inputText" class="col-sm-6 control-label newlog"></label>
                      
                       <div class="col-sm-12"style="margin-bottom:0px;">
                         <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
