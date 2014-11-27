@@ -124,8 +124,7 @@ include('cfg/more-functions.php');
   </div>
   
   <?php }}*/ ?>
-
-
+</div>
 <div class="container" style="max-width: 1700px;background: rgb(225, 225, 225);margin: 0 auto;padding: 50px;">
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
@@ -159,7 +158,7 @@ if (strlen($string) > 140) {
 }
 
 	  ?>
-  </div>
+
 </div>
 <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 
