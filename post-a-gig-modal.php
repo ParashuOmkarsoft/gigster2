@@ -3,21 +3,21 @@
     <div class="modal-content">
       <section class="postgigform" id="postgigform">
         <h2 id="login1">Post a Gig </h2>
-        <h2 class="source">Post a new Gig for free. Invite Gigsters to bid on your gig.</h2>
+        <h2 class="source">Get help for anything and post a new Gig for free.</h2>
         <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
             <div class="col-sm-10">
-              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add title for you gig" maxlength="45" style="width: 70%;">
+              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;">
             </div>
           </div>
           <div class="form-group">
             <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
             <div class="col-sm-10">
-              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Describe your gig" row="5" column="10"  style="height: 150px;"></textarea>
+              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Details about your Gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>      
-          <h2 class="loginlead" id="mlabel">Whats the best fix price you intend to pay ?</h2>
+          <h2 class="loginlead" id="mlabel">How much would you like to pay?</h2>
           <div class="form-group">
           <div class="col-sm-12">
             <div class="col-sm-3" style="padding:0px;">
@@ -33,13 +33,13 @@
             </div>
             
           </div>
-          <h2 class="loginlead" >Skills</h2>
+          <h2 class="loginlead" >Skills you require</h2>
           <div class="form-group">
             <div class="col-sm-10">
               <input  required type="hidden" name="keywords" id="keywords"  class=""    />
             </div>
           </div>
-          <h2 class="loginlead">Enter expiry date of your Gig</h2>
+          <h2 class="loginlead">Select expiry date of your Gig</h2>
           <div class="form-group">
             <div class="col-sm-10">
               <input type="text" id="datepic"style="width:47%" name="enddate" class="mdatepicker" value="<?php echo date('d/m/Y',time() + (24*3600*7));?>"/>

@@ -9,11 +9,11 @@ function change_caption(mtype)
 
 	if(mtype=="h")
 	{
-		document.getElementById("mlabel").innerHTML="Whats the best hourly pricing you intend to pay ?";
+		document.getElementById("mlabel").innerHTML="How much would you like to pay?";
 	}
 	else
 	{
-		document.getElementById("mlabel").innerHTML="Whats the best fix price you intend to pay ?";
+		document.getElementById("mlabel").innerHTML="How much would you like to pay?";
 	}
 }
 function only_numbers(evt)
