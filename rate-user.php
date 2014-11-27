@@ -26,11 +26,11 @@ if($uId==$gigdetails['userId'])
 	
 $updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
 
-		$mailmatter="<p>Congratulation</p>
-				<p>Gig <strong>$gigname</strong> is marked as complete.
+		$mailmatter="<p>Hi </p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
-				<p>Rating : $rating</p>				
-				<p>&nbsp;</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 
@@ -41,9 +41,14 @@ if($awardedtoInfo['notify']=='1')
 								$mailsubject="Congratulation, you have recieved a final feedback on gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 }	
-			$mailmatter=strip_tags($mailmatter);
-								$mailmatter=nl2br($mailmatter);
-								$mailmatter=htmlentities($mailmatter);
+			$mailmatter="<p>Hi </p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
+				<p>Feedback : $experience</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>	";
+				$mailmatter=htmlentities($mailmatter);
+				$mailmatter=addslashes($mailmatter);				
+								
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values(18,$awarded,'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
@@ -59,23 +64,29 @@ else
 	if(!is_feedback_given($projectId,$awarded))
 	{
 	$mailmatter="<p>Hi </p>
-				<p>Gig <strong>$gigname</strong> is requested to be marked as complete.</p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
-				<p>Rating : $rating</p>				
-				<p>&nbsp;</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 
 				if($ownerInfo['notify']=="1")
 				{
-					$mailto=filter_text($awardedtoInfo['userId']);
+								$mailto=filter_text($awardedtoInfo['userId']);
 								$mailsubject="You have recieved a feedback and completetion request on your gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
+				$mailmatter="<p>Hi </p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
+				<p>Feedback : $experience</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
+				<p>&nbsp;</p>";
 				
-				$mailmatter=strip_tags($mailmatter);
-								$mailmatter=nl2br($mailmatter);
+				
 								$mailmatter=htmlentities($mailmatter);
+				$mailmatter=addslashes($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
@@ -87,10 +98,10 @@ else
 	{
 				
 	$mailmatter="<p>Hi </p>
-				<p>You have recieved final feedback for $gigname /p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
-				<p>Rating : $rating</p>				
-				<p>&nbsp;</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 		
@@ -101,9 +112,14 @@ else
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
 				
-				$mailmatter=strip_tags($mailmatter);
-				$mailmatter=nl2br($mailmatter);
+				$mailmatter="<p>Hi </p>
+				<p>Gig <strong>$gigname</strong> is now completed.</p>
+				<p>Feedback : $experience</p>
+				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>";
+				
 				$mailmatter=htmlentities($mailmatter);
+				$mailmatter=addslashes($mailmatter);
 				
 				$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				 $msgquery.="values(".$uInfo['userId'].",".$gigdetails['userId'].",'$mailmatter',".gmmktime().",".$projectId.",'0','t')";

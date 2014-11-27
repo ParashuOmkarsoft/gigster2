@@ -1160,4 +1160,16 @@ function get_unread_project_report($projectId)
 		 return $sql['count'];
 	 }
 }
+function get_rating_stars($serverpath,$rating){
+	$mstr="";
+	for($i=0;$i<$rating;$i++)
+	{
+		$mstr.="<img src='".$serverpath."images/star_1.png'/>";
+	}
+	for($i=$rating;$i<5;$i++)
+	{
+		$mstr.="<img src='".$serverpath."images/star_2.png'/>";
+	}
+	return $mstr;
+}
 ?>
