@@ -171,7 +171,7 @@ include('cfg/more-functions.php');
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
            
 				    <label class="profile-inpute" style="margin-right:25px;">Notifications</label>
-             <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }  ?>> 
+             <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  } ?>> 
                   <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
                   
                   </div>
@@ -184,7 +184,7 @@ include('cfg/more-functions.php');
            
 				    <label class="profile-inpute" style="margin-right:35px;">Sync Image</label>
                     
-             <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }  ?>> 
+             <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" value="1" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  }?> data-switch-state="false"> 
              	
                   <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
                   
@@ -194,7 +194,8 @@ include('cfg/more-functions.php');
             </div>
             <script type="text/javascript">
 		      
-      
+       $("[name='notify']").bootstrapSwitch('state',false,false);
+	   $("[name='syncimage']").bootstrapSwitch('state',false,false);
     	
                              
 			</script>
