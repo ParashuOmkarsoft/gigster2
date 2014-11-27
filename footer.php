@@ -26,7 +26,7 @@
       </ul>
     </div>
     <div class="col-md-4">
-      <div id="footerimages"> <a href="<?php echo $fbLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/facebook.png"></a>&nbsp;<a href="<?php echo $twitterLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/twitter.png"> </div>
+      <div id="footerimages"> <a href="<?php echo $fbLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/facebook.png"></a>&nbsp;<a href="<?php echo $twitterLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/twitter.png"></a></div>
     </div>
   </div>
 </footer>
