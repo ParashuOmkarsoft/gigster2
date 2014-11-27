@@ -193,7 +193,7 @@ if($checkSql['count']>0)
 			?>
           
           <div class="col-md-10" style="margin-bottom: 20px;">
-		 	<h4>Gig Owner</h4>
+		 	<h4><?php echo get_user_name($mawardedto['awardedto']); ?></h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];
@@ -233,7 +233,7 @@ if($checkSql['count']>0)
 
           <div class="col-md-10" >
           	 
-		 	<h4>Gigster</h4>
+		 	<h4><?php echo get_user_name($prjDetails['userId']); ?></h4>
 		 	<?php if($userReview['feedback'])
 			{
 				echo $userReview['feedback'];

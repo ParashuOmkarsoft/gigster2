@@ -79,7 +79,7 @@ include('cfg/more-functions.php');
 		 $userReview="";
 		 $userReview=get_project_feedback_1($opengig['prjId'],$opengig['userId']);
 		 ?>
-		  <h4>Gigster</h4>
+		  <h4><?php echo get_user_name($opengig['userId']);?></h4>
          <div class="row">
          
           <div class="col-md-12">
@@ -117,7 +117,7 @@ include('cfg/more-functions.php');
         <div class="row">
          <div class="col-md-12">
           
-          <h4>Gig Owner</h4>
+          <h4><?php echo get_user_name($mawardedto['awardedto']);?></h4>
 		 <?php
 		  $userReview="";
 		 $userReview=get_project_feedback_1($opengig['prjId'],$mawardedto['awardedto']);
