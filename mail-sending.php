@@ -30,7 +30,9 @@ $mailmatter='<p>Hello Administrator</p>
 ';
 
 $sendmail=send_my_mail($to,$mailmatter,$mailsubject);
-$sendmail=send_my_mail("james@parasolwonder.com",$mailmatter,$mailsubject);
+$sendmail2=send_my_mail("james@gigstergo.com",$mailmatter,$mailsubject);
+$sendmail3=send_my_mail("contact@gigstergo.com",$mailmatter,$mailsubject);
+
  //james@parasolwonder.com
 ?><script type="text/javascript">
 alert("Thanks for contacting Gigster.");
