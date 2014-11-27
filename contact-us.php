@@ -51,7 +51,7 @@ include('cfg/more-functions.php');
         <textarea class="form-control passinpute"  name="maildesc" id="maildesc" placeholder="" row="8" column="10"></textarea>
       </div>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-12" style="text-align: center;margin-top: 15px;">
       <button type="submit" class="btn btn-warning uploadbtn">Send</button>
     </div>
   </form>

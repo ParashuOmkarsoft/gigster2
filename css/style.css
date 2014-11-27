@@ -1361,7 +1361,7 @@ header.smaller {
 }
 header.smaller .logo{width: 155px;}
 header.smaller .img{width: 86%;}
-header.smaller .navbar-nav{ margin-top: 10px;}
+header.smaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}
 
 .search-submit{
 	background: none;
