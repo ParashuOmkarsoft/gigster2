@@ -26,7 +26,7 @@ if($uId==$gigdetails['userId'])
 	
 $updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
 
-		$mailmatter="<p>Hi </p>
+		$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
@@ -41,7 +41,7 @@ if($awardedtoInfo['notify']=='1')
 								$mailsubject="Congratulation, you have recieved a final feedback on gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 }	
-			$mailmatter="<p>Hi </p>
+			$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
@@ -63,7 +63,7 @@ else
 
 	if(!is_feedback_given($projectId,$awarded))
 	{
-	$mailmatter="<p>Hi </p>
+	$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
@@ -77,7 +77,7 @@ else
 								$mailsubject="You have recieved a feedback and completetion request on your gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
-				$mailmatter="<p>Hi </p>
+				$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
@@ -97,7 +97,7 @@ else
 	else
 	{
 				
-	$mailmatter="<p>Hi </p>
+	$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
@@ -112,7 +112,7 @@ else
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
 				
-				$mailmatter="<p>Hi </p>
+				$mailmatter="<p>Congratulations </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
