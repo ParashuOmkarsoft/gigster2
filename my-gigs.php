@@ -418,7 +418,10 @@ box-shadow: 0px 0px 2px #000000;'";
     </ul>
   </div>
   <?php
+	  
+	  $updatethread=@db_query("update btr_messages set isread='1' where msgtype='s' and msgto=".$uInfo['userId']);
 	  }
+	  
 	  else
 	  {
   ?>
