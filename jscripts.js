@@ -167,3 +167,17 @@ function validate_biding()
  }
 
 }
+function validate_rating(ratingid)
+{
+	var m_rating=document.getElementById("rating"+ratingid).value;
+	m_rating=Math.round(m_rating);
+	if(m_rating>0)
+	{
+	}
+	else
+	{
+		alert("Rating Must be selected");
+		return false;
+	}
+	
+}

@@ -92,7 +92,7 @@ if($checkSql['count']>0)
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
-                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post">
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" onSubmit="return validate_rating('<?php echo $prjDetails['prjId'];?>')">
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
 
                   <h2 id="login1">Mark gig as complete</h2>
@@ -111,7 +111,7 @@ if($checkSql['count']>0)
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
                         <div class="form-control form-radio" >
- <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
+ <input id="rating<?php echo $prjDetails['prjId'];?>" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
 						
                          <script type="text/javascript">
 						   $('.rating').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'xs'});

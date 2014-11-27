@@ -117,7 +117,7 @@ include('cfg/more-functions.php');
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
-                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" >
+                <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" onSubmit="return validate_rating('<?php echo $opengig['prjId'];?>');" >
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $opengig['prjId'];?>" />
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Rate and Comment</h2>
@@ -134,10 +134,10 @@ include('cfg/more-functions.php');
 								}
 					   </style>
                  
-							    <input id="input-21d" name="rating" value="<?php echo $rt;?>" type="number" class="rating" >
+							    <input id="rating<?php echo $opengig['prjId'];?>" name="rating" value="<?php echo $rt;?>" type="number" class="rating" >
 						
                          <script type="text/javascript">
-						   $('#input-21d').rating({'showCaption':true, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'sm'});
+						   $('.rating').rating({'showCaption':false, 'stars':'5', 'min':'0', 'max':'5', 'step':'1', 'size':'sm'});
 						 </script>
                         </div>
                       </div>
