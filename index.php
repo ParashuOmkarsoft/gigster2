@@ -124,8 +124,7 @@ include('cfg/more-functions.php');
   </div>
   
   <?php }}*/ ?>
-
-
+</div>
 <div class="container" style="max-width: 1700px;background: rgb(225, 225, 225);margin: 0 auto;padding: 50px;">
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
