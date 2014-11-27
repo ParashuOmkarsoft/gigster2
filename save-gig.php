@@ -17,7 +17,10 @@ $description=filter_text($prjdesc);
 $price=$proposedprice;
 $bidto=$enddate;
 $keywords=filter_text($_POST['keywords']);
-
+if(!$price)
+{
+	$price=0;
+}
 if(!$inviteusers)
 {
 	$inviteusers='0';
@@ -25,7 +28,7 @@ if(!$inviteusers)
 	$inviteusers='1';
 }
 
-if($prjTitle && $proposedprice)
+if($prjTitle)
 {
 	$insertQuery="insert into btr_projects(userId,prjTitle,prjdesc,postedon,proposedbudget,bidfrom,bidto,keywords,jobtype,invited)";
  $insertQuery.="values($uId,'$gigtitle','$description',".gmmktime().",$price,'".date('Y-m-d')."','$bidto','$keywords','$jobtype','$inviteusers')";	
