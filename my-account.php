@@ -200,7 +200,7 @@ include('cfg/more-functions.php');
                              
 			</script>
             </div>
-            <div class="col-md-6" align="right">
+            <div class="col-md-6" align="right" style="padding-right:0px;">
             <div class="fileinput fileinput-new" data-provides="fileinput">
   <div class="fileinput-new">
   <?php if(!$pfimage)
@@ -219,7 +219,7 @@ include('cfg/more-functions.php');
   </div>
   <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 200px; border-radius:50%;"></div>
   <div>
-    <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none;"><span class="fileinput-new"></span><img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
+    <span class="btn btn-default btn-file" style="background: none;box-shadow: none;border: none; padding-right:0px;"><span class="fileinput-new"></span><img src="images/pencil.png"><input type="file" name="profileimage" id="profileimage" /></span>
   
     <a href="#" class="btn btn-default fileinput-exists delete" data-dismiss="fileinput"><img src="images/delete.png"></a>
   </div>
