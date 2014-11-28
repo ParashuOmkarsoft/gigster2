@@ -112,7 +112,7 @@ else
                         <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
                           <div class="modal-dialog modal-lg">
                             <div class="modal-content cform">
-                              <div class="container mclass">
+                              <div class="container">
                                 <div class="col-md-12">
                                   <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
                                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $gigdetails['prjId'];?>" />
