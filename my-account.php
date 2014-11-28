@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
 		  }
 			?>
 
-      <div class="col-md-12" style="padding-right: 0px;margin-left:15px;">
+      <div class="col-md-12" style="margin-left:-10px;">
                 <img src="http://gigstergo.com/images/star_4.png" style="margin-left:0px !important;">
                 <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
                 <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
