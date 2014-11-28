@@ -169,7 +169,7 @@ if (strlen($string) > 140) {
 </div>
 <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="min-width: 1286px;">
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
