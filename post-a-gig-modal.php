@@ -17,11 +17,11 @@
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Details about your Gig" row="5" column="10"  style="height: 150px;"></textarea>
             </div>
           </div>      
-          <h2 class="loginlead" id="mlabel">How much would you like to pay?</h2>
+          <h2 class="loginlead" id="mlabel" title="Leave blank if you'd like the Gigster to quote">How much would you like to pay?</h2>
           <div class="form-group">
           <div class="col-sm-12">
             <div class="col-sm-3" style="padding:0px;">
-              <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);">
+              <input type="text" name="proposedprice" id="proposedprice" class="form-control"  placeholder="" onKeyDown="return only_numbers(event);" title="Leave blank if you'd like the Gigster to quote">
             </div>  
               <label class="radio-inline" style="line-height:22px;">
 
