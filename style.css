@@ -24,6 +24,8 @@
 }
 .fa-circle{
 	font-size:8px !important;
+	position: relative;
+top: -3px;
 	
 }
 #gigpara{
