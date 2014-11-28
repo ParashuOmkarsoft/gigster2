@@ -122,7 +122,7 @@ include('cfg/more-functions.php');
                   <input type="hidden" id="gigster" name="gigster" value="<?php echo $awardedto;?>" />
                   <h2 id="login1">Rate and Comment</h2>
                   <h2 class="source" style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
-                  <div class="col-md-12" style="padding: 0px;margin-top: 15px;">
+                  <div class="col-md-12" style="padding: 0px;margin-top: 10px;">
                     <div class="form-group" style="margin-bottom:10px;">
                       <label class="col-md-2 control-label tfont" style="margin-top:14px;">Rating</label>
                     
