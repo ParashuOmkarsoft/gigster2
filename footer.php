@@ -15,7 +15,7 @@
 
 
 <footer>
-  <div>
+  <div class="container" style="max-width:1200px;>
     <div class="col-md-8">
       <ul class="footernav">
         <li><a href="<?php echo $serverpath;?>aboutus">About</a></li>
