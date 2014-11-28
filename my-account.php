@@ -78,6 +78,15 @@ include('cfg/more-functions.php');
 		  }
 			?>
 
+      <div class="col-md-12" style="padding-right: 0px;">
+                <img src="http://gigstergo.com/images/star_4.png" style="margin-left:0px !important;">
+                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
+                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
+                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
+                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
+          
+      </div>
+
 
           </div> 
             
