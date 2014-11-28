@@ -67,7 +67,7 @@ include('cfg/more-functions.php');
             
             </h2>
           </div>
-          <div class="col-md-6" style="margin-top: 6px;margin-left:15px;" id="myprofileimage"> 
+          <div class="col-md-6" style="margin-top: 6px;" id="myprofileimage"> 
           <?php if($uInfo['profileimage'])
 		  {
 			  $pfimage=$uInfo['profileimage'];
@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
 		  }
 			?>
 
-      <div class="col-md-12" style="padding-right: 0px;">
+      <div class="col-md-12" style="padding-right: 0px;margin-left:15px;">
                 <img src="http://gigstergo.com/images/star_4.png" style="margin-left:0px !important;">
                 <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
                 <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
