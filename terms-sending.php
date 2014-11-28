@@ -49,9 +49,8 @@ else
 		$usernametodisplay=$userInfo['username'];
 	}
 		$mailmatter="<p>Congratulation</p>
-				<p>Your proposal on gig <strong>$gigname</strong> is selected.
-				<p>To View Details and accept the terms , please click on following link</p>
-				<p><a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'>Click Here To Accept</a></p>
+				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
+				<p>To update the status and see full details, please click here. <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> Link To Gig</a></p>
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
@@ -65,9 +64,11 @@ else
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 							
 	}
-		$mailmatter=strip_tags($mailmatter);
-								$mailmatter=nl2br($mailmatter);
+	$mailmatter="<p>Congratulation</p>
+				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
+				<p>To update the status and see full details, please click here. <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> Link To Gig</a></p>";
 								$mailmatter=htmlentities($mailmatter);
+								$mailmatter=addslashes($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
 				$msgquery.="values($ownerId,$awardedto,'$mailmatter',".gmmktime().",".$projectId.",'0','t')";
 				$msgsql=@db_query($msgquery);
