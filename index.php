@@ -126,7 +126,7 @@ include('cfg/more-functions.php');
   
   <?php }}*/ ?>
 </div>
-<div class="row" style="background: rgb(225, 225, 225);">
+<div class="row" style="background: rgb(225, 225, 225);width: auto;margin: 0 auto;">
 <div class="container-fluid" style="max-width: 1290px;margin: 0 auto;padding-bottom: 70px;">
 <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
