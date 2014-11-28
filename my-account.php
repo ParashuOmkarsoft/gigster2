@@ -170,7 +170,7 @@ include('cfg/more-functions.php');
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
            
-				    <label class="profile-inpute" style="margin-right:25px;">Notifications</label>
+				    <label class="profile-inpute" style="margin-right:33px;">Notifications</label>
              <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  } ?>> 
                   <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
                   
@@ -182,7 +182,7 @@ include('cfg/more-functions.php');
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 35px;padding:0px;">
            
-				    <label class="profile-inpute" style="margin-right:35px;">Sync Image</label>
+				    <label class="profile-inpute" style="margin-right:46px;">Sync Image</label>
                     
              <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" value="1" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  }?> data-switch-state="false"> 
              	
@@ -231,7 +231,7 @@ include('cfg/more-functions.php');
 
             </div>
             <div class="col-md-12">
-            <div class="form-group"  style="padding-left: 164px;">
+            <div class="form-group"  style="padding-left: 171px;">
   	<button class="btn update-btn" type="submit">Update</button>
     <button class="btn update-btn" type="button" onClick="visible_invisible('paraprofile','frmprofile');">Cancel</button>
   </div>
