@@ -188,19 +188,19 @@ if (strlen($string) > 140) {
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
-        <div class="span4 newbox">        
+        <div class="span4 our-gigster-box">        
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
         <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
         </div>
-         <div class="span4 newbox">        
+         <div class="span4 our-gigster-box">        
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
         <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
         </div>
-         <div class="span4 newbox">        
+         <div class="span4 our-gigster-box">        
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
