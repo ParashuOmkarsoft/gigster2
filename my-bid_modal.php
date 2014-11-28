@@ -16,7 +16,7 @@ $opengig=get_gig_details($projectId);
       <input type="hidden" name="bidfrom" id="bidfrom" value="<?php echo $biderid; ?>" />
       <h2 id="login1" style="padding-left: 11px;">Bid On Gig </h2>
       <h2 class="source" style="padding-left: 15px;font-size:22px; "><?php echo my_ucwords($opengig['prjTitle']);?></h2>
-            <h2 class="source" style="padding-left: 15px;font-size:18px; ">Proposed budget : <?php echo ($opengig['proposedbudget']);?> <?php echo $currency; if($opengig['jobtype']=="h") { ?>&nbsp;per hour<?php } ?></h2>
+            <h2 class="source" style="padding-left: 15px;font-size:18px; ">Proposed budget : <?php if($opengig['proposedbudget']>0){ echo ($opengig['proposedbudget']);?> <?php echo $currency; if($opengig['jobtype']=="h") { ?>&nbsp;per hour<?php }} else{ echo "Gigster's price";} ?></h2>
 <Br/>
       <div class="col-md-12">
         <div class="form-group">
