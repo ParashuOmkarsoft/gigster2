@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
 </div>
 
 
-<div class="container" style="max-width: 1178px;margin-top: 45px;margin-bottom: 45px;">
+<div class="container" style="max-width: 1195px;margin-top: 45px;margin-bottom: 45px;">
       <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
        How It Works
