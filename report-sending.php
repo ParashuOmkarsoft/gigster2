@@ -18,7 +18,7 @@ if($insertSql)
 	$messagecontent="<p>Hello ".$projectowner['username']."</p><br/>";
 	$messagecontent.="<p>You have recieved a new status report on your Gig <strong>".$projectdetails['prjTitle']."</strong> from <strong>".$projectbidder['username']."</strong>.</p><br/>";
 	$messagecontent.="<p><strong>Message</strong><br/>$message</p><br/>";
-	$messagecontent.="<p><strong>Comletion Status </strong><br/>$completed %</p><br/>";	
+	$messagecontent.="<p><strong>Comlpetion Status </strong><br/>$completed %</p>";	
 	$messagecontent=htmlentities($messagecontent);
 	$messagequery="insert into btr_messages(msgfrom,msgto,msgcontent,haveattachment,msgon,projectId,isread,msgtype,reportid)";
 	$messagequery.="values($reportfrom,$reportto,'$messagecontent','0',".time().",$projectId,'0','s',$insertSql)";	
