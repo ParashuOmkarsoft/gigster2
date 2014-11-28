@@ -1453,3 +1453,10 @@ margin: 0px;
 min-height: 190px;
 min-width: 190px;
 }
+.our-gigster-box{background: #E7E7E7;
+width: 387px;
+float: left;
+margin: 11px;
+/* padding-top: 15px; */
+/* padding: 15px; */
+border-radius: 8px;}
