@@ -171,8 +171,12 @@ if (strlen($string) > 140) {
 	  ?>
 
 </div>
-<div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
-</p></div></div>
+      <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
+    </p>
+    </div>
+   </div>
+  </div>
+</div>
 <div class="container-fluid" style="max-width: 1209px;">
   <div class="row-fluid">
     <div class="span12">
