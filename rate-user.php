@@ -30,7 +30,7 @@ $updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectI
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
+				<p><a href='".$serverpath."tocompleted'>Click here to rate your Gigster</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 
@@ -45,7 +45,7 @@ if($awardedtoInfo['notify']=='1')
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>	";
+				<p><a href='".$serverpath."tocompleted'>Click here to rate your Gigster</a></p>	";
 				$mailmatter=htmlentities($mailmatter);
 				$mailmatter=addslashes($mailmatter);				
 								
