@@ -184,7 +184,7 @@ if (strlen($string) > 140) {
       Our Gigsters
       </h2>
 </div>
-<div class="container-fluid" style="max-width: 1227px;padding:0px;padding-bottom: 50px;margin-left: 15px;">
+<div class="container-fluid" style="max-width: 1227px;padding:0px;padding-bottom: 70px;margin-left: 15px;">
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
