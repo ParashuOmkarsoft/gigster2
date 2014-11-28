@@ -132,6 +132,7 @@ include('cfg/more-functions.php');
        Open Gigs
       </h2>
 </div>
+<div class="col-md-12" style="min-width:1287px">
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
 {
@@ -153,7 +154,7 @@ if (strlen($string) > 140) {
     $stringCut = substr($string, 0, 140);
     }else{ $stringCut = $string;}
 	?>
-      <div class="newbox">
+      <div class="col-md-4 newbox">
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">
         
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
