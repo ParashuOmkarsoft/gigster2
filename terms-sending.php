@@ -48,9 +48,9 @@ else
 	{
 		$usernametodisplay=$userInfo['username'];
 	}
-		$mailmatter="<p>Congratulation</p>
+		$mailmatter="<p>Congratulations!</p>
 				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
-				<p>To update the status and see full details, please click here. <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> Link To Gig</a></p>
+				<p><a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'>To update the status and see full details, please click here.</a></p>
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
