@@ -278,7 +278,7 @@ margin-top: 20px;">
 			<?php if(is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
 			{
 				?>
-        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a><br>
         
         
         <?php
