@@ -179,12 +179,12 @@ if (strlen($string) > 140) {
   <div style="text-align: center;background: rgb(225, 225, 225);padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
 
-<div class="col-md-12 column" style="margin-bottom: 50px;padding-bottom: 50px;">
+<div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
       Our Gigsters
       </h2>
 </div>
-<div class="container-fluid" style="max-width: 1227px;padding:0px;">
+<div class="container-fluid" style="max-width: 1227px;padding:0px;padding-bottom: 50px;">
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
