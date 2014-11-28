@@ -15,9 +15,9 @@
 
 
 <footer>
-  <div class="container" style="max-width:1200px;">
+  <div class="container" style="max-width:1024px;">
     <div class="col-md-8">
-      <ul class="footernav">
+      <ul class="footernav" style="padding-left:0px;">
         <li><a href="<?php echo $serverpath;?>aboutus">About</a></li>
         <!-- <li><a href="#">Help</a></li> -->
         <li><a href="<?php echo $serverpath;?>contactus">Contact</a></li>
@@ -26,7 +26,7 @@
       </ul>
     </div>
     <div class="col-md-4">
-      <div id="footerimages"> <a href="<?php echo $fbLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/facebook.png"></a>&nbsp;<a href="<?php echo $twitterLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/twitter.png"></a></div>
+      <div class="footerimages pull-right"> <a href="<?php echo $fbLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/facebook.png"></a>&nbsp;<a href="<?php echo $twitterLink;?>" target="_blank"><img src="<?php echo $serverpath;?>images/twitter.png"></a></div>
     </div>
   </div>
 </footer>
