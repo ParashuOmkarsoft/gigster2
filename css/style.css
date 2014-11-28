@@ -1136,7 +1136,7 @@ float: left;}
 .newbox{background: #fff;
 width: 387px;
 float: left;
-margin-left: 22px;
+margin:11px;
 /* padding-top: 15px; */
 /* padding: 15px; */
 border-radius: 8px;}
@@ -1167,7 +1167,7 @@ border-radius: 10px;
 margin-right: 10px;
 background: #EC6B39;
 outline: none;
-margin-top: 12px;}
+margin-top: 60px;}
 
 .invite-btn{color: #5e350d;
 font-size: 22px;
