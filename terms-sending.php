@@ -110,9 +110,9 @@ else
 					$biddernametodisplay=$bidderInfo['username'];
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your proposal on <strong>$gigname</strong> is not selected.
+				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
 				<p>Better luck next time.</p>
-				<p>&nbsp;</p>
+				<p>Do check out our other Gigs here. <a href='".$serverpath."allgigs'>Click here to view other Gigs</a></p>
 				<p>Regards</p>
 				<p>$sitename</p>";
 				if($bidderInfo['notify']=="1")
@@ -121,9 +121,14 @@ else
 						$mailsubject2="Notification, gig $gigname is awawrded to someone else.";
 						$mail2=send_my_mail($mailto2,$mailmatter2,$mailsubject2);	
 				}
-				$mailmatter2=strip_tags($mailmatter2);
-								$mailmatter2=nl2br($mailmatter2);
-								$mailmatter2=htmlentities($mailmatter2);
+				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
+				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
+				<p>Better luck next time.</p>
+				<p>Do check out our other Gigs here. <a href='".$serverpath."allgigs'>Click here to view other Gigs</a></p>
+				<p>Regards</p>
+				<p>$sitename</p>";
+				$mailmatter2=htmlentities($mailmatter2);
+				$mailmatter2=addslashes($mailmatter2);
 				if($biderId != $awardedto)
 				{
 								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
