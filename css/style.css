@@ -1098,7 +1098,8 @@ padding: 6px;height: auto;}
 font-size: 21px;
 color: #eb5635;}
 
-.fname2{margin-top: 20px;
+.fname2{margin: 0px;
+	padding-top: 15px;
 font-family: 'source_sans_probold';
 font-size: 21px;
 color: #2d2c2a;}
@@ -1132,7 +1133,7 @@ width: 422px;
 float: left;}
 
 .box-1{width: 370px;
-float: left;}
+float: left;margin-right: 20px;}
 .newbox{background: #fff;
 width: 387px;
 float: left;

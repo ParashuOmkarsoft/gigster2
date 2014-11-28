@@ -86,17 +86,17 @@ include('cfg/more-functions.php');
       </div>
   
       <div class="box-1">
-        <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;" class="img-circle"></span>
+        <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
         <h2 class="fname2">Get Anything Done </h2>
         <p>Tell us what you need help with and post a Gig.</h2>
       </div>
       <div class="box-1">
-        <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;" class="img-circle"></span>
+        <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
         <h2 class="fname2">Choose the Gigster </h2>
         <p>We'll find the right local Gigsters and you just select one.</p>
       </div>   
       <div class="box-1">
-        <span class=""><img src="images/step3.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;" class="img-circle"></span>
+        <span class=""><img src="images/step3.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
         <h2 class="fname2">All done!</h2>
         <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
       </div>   
