@@ -132,7 +132,11 @@ include('cfg/more-functions.php');
        Open Gigs
       </h2>
 </div>
-<div class="col-md-12" style="min-width:1287px">
+<div class="container-fluid" style="max-width: 1209px;">
+<div class="row-fluid">
+    <div class="span12">
+      <div class="row-fluid">
+        
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
 {
@@ -154,7 +158,7 @@ if (strlen($string) > 140) {
     $stringCut = substr($string, 0, 140);
     }else{ $stringCut = $string;}
 	?>
-      <div class="col-md-4 newbox">
+      <div class="span4 newbox">   
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">
         
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
@@ -169,7 +173,7 @@ if (strlen($string) > 140) {
 </div>
 <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </p></div></div>
-<div class="container-fluid" style="min-width: 1286px;">
+<div class="container-fluid" style="max-width: 1209px;">
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
