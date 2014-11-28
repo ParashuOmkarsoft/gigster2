@@ -132,7 +132,7 @@ include('cfg/more-functions.php');
        Open Gigs
       </h2>
 </div>
-<div class="container-fluid" style="max-width: 1251px;padding:0px;">
+<div class="container-fluid" style="max-width: 1227px;padding:0px;">
 <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
@@ -176,9 +176,15 @@ if (strlen($string) > 140) {
     </div>
    </div>
   </div>
-  <div style="text-align: center;background: rgb(225, 225, 225);padding: 50px;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
+  <div style="text-align: center;background: rgb(225, 225, 225);padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
-<div class="container-fluid" style="max-width: 1251px;padding:0px;">
+
+<div class="col-md-12 column" style="margin-bottom: 50px;">
+      <h2 class="name-what-gigster text-center">
+      Our Gigsters
+      </h2>
+</div>
+<div class="container-fluid" style="max-width: 1227px;padding:0px;">
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
