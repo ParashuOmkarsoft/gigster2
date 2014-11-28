@@ -167,7 +167,7 @@ else
     </div>
   </div>
 </section>
-<section class="container secondsection mclass">
+<section class="container secondsection">
   <p><?php echo nl2br(stripslashes($gigdetails['prjdesc']));?></p>
   <div class="row">
     <div class="col-md-12">
@@ -273,8 +273,7 @@ else
         <?php if((encrypt_str($gigdetails['userId'])==$_SESSION['uId']) )
 				 {
 			?>
-     <div class="col-md-6" style="width: 140px;
-margin-top: 20px;">
+     <div class="col-md-6" style="width: 140px;margin-top: 20px;">
 			<?php if(is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
 			{
 				?>
