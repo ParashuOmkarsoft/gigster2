@@ -162,7 +162,7 @@ else
   </div>
   
   <div class="row" style="margin: 0 auto;">
-    <div class="col-md-12">
+    <div class="col-md-12" style="padding:0px;" >
       <h5 id="title">Description</h5>
     </div>
   </div>
@@ -305,7 +305,9 @@ else
 }
 else{?>
       <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
-        <button type="button" class="btn btn-bid">Award</button>
+        <!-- <button type="button" class="btn btn-bid">Award</button> -->
+        <img src="images/symbol.png">
+
         </a> </div>
       <?php }
 				 }
