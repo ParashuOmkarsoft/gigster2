@@ -188,8 +188,9 @@ include('cfg/more-functions.php');
 			  $awardedrating=get_user_rating($awarded);
 			  ?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1" style="border-radius:50px;">
+      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $awardedprofilepic;?>&width=75&height=75&cropratio=1:1" style="border-radius:50px;margin-left: 40px;">
       		<h4><?php echo $awardednametodisplay; ?></h4>
+      		<div style="margin-left: 43px;">			
       					<?php 
 						 for($t=0;$t<$awardedrating;$t++)
 							  {
@@ -205,6 +206,7 @@ include('cfg/more-functions.php');
 							  }
 							  
 							  ?>
+			</div>							  
      	 </div>               
  </div>
     
