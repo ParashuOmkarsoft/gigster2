@@ -184,21 +184,21 @@ The GIGSTER will provide information on the profile page, which will be accessib
 
 The PLATFORM GIGSTERGO.COM, reserves all rights to moderate, suspend, or remove any information that does not meet the above requirements or other requirements stated in these T&Cs, without prejudicing any legal action for interests or damages.<br><br>
 
-<strong>SERVICES PERTAINING TO THE GIGSTER</strong><br><br>
+<strong>SERVICES PERTAINING TO THE GIGSTER</strong>
 The GIGSTER will benefit, without reservation, from the following conditions as set out in these T&Cs:<br>
 <span class="bullet">●</span> The opportunity to look for GIGs.<br>
 <span class="bullet">●</span> The opportunity to respond online to GIGs.<br>
 <span class="bullet">●</span> The opportunity to subscribe via email, Twitter, Facebook.<br>
 <span class="bullet">●</span> The opportunity to remain informed of all changes to the status of GIGs for which they have bidded on.<br>
 <span class="bullet">●</span> The opportunity to provide status updates for the GIGs they have undertaken.<br>
-<strong>DURATION AND END OF SERVICES TO THE GIGSTER</strong><br><br>
+<strong>DURATION AND END OF SERVICES TO THE GIGSTER</strong>
 In the case of failure of the GIGSTER to adhere to one of the requirements of these T&Cs, GIGSTERGO.COM may terminate this agreement immediately (without notice), prejudicing any legal action for interests or damages.<br><br>
 
 <strong>PROOF</strong><br>
 It is expressly agreed that the archived data and the data uploaded and stored in the information system GIGSTERGO.COM, particularly in its email tools, have a probative value with regard to documents sent, orders placed, and the fulfillment of the obligations of the parties.<br><br>
 Data of an electronic nature or on the information system as stored by GIGSTERGO.COM constitutes evidence. If produced as evidence by GIGSTERGO.COM in any instance of litigation or otherwise, it will be admissible, valid and enforceable between the parties in the same way, under the same conditions, and of the same value as any document that might be prepared, received or kept in writing.<br><br>
 
-<strong>RESPONSIBILITY PERTAINING TO THE USE OF THE PLATFORM</strong> <br><br>
+<strong>RESPONSIBILITY PERTAINING TO THE USE OF THE PLATFORM</strong> 
 Responsibility and guarantees of GIGSTERGO.COM<br>
 GIGSTERGO.COM does not guarantee that the platform will be free of defects, errors or bugs, nor that they may be corrected, or that the platform will operate without interruption or failure, or even that it is compatible with a particular hardware or configuration other than as expressly stated by GIGSTERGO.COM.<br>
 GIGSTERGO.COM does not guarantee a time frame for the uploading of any documents or information submitted by the USER, and cannot be held responsible for any delay in the posting of the documents submitted.<br>
@@ -214,32 +214,32 @@ The USER has no right to use the PLATFORM illegally, for fraudulent purposes or 
 Responsibilities and guarantees of the GIG OWNER<br>
 The GIG OWNER undertakes to refrain from interfering in the conduct and execution of a GIG awarded to a GIGSTER. The latter will in this respect have no relationship of subordination vis-à-vis the GIG OWNER. With regard to this, it should be remembered that GIGSTERGO.COM acts as the technical platform and plays no intermediary role between GIGSTER and GIG OWNER.<br><br>
 
-<strong>SUSPENSION OR LIMITATION OF ACCESS TO THE PLATFORM</strong><br><br>
+<strong>SUSPENSION OR LIMITATION OF ACCESS TO THE PLATFORM</strong>
 GIGSTERGO.COM may, at its discretion, suspend or restrict the USER’s access to the platform, or to block access from a particular internet address to the platform, at any time, without ascribing any reasons whatsoever, particularly in cases where the USER contravenes the T&Cs or a breach of the business proposal.<br>
 GIGSTERGO.COM also reserves the right to suspend or limit access to the PLATFORM for maintenance reasons or to allow the installation of new features.<br>
 USER agree not to use any device, software, routine to interfere or attempt to interfere with the proper working of the PLATFORM, use any robot, spider, other automatic device, or manual process to monitor or copy any pages within the websites or the Content without GIGSTERGO.COM’s prior written permission, and take any action that imposes a disproportionately large or unreasonable load on GIGSTERGO.COM’s servers. <br>
 
-<strong>COMMUNICATION PROCESS</strong><br><br>
+<strong>COMMUNICATION PROCESS</strong>
 Communication between GIGSTERGO.COM and USERS may be carried out via email, telephone or by any other means as provided by both current and future technologies.<br>
 A business day means a day other than Saturday, Sunday or other official public holiday in the place in which the recipient of the message from GIGSTERGO.COM resides.<br>
 A GIGSTERGO.COM message with a request for acknowledgment of receipt cannot be acted upon by the recipient of the message until the acknowledgment is sent.<br>
 The writings inherent in this communication are also part of the evidence, as subject to the laws of the Republic of Singapore.<br>
 
-<strong>INTELLECTUAL PROPERTY</strong><br><br>
+<strong>INTELLECTUAL PROPERTY</strong>
 OWNERSHIP OF THE BRAND<br>
 The brand GIGSTERGO.COM:<br>
 Any unauthorized reproduction of GIGSTERGO.COM trademarks, logos and distinctive signs constitutes an infringement as punishable by law. <br>
 Brand and personal details of the USER:<br>
 The USER, as per the terms and conditions, allows GIGSTERGO.COM the right to use their brand and personal details as published online, with the express intention of using them, without reservation or exception, to optimize the running of the Platform.<br>
 
-<strong>OTHER USES</strong><br><br>
+<strong>OTHER USES</strong>
 Any other use of the name GIGSTERGO.COM or the logo GIGSTERGO.COM cannot happen without the express and prior authorization of the company GIGSTERGO.COM, otherwise you will be subject to the legal offences of forgery and/or unfair business practice.<br><br>
 
-<strong>LEGAL OFFENCES</strong><br><br>
+<strong>LEGAL OFFENCES</strong>
 USERS of the Platform GIGSTERGO.COM commit, to respect the laws of Republic of Singapore in terms of offences characterized by racism, anti-Semitism and/or any action seen to be discriminatory and against human dignity<br><br>
 Any document or information published on line that contravenes these stipulations will immediately cause the contract to be broken and the USER to be removed from the site, without prejudicing legal action for damages caused.<br><br>
 
-<strong>LIMIT OF RESPONSIBILITY</strong><br><br>
+<strong>LIMIT OF RESPONSIBILITY</strong>
 GIGSTERGO.COM will under no circumstances, intervene via its PLATFORM in the relations between GIG OWNERS AND GIGSTERS, who remain exclusively independent in their choices and actions.<br>
 Any other contractual agreement, notably in terms of the corporate model, will be subject to a written agreement as duly agreed and signed between the parties.<br>
 GIGSTERGO.COM will not, by any means whatsoever, be qualified to be a business intermediary, or to take part in future services undertaken between the clients.<br>
@@ -251,29 +251,29 @@ The User recognizes the limitations and appropriate constraints of the internet 
 Within the limits of the applicable law, under no circumstances, can GIGSTERGO.COM be held responsible for damage and/or injury, direct or indirect, material or immaterial, or whatever nature it may be, resulting from the Service, or any Use of the Service. The term "Use" must be understood in its broadest sense, i.e. any use of the site whatsoever, whether legal or otherwise.<br>
 The USER undertakes, in general terms, to respect all legislation in force in Singapore.
 
-<br><br><strong>HYPERTEXTS LINKS</strong><br><br>
+<br><br><strong>HYPERTEXTS LINKS</strong>
 GIGSTERGO.COM offers hypertext links towards web sites that are edited or managed by third parties.<br>
 As far as no control can be exercised upon these external resources, the USER recognizes that GIGSTERGO.COM cannot assume responsibility for any injury, regardless of its nature resulting form these resources, nor for the provision of these resources, nor their content.<br><br>
 
-<strong>IRRESISTIBLE FORCE</strong><br><br>
+<strong>IRRESISTIBLE FORCE</strong>
 Responsibility cannot be accepted in the case of irresistible force, of a third party, or independent issues outside of their will.<br><br>
 
-EVOLUTION OF THE TERMS AND CONDITIONS<br><br>
+EVOLUTION OF THE TERMS AND CONDITIONS
 GIGSTERGO.COM reserves the right to modify the terms, conditions and details of these general T&Cs at any moment.<br>
 GIGSTERGO.COM will inform its USERS of any modification to these T&Cs, such as have been accepted by the USER, within a period of 15 calendar days, without explicit notification.
 The USER is therefore strongly advised to regularly consult the latest version of the Terms and Conditions of Use available on the platform.<br><br>
 
-<strong>EVOLUTION OF THE PLATFORM</strong><br><br>
+<strong>EVOLUTION OF THE PLATFORM</strong>
 The USER consents, as per the T&Cs, to any allow changes and developments in the aim of optimizing the platform, GIGSTERGO.COM.<br>
 GIGSTERGO.COM may consider a new functional and aesthetic configuration of the site. Regardless of the modifications, the current contract will continue in effect beyond these changes.<br>
 Any additional offer of a new service which could result in an additional financial fee for the USER will be communicated to the USER who will be able to accept it. Any refusal will be taken by GIGSTERGO.COM as a termination of the current contract without indemnity on either side.
 In any case, the absence of a termination for a period of 15 days afterwards indicates an acceptance of those changes.<br><br>
 
-<strong>RETRACTION OF ONLINE PROFILES</strong><br><br>
+<strong>RETRACTION OF ONLINE PROFILES</strong>
 GIGSTERGO.COM reserves the right to withdraw a profile from the site, and all references to the GIGSTER, in any instance as justified by a major event. This would be in cases where continuing to publish online could mislead the GIG OWNER about the situation of the GIGSTER; situations such as, non-payment, change of company director, discovery of a non-conformant part of a file – this list is not exhaustive.
 In such a situation, GIGSTERGO.COM will suspend the publication of the profile online and will request that the GIGSTER rectifies the situation previously stated. Suspension will last until the profile is modified in line with regulations as imposed by GIGSTERGO.COM.<br><br>
 
-<strong>MODERATION OF PROFILES</strong><br><br>
+<strong>MODERATION OF PROFILES</strong>
 GIGSTERGO.COM controls and verifies the compliancy of profiles submitted by the USER, for the purpose of and the contractual provisions of GIGSTERGO.COM.
 Any profile that does not comply with the contractual provisions of GIGSTERGO.COM may be suspended.
 The compliancy of the profiles of the USER is defined in the following non-exhaustive list:<br><br>
@@ -286,18 +286,18 @@ The compliancy of the profiles of the USER is defined in the following non-exhau
 <span class="bullet">●</span> The content of profiles should be written in a language supported by the site GIGSTERGO.COM.<br>
 
 
-<strong>PROCEDURE</strong><br><br>
+<br><br><strong>PROCEDURE</strong>
 Profiles whose content does not comply with the provisions of this section, will be temporarily or permanently removed from the platform GIGSTERGO.COM.<br><br>
 
-<strong>SPECIFIC ARTICLES</strong><br><br>
+<strong>SPECIFIC ARTICLES</strong>
 The fact that GIGSTERGO.COM does not enforce at one time or another provision of the T&Cs, shall not be construed as a valid waiver of them GIGSTERGO.COM and so may be returned to later.<br>
 In the event that any provision of the T&Cs is deemed to be invalid or without effect, it would be deemed null and void, and would not affect the validity of other provisions, unless the provision declared null and void was essential and decisive.<br>
 Any case of irresistible force rendering the execution of services impossible, including the disruption of telecommunications, nullify any obligations of GIGSTERGO.COM that are affected by irresistible force. Services that are not fulfilled due to irresistible force are subject to a refund; however, such unfulfilled services may not result in damages or interests.
 
-<br><br><strong>'COOKIES' PROCESSING</strong><br><br>
+<br><br><strong>'COOKIES' PROCESSING</strong>
 THE USER is informed that one or several cookies, containing no personal information, could be placed on the user’s hard disk in order to assure in particular the user’s identification and the history of the user’s modifications. The procedures and the security measures include the verification of the origin, the verification of the integrity, the non-repudiation of the source of information and the privacy of data communicated in relation to third parties not authorized to access it. If you wish to delete cookies and block their collection, you can refer to the section « help » of your browser.<br><br>
 
-<strong>GOVERNING LAW</strong><br><br>
+<strong>GOVERNING LAW</strong>
 The websites (excluding third-party linked sites) are operated by GIGSTERGO.COM from its offices within Singapore and elsewhere around the world. It can be accessed from all countries around the world where technology permits. However, by accessing these websites, you agree that all access and use of the websites and the Content, and the T&Cs shall be governed by, and construed in accordance with, the laws of the Republic of Singapore. 
  
 In case of dispute, not having been able to come to a mutual agreement, USER agree to submit to the exclusive jurisdiction of the Singapore Courts and waive any objection to Proceedings in any Court in Singapore on the grounds of venue or on the grounds of forum non conveniens.<br><br>
