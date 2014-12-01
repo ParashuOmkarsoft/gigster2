@@ -3,8 +3,18 @@ include('cfg/cfg.php');
 include('cfg/functions.php');
 include('cfg/more-functions.php'); 
 $gigId=$_GET['gigId'];
-//echo "kfbeb ".$gigId;
 $gigdetails=get_gig_details($gigId);
+
+if($gigdetails)
+{
+  $gigsterInfo=get_user_Info(encrypt_str($gigdetails['userId']));
+  print_r( $gigsterInfo);
+
+}
+else
+{
+  die('Oops Something went wrong');
+}
 ?>
 
 <!DOCTYPE html>
