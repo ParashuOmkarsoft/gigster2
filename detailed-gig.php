@@ -304,11 +304,10 @@ else
 	
 }
 else{?>
-      <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
-        
-        <img src="http://gigstergo.com/images/mail.jpg">
-
-        </a> </div>
+      <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >   
+             <img src="images/symbol.png">
+            </a>
+      </div>
       <?php }
 				 }
 		
