@@ -314,7 +314,7 @@ else{?>
                  if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding-top: 15px;" title="Awarded" />
+      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 15px 0px 0px;" title="Awarded" />
       <?php
 	}
 	?>
