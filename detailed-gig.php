@@ -62,7 +62,7 @@ else
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1" class="img-circle">
     
      <!--  <div class="col-md-6" style="width: 276px;"> -->
-        <div class="col-md-6" style="width: 273px;"> 
+        <div class="col-md-6" style="width: 273px;padding-right:0px;"> 
         <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2><br><br><br>
         <?php
 		
@@ -96,7 +96,7 @@ else
 					   {
 						   ?>
                         <a  data-toggle="modal" href="#bidmodal" onClick="bid_modal('<?php echo $serverpath;?>','<?php echo $gigdetails['prjId'];?>','<?php echo $uInfo['userId'];?>')" >
-                        <button type="button" class="btn btn-newbid pull-right">Bid</button>
+                        <button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
                         </a>
                         <?php
 					   }
@@ -104,7 +104,7 @@ else
 					   {
 						   ?>
 						    <a  <a data-toggle="modal" href="#loginmodel" >
-                        		<button type="button" class="btn btn-newbid pull-right">Bid</button>
+                        		<button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
                         	</a>
 						   <?php
 					   }
