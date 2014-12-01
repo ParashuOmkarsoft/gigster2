@@ -254,7 +254,7 @@ The User recognizes the limitations and appropriate constraints of the internet 
 Within the limits of the applicable law, under no circumstances, can GIGSTERGO.COM be held responsible for damage and/or injury, direct or indirect, material or immaterial, or whatever nature it may be, resulting from the Service, or any Use of the Service. The term "Use" must be understood in its broadest sense, i.e. any use of the site whatsoever, whether legal or otherwise.<br><br>
 The USER undertakes, in general terms, to respect all legislation in force in Singapore.
 
-<strong>HYPERTEXTS LINKS</strong><br><br>
+<br><br><strong>HYPERTEXTS LINKS</strong><br><br>
 GIGSTERGO.COM offers hypertext links towards web sites that are edited or managed by third parties.<br><br>
 As far as no control can be exercised upon these external resources, the USER recognizes that GIGSTERGO.COM cannot assume responsibility for any injury, regardless of its nature resulting form these resources, nor for the provision of these resources, nor their content.<br><br>
 
@@ -297,7 +297,7 @@ The fact that GIGSTERGO.COM does not enforce at one time or another provision of
 In the event that any provision of the T&Cs is deemed to be invalid or without effect, it would be deemed null and void, and would not affect the validity of other provisions, unless the provision declared null and void was essential and decisive.<br><br>
 Any case of irresistible force rendering the execution of services impossible, including the disruption of telecommunications, nullify any obligations of GIGSTERGO.COM that are affected by irresistible force. Services that are not fulfilled due to irresistible force are subject to a refund; however, such unfulfilled services may not result in damages or interests.
 
-<strong>'COOKIES' PROCESSING</strong><br><br>
+<br><br><strong>'COOKIES' PROCESSING</strong><br><br>
 THE USER is informed that one or several cookies, containing no personal information, could be placed on the user’s hard disk in order to assure in particular the user’s identification and the history of the user’s modifications. The procedures and the security measures include the verification of the origin, the verification of the integrity, the non-repudiation of the source of information and the privacy of data communicated in relation to third parties not authorized to access it. If you wish to delete cookies and block their collection, you can refer to the section « help » of your browser.<br><br>
 
 <strong>GOVERNING LAW</strong><br><br>
