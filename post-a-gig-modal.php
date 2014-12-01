@@ -8,13 +8,13 @@
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
             <div class="col-sm-10" style="padding-left: 12px;">
-             <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;">
+             <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;padding-left: 12px;">
             </div>
           </div>
           <div class="form-group">
             <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
             <div class="col-sm-10" style="padding-left:12px;">
-              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Details about your Gig" row="5" column="10"  style="height: 150px;"></textarea>
+              <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Details about your Gig" row="5" column="10"  style="height: 150px;padding-left: 12px;"></textarea>
             </div>
           </div>      
           <h2 class="loginlead" id="mlabel" title="Leave blank if you'd like the Gigster to quote">How much would you like to pay?</h2>
