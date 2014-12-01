@@ -22,7 +22,7 @@ include('cfg/more-functions.php');
   
       <div class="row firstdinner">
         <div class="col-md-12">
-         <span id="p-name">INTRODUCTION</span> <br>
+         <span id="p-name">INTRODUCTION</span> <br><br>
          <p class="james">These Terms and Conditions of Use (T&Cs) are intended to define the modalities of the provision of services as provided by the platform GIGSTERGO.COM, hereafter named "the Service", and the conditions of use of the Service by the USER.</p> 
          <p class="james">Any access and/or Use of the platform GIGSTERGO.COM presumes the unconditional acceptance and adherence to all sections of these Terms and Conditions. This consequently establishes a link of a contractual nature between GIGSTERGO.COM and the USER.</p> 
          <p class="james">In the case of the USER not wishing to accept all or any of these terms and conditions, they are requested to explicitly renounce all use of the Service.</p> 
@@ -40,7 +40,7 @@ include('cfg/more-functions.php');
       </div>
        <div class="row secondinner">
         <div class="col-md-12">
-         <span id="p-name">GLOSSARY</span> 
+         <span id="p-name">GLOSSARY</span><br><br> 
          <p class="james"><span class="bullet">●</span> AGREEMENT: EXPRESSES THE CONTRACTUAL LINK AS WELL AS THE TERMS AND CONDITIONS AS SET OUT IN THE CURRENT DOCUMENT.</p>
          <p class="james"><span class="bullet">●</span> CLIENT: GIG OWNER, GIGSTER.</p> 
          <p class="james"><span class="bullet">●</span> GIG: A SERVICE, A PIECE OF WORK OR AN OBJECT</p> 
@@ -65,7 +65,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="row secondinner">
         <div class="col-md-12">
-         <span id="p-name">PURPOSE AND AREAS OF APPLICATION</span> <br>
+         <span id="p-name">PURPOSE AND AREAS OF APPLICATION</span><br><br>
                <p class="james">The PLATFORM GIGSTERGO.COM is open to any company or corporation or individual, who in the future, intends to conclude a service contract with a GIGSTER.<br><br>
       To this end, the PLATFORM allows GIGSTERS in accordance with these T&Cs, to publish any financial and commercial information relevant to their field of expertise. The PLATFORM also allows GIG OWNERS, in accordance with these T&Cs, access to the information of some of the GIGSTERS.<br><br>
       The T&Cs apply to any use of the PLATFORM.<br><br>
@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="row secondinner">
         <div class="col-md-12">
-         <span id="p-name">USE OF THE PLATFORM</span> <br>
+         <span id="p-name">USE OF THE PLATFORM</span><br><br>
                <p class="james">TUse of the PLATFORM is reserved for USERS who have previously been made aware of, and have accepted the T&Cs by way of ‘clicking the mouse’.<br><br>
                 USERS agree that the content of any messages and documents sent are not contrary to the legislation in force and do not constitute forgery or falsification of documents. They shall undertake not to use the PLATFORM for the purpose of committing a criminal offence or offences.<br><br>
                 Any document or information posted on the PLATFORM which contravenes these provisions will result in the immediate and full termination of these terms and conditions and the exclusion of the USER from the PLATFORM, without prejudicing legal action for any damage caused to GIGSTERGO.COM and/or any of its customers.<br><br>
@@ -89,7 +89,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="row secondinner">
         <div class="col-md-12">
-         <span id="p-name">ACCESS TO THE SERVICE</span><br> 
+         <span id="p-name">ACCESS TO THE SERVICE</span><br><br>
                <p class="james">The service is available, according to the terms as described in these T&Cs, to every USER who has access to the internet, provided they have expressly accepted these terms and conditions of use.<br><br>
 All costs relating to accessing the Service, are payable exclusively by the USER. They are solely responsible for the smooth running of their IT equipment as well as any access to the internet.<br><br>
 Certain areas of the platform are reserved for USERS who have a username and password.<br><br>
@@ -106,7 +106,7 @@ GIGSTERGO.COM reserves the right to interrupt, momentarily suspend, or modify wi
 <div class="col-md-12">
 <span id="p-name">USER OBLIGATIONS
 Obligation for pre-release online
-</span> 
+</span><br><br> 
 <p class="james">The USERS are solely responsible for the authenticity and reliability of any information posted to GIGSTERGO.COM. <br>
 The USER will guarantee that the documents are authentic and conform to the laws of the Republic of Singapore governing this matter; if any possible incompatibility should arise, the USER will inform GIGSTERGO.COM of it within 24 hours.<br>
 The USER undertakes to respect the following procedure:<br>
@@ -124,7 +124,7 @@ All breaches of this obligation will lead to the suspension and unilateral cance
 <div class="row secondinner">
 <div class="col-md-12">
 <span id="p-name">Obligations for release online
-</span> 
+</span><br><br> 
 <p class="james">Any USER profile published online must adhere to the following minimum conditions:<br>
 <span class="bullet">●</span> The profile must be complete: all the documents required by the PLATFORM must be present.<br>
 <span class="bullet">●</span> The profile will be subject to assessment to see that it conforms to the current T&Cs and those of the PLATFORM GIGSTERGO.COM in terms of its and accuracy and regularization.<br>
@@ -143,7 +143,7 @@ If the User does not reply within 48 hours, the profile will be deemed to be non
 <div class="row secondinner">
 <div class="col-md-12">
 <span id="p-name">GIG OWNER OBLIGATIONS
-</span><br> 
+</span><br><br>
 <p class="james"><span class="bullet">●</span>  The GIG OWNER undertakes to refrain from any interference with regard to GIGSTERGO.COM; in this respect GIGSTERGO.COM acts uniquely as a data bank without any other intermediation or engagement.<br>
 <span class="bullet">●</span> The GIG OWNER agrees to use the site honestly, and notably to respect all obligations concerning the responsibility of GIGSTERGO.COM<br>
 In the case of any breach, GIGSTERGO.COM will not be held responsible in any way.<br><br>
@@ -162,7 +162,7 @@ The GIG OWNER also expressly commits to the following:<br><br>
 <div class="row secondinner">
 <div class="col-md-12">
 <span id="p-name">GIG OWNER OBLIGATIONS
-</span><br> 
+</span><br><br>
 <p class="james">ACCESS TO THE SERVICE ON THE PLATFORM BY THE GIG OWNER<br>
 Access to the service by the GIG OWNER is subject to the acceptance of these T&Cs.<br>
 Free Services:<br>
