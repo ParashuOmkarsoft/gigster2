@@ -163,7 +163,7 @@ else
   
   <div class="row" style="margin: 0 auto;">
     
-      <h5 id="title" style="padding-left: 15px;">Description</h5>
+      <h5 id="title">Description</h5>
  
   </div>
 </section>
