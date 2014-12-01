@@ -219,27 +219,27 @@ GIGSTERGO.COM may, at its discretion, suspend or restrict the USER’s access to
 GIGSTERGO.COM also reserves the right to suspend or limit access to the PLATFORM for maintenance reasons or to allow the installation of new features.<br>
 USER agree not to use any device, software, routine to interfere or attempt to interfere with the proper working of the PLATFORM, use any robot, spider, other automatic device, or manual process to monitor or copy any pages within the websites or the Content without GIGSTERGO.COM’s prior written permission, and take any action that imposes a disproportionately large or unreasonable load on GIGSTERGO.COM’s servers. <br>
 
-<strong>COMMUNICATION PROCESS</strong><br><br>
+<br><br><strong>COMMUNICATION PROCESS</strong><br><br>
 Communication between GIGSTERGO.COM and USERS may be carried out via email, telephone or by any other means as provided by both current and future technologies.<br>
 A business day means a day other than Saturday, Sunday or other official public holiday in the place in which the recipient of the message from GIGSTERGO.COM resides.<br>
 A GIGSTERGO.COM message with a request for acknowledgment of receipt cannot be acted upon by the recipient of the message until the acknowledgment is sent.<br>
 The writings inherent in this communication are also part of the evidence, as subject to the laws of the Republic of Singapore.<br>
 
-<strong>INTELLECTUAL PROPERTY</strong><br><br>
+<br><br><strong>INTELLECTUAL PROPERTY</strong><br><br>
 OWNERSHIP OF THE BRAND<br>
 The brand GIGSTERGO.COM:<br>
 Any unauthorized reproduction of GIGSTERGO.COM trademarks, logos and distinctive signs constitutes an infringement as punishable by law. <br>
 Brand and personal details of the USER:<br>
-The USER, as per the terms and conditions, allows GIGSTERGO.COM the right to use their brand and personal details as published online, with the express intention of using them, without reservation or exception, to optimize the running of the Platform.<br>
+The USER, as per the terms and conditions, allows GIGSTERGO.COM the right to use their brand and personal details as published online, with the express intention of using them, without reservation or exception, to optimize the running of the Platform.
 
-<strong>OTHER USES</strong><br><br>
+<br><br><strong>OTHER USES</strong><br><br>
 Any other use of the name GIGSTERGO.COM or the logo GIGSTERGO.COM cannot happen without the express and prior authorization of the company GIGSTERGO.COM, otherwise you will be subject to the legal offences of forgery and/or unfair business practice.<br><br>
 
-<strong>LEGAL OFFENCES</strong><br><br>
+<br><br><strong>LEGAL OFFENCES</strong><br><br>
 USERS of the Platform GIGSTERGO.COM commit, to respect the laws of Republic of Singapore in terms of offences characterized by racism, anti-Semitism and/or any action seen to be discriminatory and against human dignity<br><br>
 Any document or information published on line that contravenes these stipulations will immediately cause the contract to be broken and the USER to be removed from the site, without prejudicing legal action for damages caused.<br><br>
 
-<strong>LIMIT OF RESPONSIBILITY</strong><br><br>
+<br><br><strong>LIMIT OF RESPONSIBILITY</strong><br><br>
 GIGSTERGO.COM will under no circumstances, intervene via its PLATFORM in the relations between GIG OWNERS AND GIGSTERS, who remain exclusively independent in their choices and actions.<br>
 Any other contractual agreement, notably in terms of the corporate model, will be subject to a written agreement as duly agreed and signed between the parties.<br>
 GIGSTERGO.COM will not, by any means whatsoever, be qualified to be a business intermediary, or to take part in future services undertaken between the clients.<br>
