@@ -3,6 +3,7 @@ include('cfg/cfg.php');
 include('cfg/functions.php');
 include('cfg/more-functions.php'); 
 $gigId=$_GET['gigId'];
+echo "kfbeb ".$gigId;
 $gigdetails=get_gig_details($gigId);
 print_r($gigdetails);
 ?>
