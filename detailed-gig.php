@@ -162,9 +162,9 @@ else
   </div>
   
   <div class="row" style="margin: 0 auto;">
-    <div class="col-md-12">
-      <h5 id="title">Description</h5>
-    </div>
+    
+      <h5 id="title" style="padding-left: 15px;">Description</h5>
+ 
   </div>
 </section>
 <section class="container secondsection">
