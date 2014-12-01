@@ -5,7 +5,6 @@ include('cfg/more-functions.php');
 $gigId=$_GET['gigId'];
 $gigdetails=get_gig_details($gigId);
 print_r($gigdetails);
-exit();
 ?>
 
 <!DOCTYPE html>
