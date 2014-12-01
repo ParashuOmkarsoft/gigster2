@@ -6,13 +6,17 @@
         <h2 class="source">Get help for anything and post a new Gig for free.</h2>
         <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
           <div class="form-group">
-            <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
+              <div class="col-md-2">
+              <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
+              </div>
             <div class="col-sm-10" style="padding-left: 12px;">
              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;padding-left: 12px;">
             </div>
           </div>
-          <div class="form-group">
-            <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
+            <div class="col-md-2">
+              <div class="form-group">
+              <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
+            </div>  
             <div class="col-sm-10" style="padding-left:12px;">
               <textarea class="form-control" id="prjdesc" name="prjdesc" placeholder="Details about your Gig" row="5" column="10"  style="height: 150px;padding-left: 12px;"></textarea>
             </div>
