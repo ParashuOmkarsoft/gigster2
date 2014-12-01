@@ -12,9 +12,9 @@
             <div class="col-sm-10" style="padding-left: 12px;">
              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;padding-left: 12px;">
             </div>
-          </div>
-            <div class="col-md-2">
+          </div>    
               <div class="form-group">
+              <div class="col-md-2">
               <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
             </div>  
             <div class="col-sm-10" style="padding-left:12px;">
