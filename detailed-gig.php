@@ -305,7 +305,7 @@ else
 }
 else{?>
       <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
-        <!-- <button type="button" class="btn btn-bid">Award</button> -->
+        <button type="button" class="btn btn-bid">Award</button>
         
 
         </a> </div>
