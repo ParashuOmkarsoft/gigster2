@@ -304,17 +304,17 @@ else
 	
 }
 else{?>
-      <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >   
-             <img src="images/symbol.png">
-            </a>
-      </div>
+      <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
+              <button type="button" class="btn btn-bid">Award</button>
+             </a> 
+    </div>
       <?php }
 				 }
 		
                  if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-      <img src="<?php echo $serverpath;?>images/symbol.png" style="padding-top: 20px;padding-right: 12px;" title="Awarded" />
+      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding-top: 15px;" title="Awarded" />
       <?php
 	}
 	?>
