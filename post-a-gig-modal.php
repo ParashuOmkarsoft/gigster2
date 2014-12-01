@@ -7,7 +7,7 @@
         <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
           <div class="form-group">
             <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
-            <div class="col-sm-10" style="padding-left:2px;">
+            <div class="col-sm-10" style="padding-left: 12px;">
              <input type="text" required class="form-control" id="prjTitle" name="prjTitle" placeholder="Add a headline for your Gig" maxlength="45" style="width: 70%;">
             </div>
           </div>
