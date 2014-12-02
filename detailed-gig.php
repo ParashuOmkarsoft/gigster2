@@ -151,18 +151,14 @@ else
 						}
 					}
 				}
-			}else
-			{
-				
 			}
 ?>
       </div>
      
     </div>
   </div>
- 
-  </div>
-  <div class="col-md-12 description-text">Description<div> 
+ <div class="col-md-12 description-text">Description<div> 
+  </div>  
 </section>
 <section class="container secondsection">
   <p><?php echo nl2br(stripslashes($gigdetails['prjdesc']));?></p>
