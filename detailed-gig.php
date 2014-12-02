@@ -97,7 +97,7 @@ else
 					   {
 						   ?>
                         <a  data-toggle="modal" href="#bidmodal" onClick="bid_modal('<?php echo $serverpath;?>','<?php echo $gigdetails['prjId'];?>','<?php echo $uInfo['userId'];?>')" >
-                        <button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
+                        <button type="button" class="btn btn-newbid pull-right" >Bid</button>
                         </a>
                         <?php
 					   }
@@ -105,7 +105,7 @@ else
 					   {
 						   ?>
 						    <a  <a data-toggle="modal" href="#loginmodel" >
-                        		<button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
+                        		<button type="button" class="btn btn-newbid pull-right">Bid</button>
                         	</a>
 						   <?php
 					   }
