@@ -7,7 +7,14 @@
          <h2 id="login1">Login </h2>    
             <h2 class="source">Create a FREE account using any of your social profiles or email.</h2>  
            
-
+        <div class="col-md-4 fbimg"> 
+              <div class="modal-social-icons">
+                    <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
+                    <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
+                    <a href='<?php echo $serverpath;?>loginwithtlinkedin'><img src="<?php echo $serverpath;?>images/link.png" style="padding-bottom:10px;"> </a>
+                    <a href='#'><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"> </a>
+              </div>
+        </div>
        <div class="col-md-8"><form class="form-horizontal hform" >
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label newlog">Username</label>
@@ -32,15 +39,7 @@
   </div>
 </form>
 </div>
-<div class="col-md-4 fbimg"> 
-<div class="modal-social-icons">
 
-                            <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
-                            <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
-                            <a href='<?php echo $serverpath;?>loginwithtlinkedin'><img src="<?php echo $serverpath;?>images/link.png" style="padding-bottom:10px;"> </a>
-                            <a href='#'><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"> </a>
-</div>
-                        </div>
          
        </div>
 </div>
