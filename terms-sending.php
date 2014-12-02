@@ -112,7 +112,7 @@ else
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
 				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
 				<p>Better luck next time.</p>
-				<p>Do check out our other Gigs here. <a href='".$serverpath."allgigs'>Click here to view other Gigs</a></p>
+				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
 				if($bidderInfo['notify']=="1")
@@ -124,9 +124,7 @@ else
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
 				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
 				<p>Better luck next time.</p>
-				<p>Do check out our other Gigs here. <a href='".$serverpath."allgigs'>Click here to view other Gigs</a></p>
-				<p>Regards</p>
-				<p>$sitename</p>";
+				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>";
 				$mailmatter2=htmlentities($mailmatter2);
 				$mailmatter2=addslashes($mailmatter2);
 				if($biderId != $awardedto)
