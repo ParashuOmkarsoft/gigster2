@@ -81,13 +81,10 @@ include('cfg/more-functions.php');
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
    	  <p id="gigpara" style="padding-top:0px !important;width:750px;overflow:hidden;" ><?php echo stripslashes(stripslashes(nl2br(strip_string(nl2br($opengig['prjdesc']),250))));?></p>
     </div>
-    <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">
-
-      <div class="col-md-12" style="padding-top:15px;">
-      
+    <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">     
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"class="img-circle"></a> 
       </div> 
-       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"style="margin-right: 18px;"><?php echo strip_string($nametodisplay,10);?></a></h4>
+       <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,10);?></a></h4>
         <h4>&nbsp;</h4>
       
       <div class="col-md-12" >

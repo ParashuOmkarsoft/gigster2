@@ -384,7 +384,8 @@ margin: 1px auto;
 /* margin-right: 50px; */
 }
 
-.gigimg{ margin-bottom: 28px;/*padding-left:90px;*/}
+.gigimg{ text-align: right;
+padding-top: 15px;}
 
 .lastpagination{float: right;}
 .lastpagination li{margin: 4px;}

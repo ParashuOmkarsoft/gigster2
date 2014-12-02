@@ -318,7 +318,9 @@ include('cfg/more-functions.php');
 			{
 				$profilepic="images/admin.png";
 			}
+
 			  ?>
+
 			 
         <div class="col-md-12">
          <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> 

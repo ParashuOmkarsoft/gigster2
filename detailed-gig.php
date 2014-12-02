@@ -66,7 +66,7 @@ else
         <div>
         <?php
 		
-                             for($t=$gigsterrating;$t<5;$t++) 
+        for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
@@ -78,12 +78,11 @@ else
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
 
-        </div>
-        
-<?php
-							  }
 
-			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
+        
+<?php		  } ?>
+</div>
+		<?php	if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
 				{
@@ -98,7 +97,7 @@ else
 					   {
 						   ?>
                         <a  data-toggle="modal" href="#bidmodal" onClick="bid_modal('<?php echo $serverpath;?>','<?php echo $gigdetails['prjId'];?>','<?php echo $uInfo['userId'];?>')" >
-                        <button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
+                        <button type="button" class="btn btn-newbid pull-right" >Bid</button>
                         </a>
                         <?php
 					   }
@@ -106,7 +105,7 @@ else
 					   {
 						   ?>
 						    <a  <a data-toggle="modal" href="#loginmodel" >
-                        		<button type="button" class="btn btn-newbid pull-right" style="margin-right: -15px;">Bid</button>
+                        		<button type="button" class="btn btn-newbid pull-right">Bid</button>
                         	</a>
 						   <?php
 					   }
