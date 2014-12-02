@@ -57,13 +57,12 @@ else
       <h2 style="font-size:20px;color: #6C3E08;"><strong>Proposed budget - </strong><?php if($gigdetails['proposedbudget']>0){ echo $gigdetails['proposedbudget']." ".$currency; }else{ echo "Gigster's price";}?></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
     </div>
-    <div id="front" class="col-md-4 giginnerimg" style="padding-top: 15px;">
+    <div id="front" class="col-md-4 giginnerimg" style="width: 273px;padding-right:0px;padding-top: 15px;">
       
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1" class="img-circle">
     
-     <!--  <div class="col-md-6" style="width: 276px;"> -->
-        <div class="col-md-6" style="width: 273px;padding-right:0px;"> 
-        <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2>
+        
+        <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2><br><br><br>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -156,7 +155,9 @@ else
       </div>
      
     </div>
-  
+
+
+  </div>
   </div>
  <div class="description-text">Description</div>
 </section>
