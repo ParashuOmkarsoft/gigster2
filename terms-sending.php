@@ -64,9 +64,9 @@ else
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 							
 	}
-	$mailmatter="<p>Congratulation</p>
+	$mailmatter="<p>Congratulations!</p>
 				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
-				<p>To update the status and see full details, please click here. <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> Link To Gig</a></p>";
+				<p>To update the status and see full details, please  <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> click here.</a></p>";
 								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=addslashes($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
