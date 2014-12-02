@@ -775,7 +775,7 @@ margin-left: -15px;
 	color: #5e350d; }
 .mikename1{
 	
-	float: right;
+	text-align: right;
 	font-size: 26px;
 	font-family: 'source_sans_prosemibold';
 	color: #5e350d; }	
