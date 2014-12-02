@@ -83,7 +83,6 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-2 giginnerimg gigimg" style="margin-bottom: 0;">     
       <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"class="img-circle"></a> 
-      </div> 
        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,10);?></a></h4>
         <h4>&nbsp;</h4>
       
