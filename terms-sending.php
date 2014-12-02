@@ -75,6 +75,8 @@ else
 				
 				// Sending mail to gig owner
 				
+
+				
 				
 	$mailmatter1="<p>You have selected proposal of ".$usernametodisplay." on gig <strong>$gigname</strong>.
 				<p>&nbsp;</p>
