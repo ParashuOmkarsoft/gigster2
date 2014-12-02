@@ -776,7 +776,7 @@ if($sql['count']>0)
 }
 function get_all_gigsters()
 {
-	$query="select * from btr_users where userId<>18 order by userId DESC";
+	$query="select b.* from btr_users as b,btr_userprofile as p where b.userId<>18 and b.userId=p.userId and p.skills is not null order by userId DESC";
 	$sql=@db_query($query);
 	if($sql['count']>0)
 	{
