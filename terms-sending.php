@@ -49,8 +49,8 @@ else
 		$usernametodisplay=$userInfo['username'];
 	}
 		$mailmatter="<p>Congratulations!</p>
-				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
-				<p><a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'>To update the status and see full details, please click here.</a></p>
+				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><strong>$gigname</strong></a>.</p>
+				<p><a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'>To update the status and see full details, please <strong>click here</strong>.</a></p>
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
@@ -65,7 +65,7 @@ else
 							
 	}
 	$mailmatter="<p>Congratulations!</p>
-				<p>Your bid on gig <strong>$gigname</strong> has been awarded.
+				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><strong>$gigname</strong></a>.</p>
 				<p>To update the status and see full details, please  <a href='".$serverpath."acceptGig/".encrypt_str($insertQuery)."/".encrypt_str($awardedto)."'> click here.</a></p>";
 								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=addslashes($mailmatter);
