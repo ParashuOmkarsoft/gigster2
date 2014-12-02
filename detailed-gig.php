@@ -157,6 +157,7 @@ else
      
     </div>
   </div>
+  </div>
  <div class="description-text">Description</div>
 </section>
 <section class="container secondsection">
