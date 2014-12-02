@@ -66,7 +66,7 @@ else
         <div>
         <?php
 		
-                             for($t=$gigsterrating;$t<5;$t++) 
+        for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
 								  ?>
@@ -78,12 +78,11 @@ else
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
 
-        </div>
-        
-<?php
-							  }
 
-			if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
+        
+<?php		  } ?>
+</div>
+		<?php	if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
 				if(!is_project_awarded($gigdetails['prjId']))
 				{
