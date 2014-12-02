@@ -57,6 +57,7 @@ include('cfg/more-functions.php');
 		   for($i=0;$i<$mcount;$i++)
 		   {
 			  $opengig=$opengigs['rows'][$i];
+			  print( $opengig );
 			  $gigsterInfo="";
 			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
 			  $nametodisplay="";
