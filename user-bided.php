@@ -79,7 +79,7 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
       </div>
       <div class="col-md-12" style="padding:0px;"> 
       <div class="col-md-8"> 
-       <span class="budget" style="padding-top: 20px;"><?php echo $prjDetails['proposedbudget']; ?> <?php echo $currency ; ?></span>
+       <span class="budget" style="padding-top: 20px;"><?php if($prjDetails['proposedbudget']>0){ echo ($prjDetails['proposedbudget']);?> <?php echo $currency; if($prjDetails['jobtype']=="h") { ?>&nbsp;per hour<?php }} else{ echo "Gigster's price";} ?></span>
        <div><p><?php echo $prjDetails['prjdesc']; ?></p></div> 
        <div id="msgmodal<?php echo $prjDetails['userId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
