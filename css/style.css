@@ -323,8 +323,8 @@ margin-left: 50px;
     font-size: 18px;}
 .firstrow{border-bottom: 1px solid #fab518; padding-bottom: 20px;}
 #gigpara{padding-top: 20px;}
-.giginnerimg img{float: right; margin-left: 3px; margin-bottom: 3px;}
-#front{padding-left: 51px;}
+.giginnerimg img{ margin-left: 3px; margin-bottom: 3px;}
+#front{padding-left: 51px;text-align: right;}
 .gigimg .btn-warning{
 	color: #fff;
 	font-size: 20px;
@@ -775,7 +775,7 @@ margin-left: -15px;
 	color: #5e350d; }
 .mikename1{
 	
-	float: right;
+	text-align: right;
 	font-size: 26px;
 	font-family: 'source_sans_prosemibold';
 	color: #5e350d; }	
