@@ -76,10 +76,10 @@ if($sql['count']>0)
 		$jj=user_replied($prjDetails['prjId'],$uInfo['userId'],$sql['rows'][$i]['msgId']);
 		
 		
-		if($sql['rows'][$i]['isread'])
+		if($sql['rows'][$i]['isread']=="0")
 		{
 
-			$st="style='background: rgb(255, 244, 219);font-weight:bolder;'";
+			$st="style='background: rgb(255, 244, 219);font-weight:bold;'";
 		}
 		else
 		{	
