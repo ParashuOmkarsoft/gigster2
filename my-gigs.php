@@ -108,10 +108,10 @@ include('cfg/more-functions.php');
       <p id="gigpara" ><?php echo stripslashes(strip_string($opengig['prjdesc'],500));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
       <div class="col-md-12" style="padding: 0px;"> 
-      <span id="bid" style="margin-left:0px;"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal">
+      <span id="bid" style="margin-left:0px;"><?php if($projectstatus == '100' ) { if(!is_feedback_given($opengig['prjId'],$uInfo['userId'])){ ?><!-- <a href="#statusmodal<?php //echo $opengig['prjId'];?>" data-toggle="modal"> -->
         <!-- <button type="button" class="btn markascomplete-btn1" >Send feedback</button> -->
-         <img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;">
-        </a> <?php } } ?></span></div>
+         <!-- <img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"> -->
+        <!-- </a> --> <?php } } ?></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
         <div class="modal-dialog modal-lg"style="max-width: 500px;">
           <div class="modal-content cform">
