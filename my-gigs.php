@@ -308,9 +308,11 @@ box-shadow: 0px 0px 2px #000000;'";
     </div>
    
    </div>
- <div class="col-md-4"><img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"></div>
+ <div class="col-md-4">
+ 	<a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style="position: absolute;top: 67px;"></a>
+ </div>
    
-
+ 						
       
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
         <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"></a>
