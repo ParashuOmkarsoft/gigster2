@@ -943,7 +943,7 @@ border-radius: 0px;}
 	padding: 33px;
 }
 .hform{
-	margin-top: 60px;	
+	margin-top: 54px;	
 }
 .fbimg{
 float: right;
@@ -955,7 +955,12 @@ padding: 27px 48px;
 }
 
 .logsign{padding-left: 39px;}
-.modal-social-icons{padding:1 10%;}
+.modal-social-icons{padding:1 10%;margin-left: -14px;}
+/*.hform::after{
+	content: "OR";
+	margin-left: -25px;
+}
+*/
 .facebook, .twitter, .google, .linkedin {width:100%;height:40px; padding-top:2%; margin-top:2%;}
 .modal-icons{margin-left: -10px; margin-right: 20px;}
 .google, .google:hover{background-color:#dd4b39;border:2px solid #dd4b39;color:#fff;}
