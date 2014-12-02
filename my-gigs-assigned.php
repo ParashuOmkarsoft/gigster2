@@ -431,7 +431,7 @@ $puname=$puuinfo['username'];
         </div>
       </div>
 
-      <div class="col-md-4"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style="position: absolute;top: 67px;"></a></div>
+      <div class="col-md-4"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style=""></a></div>
       
     </div>
   </section>
