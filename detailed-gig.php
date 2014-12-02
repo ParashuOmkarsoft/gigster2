@@ -62,7 +62,7 @@ else
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1" class="img-circle">
     
         
-        <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2><br><br><br>
+        <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
