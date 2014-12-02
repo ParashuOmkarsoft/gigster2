@@ -33,7 +33,7 @@
               <div class="col-sm-offset-2 col-sm-10 logsign">
                 <button type="submit" class="btn btn-warning loginbtn">Login</button>
                 <button type="submit" class="btn btn-warning loginbtn">Signup</button>
-             
+                <a href="#signupmodal"  data-dismiss="modal" class="btn btn-warning loginbtn">Sign Up</a>
               </div>
             </div>
         </form>
