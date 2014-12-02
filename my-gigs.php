@@ -301,15 +301,12 @@ box-shadow: 0px 0px 2px #000000;'";
          <h4><?php echo convert_date($opengig['bidfrom']);?> <span class="sb pull-right"><?php echo convert_date($opengig['bidto']);?></span></h4>
          <div class="progress"  style="width: 100%;">
              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $projectstatus;?>%;">                <span class="sr-only"><?php echo $projectstatus; ?>%</span>
-         </div>
-                 
+         </div>         
         </div>
-         
-     </div>
-     <div class="col-md-4"><img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"></div>
-     
+     </div> 
 	</div>
     </div>
+    <div class="col-md-4"><img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"></div>
    
    </div>
 
