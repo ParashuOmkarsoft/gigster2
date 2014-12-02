@@ -413,7 +413,7 @@ $puname=$puuinfo['username'];
  </div>
     </div>
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-8">
         <h4>Completion Status</h4>
         <div class="row">
           <div class="col-md-12">
@@ -431,7 +431,7 @@ $puname=$puuinfo['username'];
         </div>
       </div>
 
-      <div class="col-md-2">feedback</div>
+      <div class="col-md-4">feedback</div>
       
     </div>
   </section>
