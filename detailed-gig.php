@@ -60,7 +60,7 @@ else
     <div id="front" class="col-md-4 giginnerimg" style="padding-top: 15px;">
       
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1" class="img-circle">
-    </div>
+    
      <!--  <div class="col-md-6" style="width: 276px;"> -->
         <div class="col-md-6" style="width: 273px;padding-right:0px;"> 
         <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2><br><br><br>
