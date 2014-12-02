@@ -189,7 +189,7 @@ include('cfg/more-functions.php');
 			  ?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	<a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"class="img-circle"></a> <br>
-      		<h4 style="float:right;"><?php echo $awardednametodisplay; ?></h4>
+      		<h4 style="float:right;"><?php echo $awardednametodisplay; ?></h4><br>
       		<div style="float:right">			
       					<?php 
 						 for($t=0;$t<$awardedrating;$t++)
