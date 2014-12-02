@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /gigster2
+RewriteBase /
 
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
