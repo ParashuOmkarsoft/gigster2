@@ -161,10 +161,9 @@ else
     </div>
   </div>
   
-  <div class="row" style="margin: 0 auto;">
+  
     
-      <div class="col-md-12 description-text">Description</h5>
- 
+  <div class="col-md-12 description-text">Description<div> 
   </div>
 </section>
 <section class="container secondsection">
