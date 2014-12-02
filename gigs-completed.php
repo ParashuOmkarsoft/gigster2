@@ -57,7 +57,7 @@ include('cfg/more-functions.php');
 		   for($i=0;$i<$mcount;$i++)
 		   {
 			  $opengig=$opengigs['rows'][$i];
-			  print( $opengig );
+			  
 			  $gigsterInfo="";
 			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
 			  $nametodisplay="";
@@ -93,7 +93,7 @@ include('cfg/more-functions.php');
 		 {
 		  if($userReview['feedback'])
 			{
-				echo $userReview['feedback'];
+				echo '<p>'.$userReview['feedback'].'</p>';
 			}
 			?>
 			<Br/>
@@ -128,14 +128,9 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 
-            <?php 
-						
-			?>
-         
 		 	<?php if($userReview['feedback'])
 			{
-				echo $userReview['feedback'];
+				echo '<p>'.$userReview['feedback'].'</p>';
 			}
 			?>
 			<Br/>
@@ -171,7 +166,7 @@ include('cfg/more-functions.php');
     </div>
     <div class="col-md-4" style="padding: 0;"> 
 		<?php $awardedarray=project_awarded_to($opengig['prjId']);
-		print( $awardedarray );
+		
 		 $awarded=$awardedarray['awardedto'];
 		 $awardedInfo=get_user_Info(encrypt_str($awarded));
 		$awardednametodisplay="";
