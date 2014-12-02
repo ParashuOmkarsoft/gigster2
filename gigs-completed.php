@@ -70,8 +70,12 @@ include('cfg/more-functions.php');
   
   <div class="row myrow" style="border-bottom: 3px solid #fd8900;padding: 0px 0px 15px 0px;">
     <div class="col-md-8" style="padding: 0;">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2> 
-        <div class="col-md-8" style="padding: 0;">
+      
+	    <a id="giglisth2" href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>">
+      		<?php echo $opengig['prjTitle'];?>
+      	</a>
+      
+       
         <!-- <p id="gigpara"> -->
         <h3 class="comp-h4">Feedback</h3>
          <?php 
@@ -161,11 +165,12 @@ include('cfg/more-functions.php');
       
       
       
-    </div>
+    
       
     </div>
     <div class="col-md-4" style="padding: 0;"> 
 		<?php $awardedarray=project_awarded_to($opengig['prjId']);
+		print( $awardedarray );
 		 $awarded=$awardedarray['awardedto'];
 		 $awardedInfo=get_user_Info(encrypt_str($awarded));
 		$awardednametodisplay="";
