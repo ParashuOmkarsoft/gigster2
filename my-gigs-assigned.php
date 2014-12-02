@@ -1,3 +1,4 @@
+
 <?php 
 include('cfg/cfg.php'); 
 include('cfg/functions.php');
