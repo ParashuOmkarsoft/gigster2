@@ -11,9 +11,9 @@ $maildesc=filter_text($_POST['maildesc']);
 
 $to="infodreamssolutions@gmail.com";
 $from="notifications@gigster.com";
-$subject="You have recieved a new message on Gigster";
+$subject="You have received a new message on Gigster";
 $mailmatter='<p>Hello Administrator</p>
-<p>You have recieved a new message on gigster.</p>
+<p>You have received a new message on gigster.</p>
 <p>Please have a look</p>
 <p>&nbsp;</p>
 <p><strong>From</strong></p>

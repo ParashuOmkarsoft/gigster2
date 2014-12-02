@@ -23,7 +23,7 @@ include('cfg/more-functions.php');
     <li><a href="<?php echo $serverpath;?>inprogress"> <strong> In progress</strong><?php if($unreadreports)
 						  {
 							  ?>
-							  <i class="fa fa-circle" style="color:green;" title="New Report Recieved"></i>
+							  <i class="fa fa-circle" style="color:green;" title="New Report Received"></i>
 							  <?php
 						  }
 						  ?></a></li>

@@ -38,7 +38,7 @@ if($awardedtoInfo['notify']=='1')
 {
 
 	$mailto=filter_text($awardedtoInfo['userId']);
-								$mailsubject="Congratulation, you have recieved a final feedback on gig $gigname.";
+								$mailsubject="Congratulation, you have received a final feedback on gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 }	
 			$mailmatter="<p>Congratulations!  </p>
@@ -74,7 +74,7 @@ else
 				if($ownerInfo['notify']=="1")
 				{
 								$mailto=filter_text($awardedtoInfo['userId']);
-								$mailsubject="You have recieved a feedback and completetion request on your gig $gigname.";
+								$mailsubject="You have received a feedback and completetion request on your gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
 				$mailmatter="<p>Congratulations!  </p>
@@ -108,7 +108,7 @@ else
 				if($ownerInfo['notify']=="1")
 				{
 					$mailto=filter_text($awardedtoInfo['userId']);
-								$mailsubject="You have recieved a feedback on your gig $gigname.";
+								$mailsubject="You have received a feedback on your gig $gigname.";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 				}
 				

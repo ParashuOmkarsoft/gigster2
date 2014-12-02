@@ -72,7 +72,7 @@ else
 	{
 		$mailto=filter_text($giguserinfo['usermail']);
 	$mailmatter="<p>Hello ".$giguserinfo['username']." </p>
-											  <p>You have recieved a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username'].".</p><p>".strip_string($proposal,100)."</p><p><a href='".get_project_link($serverpath,$gigdetails['prjId'])."'>Click here to see more details and award this Gig.</a></p><p>Best regards, </p><p>GigsterGo.com </p>";
+											  <p>You have received a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username'].".</p><p>".strip_string($proposal,100)."</p><p><a href='".get_project_link($serverpath,$gigdetails['prjId'])."'>Click here to see more details and award this Gig.</a></p><p>Best regards, </p><p>GigsterGo.com </p>";
 
 						
 								$mailto=filter_text($giguserinfo['usermail']);
@@ -84,7 +84,7 @@ else
 								}
 								
 								$mailmatter="<p>Hello ".$giguserinfo['username']." </p>
-											  <p>You have recieved a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username'].".</p><p>".strip_string($proposal,100)."</p><p><a href='".get_project_link($serverpath,$gigdetails['prjId'])."'>Click here to see more details and award this Gig.</a></p>";
+											  <p>You have received a new bid on your Gig ".$gigdetails['prjTitle']." from ".$userInfo['username'].".</p><p>".strip_string($proposal,100)."</p><p><a href='".get_project_link($serverpath,$gigdetails['prjId'])."'>Click here to see more details and award this Gig.</a></p>";
 											 
 								
 								
