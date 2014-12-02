@@ -305,7 +305,7 @@ else
 }
 else{?>
       <div> <a data-toggle="modal" href="#awardmodal<?php echo $projectbids['rows'][$i]['bidId'];?>" >
-             <img src="http://gigstergo.com/images/symbol.png" style="padding: 15px 15px 0px 0px;" title="Awarded">
+              <button type="button" class="btn btn-bid" title="Award to this Gigster">Award</button>
              </a> 
     </div>
       <?php }
