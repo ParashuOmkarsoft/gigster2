@@ -78,10 +78,11 @@ if($sql['count']>0)
 		
 		if($sql['rows'][$i]['isread'])
 		{
-			$st="style='background: rgb(255, 244, 219);font-weight:bold;'";
+
+			$st="style='background: rgb(255, 244, 219);font-weight:bolder;'";
 		}
 		else
-		{
+		{	
 			$st="style='background: rgb(255, 244, 219);'";
 		}
 	
