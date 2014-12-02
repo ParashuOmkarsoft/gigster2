@@ -94,7 +94,8 @@ if($sql['count']>0)
        
         </td>                
 		<td><?php echo $nametodisplay;?></td> 
-        <td><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo strip_string(html_entity_decode($sql['rows'][$i]['msgcontent']),50);?></a></td>
+        <td><a href="#messagemodal" data-toggle="modal" onClick="view_message_modal('<?php echo $serverpath;?>','<?php echo $sql['rows'][$i]['msgId'];?>');"><?php echo strip_string(strip_tags(html_entity_decode($sql['rows'][$i]['msgcontent'])),50);?></a></td>
+        
         <td><?php echo get_time($sql['rows'][$i]['msgon']);?></td>     
         <td style="width:60px;"> <?php if($jj)
 		{
