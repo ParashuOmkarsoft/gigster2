@@ -306,10 +306,10 @@ box-shadow: 0px 0px 2px #000000;'";
      </div> 
 	</div>
     </div>
-    <div class="col-md-4"><img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"></div>
    
    </div>
-
+ <div class="col-md-4"><img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"></div>
+   
 
       
      <?php /*?> <div class="col-md-2 giginnerimg gigimg">
