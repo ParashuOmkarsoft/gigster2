@@ -138,7 +138,7 @@ include('cfg/more-functions.php');
 						$bidderpic="images/admin.png";
 					}
 		?>
-        <img style="margin-top: -33px;"> src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=45&height=45&cropratio=1:1" class="img-circle">
+        <img style="margin-top: -33px;"src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=45&height=45&cropratio=1:1" class="img-circle">
         <?php } ?>
         </div>
       </div>
