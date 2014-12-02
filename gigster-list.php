@@ -128,7 +128,19 @@ include('cfg/more-functions.php');
                                 <?php
 							}
 							?>
-
+<?php if($gigsterInfo['skills'])
+							{
+								?>
+                                <span class="artst-ux "><?php echo ($gigsterInfo['skills']);?></span>
+							<?php
+							}
+							else
+							{
+								?>
+								<span class="artst-ux">N/A</span> 
+                                <?php
+							}
+							?>
                                
                             </div>
                            
