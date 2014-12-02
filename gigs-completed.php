@@ -80,9 +80,9 @@ include('cfg/more-functions.php');
 		 $userReview=get_project_feedback_1($opengig['prjId'],$opengig['userId']);
 		 ?>
 		  <h4><?php echo get_user_name($opengig['userId']);?></h4>
-         <div class="row">
          
-          <div class="col-md-12">
+         
+          
 		 <?php
 		 if($userReview)
 		 {
@@ -112,10 +112,9 @@ include('cfg/more-functions.php');
 		<?php 
 		 }
 		 ?>
-          </div>
-		</div>
-        <div class="row">
-         <div class="col-md-12">
+          
+		
+        
           
           <h4><?php echo get_user_name($mawardedto['awardedto']);?></h4>
 		 <?php
@@ -158,7 +157,7 @@ include('cfg/more-functions.php');
 		 }
 		?>
       
-          </div></div>
+        
       
       
       
