@@ -57,12 +57,13 @@ else
       <h2 style="font-size:20px;color: #6C3E08;"><strong>Proposed budget - </strong><?php if($gigdetails['proposedbudget']>0){ echo $gigdetails['proposedbudget']." ".$currency; }else{ echo "Gigster's price";}?></h2>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
     </div>
-    <div id="front" class="col-md-4 giginnerimg" style="width: 273px;padding-right:0px;padding-top: 15px;">
+    <div id="front" class="col-md-4 giginnerimg" style="padding-top: 15px;">
       
       <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=80&height=80&cropratio=1:1" class="img-circle">
     
         
         <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2>
+        <div>
         <?php
 		
                              for($t=$gigsterrating;$t<5;$t++) 
@@ -76,6 +77,8 @@ else
 							  {
 								  ?>
         <img src="<?php echo $serverpath;?>images/star_1.png" />
+
+        </div>
         
 <?php
 							  }
@@ -90,7 +93,7 @@ else
 						{
 ?>
              
-                <div class="col-md-6" style="width: 259px;">
+               
                        <?php if(isset($_SESSION['uId']))
 					   {
 						   ?>
@@ -152,7 +155,7 @@ else
 				}
 			}
 ?>
-      </div>
+      
      
     </div>
 
