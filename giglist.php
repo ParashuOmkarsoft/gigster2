@@ -154,10 +154,10 @@ include('cfg/more-functions.php');
                             <div class="modal-content cform">
                               <div class="container">
                                 <div class="col-md-12">
-									<h2 id="login1">Your bidding details</h2>
+									<h2 id="bid-detail">Your bidding details</h2>
                                     <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>submitproposal" role="form" method="post" >
                                                                       
-                                    <h2 class="source"  style="padding-bottom: 20px;"> Title : <?php echo $opengig['prjTitle'];?></h2>
+                                    <h2 class="source"  style="padding-bottom: 20px;"><?php echo $opengig['prjTitle'];?></h2>
                                     <div class="col-md-12" style="padding: 0px;">
                                       <div class="form-group">
                                         <label for="inputText" class="col-sm-4 control-label newlog">Bid Details :</label>
@@ -165,7 +165,7 @@ include('cfg/more-functions.php');
                                         <br/>
                                         <div class="col-sm-12">
                                         
-										  <p ><?php echo $checkSql['rows']['0']['bidcontent']; ?></p>
+										  <p style="text-align: left;" ><?php echo $checkSql['rows']['0']['bidcontent']; ?></p>
                                          
                                         </div>
                                       </div>
@@ -174,7 +174,7 @@ include('cfg/more-functions.php');
                                         <Br/>
                                         <br/>
                                         <div class="col-md-8">
-                                          <p><?php echo $checkSql['rows']['0']['bidprice']; ?></p>
+                                          <p style="text-align: left;"><?php echo $checkSql['rows']['0']['bidprice']; ?></p>
                                         </div>
                                       </div>
                                       
