@@ -308,10 +308,11 @@ include('cfg/more-functions.php');
 		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
 			
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-			//echo "here    ".$profilepic;
+			echo "here    ".$profilepic;
 			if(file_exists($profilepic))
 			{
-				$profilepic=$profilepic;								
+				$profilepic=$profilepic;	
+				echo "imggggg    ".$profilepic;							
 			}
 			else
 			{
@@ -320,13 +321,7 @@ include('cfg/more-functions.php');
 			  ?>
 
         <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=45&height=45&cropratio=1:1"></a>
-          <div class="tyco">
-            <h4><a <?php /*?>href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"<?php */?>>
-              <?php //echo strip_string($nametodisplay,6);?>
-              </a></h4>
-             
-		
-          </div>
+          
           
           <h4>&nbsp;</h4>
         </div>
