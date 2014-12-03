@@ -1504,3 +1504,6 @@ border-top: 1px solid #fab518;
 }
 .about-row{border-bottom: 2px solid #fd8900;margin:0px;padding: 15px 0 15px 0;}
 .org-box{padding-left: 0px;}
+#bid-name{font-size: 20px;
+font-family: 'source_sans_probold';
+color: #473610;margin-left: 15px;}
