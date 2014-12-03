@@ -173,7 +173,8 @@ The GIG OWNER has access, free-of-charge, to:<br>
 
 
 Failure by the GIG OWNER to fulfill any of their obligations under this section gives GIGSTERGO.COM the right to suspend or limit its services, and to unilaterally terminate by right any interaction with the GIG OWNER, without prejudicing any legal action for interests or damages.<br>
-
+<div class="clearfirst"></div>
+</div>
 <strong> ACCESS TO SERVICES ON THE PLATFORM FOR THE GIGSTER</strong><br>
 The GIGSTER will provide information on the profile page, which will be accessible to (the) USER(S) in compliance with the following conditions:<br>
 <span class="bullet">●</span> The information must without fail be compliant with the laws of Republic of Singapore.<br>
