@@ -28,7 +28,7 @@ include('cfg/more-functions.php');
          <span id="bond">What is Gigster ?</span> 
          <p class="james">Gigster is all about helping you live, work and play better. Whenever you want to Get Anything Done, just post a Gig and we will find the right Gigster to help you</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>  
       <div class="row secondinner">
         <div class="col-md-1">
@@ -38,7 +38,7 @@ include('cfg/more-functions.php');
          <span id="bond">What is a Gig?</span> 
          <p class="james">A Gig is anything you want to get done. Whether it is a manual task or if you're looking for someone to hire on a short term basis</p> 
         </div>
-         <div class="clearfirst"></div>
+        
       </div>
        <div class="row secondinner">
         <div class="col-md-1">
@@ -48,7 +48,7 @@ include('cfg/more-functions.php');
          <span id="bond">Who are Gigsters?</span> 
          <p class="james">Gigsters are anyone who can provide a service. Anyone can be a Gigster. It is powered by the community, inspired by people like you. Oh, and it's free to join, so login here<link> and fill in your profile!</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
        <div class="row secondinner">
         <div class="col-md-1">
@@ -58,7 +58,7 @@ include('cfg/more-functions.php');
          <span id="bond">Why should I post a Gig?</span> 
          <p class="james">Instead of spending hours finding the right help, post a Gig and we will find the a match for you.</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -68,7 +68,7 @@ include('cfg/more-functions.php');
          <span id="bond">I'm convinced, so how do I post a Gig?</span> 
          <p class="james">It's really easy and you can do it in two clicks here!</p> 
         </div>
-         <div class="clearfirst"></div>
+      
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -78,7 +78,7 @@ include('cfg/more-functions.php');
          <span id="bond">What are the charges for posting a Gig?</span> 
          <p class="james">It's totally free! You only pay for the services provided by the Gigster</p> 
         </div>
-         <div class="clearfirst"></div>
+       
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -88,7 +88,7 @@ include('cfg/more-functions.php');
          <span id="bond">Why should I join as a Gigster?</span> 
          <p class="james">we understand it is hard to get your name out there, especially online. We're here to help you find the right Gigs. You have full control of which Gigs you want to do and how much you need to get paid to do the Gig. AND we don't take a cut of your earnings like other sites do!</p> 
         </div>
-         <div class="clearfirst"></div>
+     
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -98,7 +98,7 @@ include('cfg/more-functions.php');
          <span id="bond">What do you mean right Gig?</span> 
          <p class="james">Just create your profile<link> with the keywords you want to be alerted for, and when a Gig with those keywords comes along, we'll alert you via our App and email</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -108,7 +108,7 @@ include('cfg/more-functions.php');
          <span id="bond">How do I communicate with the Gig owner/Gigster?</span> 
          <p class="james">use the inbuilt Message centre on the website or the app to chat and send attachments</p> 
         </div>
-         <div class="clearfirst"></div>
+        
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -118,7 +118,7 @@ include('cfg/more-functions.php');
          <span id="bond">Where is Gigster available?</span> 
          <p class="james">It is currently available only in Singapore</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -128,7 +128,7 @@ include('cfg/more-functions.php');
          <span id="bond">Why only Singapore?</span> 
          <p class="james">we believe in building the community that is Singapore and when the community helps itself, beautiful things happen</p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
       <div class="row secondinner">
         <div class="col-md-1">
@@ -139,7 +139,7 @@ include('cfg/more-functions.php');
          <p class="james">The terms of the Gig is agreed by both the Gig Owner and the Gigster
 </p> 
         </div>
-         <div class="clearfirst"></div>
+         
       </div>
 
 
