@@ -105,7 +105,8 @@ include('cfg/more-functions.php');
   {
 	  ?>
   <div style="text-align: center;padding: 50px;padding-top: 0px;">  
-  <a data-toggle="modal" href="#loginmodel" ><button class="btn signup-btn" type="submit">Free Signup!</button></a></div>  
+  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
+  </div>  
 <?php
   }
 ?>

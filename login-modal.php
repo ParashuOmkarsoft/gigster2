@@ -32,8 +32,8 @@
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10 logsign">
                 <button type="submit" class="btn btn-warning loginbtn">Login</button>
-                <button type="submit" class="btn btn-warning loginbtn">Signup</button>
-             
+                <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
+                <a data-toggle="modal" data-dismiss="modal" data-target="#signupmodal" class="btn btn-warning loginbtn" /> Free Signup</a>
               </div>
             </div>
         </form>

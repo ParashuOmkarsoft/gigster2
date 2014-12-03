@@ -25,8 +25,8 @@
   
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10 logsign">
-      <button type="submit" class="btn btn-warning loginbtn">Login</button>
-      <a href="#signupmodal"  data-dismiss="modal" class="btn btn-warning loginbtn">Sign Up</a>
+      <button type="submit" class="btn btn-warning loginbtn">Sign Up</button>
+      <a data-target="#loginmodel" data-toggle="modal" data-dismiss="modal" class="btn btn-warning loginbtn">Login</a>
     </div>
   </div>
 </form>

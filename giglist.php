@@ -86,7 +86,7 @@ include('cfg/more-functions.php');
        <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,10);?></a></h4>
         <h4>&nbsp;</h4>
       
-      <div class="col-md-12" >
+      <div class="col-md-12" style="padding-right: 0px;">
         <?php
                               
 							   for($t=$gigsterrating;$t<5;$t++)
