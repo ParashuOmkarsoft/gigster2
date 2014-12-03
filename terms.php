@@ -71,7 +71,7 @@ include('cfg/more-functions.php');
       The T&Cs apply to any use of the PLATFORM.<br>
       These T&Cs came into force on (01 November 2014) and this version of them cancels and replaces any previous versions or contracts.<br>
       The USER is asked to carefully read the T&Cs, which are accessible via an online link on the PLATFORM. The USER is advised to download and/or print out the T&Cs and to keep a copy for themselves. The USER is also advised to read the T&Cs each time they visit the PLATFORM as they may be modified at any time.<br>
-      Any modification to the T&Cs will be notified to the USER by means of a window showing a message to this effect which will appear on the PLATFORM. Any modification of the T&Cs will be deemed to have been tacitly accepted by the USER if the latter continues to connect to the PLATFORM without expressly stating otherwise.<br>
+      Any modification to the T&Cs will be notified to the USER by means of a window showing a message to this effect which will appear on the PLATFORM. Any modification of the T&Cs will be deemed to have been tacitly accepted by the USER if the latter continues to connect to the PLATFORM without expressly stating otherwise.
       </p> 
         </div>
          <div class="clearfirst"></div>
