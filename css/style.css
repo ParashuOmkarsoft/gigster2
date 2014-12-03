@@ -1494,3 +1494,6 @@ border-radius: 10px;
 background: #EC6B39;
 outline: none;
 margin-left: 12px;}
+strong.main-title {
+display: block;
+margin-top: 10px;
