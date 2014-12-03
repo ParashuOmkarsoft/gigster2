@@ -1497,3 +1497,7 @@ margin-left: 12px;}
 strong.main-title {
 display: block;
 margin-top: 10px;
+padding: 10px;
+padding-left: 0px;
+border-top: 1px solid #fab518;
+}
