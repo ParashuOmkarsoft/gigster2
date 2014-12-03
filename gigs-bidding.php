@@ -83,7 +83,7 @@ include('cfg/more-functions.php');
 			 $projectbids=get_project_bids($gigId);
 	   ?>
   <div class="row myrow-bidding">
-    <div class="col-md-8" style="padding: 0px;">
+    <div class="col-md-12" style="padding: 0px;">
       <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo strip_string($opengig['prjTitle'],29);?>
       <?php if(get_unread_bids_project($opengig['prjId']))
 	  {
@@ -99,7 +99,7 @@ include('cfg/more-functions.php');
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
      
       <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
-    </div>
+   
     
       
       <div class="col-md-4 giginnerimg gigimg" style="padding: 0px;">
@@ -110,6 +110,7 @@ include('cfg/more-functions.php');
 								  ?>
 								  <img src="<?php echo $serverpath;?>images/star_3.png" />
 								  <?php
+						
 							  }
 							   for($t=$gigsterrating;$t<5;$t++)
 							  {
