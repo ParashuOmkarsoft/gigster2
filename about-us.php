@@ -20,7 +20,7 @@ include('cfg/more-functions.php');
       <h2 id="giglog">About Gigster</h2>
       
   
-      <div class="row firstdinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/1.jpg" class="img-circle">
         </div>
