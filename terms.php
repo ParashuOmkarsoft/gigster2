@@ -283,7 +283,7 @@ The compliancy of the profiles of the USER is defined in the following non-exhau
 <span class="bullet">●</span> The content of profiles cannot include directly or indirectly, the personal details of the USER,<br>
 <span class="bullet">●</span> The content of profiles should be expressed and disseminated in an intelligent manner,<br>
 <span class="bullet">●</span> The content of profiles must not contain anything that could be discriminatory, regardless of the nature,<br>
-<span class="bullet">●</span> The content of profiles should be written in a language supported by the site GIGSTERGO.COM.<br>
+<span class="bullet">●</span> The content of profiles should be written in a language supported by the site GIGSTERGO.COM.
 
 
 <br><strong class="main-title">PROCEDURE</strong>
