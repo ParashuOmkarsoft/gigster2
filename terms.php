@@ -183,8 +183,7 @@ The GIGSTER will provide information on the profile page, which will be accessib
 <span class="bullet">●</span> The information must without fail respect in their entirety all clauses of the current T&Cs.<br>
 
 The PLATFORM GIGSTERGO.COM, reserves all rights to moderate, suspend, or remove any information that does not meet the above requirements or other requirements stated in these T&Cs, without prejudicing any legal action for interests or damages.<br>
-div class="clearfirst"></div>
-</div>
+
 <strong>SERVICES PERTAINING TO THE GIGSTER</strong><br>
 The GIGSTER will benefit, without reservation, from the following conditions as set out in these T&Cs:<br>
 <span class="bullet">●</span> The opportunity to look for GIGs.<br>
