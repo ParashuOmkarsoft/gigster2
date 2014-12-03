@@ -308,7 +308,7 @@ include('cfg/more-functions.php');
 		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
 			
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-			echo "here    ".$profilepic;
+			//echo "here    ".$profilepic;
 			if(file_exists($profilepic))
 			{
 				$profilepic=$profilepic;	
