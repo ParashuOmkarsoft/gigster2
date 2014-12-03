@@ -165,7 +165,7 @@ include('cfg/more-functions.php');
                                         <br/>
                                         <div class="col-sm-12">
                                         
-										  <p style="text-align: left;" ><?php echo $checkSql['rows']['0']['bidcontent']; ?></p>
+										  <p style="text-align: left;word-wrap: break-word;" ><?php echo $checkSql['rows']['0']['bidcontent']; ?></p>
                                          
                                         </div>
                                       </div>
