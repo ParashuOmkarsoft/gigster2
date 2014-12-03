@@ -192,14 +192,16 @@ The GIGSTER will benefit, without reservation, from the following conditions as 
 <span class="bullet">●</span> The opportunity to subscribe via email, Twitter, Facebook.<br>
 <span class="bullet">●</span> The opportunity to remain informed of all changes to the status of GIGs for which they have bidded on.<br>
 <span class="bullet">●</span> The opportunity to provide status updates for the GIGs they have undertaken.<br>
-<div class="clearfirst"></div>
 </p>
+<div class="clearfirst"></div>
+
 </div>
 <p class="james">
 <strong id="p-name">DURATION AND END OF SERVICES TO THE GIGSTER</strong><br>
 In the case of failure of the GIGSTER to adhere to one of the requirements of these T&Cs, GIGSTERGO.COM may terminate this agreement immediately (without notice), prejudicing any legal action for interests or damages.<br>
-<div class="clearfirst"></div>
 </p>
+<div class="clearfirst"></div>
+
 </div>
 <strong id="p-name">PROOF</strong><br>
 It is expressly agreed that the archived data and the data uploaded and stored in the information system GIGSTERGO.COM, particularly in its email tools, have a probative value with regard to documents sent, orders placed, and the fulfillment of the obligations of the parties.<br>
