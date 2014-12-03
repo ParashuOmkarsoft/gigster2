@@ -102,7 +102,7 @@ include('cfg/more-functions.php');
    
     
       
-      <div class="col-md-4 giginnerimg gigimg">
+      <div class="col-md-4 giginnerimg gigimg" style="padding: 15px 0;">
         <?php /*?>   <div class="col-md-6">
                    <?php
                               for($t=0;$t<$gigsterrating;$t++)
