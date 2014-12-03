@@ -321,7 +321,7 @@ include('cfg/more-functions.php');
 
 			  ?>
 			<?php //echo "dfif ".$profilepic; ?> 
-        <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $profilepic;?>" class="img-circle"></a>
+        <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"></a>
           
           
           <h4>&nbsp;</h4>
