@@ -26,21 +26,21 @@ include('cfg/more-functions.php');
         </div>
         <div class="col-md-11">
          <span id="bond">What is Gigster ?</span> 
-         <p class="james">Gigster is all about helping you live, work and play better. Whenever you want to Get Anything Done, just post a Gig and we will find the right Gigster to help you</p> 
+         <p class="james">Gigster is all about helping you live, work and play better. Whenever you want to Get Anything Done, just post a Gig and we will find the right Gigster to help you.</p> 
         </div>
          
       </div>  
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/2.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What is a Gig?</span> 
-         <p class="james">A Gig is anything you want to get done. Whether it is a manual task or if you're looking for someone to hire on a short term basis</p> 
+         <p class="james">A Gig is anything you want to get done. Whether it is a manual task or if you're looking for someone to hire on a short term basis.</p> 
         </div>
         
       </div>
-       <div class="row secondinner">
+       <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/3.jpg" class="img-circle">
         </div>
@@ -50,7 +50,7 @@ include('cfg/more-functions.php');
         </div>
          
       </div>
-       <div class="row secondinner">
+       <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/4.jpg" class="img-circle">
         </div>
@@ -60,7 +60,7 @@ include('cfg/more-functions.php');
         </div>
          
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/5.jpg" class="img-circle">
         </div>
@@ -70,74 +70,74 @@ include('cfg/more-functions.php');
         </div>
       
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/6.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What are the charges for posting a Gig?</span> 
-         <p class="james">It's totally free! You only pay for the services provided by the Gigster</p> 
+         <p class="james">It's totally free! You only pay for the services provided by the Gigster.</p> 
         </div>
        
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/7.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Why should I join as a Gigster?</span> 
-         <p class="james">we understand it is hard to get your name out there, especially online. We're here to help you find the right Gigs. You have full control of which Gigs you want to do and how much you need to get paid to do the Gig. AND we don't take a cut of your earnings like other sites do!</p> 
+         <p class="james">We understand it is hard to get your name out there, especially online. We're here to help you find the right Gigs. You have full control of which Gigs you want to do and how much you need to get paid to do the Gig. AND we don't take a cut of your earnings like other sites do!</p> 
         </div>
      
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/8.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">What do you mean right Gig?</span> 
-         <p class="james">Just create your profile<link> with the keywords you want to be alerted for, and when a Gig with those keywords comes along, we'll alert you via our App and email</p> 
+         <p class="james">Just create your profile<link> with the keywords you want to be alerted for, and when a Gig with those keywords comes along, we'll alert you via our App and email.</p> 
         </div>
          
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/9.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">How do I communicate with the Gig owner/Gigster?</span> 
-         <p class="james">use the inbuilt Message centre on the website or the app to chat and send attachments</p> 
+         <p class="james">Use the inbuilt Message centre on the website or the app to chat and send attachments.</p> 
         </div>
         
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/10.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Where is Gigster available?</span> 
-         <p class="james">It is currently available only in Singapore</p> 
+         <p class="james">It is currently available only in Singapore.</p> 
         </div>
          
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/11.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">Why only Singapore?</span> 
-         <p class="james">we believe in building the community that is Singapore and when the community helps itself, beautiful things happen</p> 
+         <p class="james">We believe in building the community that is Singapore and when the community helps itself, beautiful things happen.</p> 
         </div>
          
       </div>
-      <div class="row secondinner">
+      <div class="row about-row">
         <div class="col-md-1">
           <img src="<?php echo $serverpath;?>images/12.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
          <span id="bond">How do I pay the Gigster/How do I get paid as a Gigster?</span> 
-         <p class="james">The terms of the Gig is agreed by both the Gig Owner and the Gigster
-</p> 
+         <p class="james">The terms of the Gig is agreed by both the Gig Owner and the Gigster.
+         </p> 
         </div>
          
       </div>
