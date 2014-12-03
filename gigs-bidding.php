@@ -100,10 +100,8 @@ include('cfg/more-functions.php');
      
       <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
     </div>
-    <div class="col-md-12" style="padding: 0px;">
-      <div class="col-md-8" style="padding: 0px;">
-        
-      </div>
+    
+      
       <div class="col-md-4 giginnerimg gigimg" style="padding: 0px;">
         <?php /*?>   <div class="col-md-6">
                    <?php
