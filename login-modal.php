@@ -20,20 +20,20 @@
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control passinpute" id="inputEmail3" placeholder="">
+                  <input type="email" class="form-control login-passinpute" id="inputEmail3" placeholder="">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control passinpute" id="inputPassword3" placeholder="">
+                  <input type="password" class="form-control login-passinpute" id="inputPassword3" placeholder="">
                 </div>
               </div>    
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10 logsign">
-                <button type="submit" class="btn btn-warning loginbtn">Login</button>
+                <button type="submit" class="btn btn-warning loginbtn-on-model">Login</button>
                 <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
-                <a data-toggle="modal" data-dismiss="modal" data-target="#signupmodal" class="btn btn-warning loginbtn" /> Free Signup</a>
+                <a data-toggle="modal" data-dismiss="modal" data-target="#signupmodal" class="btn btn-warning loginbtn-on-model" /> Free Signup</a>
               </div>
             </div>
         </form>

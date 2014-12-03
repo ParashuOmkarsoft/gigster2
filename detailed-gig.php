@@ -206,8 +206,8 @@ else
   
     <div class="col-md-10 person1">
       <div style="float:left"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1"class="img-circle"> </div>
-      <div> <span id="bond"><?php echo $biddernametodisplay ;?></span> </div>
-      <div> <span id="bond">Rating :</span>
+      <div> <span id="bid-name"><?php echo $biddernametodisplay ;?></span> </div>
+      <div> <span id="bid-name"></span>
         <?php
 				 for($t=0;$t<$biderrating;$t++)
 							  {
@@ -223,7 +223,7 @@ else
 							  }
 		?>
         
-        <!--<img style="margin: 0px 0px 5px 10px;" src="images/star.png"><span id="bond">Earnings :    &#36; 2000.00</span>--> 
+        <!--<img style="margin: 0px 0px 5px 10px;" src="images/star.png"><span id="bid-name">Earnings :    &#36; 2000.00</span>--> 
       </div>
       <div> <span id="alldate"><?php echo get_time($projectbids['rows'][$i]['bidon']); ?></span>
        <?php if($unreadbids)
@@ -310,7 +310,7 @@ else{?>
                  if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 15px 0px 0px;" title="Awarded" />
+      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 13px 0px 0px;" title="Awarded" />
       <?php
 	}
 	?>

@@ -57,6 +57,7 @@ include('cfg/more-functions.php');
 		   for($i=0;$i<$mcount;$i++)
 		   {
 			  $opengig=$opengigs['rows'][$i];
+			  
 			  $gigsterInfo="";
 			  $gigsterInfo=get_user_Info(encrypt_str($opengig['userId']));
 			  $nametodisplay="";
@@ -67,11 +68,15 @@ include('cfg/more-functions.php');
 			  }
 			  
 	   ?>
-  <div class="row myrow"  style="border-top: none; border-bottom:none;">
-  <div class="col-md-12" style="border-bottom: 3px solid #fd8900;padding: 0px 0px 15px 0px;">
+  
+  <div class="row myrow" style="border-bottom: 3px solid #fd8900;padding: 0px 0px 15px 0px;">
     <div class="col-md-8" style="padding: 0;">
-      <h2 id="giglisth2"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>"><?php echo $opengig['prjTitle'];?></a></h2> 
-        <div class="col-md-8" style="padding: 0;">
+      
+	    <a id="giglisth2" href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>">
+      		<?php echo $opengig['prjTitle'];?>
+      	</a>
+      
+       
         <!-- <p id="gigpara"> -->
         <h3 class="comp-h4">Feedback</h3>
          <?php 
@@ -80,15 +85,15 @@ include('cfg/more-functions.php');
 		 $userReview=get_project_feedback_1($opengig['prjId'],$opengig['userId']);
 		 ?>
 		  <h4><?php echo get_user_name($opengig['userId']);?></h4>
-         <div class="row">
          
-          <div class="col-md-12">
+         
+          
 		 <?php
 		 if($userReview)
 		 {
 		  if($userReview['feedback'])
 			{
-				echo $userReview['feedback'];
+				echo '<p>'.$userReview['feedback'].'</p>';
 			}
 			?>
 			<Br/>
@@ -112,10 +117,9 @@ include('cfg/more-functions.php');
 		<?php 
 		 }
 		 ?>
-          </div>
-		</div>
-        <div class="row">
-         <div class="col-md-12">
+          
+		
+        
           
           <h4><?php echo get_user_name($mawardedto['awardedto']);?></h4>
 		 <?php
@@ -124,14 +128,9 @@ include('cfg/more-functions.php');
 		 if($userReview)
 		 {
 		 ?>
-		 
-            <?php 
-						
-			?>
-         
 		 	<?php if($userReview['feedback'])
 			{
-				echo $userReview['feedback'];
+				echo '<p>'.$userReview['feedback'].'</p>';
 			}
 			?>
 			<Br/>
@@ -158,15 +157,16 @@ include('cfg/more-functions.php');
 		 }
 		?>
       
-          </div></div>
+        
       
       
       
-    </div>
+    
       
     </div>
     <div class="col-md-4" style="padding: 0;"> 
 		<?php $awardedarray=project_awarded_to($opengig['prjId']);
+		
 		 $awarded=$awardedarray['awardedto'];
 		 $awardedInfo=get_user_Info(encrypt_str($awarded));
 		$awardednametodisplay="";
@@ -299,60 +299,9 @@ include('cfg/more-functions.php');
 	}
 ?>
 
-        <?php 
-			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
-			$checkSql=@db_query($checkQuery);
-			for($ad=0;$ad<$checkSql['count'];$ad++)
-			{
-			$profilepicId = $checkSql['rows'][$ad]['awardedto'];
-		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
-			
-			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-			//echo "here    ".$profilepic;
-			if(file_exists($profilepic))
-			{
-				$profilepic=$profilepic;	
-										
-			}
-			else
-			{
-				$profilepic="images/admin.png";
-			}
-
-			  ?>
-
-			 
-        <div class="col-md-12">
-         <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> 
-         	<img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=45&height=45&cropratio=1:1" />
-         </a>
-          
-          
-          <h4>&nbsp;</h4>
-        </div>
-        <div class="col-md-12">
-              <?Php   
-			  				$gigsterrating=0;
-							$gigsterrating=get_user_rating($profilepicId); 
-                             
-							   for($t=$gigsterrating;$t<5;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_4.png" />
-								  <?php
-							  }
-							   for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-								  <img src="<?php echo $serverpath;?>images/star_3.png" />
-								  <?php
-							  }
-							  ?>
-                   
-             </div>
-        <?php } ?>
-  </div>
- </div><!-- end of col-12 --> 
+        
+  
+ </div><!-- end of row--> 
 <div class="lastpagination">
     <ul class="pagination">
       <?php echo $pagination;?>
