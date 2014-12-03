@@ -21,27 +21,27 @@ include('cfg/more-functions.php');
       
   
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/1.jpg" class="img-circle">
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11 org-box">
          <span id="bond">What is Gigster ?</span> 
          <p class="james">Gigster is all about helping you live, work and play better. Whenever you want to Get Anything Done, just post a Gig and we will find the right Gigster to help you.</p> 
         </div>
          
       </div>  
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/2.jpg" class="img-circle">
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11 org-box">
          <span id="bond">What is a Gig?</span> 
          <p class="james">A Gig is anything you want to get done. Whether it is a manual task or if you're looking for someone to hire on a short term basis.</p> 
         </div>
         
       </div>
        <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/3.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -51,7 +51,7 @@ include('cfg/more-functions.php');
          
       </div>
        <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/4.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -61,7 +61,7 @@ include('cfg/more-functions.php');
          
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/5.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -71,7 +71,7 @@ include('cfg/more-functions.php');
       
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/6.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -81,7 +81,7 @@ include('cfg/more-functions.php');
        
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/7.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -91,7 +91,7 @@ include('cfg/more-functions.php');
      
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/8.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -101,7 +101,7 @@ include('cfg/more-functions.php');
          
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/9.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -111,7 +111,7 @@ include('cfg/more-functions.php');
         
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/10.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -121,7 +121,7 @@ include('cfg/more-functions.php');
          
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/11.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
@@ -131,7 +131,7 @@ include('cfg/more-functions.php');
          
       </div>
       <div class="row about-row">
-        <div class="col-md-1">
+        <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/12.jpg" class="img-circle">
         </div>
         <div class="col-md-11">
