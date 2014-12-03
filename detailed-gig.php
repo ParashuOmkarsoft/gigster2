@@ -207,7 +207,7 @@ else
     <div class="col-md-10 person1">
       <div style="float:left"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=80&height=80&cropratio=1:1"class="img-circle"> </div>
       <div> <span id="bid-name"><?php echo $biddernametodisplay ;?></span> </div>
-      <div> <span id="bid-name">Rating :</span>
+      <div> <!-- <span id="bid-name">Rating :</span> -->
         <?php
 				 for($t=0;$t<$biderrating;$t++)
 							  {
