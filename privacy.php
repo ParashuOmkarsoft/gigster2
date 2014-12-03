@@ -35,12 +35,12 @@ From time to time, we may update this Personal Data Protection Policy to ensure 
 This Personal Data Protection Policy forms a part of the terms and conditions governing your relationship with us and should be read in conjunction with such T&Cs. In the event of any inconsistency between the provisions of the Personal Data Protection Policy and the T&Cs, the provisions of the T&Cs shall prevail.<br><br>
 </p> 
 </div>
-<div class="clearfirst"></div>
+<!--<div class="clearfirst"></div>-->
 </div> 
 <div class="row firstdinner">
 <div class="col-md-12" style="margin-top:15px;padding=0px;">
 <span id="p-name">1.Your Personal Data</span> 
-<p class="james">In this Personal Data Protection Policy, “Personal Data” refers to any data and/or information about you from which you can be identified by, either (a) from that data; or (b) from that data and other information to which we may have legitimate access to. Examples of such Personal Data include but are not limited to:<br><br>
+<p class="james" style="padding-top: 16px;">In this Personal Data Protection Policy, “Personal Data” refers to any data and/or information about you from which you can be identified by, either (a) from that data; or (b) from that data and other information to which we may have legitimate access to. Examples of such Personal Data include but are not limited to:<br><br>
 your name, NRIC, passport or other identification number, telephone number(s), mailing address, email address and any other information relating to you which you have provided in any forms you may have submitted to use, or in other forms of interaction with you;<br><br>
 your photos;<br><br>
 your employment history, education background, and income levels;<br><br>
