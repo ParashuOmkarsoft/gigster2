@@ -58,6 +58,8 @@ else
 	{
 	
 				
+
+				
 						
 								$mailto=filter_text($usermail);
 								$mailsubject="Congratulation, your proposal is chosen";
