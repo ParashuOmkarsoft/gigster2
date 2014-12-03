@@ -298,7 +298,7 @@ include('cfg/more-functions.php');
 		$pagination.= "</ul></div>";
 	}
 ?>
-<!-- <div class="col-md-2 giginnerimg gigimg">-->
+
         <?php 
 			$checkQuery="select a.* from btr_assignment as a ,btr_projects as p where p.userId='".$uId."' and a.projectId='".$opengig['prjId']."' and p.status='3' group by a.projectId";
 			$checkSql=@db_query($checkQuery);
@@ -308,18 +308,18 @@ include('cfg/more-functions.php');
 		    $gigsterInfo=get_user_Info(encrypt_str($profilepicId));
 			
 			$profilepic="uploads/profileimage/".$gigsterInfo['profileimage'];
-			echo "here    ".$profilepic;
+			//echo "here    ".$profilepic;
 			if(file_exists($profilepic))
 			{
 				$profilepic=$profilepic;	
-				echo "imggggg    ".$profilepic;							
+										
 			}
 			else
 			{
 				$profilepic="images/admin.png";
 			}
 			  ?>
-
+			  <?php echo "imggggg    ".$profilepic;	?>
         <div class="col-md-12"> <a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_noslash($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=45&height=45&cropratio=1:1"></a>
           
           
