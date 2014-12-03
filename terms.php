@@ -193,10 +193,13 @@ The GIGSTER will benefit, without reservation, from the following conditions as 
 <span class="bullet">●</span> The opportunity to remain informed of all changes to the status of GIGs for which they have bidded on.<br>
 <span class="bullet">●</span> The opportunity to provide status updates for the GIGs they have undertaken.<br>
 <div class="clearfirst"></div>
+</p>
 </div>
+<p class="james">
 <strong id="p-name">DURATION AND END OF SERVICES TO THE GIGSTER</strong><br>
 In the case of failure of the GIGSTER to adhere to one of the requirements of these T&Cs, GIGSTERGO.COM may terminate this agreement immediately (without notice), prejudicing any legal action for interests or damages.<br>
 <div class="clearfirst"></div>
+</p>
 </div>
 <strong id="p-name">PROOF</strong><br>
 It is expressly agreed that the archived data and the data uploaded and stored in the information system GIGSTERGO.COM, particularly in its email tools, have a probative value with regard to documents sent, orders placed, and the fulfillment of the obligations of the parties.<br>
@@ -325,7 +328,7 @@ The websites (excluding third-party linked sites) are operated by GIGSTERGO.COM 
 In case of dispute, not having been able to come to a mutual agreement, USER agree to submit to the exclusive jurisdiction of the Singapore Courts and waive any objection to Proceedings in any Court in Singapore on the grounds of venue or on the grounds of forum non conveniens.<br>
 
 It should be noted however that the dispute must first be referred to the Singapore Mediation Centre (SMC) for resolution. USER also agree to bear their own legal costs and to share the cost of the SMC and/or mediator equally. Upon the failure of mediation, USERS are then to proceed to arbitration in Singapore in accordance with the Arbitration Rules of the Singapore International Arbitration Centre for the time being in force. Such dispute shall be submitted to a single arbitrator appointed by the Chairman of the Singapore International Arbitration Centre. The language of the arbitration shall be English and the finding of such arbitration shall be final, absolute and binding on the USERS. <br>
-</p>
+
 </div>
 <div class="clearfirst"></div>
 </div>
