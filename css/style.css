@@ -1403,6 +1403,8 @@ background:url("../images/ok-mark.png");
 .bullet{color: #fe6635;}
 
 #p-name{font-size: 20px;
+margin-bottom: -5px;
+display: block;
 font-family: 'source_sans_probold';
 color: #473610;}
 
