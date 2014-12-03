@@ -188,7 +188,7 @@ include('cfg/more-functions.php');
 			  $awardedrating=get_user_rating($awarded);
 			  ?>
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
-      	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right" class="img-circle"><br>
+      	<a href="<?php echo $serverpath;?>gigsterInfo/<?php echo mera_url_encode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1"class="img-circle"></a> <br>
       		<h4 style="float:right;"><?php echo $awardednametodisplay; ?></h4>
       		<div style="float:right">			
       					<?php 
