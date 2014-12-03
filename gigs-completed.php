@@ -190,7 +190,7 @@ include('cfg/more-functions.php');
       	<div class="pull-right" style="padding-top: 20px;float: right;margin-left: 0px;">
       	 <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $winnerprofilepic;?>&width=75&height=75&cropratio=1:1"style="float:right" class="img-circle"><br>
       		<h4 style="float:right;"><?php echo $awardednametodisplay; ?></h4>
-      		<div style="margin-left: 43px;">			
+      		<div style="float:left">			
       					<?php 
 						 for($t=0;$t<$awardedrating;$t++)
 							  {
