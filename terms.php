@@ -133,7 +133,7 @@ GIGSTERGO.COM reserves the discretionary right to completely disregard any profi
 <span class="bullet">●</span> The profile contains documents which do not correspond to, or only partially correspond to the qualitative and quantitative control.<br>
 
 In this instance, an email will be sent to the USER in order to allow them to correct their  profile.<br>
-If the User does not reply within 48 hours, the profile will be deemed to be non-conformant and invalid. Consequently, it will not be published online.<br>
+If the User does not reply within 48 hours, the profile will be deemed to be non-conformant and invalid. Consequently, it will not be published online.
 
 </p> 
 </div>
@@ -198,7 +198,7 @@ In the case of failure of the GIGSTER to adhere to one of the requirements of th
 It is expressly agreed that the archived data and the data uploaded and stored in the information system GIGSTERGO.COM, particularly in its email tools, have a probative value with regard to documents sent, orders placed, and the fulfillment of the obligations of the parties.<br>
 Data of an electronic nature or on the information system as stored by GIGSTERGO.COM constitutes evidence. If produced as evidence by GIGSTERGO.COM in any instance of litigation or otherwise, it will be admissible, valid and enforceable between the parties in the same way, under the same conditions, and of the same value as any document that might be prepared, received or kept in writing.<br>
 
-<strong class="main-title">RESPONSIBILITY PERTAINING TO THE USE OF THE PLATFORM</strong> <br>
+<strong class="main-title">RESPONSIBILITY PERTAINING TO THE USE OF THE PLATFORM</strong>
 Responsibility and guarantees of GIGSTERGO.COM<br>
 GIGSTERGO.COM does not guarantee that the platform will be free of defects, errors or bugs, nor that they may be corrected, or that the platform will operate without interruption or failure, or even that it is compatible with a particular hardware or configuration other than as expressly stated by GIGSTERGO.COM.<br>
 GIGSTERGO.COM does not guarantee a time frame for the uploading of any documents or information submitted by the USER, and cannot be held responsible for any delay in the posting of the documents submitted.<br>
@@ -219,11 +219,11 @@ GIGSTERGO.COM may, at its discretion, suspend or restrict the USER’s access to
 GIGSTERGO.COM also reserves the right to suspend or limit access to the PLATFORM for maintenance reasons or to allow the installation of new features.<br>
 USER agree not to use any device, software, routine to interfere or attempt to interfere with the proper working of the PLATFORM, use any robot, spider, other automatic device, or manual process to monitor or copy any pages within the websites or the Content without GIGSTERGO.COM’s prior written permission, and take any action that imposes a disproportionately large or unreasonable load on GIGSTERGO.COM’s servers. <br>
 
-<br><strong class="main-title">COMMUNICATION PROCESS</strong>
+<strong class="main-title">COMMUNICATION PROCESS</strong>
 Communication between GIGSTERGO.COM and USERS may be carried out via email, telephone or by any other means as provided by both current and future technologies.<br>
 A business day means a day other than Saturday, Sunday or other official public holiday in the place in which the recipient of the message from GIGSTERGO.COM resides.<br>
 A GIGSTERGO.COM message with a request for acknowledgment of receipt cannot be acted upon by the recipient of the message until the acknowledgment is sent.<br>
-The writings inherent in this communication are also part of the evidence, as subject to the laws of the Republic of Singapore.<br>
+The writings inherent in this communication are also part of the evidence, as subject to the laws of the Republic of Singapore.
 
 <br><strong class="main-title">INTELLECTUAL PROPERTY</strong>
 OWNERSHIP OF THE BRAND<br>
@@ -235,11 +235,11 @@ The USER, as per the terms and conditions, allows GIGSTERGO.COM the right to use
 <br><strong class="main-title">OTHER USES</strong>
 Any other use of the name GIGSTERGO.COM or the logo GIGSTERGO.COM cannot happen without the express and prior authorization of the company GIGSTERGO.COM, otherwise you will be subject to the legal offences of forgery and/or unfair business practice.<br>
 
-<br><strong class="main-title">LEGAL OFFENCES</strong>
+<strong class="main-title">LEGAL OFFENCES</strong>
 USERS of the Platform GIGSTERGO.COM commit, to respect the laws of Republic of Singapore in terms of offences characterized by racism, anti-Semitism and/or any action seen to be discriminatory and against human dignity<br>
 Any document or information published on line that contravenes these stipulations will immediately cause the contract to be broken and the USER to be removed from the site, without prejudicing legal action for damages caused.<br>
 
-<br><strong class="main-title">LIMIT OF RESPONSIBILITY</strong>
+<strong class="main-title">LIMIT OF RESPONSIBILITY</strong>
 GIGSTERGO.COM will under no circumstances, intervene via its PLATFORM in the relations between GIG OWNERS AND GIGSTERS, who remain exclusively independent in their choices and actions.<br>
 Any other contractual agreement, notably in terms of the corporate model, will be subject to a written agreement as duly agreed and signed between the parties.<br>
 GIGSTERGO.COM will not, by any means whatsoever, be qualified to be a business intermediary, or to take part in future services undertaken between the clients.<br>
