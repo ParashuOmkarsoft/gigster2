@@ -22,7 +22,7 @@ include('cfg/more-functions.php');
   
       <div class="row firstdinner">
         <div class="col-md-12">
-         <span id="p-name">INTRODUCTION</span> <br><br>
+         <span id="p-name">INTRODUCTION</span> <br>
          <p class="james">These Terms and Conditions of Use (T&Cs) are intended to define the modalities of the provision of services as provided by the platform GIGSTERGO.COM, hereafter named "the Service", and the conditions of use of the Service by the USER.</p> 
          <p class="james">Any access and/or Use of the platform GIGSTERGO.COM presumes the unconditional acceptance and adherence to all sections of these Terms and Conditions. This consequently establishes a link of a contractual nature between GIGSTERGO.COM and the USER.</p> 
          <p class="james">In the case of the USER not wishing to accept all or any of these terms and conditions, they are requested to explicitly renounce all use of the Service.</p> 
