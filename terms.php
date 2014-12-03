@@ -184,6 +184,7 @@ The GIGSTER will provide information on the profile page, which will be accessib
 The PLATFORM GIGSTERGO.COM, reserves all rights to moderate, suspend, or remove any information that does not meet the above requirements or other requirements stated in these T&Cs, without prejudicing any legal action for interests or damages.<br>
 <div class="clearfirst"></div>
 </div>
+<p class="james">
 <strong id="p-name">SERVICES PERTAINING TO THE GIGSTER</strong><br>
 The GIGSTER will benefit, without reservation, from the following conditions as set out in these T&Cs:<br>
 <span class="bullet">●</span> The opportunity to look for GIGs.<br>
@@ -324,7 +325,7 @@ The websites (excluding third-party linked sites) are operated by GIGSTERGO.COM 
 In case of dispute, not having been able to come to a mutual agreement, USER agree to submit to the exclusive jurisdiction of the Singapore Courts and waive any objection to Proceedings in any Court in Singapore on the grounds of venue or on the grounds of forum non conveniens.<br>
 
 It should be noted however that the dispute must first be referred to the Singapore Mediation Centre (SMC) for resolution. USER also agree to bear their own legal costs and to share the cost of the SMC and/or mediator equally. Upon the failure of mediation, USERS are then to proceed to arbitration in Singapore in accordance with the Arbitration Rules of the Singapore International Arbitration Centre for the time being in force. Such dispute shall be submitted to a single arbitrator appointed by the Chairman of the Singapore International Arbitration Centre. The language of the arbitration shall be English and the finding of such arbitration shall be final, absolute and binding on the USERS. <br>
-
+</p>
 </div>
 <div class="clearfirst"></div>
 </div>
