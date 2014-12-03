@@ -24,7 +24,7 @@ include('cfg/more-functions.php');
         <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/1.jpg" class="img-circle">
         </div>
-        <div class="col-md-11 org-box">
+        <div class="col-md-11 ">
          <span id="bond">What is Gigster ?</span> 
          <p class="james">Gigster is all about helping you live, work and play better. Whenever you want to Get Anything Done, just post a Gig and we will find the right Gigster to help you.</p> 
         </div>
@@ -34,7 +34,7 @@ include('cfg/more-functions.php');
         <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/2.jpg" class="img-circle">
         </div>
-        <div class="col-md-11 org-box">
+        <div class="col-md-11 ">
          <span id="bond">What is a Gig?</span> 
          <p class="james">A Gig is anything you want to get done. Whether it is a manual task or if you're looking for someone to hire on a short term basis.</p> 
         </div>
