@@ -22,7 +22,7 @@ include('cfg/more-functions.php');
 <div class="row privacy-row">
        
 
-<span id="p-name">Privacy</span><br><br> 
+<span id="p-name">Privacy</span><br>
 <p class="james">USERS’ privacy are important to us. GIGSTERGO.COM’s Personal Data Protection Policy sets out GIGSTERGO.COM will comply with the provisions of the Personal Data Protection Act 2012 of Singapore (“PDPA”).<br><br>
 GIGSTERGO.COM also want USERS to understand the way in which we collect, use, disclose and/or retain your Personal Data. This Personal Data Protection Policy sets out:<br><br>
 our policies on how we manage your Personal Data;
@@ -39,7 +39,7 @@ This Personal Data Protection Policy forms a part of the terms and conditions go
 </div> 
 <div class="row privacy-row">
 
-<span id="p-name">1.Your Personal Data</span><br><br>  
+<span id="p-name">1.Your Personal Data</span><br>
 <p class="james" style="padding-top: 16px;">In this Personal Data Protection Policy, “Personal Data” refers to any data and/or information about you from which you can be identified by, either (a) from that data; or (b) from that data and other information to which we may have legitimate access to. Examples of such Personal Data include but are not limited to:<br><br>
 your name, NRIC, passport or other identification number, telephone number(s), mailing address, email address and any other information relating to you which you have provided in any forms you may have submitted to use, or in other forms of interaction with you;<br>
 your photos;<br>
