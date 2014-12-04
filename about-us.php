@@ -56,7 +56,7 @@ include('cfg/more-functions.php');
         </div>
         <div class="col-md-11">
          <span id="bond">Why should I post a Gig?</span> 
-         <p class="james">Instead of spending hours finding the right help, post a Gig and we will find the a match for you.</p> 
+         <p class="james">Instead of wasting hours looking for help, post a Gig and we will find the right a match for you.</p> 
         </div>
          
       </div>
@@ -130,7 +130,7 @@ include('cfg/more-functions.php');
         </div>
          
       </div>
-      <div class="row about-row">
+      <div class="row" style="margin: 0px;padding: 15px 0 70px 0;">
         <div class="col-md-1 org-box">
           <img src="<?php echo $serverpath;?>images/12.jpg" class="img-circle">
         </div>
@@ -141,13 +141,7 @@ include('cfg/more-functions.php');
         </div>
          
       </div>
-
-      <div class="row">
-        
-         
-      </div>
-
-
+      
     </section>
 
     <?php
