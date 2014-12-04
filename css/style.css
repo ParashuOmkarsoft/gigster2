@@ -1518,3 +1518,11 @@ margin: 1px auto;}
 
 .privacy-row{margin-top: 15px;
 margin: 0 auto;padding-top: 15px;}
+.btn-already{color: #fff;
+font-size: 20px;
+font-family: 'source_sans_probold';
+width: 150px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;}

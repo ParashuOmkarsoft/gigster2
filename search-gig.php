@@ -94,7 +94,7 @@ include('cfg/more-functions.php');
 						else
 						{
 	  ?>
-					      <a href="#" onClick="javascript:alert('You have already bided on this gig');"><button type="button" class="btn btn-bid pull-right">Bided Already</button></a>
+					      <a href="#" onClick="javascript:alert('You have already bided on this gig');"><button type="button" class="btn btn-already pull-right">Bided Already</button></a>
       <?php				}
 					}
 					else
