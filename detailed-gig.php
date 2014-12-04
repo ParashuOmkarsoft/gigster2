@@ -288,8 +288,10 @@ else
 			if($bidderInfo['userId']==$uInfo['userId'])
 			{
 		 	?>
+      <div>
         <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
-        	<?php
+      </div>  	
+          <?php
 			}
 		 
 		}
@@ -310,7 +312,7 @@ else{?>
                  if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 5px 0px 0px;" title="Awarded" />
+      <img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 5px 0px 0px;" title="Awarded" />
       <?php
 	}
 	?>
