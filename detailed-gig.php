@@ -273,7 +273,7 @@ else
 			<?php if(is_user_admin($gigdetails['prjId'],$_SESSION['uId']))
 			{
 				?>
-        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a><br>
+        <a href="#messagemodal" data-toggle="modal" onClick="view_message_modal_inner('<?php echo $serverpath;?>','<?php echo $gigdetails['userId'];?>','<?php echo $bidderInfo['userId'];?> ','<?php echo $gigdetails['prjId'];?>');"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
         
         
         <?php
@@ -310,7 +310,7 @@ else{?>
                  if(is_project_awarded_to_user($gigdetails['prjId'],$projectbids['rows'][$i]['bidfrom']))
 	{
 	?>
-      <img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 5px 0px 0px;" title="Awarded" />
+      <br><img src="<?php echo $serverpath;?>images/symbol.png" style="padding: 15px 5px 0px 0px;" title="Awarded" />
       <?php
 	}
 	?>
