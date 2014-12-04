@@ -440,7 +440,7 @@ else
 			?>
 <section>
   <div class="row firstdinner container">
-    <div class="col-md-10 mandatory"> Sorry, there are no bids yet.
+    <div class="col-md-10 mandatory"> Sorry,there are no bids yet.
       </p>
     </div>
     <div class="col-md-02"></div>
