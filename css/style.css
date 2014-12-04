@@ -782,8 +782,8 @@ margin-left: -15px;
 	color: #5e350d; }	
 .myassign {padding-bottom: 15px;margin-left: 0px;}
 .james{
-	
-	font-size: 20px;
+	word-wrap: break-word;
+font-size: 20px;
 word-spacing: 10px;
 font-family: 'source_sans_proregular';
 color: #473610;
