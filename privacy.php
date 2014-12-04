@@ -53,7 +53,7 @@ information about your usage of and interaction with our website and/or services
 </div>   
 <div class="row privacy-row">
 <span id="p-name">2.  Collection of your Personal Data</span><br>
-<p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br>
+<p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
 a.  when you sign up with us for GIGSTERGO.COM membership;<br>
 b.  when you access our websites or perform an online transaction;<br>
 c.  when you interact with any of our employees;<br>
@@ -62,7 +62,7 @@ e.  when you respond to our request for additional Personal Data;<br>
 f.  when you ask to be included in an email or other mailing list;<br>
 g.  when you request that we contact you;<br>
 h.  when you respond to our initiatives or promotions; and<br>
-i.  when you submit your Personal Data to us for any other reason.<br>
+i.  when you submit your Personal Data to us for any other reason.<br><br>
 2.  When you browse our website, you generally do so anonymously, but please see “COOKIES”.<br><br>
 
 </p> 
@@ -78,7 +78,7 @@ b.  to provide you with membership benefits and services;<br>
 c.  to provide you with employment and employability services;<br>
 d.  to assist you with your enquiries;<br>
 e.  to process payment for any purchases and subscriptions;<br>
-f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br><br>
+f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br>
 g.  to conduct research, surveys and interviews;<br>
 h.  to keep you updated on our events; and<br>
 i.  to comply with applicable laws and regulations.<br><br>
