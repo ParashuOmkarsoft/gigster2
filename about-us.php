@@ -56,7 +56,7 @@ include('cfg/more-functions.php');
         </div>
         <div class="col-md-11">
          <span id="bond">Why should I post a Gig?</span> 
-         <p class="james">Instead of wasting hours looking for help, post a Gig and we will find the right a match for you.</p> 
+         <p class="james">Instead of wasting hours looking for help, post a Gig and we will find the right match for you.</p> 
         </div>
          
       </div>
