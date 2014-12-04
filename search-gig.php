@@ -86,6 +86,23 @@ include('cfg/more-functions.php');
 					else
 					{
 		?>
+		
+		<div class="col-md-12" style="padding:0px;">
+        <?php
+		   for($t=$gigsterrating;$t<5;$t++)
+			  {
+		  ?>
+        		<img src="<?php echo $serverpath;?>images/star_4.png" />
+        <?php  }
+		   for($t=0;$t<$gigsterrating;$t++)
+			  {
+		  ?>
+        		<img src="<?php echo $serverpath;?>images/star_3.png" />
+        <?php  }  ?>
+      </div>
+      <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
+      <h4>&nbsp;</h4>
+
 				      <a data-toggle="modal" href="#loginmodel" ><button type="button" class="btn btn-bid pull-right">Bid</button></a>
       <?php			}  ?>
       <div id="bidmodel<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
@@ -139,22 +156,8 @@ include('cfg/more-functions.php');
       <?php }
 	  }	?>
       <!-- end bid model --> 
-      <div class="col-md-12" style="padding:0px;">
-        <?php
-		   for($t=$gigsterrating;$t<5;$t++)
-			  {
-		  ?>
-        		<img src="<?php echo $serverpath;?>images/star_4.png" />
-        <?php  }
-		   for($t=0;$t<$gigsterrating;$t++)
-			  {
-		  ?>
-        		<img src="<?php echo $serverpath;?>images/star_3.png" />
-        <?php  }  ?>
-      </div>
-      <h4><a href="<?php echo $serverpath;?>gigsterInfo/<?php echo urlencode($nametodisplay);?>/<?php echo $gigsterInfo['userId'];?>"><?php echo strip_string($nametodisplay,6);?></a></h4>
-      <h4>&nbsp;</h4>
-      
+
+
     </div>
   </div>
   <?php
