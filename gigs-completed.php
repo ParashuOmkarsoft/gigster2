@@ -69,7 +69,7 @@ include('cfg/more-functions.php');
 			  
 	   ?>
   
-  <div class="row" style="padding: 0px 0px 15px 0px;margin: 0px;">
+  <div class="row" style="border-bottom: 2px solid #F7BB14;padding: 0px 0px 15px 0px;margin: 0px;">
     <div class="col-md-8" style="padding: 0;">
       
 	    <a id="giglisth2" href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_noslash($opengig['prjTitle']);?>/<?php echo $opengig['prjId'];?>">
