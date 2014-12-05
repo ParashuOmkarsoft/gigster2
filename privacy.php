@@ -102,7 +102,7 @@ i.  to comply with applicable laws and regulations.<br>
 <span id="p-name">5.  Disclosure of your Personal Data </span><br><br>  
 <p class="james" style="padding-bottom:50px;">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
 
-<p class="new-p">
+<div class="new-p">
 a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br>
 b.  external banks, financial institutions, credit card companies and their respective service providers;<br>
 c.  our professional advisers such as our auditors;<br>
@@ -110,7 +110,7 @@ d.  relevant government regulators, statutory boards or authorities or law enfor
 e.  third party reward, loyalty, privileges and co-branded programme providers;<br>
 f.  business partners that provides any membership services and benefits; and<br>
 g.  any other person in connection with the purposes set forth above.<br><br>
-</p>
+</div>
 <strong>1.  Protection of your Personal Data</strong><br><br>
 
 1.  GIGSTERGO.COM maintain appropriate security safeguards and practices to protect your Personal Data unauthorised access, collection, use, disclosure, copying, modification disposal or similar risks, in accordance with applicable laws.<br><br>
