@@ -23,7 +23,7 @@ include('cfg/more-functions.php');
        
 
 <span id="p-name">Privacy</span><br>
-<p class="james">USERS’ privacy are important to us. GIGSTERGO.COM’s Personal Data Protection Policy sets out GIGSTERGO.COM will comply with the provisions of the Personal Data Protection Act 2012 of Singapore (“PDPA”).<br><br>
+<p class="james" style="">USERS’ privacy are important to us. GIGSTERGO.COM’s Personal Data Protection Policy sets out GIGSTERGO.COM will comply with the provisions of the Personal Data Protection Act 2012 of Singapore (“PDPA”).<br><br>
 GIGSTERGO.COM also want USERS to understand the way in which we collect, use, disclose and/or retain your Personal Data. This Personal Data Protection Policy sets out:<br><br>
 our policies on how we manage your Personal Data;
 the types of Personal Data we collect, use, disclose and/ or retain;
@@ -35,7 +35,7 @@ From time to time, we may update this Personal Data Protection Policy to ensure 
 This Personal Data Protection Policy forms a part of the terms and conditions governing your relationship with us and should be read in conjunction with such T&Cs. In the event of any inconsistency between the provisions of the Personal Data Protection Policy and the T&Cs, the provisions of the T&Cs shall prevail.<br><br>
 </p> 
 </div>
-<!--<div class="clearfirst"></div>-->
+<!---->
 </div> 
 <div class="row privacy-row">
 
@@ -49,7 +49,7 @@ information relating to payments, such as your bank account number or credit car
 information about your usage of and interaction with our website and/or services including computer and connection information, device capability, bandwidth, statistics on page views and traffic to and from our website<br>
 </p> 
 </div>
-<div class="clearfirst"></div>
+
 </div>   
 <div class="row privacy-row">
 <span id="p-name">2.  Collection of your Personal Data</span><br>
@@ -67,7 +67,7 @@ i.  when you submit your Personal Data to us for any other reason.<br><br>
 
 </p> 
 </div>
-<div class="clearfirst"></div>
+
 </div>   
 <div class="row privacy-row">      
 
@@ -84,7 +84,7 @@ h.  to keep you updated on our events; and<br>
 i.  to comply with applicable laws and regulations.<br><br>
 </p> 
 </div>
-<div class="clearfirst"></div>
+
 </div>   
 
 <div class="row privacy-row">      
@@ -96,7 +96,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 
 </p> 
 </div>
-<div class="clearfirst"></div>
+
 </div>
 <div class="row privacy-row">
 <span id="p-name">5.  Disclosure of your Personal Data </span><br><br>  
@@ -128,7 +128,7 @@ If you have any questions or complaints relating to the use or disclosure of you
 
 </p> 
 </div>
-<div class="clearfirst"></div>
+
 </div>      
             
     </section>
