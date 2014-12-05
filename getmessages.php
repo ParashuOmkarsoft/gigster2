@@ -102,7 +102,7 @@ $projectDetails=get_gig_details($project);
 
           <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?><Br/>
           
-          <small class="text-muted "><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+          <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
           <?php
 	   }
 		  ?>
