@@ -32,7 +32,7 @@ USERS agree and consent to us to collect, use and disclose and/or retain your Pe
 This Personal Data Protection Policy supplements but does not supersede nor replace any other consent which you may have previously provided to us nor does it affect any right that we may have at law in connection with the collection, use, disclosure and/ or retention of your Personal Data.<br><br>
 From time to time, we may update this Personal Data Protection Policy to ensure that our Policy is consistent with developments and/or any regulatory changes. Subject to your legal rights in Singapore, the prevailing terms of the Personal Data Protection Policy shall apply.<br><br>
 
-This Personal Data Protection Policy forms a part of the terms and conditions governing your relationship with us and should be read in conjunction with such T&Cs. In the event of any inconsistency between the provisions of the Personal Data Protection Policy and the T&Cs, the provisions of the T&Cs shall prevail.<br><br>
+This Personal Data Protection Policy forms a part of the terms and conditions governing your relationship with us and should be read in conjunction with such T&Cs. In the event of any inconsistency between the provisions of the Personal Data Protection Policy and the T&Cs, the provisions of the T&Cs shall prevail.<br>
 </p> 
 </div>
 <!---->
@@ -63,7 +63,7 @@ f.  when you ask to be included in an email or other mailing list;<br>
 g.  when you request that we contact you;<br>
 h.  when you respond to our initiatives or promotions; and<br>
 i.  when you submit your Personal Data to us for any other reason.<br><br>
-2.  When you browse our website, you generally do so anonymously, but please see “COOKIES”.<br><br>
+2.  When you browse our website, you generally do so anonymously, but please see “COOKIES”.<br>
 
 </p> 
 </div>
@@ -81,7 +81,7 @@ e.  to process payment for any purchases and subscriptions;<br>
 f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br>
 g.  to conduct research, surveys and interviews;<br>
 h.  to keep you updated on our events; and<br>
-i.  to comply with applicable laws and regulations.<br><br>
+i.  to comply with applicable laws and regulations.<br>
 </p> 
 </div>
 
@@ -92,7 +92,7 @@ i.  to comply with applicable laws and regulations.<br><br>
 <span id="p-name">4.  Marketing/ Optional Purposes </span><br><br>  
 <p class="james">1. From time to time, GIGSTERGO.COM may contact you via mail, electronic mail, telephone (call or SMS-Text), facsimile or social medial platforms, to inform you about our membership benefits, services and events that we think may be of interest to you.<br><br>
 2.  You can let us know at any time if you no longer wish to receive marketing materials (by informing us via our email at contact@gigstergo.com and we will remove your details from our direct marketing database.<br><br>
-3.  Please note that we may still send you non-marketing messages such as surveys, customer-service notices and other service related notices.<br><br>
+3.  Please note that we may still send you non-marketing messages such as surveys, customer-service notices and other service related notices.<br>
 
 </p> 
 </div>
@@ -124,7 +124,7 @@ g.  any other person in connection with the purposes set forth above.<br><br>
 2.  Please note that if you withdraw your consent to any or all use or disclosure of your Personal Data, depending on the nature of your request, we may no longer be in a position to continue to provide membership benefits and services to you.<br><br>
 3.  Such a withdrawal may therefore result in the termination of any membership that you may have with us.<br><br>
 <strong>4.  Contacting Us</strong><br><br>
-If you have any questions or complaints relating to the use or disclosure of your Personal Data, or if you wish to know more about our data protection policies and practices, please contact GIGSTERGO.COM via email at contact@gigstergo.com. Similarly, you may request access to or make corrections to your Personal Data records, but GIGSTERGO.COM has the right to charge a reasonable fee for processing your request.<br><br>
+If you have any questions or complaints relating to the use or disclosure of your Personal Data, or if you wish to know more about our data protection policies and practices, please contact GIGSTERGO.COM via email at contact@gigstergo.com. Similarly, you may request access to or make corrections to your Personal Data records, but GIGSTERGO.COM has the right to charge a reasonable fee for processing your request.<br>
 
 </p> 
 </div>
