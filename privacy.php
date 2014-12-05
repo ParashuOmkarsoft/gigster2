@@ -54,15 +54,15 @@ information about your usage of and interaction with our website and/or services
 <div class="row privacy-row">
 <span id="p-name">2.  Collection of your Personal Data</span><br>
 <p class="james">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
-&nbspa.  when you sign up with us for GIGSTERGO.COM membership;<br>
-&nbspb.  when you access our websites or perform an online transaction;<br>
-&nbspc.  when you interact with any of our employees;<br>
-&nbspd.  when you submit an application to us for membership services and benefits;<br>
-&nbspe.  when you respond to our request for additional Personal Data;<br>
-&nbspf.  when you ask to be included in an email or other mailing list;<br>
-&nbspg.  when you request that we contact you;<br>
-&nbsph.  when you respond to our initiatives or promotions; and<br>
-&nbspi.  when you submit your Personal Data to us for any other reason.<br><br>
+a.  when you sign up with us for GIGSTERGO.COM membership;<br>
+b.  when you access our websites or perform an online transaction;<br>
+c.  when you interact with any of our employees;<br>
+d.  when you submit an application to us for membership services and benefits;<br>
+e.  when you respond to our request for additional Personal Data;<br>
+f.  when you ask to be included in an email or other mailing list;<br>
+g.  when you request that we contact you;<br>
+h.  when you respond to our initiatives or promotions; and<br>
+i.  when you submit your Personal Data to us for any other reason.<br><br>
 2.  When you browse our website, you generally do so anonymously, but please see “COOKIES”.<br>
 
 </p> 
@@ -73,15 +73,15 @@ information about your usage of and interaction with our website and/or services
 
 <span id="p-name">3.  Purposes for the Collection, Use and Disclosure of Your Personal Data</span><br><br>  
 <p class="james">1. Generally, GIGSTERGO.COM may collect, use, disclose and/or retain your Personal Data for the following purposes:<br><br>
-&nbspa.  to manage your membership including recruitment, processing and termination of your membership;<br>
-&nbspb.  to provide you with membership benefits and services;<br>
-&nbspc.  to provide you with employment and employability services;<br>
-&nbspd.  to assist you with your enquiries;<br>
-&nbspe.  to process payment for any purchases and subscriptions;<br>
-&nbspf.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br>
-&nbspg.  to conduct research, surveys and interviews;<br>
-&nbsph.  to keep you updated on our events; and<br>
-&nbspi.  to comply with applicable laws and regulations.<br>
+a.  to manage your membership including recruitment, processing and termination of your membership;<br>
+b.  to provide you with membership benefits and services;<br>
+c.  to provide you with employment and employability services;<br>
+d.  to assist you with your enquiries;<br>
+e.  to process payment for any purchases and subscriptions;<br>
+f.  to improve membership/ customer services, such as resolving complaints and handling requests and enquiries;<br>
+g.  to conduct research, surveys and interviews;<br>
+h.  to keep you updated on our events; and<br>
+i.  to comply with applicable laws and regulations.<br>
 </p> 
 </div>
 
@@ -101,13 +101,13 @@ information about your usage of and interaction with our website and/or services
 <div class="row privacy-row" style="border-bottom:none;">
 <span id="p-name">5.  Disclosure of your Personal Data </span><br><br>  
 <p class="james" style="padding-bottom:50px;">1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
-&nbspa.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br>
-&nbspb.  external banks, financial institutions, credit card companies and their respective service providers;<br>
-&nbspc.  our professional advisers such as our auditors;<br>
-&nbspd.  relevant government regulators, statutory boards or authorities or law enforcement agencies to comply with any laws, rules, guidelines and regulations or schemes imposed by any government authority;<br>
-&nbspe.  third party reward, loyalty, privileges and co-branded programme providers;<br>
-&nbspf.  business partners that provides any membership services and benefits; and<br>
-&nbspg.  any other person in connection with the purposes set forth above.<br><br>
+a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br>
+b.  external banks, financial institutions, credit card companies and their respective service providers;<br>
+c.  our professional advisers such as our auditors;<br>
+d.  relevant government regulators, statutory boards or authorities or law enforcement agencies to comply with any laws, rules, guidelines and regulations or schemes imposed by any government authority;<br>
+e.  third party reward, loyalty, privileges and co-branded programme providers;<br>
+f.  business partners that provides any membership services and benefits; and<br>
+g.  any other person in connection with the purposes set forth above.<br><br>
 
 <strong>1.  Protection of your Personal Data</strong><br><br>
 
