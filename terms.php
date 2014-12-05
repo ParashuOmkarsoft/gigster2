@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
       <section class="container mclass">
       <h2 id="giglog">Terms</h2>
       
-  
+  <div class="container" style="padding:0;">
       <div class="row firstdinner">
        
          <span id="p-name">INTRODUCTION</span> <br>
@@ -309,6 +309,8 @@ It should be noted however that the dispute must first be referred to the Singap
 </div>
 
     </section>
+    </p>
+    </div>
 
     <?php
 include('footer.php'); 
