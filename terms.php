@@ -19,7 +19,7 @@ include('cfg/more-functions.php');
       <section class="container mclass">
       <h2 id="giglog">Terms</h2>
       
-  <div class="container" style="padding:0;">
+  <div class="container" style="padding:15px;">
       <div class="row firstdinner">
        
          <span id="p-name">INTRODUCTION</span> <br>
@@ -36,7 +36,6 @@ include('cfg/more-functions.php');
          
       
       
-         <div class="clearfirst"></div>
       </div>
        <div class="row secondinner">
         
