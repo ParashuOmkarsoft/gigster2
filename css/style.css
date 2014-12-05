@@ -1527,3 +1527,11 @@ border-radius: 10px;
 background: #EC6B39;
 outline: none;
 margin-top: 12px;}
+
+.new-p{word-wrap: break-word;
+font-size: 20px;
+word-spacing: 10px;
+font-family: 'source_sans_proregular';
+color: #473610;
+line-height: 25px;
+letter-spacing: 1px;padding: 10px;}
