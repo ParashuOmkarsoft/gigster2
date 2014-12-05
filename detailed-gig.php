@@ -337,7 +337,7 @@ else{?>
       </div>
       
     </div>
-    <div class="clearsecond"></div>
+    
    
   
 </section>
@@ -447,7 +447,7 @@ else
     </div>
     <div class="col-md-02"></div>
   </div>
-  <div class="clearsecond"></div>
+ 
 </section>
 <?php
 		}
