@@ -54,7 +54,7 @@ information about your usage of and interaction with our website and/or services
 <div class="row privacy-row">
 <span id="p-name">2.  Collection of your Personal Data</span><br>
 <p class="new-paragraph">1. Generally, GIGSTERGO.COM may collect your Personal Data through the following ways:<br><br>
-<blockquote >
+<blockquote class="a-sub-para" >
 a.  when you sign up with us for GIGSTERGO.COM membership;<br>
 b.  when you access our websites or perform an online transaction;<br>
 c.  when you interact with any of our employees;<br>
@@ -74,7 +74,7 @@ i.  when you submit your Personal Data to us for any other reason.<br><br>
 
 <span id="p-name">3.  Purposes for the Collection, Use and Disclosure of Your Personal Data</span><br><br>  
 <p class="new-paragraph">1. Generally, GIGSTERGO.COM may collect, use, disclose and/or retain your Personal Data for the following purposes:<br><br>
-<blockquote >
+<blockquote class="a-sub-para">
 a.  to manage your membership including recruitment, processing and termination of your membership;<br>
 b.  to provide you with membership benefits and services;<br>
 c.  to provide you with employment and employability services;<br>
@@ -104,7 +104,7 @@ i.  to comply with applicable laws and regulations.<br>
 <div class="row privacy-row" style="border-bottom:none;">
 <span id="p-name">5.  Disclosure of your Personal Data </span><br><br>  
 <p class="new-paragraph" >1. GIGSTERGO.COM may disclose your Personal Data to the following group of people for purposes mentioned above, subjected to the requirements of applicable laws:<br><br>
-<blockquote >a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br>
+<blockquote class="a-sub-para" >a.  agents, contractors, data intermediaries, employers or third party service providers who provide services, such as telecommunications, mailing, information technology, payment, payroll, data processing, training, market research, carding, storage and archival, to the Organisation;<br>
 b.  external banks, financial institutions, credit card companies and their respective service providers;<br>
 c.  our professional advisers such as our auditors;<br>
 d.  relevant government regulators, statutory boards or authorities or law enforcement agencies to comply with any laws, rules, guidelines and regulations or schemes imposed by any government authority;<br>

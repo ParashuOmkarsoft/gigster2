@@ -1535,3 +1535,13 @@ font-family: 'source_sans_proregular';
 color: #473610;
 line-height: 25px;
 letter-spacing: 1px;padding: 10px;}
+
+.a-sub-para{word-wrap: break-word;
+font-size: 20px;
+word-spacing: 10px;
+font-family: 'source_sans_proregular';
+color: #473610;
+line-height: 25px;
+letter-spacing: 1px;
+border: none;
+padding: 0px 10px;}
