@@ -80,10 +80,9 @@ else
 
 				
 				
-	$mailmatter1="<p>You have selected proposal of ".$usernametodisplay." on gig <strong>$gigname</strong>.
+	$mailmatter1="<p>You have awarded the Gig".$usernametodisplay." on gig <a href='".get_project_link($serverpath,$projectId)."'>$gigname</a>.
 				<p>&nbsp;</p>
-				<p>Regards</p>
-				<p>$sitename</p>";
+				
 	if($ownerInfo['notify']=='1')
 	{
 		
