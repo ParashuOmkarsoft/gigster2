@@ -13,6 +13,7 @@ RewriteRule ^(lib)($|/) - [L]
 
 ###Site Settings
 #
+RewriteRule ^checkLogin check-login.php
 RewriteRule ^messagethreads threaded-messaging.php
 #RewriteRule ^messagethreads/([^/]*)$ threaded-messaging.php?userId=$1 [L]
 RewriteRule ^checkout logout.php
