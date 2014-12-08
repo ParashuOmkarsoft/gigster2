@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
 RewriteRule ^(font-awesome)($|/) - [L]
@@ -14,6 +13,8 @@ RewriteRule ^(lib)($|/) - [L]
 
 ###Site Settings
 #
+RewriteRule ^messagethreads threaded-messaging.php
+#RewriteRule ^messagethreads/([^/]*)$ threaded-messaging.php?userId=$1 [L]
 RewriteRule ^checkout logout.php
 RewriteRule ^loginwithtwitter twitter-login.php
 RewriteRule ^loginwithtlinkedin linkLogin.php

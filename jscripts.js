@@ -33,8 +33,10 @@ function only_numbers(evt)
 	 }
 	 
 }
+var mserverpath="";
 function view_message_modal(serverpath,id)
 {
+	mserverpath=serverpath;
 	 if (id=="") {
     document.getElementById("message-modal").innerHTML="";
     return;
@@ -48,6 +50,7 @@ function view_message_modal(serverpath,id)
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
       document.getElementById("message-modal").innerHTML=xmlhttp.responseText;
+	  get_message_thread(mserverpath);
     }
   }
   m_url=serverpath+"getmessages.php?msgId="+id
@@ -180,4 +183,24 @@ function validate_rating(ratingid)
 		return false;
 	}
 	
+}
+
+
+function get_message_thread(serverpath)
+{
+	if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp56=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp56=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp56.onreadystatechange=function() {
+    if (xmlhttp56.readyState==4 && xmlhttp56.status==200) {
+      document.getElementById("msgthread").innerHTML=xmlhttp56.responseText;
+    }
+  }
+  m_url=serverpath+"messagethreads"
+
+  xmlhttp56.open("GET",m_url,true);
+  xmlhttp56.send();
 }
