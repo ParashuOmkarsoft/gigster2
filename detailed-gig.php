@@ -65,7 +65,14 @@ else
         <h2 class="mikename1" style="margin-top:5px;"><?php echo $nametodisplay;?></h2>
         <div>
         <?php
-		
+				   for($t=0;$t<$gigsterrating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+
+
+        
+<?php		  }
         for($t=$gigsterrating;$t<5;$t++) 
 							  {
 								  
@@ -73,14 +80,7 @@ else
         <img src="<?php echo $serverpath;?>images/star_2.png" />
         <?php
 							  }
-							   for($t=0;$t<$gigsterrating;$t++)
-							  {
-								  ?>
-        <img src="<?php echo $serverpath;?>images/star_1.png" />
-
-
-        
-<?php		  } ?>
+					 ?>
 </div>
 		<?php	if($_SESSION['uId'] != encrypt_str($gigdetails['userId']))
 			{
