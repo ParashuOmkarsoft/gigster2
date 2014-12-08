@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright 2011 Google Inc.
  *
@@ -14,9 +15,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+include('cfg/cfg.php');
 include_once "templates/base.php";
-session_start();
-
 require_once ('autoload.php');
 
 /************************************************
@@ -26,7 +26,7 @@ require_once ('autoload.php');
  ************************************************/
  $client_id = '365892962432-h062bakvhfujq1itspoe635h4bfj7a2u.apps.googleusercontent.com';
  $client_secret = 's-QepkoZtp-2dtUROoKrWpqc';
- $redirect_uri = ' http://localhost/gigster2/loginwithgoogle';
+ $redirect_uri = 'http://gigstergo.com/login-with-google.php';
 
 /************************************************
   Make an API request on behalf of a user. In
@@ -39,7 +39,7 @@ $client = new Google_Client();
 $client->setClientId($client_id);
 $client->setClientSecret($client_secret);
 $client->setRedirectUri($redirect_uri);
-$client->addScope("https://www.googleapis.com/auth/urlshortener");
+$client->addScope("https://www.googleapis.com/auth/plus.profile.emails.read");
 
 /************************************************
   When we create the service here, we pass the
@@ -95,40 +95,103 @@ if ($client->getAccessToken() && isset($_GET['url'])) {
   $url->longUrl = $_GET['url'];
   $short = $service->url->insert($url);
   $_SESSION['access_token'] = $client->getAccessToken();
+  $token_data = $client->verifyIdToken()->getAttributes();
+//print_r($token_data);
 }
 
-echo pageHeader("User Query - URL Shortener");
-if (
-    $client_id == '<YOUR_CLIENT_ID>'
-    || $client_secret == '<YOUR_CLIENT_SECRET>'
-    || $redirect_uri == '<YOUR_REDIRECT_URI>') {
-  echo missingClientSecretsWarning();
-}
-?>
-<div class="box">
-  <div class="request">
-<?php 
+
+ 
 if (isset($authUrl)) {
-  echo "<a class='login' href='" . $authUrl . "'>Connect Me!</a>";
+   ?>
+   <script type="text/javascript">
+   window.location="<?php echo $authUrl;?>";
+   </script>
+   <?php 
 } else {
-  echo <<<END
-    <form id="url" method="GET" action="{$_SERVER['PHP_SELF']}">
-      <input name="url" class="url" type="text">
-      <input type="submit" value="Shorten">
-    </form>
-    <a class='logout' href='?logout'>Logout</a>
-END;
-}
-?>
-  </div>
+	
+// further on down in the example code...
+// my new code...
+$plus = new Google_Service_Plus( $client );
+$me = $plus->people->get('me');
+$userId=$me->id;
+$usermail=$me->emails;
+$memail=$usermail[0]->value;
+$userimage=$me->image;
+$imgurl=$userimage->url;
+$imgurl=str_replace("sz=50","sz=200",$imgurl);
+$checkquery="select * from btr_users where gId='$userId' or usermail='$memail'";
+$checksql=@db_query($checkquery);
+if($checksql['count']>0)
+	  {
+		if($checksql['rows']['0']['fbId'] != $userId)
+		  {
+			  $updQuery="update btr_users set gId='$userId' where userId=".$checksql['rows']['0']['userId'];
+			  $updSql=@db_query($updQuery);
+		  }
+		  if($checksql['rows']['0']['syncimage']=="1")
+		  {
+			if($imgurl)
+		  		{
+						  $ext="jpg";
+						  $newname=$checksql['rows']['0']['userId'].".$ext";
+						  if(file_exists("uploads/profileimage/$newname"))
+						  {
+							  unlink("uploads/profileimage/$newname");
+						  }
+						  $mcopy=copy($imgurl,"uploads/profileimage/$newname");
+						  if($mcopy)
+						  {
+							  $upQuery="update btr_users set profileimage='$newname' where userId=".$checksql['rows']['0']['userId'];
+							  $upQuery=@db_query($upQuery);
+						  }
+		 		 }
+		  }
+		  
+				  $_SESSION['uId']=encrypt_str(filter_text($checksql['rows']['0']['userId']));
+			?>
+				<script type="text/javascript">
+				window.location="<?php echo $serverpath;?>";
+				</script>
+				<?php	
+		  }
+	  	else
+	  	  {
+			  $insert_query="insert into btr_users(usermail,gId,usertype,joinedon,username)";
+			  $insert_query.="values('$memail','$userId','u',".gmmktime().",'".get_username($memail)."')";
+			  $insert_sql=@db_query($insert_query,3);
+			  if($insert_sql)
+			  {
+				  $updateQ=@db_query("update btr_users set authkey='".encrypt_str($insert_sql)."',isactive='1' where userId=$insert_sql");
+				  $delprofilequery=@db_query("delete from btr_userprofile where userId=$insert_sql");
+				  $profilequery="insert into btr_userprofile(userId)";
+				  $profilequery.="values($insert_sql)";
+				  $profilesql=@db_query($profilequery);
+				  if($imgurl)
+				  {
+				  
+				  $ext="jpg";
+				  $newname=$insert_sql.".$ext";
+				  $mcopy=copy($imgurl,"uploads/profileimage/$newname");
+					  if($mcopy)
+					  {
+					  $upQuery="update btr_users set profileimage='$newname' where userId=$insert_sql";
+					  $upQuery=@db_query($upQuery);
+					  }
+				  }
+				  $_SESSION['uId']=encrypt_str(filter_text($insert_sql));		
+				?>
+				<script type="text/javascript">
+				window.location="<?php echo $serverpath;?>";
+				</script>
+				<?php
+			  }
+			  else
+			  {
+				  
+			  }
+	  		}
 
-  <div class="shortened">
-<?php
-if (isset($short)) {
-  var_dump($short);
+	
 }
 ?>
-  </div>
-</div>
-<?php
-echo pageFooter(__FILE__);
+
