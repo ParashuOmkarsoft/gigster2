@@ -2,9 +2,8 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
 <!-- Latest compiled and minified CSS -->
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="<?php echo $serverpath;?>jquery-ui.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php echo $serverpath;?>jquery-ui.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?php echo $serverpath;?>css/bootstrap-theme.min.css">
@@ -28,37 +27,15 @@
 <script src="<?php echo $serverpath;?>js/jasny-bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo $serverpath;?>select2/assets/lib/css/select2.css" />
 <script type="text/javascript" src="<?php echo $serverpath;?>select2/assets/lib/js/select2.js"></script>
-  <link href="<?php echo $serverpath;?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-    <script src="<?php echo $serverpath;?>js/star-rating.js" type="text/javascript"></script>
-     <link href="<?php echo $serverpath;?>css/bootstrap-switch.css" rel="stylesheet">
-	<script src="<?php echo $serverpath;?>js/bootstrap-switch.js"></script>
-   
-   
-   <meta name="google-signin-clientid" content="    365892962432-h062bakvhfujq1itspoe635h4bfj7a2u.apps.googleusercontent.com" />
-<meta name="google-signin-scope" content="https://www.googleapis.com/auth/profile" />
-<meta name="google-signin-requestvisibleactions" content="http://schema.org/AddAction" />
-<meta name="google-signin-cookiepolicy" content="single_host_origin" />
-<meta name="google-signin-callback" content="signinCallback" />
-<script src="https://apis.google.com/js/client:platform.js?onload=render" async defer>
-/* Executed when the APIs finish loading */
-function render() {
-
-  // Additional params
-  var additionalParams = {
-    'theme' : 'dark'
-  };
-
-  gapi.signin.render('myButton', additionalParams);
+<link href="<?php echo $serverpath;?>css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="<?php echo $serverpath;?>js/star-rating.js" type="text/javascript"></script>
+<link href="<?php echo $serverpath;?>css/bootstrap-switch.css" rel="stylesheet">
+<script src="<?php echo $serverpath;?>js/bootstrap-switch.js"></script>
+<style type="text/css">
+.glyphicon-minus-sign {
+	display: none !important;
 }
-</script>
-
-   
-   
-    <style type="text/css">
-	.glyphicon-minus-sign{
-		display:none !important;
-	}
-	.caption{
-			display:none !important;
-	}
-	</style>
+.caption {
+	display: none !important;
+}
+</style>
