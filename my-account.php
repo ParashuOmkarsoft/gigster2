@@ -76,14 +76,11 @@ include('cfg/more-functions.php');
     margin-right: -14px;" class="img-circle">
             <?php
 		  }
+		  $userRating=get_user_rating($uInfo['userId']);
 			?>
 
       <div class="col-md-12" style="margin-left:-10px;">
-                <img src="http://gigstergo.com/images/star_4.png" style="margin-left:0px !important;">
-                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
-                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
-                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
-                <img src="http://gigstergo.com/images/star_3.png" style="margin-left:0px !important;">
+              
           
       </div>
 

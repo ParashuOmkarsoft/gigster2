@@ -181,38 +181,6 @@ if (strlen($string) > 140) {
   <div style="text-align: center;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
 </div>
-<div class="col-md-12 column" style="margin-bottom: 50px;">
-      <h2 class="name-what-gigster text-center">
-      Our Gigsters
-      </h2>
-</div>
-<div class="container-fluid" style="max-width: 1227px;padding:0px;padding-bottom: 70px;">
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="row-fluid">
-        <div class="span4 our-gigster-box">        
-        <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
-        <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
-        <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
-        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
-        </div>
-         <div class="span4 our-gigster-box">        
-        <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
-        <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
-        <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
-        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
-        </div>
-         <div class="span4 our-gigster-box">        
-        <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">    
-        <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
-        <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
-        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 </body>
 
 <?php
