@@ -49,7 +49,7 @@ else
 		$usernametodisplay=$userInfo['username'];
 	}
 		$mailmatter="<p>Congratulations!</p>
-				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'>$gigname</a>.</p>
+				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
 				<p>To update the status and see full details, please <a href='".get_project_link($serverpath,$projectId)."'>click here</a>.</p>
 				<p>&nbsp;</p>
 				<p>Regards</p>
@@ -67,7 +67,7 @@ else
 							
 	}
 	$mailmatter="<p>Congratulations!</p>
-				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'>$gigname</a>.</p>
+				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
 				<p>To update the status and see full details, please  <a href='".get_project_link($serverpath,$projectId)."'>click here</a>.</p>";
 								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=addslashes($mailmatter);
@@ -80,16 +80,13 @@ else
 
 				
 				
-	$mailmatter1="<p>You have awarded the Gig".$usernametodisplay." on gig <a href='".get_project_link($serverpath,$projectId)."'>$gigname</a>.
-				<p>&nbsp;</p>";
+	$mailmatter1="<p>You have awarded the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>".$gigname."</font></a> to <a href='".get_profile_link($serverpath,$awardedto)."'>".$usernametodisplay."</a>.</p>";
 				
 	if($ownerInfo['notify']=='1')
 	{
-		
 				$mailto=filter_text($ownerInfo['usermail']);
-								$mailsubject1="Congratulation, your gig is awawrded.";
-								$mail1=send_my_mail($ownerInfo['usermail'],$mailmatter1,$mailsubject1);	
-								
+				$mailsubject1="Congratulation, your gig is awawrded.";
+				$mail1=send_my_mail($ownerInfo['usermail'],$mailmatter1,$mailsubject1);	
 	}
 								$mailmatter1=strip_tags($mailmatter1);
 								$mailmatter1=nl2br($mailmatter1);
@@ -113,7 +110,7 @@ else
 					$biddernametodisplay=$bidderInfo['username'];
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
+				<p>Unfortunately your bid on <font style='font-color:#7d2900;'>$gigname</font> was not selected.
 				<p>Better luck next time.</p>
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>
 				<p>Regards</p>
@@ -125,17 +122,18 @@ else
 						$mail2=send_my_mail($mailto2,$mailmatter2,$mailsubject2);	
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your bid on <strong>$gigname</strong> was not selected.
+				<p>Unfortunately your bid on <font style='font-color:#7d2900;'>$gigname</font> was not selected.
 				<p>Better luck next time.</p>
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>";
 				$mailmatter2=htmlentities($mailmatter2);
 				$mailmatter2=addslashes($mailmatter2);
 				if($biderId != $awardedto)
 				{
-								$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
-				$msgquery3.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
 				
+				$msgquery3="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
+				$msgquery3.="values(18,$biderId,'$mailmatter2',".gmmktime().",".$gigdetails['prjId'].",'0','t')";
 				$msgquery3=@db_query($msgquery3);
+				
 				}
 			}
 		}
