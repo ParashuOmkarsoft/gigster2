@@ -80,7 +80,23 @@ include('cfg/more-functions.php');
 			?>
 
       <div class="col-md-12" style="margin-left:-10px;">
-              
+            <?php
+				   for($t=0;$t<$userRating;$t++)
+							  {
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_1.png" />
+
+
+        
+<?php		  }
+        for($t=$userRating;$t<5;$t++) 
+							  {
+								  
+								  ?>
+        <img src="<?php echo $serverpath;?>images/star_2.png" />
+        <?php
+							  }
+					 ?>   
           
       </div>
 
