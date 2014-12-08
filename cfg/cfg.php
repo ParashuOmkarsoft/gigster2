@@ -17,7 +17,7 @@ if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 	$__dbhost = "localhost";
 	$__dbname = "gigster";
 	$__dbuser = "root";
-	$__dbpass = "";
+	$__dbpass = "deep";
 	define( 'HTTP_ROOT', '/' );
 	define( 'DEBUG', false );
 	$serverpath = "http://".$_SERVER['HTTP_HOST']."/gigster2/";

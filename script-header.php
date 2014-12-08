@@ -32,6 +32,28 @@
     <script src="<?php echo $serverpath;?>js/star-rating.js" type="text/javascript"></script>
      <link href="<?php echo $serverpath;?>css/bootstrap-switch.css" rel="stylesheet">
 	<script src="<?php echo $serverpath;?>js/bootstrap-switch.js"></script>
+   
+   
+   <meta name="google-signin-clientid" content="    365892962432-h062bakvhfujq1itspoe635h4bfj7a2u.apps.googleusercontent.com" />
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/profile" />
+<meta name="google-signin-requestvisibleactions" content="http://schema.org/AddAction" />
+<meta name="google-signin-cookiepolicy" content="single_host_origin" />
+<meta name="google-signin-callback" content="signinCallback" />
+<script src="https://apis.google.com/js/client:platform.js?onload=render" async defer>
+/* Executed when the APIs finish loading */
+function render() {
+
+  // Additional params
+  var additionalParams = {
+    'theme' : 'dark'
+  };
+
+  gapi.signin.render('myButton', additionalParams);
+}
+</script>
+
+   
+   
     <style type="text/css">
 	.glyphicon-minus-sign{
 		display:none !important;
