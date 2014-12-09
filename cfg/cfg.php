@@ -1212,6 +1212,11 @@ Hello <strong>'.$username.'</strong>
 </tr>
 <tr>
 <td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
 A New gig on Gigster '.$prjTitle.' is posted and it matches to your skillset. 
 </td>
 </tr>
