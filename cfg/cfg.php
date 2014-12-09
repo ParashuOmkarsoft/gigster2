@@ -518,7 +518,7 @@ $params = array(
     'subject'   => $mailsubject,
     'html'      => $mailmatter,
     'text'      => $mailmatter,
-    'from'      => 'gigster@fountaintechies.com',
+    'from'      => 'gigster@gigstergo.com',
   );
 
 
