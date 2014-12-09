@@ -38,7 +38,7 @@ include('cfg/more-functions.php');
     </div>    
   </div>
   </div> -->
-<div class="container" style="max-width: 1195px;margin-top: 45px;margin-bottom: 45px;">
+<div class="container" style="max-width: 1195px;margin-top: 45px;margin-bottom: 80px;">
       <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
        How It Works
@@ -64,7 +64,7 @@ include('cfg/more-functions.php');
   <?php if(!isset($_SESSION['uId']))
   {
     ?>
-  <div style="text-align: center;padding: 50px;padding-top: 0px;">  
+  <div style="text-align: center;padding-top: 0px;">  
   <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
   </div>  
 <?php
