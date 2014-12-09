@@ -1172,4 +1172,83 @@ function get_rating_stars($serverpath,$rating){
 	}
 	return $mstr;
 }
+function send_notifications($skills,$loggedinuser,$projectId,$serverpath)
+{
+	$users=get_gigsters_on_skill($skills,$loggedinuser);
+
+	$projectDetails=get_gig_details($projectId);
+	$prjTitle=$projectDetails['prjTitle'];
+	$prjDesc=strip_string($projectDetails['prjTitle'],100);
+	$prjDesc.="...";	
+	$mailsubject="A new gig matching your skills is posted over GigsterGo";
+	if(sizeof($users)>0)
+	{
+		foreach($users as $user)
+		{
+			$userInfo="";
+			$userInfo=get_user_Info(encrypt_str($user));
+			$usermail="";
+			$usermail=$userInfo['usermail'];
+			$username="";
+			$username=$userInfo['username'];
+			if(!$username)
+			{
+				$username=$usermail;
+			}
+			$mailmatter="";
+			$mailmatter='<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center">
+<a href="'.$serverpath.'"><img src="'.$serverpath.'images/logo-1.png" /></a>
+</td>
+</tr>
+</table>
+<br/><br/>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+Hello <strong>'.$username.'</strong>
+</td>
+</tr>
+<tr>
+<td>
+A New gig on Gigster '.$prjTitle.' is posted and it matches to your skillset. 
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<strong>Skills Required : </strong> '.$skills.'
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Details Are</strong>
+</td>
+</tr>
+<tr>
+<td>'.$prjDesc.'</td>
+</tr>
+<tr>
+<td>
+If you are interested in this Gig , please submit your bid by <a href="'.get_project_link($serverpath,$projectId).'">clicking over here</a>.
+</td>
+</tr>
+</table>
+<br/><br/>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+	<td><strong>GigsterGo.com</strong></td>
+</tr>
+</table>';
+$mailmatter=send_my_mail($usermail,$mailmatter,$mailsubject);
+			
+		}
+	}
+}
 ?>

@@ -4,7 +4,7 @@
       <section class="postgigform" id="postgigform">
         <h2 id="login1">Post a Gig </h2>
         <h2 class="source">Get help for anything and post a new Gig for free.</h2>
-        <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" target="targetframe" >
+        <form class="form-horizontal postgigforminner" target="targetframe" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" >
           <div class="form-group">
               <div class="col-md-2">
               <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
@@ -69,20 +69,10 @@
             $tags=implode(",",$tags);
             ?>
           <script type="text/javascript">$("#keywords").select2({tags:[<?php echo strtolower($tags);?>]});</script>
-        <?php /*?>  <h2 class="loginlead">Would you like to invite your favourite Gigsters to bid?</h2>
-          <div class="form-group">
-            <div class="col-sm-12 ">
-              <label class="radio-inline" style="line-height:22px;padding:0px;">
-                <input type="radio" name="inviteusers[]" id="inviteusers"   value="0"  checked >
-                <span class="check-btn">No, please select Gigsters for me</span></label>
-              <label class="radio-inline" style="line-height:22px;padding:0px;">
-                <input type="radio" name="inviteusers[]" id="inviteusers"   value="1">
-                <span class="check-btn">Yes, I will select which Gigsters to bid</span> </label>
-            </div>
-          </div>
+        
           <div class="form-group submit">
             <button type="submit" class="btn btn-warning">Post Gig</button>
-          </div><?php */?>
+          </div>
         </form>
       </section>
       &nbsp;

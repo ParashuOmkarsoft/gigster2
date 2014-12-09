@@ -37,6 +37,8 @@ if($prjTitle)
 	if($insertSql)
 	{
 		add_keywords($keywords);
+		send_notifications($keywords,$uId,$insertSql,$serverpath);
+		
 		if($inviteusers != "1")
 		{
 		?>
