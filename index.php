@@ -18,7 +18,7 @@ include('cfg/more-functions.php');
         
     <div id="imgback">
       <img src="<?php echo $serverpath;?>images/grooming.png">
-       <a data-toggle="modal" href="#" class="btn Learn-More"/> Learn More</a>
+      <!--  <a data-toggle="modal" href="#learn-more" class="btn Learn-More"/> Learn More</a> -->
     </div>
 
  <!--  <div class="container" style="padding:40px;">
