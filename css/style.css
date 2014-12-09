@@ -1545,3 +1545,24 @@ line-height: 25px;
 letter-spacing: 1px;
 border: none;
 padding: 0px 10px;}
+
+.signup-form{max-width: 726px;
+border: 5px solid #febe07;
+border-radius: 12px;
+padding: 33px;
+margin-top: 50px;}
+
+.Learn-More{position: absolute;
+top: 100%;
+right: 39%;
+text-align: center;
+font-family: 'source_sans_proregular';
+color: #FFFFFF;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 268px;
+border-radius: 10px;
+margin-right: 10px;
+ background: #FFA700; 
+outline: none;
+border: 2px solid #FFA700; }

@@ -18,9 +18,10 @@ include('cfg/more-functions.php');
         
     <div id="imgback">
       <img src="<?php echo $serverpath;?>images/grooming.png">
+       <a data-toggle="modal" href="#" class="btn Learn-More"/> Learn More</a>
     </div>
 
-  <div class="container" style="padding:40px;">
+ <!--  <div class="container" style="padding:40px;">
   <div class="row clearfix">
     <div class="col-md-12 column">
       <h2 class="name-what-gigster text-center">
@@ -36,7 +37,40 @@ include('cfg/more-functions.php');
       </h2>
     </div>    
   </div>
-  </div>
+  </div> -->
+<div class="container" style="max-width: 1195px;margin-top: 45px;margin-bottom: 45px;">
+      <div class="col-md-12 column" style="margin-bottom: 50px;">
+      <h2 class="name-what-gigster text-center">
+       How It Works
+      </h2>
+      </div>
+  
+      <div class="col-md-4 box-1">
+        <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
+        <h2 class="fname2">Get Anything Done </h2>
+        <p>Tell us what you need help with and post a Gig.</h2>
+      </div>
+      <div class="col-md-4 box-1">
+        <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
+        <h2 class="fname2">Choose the Gigster </h2>
+        <p>We'll find the right local Gigsters and you just select one.</p>
+      </div>   
+      <div class="col-md-4 box-1">
+        <span class=""><img src="images/step3.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
+        <h2 class="fname2">All done!</h2>
+        <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
+      </div>   
+  
+  <?php if(!isset($_SESSION['uId']))
+  {
+    ?>
+  <div style="text-align: center;padding: 50px;padding-top: 0px;">  
+  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
+  </div>  
+<?php
+  }
+?>
+</div>  
 
   <div class="row rowbg">
 <div class="container" style="max-width:1200px;">
@@ -78,39 +112,7 @@ include('cfg/more-functions.php');
 </div>
 
 
-<div class="container" style="max-width: 1195px;margin-top: 45px;margin-bottom: 45px;">
-      <div class="col-md-12 column" style="margin-bottom: 50px;">
-      <h2 class="name-what-gigster text-center">
-       How It Works
-      </h2>
-      </div>
-  
-      <div class="col-md-4 box-1">
-        <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
-        <h2 class="fname2">Get Anything Done </h2>
-        <p>Tell us what you need help with and post a Gig.</h2>
-      </div>
-      <div class="col-md-4 box-1">
-        <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
-        <h2 class="fname2">Choose the Gigster </h2>
-        <p>We'll find the right local Gigsters and you just select one.</p>
-      </div>   
-      <div class="col-md-4 box-1">
-        <span class=""><img src="images/step3.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
-        <h2 class="fname2">All done!</h2>
-        <p>Once the Gig is done, you pay directly to the Gigster. No additional charges!</p>
-      </div>   
-  
-  <?php if(!isset($_SESSION['uId']))
-  {
-	  ?>
-  <div style="text-align: center;padding: 50px;padding-top: 0px;">  
-  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
-  </div>  
-<?php
-  }
-?>
-</div>
+
 
 
 
