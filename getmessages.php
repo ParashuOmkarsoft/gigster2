@@ -100,7 +100,7 @@ $projectDetails=get_gig_details($project);
         <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" /> <br/>
           <p class="message"> 
 
-          <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?><Br/>
+          <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?>
           
           <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
           <?php
