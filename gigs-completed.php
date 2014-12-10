@@ -310,7 +310,7 @@ include('cfg/more-functions.php');
   <?php } else  {   ?>
   <div class="row ">
     <div class="col-md-8">
-      <p>Sorry , No Gigs are completed right now.</p>
+      <p>Sorry , there are no completed Gigs right now.</p>
     </div>
   </div>
   <?php  } ?>

@@ -443,7 +443,7 @@ $puname=$puuinfo['username'];
 		?>
   <div class="clearfix"></div>
   <br/>
-  <p class="mandatory">Sorry, No Gigs assigned to you yet.</p>
+  <p class="mandatory">Sorry, there are no Gigs awarded to you.</p>
   <br/>
   <div class="clearfix"></div>
   <?php

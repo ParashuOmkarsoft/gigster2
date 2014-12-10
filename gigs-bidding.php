@@ -237,7 +237,7 @@ include('cfg/more-functions.php');
   <?php  } else  {  ?>
   <div class="row ">
     <div class="col-md-8">
-      <p>Sorry , No Gigs are is open for bidding right now.</p>
+      <p>Sorry , no Gigs are open for bidding right now.</p>
     </div>
   </div>
   <?php  } ?>
