@@ -1552,17 +1552,16 @@ border-radius: 12px;
 padding: 33px;
 margin-top: 50px;}
 
-.Learn-More{position: absolute;
-top: 94%;
-right: 39%;
-text-align: center;
-font-family: 'source_sans_proregular';
-color: #FFFFFF;
+.Learn-More{color: #FFFFFF;
 font-size: 22px;
 font-family: 'source_sans_prosemibold';
-width: 268px;
+width: 230px;
 border-radius: 10px;
+/* margin-left: 10px; */
 margin-right: 10px;
- background: #FFA700; 
+background: #FF9400;
 outline: none;
-border: 2px solid #FFA700; }
+/* margin-top: 60px; */
+position: absolute;
+top: 126%;
+right: 43%; }
