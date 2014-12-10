@@ -20,7 +20,7 @@ if(!isset($_SESSION['uId']))
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php echo $sitename;?>- My Assignments</title>
+<title><?php echo $sitename;?>- My Bidds</title>
 <?php include('script-header.php'); ?>
 <?php include('fb-login.php'); ?>
 </head>
@@ -40,7 +40,7 @@ if(!isset($_SESSION['uId']))
     <li><a href="<?php echo $serverpath;?>bided"> Bidding </a></li>
     <li><a href="<?php echo $serverpath;?>tocompleted">Completed</a></li>
   </ul>
-  <h2 id="my-assignment-box">My Assignments</h2>
+  <h2 id="my-assignment-box">My Bids</h2>
   <?php
 
 

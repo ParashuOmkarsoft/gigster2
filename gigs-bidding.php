@@ -37,7 +37,7 @@ include('cfg/more-functions.php');
     </li>
     <li><a href="<?php echo $serverpath;?>completed">Completed</a></li>
   </ul>
-  <h2 id="logingigster1">My Gigs - Bidding</h2>
+  <h2 id="logingigster1">My Gigs</h2>
   <?php
         $uId=$uInfo['userId'];
 	  	// Count Query

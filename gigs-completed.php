@@ -34,7 +34,7 @@ include('cfg/more-functions.php');
 						  ?></a></li>
     <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
   </ul>
-  <h2 id="logingigster1">My Gigs - Completed</h2>
+  <h2 id="logingigster1">My Gigs</h2>
   <?php
         $uId=$uInfo['userId'];
 		$gigscountquery=@db_query("select * from btr_projects where userId='$uId' and status='3' order by postedon DESC");
