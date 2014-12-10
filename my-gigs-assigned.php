@@ -30,15 +30,15 @@ if(!isset($_SESSION['uId']))
 
 <section class="container mclass">
   <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>assignments"> <strong> In progress</strong> <?php if($unreadawards)
+    <li><a href="<?php echo $serverpath;?>assignments"> <strong> Awarded</strong> <?php if($unreadawards)
 						  {
 							  ?>
 							  <i class="fa fa-circle" style="color:green;"></i>
 							  <?php
 						  }
 						  ?></a></li>
-    <li><a href="<?php echo $serverpath;?>bided"> My Bids </a></li>
-    <li><a href="<?php echo $serverpath;?>tocompleted">My Completed</a></li>
+    <li><a href="<?php echo $serverpath;?>bided"> Bidding </a></li>
+    <li><a href="<?php echo $serverpath;?>tocompleted">Completed</a></li>
   </ul>
   <h2 id="my-assignment-box">My Assignments</h2>
   <?php

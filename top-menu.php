@@ -20,7 +20,7 @@
                       <?php
 				}
 					  ?>
-                      <li><a href="<?php echo $serverpath;?>allgigs">LIST GIGS</a></li>
+                      <li><a href="<?php echo $serverpath;?>allgigs">BROWSE GIGS</a></li>
                 <!--      <li><a href="<?php echo $serverpath;?>gigsters">GIGSTERS</a></li>-->
                    <!--  <li><a data-toggle="modal" href="#invitemodal">INVITE</a></li> -->
 
@@ -53,7 +53,7 @@
                           <?php
 						  $unreadawards=get_unread_awards($uInfo['userId']);
 						  ?>
-   						  <li><a href="<?php echo $serverpath;?>assignments" >MY ASSIGNMENT  <?php if($unreadawards)
+   						  <li><a href="<?php echo $serverpath;?>assignments" >MY BIDS  <?php if($unreadawards)
 						  {
 							  ?>
 							  <i class="fa fa-circle" style="color:green;" title="New Gig Awarded"></i>
