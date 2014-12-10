@@ -19,15 +19,15 @@ include('cfg/more-functions.php');
 
 <section class="container mclass">
   <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>assignments"> In progress <?php if($unreadawards)
+    <li><a href="<?php echo $serverpath;?>assignments"> Awarded <?php if($unreadawards)
 						  {
 							  ?>
 							  <i class="fa fa-circle" style="color:green;"></i>
 							  <?php
 						  }
 						  ?></a></li>
-    <li><a href="<?php echo $serverpath;?>bided"> <strong>My Bids</strong> </a></li>
-    <li><a href="<?php echo $serverpath;?>tocompleted">My Completed</a></li>
+    <li><a href="<?php echo $serverpath;?>bided"> <strong>Bidding</strong> </a></li>
+    <li><a href="<?php echo $serverpath;?>tocompleted">Completed</a></li>
   </ul>
   <h2 id="logingigster1">My Bids</h2>
   <?php
