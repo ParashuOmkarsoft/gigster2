@@ -5,7 +5,7 @@ $email =  $_GET['email'];
 $linkedin = new LinkedIn(array(
 	'apiKey' => '75nce3oxg53sku',
 	'apiSecret' => 'De2XwMWVij076URD',
-	'callbackUrl' => 'http://gigster2.fountaintechies.com/loginwithtlinkedin?email='.$email,
+	'callbackUrl' => 'http://gigstergo.com/loginwithtlinkedin?email='.$email,
 ));
 $token = '';
 if (isset($_GET['code']))
