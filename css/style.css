@@ -543,7 +543,8 @@ margin-left: 40px;
 	font-family: 'source_sans_probold';
 	font-size: 20px;
 	color: #5e350d;
-	line-height: 11px;}
+	line-height: 11px;
+font-weight: bold;}
 /*.postgigforminner {margin-left: 15px;}*/
 .postgigforminner input[type=text]{/*width: 70%;*/border-radius: 0px;border: 1px solid #fab518;padding: 6px;}
 .postgigforminner textarea.form-control{width: 70%;border-radius: 0px;border: 1px solid #fab518;padding: 6px}
