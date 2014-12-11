@@ -5,6 +5,8 @@ include('cfg/cfg.php');
 $loginmail=filter_text($_POST['loginmail']);
 $loginpass=filter_text($_POST['loginpass']);
 $reqType=filter_text($_POST['reqType']);
+if($loginmail && $loginpass)
+{
 if($reqType=="signup")
 {
 	if($loginpass){
@@ -56,8 +58,18 @@ else
 		?>
 		<script type="text/javascript">
 			alert("Error, Invalid username/password.");
+						window.parent.location="<?php echo $_SERVER['HTTP_REFERER'];?>";
 		</script>
 		<?php
 	}
+}
+}
+else{
+		?>
+		<script type="text/javascript">
+			alert("Error, Email/password are mandatory.");
+			window.parent.location="<?php echo $_SERVER['HTTP_REFERER'];?>";
+		</script>
+		<?php
 }
 ?>

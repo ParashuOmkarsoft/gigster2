@@ -65,9 +65,20 @@ if($frmaction=="updateinfo")
 	$city=filter_text($_POST['city']);
 	$country=filter_text($_POST['country']);
 	$profileimage=$_FILES['profileimage'];
+	
+	$mcheckQuery="select * from btr_userprofile where userId=$user";
+	$mcheckSql=@db_query($mcheckQuery);
+	if($mcheckSql['count']>0)
+	{
+	}
+	else
+	{
+		$ins=@db_query("insert into btr_userprofile(userId)values($user)");
+	}
+	
 	if($fname)
 	{
-	echo 	$updateQuery="update btr_userprofile set fname='$fname' where userId=$user";
+		$updateQuery="update btr_userprofile set fname='$fname' where userId=$user";
 		$updateSql=@db_query($updateQuery);
 	}
 	if($lname)

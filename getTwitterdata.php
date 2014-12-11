@@ -63,6 +63,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 		   $insertQuery=@db_query("insert into btr_users(joinedon,twittid)values(".gmmktime().",'".$uid."')",3);
 		   if($insertQuery)
 		   { 
+
 			   $updateQuery=@db_query("update btr_users set authkey='".encrypt_str($insertQuery)."' where userId=$insertQuery");
 			   if($fbImage)
 		  {

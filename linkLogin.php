@@ -2,6 +2,7 @@
 ob_start();
 require_once 'linkedinSdk/linkedin.php';
 $email =  $_GET['email'];
+
 $linkedin = new LinkedIn(array(
 	'apiKey' => '75nce3oxg53sku',
 	'apiSecret' => 'De2XwMWVij076URD',
@@ -22,13 +23,16 @@ if (isset($_GET['code']))
 			$registration_password = $userData->id; 
             include('cfg/cfg.php'); 
 			$fname=$userData->firstName;
-			$lname=$userDAta->lastName;
-			$userId=$userDAta->id;
-			$checkQuery="select * from btr_users where usermail='$usermail' or linkedinid='$userId'";
+			$lname=$userData->lastName;
+			$userId=$userData->id;
+			
+		 	  $checkQuery="select * from btr_users where usermail='$usermail' ";
+		
 			$checkSql=@db_query($checkQuery);
 			if($checkSql['count']>0)
 				{
-				$updateQuery="update btr_users set linkedinid='$userId' ,usermail='$usermail' where userId=".$checkSql['rows']['0']['userId'];
+				 $updateQuery="update btr_users set linkedinid='$userId' ,usermail='$usermail' where userId=".$checkSql['rows']['0']['userId'];
+				
 				$updateSql=@db_query($updateQuery);
 				$user=encrypt_str($checkSql['rows']['0']['userId']);
 				$_SESSION['uId']=$user;

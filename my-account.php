@@ -106,7 +106,7 @@ include('cfg/more-functions.php');
           </div>  
           <Br/>
          
-          <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" enctype="multipart/form-data" class="mhidden" >
+          <form id="frmprofile" method="post" action="<?php echo $serverpath;?>updateInfo" enctype="multipart/form-data" class="mhidden" target="targetframe" >
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
