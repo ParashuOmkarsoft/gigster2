@@ -16,7 +16,7 @@
               </div>
         </div>
         <div class="col-md-8">
-          <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" >
+          <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
                 <div class="col-sm-10">

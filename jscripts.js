@@ -3,7 +3,25 @@ function visible_invisible(visible,invisible)
 	document.getElementById(visible).style.display="block";
 	document.getElementById(invisible).style.display="none";	
 }
-
+function validate_login()
+{
+	var loginmail=document.getElementById("loginmail").value;
+	var loginpass=document.getElementById("loginpass").value;
+	
+	loginmail=loginmail.replace(/\s+/g,'');
+	loginpass=loginpass.replace(/\s+/g,'');	
+	
+	if(loginmail.length<=0)
+	{
+		alert("Error, Email for login / signup is required.");
+		return false;
+	}
+		if(loginpass.length<=0)
+	{
+		alert("Error, Password for login / signup is required.");
+		return false;
+	}
+}
 function change_caption(mtype)
 {
 
