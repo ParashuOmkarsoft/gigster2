@@ -217,15 +217,11 @@ include('cfg/more-functions.php');
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#f8f8f8;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
 			}
 			else
 			{
-				$cl="style='background-color:white;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
