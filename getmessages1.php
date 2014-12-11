@@ -66,12 +66,12 @@ $bidSql=@db_query($bidQuery);
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
 				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
-        $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;'";
+        $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 480px;'";
 			}
 			else
 			{
 				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 483px;;float:right;'";
-        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 480px;float:right;'";
+        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 440px;float:right;'";
 			}
 	?>
 	<div class="col-md-12" <?php echo $cl;?> >
