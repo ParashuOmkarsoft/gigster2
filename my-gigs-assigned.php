@@ -408,7 +408,7 @@ $puname=$puuinfo['username'];
           
     </div>   
     <div style="float: right;padding-left:30px;margin-right: 15px;" >
-          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
+          <a href="#msgmodal<?php echo $gigdetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="margin-top: 15px;"></a>
            </div>        
  </div>
     </div>
