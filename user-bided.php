@@ -237,7 +237,7 @@ box-shadow: 0px 0px 2px #000000;'";
 		?>
   <div class="clearfix"></div>
   <br/>
-  <p class="mandatory">Sorry, there are no bids submited by you.</p>
+  <p class="mandatory">Sorry, there are no bids submitted by you.</p>
   <br/>
   <div class="clearfix"></div>
   <?php

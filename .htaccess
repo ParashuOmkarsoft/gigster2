@@ -1,9 +1,10 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
 RewriteCond %{HTTP_HOST} ^example.com$ [NC]
 RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]
 
-RewriteBase /
+
 RewriteRule ^(cfg)($|/) - [L]
 RewriteRule ^(css)($|/) - [L]
 RewriteRule ^(font-awesome)($|/) - [L]

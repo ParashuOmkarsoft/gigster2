@@ -5,6 +5,7 @@ include('cfg/more-functions.php');
 $userId=$_SESSION['uId'];
 $userInfo=get_user_Info($userId);
 $user=$userInfo['userId'];
+
 $aboutus=filter_text($_POST['aboutus']);
 $overview=filter_text($_POST['moverview']);
 $skills=filter_text($_POST['skills']);
@@ -14,6 +15,7 @@ $syncimage=filter_text($_POST['syncimage']);
 $username=filter_text($_POST['username']);
 $usermail=filter_text($_POST['usermail']);
 $contactno=filter_text($_POST['contactno']);
+
 if(!$notify)
 {
 	$notify="0";
@@ -65,7 +67,7 @@ if($frmaction=="updateinfo")
 	$profileimage=$_FILES['profileimage'];
 	if($fname)
 	{
-		$updateQuery="update btr_userprofile set fname='$fname' where userId=$user";
+	echo 	$updateQuery="update btr_userprofile set fname='$fname' where userId=$user";
 		$updateSql=@db_query($updateQuery);
 	}
 	if($lname)
@@ -179,6 +181,7 @@ if($frmaction=="updateinfo")
 		$updateSql=@db_query($updateQuery);
 	}
 	$data=get_user_Info($_SESSION['uId']);
+	print_r($data);
 	$mloc="";
 		if($data['city'])
 			{
@@ -220,6 +223,7 @@ if($frmaction=="updateinfo")
 	{
 		$mpath="";
 	}
+
 	?>
 	<script type="text/javascript">
 
