@@ -71,6 +71,14 @@ include('cfg/more-functions.php');
   </div>  
 <?php
   }
+  else
+  {
+	   ?>
+  <div style="text-align: center;padding-top: 0px;">  
+  <a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()" class="btn signup-btn"/> Post a Gig!</a>
+  </div>  
+<?php
+  }
 ?>
 </div>  
 
