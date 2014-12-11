@@ -91,7 +91,11 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 	   }
     }
 } else {
-    // Something's missing, go back to square 1
-    header('Location: twittlogin');
+    
+   ?>
+   <script type="text/javascript">
+			window.location="<?php echo $serverpath;?>";
+			</script>
+   <?
 }
 ?>
