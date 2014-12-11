@@ -1564,4 +1564,8 @@ outline: none;
 /* margin-top: 60px; */
 position: absolute;
 top: 100%;
-right: 39%;}
+right: 39%}
+#main-bg{
+background: url("../images/grooming.png");
+height: 600px;
+}

@@ -13,15 +13,16 @@ include('cfg/more-functions.php');
 	<?php include('script-header.php'); ?>
     <?php include('fb-login.php'); ?>
   </head>
-  <body>
-    <?php include('top-menu.php'); ?>
+  <body style="padding-top:0px;">
+  <div id="main-bg">
+    <?php include('img-img-top-menu.php'); ?>
         
     <div id="imgback">
-      <img src="<?php echo $serverpath;?>images/grooming.png">
-      <button class="btn Learn-More" type="submit">Learn More</button>
+      <!-- <img src="<?php echo $serverpath;?>images/grooming.png"> -->
+      <!-- <button class="btn Learn-More" type="submit">Learn More</button> -->
       <!--  <a data-toggle="modal" href="#learn-more" class="btn Learn-More"/> Learn More</a> -->
     </div>
-
+  </div>
  <!--  <div class="container" style="padding:40px;">
   <div class="row clearfix">
     <div class="col-md-12 column">
