@@ -71,7 +71,7 @@ $bidSql=@db_query($bidQuery);
 			else
 			{
 				$dl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 483px;;float:right;'";
-        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;float: right;width: 450px;'";
+        $cl="style='background-color:#ffffff;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 	?>
 	<div class="col-md-12" <?php echo $cl;?> >
