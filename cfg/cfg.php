@@ -12,6 +12,7 @@ $twitterLink="http://twitter.com/GigsterGo";
 $pintlink="#";
 $rec_limit = 5;
 $adminId=18;
+$m_list="29,31,61";
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
@@ -1256,6 +1257,14 @@ If you are interested in this Gig , please submit your bid by <a href="'.get_pro
 $mailmatter=send_my_mail($usermail,$mailmatter,$mailsubject);
 			
 		}
+	}
+}
+function get_admin($userId,$mstr)
+{
+	$mstr=explode(",",$mstr);
+	if(in_array($userId,$mstr))
+	{
+		return "1";
 	}
 }
 ?>
