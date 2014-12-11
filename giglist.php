@@ -199,7 +199,26 @@ include('cfg/more-functions.php');
 	  ?>
 		   		<a href="#" ><button type="button" class="btn btn-bid pull-right" style="background-color:#006;" onClick="javascript:alert('This Gig is already awarded');">Awarded</button></a>
 		  <?php }
-		  	  }	?>
+		  	  }	
+			  
+			  $m_u_Info=get_user_Info($_SESSION['uId']);
+			  if(get_admin($m_u_Info['userId'],$m_list))
+			  {
+				  $m_ftrd=is_featured($opengig['prjId']);
+				  if($m_ftrd)
+				  {
+?>
+              <a href="<?php echo $serverpath;?>isfeatured/<?php echo $opengig['prjId'];?>/0" style="margin-bottom:5px;" class="btn btn-primary pull-right">UnFeature It!</a>
+<?php
+				  }
+				  else
+				  {
+			  ?>
+              <a href="<?php echo $serverpath;?>isfeatured/<?php echo $opengig['prjId'];?>/1" class="btn btn-bid pull-right">Feature It!</a>
+              <?php
+				  }
+			  }
+			  ?>
       <!-- end bid model --> 
     </div>
   </div>

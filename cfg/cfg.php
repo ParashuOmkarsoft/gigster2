@@ -12,7 +12,7 @@ $twitterLink="http://twitter.com/GigsterGo";
 $pintlink="#";
 $rec_limit = 5;
 $adminId=18;
-$m_list="29,31,61";
+$m_list="29,31,32";
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
@@ -1261,10 +1261,20 @@ $mailmatter=send_my_mail($usermail,$mailmatter,$mailsubject);
 }
 function get_admin($userId,$mstr)
 {
+
 	$mstr=explode(",",$mstr);
 	if(in_array($userId,$mstr))
 	{
 		return "1";
+	}
+}
+function is_featured($projectId)
+{
+	$query="select * from btr_projects where prjId=$projectId";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql['rows']['0']['featured'];
 	}
 }
 ?>

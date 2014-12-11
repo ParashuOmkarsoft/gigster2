@@ -51,6 +51,7 @@ RewriteRule ^finalrating rate-user.php
 RewriteRule ^aboutus about-us.php
 RewriteRule ^contactus contact-us.php
 RewriteRule ^searchgig search-gig.php
+RewriteRule ^isfeatured/([^/]*)/([^/]*)$ is-featured.php?reportId=$1&action=$2 [L]
 RewriteRule ^approvereport/([^/]*)$ report-approval.php?reportId=$1 [L]
 RewriteRule ^delthread/([^/]*)$ remove-thread.php?delId=$1
 RewriteRule ^markascomplete/([^/]*)$ mark-as-complete.php?prjId=$1
