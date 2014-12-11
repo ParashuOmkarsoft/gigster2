@@ -13,7 +13,7 @@ include('cfg/more-functions.php');
 	<?php include('script-header.php'); ?>
     <?php include('fb-login.php'); ?>
   </head>
-  <body style="padding-top:0px;">
+  
   <div id="main-bg">
     <?php include('top-menu.php'); ?>
         

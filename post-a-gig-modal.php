@@ -6,7 +6,7 @@
         <h2 class="source">Get help for anything and post a new Gig for free.</h2>
         <form class="form-horizontal postgigforminner" target="targetframe" action="<?php echo $serverpath;?>saveGig" role="form" method="post" id="postform" >
           <div class="form-group">
-              <div class="col-md-2">
+              <div class="col-md-2" style="padding:0px;">
               <label for="creategig" class="col-sm-2 control-label labelb">Title</label>
               </div>
             <div class="col-sm-9" style="padding-left: 12px;margin-left: 35px;">
@@ -14,7 +14,7 @@
             </div>
           </div>    
               <div class="form-group">
-              <div class="col-md-2">
+              <div class="col-md-2"  style="padding:0px;">
               <label for="gigdescription" class="col-sm-2 control-label dis ">Description</label>
             </div>  
             <div class="col-sm-9" style="padding-left:12px;margin-left: 35px;">
