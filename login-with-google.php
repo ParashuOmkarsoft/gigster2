@@ -26,7 +26,7 @@ require_once ('autoload.php');
  ************************************************/
  $client_id = '365892962432-h062bakvhfujq1itspoe635h4bfj7a2u.apps.googleusercontent.com';
  $client_secret = 's-QepkoZtp-2dtUROoKrWpqc';
- $redirect_uri = 'http://gigstergo.com/login-with-google.php';
+ $redirect_uri = 'http://www.gigstergo.com/login-with-google.php';
 
 /************************************************
   Make an API request on behalf of a user. In
