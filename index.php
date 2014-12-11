@@ -131,6 +131,7 @@ include('cfg/more-functions.php');
   
   <?php }}*/ ?>
 </div>
+<?php /*
 <div class="row" style="background: rgb(225, 225, 225);width: auto;margin: 0 auto;">
 <div class="container-fluid" style="max-width: 1290px;margin: 0 auto;padding-bottom: 70px;">
 <div class="col-md-12 column" style="margin-bottom: 50px;">
@@ -169,7 +170,7 @@ if (strlen($string) > 140) {
         
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
-        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></h2>
+        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></p>
       </div>
       <?php
 }
@@ -178,13 +179,13 @@ if (strlen($string) > 140) {
 
 </div>
       
-    </p>
+    </div>
     </div>
    </div>
   </div>
   <div style="text-align: center;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
-</div>
+</div> */ ?>
 </body>
 
 <?php

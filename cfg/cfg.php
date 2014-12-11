@@ -538,6 +538,7 @@ curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 
 // obtain response
 $response = curl_exec($session);
+
 curl_close($session);
 
 // print everything out
@@ -1251,6 +1252,7 @@ If you are interested in this Gig , please submit your bid by <a href="'.get_pro
 	<td><strong>GigsterGo.com</strong></td>
 </tr>
 </table>';
+
 $mailmatter=send_my_mail($usermail,$mailmatter,$mailsubject);
 			
 		}
