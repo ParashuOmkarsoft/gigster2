@@ -197,8 +197,8 @@ box-shadow: 0px 0px 2px #000000;'";
 	  if( ($tt) && ($tt != $uInfo['userId']))
 	  {
 	  ?>
-      <div style="margin-right: 29px;">
-        <img src="<?php echo $serverpath;?>images/sad.png" width="32" height="32" title="Awarded to someone else" style="cursor:pointer;margin-top:5px;"/>
+      <div class="col-md-12">
+        <img src="<?php echo $serverpath;?>images/sad.png" width="32" height="32" title="Awarded to someone else" style="cursor:pointer;margin-top:5px;margin-right: 15px;"/>
        <br/>
        </div>
        <?php
