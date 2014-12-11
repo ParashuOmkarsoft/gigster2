@@ -89,7 +89,7 @@ $projectDetails=get_gig_details($project);
 
           <a href="<?php echo get_profile_link($serverpath,$messagethread['rows'][$i]['msgfrom']);?>" class="name">
           
-          <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+          <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small>
            <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?>
           </a>
           <?php
@@ -102,7 +102,7 @@ $projectDetails=get_gig_details($project);
 
           <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?>
           
-          <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small><br/>
+          <small class="text-muted " style="float:right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small>
           <?php
 	   }
 		  ?>
