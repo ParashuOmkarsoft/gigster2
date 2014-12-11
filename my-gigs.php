@@ -193,7 +193,7 @@ include('cfg/more-functions.php');
                   </div>
                 </form>
               </div>
-              <div class="col-md-12" style="height:250px; overflow:scroll;padding-top: 2px;">
+              <div class="col-md-12" style="height: 400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px;">
                 <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -221,7 +221,7 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				$cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
+				$cl="style='text-align:left;background-color:#fff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
