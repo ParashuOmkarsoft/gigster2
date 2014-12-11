@@ -110,7 +110,7 @@ else
 					$biddernametodisplay=$bidderInfo['username'];
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your bid on <span style='font-color:#7d2900;'>$gigname</span> was not selected.
+				<p>Unfortunately your bid on <a>$gigname</a> was not selected.
 				<p>Better luck next time.</p>
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>
 				<p>Regards</p>
@@ -122,7 +122,7 @@ else
 						$mail2=send_my_mail($mailto2,$mailmatter2,$mailsubject2);	
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your bid on <span style='font-color:#7d2900;'>$gigname</span> was not selected.
+				<p>Unfortunately your bid on <a>$gigname</a> was not selected.
 				<p>Better luck next time.</p>
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>";
 				$mailmatter2=htmlentities($mailmatter2);
