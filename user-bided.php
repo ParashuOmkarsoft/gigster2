@@ -190,7 +190,7 @@ box-shadow: 0px 0px 2px #000000;'";
          
       </div>
       <div style="float: right;padding-right:10px;margin-right:15px;" >
-        <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="margin-top:40px;"></a>
+        <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="margin-top:10px;"></a>
         </div>
       <?php
 	  $tt=project_awarded_to($prjDetails['prjId']);
