@@ -240,7 +240,7 @@ include('cfg/more-functions.php');
           </div>
         </div>
       </div>
-      <div class="col-md-4"> 
+      <div class="col-md-4" style="padding:0px;"> 
 		<?php 
 
 		$winningbidder=project_awarded_to($opengig['prjId']);
