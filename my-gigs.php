@@ -286,7 +286,9 @@ include('cfg/more-functions.php');
 
 			?>
             </div>
-     	  <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="float:right;margin-top:20px;"></a>              
+     	  <div>
+     	  <a href="#msgmodal<?php  echo $awardedto;?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="float:right;margin-top:20px;margin-right: 15px;"></a>              
+     	  </div>
      	 </div> 
  </div>
 
