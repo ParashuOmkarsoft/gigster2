@@ -26,7 +26,7 @@ else
 <?php include('fb-login.php'); ?>
 </head>
 <body>
-<?php include('img-top-menu.php'); ?>
+<?php include('top-menu.php'); ?>
 
 <?php 
 	$nametodisplay=$gigsterInfo['fname']." ".$gigsterInfo['lname'];

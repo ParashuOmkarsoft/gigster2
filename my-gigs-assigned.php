@@ -25,7 +25,7 @@ if(!isset($_SESSION['uId']))
 <?php include('fb-login.php'); ?>
 </head>
 <body>
-<?php include('img-top-menu.php'); ?>
+<?php include('top-menu.php'); ?>
 <div id="grad"></div>
 
 <section class="container mclass">

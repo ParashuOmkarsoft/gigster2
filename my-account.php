@@ -14,7 +14,7 @@ include('cfg/more-functions.php');
     <?php include('script-header.php'); ?>
   </head>
   <body>
-        <?php include('img-top-menu.php'); ?>
+        <?php include('top-menu.php'); ?>
     
  
      <section class="container">
