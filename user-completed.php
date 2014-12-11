@@ -70,6 +70,7 @@ if($checkSql['count']>0)
 			{
 				$profilepic="images/admin.png";
 			}
+			
 			$gigsterrating=get_user_rating($muInfo['userId']);		
 			
 ?>
@@ -143,7 +144,7 @@ if($checkSql['count']>0)
           <div  style="float:right;margin-right:20px;">
           <table border="0" cellpadding="0" cellspacing="0" ><tr>
           <td style="text-align:center !important;">
-          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo$profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"/>
+          <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"/>
           </td>
           </tr>
           <tr>
