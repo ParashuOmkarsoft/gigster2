@@ -421,7 +421,7 @@ include('cfg/more-functions.php');
   ?>
   <div class="row ">
     <div class="col-md-8">
-      <p>Sorry , No Gigs are in progress right now.</p>
+      <p>Sorry , no Gigs are in progress right now.</p>
     </div>
   </div>
   <?php

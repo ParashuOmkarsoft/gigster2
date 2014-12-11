@@ -190,16 +190,16 @@ box-shadow: 0px 0px 2px #000000;'";
          
       </div>
       <div style="float: right;padding-right:10px;" >
-        <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg"></a>
+        <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="margin-top:40px;"></a>
         </div>
       <?php
 	  $tt=project_awarded_to($prjDetails['prjId']);
 	  if( ($tt) && ($tt != $uInfo['userId']))
 	  {
 	  ?>
-      <div style="float: right;">
+      <div style="float: right;margin-right:-40px;">
         <img src="<?php echo $serverpath;?>images/sad.png" width="32" height="32" title="Awarded to someone else" style="cursor:pointer;margin-top: 0;"/>
-       
+       <br/>
        </div>
        <?php
 	  }
