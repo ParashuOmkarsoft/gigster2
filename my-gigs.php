@@ -221,7 +221,7 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				$cl="style='text-align:left;background-color:#fff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;padding: 6px;'";
+				$cl="style='text-align:left;background-color:#fff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;padding: 6px;float:right'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
