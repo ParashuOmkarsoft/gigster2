@@ -1574,6 +1574,8 @@ height: 790px;
 
 header.bg-header.smaller {
     height: 75px;
+    border-top: 7px solid #e95436;
+    background: #fff;
 }
 header.bg-headersmaller .logo{width: 155px;}
 header.bg-headersmaller .img{width: 86%;}
