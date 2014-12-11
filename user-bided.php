@@ -189,7 +189,7 @@ box-shadow: 0px 0px 2px #000000;'";
         </div>
          
       </div>
-      <div style="float: right;padding-right:10px;margin-right:15px;" >
+      <div style="float: right;padding-right:10px;margin-right:15px;clear: both;" >
         <a href="#msgmodal<?php echo $prjDetails['userId'];?>" data-toggle="modal"><img src="<?php echo $serverpath;?>images/mail.jpg" style="margin-top:10px;"></a>
         </div>
       <?php
@@ -197,8 +197,8 @@ box-shadow: 0px 0px 2px #000000;'";
 	  if( ($tt) && ($tt != $uInfo['userId']))
 	  {
 	  ?>
-      <div style="float: right;margin-right:-35px;margin-top: 4px; ">
-        <img src="<?php echo $serverpath;?>images/sad.png" width="32" height="32" title="Awarded to someone else" style="cursor:pointer;"/>
+      <div style="margin-right: 29px;">
+        <img src="<?php echo $serverpath;?>images/sad.png" width="32" height="32" title="Awarded to someone else" style="cursor:pointer;margin-top:5px;"/>
        <br/>
        </div>
        <?php
