@@ -1567,5 +1567,14 @@ top: 100%;
 right: 39%}
 #main-bg{
 background: url("../images/grooming.png");
-height: 600px;
+height: 790px;
 }
+
+.bg-header{background:none;}
+
+header.bg-header.smaller {
+    height: 75px;
+}
+header.bg-headersmaller .logo{width: 155px;}
+header.bg-headersmaller .img{width: 86%;}
+header.bg-headersmaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}

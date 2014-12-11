@@ -1,4 +1,4 @@
-<header class="navbar-fixed-top" style="background:none;">
+<header class="navbar-fixed-top bg-header">
       <div class="container" style="max-width:1200px;">
         <div class="row">
           <div class="col-md-2">
