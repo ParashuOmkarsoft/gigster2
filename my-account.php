@@ -208,7 +208,7 @@ include('cfg/more-functions.php');
                     
              <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" value="1" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  }?> data-switch-state="false"> 
              	
-                  <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
+                  <div class="btn-group btn-toggle" style="margin-left: 33px;padding-bottom: 0px;"> 
                   
                   </div>
             </div>
