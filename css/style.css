@@ -1582,3 +1582,23 @@ header.bg-header.smaller {
 header.bg-headersmaller .logo{width: 155px;}
 header.bg-headersmaller .img{width: 86%;}
 header.bg-headersmaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}
+
+
+.bootstrap-switch {
+display: inline-block;
+cursor: pointer;
+border-radius: 4px;
+border: 1px solid;
+border-color: #cccccc;
+position: absolute;
+text-align: left;
+overflow: hidden;
+line-height: 8px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+vertical-align: middle;
+-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
