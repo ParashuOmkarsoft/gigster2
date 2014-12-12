@@ -110,46 +110,44 @@ include('cfg/more-functions.php');
           <input type="hidden" name="frmaction" id="frmaction" value="updateinfo" />
            <div class="col-md-6">
           	<div class="form-group">
-            	<label class="profile-inpute">First Name</label>
-              
-              <input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />
-                
+            	<label class="profile-inpute">First Name</label>              
+              <input type="text" name="fname" id="fname" class="form-control profile-text" value="<?php echo $uInfo['fname'];?>" />                
             </div>
           	<div class="form-group">
-            <label class="col-md-4 profile-inpute">Last Name</label>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
+            <label class="profile-inpute">Last Name</label>
+            <div style="margin-bottom: 12px;">
                 	<input type="text" name="lname" id="lname" class="form-control profile-text" value="<?php echo $uInfo['lname'];?>" />
             </div>
             </div>
             <div class="form-group">
-            <label class="col-md-4 profile-inpute">Username</label>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
+            <label class="profile-inpute">Username</label>
+            <div style="margin-bottom: 12px;">
                 	<input type="text" name="username" id="username" class="form-control profile-text" value="<?php echo $uInfo['username'];?>" />
             </div>
             </div>
             <div class="form-group">
-            <label class="col-md-4 profile-inpute">Email</label>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
+            <label class="profile-inpute">Email</label>
+            <div style="margin-bottom: 12px;">
                 	<input type="text" name="usermail" id="usermail" class="form-control profile-text" value="<?php echo $uInfo['usermail'];?>" />
             </div>
             </div>
             
             <div class="form-group">
-            <label class="col-md-4 profile-inpute">Phone</label>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
+            <label class="profile-inpute">Phone</label>
+            <div style="margin-bottom: 12px;">
                 	<input type="text" name="contactno" id="contactno" class="form-control profile-text" value="<?php echo $uInfo['contactno'];?>" />
             </div>
             </div>
             
             <div class="form-group">
-            	   <label class="col-md-4 profile-inpute">Tagline</label>
-                 <div class="col-sm-8" style="margin-bottom: 12px;">
+            	   <label class="profile-inpute">Tagline</label>
+                 <div style="margin-bottom: 12px;">
                 	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
                   </div>
             </div>
              <div class="form-group">
-            	   <label class="col-md-4 profile-inpute">Skills</label>
-                 <div class="col-sm-8" style="margin-bottom: 12px;">
+            	   <label class="profile-inpute">Skills</label>
+                 <div style="margin-bottom: 12px;">
                 	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                   </div>
                      <?php $tags=get_tags();
@@ -158,20 +156,20 @@ include('cfg/more-functions.php');
           <script type="text/javascript">$("#skills").select2({tags:[<?php echo strtolower($tags);?>]});</script>
             </div>
 			<div class="form-group">
-            <label class="col-md-4 profile-inpute">City</label>
-            <div class="col-sm-8" style="margin-bottom: 12px;">
+            <label class="profile-inpute">City</label>
+            <div style="margin-bottom: 12px;">
                 	<input type="text" name="city" id="city" class="form-control profile-text" value="<?php echo $uInfo['city'];?>" />
             </div>
             </div>
             <div class="form-group">
-            	   <label class="col-md-4 profile-inpute">Country</label>
+            	   <label class="profile-inpute">Country</label>
                 <?php 
 				$country=get_countries();
 			
 				if($country['count']>0)
 				{
 				?>        
-        <div class="col-md-8">
+        <div class="">
                 	<select name="country" id="country" class="form-control profile-text">
                  		<?php
 						for($i=0;$i<$country['count'];$i++)
@@ -190,7 +188,7 @@ include('cfg/more-functions.php');
             
             <div class="form-group">
 				
-            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
+            <div style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
            
 				    <label class="profile-inpute" style="margin-right:44px;padding:0px;margin-top: 11px;">Notifications</label>
              <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  } ?>> 
@@ -202,7 +200,7 @@ include('cfg/more-functions.php');
             </div>
             <div class="form-group">
 				
-            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
+            <div style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
            
 				    <label class="profile-inpute" style="margin-right:57px;padding:0px;margin-top: 11px;">Sync Image</label>
                     
