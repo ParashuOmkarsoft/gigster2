@@ -102,7 +102,7 @@ if($checkSql['count']>0)
                     <div class="form-group">
                       <label class="col-md-2 control-label tfont" style="margin-top:14px;">Rating</label>
                       
-                      <div class="col-md-10" style="margin-top:-7px">
+                      <div class="col-md-10">
                       
                        
  						<input id="rating<?php echo $prjDetails['prjId'];?>" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
