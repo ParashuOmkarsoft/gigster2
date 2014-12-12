@@ -1584,7 +1584,7 @@ header.bg-headersmaller .img{width: 86%;}
 header.bg-headersmaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}
 
 
-.bootstrap-switch {
+.bootstrap-switch .bootstrap-switch-wrapper .bootstrap-switch-id-notify .bootstrap-switch-animate .bootstrap-switch-off{
 display: inline-block;
 cursor: pointer;
 border-radius: 4px;
