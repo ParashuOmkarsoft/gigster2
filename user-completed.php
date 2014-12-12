@@ -100,7 +100,7 @@ if($checkSql['count']>0)
                   <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12" style="padding: 0px;">
                   <div class="form-group">
-                      <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;">Rating</label>
+                      <label class="col-md-2 control-label tfont" style="margin: 14px 0 20px 0;">Rating</label>
                       
                       <div class="col-md-10" style="padding: 0px; margin-top:-7px">
                       
