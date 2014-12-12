@@ -265,7 +265,7 @@ if($checkSql['count']>0)
   
        
        </div>          
-    </div>
+   
 
 
 		</div>
