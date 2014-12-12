@@ -251,7 +251,7 @@ include('cfg/more-functions.php');
 
             </div>
             <div class="col-md-12">
-            <div class="form-group"  style="padding-left: 171px;">
+            <div class="form-group"  style="padding-left: 159px;">
   	<button class="btn update-btn" type="submit">Update</button>
     <button class="btn update-btn" type="button" onClick="visible_invisible('paraprofile','frmprofile');">Cancel</button>
   </div>

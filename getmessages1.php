@@ -26,7 +26,7 @@ $bidSql=@db_query($bidQuery);
 ?>
 <section class="postgigform " id="inviteform">                       
 <h2 id="login1"><a href="<?php echo $serverpath;?>gigDetails/<?php echo mera_url_encode($projectDetails['prjTitle']);?>/<?php echo $projectId;?>"><?php echo strip_string($projectDetails['prjTitle'],29);?></a></h2>    
-<p id="gigpara" style="width:600px;padding-left: 15px;"><h5>Bid Details :</h5><br> <?php echo nl2br($bidSql['rows']['0']['bidcontent']);?></p>
+<p id="gigpara" style="width:600px;padding-left: 15px;"><h5>Bid Details :</h5><?php echo nl2br($bidSql['rows']['0']['bidcontent']);?></p>
 <div class="col-sm-12" >
 	<form  action="<?php echo $serverpath;?>sendmessage" target="targetframe" role="form" method="post" >
   					 <input type="hidden" id="fromId" name="fromId" value="<?php echo $msgfrom;?>" />
