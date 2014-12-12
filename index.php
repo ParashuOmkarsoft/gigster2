@@ -177,7 +177,7 @@ if (strlen($string) > 140) {
     </div>
    </div>
   </div>
-  <div style="text-align: center;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
+  <div style="text-align: center;padding-top: 0px;padding-bottom:10px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
 <?php
 }
