@@ -192,7 +192,7 @@ include('cfg/more-functions.php');
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
            
-				    <label class="profile-inpute" style="margin-right:44px;padding:0px;">Notifications</label>
+				    <label class="profile-inpute" style="margin-right:44px;padding:0px;margin-top: 11px;">Notifications</label>
              <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  } ?>> 
                   <div class="btn-group btn-toggle" style="margin-left: 33px;"> 
                   
@@ -204,7 +204,7 @@ include('cfg/more-functions.php');
 				
             <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;padding-left: 9px;">
            
-				    <label class="profile-inpute" style="margin-right:57px;padding:0px;">Sync Image</label>
+				    <label class="profile-inpute" style="margin-right:57px;padding:0px;margin-top: 11px;">Sync Image</label>
                     
              <input type="checkbox" class="my-checkbox"  name="syncimage" id="syncimage" value="1" <?php if($uInfo['syncimage']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  }?> data-switch-state="false"> 
              	
