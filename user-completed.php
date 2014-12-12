@@ -104,7 +104,7 @@ if($checkSql['count']>0)
                       
                       <div class="col-md-10">
                       
-                        <div class="form-control form-radio" >
+                        
  						<input id="rating<?php echo $prjDetails['prjId'];?>" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
 						
                          <script type="text/javascript">
