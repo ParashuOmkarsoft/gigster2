@@ -20,7 +20,7 @@ include('cfg/more-functions.php');
     <!-- <div id="imgback"> -->
       <!-- <img src="<?php echo $serverpath;?>images/grooming.png"> -->
       <!-- <button class="btn Learn-More" type="submit">Learn More</button> -->
-       <a data-toggle="modal" href="#learn-more" class="btn Learn-More"/> Learn More</a>
+       <!-- <a data-toggle="modal" href="#learn-more" class="btn Learn-More"/> Learn More</a> -->
    <!--  </div> -->
   </div>
  <!--  <div class="container" style="padding:40px;">
