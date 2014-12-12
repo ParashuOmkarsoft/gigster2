@@ -113,7 +113,7 @@ if($checkSql['count']>0)
                                          </div>
                      
                       <div class="col-sm-12" style="margin-bottom: 10px;padding: 0px;">
-                        <textarea class="form-control tinpute mtextarea" placeholder="Your Message" row="10" column="10" required name="experience" id="experience"></textarea>
+                        <textarea class="form-control tinpute mtextarea" placeholder="Please comment here" row="10" column="10" required name="experience" id="experience"></textarea>
                       </div>
                     </div>
                     
