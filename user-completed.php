@@ -97,7 +97,7 @@ if($checkSql['count']>0)
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
 
                   <h2 id="login1">Rate and Comment</h2>
-                  <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
+                  <h2 class="source"style="font-size:28px;margin-bottom: 25px;"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12" style="padding: 0px;">
                   <div class="form-group">
                       <label class="col-md-2 control-label tfont" style="margin: 14px 0 20px 0;">Rating</label>
