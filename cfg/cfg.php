@@ -12,7 +12,7 @@ $twitterLink="http://twitter.com/GigsterGo";
 $pintlink="#";
 $rec_limit = 5;
 $adminId=18;
-$m_list="29,31,32";
+$m_list="29,31,32,69";
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
@@ -1275,6 +1275,15 @@ function is_featured($projectId)
 	if($sql['count']>0)
 	{
 		return $sql['rows']['0']['featured'];
+	}
+}
+function featured_gigs()
+{
+	 $query="select * from btr_projects where featured='1' and status='0' order by prjId DESC LIMIT 0,3";
+	$sql=@db_query($query);
+	if($sql['count']>0)
+	{
+		return $sql;
 	}
 }
 ?>

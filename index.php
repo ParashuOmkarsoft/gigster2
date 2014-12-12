@@ -120,31 +120,15 @@ include('cfg/more-functions.php');
   </div>
 </div>
 </div>
-
-
-
-
-
-
- 	<?php $homelatest = latest_gigs();
-	/*if(!empty($homelatest)){
-	?>
-  <div class="box1">
-         <div class="box-1">
-          <span class=""><img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" alt=""  style="padding: 20px;float: left;" class="img-circle"></span>
-          <h2 class="fname"><a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><?php echo $hmltst3['prjTitle']; ?></a></h2>
-          <p><?php echo $stringCut; ?></p>
-         </div>   
-  </div>
-  
-  <?php }}*/ ?>
+	<?php $homelatest = featured_gigs();
+?>
 </div>
-<?php /*
+
 <div class="row" style="background: rgb(225, 225, 225);width: auto;margin: 0 auto;">
 <div class="container-fluid" style="max-width: 1290px;margin: 0 auto;padding-bottom: 70px;">
 <div class="col-md-12 column" style="margin-bottom: 50px;">
       <h2 class="name-what-gigster text-center">
-       Open Gigs
+       Featured Gigs
       </h2>
 </div>
 <div class="container-fluid" style="max-width: 1227px;padding:0px;margin-left: 15px;">
@@ -193,7 +177,6 @@ if (strlen($string) > 140) {
   </div>
   <div style="text-align: center;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
-</div> */ ?>
 </body>
 
 <?php
