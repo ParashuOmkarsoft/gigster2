@@ -190,7 +190,7 @@ include('cfg/more-functions.php');
             
             <div class="form-group">
 				
-            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;padding:0px;">
+            <div class="col-sm-12" style="margin-bottom: 12px; margin-top: 15px;">
            
 				    <label class="profile-inpute" style="margin-right:33px;padding:0px;">Notifications</label>
              <input type="checkbox" class="my-checkbox"  name="notify" id="notify" value="1" <?php if($uInfo['notify']=="1"){?> checked="checked" <?php }else{ ?>checked="false"<?php  } ?>> 
