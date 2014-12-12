@@ -120,10 +120,12 @@ include('cfg/more-functions.php');
   </div>
 </div>
 </div>
-	<?php $homelatest = featured_gigs();
-?>
+	
 </div>
-
+<?php $homelatest = featured_gigs();
+if($homelatest['count']>0)
+{
+?>
 <div class="row" style="background: rgb(225, 225, 225);width: auto;margin: 0 auto;">
 <div class="container-fluid" style="max-width: 1290px;margin: 0 auto;padding-bottom: 70px;">
 <div class="col-md-12 column" style="margin-bottom: 50px;">
@@ -177,6 +179,9 @@ if (strlen($string) > 140) {
   </div>
   <div style="text-align: center;padding-top: 0px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
 </div>
+<?php
+}
+?>
 </body>
 
 <?php
