@@ -127,8 +127,10 @@ if($checkSql['count']>0)
               </div>
             </div>
           </div>
+        </div>
         </div>     
       </div>
+
         <br/><br/>
          <?php 
 			  }
@@ -265,7 +267,8 @@ if($checkSql['count']>0)
   
        
        </div>          
-   
+    </div>
+
 
 
 		</div>
