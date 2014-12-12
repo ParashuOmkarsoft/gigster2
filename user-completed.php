@@ -126,9 +126,8 @@ if($checkSql['count']>0)
                 </form>
               </div>
             </div>
-          </div>
-        </div>
-        </div>  
+         
+
         <br/><br/>
          <?php 
 			  }
