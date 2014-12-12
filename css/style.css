@@ -1585,3 +1585,4 @@ header.bg-header.smaller {
 header.bg-headersmaller .logo{width: 155px;}
 header.bg-headersmaller .img{width: 86%;}
 header.bg-headersmaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}
+#bid-para{overflow: hidden;width: 600px;}
