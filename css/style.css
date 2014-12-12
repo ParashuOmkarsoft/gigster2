@@ -1586,3 +1586,9 @@ header.bg-headersmaller .logo{width: 155px;}
 header.bg-headersmaller .img{width: 86%;}
 header.bg-headersmaller .navbar-nav.navbar-right:last-child{ margin-top: 10px;}
 #bid-para{overflow: hidden;width: 600px;}
+.source-new{font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+line-height: 28px;
+text-align: left;
+margin: 4px 0px 0px 0px;}
