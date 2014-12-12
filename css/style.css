@@ -1593,3 +1593,7 @@ line-height: 28px;
 text-align: left;
 margin: 4px 0px 0px 0px;
 word-wrap: break-word;}
+
+strong {
+font-weight: lighter;
+color: rgb(62, 1, 1);
