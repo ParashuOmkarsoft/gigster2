@@ -92,7 +92,7 @@ if($checkSql['count']>0)
         <div class="modal-dialog modal-lg"style="max-width: 500px;">
           <div class="modal-content cform">
             <div class="container">
-              <div class="col-md-12" style="padding: 0px;">
+              <div class="col-md-12" style="padding: 0px;margin-top: 10px;">
                 <form class="form-horizontal postgigforminner" action="<?php echo $serverpath;?>finalrating" role="form" method="post" onSubmit="return validate_rating('<?php echo $prjDetails['prjId'];?>')">
                   <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
 
@@ -100,9 +100,9 @@ if($checkSql['count']>0)
                   <h2 class="source"style="font-size:28px;"><?php echo $opengig['prjTitle'];?></h2>
                   <div class="col-md-12" style="padding: 0px;">
                   <div class="form-group">
-                      <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;style="margin-top:14px;"">Rating</label>
+                      <label class="col-md-2 control-label tfont" style="margin-bottom: 20px;margin-top:14px;">Rating</label>
                       
-                      <div class="col-md-10" style="padding: 0px;">
+                      <div class="col-md-10">
                       
                         <div class="form-control form-radio" >
  						<input id="rating<?php echo $prjDetails['prjId'];?>" name="rating" value="<?php echo $rt;?>" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm">
