@@ -20,7 +20,7 @@ if(!isset($_SESSION['uId']))
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php echo $sitename;?>- My Bidds</title>
+<title><?php echo $sitename;?>- Gigster-My Awarded Bids</title>
 <?php include('script-header.php'); ?>
 <?php include('fb-login.php'); ?>
 </head>
