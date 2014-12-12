@@ -113,7 +113,7 @@ include('cfg/more-functions.php');
          <!-- <img src="images/feedback.png" title="Send feedback" style="float:left;margin-left:-7px;"> -->
         <!-- </a> --> <?php } } ?></span></div>
       <div id="statusmodal<?php echo $opengig['prjId'];?>" class="modal fade  bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="postgigmodel" aria-hidden="true">
-        <div class="modal-dialog modal-lg"style="max-width: 500px;">
+        <div class="modal-dialog modal-lg" style="max-width: 500px;">
           <div class="modal-content cform">
             <div class="container">
               <div class="col-md-12" style="padding: 0px;">
@@ -156,8 +156,9 @@ include('cfg/more-functions.php');
                         <button type="submit" class="btn mark-btn">Send</button>
                       </div>
                     </div>
-                  </div>
                 </form>
+                  </div>
+                
               </div>
             </div>
           </div>
@@ -307,7 +308,11 @@ include('cfg/more-functions.php');
    
    </div>
  <div class="col-md-4">
+ <?php if($projectstatus==100){ ?>
  	<a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style="position: absolute;top: 67px;"></a>
+    <?php
+ }
+	?>
  </div>
    
  						
