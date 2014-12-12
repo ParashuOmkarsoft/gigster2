@@ -119,34 +119,34 @@ include('cfg/more-functions.php');
                 	<input type="text" name="lname" id="lname" class="form-control profile-text" value="<?php echo $uInfo['lname'];?>" />
             </div>
             </div>
-            <div class="col-sm-4 profile-inpute">
-            <label class="profile-inpute">Username</label>
+            <div class="form-group">
+            <label class="col-sm-4 profile-inpute">Username</label>
             <div style="margin-bottom: 12px;">
                 	<input type="text" name="username" id="username" class="form-control profile-text" value="<?php echo $uInfo['username'];?>" />
             </div>
             </div>
-            <div class="col-sm-4 profile-inpute">
-            <label class="profile-inpute">Email</label>
+            <div class="form-group">
+            <label class="col-sm-4 profile-inpute">Email</label>
             <div style="margin-bottom: 12px;">
                 	<input type="text" name="usermail" id="usermail" class="form-control profile-text" value="<?php echo $uInfo['usermail'];?>" />
             </div>
             </div>
             
-            <div class="col-sm-4 profile-inpute">
-            <label class="profile-inpute">Phone</label>
+            <div class="form-group">
+            <label class="col-sm-4  profile-inpute">Phone</label>
             <div style="margin-bottom: 12px;">
                 	<input type="text" name="contactno" id="contactno" class="form-control profile-text" value="<?php echo $uInfo['contactno'];?>" />
             </div>
             </div>
             
-            <div class="col-sm-4 profile-inpute">
-            	   <label class="profile-inpute">Tagline</label>
+            <div class="form-group">
+            	   <label class="col-sm-4 profile-inpute">Tagline</label>
                  <div style="margin-bottom: 12px;">
                 	<input type="text" name="tagline" id="tagline" class="form-control profile-text" value="<?php echo $uInfo['tagline'];?>" />
                   </div>
             </div>
-             <div class="col-sm-4 profile-inpute">
-            	   <label class="profile-inpute">Skills</label>
+             <div class="form-group">
+            	   <label class="col-sm-4 profile-inpute">Skills</label>
                  <div style="margin-bottom: 12px;">
                 	<input type="hidden" name="skills" id="skills" class="form-control profile-text" value="<?php echo $uInfo['skills'];?>" />
                   </div>
