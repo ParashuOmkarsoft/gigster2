@@ -20,8 +20,8 @@ $opengig=get_gig_details($projectId);
 <Br/>
       <div class="col-md-12">
         <div class="form-group">
-        <label class="tooltips" href="#">Bid Details
-        <span>Tooltip</span></label> 
+        <label class="tooltips" style="margin-left: 15px;">Bid Details
+        <span>Other than price,sending more information usually helps.For Example, How long gig will take oe when you are available etc.</span></label> 
           <!-- <label for="inputText" class="col-sm-4 control-label newlog tooltips">Bid Details</label> -->
           <br/>
           <br/>
