@@ -105,7 +105,7 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
                     </div>
                   </form>
                 </div>
-                <div class="col-md-12" style="height:250px; overflow:scroll; ">
+                <div class="col-md-12" style="height: 400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px; ">
                   <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -129,19 +129,15 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#f8f8f8; margin-top: 3px;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='background-color: #fdebbb;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 6px;float: left;'";
 			}
 			else
 			{
-				$cl="style='background-color:white;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='background-color: #fff;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 6px;float: right;'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
-                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="online"/> <br/>
+                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="img-circle"/> <br/>
                     <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
                       <?php echo get_user_name($msgfrom);?> </a><br/>
                       <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent'])));
