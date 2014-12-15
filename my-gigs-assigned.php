@@ -30,7 +30,7 @@ if(!isset($_SESSION['uId']))
 
 <section class="container mclass">
   <ul id="profilemenu">
-    <li><a href="<?php echo $serverpath;?>assignments"> <strong> Awarded</strong> <?php if($unreadawards)
+    <li><a href="<?php echo $serverpath;?>assignments"> <b> Awarded</b> <?php if($unreadawards)
 						  {
 							  ?>
 							  <i class="fa fa-circle" style="color:green;"></i>

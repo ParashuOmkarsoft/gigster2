@@ -30,7 +30,7 @@ include('cfg/more-functions.php');
 						  ?>
     </a></li>
   <li><a href="<?php echo $serverpath;?>bided"> Bidding</a></li>
-  <li><a href="<?php echo $serverpath;?>tocompleted"><strong>Completed</strong></a></li>
+  <li><a href="<?php echo $serverpath;?>tocompleted"><b>Completed</b></a></li>
 </ul>
       <h2 id="logingigster1">My Bids</h2>
 <?php

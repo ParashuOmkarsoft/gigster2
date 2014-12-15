@@ -27,7 +27,7 @@ include('cfg/more-functions.php');
 						  }
 						  ?></a></li>
     <li>
-      <h5 id="ass"> <a href="<?php echo $serverpath;?>bidding"> <strong>Bidding</strong>  <?php if($unreadbids)
+      <h5 id="ass"> <a href="<?php echo $serverpath;?>bidding"> <b>Bidding</b>  <?php if($unreadbids)
 						  {
 							  ?>
 							  <i class="fa fa-circle" style="color:green;"></i>

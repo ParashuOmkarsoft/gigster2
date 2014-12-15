@@ -32,7 +32,7 @@ include('cfg/more-functions.php');
 							  <?php
 						  }
 						  ?></a></li>
-    <li><a href="<?php echo $serverpath;?>completed"><strong>Completed</strong></a></li>
+    <li><a href="<?php echo $serverpath;?>completed"><b>Completed</b></a></li>
   </ul>
   <h2 id="logingigster1">My Gigs</h2>
   <?php

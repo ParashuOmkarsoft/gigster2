@@ -26,7 +26,7 @@ include('cfg/more-functions.php');
 							  <?php
 						  }
 						  ?></a></li>
-    <li><a href="<?php echo $serverpath;?>bided"> <strong>Bidding</strong> </a></li>
+    <li><a href="<?php echo $serverpath;?>bided"> <b>Bidding</b> </a></li>
     <li><a href="<?php echo $serverpath;?>tocompleted">Completed</a></li>
   </ul>
   <h2 id="logingigster1">My Bids</h2>
