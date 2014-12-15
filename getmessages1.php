@@ -80,7 +80,7 @@ $bidSql=@db_query($bidQuery);
 			
 		 	
 			
-			?>       <br/>
+			?>       
                   <div class="form-group" <?php echo $cl;?>>
                    <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" /> <br/>
                     <p class="message"> 
@@ -89,7 +89,7 @@ $bidSql=@db_query($bidQuery);
                       
                     </p>
                   </div>
-                  <br/>
+                 
                   <?php
 		
 		  ?>
