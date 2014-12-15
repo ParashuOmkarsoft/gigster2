@@ -79,7 +79,7 @@ $projectDetails=get_gig_details($project);
 	?>
       <div class="col-md-12" <?php echo $dl;?> >
         
-        <br/>
+        
         <div class="form-group" <?php echo $cl;?>> <!-- <strong>From: </strong><br/> -->
       <?php if($messagethread['rows'][$i]['msgfrom']!=18)
 	  {
