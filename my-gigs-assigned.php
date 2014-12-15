@@ -165,7 +165,7 @@ if($checkSql['count']>0)
                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
                     <h2 id="login1">Messages</h2>
                     <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
-                   <div class="col-md-12" style="margin-left: -15px;">
+                   
                       <div class="form-group">
                         <label class="col-md-4 control-label tfont">Message</label>
                         <Br/>
@@ -177,7 +177,7 @@ if($checkSql['count']>0)
                       <div class="form-group">
                           <button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
                       </div>
-                    </div>
+                  
                   </form>
                 </div>
                 <div class="col-md-12" style="height: 400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px">
