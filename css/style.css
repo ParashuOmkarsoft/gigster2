@@ -1597,8 +1597,8 @@ word-wrap: break-word;}
 strong {
 font-weight: lighter;
 color: rgb(62, 1, 1);
-
-a.tooltips {
+}
+.tooltips {
   position: relative;
   display: inline;
 }
