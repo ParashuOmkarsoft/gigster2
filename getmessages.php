@@ -97,7 +97,7 @@ $projectDetails=get_gig_details($project);
 	  else
 	  {
 		    ?>
-        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" /> <br/>
+        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" /> 
           <p class="message"> 
 
           <?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?>
