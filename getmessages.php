@@ -110,7 +110,7 @@ $projectDetails=get_gig_details($project);
 		  
 		 
           
-           <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?><br/>
+           <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?>
           </p>
         </div>
         
