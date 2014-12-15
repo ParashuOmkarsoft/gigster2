@@ -165,20 +165,15 @@ if($checkSql['count']>0)
                     <input type="hidden" id="projectId" name="projectId" value="<?php echo $prjDetails['prjId'];?>" />
                     <h2 id="login1">Messages</h2>
                     <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
-                   <div class="col-md-12" style="margin-left: -15px;">
+                   <div class="form-group">
+                    <label>
+                    <h5>Message</h5>
+                    </label>
+                    <textarea rows="5" name="message" id="message" class="form-control msg-textarea" style="width:100%;"></textarea>
+                  </div>
                       <div class="form-group">
-                        <label class="col-md-4 control-label tfont">Message</label>
-                        <Br/>
-                        <br/>
-                        <div class="col-md-12">
-                          <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-12">
-                          <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
-                        </div>
-                      </div>
+                        <button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
+                    </div>
                     </div>
                   </form>
                 </div>
