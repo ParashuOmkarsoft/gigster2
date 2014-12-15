@@ -66,8 +66,8 @@ $bidSql=@db_query($bidQuery);
 			}
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
-				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
-        $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
+				$dl="style='background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
+        $cl="style='background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;'";
 			}
 			else
 			{
@@ -82,7 +82,7 @@ $bidSql=@db_query($bidQuery);
 			
 			?>       
                   <div class="form-group" <?php echo $cl;?>>
-                   <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" />
+                   <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="img-circle" />
                     <p class="message"> 
                       <p><?php echo get_user_name($messagethread['rows'][$i]['msgfrom']);?> </a><a href="#" class="name"><small class="text-muted " style="float: right;"><i class="fa fa-clock-o"></i><!-- &nbsp; --> <?php echo gmstrftime("%B %d %Y, %I:%M %p",$messagethread['rows'][$i]['msgon']);?></small></a>
                       <?php echo stripslashes(stripslashes(html_entity_decode($messagethread['rows'][$i]['msgcontent']))); ?>

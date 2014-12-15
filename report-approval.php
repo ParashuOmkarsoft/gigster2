@@ -14,7 +14,7 @@ if($reportId)
 		$projectowner=get_user_Info(encrypt_str($reportdetails['reportto']));
 		$projectdetails=get_gig_details($reportdetails['projectId']);
 		$reportfrom=get_user_Info(encrypt_str($reportdetails['reportfrom']));
-		$messagecontent="<p>Hello ".$reportfrom['username']."</p><br/>";
+		$messagecontent="<p>Hello ".$reportfrom['username']."</p>";
 	$messagecontent.="<p>Your status report on  project <strong>".$projectdetails['prjTitle']."</strong> is approved by <strong>".$projectbidder['username']."</strong></p><br/>";
 	$messagecontent.="<p><strong>Regards</strong><br/>$sitename</p>";
 	$messagecontent=htmlentities($messagecontent);
