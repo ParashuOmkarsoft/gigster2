@@ -216,7 +216,7 @@ if($checkSql['count']>0)
                     <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small>
                       <?php echo get_user_name($msgfrom);?> </a><br/>
                       <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent'])));
-					  ?><br/>
+					  ?>
                     </p>
                   </div>
                   
