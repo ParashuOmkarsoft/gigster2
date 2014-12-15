@@ -22,7 +22,7 @@ $opengig=get_gig_details($projectId);
         <div class="form-group">
         <label class="tooltips" href="#">Bid Details
         <span>Tooltip</span></label> 
-          <label for="inputText" class="col-sm-4 control-label newlog tooltips">Bid Details</label>
+          <!-- <label for="inputText" class="col-sm-4 control-label newlog tooltips">Bid Details</label> -->
           <br/>
           <br/>
           <div class="col-sm-12">
