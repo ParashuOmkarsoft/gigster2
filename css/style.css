@@ -1604,14 +1604,17 @@ color: rgb(62, 1, 1);
   display: inline;
 }
 .tooltips span {
-  position: absolute;
+	font-family: 'source_sans_proregular';
+ position: absolute;
 word-wrap: break-word;
-width: 180px;
+width: 450px;
 color: #FFFFFF;
+font-size: 14px;
 background: #000000;
 height: auto;
-line-height: 30px;
-text-align: center;
+padding: 10px;
+line-height: 18px;
+/* text-align: center; */
 visibility: hidden;
 border-radius: 6px;
 }
@@ -1619,7 +1622,7 @@ border-radius: 6px;
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 10%;
   margin-left: -8px;
   width: 0; height: 0;
   border-top: 8px solid #000000;
