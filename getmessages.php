@@ -68,7 +68,7 @@ $projectDetails=get_gig_details($project);
 		
 			if($_SESSION['uId']==encrypt_str($messagethread['rows'][$i]['msgto']))
 			{
-				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;'";
+				$dl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px; float:left;'";
         $cl="style='text-align:left;background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 450px;'";
 			}
 			else
