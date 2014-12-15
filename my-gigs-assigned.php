@@ -182,7 +182,7 @@ if($checkSql['count']>0)
                     </div>
                   </form>
                 </div>
-                <div class="col-md-12" style="height:250px; overflow:scroll;">
+                <div class="col-md-12" style="height: 400px;overflow: auto;background: #f3f3f3;padding-top: 15px;border-radius: 8px">
                   <?php
 			$muInfo=get_user_Info($_SESSION['uId']);
 			$muId=$muInfo['userId'];
@@ -206,15 +206,11 @@ if($checkSql['count']>0)
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#f8f8f8;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='text-align: left;background-color: #fdebbb;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;float: left;'";
 			}
 			else
 			{
-				$cl="style='background-color:white;padding:5px;border-radius:10px;-moz-box-shadow: 0px 0px 2px #000000;
--webkit-box-shadow: 0px 0px 2px #000000;
-box-shadow: 0px 0px 2px #000000;'";
+				$cl="style='background-color: #ffffff;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 483px;float: right;'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>

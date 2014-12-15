@@ -182,7 +182,7 @@ include('cfg/more-functions.php');
 				        <label>
 				        <h5>Message</h5>
 				        </label>
-				        <textarea rows="5" name="message" id="message" class="form-control msg-textarea"></textarea>
+				        <textarea rows="5" name="message" id="message" class="form-control msg-textarea" style="width:100%;"></textarea>
 				      </div>
                     <div class="form-group">
 				        <button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
