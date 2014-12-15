@@ -26,7 +26,7 @@ $opengig=get_gig_details($projectId);
           <br/>
           <br/>
           <div class="col-sm-12">
-            <textarea class="form-control tinpute mtextarea" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title="Other than price,sending more information usually helps.For Example, How long gig will take oe when you are available etc."></textarea>
+            <textarea class="form-control tooltips" placeholder="Bid Details" row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title="Other than price,sending more information usually helps.For Example, How long gig will take oe when you are available etc."></textarea>
           </div>
         </div>
         <div class="form-group">
