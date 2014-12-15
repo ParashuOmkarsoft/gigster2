@@ -15,7 +15,7 @@ if($insertSql)
 	$projectowner=get_user_Info(encrypt_str($reportto));
 	$projectbidder=get_user_Info(encrypt_str($reportfrom));
 	$projectdetails=get_gig_details($projectId);
-	$messagecontent="<p>Hello ".$projectowner['username']."</p><br/>";
+	$messagecontent="<p>Hello ".$projectowner['username']."</p>";
 	$messagecontent.="<p>You have received a new status report on your Gig <strong>".$projectdetails['prjTitle']."</strong> from <strong>".$projectbidder['username']."</strong>.</p>";
 	$messagecontent.="<p><strong>Message</strong><br/>$message</p>";
 	$messagecontent.="<p><strong>Completion Status </strong><br/>$completed %</p>";	
