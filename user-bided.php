@@ -129,11 +129,11 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color: #fdebbb;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 6px;float: left;'";
+				$cl="style='background-color: #fdebbb;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 15px;float: left;'";
 			}
 			else
 			{
-				$cl="style='background-color: #fff;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 6px;float: right;'";
+				$cl="style='background-color: #fff;margin-top: 10px;vertical-align: top;border-radius: 8px;width: 470px;padding: 15px;float: right;'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
