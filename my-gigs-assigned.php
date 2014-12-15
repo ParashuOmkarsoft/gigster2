@@ -175,9 +175,7 @@ if($checkSql['count']>0)
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="col-sm-12">
-                          <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
-                        </div>
+                          <button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
                       </div>
                     </div>
                   </form>
@@ -214,7 +212,7 @@ if($checkSql['count']>0)
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
-                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="img-circle"/> <br/>
+                  <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="img-circle" style="float:left;margin:0;"/> <br/>
                     <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small><br/>
                       <?php echo get_user_name($msgfrom);?> </a><br/>
                       <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent'])));
