@@ -84,7 +84,7 @@ $projectDetails=get_gig_details($project);
       <?php if($messagethread['rows'][$i]['msgfrom']!=18)
 	  {
 		  ?>
-        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" /> <br/>
+        <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="" class="online img-circle" />
           <p class="message"> 
 
           <a href="<?php echo get_profile_link($serverpath,$messagethread['rows'][$i]['msgfrom']);?>" class="name">
