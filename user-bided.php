@@ -94,17 +94,13 @@ if(!is_project_awarded_to_user($prjDetails['prjId'],$uInfo['userId']))
                     <h2 class="source"><?php echo $prjDetails['prjTitle'];?></h2>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label class="col-md-4 control-label tfont">Message</label>
-                        <Br/>
-                        <br/>
-                        <div class="col-md-12">
-                          <textarea name="message" id="message" class="form-control mtextarea" ></textarea>
-                        </div>
+                        <label>
+                        <h5>Message</h5>
+                        </label>
+                        <textarea rows="5" name="message" id="message" class="form-control msg-textarea" style="width:100%;"></textarea>
                       </div>
                       <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-10 logsign">
-                          <button type="submit" class="btn btn-warning loginbtn">Send Message</button>
-                        </div>
+                          <button type="submit" class="btn gig-send-btn pull-right">Send Message</button>
                       </div>
                     </div>
                   </form>
