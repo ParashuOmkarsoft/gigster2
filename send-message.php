@@ -54,7 +54,7 @@ if($messageSql)
 				<p>To respond to your messages, go straight to your <a href='".$serverpath."inbox'>Inbox</a>.</p>
 				<p>GigsterGo.com</p>
 				<p>________________________________________</p>
-<p style='font-style:italic;'>GigsterGo sends these emails based on the preferences you set for your account. To change your communication preferences and adjust your skill matches, <a href='".$serververpath."'>login</a> and go to your <a href='".$serververpath."myaccount'>Profile</a>. </p>
+<p style='font-style:italic;'>GigsterGo sends these emails based on the preferences you set for your account. To change your communication preferences and adjust your skill matches, <a href='".$serverpath."'>login</a> and go to your <a href='".$serververpath."myaccount'>Profile</a>. </p>
 				";
 						if($toInfo['notify']=="1")
 						{
