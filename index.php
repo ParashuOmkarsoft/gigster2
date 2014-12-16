@@ -15,7 +15,7 @@ include('cfg/more-functions.php');
   </head>
   <body style="padding-top:0px;">
   <div class="jumbotron">
-  <img src="images/grooming.png">
+  <img src="images/grooming.png" style="width: 100%;height: auto;">
     <?php include('img-top-menu.php'); ?>
         
     <!-- <div id="imgback"> -->
