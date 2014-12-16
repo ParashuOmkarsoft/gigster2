@@ -1637,3 +1637,11 @@ border-radius: 6px;
   margin-left: -76px;
   z-index: 999;
 }
+.award{color: #5e350d;
+font-size: 22px;
+font-family: 'source_sans_prosemibold';
+width: 180px;
+border-radius: 10px;
+background: #EC6B39;
+outline: none;
+margin-top: 12px;}
