@@ -35,6 +35,8 @@ $sendmail3=send_my_mail("contact@gigstergo.com",$mailmatter,$mailsubject);
 
  //new-paragraph@parasolwonder.com
 ?><script type="text/javascript">
-alert("Thanks for contacting Gigster.");
-window.parent.location="<?php echo$_SERVER['HTTP_REFERER'];?>";
+window.parent.document.getElementById("userp").style.display="none";
+window.parent.document.getElementById("contactform").style.display="none";
+window.parent.document.getElementById("my_message").style.display="block";
+
 </script>

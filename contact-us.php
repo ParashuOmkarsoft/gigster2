@@ -19,24 +19,24 @@ include('cfg/more-functions.php');
 <br/>
 <section class="userloginform container" style="max-width: 743px;padding: 65px 30px 50px 82px;">
   <h2 id="userlogin">Contact us</h2>
-  <h2 class="userp" style="line-height: 26px;width: 576px;"> If you have any suggestions on how we can be better, or if you have any questions, we would love to hear from you. All you need to do is email us at contact@gigstergo.com or fill in the details below and we will get back to you within 24hrs!</h2>
-  <form class="form-horizontal usercontainer" role="form" method="post" action="<?php echo $serverpath;?>mailcontact" target="targetframe">
+  <h2 class="userp" style="line-height: 26px;width: 576px;" id="userp"> If you have any suggestions on how we can be better, or if you have any questions, we would love to hear from you. All you need to do is email us at contact@gigstergo.com or fill in the details below and we will get back to you within 24hrs!</h2>
+  <form class="form-horizontal usercontainer" role="form" method="post" action="<?php echo $serverpath;?>mailcontact" target="targetframe" id="contactform">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-3 control-label newlog">Name</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control passinpute" id="uname" name="uname" required placeholder="">
+        <input type="text" class="form-control passinpute" id="uname" name="uname" value="<?php echo $uInfo['fname'].' '.$uInfo['lname'];?>" required placeholder="">
       </div>
     </div>
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-3 control-label newlog">Email</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control passinpute" id="umail" name="umail" required placeholder="">
+        <input type="email" class="form-control passinpute" id="umail" name="umail" required placeholder="" value="<?php echo $uInfo['usermail'];?>">
       </div>
     </div>
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-3 control-label newlog">Contact no </label>
       <div class="col-sm-9">
-        <input type="text" class="form-control passinpute" id="contactno" name="contactno" placeholder="" onkeydown="return only_numbers(event);">
+        <input type="text" class="form-control passinpute" id="contactno" name="contactno" placeholder="" onkeydown="return only_numbers(event);" value="<?php echo $uInfo['contactno'];?>">
       </div>
     </div>
     <div class="form-group">
@@ -51,10 +51,14 @@ include('cfg/more-functions.php');
         <textarea class="form-control passinpute"  name="maildesc" id="maildesc" placeholder="" row="8" column="10"></textarea>
       </div>
     </div>
-    <div class="col-sm-10" style="text-align: center;margin-top: 15px;">
+    <div class="col-sm-9" style="text-align:center;margin-top: 15px;">
       <button type="submit" class="btn btn-warning uploadbtn">Send</button>
     </div>
   </form>
+  	<div class="mhidden" id="my_message"><Br/><br/>
+    	<div class="alert alert-success">Thanks for contacting Gigster. One of our representative will contact you soon on this.</div>
+    	<p>Please <a href="<?php echo $serverpath;?>contactus">click here to return back to Contact Page.</a></p>
+    </div>
   </div>
 </section>
 <?php
