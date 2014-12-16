@@ -98,7 +98,7 @@ include('cfg/more-functions.php');
       <p id="gigpara"><?php echo stripslashes(strip_string($opengig['prjdesc'],325));?></p>
       <h2 id="map"><?php echo $gigsterInfo['city'];?></h2>
      
-      <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php echo $opengig['proposedbudget']; echo $currency; ?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
+      <div class="col-md-8" style="padding: 0px;"><span class="budget">Budget : <?php if($opengig['proposedbudget']>0){ echo $opengig['proposedbudget']." ".$currency; }else{ echo "Gigster's price";}?></span><span class="bid">Posted : <?php echo get_time($opengig['postedon']); ?></span></div>
    
     
       
