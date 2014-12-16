@@ -27,17 +27,39 @@ if($messageSql)
 {
 	$fromInfo=get_user_Info(encrypt_str($msgfrom));
 	$toInfo=get_user_Info(encrypt_str($msgto));
-	$mailmatter="<p>Hello User </p>
-				<p>".$fromInfo['username']." has sent you a message on $sitename 
-				<p>Details are following</p>
-				<p>Content $message</p>
-				<p>&nbsp;</p>
-				<p>Regards</p>
-				<p>$sitename</p>";
+	$toName=$toInfo['fname'].' '.$toInfo['lname'];
+	$toName1=str_replace(" ",'',$toName);
+	if($toName1)
+	{
+	}
+	else
+	{
+		$toName=filter_text($toInfo['username']);
+	}
+	$fromName=$fromInfo['fname'].' '.$fromInfo['lname'];
+	$fromName1=str_replace(" ",'',$fromName);
+	if($fromName1)
+	{
+	}
+	else
+	{
+		$fromName=filter_text($fromInfo['username']);
+	}
+	
+	$mailmatter="
+		<p><a href='".$serverpath."'><img src='".$serverpath."'images/logo-1.png' /></a></p>
+	<p>Hello $toName </p>
+				<p><strong>".$fromName."</strong> has sent you a message on Gigster 
+				<p>$message</p>
+				<p>To respond to your messages, go straight to your <a href='".$serverpath."inbox'>Inbox</a>.</p>
+				<p>GigsterGo.com</p>
+				<p>________________________________________</p>
+<p style='font-style:italic;'>GigsterGo sends these emails based on the preferences you set for your account. To change your communication preferences and adjust your skill matches, <a href='".$serververpath."'>login</a> and go to your <a href='".$serververpath."myaccount'>Profile</a>. </p>
+				";
 						if($toInfo['notify']=="1")
 						{
 								$mailto=filter_text($toInfo['usermail']);
-								$mailsubject="You have a message on $sitename";
+								$mailsubject="You have a new message on Gigster";
 								$mail=send_my_mail($mailto,$mailmatter,$mailsubject);	
 						}
 ?>
