@@ -80,7 +80,7 @@ else
 
 				
 				
-	$mailmatter1="<p>You have awarded the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>".$gigname."</font></a> to <a href='".get_profile_link($serverpath,$awardedto)."'>".$usernametodisplay."</a>.</p>";
+	$mailmatter1="<p>You have awarded the Gig <a href='".get_project_link($serverpath,$projectId)."'><strong>".$gigname."</strong></a> to <a href='".get_profile_link($serverpath,$awardedto)."'>".$usernametodisplay."</a>.</p>";
 				
 	if($ownerInfo['notify']=='1')
 	{
