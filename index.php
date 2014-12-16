@@ -67,7 +67,7 @@ include('cfg/more-functions.php');
   <?php if(!isset($_SESSION['uId']))
   {
     ?>
-  <div style="text-align: center;padding-top: 0px;">  
+  <div class="col-md-12 col-sm-12" style="text-align: center;padding-top: 0px;">  
   <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
   </div>  
 <?php
