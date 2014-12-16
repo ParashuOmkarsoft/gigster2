@@ -214,15 +214,15 @@ include('cfg/more-functions.php');
 			}
 			if($t%2==0)
 			{
-				$cl="style='background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;padding: 6px;float:left'";
+				$cl="style='background-color:#fdebbb;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;float:left'";
 			}
 			else
 			{
-				$cl="style='background-color:#fff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;padding: 6px;float:right'";
+				$cl="style='background-color:#fff;margin-top:10px;vertical-align:top;border-radius: 8px;width: 470px;float:right'";
 			}
 			//$updatemessage=@db_query("update btr_messages set isread='1' where msgId=".$messages['rows'][$t]['msgId']);	
 			?>
-                <div class="item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="img-circle"/> 
+                <div class="col-md-12 item" <?php echo $cl;?>> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $buserimage;?>&width=50&height=50&cropratio=1:1" alt="<?php echo get_user_name($msgfrom);?>" class="img-circle"/> 
                   <p class="message"> <a href="#" class="name"><small class="text-muted pull-right"><i class="fa fa-clock-o"></i>&nbsp; <?php echo gmstrftime("%B %d %Y, %X %p",$messages['rows'][$t]['msgon']);?></small>
                     <?php echo get_user_name($msgfrom);?> </a><br>
                     <?php echo stripslashes(stripslashes(html_entity_decode($messages['rows'][$t]['msgcontent']))); ?>
