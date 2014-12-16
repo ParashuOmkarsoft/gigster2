@@ -1,10 +1,10 @@
 <header class="navbar-fixed-top bg-header">
       <div class="container" style="max-width:1200px;">
-        <div class="row">
-          <div class="col-md-2">
-            <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo-1.png" class="logo"></a>
-          </div>
-          <div class="col-md-10">
+        
+          
+            <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo-1.png" class="logo" style="float:left;"></a>
+          
+         
           <nav class="navbar navbar-default hmenu" role="navigation"  style="background: transparent;border: none;box-shadow: none;">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
@@ -102,9 +102,9 @@
 					  ?>
                  </ul>
               </div>
-          </div>
+       
           <div class="clearfix"></div> 
-        </div>
+       
       </div>
      
       
