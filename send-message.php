@@ -47,7 +47,7 @@ if($messageSql)
 	}
 	
 	$mailmatter="
-		<p><a href='".$serverpath."'><img src='".$serverpath."'images/logo-1.png' /></a></p>
+		<p><a href='".$serverpath."'><img src='".$serverpath."images/logo-1.png' /></a></p>
 	<p>Hello <strong>$toName</strong> </p>
 				<p><strong>".$fromName."</strong> has sent you a message on Gigster 
 				<p>$message</p>
