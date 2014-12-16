@@ -115,6 +115,7 @@ else
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
+				
 				if($bidderInfo['notify']=="1")
 				{
 						$mailto2=filter_text($bidderInfo['usermail']);
@@ -122,7 +123,7 @@ else
 						$mail2=send_my_mail($mailto2,$mailmatter2,$mailsubject2);	
 				}
 				$mailmatter2="<p>Hi ".$biddernametodisplay."</p>
-				<p>Unfortunately your bid on <a>$gigname</a> was not selected.
+				<p>Unfortunately your bid on <a href='".get_project_link($serverpath,$projectId)."'>$gigname</a> was not selected.
 				<p>Better luck next time.</p>
 				<p><a href='".$serverpath."allgigs'>Do check out our other Gigs here</a>.</p>";
 				$mailmatter2=htmlentities($mailmatter2);
