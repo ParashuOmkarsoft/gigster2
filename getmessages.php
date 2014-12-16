@@ -125,7 +125,7 @@ $projectDetails=get_gig_details($project);
 	?>
     </div>
     <?php
-	$updatethread=@db_query("update btr_messages set isread='1' where projectId=$project  and msgto=".$uInfo['userId']);
+	$updatethread=@db_query("update btr_messages set isread='1' where msgId=$msgId");
 	?>
     <div class="clearfix"></div>
   </div>
