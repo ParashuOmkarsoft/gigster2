@@ -12,7 +12,7 @@ $twitterLink="http://twitter.com/GigsterGo";
 $pintlink="#";
 $rec_limit = 5;
 $adminId=18;
-$m_list="29,31,32,69";
+$m_list="29,31,32";
 if ("localhost" == $sitedef || $sitedef=="192.168.1.3")
 {
 	$__dbhost = "localhost";
