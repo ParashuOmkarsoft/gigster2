@@ -70,7 +70,7 @@ else
 				<p>Gig <strong>$gigname</strong> is now complete.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
+				<p><a href='".$serverpath."mygigs'>Click here to rate the Gig</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 
@@ -84,7 +84,7 @@ else
 				<p>Gig <strong>$gigname</strong> is now complete.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
+				<p><a href='".$serverpath."mygigs'>Click here to rate the Gig</a></p>				
 				<p>&nbsp;</p>";
 				
 				
@@ -108,7 +108,7 @@ else
 				<p>Gig <strong>$gigname</strong> is now complete.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>				
+				<p><a href='".$serverpath."mygigs'>Click here to rate the Gig</a></p>				
 				<p>Regards</p>
 				<p>$sitename</p>";
 		
@@ -123,7 +123,7 @@ else
 				<p>Gig <strong>$gigname</strong> is now complete.</p>
 				<p>Feedback : $experience</p>
 				<p>Rating : ".get_rating_stars($serverpath,$rating)."</p>				
-				<p><a href='".$serverpath."tocompleted'>Click here to rate the Gig</a></p>";
+				<p><a href='".$serverpath."mygigs'>Click here to rate the Gig</a></p>";
 				
 				$mailmatter=htmlentities($mailmatter);
 				$mailmatter=addslashes($mailmatter);
