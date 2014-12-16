@@ -49,8 +49,8 @@ else
 		$usernametodisplay=$userInfo['username'];
 	}
 		$mailmatter="<p>Congratulations!</p>
-				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
-				<p>To update the status and see full details, please <a href='".get_project_link($serverpath,$projectId)."'>click here</a>.</p>
+				<p>You have won the Gig <a href='".$serverpath."assignments'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
+				<p>To update the status and see full details, please <a href='".$serverpath."assignments'>click here</a>.</p>
 				<p>&nbsp;</p>
 				<p>Regards</p>
 				<p>$sitename</p>";
@@ -67,8 +67,8 @@ else
 							
 	}
 	$mailmatter="<p>Congratulations!</p>
-				<p>You have won the Gig <a href='".get_project_link($serverpath,$projectId)."'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
-				<p>To update the status and see full details, please  <a href='".get_project_link($serverpath,$projectId)."'>click here</a>.</p>";
+				<p>You have won the Gig <a href='".$serverpath."assignments'><font style='font-color:#7d2900;'>$gigname</font></a>.</p>
+				<p>To update the status and see full details, please  <a href='".$serverpath."assignments'>click here</a>.</p>";
 								$mailmatter=htmlentities($mailmatter);
 								$mailmatter=addslashes($mailmatter);
 								$msgquery="insert into btr_messages(msgfrom,msgto,msgcontent,msgon,projectId,isread,msgtype)";
