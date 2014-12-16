@@ -5,7 +5,7 @@
             <a href="<?php echo $serverpath;?>"><img src="<?php echo $serverpath;?>images/logo-1.png" class="logo"></a>
           </div>
           <div class="col-md-10">
-          <nav class="navbar navbar-default hmenu" role="navigation"  style="background: transparent;">
+          <nav class="navbar navbar-default hmenu" role="navigation"  style="background: transparent;border: none;box-shadow: none;">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
