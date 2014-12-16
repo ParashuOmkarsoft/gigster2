@@ -14,7 +14,8 @@ include('cfg/more-functions.php');
     <?php include('fb-login.php'); ?>
   </head>
   <body style="padding-top:0px;">
-  <div id="main-bg">
+  <div class="jumbotron">
+  <img src="images/grooming.png">
     <?php include('img-top-menu.php'); ?>
         
     <!-- <div id="imgback"> -->

@@ -1570,10 +1570,10 @@ outline: none;
 position: absolute;
 top: 110%;
 right: 43%;}
-#main-bg{
+/*#main-bg{
 background: url("../images/grooming.png");
 height: 790px;
-}
+}*/
 
 .bg-header{background:none;}
 
