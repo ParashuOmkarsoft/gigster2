@@ -33,7 +33,7 @@
               <div class="col-sm-offset-2 col-sm-10 logsign">
                 <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
                 <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
-               <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model" onclick="javascript:document.getElementById('btnLogin').style.visibility='hidden';" style=""> Free Signup</button>
+               <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model"  style=""> Free Signup</button>
               </div>
             </div>
         </form>
