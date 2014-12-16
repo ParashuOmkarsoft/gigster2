@@ -416,8 +416,8 @@ else
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-sm-12 logsign">
-                  <button type="submit" class="btn btn-warning award" style="margin-left:0px;padding:0px;">Award</button>
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-warning award" style="margin-left:0px;color:#fff;>Award</button>
                 </div>
               </div>
             </div>
