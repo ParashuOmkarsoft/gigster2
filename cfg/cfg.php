@@ -1182,7 +1182,7 @@ function send_notifications($skills,$loggedinuser,$projectId,$serverpath)
 	$prjTitle=$projectDetails['prjTitle'];
 	$prjDesc=strip_string($projectDetails['prjTitle'],100);
 	$prjDesc.="...";	
-	$mailsubject="A new gig matching your skills is posted over GigsterGo";
+	$mailsubject="A new Gig matching your skills is on GigsterGo.";
 	if(sizeof($users)>0)
 	{
 		foreach($users as $user)
@@ -1219,7 +1219,7 @@ Hello <strong>'.$username.'</strong>
 </tr>
 <tr>
 <td>
-A New gig on Gigster '.$prjTitle.' is posted and it matches to your skillset. 
+There is a new Gig that matches your skills. 
 </td>
 </tr>
 <tr>
@@ -1229,21 +1229,21 @@ A New gig on Gigster '.$prjTitle.' is posted and it matches to your skillset.
 </tr>
 <tr>
 <td>
+<strong>Title:</strong> '.$prjTitle.'
+</td>
+</tr>
+<tr>
+<td>
+<strong>Description:</strong> '.$prjDesc.'</td>
+</tr>
+<tr>
+<td>
 <strong>Skills Required : </strong> '.$skills.'
 </td>
 </tr>
-
 <tr>
 <td>
-<strong>Details Are</strong>
-</td>
-</tr>
-<tr>
-<td>'.$prjDesc.'</td>
-</tr>
-<tr>
-<td>
-If you are interested in this Gig , please submit your bid by <a href="'.get_project_link($serverpath,$projectId).'">clicking over here</a>.
+For full details and to submit your bid <a href="'.get_project_link($serverpath,$projectId).'">click here!</a>.
 </td>
 </tr>
 </table>
@@ -1252,7 +1252,10 @@ If you are interested in this Gig , please submit your bid by <a href="'.get_pro
 <tr>
 	<td><strong>GigsterGo.com</strong></td>
 </tr>
-</table>';
+</table>
+<p>________________________________________</p>
+<p style="font-style:italic;">GigsterGo sends these emails based on the preferences you set for your account. To change your communication preferences and adjust your skill matches, <a href="'.$serverpath.'">login</a> and go to your <a href="'.$serververpath.'myaccount">Profile</a>. </p>
+';
 
 $mailmatter=send_my_mail($usermail,$mailmatter,$mailsubject);
 			
