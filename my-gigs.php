@@ -77,7 +77,7 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				$profilepic="images/admin.png";
+				$profilepic=random_user_pics();
 			}
 			$selectedbidder="select * from btr_assignment where projectId=".$opengig['prjId'];
 			$selectedbidder=@db_query($selectedbidder);
@@ -246,7 +246,7 @@ include('cfg/more-functions.php');
 		$winnerprofilepic=$winnerInfo['profileimage'];
 		if(!$winnerprofilepic)
 		{
-			$winnerprofilepic="images/admin.png";
+			$winnerprofilepic=random_user_pics();
 		}
 		else
 		{

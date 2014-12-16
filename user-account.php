@@ -81,7 +81,7 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				$pfimage="images/admin.png";
+				$pfimage=random_user_pics();
 			}
 			
 			  ?>
@@ -91,7 +91,7 @@ include('cfg/more-functions.php');
 		   else
 			  {
 				  ?>
-				  <img src="<?php echo $serverpath;?>image.php?image=/images/admin.png&width=150&height=150&cropratio=1:1"  id="imguser">
+				  <img src="<?php echo $serverpath;?>image.php?image=/<?php echo random_user_pics();?>&width=150&height=150&cropratio=1:1"  id="imguser">
 				  <?php
 			  }
 			?>

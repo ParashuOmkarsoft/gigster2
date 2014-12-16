@@ -62,7 +62,7 @@ if($checkSql['count']>0)
 			}
 			else
 			{
-				$profilepic="images/admin.png";
+				$profilepic=random_user_pics();
 			}
 ?>
 <section class="firstsection" class="container">

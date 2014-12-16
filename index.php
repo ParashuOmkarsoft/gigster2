@@ -51,7 +51,7 @@ include('cfg/more-functions.php');
       <div class="col-md-4 box-1">
         <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
         <h2 class="fname2">Get Anything Done </h2>
-        <p>Tell us what you need help with and post a Gig.</h2>
+        <p>Tell us what you need help with and post a Gig.
       </div>
       <div class="col-md-4 box-1">
         <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
@@ -68,7 +68,7 @@ include('cfg/more-functions.php');
   {
     ?>
   <div class="col-md-12 col-sm-12" style="text-align: center;padding-top: 0px;">  
-  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!</a>
+  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!
   </div>  
 <?php
   }
@@ -76,7 +76,7 @@ include('cfg/more-functions.php');
   {
 	   ?>
   <div style="text-align: center;padding-top: 0px;">  
-  <a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()" class="btn signup-btn"/> Post a Gig!</a>
+  <a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()" class="btn signup-btn"/> Post a Gig!
   </div>  
 <?php
   }
@@ -89,7 +89,7 @@ include('cfg/more-functions.php');
     <div class="col-md-12"style="padding: 50px 0px 50px 0px;">
       <h2 class="name2 text-center">
        Why Use Gigster
-      </h3>
+      
     </div>
   </div>
   <div class="row clearfix">
@@ -122,7 +122,7 @@ include('cfg/more-functions.php');
 </div>
 </div>
 	
-</div>
+
 <?php $homelatest = featured_gigs();
 if($homelatest['count']>0)
 {
@@ -151,7 +151,7 @@ if(file_exists($gigsterimage))
 	  }
 	  else
 	  {
-		  $gigsterimage="images/admin.png";
+		  $gigsterimage=random_user_pics();
 	  }
 
 $string = $hmltst3['prjdesc'];

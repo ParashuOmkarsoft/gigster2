@@ -61,7 +61,7 @@ if($ngigdetails)
 					}
 					else
 					{
-						$gigsterpic="images/admin.png";
+						$gigsterpic=random_user_pics();
 					}
 						$gigsternametodisplay="";
 						$gigsternametodisplay=$gigsterInfo['fname'].' '.$gigsterInfo['lname'];

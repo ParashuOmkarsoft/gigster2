@@ -77,7 +77,7 @@ include('cfg/more-functions.php');
 			 }
 			 else
 			 {
-				$profilepic="images/admin.png";
+				$profilepic=random_user_pics();
 			 }
 			 $gigId = $opengig['prjId'];
 			 $projectbids=get_project_bids($gigId);
@@ -134,7 +134,7 @@ include('cfg/more-functions.php');
 					}
 					else
 					{
-						$bidderpic="images/admin.png";
+						$bidderpic=random_user_pics();
 					}
 		?>
         <img style="margin-top: -18px;"src="<?php echo $serverpath;?>image.php?image=/<?php echo $bidderpic;?>&width=45&height=45&cropratio=1:1" class="img-circle">

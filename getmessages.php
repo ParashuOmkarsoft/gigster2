@@ -59,7 +59,7 @@ $projectDetails=get_gig_details($project);
 			$buserimage="";
 			if(!$fromuserimg)
 			{
-				$buserimage=filter_text('images/admin.png');
+				$buserimage=filter_text(random_user_pics());
 			}
 			else
 			{

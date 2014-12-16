@@ -68,7 +68,7 @@ include('cfg/more-functions.php');
 			}
 			else
 			{
-				$profilepic="images/admin.png";
+				$profilepic=random_user_pics();
 			}
 	   ?>
   <div class="row gig-detail-row">

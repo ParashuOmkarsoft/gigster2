@@ -43,7 +43,7 @@ else
 			}
 			else
 			{
-				$profilepic="images/admin.png";
+				$profilepic=random_user_pics();
 			}
 			$gigsterrating=0;
 			$gigsterrating=get_user_rating($gigsterInfo['userId']);
@@ -188,7 +188,7 @@ else
 			}
 			else
 			{
-				$bidderpic="images/admin.png";
+				$bidderpic=random_user_pics();
 			}
 
 			$biddernametodisplay=$bidderInfo['fname'].' '.$bidderInfo['lname'];

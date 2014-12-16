@@ -1299,4 +1299,33 @@ function is_rated($userId,$projectId)
 		return $checkSql['rows']['0']['id'];
 	}
 }
+function random_user_pics()
+{
+	$array[0]="usericons/001.png";
+	$array[1]="usericons/002.png";
+	$array[2]="usericons/003.png";
+	$array[3]="usericons/004.png";
+	$array[4]="usericons/005.png";
+	$array[5]="usericons/006.png";
+	$array[6]="usericons/007.png";
+	$array[7]="usericons/008.png";
+	$array[8]="usericons/009.png";
+	$array[9]="usericons/010.png";
+	$array[10]="usericons/011.png";
+	$array[11]="usericons/012.png";
+	$array[12]="usericons/013.jpg";
+	$array[13]="usericons/014.jpg";
+	$array[14]="usericons/015.jpg";
+	$array[15]="usericons/016.jpg";
+	$array[16]="usericons/017.jpg";
+	$array[17]="usericons/018.jpg";
+	$array[18]="usericons/019.jpg";
+	$array[19]="usericons/020.jpg";
+	$array[20]="usericons/021.jpg";
+	$array[21]="usericons/022.jpg";
+	$array[22]="usericons/023.jpg";
+	$rand_keys = array_rand($array, 1);
+	return $array[$rand_keys];
+
+}
 ?>

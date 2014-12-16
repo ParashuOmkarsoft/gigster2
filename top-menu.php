@@ -32,7 +32,7 @@
 						  $uProfilepic=$uInfo['profileimage'];
 						  if(!$uProfilepic)
 						  {
-							  $uProfilepic="images/admin.png";
+							  $uProfilepic=random_user_pics();
 						  }
 						  else{
 							  $uProfilepic="uploads/profileimage/".$uProfilepic;
