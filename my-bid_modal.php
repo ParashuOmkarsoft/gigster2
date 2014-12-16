@@ -26,7 +26,7 @@ $opengig=get_gig_details($projectId);
           <br/>
           <br/>
           <div class="col-sm-12">
-            <textarea class="form-control tinpute mtextarea" placeholder="Other than price, this is where you would send more information about your bid for this Gig." row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title=""></textarea>
+            <textarea class="form-control tinpute mtextarea" placeholder="Other than price, sending more information usually helps. For Example, how long Gig will take or when you are available etc" row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title=""></textarea>
           </div>
         </div>
         <div class="form-group">
