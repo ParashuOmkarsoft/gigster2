@@ -417,7 +417,7 @@ else
               </div>
               <div class="form-group">
                 <div class="col-sm-12">
-                  <button type="submit" class="btn btn-warning award" style="margin-left:0px;color:#fff;>Award</button>
+                  <button type="submit" class="btn btn-warning award" style="margin-left:0px;color:#fff;">Award</button>
                 </div>
               </div>
             </div>
