@@ -23,8 +23,6 @@ $awardedtoInfo=get_user_Info(encrypt_str($awarded));
 
 if($uId==$gigdetails['userId'])
 {
-	
-$updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
 
 		$mailmatter="<p>Congratulations!  </p>
 				<p>Gig <strong>$gigname</strong> is now completed.</p>
@@ -55,6 +53,11 @@ if($awardedtoInfo['notify']=='1')
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,$awarded,$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
+			if(is_rated($awarded,$projectId))					
+			{
+				$updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
+			}
+
 				
 }
 else
@@ -93,6 +96,10 @@ else
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
+				if(is_rated($gigdetails['userId'],$projectId))					
+					{
+				$updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
+					}
 	}
 	else
 	{
@@ -128,7 +135,10 @@ else
 				$insertQuery="insert into btr_reviews(ratefrom,rateto,projectId,feedback,rating,ratedon)";
 				$insertQuery.="values($uId,".$gigdetails['userId'].",$projectId,'$experience','$rating',".gmmktime().")";
 				$insertSql=@db_query($insertQuery,3);
-				
+				if(is_rated($gigdetails['userId'],$projectId))					
+					{
+				$updateQuery=@db_query("update btr_projects set status='3' where prjId=$projectId");
+					}
 				
 				
 	

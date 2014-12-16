@@ -94,9 +94,7 @@ if($checkSql['count']>0)
         <p> 
           
          
-          <?php /*?><a data-toggle="modal" href="#termsmodal<?php echo $mId;?>">
-          <button type="button" class="btn terms-btn" >Terms</button>
-          </a><?php */?>
+          
               <?php $projectstatus=get_status_details($prjDetails['prjId'],$uInfo['userId']); 
 				
 			  if($projectstatus == '100') { 
@@ -371,10 +369,10 @@ $puname=$puuinfo['username'];
 			}
 			?>
       </div>
-      <div class="col-md-4"style="margin-top:30px;">
+      <div class="col-md-4" style="margin-top:30px;">
         <div class="mike"> <img src="<?php echo $serverpath;?>image.php?image=/<?php echo $profilepic;?>&width=75&height=75&cropratio=1:1" class="img-circle"></div>
         <div style="clear:both"></div>
-        <div class="pull-right";>
+        <div class="pull-right">
           <h4 style="float: right;"><?php echo $nametodisplay; ?></h4><br>
           <div style="float: right;">
          <?php
@@ -425,7 +423,18 @@ $puname=$puuinfo['username'];
         </div>
       </div>
 
-      <div class="col-md-4" style="margin-left:-33px;"><a href="#statusmodal<?php echo $opengig['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style="float: left;margin: 0px;padding-top: 16px;"></a></div>
+      <div class="col-md-4" style="margin-left:-33px;">
+      <?php if($projectstatus==100 )
+	  {
+		  if(!is_rated($uInfo['userId'],$prjDetails['prjId']))
+		  {
+		  ?>
+      <a href="#statusmodal<?php echo $prjDetails['prjId'];?>" data-toggle="modal"><img src="images/feedback.png" title="Send feedback" style="float: left;margin: 0px;padding-top: 16px;"></a>
+      <?php
+		  }
+	  }
+	  ?>
+      </div>
       
     </div>
   </section>

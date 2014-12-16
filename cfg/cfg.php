@@ -1285,5 +1285,15 @@ function featured_gigs()
 	{
 		return $sql;
 	}
+
+}
+function is_rated($userId,$projectId)
+{
+	$checkQuery="select * from btr_reviews where ratefrom=$userId and projectId=$projectId";
+	$checkSql=@db_query($checkQuery);
+	if($checkSql['count']>0)
+	{
+		return $checkSql['rows']['0']['id'];
+	}
 }
 ?>
