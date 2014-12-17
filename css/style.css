@@ -1681,12 +1681,13 @@ text-align: left;}
     .nav>li>a {padding: 6px;}
     .navbar-form .form-control {}
     .log-btn{text-align: center;margin-top: 15px;margin: 0;}
-   .loginbtn-on-model{margin: 0 0 15px 0;}
+   .loginbtn-on-model{margin:0 0 15px 6px;}
    .modal-social-icons {padding-left: 30px;}
+   .nav>li {position: relative;display: block;background: #fff;text-align: center;
 }
 
-@media (min-width: 480px){.loginbtn-on-model{margin: 0 0 15px 0;}}
-@media (min-width: 320px){.loginbtn-on-model{margin: 0 0 15px 0;}}
+@media (min-width: 480px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}
+@media (min-width: 320px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}
 
 .navbar-form .form-control {
 display: inline-block;
