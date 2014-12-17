@@ -18,19 +18,15 @@
         <div class="col-md-8">
           <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
               <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">
-                </div>
+                <label for="inputEmail3" class="control-label newlog">Email</label>               
+                  <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
-                <div class="col-sm-10">
+                <label for="inputPassword3" class="control-label newlog">Password</label>
                   <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
-                </div>
               </div>    
             <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10 logsign">
+              <div class="logsign">
                 <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
                 <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
                <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model"  style=""> Free Signup</button>
