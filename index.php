@@ -83,13 +83,13 @@ include('cfg/more-functions.php');
 ?>
 </div>  
 
-  <div class="row rowbg">
+<div class="row rowbg">
 <div class="container" style="max-width:1200px;">
   <div class="row clearfix">
     <div class="col-md-12"style="padding: 50px 0px 50px 0px;">
       <h2 class="name2 text-center">
        Why Use Gigster
-      
+      </h2>
     </div>
   </div>
   <div class="row clearfix">
@@ -121,7 +121,7 @@ include('cfg/more-functions.php');
   </div>
 </div>
 </div>
-	
+</p></div>
 
 <?php $homelatest = featured_gigs();
 if($homelatest['count']>0)
