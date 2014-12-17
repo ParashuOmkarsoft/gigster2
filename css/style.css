@@ -1268,7 +1268,9 @@ height: 100px;}
 padding-bottom: 50px;
 margin: 0 auto;
 /* color: #ffcc00; */
-background-color: #ffcc00;}
+background-color: #ffcc00;
+padding: 15px;
+}
 
 
 #rating .star1{
