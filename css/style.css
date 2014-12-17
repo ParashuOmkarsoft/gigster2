@@ -1656,3 +1656,14 @@ outline: none;
 margin-top: 12px;}
 
 .jumbotron{padding: 0px;}
+
+.login-name{font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+line-height: 20px;
+text-align: left;}
+
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a{font-size:15px;}
+}

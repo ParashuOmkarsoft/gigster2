@@ -5,7 +5,7 @@
        <div class="row">
 
          <h2 id="login1">Login </h2>    
-            <h2 class="source">Create a FREE account using any of your social profiles or email.</h2>  
+            <h2 class="login-name">Create a FREE account using any of your social profiles or email.</h2>  
            
         <div class="col-md-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
               <div class="modal-social-icons">
