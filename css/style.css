@@ -1680,8 +1680,10 @@ text-align: left;}
     .navbar-default .navbar-nav>li>a{font-size:15px;padding: 6px;}
     .nav>li>a {padding: 6px;}
     .navbar-form .form-control {width: auto;}
-    .log-btn{text-align: center;margin-top: 15px;}
+    .log-btn{text-align: center;margin-top: 15px;margin: 0;}
 }
 
-@media (max-width: 480px){.login-passinpute{width: 60%;}}
-@media (max-width: 320px){.login-passinpute{width: 60%;}}
+@media (max-width: 480px){.login-passinpute{width: 60%;}.loginbtn-on-model{margin-top: 15px;}}
+@media (max-width: 320px){.login-passinpute{width: 60%;}.loginbtn-on-model{margin-top: 15px;}}
+
+
