@@ -121,7 +121,8 @@ include('cfg/more-functions.php');
   </div>
 </div>
 </div>
-</p></div>
+</p>
+</div>
 
 <?php $homelatest = featured_gigs();
 if($homelatest['count']>0)
@@ -173,7 +174,7 @@ if (strlen($string) > 140) {
 	  ?>
 
 </div>
-      
+ </div>     
     </div>
     </div>
    </div>
