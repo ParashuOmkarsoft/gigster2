@@ -21,7 +21,7 @@
                 <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
               </form>
               <form class="navbar-form navbar-left">
-                <label for="inputPassword3" class="control-label newlog">Password</label>
+                <label for="inputPassword3" class="control-label newlog1">Password</label>
                   <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
               </form>    
             <div class="form-group">

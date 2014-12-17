@@ -1334,7 +1334,16 @@ padding-bottom: 16px;
 font-family: 'source_sans_probold';
 font-size: 20px;
 color: #5e350d;
+padding-right: 50px;
 }
+.newlog1 {
+font-family: 'source_sans_probold';
+font-size: 20px;
+color: #5e350d;
+padding-right: 15px;
+}
+
+
 .uploadbtn {
 color: #fff;
 font-size: 22px;
