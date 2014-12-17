@@ -1682,3 +1682,6 @@ text-align: left;}
     .navbar-form .form-control {width: auto;}
     .log-btn{text-align: center;margin-top: 15px;}
 }
+
+@media (max-width: 480px){.login-passinpute{width: 60%;}}
+@media (max-width: 320px){.login-passinpute{width: 60%;}}
