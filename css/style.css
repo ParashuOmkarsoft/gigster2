@@ -1686,10 +1686,9 @@ text-align: left;}
    .modal-social-icons {padding-left: 30px;}
    .nav>li {position: relative;display: block;background: #fff;text-align: center;}
    .logo{width:150px;}
-   .navbar-default .navbar-collapse, .navbar-default .navbar-form {margin: 0;padding: 0;}
 
-@media (min-width: 480px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;} .navbar-default .navbar-collapse, .navbar-default .navbar-form {margin: 0;padding: 0;}
-@media (min-width: 320px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}  .navbar-default .navbar-collapse, .navbar-default .navbar-form {margin: 0;padding: 0;}
+@media (min-width: 480px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
+@media (min-width: 320px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
 
 .navbar-form .form-control {
 display: inline-block;
