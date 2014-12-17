@@ -51,7 +51,7 @@ include('cfg/more-functions.php');
       <div class="col-md-4 box-1">
         <span class=""><img src="images/step1.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
         <h2 class="fname2">Get Anything Done </h2>
-        <p>Tell us what you need help with and post a Gig.
+        <p>Tell us what you need help with and post a Gig.</p>
       </div>
       <div class="col-md-4 box-1">
         <span class=""><img src="images/step2.png" alt=""  style="float: left;padding-top: 0px;border: 6px Solid #fab518;margin-right:15px;" class="img-circle"></span>
@@ -121,7 +121,6 @@ include('cfg/more-functions.php');
   </div>
 </div>
 </div>
-</p>
 </div>
 
 <?php $homelatest = featured_gigs();
