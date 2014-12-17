@@ -16,10 +16,9 @@
               </div>
         </div>
         <div class="col-md-8">
-          <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
-              <form class="navbar-form navbar-left">
+             <form class="navbar-form navbar-left" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
                 <label for="inputEmail3" class="control-label newlog">Email</label>               
-                  <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
+                <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
               </form>
               <form class="navbar-form navbar-left">
                 <label for="inputPassword3" class="control-label newlog">Password</label>
