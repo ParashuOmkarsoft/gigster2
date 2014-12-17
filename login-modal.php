@@ -23,11 +23,12 @@
               <form class="navbar-form navbar-left">
                 <label for="inputPassword3" class="control-label newlog1">Password</label>
                   <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
-              </form>                
+              </form>  
+              <div class="col-md-12" style="text-align: center;margin-left: 48px;margin-top: 15px;">            
                 <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
                 <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
                <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model"  style=""> Free Signup</button>
-           
+              </div>
     </div>
   </div>
 </div>
