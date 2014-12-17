@@ -1265,11 +1265,10 @@ border: 5px solid #fe6635;
 height: 100px;}
 
 .rowbg{/* background: url(../images/namebg.jpg); */
-padding-bottom: 50px;
 margin: 0 auto;
 /* color: #ffcc00; */
 background-color: #ffcc00;
-padding: 15px;
+padding: 15px 15px 70px 15px;
 }
 
 
