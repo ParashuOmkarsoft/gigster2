@@ -20,11 +20,11 @@
               <form class="navbar-form navbar-left">
                 <label for="inputEmail3" class="control-label newlog">Email</label>               
                   <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
-              </div>
+              </form>
               <form class="navbar-form navbar-left">
                 <label for="inputPassword3" class="control-label newlog">Password</label>
                   <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
-              </div>    
+              </form>    
             <div class="form-group">
               <div class="logsign">
                 <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
