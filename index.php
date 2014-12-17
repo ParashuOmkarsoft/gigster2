@@ -134,11 +134,8 @@ if($homelatest['count']>0)
        Featured Gigs
       </h2>
 </div>
-<div class="container-fluid" style="max-width: 1227px;padding:0px;margin-left: 15px;">
-<div class="row-fluid">
-    <div class="span12">
-      <div class="row-fluid">
-        
+<div class="container" style="max-width: 1227px;padding:0px;margin-left: 15px;">
+<div class="row">        
   <?php
   foreach($homelatest['rows'] as $hmltst3 )
 {
@@ -160,12 +157,12 @@ if (strlen($string) > 140) {
     $stringCut = substr($string, 0, 140);
     }else{ $stringCut = $string;}
 	?>
-      <div class="span4 newbox">   
+      <div class="col-md-4 newbox">   
         <a href="<?php echo $serverpath;?>gigDetails/<?php echo urlencode($hmltst3['prjTitle']);?>/<?php echo $hmltst3['prjId'];?>"><span class="">
         
         <img src="<?php echo $serverpath; ?>image.php?image=/<?php echo $gigsterimage; ?>&width=80&height=80&cropratio=1:1" class="imgbox img-circle" alt="" ></span>
         <h2 class="fname2"><?php echo strip_string($hmltst3['prjTitle'],15); ?> </h2></a>
-        <p style="width: 383px;"><?php echo strip_string($stringCut,15); ?></p>
+        <p><?php echo strip_string($stringCut,15); ?></p>
       </div>
       <?php
 }
@@ -174,8 +171,6 @@ if (strlen($string) > 140) {
 
 </div>
       
-    </div>
-    </div>
    </div>
   </div>
   <div style="text-align: center;padding-top: 0px;padding-bottom:10px;"><a href="<?php echo $serverpath;?>allgigs"><button class="btn more-btn" type="submit">MORE</button></a></div>
