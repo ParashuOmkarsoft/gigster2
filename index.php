@@ -68,7 +68,7 @@ include('cfg/more-functions.php');
   {
     ?>
   <div class="col-md-12 col-sm-12" style="text-align: center;padding-top: 0px;">  
-  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup!
+  <a data-toggle="modal" href="#signupmodal" class="btn signup-btn"/> Free Signup! </a>
   </div>  
 <?php
   }
@@ -76,7 +76,7 @@ include('cfg/more-functions.php');
   {
 	   ?>
   <div style="text-align: center;padding-top: 0px;">  
-  <a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()" class="btn signup-btn"/> Post a Gig!
+  <a data-toggle="modal" href="#postgigmodel" onClick="reset_post_gig()" class="btn signup-btn"/> Post a Gig! </a>
   </div>  
 <?php
   }
@@ -174,7 +174,7 @@ if (strlen($string) > 140) {
 	  ?>
 
 </div>
- </div>     
+      
     </div>
     </div>
    </div>
