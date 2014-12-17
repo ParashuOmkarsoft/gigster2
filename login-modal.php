@@ -17,11 +17,11 @@
         </div>
         <div class="col-md-8">
           <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
-              <div class="form-group">
+              <form class="navbar-form navbar-left">
                 <label for="inputEmail3" class="control-label newlog">Email</label>               
                   <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">                
               </div>
-              <div class="form-group">
+              <form class="navbar-form navbar-left">
                 <label for="inputPassword3" class="control-label newlog">Password</label>
                   <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
               </div>    

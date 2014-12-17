@@ -1483,8 +1483,8 @@ font-size: 30px;
 font-family: 'source_sans_prosemibold';}
 
 .login-passinpute{margin-left: 35px;
-width: 297px;
-height: 34px;
+/*width: 297px;
+height: 34px;*/
 padding: 6px 12px;
 font-size: 14px;
 line-height: 1.42857143;
