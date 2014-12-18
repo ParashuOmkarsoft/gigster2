@@ -92,7 +92,7 @@ include('cfg/more-functions.php');
       </h2>
     </div>
   </div>
-  <div class="row clearfix">
+  <div class="row clearfix" style="margin:0px;">
     <div class="col-md-4">
       <h2 class="name1">
          Get help for anything. Done by your local Gigsters.
