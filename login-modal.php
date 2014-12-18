@@ -7,7 +7,7 @@
          <h2 id="login1">Login </h2>    
             <h2 class="login-name">Create a FREE account using any of your social profiles or email.</h2>  
            
-        <div class="col-md-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
+        <div class="col-md-4 col-sm-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
               <div class="modal-social-icons">
                     <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
                     <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
@@ -15,7 +15,7 @@
                    <a href="<?php echo $serverpath;?>login-with-google.php"><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"></a>
               </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-8">
              <form class="navbar-form navbar-left" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
                 <label for="inputEmail3" class="control-label newlog">Email</label>               
                 <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="" style="width: 286px;">                
