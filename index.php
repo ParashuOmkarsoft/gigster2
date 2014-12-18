@@ -8,7 +8,7 @@ include('cfg/more-functions.php');
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=590">
     <title><?php echo $sitename;?></title>
 	<?php include('script-header.php'); ?>
     <?php include('fb-login.php'); ?>
