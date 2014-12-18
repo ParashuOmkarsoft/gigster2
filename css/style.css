@@ -1336,7 +1336,7 @@ padding-bottom: 16px;
 font-family: 'source_sans_probold';
 font-size: 20px;
 color: #5e350d;
-padding-right: 50px;
+padding-right: 15px;
 }
 .newlog1 {
 font-family: 'source_sans_probold';
@@ -1689,8 +1689,8 @@ text-align: left;}
    .logo{width:150px;}
    .log-btn {text-align: right;}
 
-@media (min-width: 480px){.log-btn {text-align: right;}.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
-@media (min-width: 320px){.log-btn {text-align: right;}.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
+@media (min-width: 480px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
+@media (min-width: 320px){.loginbtn-on-model{margin: 0 0 15px 6px;}.nav>li {position: relative;display: block;background: #fff;text-align: center;}.logo{width:120px;}
 
 .navbar-form .form-control {
 display: inline-block;

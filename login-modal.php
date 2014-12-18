@@ -29,9 +29,9 @@
                 <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
                <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model"  style=""> Free Signup</button>
               </div>
+          </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 </div>
 </div>
