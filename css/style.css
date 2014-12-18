@@ -1146,7 +1146,8 @@ width: 422px;
 float: left;}
 
 .box-1{
-float: left; padding: 5px;}
+float: left; padding: 13px;
+}
 .newbox{background: #fff;
 /*width: 387px;*/
 float: left;
@@ -1336,13 +1337,13 @@ padding-bottom: 16px;
 font-family: 'source_sans_probold';
 font-size: 20px;
 color: #5e350d;
-padding-right: 15px;
+padding-right: 45px;
 }
 .newlog1 {
 font-family: 'source_sans_probold';
 font-size: 20px;
 color: #5e350d;
-padding-right: 15px;
+padding-right: 7px;
 }
 
 
