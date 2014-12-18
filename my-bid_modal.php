@@ -21,12 +21,12 @@ $opengig=get_gig_details($projectId);
       <div class="col-md-12">
         <div class="form-group">
         <label class="tooltips" style="margin-left: 15px;">Bid Details
-        <span>Other than price, sending more information usually helps. For Example, how long Gig will take or when you are available etc</span></label> 
+        <span>Other than price, sending more information usually helps. For example, how long Gig will take or when you are available etc</span></label> 
           <!-- <label for="inputText" class="col-sm-4 control-label newlog tooltips">Bid Details</label> -->
           <br/>
           <br/>
           <div class="col-sm-12">
-            <textarea class="form-control tinpute mtextarea" placeholder="Other than price, sending more information usually helps. For Example, how long Gig will take or when you are available etc" row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title=""></textarea>
+            <textarea class="form-control tinpute mtextarea" placeholder="Other than price, sending more information usually helps. For example, how long Gig will take or when you are available etc" row="10" column="10" required name="proposal" id="proposal" style="width:400px;height:150px;" title=""></textarea>
           </div>
         </div>
         <div class="form-group">
