@@ -101,7 +101,7 @@ body h4{
  #title{color: #45350f;font-size: 30px;font-family: 'source_sans_prosemibold'; }
  #map{background: url("../images/map.png") no-repeat 0px 4px;}
 section li{float: left;margin: 13px;list-style-type: none;}
-.row{margin:0 auto;}
+/*.row{margin:0 auto;}*/
 .navbar-nav>li>a:hover
 {
 border-bottom: 3px solid #FFB200;
