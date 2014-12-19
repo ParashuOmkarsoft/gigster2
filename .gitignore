@@ -1,3 +1,6 @@
 .project
 imagecache
 uploads
+.htaccess
+cfg/cfg.php
+cfg/cfg.php
