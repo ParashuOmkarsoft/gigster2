@@ -5,9 +5,9 @@
        <div class="row">
 
          <h2 id="login1">Login </h2>    
-            <h2 class="login-name">Create a FREE account using any of your social profiles or email.</h2>  
+            <h2 class="source">Create a FREE account using any of your social profiles or email.</h2>  
            
-        <div class="col-md-4 col-sm-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
+        <div class="col-md-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
               <div class="modal-social-icons">
                     <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
                     <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
@@ -15,23 +15,31 @@
                    <a href="<?php echo $serverpath;?>login-with-google.php"><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"></a>
               </div>
         </div>
-        <div class="col-md-8 col-sm-8" style="margin-top: 15px;">
-             <form class="navbar-form navbar" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
-                <label for="inputEmail3" class="col-md-4 control-label newlog">Email</label>               
-                <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="" style="width: 66%;">                
-              </form>
-              <form class="navbar-form navbar">
-                <label for="inputPassword3" class="col-md-4 control-label newlog1">Password</label>
-                  <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="" style="width: 66%;">
-              </form>  
-              <div class="col-md-12 col-sm-12 log-btn">            
-                <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
-                <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
-               <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model"  style=""> Free Signup</button>
+        <div class="col-md-8">
+          <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" >
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">
+                </div>
               </div>
-          </div>
-        </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
+                </div>
+              </div>    
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10 logsign">
+                <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model">Login</button>
+                <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
+               <button data-dismiss="modal"  value="signup" name="reqType" data-toggle="modal" data-target="#signupmodal" class="btn btn-warning loginbtn-on-model"> Free Signup</button>
+              </div>
+            </div>
+        </form>
     </div>
+  </div>
+</div>
 </div>
 </div>
 </div>

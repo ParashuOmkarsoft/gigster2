@@ -2,43 +2,46 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content cform">          
     <div class="container">
-       <div class="row">
+       <div class="col-md-12">
 
-         <h2 id="login1">Login </h2>    
-            <h2 class="source">Create a FREE account using any of your social profiles or email.</h2>  
-           
-        <div class="col-md-4" style="margin-top: 16px; border-right: 1px solid #febe07;"> 
-              <div class="modal-social-icons">
-                    <a href="javascript:voide('0');" onClick="FBLogin();"><img src="<?php echo $serverpath;?>images/facebook1.png" style="padding-bottom:10px;"> </a>
-                    <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="<?php echo $serverpath;?>images/twitter1.png" style="padding-bottom:10px;"> </a>
-                    <a href='<?php echo $serverpath;?>loginwithtlinkedin'><img src="<?php echo $serverpath;?>images/link.png" style="padding-bottom:10px;"> </a>
-                   <a href="<?php echo $serverpath;?>login-with-google.php"><img src="<?php echo $serverpath;?>images/google.png" style="padding-bottom:10px;"></a>
-              </div>
-        </div>
-        <div class="col-md-8">
-          <form class="form-horizontal hform" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" >
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label newlog">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="">
-                </div>
-              </div>    
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10 logsign">
-                <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
-                <!-- <button type="submit" class="btn btn-warning loginbtn">Signup</button> -->
-               <button type="submit" value="signup" name="reqType" class="btn btn-warning loginbtn-on-model" onclick="javascript:document.getElementById('btnLogin').style.visibility='hidden';" style=""> Free Signup</button>
-              </div>
-            </div>
-        </form>
+         <h2 id="login1">Sign Up </h2>    
+            <h2 class="source">Create an account using any of your social profiles.</h2>  
+            <h2 class="source">Sign Up for a new free account Now. </h2>
+
+       <div class="col-md-8"><form class="form-horizontal hform" >
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label newlog">Username</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control passinpute" id="inputEmail3" placeholder="">
     </div>
   </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label newlog">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control passinpute" id="inputPassword3" placeholder="">
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10 logsign">
+      <button type="submit" class="btn btn-warning loginbtn">Sign Up</button>
+      <a data-target="#loginmodel" data-toggle="modal" data-dismiss="modal" class="btn btn-warning loginbtn">Login</a>
+    </div>
+  </div>
+</form>
+</div>
+<div class="col-md-4 fbimg"> 
+<div class="modal-social-icons">
+
+                            <a href="javascript:voide('0');" onClick="FBLogin();"><img src="images/facebook1.png" style="padding-bottom:10px;"> </a>
+                            <a target="_parent" href="<?php echo $serverpath;?>loginwithtwitter" ><img src="images/twitter1.png" style="padding-bottom:10px;"> </a>
+                            <a href='<?php echo $serverpath;?>loginwithtlinkedin'><img src="images/link.png" style="padding-bottom:10px;"> </a>
+                            <a href='#'><img src="images/google.png" style="padding-bottom:10px;"> </a>
+</div>
+                        </div>
+         
+       </div>
 </div>
 </div>
 </div>
