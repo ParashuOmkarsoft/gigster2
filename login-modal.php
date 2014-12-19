@@ -16,13 +16,13 @@
               </div>
         </div>
         <div class="col-md-8 col-sm-8" style="margin-top: 15px;">
-             <form class="navbar-form navbar-left" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
-                <label for="inputEmail3" class="control-label newlog">Email</label>               
-                <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="" style="width: 267px;">                
+             <form class="navbar-form navbar" method="post"  action="<?php echo $serverpath;?>checkLogin" target="targetframe" onSubmit="return validate_login();">
+                <label for="inputEmail3" class="col-md-4 control-label newlog">Email</label>               
+                <input type="email" class="form-control login-passinpute" id="loginmail" name="loginmail" required placeholder="" style="width: 66%;">                
               </form>
-              <form class="navbar-form navbar-left">
-                <label for="inputPassword3" class="control-label newlog1">Password</label>
-                  <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="" style="width: 267px;">
+              <form class="navbar-form navbar">
+                <label for="inputPassword3" class="col-md-4 control-label newlog1">Password</label>
+                  <input type="password" class="form-control login-passinpute" name="loginpass" id="loginpass" required placeholder="" style="width: 66%;">
               </form>  
               <div class="col-md-12 col-sm-12 log-btn">            
                 <button type="submit" value="login" name="reqType" class="btn btn-warning loginbtn-on-model" id="btnLogin">Login</button>
